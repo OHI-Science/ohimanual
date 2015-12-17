@@ -38,6 +38,7 @@ in_md = c(
   'use_tbx_to_modify_goal_models.md',      # updated by NJM 9/15
   'use_tbx_to_remove_goal_models.md',
   'use_tbx_to_modify_goals_categories.md',
+  'use_tbx_calculate_overall_index.md',
   'example_modifications_with_tbx.md',
   'toolbox_troubleshooting.md',                      # TODO: review and update
   'intro_webapp.md',                                 # reviewed for 07/09 push. TODO: interpreting a flower plot
