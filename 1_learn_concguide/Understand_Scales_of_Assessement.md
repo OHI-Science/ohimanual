@@ -1,11 +1,9 @@
-## **Understand the scales of assessment**
+#  The Global assessment and your OHI+
+
+> By conducting a OHI+ study, you will be developing an Independent Ocean Health Index at a regional scale. Most OHI+ assessments take place at subnational scales (states, provinces, municipalities) and then are aggregated at a national scale. However, you can implement the OHI methodology at any scale from global, to transboundary regions, to subnational areas.
 
 ![Scores are calculated for each region and combined to produce a total score for the study area. Data or indicators are required for every region.](https://docs.google.com/drawings/d/1RsamVf-p5nSUS8_w--uU5I2717tqMPlhc3JEbW8Rvkg/pub?w=677&h=446)
 <!---edit this image--->
-
-### The Global assessment and your OHI+
-
-> By conducting a study, you will be developing an Ocean Health Index Independent Assessment (OHI+) at a regional scale. Most OHI+ assessments take place at subnational scales (states, provinces, municipalities) and then are aggregated at a national scale. However, you can implement the OHI methodology at any scale from global, to transboundary regions, to subnational areas.
 
 OHI+ assessments are conducted by independent groups such as yours that use the Index framework to measure ocean health in their own regions, countries, states, and communities. Your OHI+ assessment is different from the Global Assessments because they are meant to fit your local context. The purpose of conducting these independent assessments is that they be used by managers in your area to incorporate information and priorities at the spatial scale where policy and management decisions are made.
 
@@ -13,7 +11,7 @@ The Index framework remains consistent at different scales. Whether at the globa
 
 > In the Global Assessments the **study area** is the world and the **regions** assessed are two hundred twenty coastal countries or territories, Antartica, and the fifteen regions of the High Seas in an even more recent study. At the global scale, the regions are defined by internationally recognized Exclusive Economic Zones. Global assessments are conducted by a multidisciplinary team of scientists led by the U.S. National Center for Ecological Assessment and Synthesis (NCEAS), Conservation International, and the Seas Around Us Project. These studies are published annually and use models developed using the best existing data available at the global scale to capture each goal philosophy (which will be described in later sections of this phase).
 
-#### Comparing Scales of Assessment
+## Comparing Scales of Assessment
 
 > The overarching OHI framework should guide your efforts, but you should determine the data, models, and other inputs that go into your assessment in order to make it more relevant to management in the local context.
 
