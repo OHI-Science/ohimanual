@@ -24,10 +24,10 @@ in_md = c(
   # '~/github/ohimanual/3_conduct_manual/conduct_assessment.md',
   # '~/github/ohimanual/3_conduct_manual/before_conduct_assessment.md',
 
-
+  'Intro_framework.md',
   'Understand_Scales_of_Assessement.md',
   'Determine_the_Need_and_Purpose.md',
-  'Why_ten_goals.md',
+  #'Why_ten_goals.md',
   'How_Are_Goals_Weighted.md',
   'How_Is_The_Index_Calculated.md',
   'Reference_Points.md',
