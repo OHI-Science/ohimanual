@@ -1,6 +1,6 @@
-## Overview of the OHI+ WebApp
+# Overview of the OHI+ WebApp
 
->**OHI+ WebApps** are websites created to facilitate independent assessments, and one is available for nearly every coastal nation or territory. WebApps are fully customizable and display key information relevant to your assessment: input data layers, output scores, and maps. Each WebApp comes preloaded with each country's data used for the Global Assessment, which is divided at subnational (e.g. states, provinces, regions, etc.). Do notice that the default information in the WebApps is for demonstration purposes only. Only after you conduct your independent assessment, you will be able to use your WebApp to help inform decision-making.
+>**OHI+ WebApps** are websites created to facilitate independent assessments, and one can be provided for nearly every coastal nation or territory. WebApps are fully customizable and display key information relevant to your assessment: input data layers, output scores, and maps. Each WebApp comes preloaded with each country's data used for the Global Assessment, which is divided at subnational (e.g. states, provinces, regions, etc.). Do notice that the default information in the WebApps is for demonstration purposes only. Only after you conduct your independent assessment, you will be able to use your WebApp to help inform decision-making.
 
 When using the WebApp, you can conduct a preliminary assessment and use the built-in functions to compare input layers,  output scores, and change data display options. You will return to the WebApp at the end of the OHI+ process when your team has finalized the calculation methods.
 
