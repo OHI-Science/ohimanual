@@ -51,12 +51,12 @@ For OHI+, the most helpful comparison is temporal comparison. Management goals a
 
 A: Yes you can use more years of data if available. But 5 years is a good compromise between scientific validity and meaningulness for local stakeholders. On one hand, we have to do it scientifically vigorous with a solid reference. But on the other hand, a 5-yr trend is more helpful and actionable to stakeholders than a 30-yr trend.
 
-**Q: Is OHI an internatinally recognized mointoring system? What other partnership does OHI have?**
+**Q: Is OHI an internationally recognized monitoring system? What other partnership does OHI have?**
 
 A: OHI is gaining recognition from world governance organizations, NGOs, and local governments. There is only limited amount of funds for conservation. If we work together, we can reach maximum return on investment. We partner with UCSB, who is on the scientific frontier. They innovate science and technology, develop toolbox, fill data gap, and provide technical support for local OHI assessments. Conservation International focuses on external partnerships. CI is always looking at multilateral agreements. Some of our active partnerships include:
 
 - The United Nation. Many countries follow UN leads.
-- World Bank and The Nature Conservancy, who has good research on economics, and is interested in incorportating OHI in their monitoring systems that are already in place.
+- World Bank and The Nature Conservancy, who has good research on economics, and is interested in incorporating OHI in their monitoring systems that are already in place.
 - World Wildlife Fund, who is interested in using OHI in all of their 14 global sites.
 - Clinton Climate Initiative.
 
@@ -108,22 +108,16 @@ A: All goals using spatial data could potentially require a GIS analyst. These g
 
 A: A lot of deliberation went into defining the ten goals, and they seem to do a pretty good job of covering many if not most ocean uses, so additional goals may not be necessary. But it could be that they eclipse or replace an existing goal.
 
-## Reference points
-
-**Q: Can planning targets can be used as the reference points?**
-
-A: Yes, planning targets can be used as reference points. This won't be appropriate for every goal, but there are cases where this seemed best (example: iconic species sub-goal in the global assessment, mariculture sub-goal in the US West Coast assessment).
-
 
 **Q: What is sector evenness?**
 
-A: Sector evenness (also called a diversity index) is an economic concept that is included in OHI to enable comparison across many different sectors included in the Livelihoods & Economies goal. This goal evaluates jobs, wages and revenues for nine marine employment sectors. The distribution of employment across these nine sectors is an effective indicator of resilience. If total employment within a community is primarily based in one or two sectors, the overall economic system will be excessively vulnerable to downturns in those sectors.  Conversely, if employment is spread relatively evenly throughout all nine sectors, the overall system will be more robust and resistant to such disturbances. Overall revenue within the community will remain more stable during such downturns, and workers displaced by a downturn in their sector may be able to find employment in another sector without leaving the community.
+A: Sector evenness (also called a diversity index) is an economic concept that is included in OHI to enable comparison across many different sectors included in the Livelihoods & Economies goal. This goal evaluates jobs, wages and revenues for nine marine employment sectors. The distribution of employment across these nine sectors is an effective indicator of resilience. If total employment within a community is primarily based in one or two sectors, the overall economic system will be excessively vulnerable to downturns in those sectors.  Conversely, if employment is spread relatively evenly throughout all nine sectors, the overall system will be more robust and resistant to such disturbances. Overall revenue within the community will remain more stable during such downturns, and workers displaced by a downturn in their sector may be able to find employment in another sector without leaving the community. Sector evenness was used as a resilience measure for Livelihood & Economies goal.
 
 ## Appropriate data layers
 
-**Q: Shipping and port activity are hardly affected by the health of the ecosystem. Why are these included in the Index?**
+<!-- **Q: Shipping and port activity are hardly affected by the health of the ecosystem. Why are these included in the Index?**
 
-A: Shipping and port activity are included as pressures only
+A: Shipping and port activity are included as pressures only -->
 
 
 **Q: Can oil spills be included in OHI?**
@@ -136,7 +130,7 @@ A: Yes, oil spills could be included as a pressure and in the Clean Waters goal.
 A: No, sea ice only includes permanent sea ice.
 
 
-**Q: Can seaweeds be included in the Carbon Storage goal?**
+<!-- **Q: Can seaweeds be included in the Carbon Storage goal?**
 
 A: Because they store carbon for less than 100 years, seaweeds and corals are not included in the carbon storage goal. While the pelagic oceanic carbon sink (phytoplankton) plays a large role in the sequestration of anthropogenic carbon, the pelagic ocean mechanisms are not amenable to local or regional management intervention. Phytoplankton and contribute to carbon fixation when they die and sink to the sea bottom at sufficient depth, because it is effectively out of circulation. However, if those phytoplankton are eaten, the carbon is cycled back into the system and not sequestered. Something that could potentially be included in the carbon storage goal is mollusc shells, if they are added to a landfill and not recycled in the sea. So if information on mariculture production and waste disposal are available, this could be an interesting addition to carbon storage at a regional scale.
 
@@ -144,7 +138,7 @@ A: Because they store carbon for less than 100 years, seaweeds and corals are no
 **Q: Is coastal engineering included in Coastal Protection? What if it reduces erosion?**
 
 A: We did not include an assessment of the protection afforded by  man-made structures, such as jetties and seawalls, because these structures cannot be preserved without maintenance, may have other negative side effects (e.g. alter sedimentation rates causing erosion in new locations), thus they do not constitute long-term sustainable services.
-Coastal engineering (jetties, harbours, marina and breakwater) is not natural, and is mostly seen as a pressure. It will also be evident in the status of due to decreased natural habitat. It gets tricky when structures are built to help reduce coastal erosion--they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied.
+Coastal engineering (jetties, harbours, marina and breakwater) is not natural, and is mostly seen as a pressure. It will also be evident in the status of due to decreased natural habitat. It gets tricky when structures are built to help reduce coastal erosion--they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied. -->
 
 
 **Q: How is seawater used for cooling on-shore power plants incorporated into OHI?**
@@ -163,9 +157,10 @@ It depends. Energy could be part of a **Natural Products** goal, for instance, s
 
 <!---From Baltic Discussion 2015--->
 
+<!-- incorporated into practical_goals:
 ## Food Provision
 
-**Q: Could the culture of marine fish in closed pools on-shore be included in the Mariculture sub-goal?**
+ **Q: Could the culture of marine fish in closed pools on-shore be included in the Mariculture sub-goal?**
 
 A: This should not be included because onshore aquaculture does not require a marine environment.
 
@@ -179,7 +174,6 @@ Natural Products
 **Q: If natural products are all produced through on-land aquaculture, should this goal be removed?**
 
 A: In this case you would probably have good reason to exclude the natural product goal due if this was defendable through discussions with experts and any reports/papers on the topic. This would also depend on the origin of these natural products--are they from the region’s waters?
-Habitat-based goals
 
 
 **Q: I have fish that are used as feed for other fish (e.g., sprat) in my country. Can I include them in this goal?
@@ -229,7 +223,7 @@ A: In the global assessments, Natural Products data come from the UN’s Food an
 
 **Q: Can species and iconic species model scores be penalized if there are local flagship species that have not been evaluated?**
 
-Global data are based on IUCN assessments. For these evaluations, IUCN chooses a taxon (e.g. sharks) and a group of world experts assess it comprehensively. Locally identified species identified in a regional assessment may not be in the IUCN database because they do not belong to one of the taxa that have been selected for assessment, or because the experts that did the assessment did not know that information existed. In either case, there is no connection between what IUCN reports and what assessments are done locally. Therefore, it might not be fair to penalize a study area for missing species. For biodiversity, it is unrealistic to expect that all species are assessed, so it seems unfair to penalize for unassessed species. In the fisheries goal, there are penalties for species that are exploited but not assessed, because if there are landings data, it means they are somewhat measurable, and so it is reasonable to expect they should be at least monitored.
+Global data are based on IUCN assessments. For these evaluations, IUCN chooses a taxon (e.g. sharks) and a group of world experts assess it comprehensively. Locally identified species identified in a regional assessment may not be in the IUCN database because they do not belong to one of the taxa that have been selected for assessment, or because the experts that did the assessment did not know that information existed. In either case, there is no connection between what IUCN reports and what assessments are done locally. Therefore, it might not be fair to penalize a study area for missing species. For biodiversity, it is unrealistic to expect that all species are assessed, so it seems unfair to penalize for un-assessed species. In the fisheries goal, there are penalties for species that are exploited but not assessed, because if there are landings data, it means they are somewhat measurable, and so it is reasonable to expect they should be at least monitored.
 
 It might be reasonable to penalize unassessed iconic species. It is a smaller list of species that are specifically identified as being of interest, for one reason or other. This would work for species that have some form of assessment - unless that information already exists, it might be unrealistic to try to produce the data layer required to develop a new model.
 
@@ -259,4 +253,4 @@ A: It is likely that the pressures matrix will not need to be changed. The weigh
 
 **Q: How is commercial high and low bycatch calculated?**
 
-A: Commercial high and low bycatch are categorical values that were set based on fishing gear type. This began as a list of gear types used, producing a range of potential bycatch frequencies (from local reports when possible), which can be rescaled.
+A: Commercial high and low bycatch are categorical values that were set based on fishing gear type. This began as a list of gear types used, producing a range of potential bycatch frequencies (from local reports when possible), which can be rescaled.-->
