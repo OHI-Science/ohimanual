@@ -168,7 +168,6 @@ In the `preindex_fuction`, you could specify variables such as _status_year_ and
 
 ![A screenshot of `goals.csv`, used to modify goal model](https://docs.google.com/drawings/d/1o2wtJ9KCPDyGPH9Y4unmALG6BlxX9lmJ_PakDDiQrLo/pub?w=700&h=524)
 
-#### Calculate overall OHI Index Scores
 
 
 <!-- eventually we want a score for each region. to do so, we group the data by region, with group_by, by rgn_id (show new data table grouped by region)
