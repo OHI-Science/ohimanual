@@ -76,7 +76,7 @@ system('cd ~/github/ohi-science.github.io; git checkout dev; git pull')
 
 ## identify and copy ten current goal files
 goal_files = list.files(wd, '^practical_[A-Z][A-Z].md')
-file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/goals')
+file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/themes/OHI/goals')
 
 ## commit and push to dev branch: ohi-science.github.io
 system('cd ~/github/ohi-science.github.io; git pull; git add -A; git commit -m "copied goal files .md"; git push')
