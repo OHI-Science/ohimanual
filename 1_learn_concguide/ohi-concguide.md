@@ -46,7 +46,7 @@ OHI+ assessments are conducted by independent groups such as yours that use the 
 
 The Index framework remains consistent at different scales. Whether at the global level, as in the Global Assessments, or at your more local level, the goal scores are calculated at the scale of the reporting unit, or **region**, and scores are then combined using a weighted average to produce the score for the overall area assessed, called the **study area**.
 
-> In the Global Assessments the **study area** is the world and the **regions** assessed are two hundred twenty coastal countries or territories, Antartica, and the fifteen regions of the High Seas in an even more recent study. At the global scale, the regions are defined by internationally recognized Exclusive Economic Zones. Global assessments are conducted by a multidisciplinary team of scientists led by the U.S. National Center for Ecological Assessment and Synthesis (NCEAS), Conservation International, and the Seas Around Us Project. These studies are published annually and use models developed using the best existing data available at the global scale to capture each goal philosophy (which will be described in later sections of this phase).
+In the Global Assessments the **study area** is the world and the **regions** assessed are two hundred twenty coastal countries or territories, Antartica, and the fifteen regions of the High Seas in an even more recent study. At the global scale, the regions are defined by internationally recognized Exclusive Economic Zones. Global assessments are conducted by a multidisciplinary team of scientists led by the U.S. National Center for Ecological Assessment and Synthesis (NCEAS), Conservation International, and the Seas Around Us Project. These studies are published annually and use models developed using the best existing data available at the global scale to capture each goal philosophy (which will be described in later sections of this phase).
 
 ## Comparing Scales of Assessment
 
@@ -69,7 +69,7 @@ Assessments provide an opportunity to put in place a multi-stakeholder collabora
 
 On the technical side, the process is also valuable because it allows the users to synthesize collections of data, scientific findings, and management efforts. An important theme throughout this process it to find metrics that are meaningful your area.
 
-## Choose the study area and set boundaries
+## Choose the study area and set boundaries 
 
 Carefully choosing the study area and the regions to evaluate in the assessment certainly plays an important role in defining the purpose of the study. When defining the spatial scales of the assessment, consider the following: Will your regions match the scales of decision-making, will they match biogeography, or will they try to fit both? Will this require new data, or will it require involvement and the collaboration of neighboring countries? 
 
