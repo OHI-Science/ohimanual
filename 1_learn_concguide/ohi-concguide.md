@@ -2,22 +2,53 @@
 title: The Ocean Health Index Learn Phase
 ---
 
-## **Understand the scales of assessment**
+# The OHI Framework and Toolbox
+
+> The Ocean Health Index (OHI) is the first assessment framework that provides a common platform for scientifically combining and comparing all key elements from all dimensions of the ocean (ecological, social, economic, and physical) to measure how sustainably people are using ocean and coastal resources. In the OHI framework **a healthy ocean is one that sustainably delivers a range of benefits to people now and in the future.**
+
+The OHI framework assesses ocean health by measuring a suite of key social, economic, and environmental benefits a healthy oceans provides, called "goals". By analyzing these goals together and scoring them from 0-100, OHI assessments result in a comprehensive picture of the state of the ecosystem and can be communicated to a wide range of audiences. 
+
+The Ocean Health Index is not an index of ecosystem services. In creating an inventory of all elements that are considered part of a healthy ocean under a wider definition, various categories began to evolve. The ten goals (and eight sub-goals) that make up the Index broadly capture the universal ocean benefits that people value:
+
+- [**Food Provision**](FP_Philosophy) from sustainably harvested or cultured fish stocks
+- [**Artisanal Fishing Opportunities**](AO_Philosophy) for local communities to engage in sustainable practices
+- [**Natural Products**](NP_Philosophy) that are sustainably extracted from the ocean
+- [**Carbon Storage**](CS_Philosophy) in coastal habitats
+- [**Coastal Protection**](CP_Philosophy) from inundation and erosion
+- [**Sense of Place**](SP_Philosophy) from culturally valued iconic species, habitats, and landscapes
+- [**Livelihoods and Economies**](LE_Philosophy) from coastal and ocean-dependent communities
+- [**Tourism and Recreation**](TR_Philosophy) opportunities
+- [**Clean Waters**](CW_Philosophy) and beaches for aesthetic and health values
+- [**Biodiversity**](BIO_Philosophy) of species and habitats
+
+## OHI Workflow
+
+The conceptual framework and technical toolbox both consists of two major parts: core and tailored. The "core" maintains the integrity and definition of Ocean Health, while the "tailored" allows flexibility of local adaptation of OHI framework. OHI+ assessments are responsible for modifying the "tailored" part of the framework and toolbox, thereby truely accommodating different scales, data availabilities, and cultural priorities. A large part of "tailoring" involves choosing and modifying goal models. While the 10 goals identified in the Index represent broadly-held public benefits globally, they might not apply to your local territories. We provide detailed instructions on how to choose and change your own goals in the [Conduct phase](/manual/). 
+
+![OHI workflow](https://docs.google.com/drawings/d/1z0UaAWaMOgqco4sdLrsqHZD3kYN6bRQYJPvj4_QeJFQ/pub?w=624&h=480)
+
+<--! The Index did not set out to have ten goals. As you may have already noticed, OHI moves away from the concepts of ocean health that only consider ecological attributes by including social, cultural, and economic dimensions. The process of reviewing literature (particularly policy documents) revealed that for many cultures ocean health often involves human dimensions: healthy communities, thriving economies, preservation of cultural habits, etc. In creating an inventory of all elements that are considered part of a healthy ocean under this wider definition, various categories began to evolve. Many components were folded into these categories (notaly ecological and social pressures and resilience measures), which when combined with the process of assessing management targets for healthy oceans, resulted in the ten goals (and eight sub-goals) that make up the Index. Regions where some goals are not relevant can (and should) be assessed based only on the remaining goals. The Index is flexible to the inclusion of different or additional goals, something we have not yet encountered but is certainly possible. 
+
+### Changing Goal Models <!---I feel this might be premature here--->
+
+In this site we provide guidelines on how to adapt goal models to available regional data, using simpler models or different proxies when necessary. However, we cannot prescribe which available regional data sets are preferred, what goal models are more appropriate, or which reference points, proxy data, and goal weights should be used. Making these decisions effectively requires involving local experts of the study area to provide opinions and direction towards an outcome most representative of ocean health in the study area. Our team can help guide you and offer technical support as you make these decisions.
+
+The Index can also accommodate additional goals if they better reflect what local communities value, although we feel that the ten goals currently defined within the Index are sufficiently broad to capture a vast majority of values. No indicator is exempt from such subjective decisions. The Index’s framework, however, requires to document and track such assumptions explicitly and thus, contrary to many other existing indices, allows for careful assessment of the sensitivity of results to such decisions. -->
+
+#  The Global assessment and your OHI+
+
+> By conducting a OHI+ study, you will be developing an Independent Ocean Health Index at a regional scale. Most OHI+ assessments take place at subnational scales (states, provinces, municipalities) and then are aggregated at a national scale. However, you can implement the OHI methodology at any scale from global, to transboundary regions, to subnational areas.
 
 ![Scores are calculated for each region and combined to produce a total score for the study area. Data or indicators are required for every region.](https://docs.google.com/drawings/d/1RsamVf-p5nSUS8_w--uU5I2717tqMPlhc3JEbW8Rvkg/pub?w=677&h=446)
 <!---edit this image--->
-
-### The Global assessment and your OHI+
-
-> By conducting a study, you will be developing an Ocean Health Index Independent Assessment (OHI+) at a regional scale. Most OHI+ assessments take place at subnational scales (states, provinces, municipalities) and then are aggregated at a national scale. However, you can implement the OHI methodology at any scale from global, to transboundary regions, to subnational areas.
 
 OHI+ assessments are conducted by independent groups such as yours that use the Index framework to measure ocean health in their own regions, countries, states, and communities. Your OHI+ assessment is different from the Global Assessments because they are meant to fit your local context. The purpose of conducting these independent assessments is that they be used by managers in your area to incorporate information and priorities at the spatial scale where policy and management decisions are made.
 
 The Index framework remains consistent at different scales. Whether at the global level, as in the Global Assessments, or at your more local level, the goal scores are calculated at the scale of the reporting unit, or **region**, and scores are then combined using a weighted average to produce the score for the overall area assessed, called the **study area**.
 
-> In the Global Assessments the **study area** is the world and the **regions** assessed are two hundred twenty coastal countries or territories, Antartica, and the fifteen regions of the High Seas in an even more recent study. At the global scale, the regions are defined by internationally recognized Exclusive Economic Zones. Global assessments are conducted by a multidisciplinary team of scientists led by the U.S. National Center for Ecological Assessment and Synthesis (NCEAS), Conservation International, and the Seas Around Us Project. These studies are published annually and use models developed using the best existing data available at the global scale to capture each goal philosophy (which will be described in later sections of this phase).
+In the Global Assessments the **study area** is the world and the **regions** assessed are two hundred twenty coastal countries or territories, Antartica, and the fifteen regions of the High Seas in an even more recent study. At the global scale, the regions are defined by internationally recognized Exclusive Economic Zones. Global assessments are conducted by a multidisciplinary team of scientists led by the U.S. National Center for Ecological Assessment and Synthesis (NCEAS), Conservation International, and the Seas Around Us Project. These studies are published annually and use models developed using the best existing data available at the global scale to capture each goal philosophy (which will be described in later sections of this phase).
 
-#### Comparing Scales of Assessment
+## Comparing Scales of Assessment
 
 > The overarching OHI framework should guide your efforts, but you should determine the data, models, and other inputs that go into your assessment in order to make it more relevant to management in the local context.
 
@@ -25,30 +56,22 @@ It is important to note that the scores from your OHI+ assessment **cannot be co
 
 > Even in the Global Assessments, the methods are improved every year by increasing the robustness of goal models, integrating new data, and recalculating the scores with the improved methods both for the current year and, retroactively, for previous years to allow for year-to-year comparisons. The scientific objectivity comes from applying the same methods and reference points to all regions equally, which also allows for valid comparison of performance across countries/territories.
 
-## Overview of the OHI+ WebApp
+# **Determine the Need and Purpose of Conducting Your OHI+ Assessment**
 
->**OHI+ WebApps** are websites created to facilitate independent assessments, and one is available for nearly every coastal nation or territory. WebApps are fully customizable and display key information relevant to your assessment: input data layers, output scores, and maps. Each WebApp comes preloaded with each country's data used for the Global Assessment, which is divided at subnational (e.g. states, provinces, regions, etc.). Do notice that the default information in the WebApps is for demonstration purposes only. Only after you conduct your independent assessment, you will be able to use your WebApp to help inform decision-making.
-
-When using the WebApp, you can conduct a preliminary assessment and use the built-in functions to compare input layers,  output scores, and change data display options. You will return to the WebApp at the end of the OHI+ process when your team has finalized the calculation methods.
-
-OHI+ WebApps will be very useful for all stages of planning your assessment. The WebApp can be used to **Learn** because it allows for exploration of how the Index works--your team and planning partners can learn what data look like, what map regions are being considered, and ultimately, your team will be able to see how all of the information gathered in your OHI+ assessment will come together. For this reason, the WebApps can be used for **Planning** because they are a communication platform for an assessment team, since information is presented in a manner that is accessible to group members of different disciplines and technical capacities. They will also be kept in mind in the **Conduct** phase, as can be used to set data gathering or goal model development priorities for your assessment. In the final **Inform** phase, the data outputs from your WebApp will be invaluable as you share your assessment’s data and calculated scores once you have finalized and formatted your data and modified goal models.  
-
-## How you will use the WebApp
-
-The WebApps are available through on the resources page. Each WebApp uses a three-letter identifier in the URL. For example, Ecuador’s WebApp ("ECU") is found at http://ohi-science.org/ecu. When first exploring a WebApp (for example, http://ohi-science.org/ecu), note that it is possible to **translate** the site into any language that Google provides using the pull-down menu at the top. This will help communication among your team and will facilitate collaboration with partners and stakeholders. You can use the OHI+ WebApp to help in the planning of your assessment in these initial phases. More importantly, however, it will be useful in the **Conduct** phase when you identify your regions and local priorities, and begin preparing your data, and documenting the decisions that are occurring throughout the process.
-
-![The WebApp start page. Note that it's possible to translate the page into your language of choice.](https://docs.google.com/drawings/d/11Gojqw0Xz4kUo_uM1Y699EKO3qN_dae0w93ICzXJ2Pg/pub?w=960&h=720)
-<!---edit this image--->
-
-> Each WebApp displays data layers, which are raw data in this case, as well as the calculated OHI scores based on information extracted from global assessments. As such, they do not provide fine-scale resolution of data for each coastal nation or territory: the scores and data on which they are based are a starting point for an assessment to be conducted by an independent group. These data can be used as a default if better data for the region do not exist, but we encourage you to replace them wherever possible.
-
-## **Determine the Need and Purpose of Conducting Your OHI+ Assessment**
-
-> Remember that producing the Index is not the end in itself--the  aim is to *achieving improved ocean health.*
+> Remember that producing the Index is not the end in itself -- the  aim is to *achieve improved ocean health.*
 
 OHI+ is applied research, aiming at solving practical problems related to ocean and coastal resource management. One of your first tasks when developing an OHI+ assessment should be to define the purpose of the study and think about how it can complement other or planned efforts of environmental management. Assessments should be conducted with clear research questions in mind--*how will the assessment help achieve improved ocean health? How will the assessment help address specific problems and needs in the study area?*
 
-Carefully choosing the study area and the regions to evaluate in the assessment certainly plays an important role in defining the purpose of the study. When defining the spatial scales of the assessment, consider the following: Will your regions match the scales of decision-making, will they match biogeography, or will they try to fit both? Will this require new data, or will it require involvement and the collaboration of neighboring countries?
+<--! copied from phase 0 text -->
+Perhaps you want to better understand ocean and coastal health in your region, or you are actively engaging in ecosystem-based management, or you are facilitating a multi-stakeholder collaborative planning and target setting process. Regardless of your reasons, you can use this site so at the end of your assessment, you will have established a baseline estimation of the status of ocean health in your study area, and use that information to determine how well you are meeting, exceeding, goal targets in certain indicators.
+
+Assessments provide an opportunity to put in place a multi-stakeholder collaborative process. In our experiences engaging with various countries around the world, the most effective assessments are those where the process of conducting the assessment was just as valuable (if not more) than the final results. This is because the assessment process serves as a forum to engage stakeholders from multiple backgrounds (scientific, civil society, government, private sector, NGOs, etc.) to discuss local preferences and priorities, understand the interactions between various activities, and collaboratively establish management targets.
+
+On the technical side, the process is also valuable because it allows the users to synthesize collections of data, scientific findings, and management efforts. An important theme throughout this process it to find metrics that are meaningful your area.
+
+## Choose the study area and set boundaries 
+
+Carefully choosing the study area and the regions to evaluate in the assessment certainly plays an important role in defining the purpose of the study. When defining the spatial scales of the assessment, consider the following: Will your regions match the scales of decision-making, will they match biogeography, or will they try to fit both? Will this require new data, or will it require involvement and the collaboration of neighboring countries? 
 
 * See [the Baltic Health Index](http://www.su.se/ostersjocentrum/english/baltic-eye/research/baltic-health-index) for an example of regional collaboration.
 
@@ -58,22 +81,12 @@ Once you have a sense of your regions of interest, you should also consider whet
 
 Defining the end-goals of the study will largely determine how goal models, data gathering, and reference points are developed to maximize the utility of the findings to inform decision-making, and is very important in ensuring a smooth and successful project with OHI+.
 
-#### Some things to consider in this step of the process:
+### Some things to consider in this step of the process:
 - Do some preliminary scoping - is this feasible in the proposed study area?
 - Begin thinking of the objectives, scope, scale, and key actors to involve in the process; this will make Phase 2 much easier to tackle
 - Understand which goals and ocean benefits are important in the proposed study area, and what threats or possible changes might be affecting the sustainable delivery of those benefits
 
 ***
-
-## Why Ten Goals? <!---rewrite this section--->
-
-The Index did not set out to have ten goals. As you may have already noticed, OHI moves away from the concepts of ocean health that only consider ecological attributes by including social, cultural, and economic dimensions. The process of reviewing literature (particularly policy documents) revealed that for many cultures ocean health often involves human dimensions: healthy communities, thriving economies, preservation of cultural habits, etc. In creating an inventory of all elements that are considered part of a healthy ocean under this wider definition, various categories began to evolve. Many components were folded into these categories (notaly ecological and social pressures and resilience measures), which when combined with the process of assessing management targets for healthy oceans, resulted in the ten goals (and eight sub-goals) that make up the Index. Regions where some goals are not relevant can (and should) be assessed based only on the remaining goals. The Index is flexible to the inclusion of different or additional goals, something we have not yet encountered but is certainly possible.
-
-### Changing Goal Models <!---I feel this might be premature here--->
-
-In this site we provide guidelines on how to adapt goal models to available regional data, using simpler models or different proxies when necessary. However, we cannot prescribe which available regional data sets are preferred, what goal models are more appropriate, or which reference points, proxy data, and goal weights should be used. Making these decisions effectively requires involving local experts of the study area to provide opinions and direction towards an outcome most representative of ocean health in the study area. Our team can help guide you and offer technical support as you make these decisions.
-
-The Index can also accommodate additional goals if they better reflect what local communities value, although we feel that the ten goals currently defined within the Index are sufficiently broad to capture a vast majority of values. No indicator is exempt from such subjective decisions. The Index’s framework, however, requires to document and track such assumptions explicitly and thus, contrary to many other existing indices, allows for careful assessment of the sensitivity of results to such decisions.
 
 ## **How are the goals weighted?**
 
@@ -185,6 +198,23 @@ The current status of each goal is determined by comparing the most recent measu
 ### Introduction to Status Philosophy Section
 
 In the next section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. In **Phase 3**, when you'll be developing context specific goal models, we introduce a more in-depth description of each goal providing an **Ideal Approach** and some considerations to **Keep in Mind**.
+
+# Overview of the OHI+ WebApp
+
+>**OHI+ WebApps** are websites created to facilitate independent assessments, and one can be provided for nearly every coastal nation or territory. WebApps are fully customizable and display key information relevant to your assessment: input data layers, output scores, and maps. Each WebApp comes preloaded with each country's data used for the Global Assessment, which is divided at subnational (e.g. states, provinces, regions, etc.). Do notice that the default information in the WebApps is for demonstration purposes only. Only after you conduct your independent assessment, you will be able to use your WebApp to help inform decision-making.
+
+When using the WebApp, you can conduct a preliminary assessment and use the built-in functions to compare input layers,  output scores, and change data display options. You will return to the WebApp at the end of the OHI+ process when your team has finalized the calculation methods.
+
+OHI+ WebApps will be very useful for all stages of planning your assessment. The WebApp can be used to **Learn** because it allows for exploration of how the Index works--your team and planning partners can learn what data look like, what map regions are being considered, and ultimately, your team will be able to see how all of the information gathered in your OHI+ assessment will come together. For this reason, the WebApps can be used for **Planning** because they are a communication platform for an assessment team, since information is presented in a manner that is accessible to group members of different disciplines and technical capacities. They will also be kept in mind in the **Conduct** phase, as can be used to set data gathering or goal model development priorities for your assessment. In the final **Inform** phase, the data outputs from your WebApp will be invaluable as you share your assessment’s data and calculated scores once you have finalized and formatted your data and modified goal models.  
+
+## How you will use the WebApp
+
+The WebApps are available through on the resources page. Each WebApp uses a three-letter identifier in the URL. For example, Ecuador’s WebApp ("ECU") is found at http://ohi-science.org/ecu. When first exploring a WebApp (for example, http://ohi-science.org/ecu), note that it is possible to **translate** the site into any language that Google provides using the pull-down menu at the top. This will help communication among your team and will facilitate collaboration with partners and stakeholders. You can use the OHI+ WebApp to help in the planning of your assessment in these initial phases. More importantly, however, it will be useful in the **Conduct** phase when you identify your regions and local priorities, and begin preparing your data, and documenting the decisions that are occurring throughout the process.
+
+![The WebApp start page. Note that it's possible to translate the page into your language of choice.](https://docs.google.com/drawings/d/11Gojqw0Xz4kUo_uM1Y699EKO3qN_dae0w93ICzXJ2Pg/pub?w=960&h=720)
+<!---edit this image--->
+
+> Each WebApp displays data layers, which are raw data in this case, as well as the calculated OHI scores based on information extracted from global assessments. As such, they do not provide fine-scale resolution of data for each coastal nation or territory: the scores and data on which they are based are a starting point for an assessment to be conducted by an independent group. These data can be used as a default if better data for the region do not exist, but we encourage you to replace them wherever possible.
 
 ## **Food Provision**
 
