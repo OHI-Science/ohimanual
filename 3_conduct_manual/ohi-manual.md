@@ -1898,7 +1898,7 @@ To edit the goal equations themselves, you will edit the `goals.Rmd` found in th
 
 The scores displayed on the Scores page of the WebApp are the calculated scores from the `scores.csv` file in the draft branch, and therefore cannot be modified. However, you are able to edit the header text information at the top of the Scores page if you wish. This can be done with the file called `webapps_templates/scores.brew.md`.
 
-# Appendix 1: Developing Goal Models and Setting Reference Points
+# Appendix 1: Goal Models, Reference Points, and Pressure and Resilience
 
 Once you have determined which goals are assessed and have begun searching for data and indicators, you can start to develop goal models and set reference points. The decision tree of the data discovery process also applies here: first consider how goals can be tailored to your local context before you consider replicating what was done in the Global Assessments. It is always better to use local goal model and reference point approaches where possible. This section aims to provid you with goal-by-goal guidance on how to find data, pick indicators, set reference point, and develop the model, as well as guideline on how to think about pressure and resilience. But first, let's see some general tips before diving into the details of each goal model. 
 
@@ -3146,22 +3146,22 @@ There cannot be any white spaces in any part of the filename: instead, use under
 
 The **prefix** will be the letters identifying each goal (two letters) or sub-goal (three letters):
 
-Goal | Code | Sub-goal | Code
----- | ---- | -------- | ----
-￼Food Provision | FP | Fisheries | FIS
- | | | Mariculture | MAR
-Artisanal Fishing Opportunity | AO
-Natural Products | NP
-Coastal Protection | CP
-Carbon Storage | CS
-Livelihoods and Economies | LE | Livelihoods | LIV
- | | | Economies | ECO
-Tourism and Recreation | TR
-Sense of Place | SP | Iconic Species | ICO
- | | | Lasting Special Places | LSP
-Clean Waters | CW
-Biodiversity  | BD | Habitats | HAB  
- | | | Species | SPP
+|Goal           | Code | Subgoal   | Code |
+|---------------|------|------------|-----|
+|Food Provision                | FP   | Fisheries | FIS |
+|                              |      | Mariculture | MAR|
+|Artisanal Fishing Opportunity | AO   |             ||
+|Natural Products              | NP   |             ||
+|Coastal Protection            | CP   |             ||
+|Carbon Storage                | CS   |             ||
+|Livelihoods and Economies     | LE   | Livelihoods | LIV|
+|                              |      | Economies   | ECO|
+|Tourism and Recreation        | TR   |             ||
+|Sense of Place                | SP   | Iconic Species | ICO|
+|                              |      | Lasting Special Places | LSP|
+|Clean Waters                  | CW   |      ||
+|Biodiversity  | BD | Habitats | HAB  |
+|                              | | Species | SPP|
 
 The **layername** should be made of words or abbreviations to identify what the layer is.
 
@@ -3222,7 +3222,9 @@ This document explains what information are needed from the goal keepers in orde
 
 1.	**Goal model equation:**
 
-X_cw=∜(a*u*l*d)
+$$
+x_{CW} = \sqrt[4]{a * u * l * d}
+$$
 
 2.	**Explanation of each variable**:
 

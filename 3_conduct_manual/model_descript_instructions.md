@@ -3,7 +3,9 @@ This document explains what information are needed from the goal keepers in orde
 
 1.	**Goal model equation:**
 
-X_cw=∜(a*u*l*d)
+$$
+x_{CW} = \sqrt[4]{a * u * l * d}
+$$
 
 2.	**Explanation of each variable**:
 

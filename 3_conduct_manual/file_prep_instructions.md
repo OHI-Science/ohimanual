@@ -70,22 +70,22 @@ There cannot be any white spaces in any part of the filename: instead, use under
 
 The **prefix** will be the letters identifying each goal (two letters) or sub-goal (three letters):
 
-Goal | Code | Sub-goal | Code
----- | ---- | -------- | ----
-￼Food Provision | FP | Fisheries | FIS
- | | | Mariculture | MAR
-Artisanal Fishing Opportunity | AO
-Natural Products | NP
-Coastal Protection | CP
-Carbon Storage | CS
-Livelihoods and Economies | LE | Livelihoods | LIV
- | | | Economies | ECO
-Tourism and Recreation | TR
-Sense of Place | SP | Iconic Species | ICO
- | | | Lasting Special Places | LSP
-Clean Waters | CW
-Biodiversity  | BD | Habitats | HAB  
- | | | Species | SPP
+|Goal           | Code | Subgoal   | Code |
+|---------------|------|------------|-----|
+|Food Provision                | FP   | Fisheries | FIS |
+|                              |      | Mariculture | MAR|
+|Artisanal Fishing Opportunity | AO   |             ||
+|Natural Products              | NP   |             ||
+|Coastal Protection            | CP   |             ||
+|Carbon Storage                | CS   |             ||
+|Livelihoods and Economies     | LE   | Livelihoods | LIV|
+|                              |      | Economies   | ECO|
+|Tourism and Recreation        | TR   |             ||
+|Sense of Place                | SP   | Iconic Species | ICO|
+|                              |      | Lasting Special Places | LSP|
+|Clean Waters                  | CW   |      ||
+|Biodiversity  | BD | Habitats | HAB  |
+|                              | | Species | SPP|
 
 The **layername** should be made of words or abbreviations to identify what the layer is.
 
