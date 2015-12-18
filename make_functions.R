@@ -34,6 +34,17 @@ ohi_pdf = function(out_md) {
     output_file = paste0(pfx, '.pdf'))
 }
 
+# render docx ----
+ohi_docx = function(out_md) {
+  render(
+    out_md,
+    word_document(
+      fig_caption = T, fig_width = 7, fig_height = 5,
+      highlight='default', reference_docx='default'),
+    clean=T, quiet=F,
+    output_file = paste0(pfx, '.docx'))
+}
+
 # render html for OHI in local ohimanual repo---- 
 ohi_html_local = function(out_md) {
   render(
@@ -50,6 +61,11 @@ ohi_html_local = function(out_md) {
 
 # render html for OHI and push to ohi-science.org
 ohi_html = function(out_md, title_header, title_short) { 
+  
+  ## checkout and pull dev branch: ohi-science.github.io
+ system('cd ~/github/ohi-science.github.io; git checkout dev; git pull')
+  
+  ## render html
   render(
     out_md,
     html_document(
@@ -60,6 +76,7 @@ ohi_html = function(out_md, title_header, title_short) {
     clean=T, quiet=F,
     output_file = paste0(pfx, '-external.html'))
   
+  ## prepend required header
   cat(sprintf('---
 layout: manual
 title: %s
@@ -72,12 +89,26 @@ tagline: %s
               subtitle_header,
               format(Sys.time(), "%d %B %Y"), '%', '%'), 
       file=sprintf('~/github/ohi-science.github.io/%s/index.html', tolower(title_short)))
+  
+  ## save
   cat(
     readLines(paste0(pfx, '-external.html')),
     file=sprintf('~/github/ohi-science.github.io/%s/index.html', tolower(title_short)), append=T)
   if (title_short == 'Manual') {
-    dir.create('~/github/ohi-science.github.io/manual/fig', showWarnings=F)
-    file.copy('fig', '~/github/ohi-science.github.io/manual', overwrite=T, recursive=T)
+    dir.create(sprintf('~/github/ohi-science.github.io/%s/fig', tolower(title_short)), showWarnings=F)
+    file.copy('fig', sprintf('~/github/ohi-science.github.io/%s', tolower(title_short)), overwrite=T, recursive=T)
   }
-  system('cd ~/github/ohi-science.github.io; git pull; git add manual -A; git commit -m "update phase docs"; git push')
+  
+  ## commit and push to dev branch: ohi-science.github.io
+  system(sprintf(
+    'cd ~/github/ohi-science.github.io; 
+    git checkout dev; 
+    git pull; 
+    git add %s -A; 
+    git commit -m "updates pushed from ohimanual/make_%s.r"; 
+    git push', 
+    tolower(title_short), tolower(title_short)))
+  
+  message(sprintf('\nohi-science.org/%s was updated\n', tolower(title_short)))
+
 }

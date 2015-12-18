@@ -1,5 +1,5 @@
 ---
-title: The Ocean Health Index Conduct Phase - Assessment Manual
+title: The Ocean Health Index Conduct Phase
 ---
 
 ---
