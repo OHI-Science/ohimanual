@@ -2,19 +2,15 @@
 output: html_document
 ---
 
-In this manual, you will find all the essential information on how to complete your own independent OHI assessment. The manual should be used by _goal keepers_ (ie. experts of specific goals tasked with gathering data and developing goal models), and the _toolbox master_ (ie. technical expert(s) responsible for calculating the scores using the toolbox).  
+Welcome to the Conduct Phase of your OHI+ assessment! This manual contains all the essential information on how to complete your own independent OHI assessment. It should be used by _goal keepers_ (ie. experts tasked with gathering data and developing goal models), and the _toolbox master_ (ie. technical expert(s) responsible for calculating the scores using the Toolbox).  
 
-The first four sections will be helpful for all participants, especially the goal keepers. It contains information on the Ocean Health Index philosophy, what to expect when conducting and independent OHI+ assessment, best practices, and an introduction to the toolbox. Details on goal model development and Pressure and Resilience are housed separately in Appendix 1, which includes the meaning of the goal, reference point, ideal approach, practical guidance, and examples. Appendix 2 and 3 provides guidelines on how to report data layers and model descriptions to the toolbox master(s).
+The first four sections will be helpful for all participants. It contains information on OHI philosophy, what to expect when conducting an OHI+ assessment, best practices, and an introduction to the toolbox. Details on **goal model development and Pressure and Resilience are housed in Appendix 1**, which includes the meaning of the goal, reference point, ideal approach, practical guidance, and examples. **Appendix 2 and 3 provides guidelines on how to report data layers and model descriptions** to the toolbox master(s). In addition, **Conceptual and technical Frequently Asked Questions are included in the Appendix 6**.
 
-The remaining sections, which focuses on technical guidance on how to use the toolbox and troubleshoot, will be most useful to the toolbox master. Appendix 4 provides an example of a record-keeping spreadsheet which will be helpful for tracking progress. Appendix 5 includes tutorials on frequently used R commands in the toolbox.
-
-Conceptual and technical Frequently Asked Questions are included in the Appendix 6.
+The remaining sections focuse on technical guidance on how to use the toolbox and troubleshoot and will be most useful to the toolbox master. **Appendix 4 provides an example of a record-keeping spreadsheet** which will be helpful for tracking progress. Appendix 5 includes tutorials on frequently used R commands in the Toolbox. 
 
 # Introduction
 
 ## Where you are in the OHI+ process
-
-> At this stage, you should have **Learned** and **Planned** for your assessment, and are now ready to **Conduct** it.
 
 The OHI+ process consists of four phases. In the first phase, you **learned** about the OHI to understand the philosophy behind the goals and the motivation for conducting a study. In the second phase, you actively **planned** to conduct your OHI+ assessment. Now you will actively **conduct** the assessment by engaging with the work of finding the data, preparing the goal models, and taking the necessary steps to learn how to use the **OHI Toolbox** and related software to produce the final results. This is where the science of data discovery and goal model development comes in. In the final phase, you will **communicate** the findings and results of your assessment with others.
 
@@ -31,7 +27,7 @@ Each OHI+ assessment should have a clear purpose. One of the typical reasons for
 > The process of conducting an OHI+ assessment is as valuable as the final results. Documenting decisions made, as well as the challenges and successes encountered along the way, can lead to better understanding of the system, help inform management decisions, and guide future assessments to track changes through time.
 
 
-**When conducting an OHI+ assessment**, it is important to include information that best represents your study area, and to make science-driven decisions and clearly document what was done and why. Your team should as creative and insightful as you can be while working within the bounds of informational and technical limitations.
+When conducting an OHI+ assessment, it is important to include information that best represents your study area, and to make science-driven decisions and clearly document what was done and why. Your team should as creative and insightful as you can be while working within the bounds of informational and technical limitations.
 
 There are **key processes and considerations** that will be a part of every assessment. Every assessment should ideally build from the lessons learned of previously completed assessments and identify what local characteristics need to be included in a study. This is done partly by comparing the local situation to situations in previous assessments; it is also done by comparing the default information provided in the WebApp to what is known about local realities. After you have outlined and identified local characteristics and priorities, you should prepare to develop models, set reference points, gather information, and use the Toolbox software to analyze data and calculate scores. You will also visualize the outputs in the WebApp's maps and flower plots that can be shared with other partners and collaborators. Above all, you should be prepared to **know that this process takes time and is iterative, meaning that you often return to previous steps**.
 
