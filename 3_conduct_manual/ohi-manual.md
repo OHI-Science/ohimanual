@@ -1403,7 +1403,7 @@ This error can be fixed by updating `config.r` with a layer identifying the appr
 
 Congratulations if you've finished all goal model modifications as they are the most time-consuming part of the Index calculation process! In the goal model modification step, you've calculated goal status and trend, there are only a couple of more steps to do to calculate the overall index score, including calculating pressures and resilience.
 
-### Additional data layers to accompany the pressures and resilience matrices
+### Additional data layers for pressures and resilience calculations
 
 So far you would have prepared the pressure and resilience matrices, as well as the appropriate data layers, a few more data layers are needed to complete the calculation. They are identified in `sub-country/conf/config.R` as follows:
 
@@ -1426,8 +1426,8 @@ pressures_components  = list('NP'  = c('layer'='np_harvest_product_weight' , 'le
 `cs_habitat_extent` is calculated as `habitat_extent * rank`. Rank refers to relative contributions of each type of habitats to carbon storage. Here is an example calculation:
 
 ```
-#＃ cs_habitat_extent = Habitat extent * rank, per Carbon Storage habitat
-#＃                   = extent * contribution
+# cs_habitat_extent = Habitat extent * rank, per Carbon Storage habitat
+#                   = extent * contribution
 
 extent = layers$data[['cs_extent']] %>%
   select(rgn_id, habitat, extent = hectare)
@@ -1444,8 +1444,8 @@ result = full_join(extent, contribution, by = c('rgn_id', 'habitat')) %>%
 `cp_habitat_extent_rank` is calculated as `habitat_extent * weight`. Weight refers to relative contributions of each type of habitats to coastal protection. See this example:
 
 ```
-#＃ cp_habitat_extent_rank = Habitat extent * rank, per Coastal Protection habitat
-#＃                        = extent * weight
+# cp_habitat_extent_rank = Habitat extent * rank, per Coastal Protection habitat
+#                        = extent * weight
 
 habitat.wt = c('saltmarshes' = 3,
                'mangroves' = 4,
@@ -1467,7 +1467,7 @@ m = layers$data[['cp_extent']] %>%
 `hab_presence` is calculated on a binary basis. All regions with a habitat is assigned "1". Example:
 
 ```
-#＃ hab_presence: 1 for presence
+# hab_presence: 1 for presence
 
 m = layers$data[['hab_extent']] %>%
   group_by(rgn_id, habitat) %>%
@@ -1497,7 +1497,7 @@ write.csv(scores, 'scores.csv', na='', row.names=F)
 
 After the calculation is done, you should be able to see the compiled score sheet for all goals in all regions in `sub-country/scores.csv`.
 
-It is very likely that during the CalculateAll process you'll encounter problems and error messages. In most cases, the error messages can specify what the error is and in which step it occurs, which should be helpful for trouble shooting. Some commonly occurring errors and how to fix them can be found in the Troubleshooting section of the manual.
+It is very likely that during the CalculateAll process you'll encounter problems and see error messages. In most cases, the error messages can specify what the error is and in which step it occurs, which should be helpful for trouble shooting. Some commonly occurring errors and how to fix them can be found in the Troubleshooting section of the manual.
 
 ## Other example modifications
 
