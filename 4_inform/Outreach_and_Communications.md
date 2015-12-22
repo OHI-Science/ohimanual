@@ -1,26 +1,24 @@
-## Outreach and Communications Strategy
+# Outreach and Communications Strategy
 
-It is important to have a clear communications strategy for how you will communicate the results of your assessment to your various audiences. You will want to tailor your message and platform to your various audiences, choosing the tools that will best suit your objective or call to action for each group. In order to do this, it is helpful to revisit your stakeholders analysis and identify key messages and recommendations that are relevant to relevant to each group.
+It is important to have a clear strategy for how to communicate the results of your assessment to your various audiences. You will want to have a clear message and way to reach to your various audiences, choosing the tools that will best suit your objective or call to action for each audience. To do this, it is helpful to revisit your initial assessment plan and stakeholder analysis and identify key messages and recommendations that are relevant to each group.
 
-In terms of influencing policy change, in addition to highlighting key findings of specific geographies and goals, it is important to **provide recommendations to decision-makers and managers about interventions and policies that can help improve goal scores.**
+Your strategy will consist of both communication materials and a strategic outreach plan that details how you will distribute findings and materials.
 
-Keeping this in mind, you must then develop your communications and outreach strategy.
+In addition to highlighting key findings of specific geographies and goals, it can be important to provide interpretation of results and recommendations to decision-makers and managers so they can create policies to increase goal scores and ultimately ocean health.
 
-Your strategy will consist of both the creation of materials to communicate the findings of the assessment as well as an outreach plan that details how you will position yourself with your various audiences to gain leverage.
+## Communications Strategy
 
-### Communications Strategy
+The following materials may be useful to you:
 
-The following materials will be needed to influence decision making:
+ -	Summary of findings: findings to general audience, press, managers, and various decision-makers (via email or printed materials)
 
- -	Summary of findings: present paper findings to wider audience, press, managers, and various decision-makers
+ -	Policy paper/report/memos: interpretation and recommendations to key decision-makers, including information and knowledge gaps, priority geographies and themes, and management interventions
 
- -	Policy paper/report/memos: provide recommendations to key decision-makers. Provide clear recommendations on data and knowledge gaps, priority geographies and themes, and management interventions to address pressures and resilience
+ -	Website: broader distribution of findings and materials. Contact programs at oceanhealthindex.org to discuss options for using an OHI template
 
- -	Website: in local language(s) and English (optional). For this, we have developed an free website publisher tool for you to use. If you are interested in using this template, please contact programs@oceanhealthindex.org.
+ -	Peer-reviewed academic manuscripts
 
- -	Fact-sheets & printed materials
-
-### Outreach Strategy**
+## Outreach Strategy
 
 Examples of how to increase your presence include:
 
