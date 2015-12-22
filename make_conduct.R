@@ -63,8 +63,6 @@ pfx = tools::file_path_sans_ext(out_md)
 ## render pdf ----
 ohi_pdf(out_md)
 
-ohi_pdf('use_tbx_calculate_overall_index.md')
-
 ## render html to local ohimanual repo ----
 ohi_html_local(out_md)
 
