@@ -82,11 +82,12 @@ file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/t
 ## commit and push to dev branch: ohi-science.github.io
 system('cd ~/github/ohi-science.github.io; git pull; git add -A; git commit -m "copied goal files .md"; git push')
 
-# until ohi-science.org website is live:::
-# render html for OHI and push to ohi-science.org MASTER BRANCH
+
+## until ohi-science.org website is live::: ----
+## render html for OHI and push to ohi-science.org MASTER BRANCH
 
 ## checkout and pull dev branch: ohi-science.github.io
-system('cd ~/github/ohi-science.github.io; git checkout dev; git pull')
+system('cd ~/github/ohi-science.github.io; git checkout master; git pull')
 
 ## render html
 render(
