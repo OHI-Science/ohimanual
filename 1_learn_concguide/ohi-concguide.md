@@ -2,13 +2,13 @@
 title: The Ocean Health Index Learn Phase
 ---
 
-# The OHI Framework and Toolbox
+# Introduction
 
-> The Ocean Health Index (OHI) is the first assessment framework that provides a common platform for scientifically combining and comparing all key elements from all dimensions of the ocean (ecological, social, economic, and physical) to measure how sustainably people are using ocean and coastal resources. In the OHI framework **a healthy ocean is one that sustainably delivers a range of benefits to people now and in the future.**
+> Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources. 
 
-The OHI framework assesses ocean health by measuring a suite of key social, economic, and environmental benefits a healthy oceans provides, called "goals". By analyzing these goals together and scoring them from 0-100, OHI assessments result in a comprehensive picture of the state of the ecosystem and can be communicated to a wide range of audiences. 
+The OHI framework assesses a suite of key **social, economic, and ecological** benefits a healthy oceans provides, called "goals". By analyzing these goals together and scoring them from 0-100, OHI assessments result in a comprehensive picture of the state of the ecosystem and can be communicated to a wide range of audiences. 
 
-The Ocean Health Index is not an index of ecosystem services. In creating an inventory of all elements that are considered part of a healthy ocean under a wider definition, various categories began to evolve. The ten goals (and eight sub-goals) that make up the Index broadly capture the universal ocean benefits that people value:
+In the OHI framework **a healthy ocean is one that sustainably delivers a range of benefits to people now and in the future.** The Ocean Health Index is not an index of ecosystem services. In creating an inventory of all elements that are considered part of a healthy ocean under a wider definition, various categories began to evolve. The ten goals (and eight sub-goals) that are commonly included in an Index broadly capture the universal ocean benefits: 
 
 - [**Food Provision**](FP_Philosophy) from sustainably harvested or cultured fish stocks
 - [**Artisanal Fishing Opportunities**](AO_Philosophy) for local communities to engage in sustainable practices
@@ -21,19 +21,22 @@ The Ocean Health Index is not an index of ecosystem services. In creating an inv
 - [**Clean Waters**](CW_Philosophy) and beaches for aesthetic and health values
 - [**Biodiversity**](BIO_Philosophy) of species and habitats
 
+This frameowrk was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framwork to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow. 
+
 ## OHI Workflow
 
-The conceptual framework and technical toolbox both consists of two major parts: core and tailored. The "core" maintains the integrity and definition of Ocean Health, while the "tailored" allows flexibility of local adaptation of OHI framework. OHI+ assessments are responsible for modifying the "tailored" part of the framework and toolbox, thereby truely accommodating different scales, data availabilities, and cultural priorities. A large part of "tailoring" involves choosing and modifying goal models. While the 10 goals identified in the Index represent broadly-held public benefits globally, they might not apply to your local territories. We provide detailed instructions on how to choose and change your own goals in the [Conduct phase](/manual/). 
+The conceptual framework and technical toolbox both consists of two major parts: core and tailored. The "core" maintains the integrity of Ocean Health and determines how Index scores are calculated, while the "tailored" allows flexibility and accommodates different scales, data availabilities, and cultural priorities. 
 
 ![OHI workflow](https://docs.google.com/drawings/d/1z0UaAWaMOgqco4sdLrsqHZD3kYN6bRQYJPvj4_QeJFQ/pub?w=624&h=480)
 
-<--! The Index did not set out to have ten goals. As you may have already noticed, OHI moves away from the concepts of ocean health that only consider ecological attributes by including social, cultural, and economic dimensions. The process of reviewing literature (particularly policy documents) revealed that for many cultures ocean health often involves human dimensions: healthy communities, thriving economies, preservation of cultural habits, etc. In creating an inventory of all elements that are considered part of a healthy ocean under this wider definition, various categories began to evolve. Many components were folded into these categories (notaly ecological and social pressures and resilience measures), which when combined with the process of assessing management targets for healthy oceans, resulted in the ten goals (and eight sub-goals) that make up the Index. Regions where some goals are not relevant can (and should) be assessed based only on the remaining goals. The Index is flexible to the inclusion of different or additional goals, something we have not yet encountered but is certainly possible. 
+OHI+ teams are responsible for modifying the "tailored" part of the framework and toolbox, thereby truely ensuring local adaptation. Besides incorporating local data, a large part of _tailoring_ involves choosing and modifying goal models. While the 10 goals identified in the Index represent broadly-held public benefits globally, they might not apply to your local territories. We provide detailed instructions on how to choose and change your own goals in the [Conduct phase](/manual/). 
 
-### Changing Goal Models <!---I feel this might be premature here--->
+## Outcomes of an OHI+ assessment
 
-In this site we provide guidelines on how to adapt goal models to available regional data, using simpler models or different proxies when necessary. However, we cannot prescribe which available regional data sets are preferred, what goal models are more appropriate, or which reference points, proxy data, and goal weights should be used. Making these decisions effectively requires involving local experts of the study area to provide opinions and direction towards an outcome most representative of ocean health in the study area. Our team can help guide you and offer technical support as you make these decisions.
+Your completed assessment will produce OHI scores for each goal for every region in your study area, and scores within the assessment can be compared with each other. The scores will be represented in familiar flower plots. These scores will not be quantitatively comparable to those of other OHI assessments because they differ in the underlying inputs, goal models, and reference points.
 
-The Index can also accommodate additional goals if they better reflect what local communities value, although we feel that the ten goals currently defined within the Index are sufficiently broad to capture a vast majority of values. No indicator is exempt from such subjective decisions. The Index’s framework, however, requires to document and track such assumptions explicitly and thus, contrary to many other existing indices, allows for careful assessment of the sensitivity of results to such decisions. -->
+
+## What support we provide 
 
 #  The Global assessment and your OHI+
 
@@ -54,7 +57,7 @@ In the Global Assessments the **study area** is the world and the **regions** as
 
 It is important to note that the scores from your OHI+ assessment **cannot be compared directly to the scores from Global Assessments or other independent assessments**. Since your goal choices, goal models, and input data and parameters will differ from those employed globally, your methods will be unique to your area, meaning the scores cannot be quantitatively compared. However, you can compare the scores for the same assessment area through time and make truly quantitative comparisons. Understanding this should allow you to be creative as you develop your plans going into your assessment. Nevertheless, it is possible to make qualitative comparisons. For example, although methods may differ between two independent assessments, it is possible to say that *country X* with a score of 80 is closer to its management targets than *country Y* with a score of 65.
 
-> Even in the Global Assessments, the methods are improved every year by increasing the robustness of goal models, integrating new data, and recalculating the scores with the improved methods both for the current year and, retroactively, for previous years to allow for year-to-year comparisons. The scientific objectivity comes from applying the same methods and reference points to all regions equally, which also allows for valid comparison of performance across countries/territories.
+<!-- > Even in the Global Assessments, the methods are improved every year by increasing the robustness of goal models, integrating new data, and recalculating the scores with the improved methods both for the current year and, retroactively, for previous years to allow for year-to-year comparisons. The scientific objectivity comes from applying the same methods and reference points to all regions equally, which also allows for valid comparison of performance across countries/territories. -->
 
 # **Determine the Need and Purpose of Conducting Your OHI+ Assessment**
 
@@ -69,7 +72,7 @@ Assessments provide an opportunity to put in place a multi-stakeholder collabora
 
 On the technical side, the process is also valuable because it allows the users to synthesize collections of data, scientific findings, and management efforts. An important theme throughout this process it to find metrics that are meaningful your area.
 
-## Choose the study area and set boundaries 
+## Choose the study area and set boundaries
 
 Carefully choosing the study area and the regions to evaluate in the assessment certainly plays an important role in defining the purpose of the study. When defining the spatial scales of the assessment, consider the following: Will your regions match the scales of decision-making, will they match biogeography, or will they try to fit both? Will this require new data, or will it require involvement and the collaboration of neighboring countries? 
 

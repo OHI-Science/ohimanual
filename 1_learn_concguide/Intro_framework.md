@@ -1,6 +1,6 @@
 # Introduction
 
-> Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean (ecological, social, economic, and physical) to measure how sustainably people are using ocean and coastal resources. 
+> Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources. 
 
 The OHI framework assesses a suite of key **social, economic, and ecological** benefits a healthy oceans provides, called "goals". By analyzing these goals together and scoring them from 0-100, OHI assessments result in a comprehensive picture of the state of the ecosystem and can be communicated to a wide range of audiences. 
 
