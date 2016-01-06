@@ -133,8 +133,13 @@ Regions must be unique (non-overlapping), and boundaries must be drawn offshore,
 5. To produce the borders between the regions
 ![image](https://docs.google.com/drawings/d/17qXZ8Ah6WPYhP1_RQOsIA5gHBNlP8mGAFcDIxkizM58/pub?w=960&h=720)
 
+## Buffers
 
-### Updating the map in your WebApp
+When drawing your regions, it is also a good idea to create _inland and offshore_ buffers that will be used to extract data in your assessment. Buffers are not necessary for display in the WebApp but they will be important for later layer preparation. For example, the global assessment used coastal population information, and raster data were available for entire countries. This meant that 'coastal' had to be defined: for global assessments it was defined as 25 miles from the coast. To extract just the coastal population from the population raster file, we created a 25 mile inland buffer for each reporting region. But to extract mangrove data for each region from raster files, global assessments used 1km inland and 1km offshore as the buffer.  
+
+At this point, you may not know which buffers you will need, as they depend on the data available, your goal models and definitions. Some buffers used in the global assessments were 1km inland, 25miles inland, 1km offshore, 3nm offshore.
+
+## Updating the map in your WebApp
 
 **Once you have created your boundaries with GIS software, you will need to send them to us.** Please send us a .zip file of all files produced. Files with the following extensions are required (but you can send all files):
 
@@ -158,12 +163,6 @@ prj = projection information
 not sure what shx is....
 So I am guessing that is all that is really needed.--->
 
-### Buffers
-
-When drawing your regions, it is also a good idea to create inland and offshore buffers that will be used to extract data in your assessment. Buffers are not necessary for display in the WebApp but they will be important for later layer preparation. For example, the global assessment used coastal population information, and raster data were available for entire countries. This meant that 'coastal' had to be defined: for global assessments it was defined as 25 miles from the coast. To extract just the coastal population from the population raster file, we created a 25 mile inland buffer for each reporting region. But to extract mangrove data for each region from raster files, global assessments used 1km inland and 1km offshore as the buffer.  
-
-At this point, you may not know which buffers you will need, as they depend on the data available, your goal models and definitions. Some buffers used in the global assessments were 1km inland, 25miles inland, 1km offshore, 3nm offshore.
-
 # Discovering and gathering input information
 
 A hallmark of the OHI is that it uses freely-available existing information (data and indicators) to create the models that capture the philosophies of individual goals. The quality of the inputs are important because calculated Index scores area only as good ad the inputs on which they are based. Assembling the appropriate input information, which means both discovering and gathering data and indicators, is an important part of any OHI assessment.
@@ -171,8 +170,6 @@ A hallmark of the OHI is that it uses freely-available existing information (dat
 Once your team has tailored the OHI framework appropriately for your study area and identified the information that ideally would be included, the data discovery and gathering process can begin. There are many decisions to make when deciding which data are available and appropriate to include in your assessment. Finding appropriate data requires problem-solving abilities and creativity, particularly when ideal data are unavailable. You will need input information to calculate status models as well as pressures and resilience.  
 
 ## Thinking creatively
-
->  Remember that you are trying to capture information that is meaningful for ocean health.
 
 Humans interact with and depend upon the oceans in complex ways, some of which are easy to measure and others of which are harder to define. More familiar measurements include providing seafood, or disposing of waste. A less familiar measurement is how marine-related jobs affect coastal communities, or how different people receive or perceive benefits simply from living near the ocean. Thinking creatively and exploring the information available can make your assessment more representative of reality.
 
@@ -214,14 +211,10 @@ Understanding how the data or indicators were collected or created is important.
 
 Most data will need to be scaled to a reference point. As you consider different data sources it is important to think about or identify what a reasonable reference point may be. Ask the following types of questions as you explore data possibilities:  
 
-* Has past research identified potential targets for these data?
-  * For example, fisheries goal require a Maximum Sustainable Yield  (MSY).
-* Have policy targets been set regarding these data?
-  * For example, maximum levels of pollutants allowed in beaches.
-* Would a historic reference point be an appropriate target?
-   * For example, the percent of habitat coverage before coastal development took place.
-* Could a region within the study area be set as a spatial reference point?
-  * For example, a certain region is regarded as the leader in creating protected areas.
+* Has past research identified potential targets for these data? _For example, fisheries goal require a Maximum Sustainable Yield  (MSY)._
+* Have policy targets been set regarding these data? _For example, maximum levels of pollutants allowed in beaches._
+* Would a historic reference point be an appropriate target? _For example, the percent of habitat coverage before coastal development took place._
+* Could a region within the study area be set as a spatial reference point? _For example, a certain region is regarded as the leader in creating protected areas._
 
 ### Appropriate spatial scale
 
@@ -2012,7 +2005,7 @@ People value biodiversity in particular for its existence value. The risk of spe
 #### Sub-goal: Species
 This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.
 
-> Data for this goal is also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
+> Data for this goal are also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
 
 **_Ideal Approach_**
 
@@ -3120,7 +3113,9 @@ An example of a data file is `ao_access_gl2014.csv`:
 3,0.555771907253878
 4,0.555771907253878
 ```
+
 An example of a data file is `hab_extent_gl2014.csv`:
+
 ```
 "rgn_id","habitat","km2"
 1,"coral",261.102
