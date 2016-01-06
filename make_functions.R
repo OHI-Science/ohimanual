@@ -22,6 +22,7 @@ cat_md = function(
 
 # render pdf for OHI----
 ohi_pdf = function(out_md) {
+  cat('creating .pdf file...\n')
   render(
     out_md,
     pdf_document(
@@ -36,6 +37,7 @@ ohi_pdf = function(out_md) {
 
 # render docx ----
 ohi_docx = function(out_md) {
+  cat('creating .doc file...\n')
   render(
     out_md,
     word_document(
@@ -47,6 +49,7 @@ ohi_docx = function(out_md) {
 
 # render html for OHI in local ohimanual repo---- 
 ohi_html_local = function(out_md) {
+  cat('creating local .html file...\n')
   render(
     out_md,
     html_document(
@@ -61,6 +64,7 @@ ohi_html_local = function(out_md) {
 
 # render html for OHI and push to ohi-science.org
 ohi_html = function(out_md, title_header, title_short) { 
+  cat('creating ohi-science.org .html file...\n')
   
   ## checkout and pull dev branch: ohi-science.github.io
  system('cd ~/github/ohi-science.github.io; git checkout dev; git pull')
