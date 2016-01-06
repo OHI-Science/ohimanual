@@ -5,7 +5,7 @@
 source('~/github/ohimanual/make_functions.r') # rendering functions for OHI
 # also required if you get the pdflatex error: www.tug.org/mactex
 
-title_header    = 'The Ocean Health Index Learn Phase'
+title_header    = 'The Ocean Health Index - Learn Phase'
 subtitle_header = 'Conceptual Guide'
 title_short     = 'Learn'
 wd = '~/github/ohimanual/1_learn_concguide'
@@ -28,8 +28,8 @@ in_md = c(
   'Understand_Scales_of_Assessement.md',
   'Determine_the_Need_and_Purpose.md',
   #'Why_ten_goals.md',
-  'How_Are_Goals_Weighted.md',
   'How_Is_The_Index_Calculated.md',
+  'How_Are_Goals_Weighted.md',
   'Reference_Points.md',
   'Understanding_Pressures.md',
   'Understanding_Resilience.md',
