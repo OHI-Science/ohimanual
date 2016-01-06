@@ -6,8 +6,6 @@ Once your team has tailored the OHI framework appropriately for your study area 
 
 ## Thinking creatively
 
->  Remember that you are trying to capture information that is meaningful for ocean health.
-
 Humans interact with and depend upon the oceans in complex ways, some of which are easy to measure and others of which are harder to define. More familiar measurements include providing seafood, or disposing of waste. A less familiar measurement is how marine-related jobs affect coastal communities, or how different people receive or perceive benefits simply from living near the ocean. Thinking creatively and exploring the information available can make your assessment more representative of reality.
 
 Data used in OHI assessments spans a wide array of disciplines beyond oceanography and marine ecology. It is important to think creatively and beyond the interests of a specific institution or one particular field of study. Therefore, it is necessary to look beyond the most known or obvious data sources to find data relevant for the goals in the study area. Discussions with colleagues, literature searches, emails to experts, and search engines are good ways to understand what kinds of data are collected and to hunt for appropriate data. Investigate what kinds of information are available from government and public records, scientific literature, academic studies, surveys and reports etc.
@@ -48,14 +46,10 @@ Understanding how the data or indicators were collected or created is important.
 
 Most data will need to be scaled to a reference point. As you consider different data sources it is important to think about or identify what a reasonable reference point may be. Ask the following types of questions as you explore data possibilities:  
 
-* Has past research identified potential targets for these data?
-  * For example, fisheries goal require a Maximum Sustainable Yield  (MSY).
-* Have policy targets been set regarding these data?
-  * For example, maximum levels of pollutants allowed in beaches.
-* Would a historic reference point be an appropriate target?
-   * For example, the percent of habitat coverage before coastal development took place.
-* Could a region within the study area be set as a spatial reference point?
-  * For example, a certain region is regarded as the leader in creating protected areas.
+* Has past research identified potential targets for these data? _For example, fisheries goal require a Maximum Sustainable Yield  (MSY)._
+* Have policy targets been set regarding these data? _For example, maximum levels of pollutants allowed in beaches._
+* Would a historic reference point be an appropriate target? _For example, the percent of habitat coverage before coastal development took place._
+* Could a region within the study area be set as a spatial reference point? _For example, a certain region is regarded as the leader in creating protected areas._
 
 ### Appropriate spatial scale
 

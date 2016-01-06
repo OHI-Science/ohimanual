@@ -1,5 +1,5 @@
 ---
-title: The Ocean Health Index Learn Phase
+title: The Ocean Health Index - Learn Phase
 ---
 
 # Introduction
