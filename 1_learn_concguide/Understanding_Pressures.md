@@ -1,4 +1,4 @@
-## **Understanding Pressures**
+## Understanding Pressures
 
 A pressure is any kind of stressor on the social or ecological system that is harmful for ocean health, that is, those that have a negative impact on the status of the goal. Pressures represent 8.5% of the total goal score.
 

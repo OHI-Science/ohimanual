@@ -1,11 +1,11 @@
-## **Reference points**
+## Understanding Reference points
 
 To assess how well a goal is being delivered, it is necessary to identify the target to which it will be compared. This target is called the reference point. In an Ocean Health Index framework, setting the reference point enables the numeric values relevant for each goal to be scaled between 0-100 (where 100 means that the current status is equal to the target reference point, and 0 means that it is as far from the target reference point as is possible). Sharing a common range for scores makes all goal scores comparable. There are different types of reference points:
 
-* Functional relationships: a target determined by a scientifically-informed input-output relationship (an equation called a **production function**) (most recommended)
-* Temporal comparisons: a target value at some time in the past
-* Spatial comparisons: a comparison with some other location (such as the best performing region)
-* Established targets: a target established by a treaty, law, or other agreement (such as the Convention on Biological Diversity)
+* **Functional relationships**: a target determined by a scientifically-informed input-output relationship (an equation called a _production function_) (most recommended)
+* **Temporal comparisons**: a target value at some time in the past
+* **Spatial comparisons**: a comparison with some other location (such as the best performing region)
+* **Established targets**: a target established by a treaty, law, or other agreement (such as the Convention on Biological Diversity)
 
 It can be advantageous to translate a management target to a maximization or minimization problem with an objective function so that it is clear exactly how an indicator should be developed to track progress. Indeed, these choices significantly influence the evaluation of a goal’s status. For instance, a sustainable seafood management goal could be measured in terms of yields if the goal is focused on maximizing food provision or in number of jobs if the goal is focused on maximizing social and economic welfare. These two goal framings would lead to the development of different targets in terms of both yields and level of employment. Where necessary, our conceptual framework encourages the reframing of management goals to ensure that the corresponding indicators, and the units in which they are reported, accurately portray the intent of the goal as it is stated.
 

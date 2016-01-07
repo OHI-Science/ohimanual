@@ -1,4 +1,4 @@
-## **Understanding Trend**
+## Understanding Trend
 
 The trend is calculated as the slope of the change in status based on recent data. As such, the trend calculation does not model the future status, but only indicates the likely condition assuming a linear relationship. The trend represents a third (33%) of the total goal score.
 

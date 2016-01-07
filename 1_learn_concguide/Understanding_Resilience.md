@@ -1,4 +1,4 @@
-## **Understanding Resilience**
+## Understanding Resilience
 
 A resilience is any kind of measure on the social or ecological system that is beneficial for ocean health, that is, those that have a positive impact on the status of the goal. Resilience measures represent 8.5% of the total goal score.
 

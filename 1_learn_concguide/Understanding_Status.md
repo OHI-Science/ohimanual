@@ -1,4 +1,4 @@
-## **Understanding Present Status**
+## Understanding Present Status
 
 The present status component of each goal is captured through a mathematical model (a formula) that captures the philosophy of the goal in a way that produces findings that are most useful to inform decision-making at the scale of your assessment. This dimension represents half (50%) of the total goal score
 
