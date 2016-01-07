@@ -2042,6 +2042,7 @@ Yes, we can try to get into this stuff in the resilience section--> -->
 <!--
 Julie: I've deleted the rest below and rewritten it as the intro for the goal-by-goal page on ohi-science.org: https://github.com/OHI-Science/ohi-science.github.io/blob/master/revamp_copy.md
 --->
+## Understanding each goal model
 
 ### Artisanal Fishing Opportunities
 
