@@ -117,18 +117,18 @@ The other half is the **likely future state**, which is current status modified 
 
 <!-- ![In the figure, likely future state (in yellow) is the result of the trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink)](https://docs.google.com/drawings/d/1GkLZnW8hQJf1KLX89LzViEBU4PkJ8kRqOERt_Fxtwu4/pub?w=864&h=384) -->
 
-## **How are the goals weighted?**
+## How are the goals weighted?
 
 In the Global Assessment the goals are weighted equally to maintain objectivity since different countries have varying subjective preferences and priorities for weighing the goals. However, in your OHI+ assessment the weighting can be changed depending on the local context. Stakeholders may have differing priorities, but when presented with the portfolio of goals used in the Ocean Health Index, these differences can become less pronounced, as was found in a study by Halpern *et al.* (2013) in *Marine Policy*. This would require good data, of course, such as the information collected through a representatively sample survey. The process of weighing the goals is not a priority as you begin your assessment, however, it is an important feature that can help you understand how different stakeholders perceive the relative importance of various ocean attributes, which can ultimately help you identify priorities and allocate resources in a more effective way.
 
-## **Reference points**
+## Understanding Reference points
 
 To assess how well a goal is being delivered, it is necessary to identify the target to which it will be compared. This target is called the reference point. In an Ocean Health Index framework, setting the reference point enables the numeric values relevant for each goal to be scaled between 0-100 (where 100 means that the current status is equal to the target reference point, and 0 means that it is as far from the target reference point as is possible). Sharing a common range for scores makes all goal scores comparable. There are different types of reference points:
 
-* Functional relationships: a target determined by a scientifically-informed input-output relationship (an equation called a **production function**) (most recommended)
-* Temporal comparisons: a target value at some time in the past
-* Spatial comparisons: a comparison with some other location (such as the best performing region)
-* Established targets: a target established by a treaty, law, or other agreement (such as the Convention on Biological Diversity)
+* **Functional relationships**: a target determined by a scientifically-informed input-output relationship (an equation called a _production function_) (most recommended)
+* **Temporal comparisons**: a target value at some time in the past
+* **Spatial comparisons**: a comparison with some other location (such as the best performing region)
+* **Established targets**: a target established by a treaty, law, or other agreement (such as the Convention on Biological Diversity)
 
 It can be advantageous to translate a management target to a maximization or minimization problem with an objective function so that it is clear exactly how an indicator should be developed to track progress. Indeed, these choices significantly influence the evaluation of a goal’s status. For instance, a sustainable seafood management goal could be measured in terms of yields if the goal is focused on maximizing food provision or in number of jobs if the goal is focused on maximizing social and economic welfare. These two goal framings would lead to the development of different targets in terms of both yields and level of employment. Where necessary, our conceptual framework encourages the reframing of management goals to ensure that the corresponding indicators, and the units in which they are reported, accurately portray the intent of the goal as it is stated.
 
@@ -136,7 +136,7 @@ It is important to understand that setting a reference point is a conscious and 
 
 We also recommend that there is a consultative and multi-stakeholder participatory process for discussing and establishing reference points. The process for establishing reference points can be rather sensitive since they establish the optimal levels of goal benefits and determine a score of 100. Setting reference points should incorporate **SMART principles** for target setting: **S**pecific (to the management objective), **M**easurable, **A**mbitious, **R**ealistic, and **T**ime-bound (Perrings et al. 2010, 2011). For more information on identifying meaningful reference points and quantifying the current ecosystem state relative to them, refer to Samhouri et al. 2012 [Sea sick? Setting targets to assess ocean health and ecosystem services](http://www.esajournals.org/doi/pdf/10.1890/ES11-00366.1)
 
-## **Understanding Pressures**
+## Understanding Pressures
 
 A pressure is any kind of stressor on the social or ecological system that is harmful for ocean health, that is, those that have a negative impact on the status of the goal. Pressures represent 8.5% of the total goal score.
 
@@ -144,7 +144,7 @@ Pressures can change how goals interact with each other. For example, raising fi
 
 Pressures are calculated as the sum of the ecological and social pressures that negatively affect goal scores. The Index framework calculates pressures by first grouping them into five ecological categories (pollution, habitat destruction, fishing pressure, species pollution, and climate change) and one social category (governance effectiveness). The reason to pool indicators into categories is to minimize sampling bias, so that no one kind disproportionately influences the score (e.g. if one type of data is disproportionately abundant relative to another it does not imply that the abundant data is more important). They are weighted equally in the global assessment, but in your local assessment they can be changed if there is enough information on how to do so.
 
-## **Understanding Resilience**
+## Understanding Resilience
 
 A resilience is any kind of measure on the social or ecological system that is beneficial for ocean health, that is, those that have a positive impact on the status of the goal. Resilience measures represent 8.5% of the total goal score.
 
@@ -184,21 +184,21 @@ Pressures and resilience are ultimately important for scores, but they have a sm
 
  Pressures and resilience are usually summarized across ecological and social categories in order to reveal the influence of any one factor that might be present. In this way, for example, pressures from pollution, habitat destruction, fishing pressure, species pollution, and climate change will have a cumulative impact on the scores.
 
-## **Understanding Trend**
+## Understanding Trend
 
 The trend is calculated as the slope of the change in status based on recent data. As such, the trend calculation does not model the future status, but only indicates the likely condition assuming a linear relationship. The trend represents a third (33%) of the total goal score.
 
 The trend is, in most cases, calculated using the status score of the last five years. The exact number of most recent years can change depending on the data sources and availability, but the general idea is that the trend conveys the recent history of the indicator. It does this because the trend is then used to calculate the likely near-term future state and can show a reaction to policy interventions.
 
-## **Understanding Present Status**
+## Understanding Present Status
 
 The present status component of each goal is captured through a mathematical model (a formula) that captures the philosophy of the goal in a way that produces findings that are most useful to inform decision-making at the scale of your assessment. This dimension represents half (50%) of the total goal score
 
 The current status of each goal is determined by comparing the most recent measure of the goal with a goal-specific sustainable reference point. For each goal, as well as for many individual data layers, values are rescaled to reference points, or targets, which serve as benchmarks based on SMART principles: Specific (to the management goal), Measurable, Ambition, Realistic, and Time-bound (Samhouri *et al.* 2012; Perrings *et al.* 2010; 2011).
 
-### Introduction to Status Philosophy Section
+# Philosophy of Each Goal
 
-In the next section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. In **Phase 3**, when you'll be developing context specific goal models, we introduce a more in-depth description of each goal providing an **Ideal Approach** and some considerations to **Keep in Mind**.
+In this section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. In [**Conduct Phase**](/manual/#appendix-1-developing-goal-models-and-setting-reference-points), when you'll be developing context specific goal models, we introduce a more in-depth description of each goal providing an **Ideal Approach** and **Practical Guidance**.
 
 ## Food Provision
 
