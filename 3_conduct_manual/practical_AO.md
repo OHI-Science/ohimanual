@@ -2,7 +2,7 @@
 
 Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, in particular in developing nations. As opposed to large, commercial fisheries that usually involves industrial, energy-intensive vessels and long trips, artisanal fisheries refer to households, cooperatives or small firms that use relatively small amounts of capital, energy and small fishing vessels (if any), make relatively short fishing trips, and use fish mainly for local consumption or trade.
 
-In addition, this goal is not about recreational fishing often done in developed countries, which is captured in _Food Provision_ (if it provides food) and Tourism and Recreation goals. Nor is it about the actual amount of fish caught or revenue generated, which are captured by _Coastal Livelihood and Economies_. Rather, **artisanal fishing opportunities measure whether people who need to fish on a small, local scale have the opportunity to do so.** A score of 100 means the country or region is meeting the needs of artisanal fishermen or communities by implementing institutional supports, providing access to near-shore water, and maintaining the health of targeted species.
+In addition, this goal is not about recreational fishing often done in developed countries, which is captured in _Food Provision_ (if it provides food) and Tourism and Recreation goals. Nor is it about the actual amount of fish caught or revenue generated, which are captured by _Coastal Livelihood and Economies_. Rather, **artisanal fishing opportunities measure whether people who need to fish on a small, local scale have the opportunity to do so.** In other words, it measures the potential for artisanal fishing whether or not this potential is actually met.A score of 100 means the country or region is meeting the needs of artisanal fishermen or communities by implementing institutional supports, providing access to near-shore water, and maintaining the health of targeted species.
 
 **_Ideal Approach_**
 
@@ -12,7 +12,7 @@ Ideally, this goal would include some measure of of how easy or hard it is for f
 
 Ideal indicators mentioned above are often scarce, especially percent poverty or the sustainability of fishing gears. You will want to find proxy data for *access* in whatever way best suits your areas. This could be drawn from physical, economic, regulatory, or stock condition data as an indication of availability. A combination of all of these would be best to more accurately speak to the philosophy, but is is usually limited by data.
 
-> In the U.S. West Coast Assessment (2014), three metrics were used to define **Artisanal Opportunity** that you can use to study:
+For example, in the U.S. West Coast Assessment (2014), three metrics were used to define **Artisanal Opportunity** that you can use to study:
 
 <span style="font-size=0.9em">
 

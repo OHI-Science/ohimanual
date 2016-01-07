@@ -1,8 +1,6 @@
-## **Artisanal Fishing Opportunities**
+## Artisanal Fishing Opportunities
 
-> The **Artisanal Fishing Opportunties** goal shows whether people with the desire to fish on small scales have the opportunity to do so.
-
-#### Philosophy
+ > The **Artisanal Fishing Opportunties** goal shows whether people with the desire to fish on small scales have the opportunity to do so.**
 
 It is important to capture the degree to which a region permits or encourages artisanal fishing compared to the demand for such fishing opportunities, and if possible, the sustainability of artisanal fishing practices.
 
@@ -10,12 +8,8 @@ The artisanal fishing opportunities goal measures the opportunities for artisana
 
 Damaging practices are sometimes used in artisanal fishing, such as the use of cyanide or dynamite, and these are penalized in the Index calculations. Such practices also lead **Artisanal Fishing Opportunities** to interact in a negative way with other goals.
 
-#### Ideal Approach
+<!-- Ideally, This goal should include some measure the degree of difficulty for people to access ocean resources when they need them, and it should assess the sustainability of harvest of all nearshore stocks used by artisanal fishing people. It will require the creative combination of different kind of data elements. -->
 
-This is one of the most cultural subjective goals in the framework, thus we recommend that local cultural and social dimensions are included when thinking about the model. This goal should include some measure the degree of difficulty for people to access ocean resources when they need them, and it should assess the sustainability of harvest of all nearshore stocks used by artisanal fishing people. It will require the creative combination of different kind of data elements.
+<!-- #### Keep in Mind
 
-#### Keep in Mind
-
-This goal reflects only the access people have to coastal resources, not necessarily whether they actually do fish in those waters. In other words, it measures the potential for artisanal fishing whether or not this potential is actually met. This is because this goal specifically tries to estimate whether individuals or households have the access to the sea that they need for their own survival. The status for this goal is estimated as a function of need for artisanal fishing opportunities and whether or not the opportunity is permitted or encouraged institutionally, and whether artisanal fishing could be sustainable.
-
-***
+This goal reflects only the access people have to coastal resources, not necessarily whether they actually do fish in those waters. In other words, it measures the potential for artisanal fishing whether or not this potential is actually met. This is because this goal specifically tries to estimate whether individuals or households have the access to the sea that they need for their own survival. The status for this goal is estimated as a function of need for artisanal fishing opportunities and whether or not the opportunity is permitted or encouraged institutionally, and whether artisanal fishing could be sustainable. -->
