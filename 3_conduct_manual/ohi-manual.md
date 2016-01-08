@@ -256,23 +256,22 @@ There are a lot of existing data that contribute to our scientific understanding
 
 # The Ocean Health Index Toolbox
 
->In this section, you will learn the basics of how to use the OHI Toolbox to conduct your assessment. You will be introduced to files the Toolbox requires, how you will modify them, and how they interact to calculate the final output scores.
-
 **The OHI Toolbox** is an ecosystem of small files and scripts that are the tools needed to calculate OHI scores. These files and scripts are stored in two Github '*repositories*': folders that are synchronized with collaborators. The first folder is your **assessment repository** that has a three-letter code, such as *esp* for Spain or *ecu* for Ecuador. You will edit this repository with your data, goal models, and updated pressures and resilience matrix tables. The second repository is called **ohicore** and it contains core functions for combining your data and goal models to calculate OHI scores. You will not edit `ohicore`, but you are able to explore it to understand the calculations.
 
 ![Toolbox = your repo + ohicore](https://docs.google.com/drawings/d/1sXHn8zi_-XZkPDOGO1RrmhVGZcOEAHEpTfDGXYmUut8/pub?w=768&h=192)
 
-Your **tailored assessment repository** contains data input layers, configuration files, and scripts. These files are organized in the same way within a *scenario folder* called `subcountry2014`, with data layers, goal model equations, and configuration files from the global 2014 assessment. Files within the scenario folder are comma-separated-value (*.csv*) files and scripts written in the programming language *R*.
+**Your repository will be created specifically for your assessment, which requires that the spatial boundaries of your assessment area and regions are finalized for your repository to be created.** Once your spatial boundaries are finalized, please prepare spatial files following [prepared shape files](http://ohi-science.org/manual/#defining-spatial-boundaries) and request your repository by emailing info@ohi-science.org.
 
-The repository will be provided for you by our OHI science team _after_ you have planned all your goal models, identified good data, and finalized your spatial boundaries. When you request a repository, send your [prepared shapefiles](/manual/#defining-spatial-boundaries) that have the specific features described. You will not need a repository before this. Before then, it might be helpful to look at exisitng OHI+ Github repositories on the [Projects page](/projects) of our website and get familiar with their structure. 
+We recommend that you start using the repository _after_ you have planned all your goal models and identified good data to avoid preparing information or models that are ultimately excluded from your assessment. 
+
+Your **tailored assessment repository** contains data input layers, configuration files, and scripts. These files are organized in the same way within a *scenario folder* called `subcountry2014`, with data layers, goal model equations, and configuration files from the global 2014 assessment. Files within the scenario folder are comma-separated-value (*.csv*) files and scripts written in the programming language *R*.
 
 **Each OHI+ assessment repository has inputs and goal models based on the 2014 global assessment**. This means that each assessment repository isolates the information used for each region in the global assessment and stores it in a separate OHI+ assessment repository. Therefore, it can be an easy way to explore the inputs used in the global assessment for one specific place. When conducting an assessment, you will replace and modify as much of this information with local information that better represents your study area, since information reported at a national scale cannot always be attributed to its subcountry regions, as has been done in most cases in each OHI+ assessment repository. See more details in the discussion of the **layers folder**.
 
-<!---figure showing a region from the global assessment becoming a study area in a OHI+ assessment, with regions of its own. Maybe show how some data can be allocated to all OHI+ regions, and some must be downweighted?--->
 
 The Toolbox is open-source and can be downloaded and installed for free. You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. GitHub is an online platform used by the OHI that facilitates collaboration and archives past versions of all files with the author identified. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores. Instruction on how to access your assessment repository is in the `Installing the Toolbox` section.
 
-The following sections will describe the files included in the Toolbox. You will then learn what is required for  data layers for your assessment and how to change goal models.
+The following sections will describe the files included in the Toolbox. You will then learn what is required for data layers for your assessment and how to change goal models.
 
 ## File system organization
 
@@ -1695,14 +1694,14 @@ It is important to make sure you do in fact have git installed on your computer 
 
   * `$ which git` for Mac/Linux,
   * `$ where git` for Windows
-  
+
 These commands will tell you where the `git.exe` file is located. Typically it will look something like this: `/usr/local/git/bin/git` or `/usr/bin/git` or some variation of those.
 
 Once confirming the location of `git.exe` you need to tell RStudio where it is. Open up RStudio, got to Preferences and select the Git/SVN option:
 
 ![](./fig/RStudio_git_svn.png)
 
-In the Git executable area, fill in the path to your git.exe. If RStudio does not let you manually enter your path, select Browse... and navigate to the `git.exe` file. If you are not able to navigate to the file it is likely a hidden file. 
+In the Git executable area, fill in the path to your git.exe. If RStudio does not let you manually enter your path, select Browse... and navigate to the `git.exe` file. If you are not able to navigate to the file it is likely a hidden file.
 
 On a Mac, to make hidden files visible, close RStudio and do the following:
 
@@ -1736,9 +1735,26 @@ You do not want it to load `ohicore` or to save anything in your workspace. You 
   > ![](./fig/proj_op3.png)
 
 ## Errors when Using the Toolbox
-###Useful Errors when Calculating Scores
+### Useful Errors when Calculating Scores
 
   TIP: You can use the *layers* function in `calculate_scores.R` to error-check whether you have registered your files in `layers.csv` correctly or not. If you haven't, you will get an error message regarding 'missing files'. ![f you see a 'missing files' warning when running `calculate_scores.R`, it means you need to check that you filled out the information in `layers.csv` correctly.](https://docs.google.com/drawings/d/1c0xQtANDy-rd6y5MOkW7eBNZbN47vvaaMZjYiDDU_0M/pub?w=758&h=665)
+
+### Duplicate Rows when CheckLayers in `calculate_score.R`
+
+  After registering and uploading data layers, you would run `CheckLayers` in `calculate_score.R` to make sure there is no errors with the data files. For example, this error appeared after uploading SPP species data
+
+  ![image](https://cloud.githubusercontent.com/assets/11824840/9892996/0322a43e-5bc9-11e5-8ef8-c147ad87645c.png)
+
+  You can use the `duplicated` function to check which rows in that file is duplicated. Here we checked the first two columns in that file, rgn_id and sciname:
+
+  ````r
+  d[duplicated(d[c('rgn_id', 'sciname')]),]
+
+     rgn_id                sciname CHN_class IUCN_class value       layer
+  29       2       Chlidonias niger         1             0.46 spp_species
+  270     10 Stenella longirostris          2         DD  0.17 spp_species
+
+  ````
 
 ### Calculating Pressures...
 
@@ -1752,12 +1768,71 @@ Example:
 
 This error means you should update your pressures matrix because it expects there to be components that your region does not have.
 
-#### 'Error in matrix...'
+#### 'Error in matrix... '
 
 Example:
   > ![](./fig/tblshoot_pressures.png)  
 
 This error means there is an empty column in `pressures_matrix.csv`, and the Toolbox cannot handle empty columns.
+
+#### `Error in ... length of 'dimnames' [2] not equal to array extent`
+If you get the following error message when running `calculate_scores.r`:
+
+```r
+
+scores = CalculateAll(conf, layers, debug=F)
+Calculating Status and Trend for FIS...
+Calculating Status and Trend for MAR...
+reference point for MAR is: 1.16739059262319 (region 8)
+Calculating Status and Trend for AO...
+Calculating Status and Trend for NP...
+Calculating Status and Trend for CS...
+Calculating Status and Trend for CP...
+Calculating Status and Trend for TR...
+Calculating Status and Trend for LIV...
+Calculating Status and Trend for ECO...
+Calculating Status and Trend for ICO...
+Calculating Status and Trend for LSP...
+Calculating Status and Trend for CW...
+Calculating Status and Trend for HAB...
+Calculating Status and Trend for SPP...
+Calculating Pressures...
+
+Error in matrix(as.matrix(d.p[, -1]), nrow = nr, ncol = np, dimnames = list(region_id = d.p[[1]],  :
+  length of 'dimnames' [2] not equal to array extent
+
+```
+
+It is because not all the pressures layers listed in `pressures_matrix.csv` are layers listed in `layers.csv`.
+
+We troubleshooted this by putting a `browser()` in `ohicore::CalculatePressuresAll.r` on L35 (after searching in that file for 'dimnames' to try to triangulate to the problem. Then, when rerunning `calculate_scores.r` with the browser, we looked at the following variables and found the mismatch between the list of layers in `pressures_matrix.csv` (the `p.layers` variable, top) and the list of available layers (bottom) which EXCLUDES `po_pathogens`.
+
+```r
+
+Browse[1]> p.layers
+ [1] "cc_acid"             "cc_slr"              "cc_sst"              "cc_uv"               "fp_art_hb"           "fp_art_lb"           "fp_com_hb"           "fp_com_lb"          
+ [9] "fp_targetharvest"    "hd_destruction_rate" "hd_intertidal"       "hd_subtidal_hb"      "hd_subtidal_sb"      "po_chemicals"        "po_nutrients"        "po_pathogens"       
+[17] "po_sedimentation"    "po_trash"            "sp_alien"            "sp_genetic"          "ss_wgi"      
+
+list(region_id=d.p[[1]], pressure=names(d.p)[-1]
++ )
+$region_id
+ [1]  1  2  3  4  5  6  7  8  9 10 11
+
+$pressure
+ [1] "cc_acid"             "cc_slr"              "cc_sst"              "cc_uv"               "fp_art_hb"           "fp_art_lb"           "fp_com_hb"           "fp_com_lb"          
+ [9] "fp_targetharvest"    "hd_destruction_rate" "hd_intertidal"       "hd_subtidal_hb"      "hd_subtidal_sb"      "po_chemicals"        "po_nutrients"        "po_sedimentation"   
+[17] "po_trash"            "sp_alien"            "sp_genetic"          "ss_wgi"             
+
+
+```
+
+![image](https://cloud.githubusercontent.com/assets/11824840/9509010/e704f810-4c0f-11e5-9866-612c55d01bf6.png)
+
+Double-checking `pressures_matrix.csv` showed that `po_pathogens` was indeed there, but on `layers.csv`, there was a typo and it was entered as `po_pathoges`. So it was registered properly as a layer but never used--so passed through `ohicore::CheckLayers` original checking
+
+
+Also: capital `Q` quits you from the `browser()`
 
 ### Calculating Resilience ...
 
@@ -1766,6 +1841,23 @@ This error means there is an empty column in `pressures_matrix.csv`, and the Too
   > ![](./fig/error_resil_mtx.png)  
 
 This error means you should check that there is at least one entry for each goal (for each row) in `resilience_matrix.csv`.
+
+####
+Error message `Each goal in resilience_matrix.csv must have at least one resilience filed`
+
+```r
+Calculating Resilience...
+Note: each goal in resilience_matrix.csv must have at least one resilience field
+ Show Traceback
+
+ Rerun with Debug
+ Error: all(t %in% resilience_categories) is not TRUE
+
+```
+
+means that the list of resilience layers listed in `resilience_matrix.csv` does not match the list in `resilience_weights.csv`.
+
+`CalculateResilienceScore.r L112` is where this error was generated (called from `CalculateResilienceAll.r`.
 
 # Overview of the OHI WebApp
 
@@ -1944,12 +2036,13 @@ Yes, we can try to get into this stuff in the resilience section--> -->
 <!--
 Julie: I've deleted the rest below and rewritten it as the intro for the goal-by-goal page on ohi-science.org: https://github.com/OHI-Science/ohi-science.github.io/blob/master/revamp_copy.md
 --->
+## Understanding each goal model
 
 ### Artisanal Fishing Opportunities
 
 Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, in particular in developing nations. As opposed to large, commercial fisheries that usually involves industrial, energy-intensive vessels and long trips, artisanal fisheries refer to households, cooperatives or small firms that use relatively small amounts of capital, energy and small fishing vessels (if any), make relatively short fishing trips, and use fish mainly for local consumption or trade.
 
-In addition, this goal is not about recreational fishing often done in developed countries, which is captured in _Food Provision_ (if it provides food) and Tourism and Recreation goals. Nor is it about the actual amount of fish caught or revenue generated, which are captured by _Coastal Livelihood and Economies_. Rather, **artisanal fishing opportunities measure whether people who need to fish on a small, local scale have the opportunity to do so.** A score of 100 means the country or region is meeting the needs of artisanal fishermen or communities by implementing institutional supports, providing access to near-shore water, and maintaining the health of targeted species.
+In addition, this goal is not about recreational fishing often done in developed countries, which is captured in _Food Provision_ (if it provides food) and Tourism and Recreation goals. Nor is it about the actual amount of fish caught or revenue generated, which are captured by _Coastal Livelihood and Economies_. Rather, **artisanal fishing opportunities measure whether people who need to fish on a small, local scale have the opportunity to do so.** In other words, it measures the potential for artisanal fishing whether or not this potential is actually met.A score of 100 means the country or region is meeting the needs of artisanal fishermen or communities by implementing institutional supports, providing access to near-shore water, and maintaining the health of targeted species.
 
 **_Ideal Approach_**
 
@@ -1959,7 +2052,7 @@ Ideally, this goal would include some measure of of how easy or hard it is for f
 
 Ideal indicators mentioned above are often scarce, especially percent poverty or the sustainability of fishing gears. You will want to find proxy data for *access* in whatever way best suits your areas. This could be drawn from physical, economic, regulatory, or stock condition data as an indication of availability. A combination of all of these would be best to more accurately speak to the philosophy, but is is usually limited by data.
 
-> In the U.S. West Coast Assessment (2014), three metrics were used to define **Artisanal Opportunity** that you can use to study:
+For example, in the U.S. West Coast Assessment (2014), three metrics were used to define **Artisanal Opportunity** that you can use to study:
 
 <span style="font-size=0.9em">
 
@@ -1999,7 +2092,7 @@ People value biodiversity in particular for its existence value. The risk of spe
 #### Sub-goal: Species
 This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.
 
-> Data for this goal is also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
+> Data for this goal are also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
 
 **_Ideal Approach_**
 
@@ -2177,7 +2270,7 @@ People value marine waters that are free of pollution and debris for aesthetic a
 
 **_Ideal Approach_**
 
-Ideally, data would be available and combined from different categories of marine pollution that can directly cause waters to become unsuitable for recreation, enjoyment, and other purposes. These factors typically include eutrophication (nutrients), chemicals, pathogens, oil pollution, and marine debris. The Status of these components is the inverse of their intensity (i.e., high input is a bad status).
+Ideally, data would be available and combined from different categories of marine pollution that can directly cause waters to become unsuitable for recreation, enjoyment, and other purposes. These factors typically include eutrophication (nutrients), chemicals, pathogens, oil pollution, and marine debris. Having good data from each of the desired categories, such as those pulled from a repeated effort at monitoring the conditions of the coasts, would be ideal. The Status of these components is the inverse of their intensity (i.e., high input is a bad status).
 
 **_Practical Guidance_**
 
@@ -3107,7 +3200,9 @@ An example of a data file is `ao_access_gl2014.csv`:
 3,0.555771907253878
 4,0.555771907253878
 ```
+
 An example of a data file is `hab_extent_gl2014.csv`:
+
 ```
 "rgn_id","habitat","km2"
 1,"coral",261.102

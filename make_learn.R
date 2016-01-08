@@ -33,10 +33,10 @@ in_md = c(
   'Reference_Points.md',
   'Understanding_Pressures.md',
   'Understanding_Resilience.md',
-  'Understanding_Trend.md',
   'Pres_Resi_interactions.md',
+  'Understanding_Trend.md',
   'Understanding_Status.md',
-  'WebApp_intro.md',
+  # 'WebApp_intro.md',
   'FP_Philosophy.md',
   'AO_Philosophy.md',
   'NP_Philosophy.md',
@@ -57,7 +57,7 @@ cat_md(in_md, out_md)               # use own md ordered file listing , output t
 pfx = tools::file_path_sans_ext(out_md)
 
 ## render pdf ----
-ohi_pdf(out_md)
+ ohi_pdf(out_md)
 
 ## render html to local ohimanual repo ----
 ohi_html_local(out_md)
