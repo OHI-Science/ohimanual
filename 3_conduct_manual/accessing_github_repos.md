@@ -129,13 +129,15 @@ All changes within your local repository will be tracked by GitHub regardless of
 
 * **R** is a free computing and graphical software where all the modifications to your OHI repository are done. Download the latest version of R appropriate for your operating system at http://cran.r-project.org/ and follow the instructions to install it on your computer.
 
-* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. Install the latest version of RStudio at [https://www.rstudio.com/](https://www.rstudio.com/). 
+* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. Install the latest version of RStudio at [https://www.rstudio.com/](https://www.rstudio.com/).
 
 >R and RStudio update frequently. If you already have those softwares installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or Rstudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
 
 If you are working on a _Mac_, you will need to tell RStudio to use the proper version of Git by doing the updating the preferences for 'Git executable':
 
 **RStudio > Preferences... > Git/SVN > Git executable: /usr/local/git/bin/git**
+
+> TIP: if you are working on a Mac, the git file is hidden. To find it easily, hold *shift+command+g* and paste /usr/local/git/bin/git in the pop-up window. Select git (which should be already preselected) and select Open, then Ok.
 
 #### Cloning a repository to your local computer
 
