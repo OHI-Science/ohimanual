@@ -1,0 +1,53 @@
+Introduction to Ocean Health Index - Conduct Phase 
+========================================================
+author: OHI-Science Team
+date: January, 2016
+
+OHI Framework
+========================================================
+![OHI Framework](https://docs.google.com/drawings/d/1XAx6M3Qh5EWEG8CIXykFr7dskVTttBdLOBPguIVZ-pk/pub?w=624&h=480)
+
+OHI Framework - Tailored
+========================================================
+![OHI tailored](https://docs.google.com/drawings/d/1-H2uHSNf1Qk3O5sudhQHREy8F_OZpnobzTKHm2i-sHM/pub?w=624&h=480)
+
+
+
+Technical Team Structure
+========================================================
+![team structure](https://docs.google.com/drawings/d/1akDCmVFkQNQxDM2DARaZKFUWwZ75dC5H45heuD14Xvg/pub?w=960&h=600)
+
+
+Workflow
+========================================================
+![team structure](https://docs.google.com/drawings/d/1NCcfc24vlQjL4PJ4MltPmIgjgshfTkrZuUTcIqDUHeI/pub?w=960&h=720)
+
+Main Resources 
+========================================================
+ohi-science.org
+
+Manual: conceptual and technical guidance
+Forum: where OHI+ practitioners connect and learn from each other
+
+
+Tailored Framework: <br /> Conceptual planning, model building, and data gathering
+========================================================
+insert figure
+
+
+
+
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
