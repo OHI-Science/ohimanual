@@ -36,7 +36,7 @@ When considering how to change the model, you should think about the outcome of 
 Scientific name | IUCN Category | Trend | Map Cells
 ---------------|-----------------------------|-------------------|----|
 *Conus salreiensis* | Critically Endangered |  Decreasing | 1
-*Conus trochulus* |  NearThreatened |  Unknown | 1
+*Conus trochulus* |  Near Threatened |  Unknown | 1
 *Conus roeckeli* | Least Concern | Unknown | 1
 *Acropora palmata* | Critically Endangered | Stable | 1158
 
@@ -51,7 +51,7 @@ Assessment | Developing the Model  | Setting the Reference Point | Other Conside
 **Global 2012** | The status of assessed species was calculated as the area- and threat status-weighted average of the number of threatened species within each 0.5-degree global grid cell. Species distribution and threat category data came from the IUCN Global Marine Species Assessment.  | The reference point was to have all species at a risk status of Least Concern. We scaled the lower end of the biodiversity goal to be 0 when 75% species are extinct. | There were no measures of integrity measures included. The species chosen represents a partial sample of overall species diversity.
 **Global 2013** | The goal model was the same as Global 2012. There were data updates available for 15 out of 6080 species. | The reference point was the same as Global 2012. | Updates were available for data used for this sub-goal.
 **Brazil (2014)** | The status of 504 assessed species was calculated as the threat status-weighted average of species occurring in the Brazilian EEZ. The sub-goal was calculated at the national level, giving equal weight to all species occurring in Brazilian waters. Threat weights were assigned based on the IUCN threat categories status of each species. | The reference point was the same was Global 2012. | This study substituted global assessment data for regional data whenever available. This study did not weight by area of occurrence as in Global 2012 because distribution maps were not available for all species.
-**U.S. West Coast (2014)** | The model description and reference point were the same as Global 2012, with regional data available for threat categories. | The same reference point was used as the Global model | This followed the Global model, but used local data. This study did not weigh by area. 
+**U.S. West Coast (2014)** | The model description and reference point were the same as Global 2012, with regional data available for threat categories. | The same reference point was used as the Global model | This followed the Global model, but used local data. This study did not weigh by area.
 
 *Iconic Species sub-goal of **Special Places**
 
@@ -61,5 +61,4 @@ Assessment | Developing the Model  | Setting the Reference Point | Other Conside
 **Global 2013** | The method was the same as Global 2012. | The reference point was the same as Global 2012. | The approach was the same as Global 2012.
 **Brazil (2014)** | The method was the same as Global 2012. | The reference point was the same as Global 2012. | The approach was the same as Global 2012.
 **U.S. West Coast (2014)** | This study replaced the global IUCN risk assessments with regionally-specific species assessments provided by NatureServe. | The reference point was the same as Global 2012. | Same as Global 2012, with regional data for the threat categories.
-**China (2015)** |Status model is similar to global assessments. However, average extinction risk of all assessed species was only calculated as the weighted sum of the number of species in each threat category, since habitat area per species is not obtainable. |
-The reference point is to have the risk status of all iconic species at lowest risk of extinction.|
+**China (2015)** |Status model is similar to global assessments. However, average extinction risk of all assessed species was only calculated as the weighted sum of the number of species in each threat category, since habitat area per species is not obtainable. |The reference point is to have the risk status of all iconic species at lowest risk of extinction.|
