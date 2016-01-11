@@ -53,7 +53,7 @@ The **Economies** sub-goal use spatial comparisons to determine the reference po
 
 <!---Also taken from Conceptual Guide V2, repetitive so will edit this section down--->
 
-###How to set reference points?
+### How to set reference points?
 
 There is no single way to set reference points. This ultimately will be an informed choice made by the team conducting the assessment. However, whatever discomfort there may be in setting reference points, it is essential to have such explicit targets to which current state of a goal is compared. Reference points are specific to a goal and in some cases to a data layer.
 
@@ -68,21 +68,21 @@ There is tension inherent to setting a target that is both ambitious and realist
 
 Below is more information regarding the guidelines provided by Samhouri et al (2012). As stated, note that all three types of targets require that (a) the management goal is articulated precisely so that the appropriate indicator, and indicator currency, is used and societal preferences are accurately represented; (b) scientific understanding about the relationship between the ecosystem state and natural or human pressures is reviewed; and, (c) data sources and their limitations are investigated thoroughly.
 
-####Functional Relationships
+#### Functional Relationships
 
 To derive an appropriate target level for an indicator of ocean conditions from a functional relationship, one should first test for linearity. A linear function does not directly suggest a reference point, but still can be used to set a target if there are established legal regulations or social norms (common standards of practice) associated with the relationship. For example, U.S. Environmental Protection Agency policy sets a threshold for the acceptable number of illnesses due to swimming and uses a linear functional relationship between swimming health safety and the concentration of Enterococcus bacteria to establish the bacterial concentration at which that limit reference point occurs. They base their recommendation for a target level of water quality for marine recreation on that limit. If a linear functional relationship is identified, but there is no legal or social standard to justify a specific target, a science-based, stakeholder-driven process can be used to identify an acceptable target. For example, if the relationship between marine reserve size and proportion of a fish population protected from fishing is assumed to be linear, a process of negotiation among fishermen, conservationists, and other interested parties can be used to determine appropriate guidelines for reserve size or total area designated for protection.
 
 A nonlinear functional relationship can be used to set a target based on an optimum level or an established threshold. Optima and thresholds can be used directly, or with modifications such as precautionary buffers. For example, surplus production and yield-per-recruit models agree in a qualitative sense that fisheries yield should peak at an intermediate level of fishing pressure. This maximum is frequently referred to as the maximum sustainable yield (MSY). Under the U.S. Sustainable Fisheries Act of 1996, MSY is defined as a limit reference point. It is reduced based upon ecological, economic, or social considerations to create a target harvest level referred to as optimum yield.
 
-####Time-series approaches
+#### Time-series approaches
 
 Both baseline and moving window targets are challenged by the need to choose an appropriate reference time period, with what is appropriate being guided by SMART Specific, Measurable, Ambitious, Realistic, and Time-bound principles . For example, we would contend that a reference point of pre-human conditions is not realistic. Choosing a reference period can be made less arbitrary by (1) attempting to minimize the sensitivity of the status assessment to the selected time period; (2) capturing all of the information available in the time series by ensuring that periods of substantive change are included or by making the moving window of time equivalent to the entire length of the time series; and, (3) following existing precedents. However, even arbitrary choices about the appropriate reference period can be informative, and are used frequently in relation to socioeconomic indicators, advances in human medicine, and in other contexts. Such targets convey straightforward information about the extent to which ocean conditions have changed through time.
 
-####Spatial comparisons
+#### Spatial comparisons
 
 To estimate a target using a spatial comparison, the current state in each location within a study region is cataloged, the maximum observed benefit is defined as the target, and the status of the benefit in each location within the region is assessed relative to that target value. For example, food provision from the ocean comes not just from wild fisheries but also from mariculture. As with terrestrial agriculture, mariculture’s status can be measured in terms of the yield from cultured stocks in a particular place. However, there will not be empirical data on the maximum yield that can be achieved for a given species in all locations of interest. As an alternative, inferences about the health of a specific location’s mariculture industry can be made with reference to regional (per unit area) potential. Indeed, a similar approach has been used to estimate crop ‘‘yield gaps’’ in terrestrial agriculture, in the context of conservation planning for ecosystem services, and to compare fish stock status outside of marine protected areas to status within them.
 
-####Choosing the right type of target
+#### Choosing the right type of target
 
 Targets (and limits) should be measured in the same units as the indicator, or empirical proxy chosen to measure the state of a management goal. If management goals are not stated in ways that can be measured with empirical data they are not useful because there is no way to measure progress towards goal achievement. Furthermore, the specifics of how a goal is framed direct attention to the appropriate currency for the indicator.
 
