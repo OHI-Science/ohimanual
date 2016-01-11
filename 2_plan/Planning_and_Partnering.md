@@ -63,7 +63,7 @@ A *stakeholder analysis* can help identify who to involve in the process and how
 
 *"The Index was explicitly designed to help inform decision making by providing a comprehensive, comparable, and quantitative assessment of the range of components that drive overall ocean health"* (Halpern *et al.* 2014). Because of this, it is imperative that you [understand the local decision-making process](Understand_Local_Decision_Making) and include key influencers in your stakeholder analysis.
 
-Below several resource you may wish to use to help you conduct your stakeholder analysis:
+Resources you may wish to use to help you conduct your stakeholder analysis:
 
 - [Mind Tools](http://www.mindtools.com/pages/article/newPPM_07.htm)
 - [Stakeholder Map](http://www.stakeholdermap.com/stakeholder-analysis.html)
