@@ -35,7 +35,7 @@ Ten goals may seem simplified. But they are useful for talking to people across 
 
 **Q: How are the goals weighted to calculate the final score?**
 
-A: By default, we weighed them equally because we don’t have solid, better information to do otherwise, even though we understand that each goal may/should have different weights depending on regional conditions and needs. We didn't put emphesis on goal weighing because ten individual goal scores are more important than one total score, and can tell more about the status of ocean health. If you are interested in seeing how weighing affects the total index score, you can try the following:
+A: By default, we weighed them equally because we don’t have solid, better information to do otherwise, even though we understand that each goal may/should have different weights depending on regional conditions and needs. We didn't put emphasis on goal weighing because ten individual goal scores are more important than one total score, and can tell more about the status of ocean health. If you are interested in seeing how weighing affects the total index score, you can try the following:
 
 - Scenario studies.  The OHI framework is flexible so that you can change the weights and see how scores change
 - Studies on people’s preferences or management needs to weigh goals differently
@@ -55,7 +55,7 @@ A: Yes you can use more years of data if available. But 5 years is a good compro
 
 A: OHI is gaining recognition from world governance organizations, NGOs, and local governments. There is only limited amount of funds for conservation. If we work together, we can reach maximum return on investment. We partner with UCSB, who is on the scientific frontier. They innovate science and technology, develop toolbox, fill data gap, and provide technical support for local OHI assessments. Conservation International focuses on external partnerships. CI is always looking at multilateral agreements. Some of our active partnerships include:
 
-- The United Nation. Many countries follow UN leads.
+- The United Nations. Many countries follow UN leads.
 - World Bank and The Nature Conservancy, who has good research on economics, and is interested in incorporating OHI in their monitoring systems that are already in place.
 - World Wildlife Fund, who is interested in using OHI in all of their 14 global sites.
 - Clinton Climate Initiative.
@@ -75,7 +75,7 @@ OHI is also human benefits-driven, not ecologically-driven. It happens that CS, 
 
 **Q: How much does it cost to produce a regional assessment?**
 
-A: Regional assessments can be completed at(varying costs depending on the local context.(Funds are needed for a management and scientific team, workshops and meetings (including travel), communications, policy engagement, and operating costs. Therefore, securing funding is an important component to satisfactorily complete the assessment. We encourage the development of a local proposal or strategic action plan that details a timeline of activities and the resources needed to accomplish them.
+A: Regional assessments can be completed at (varying costs depending on the local context).Funds are needed for a management and scientific team, workshops and meetings (including travel), communications, policy engagement, and operating costs. Therefore, securing funding is an important component to satisfactorily complete the assessment. We encourage the development of a local proposal or strategic action plan that details a timeline of activities and the resources needed to accomplish them.
 
 
 **Q: How many people are required in a team?**
