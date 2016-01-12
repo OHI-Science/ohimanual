@@ -155,6 +155,8 @@ Similar to the mariculture sub-goal and tourism goals, any negative effects caus
 
 It depends. Energy could be part of a **Natural Products** goal, for instance, such as wave energy -- but then the question is, what is the reference point? It is partially accounted for in **Livelihoods & Economies** through sectoral jobs data. The infrastructure is also something to consider. It could also be a pressure or resilience factor if there is a measurable footprint of the activity. You may want to consider for resilience, do you have governance measures that promote more sustainable practices in the energy industry?
 
+<!--- Anna: How does the Index consider anoxic waters? --->
+
 <!---From Baltic Discussion 2015--->
 
 <!-- incorporated into practical_goals:
@@ -195,7 +197,7 @@ A: With only one year of habitat data, it is not possible to calculate the trend
 
 **Q: Benefits gained from Wild-caught fisheries, Mariculture, Tourism & Recreation are included in specific goals. Why are these counted again in Livelihoods & Economies?**
 
-A: The quantity of fish, mariculature, and participation in T&R are considered separately in goals whereas the monetary component is captured in L&E.
+A: The quantity of fish, mariculture, and participation in T&R are considered separately in goals whereas the monetary component is captured in L&E.
 
 
 **Q: Why are revenue data from shipping, boat building, ports and harbors included as revenue? Do these activities rely on a healthy ocean?**
