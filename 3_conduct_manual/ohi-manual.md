@@ -10,7 +10,7 @@ Welcome to the Conduct Phase of your OHI+ assessment! This manual contains all t
 
 The first four sections will be helpful for all participants. It contains information on OHI philosophy, what to expect when conducting an OHI+ assessment, best practices, and an introduction to the toolbox. Details on **goal model development and Pressure and Resilience are housed in Appendix 1**, which includes the meaning of the goal, reference point, ideal approach, practical guidance, and examples. **Appendix 2 and 3 provides guidelines on how to report data layers and model descriptions** to the toolbox master(s). In addition, **Conceptual and technical Frequently Asked Questions are included in the Appendix 6**.
 
-The remaining sections focuse on technical guidance on how to use the toolbox and troubleshoot and will be most useful to the toolbox master. **Appendix 4 provides an example of a record-keeping spreadsheet** which will be helpful for tracking progress. Appendix 5 includes tutorials on frequently used R commands in the Toolbox. 
+The remaining sections focuse on technical guidance on how to use the toolbox and troubleshoot and will be most useful to the toolbox master. **Appendix 4 provides an example of a record-keeping spreadsheet** which will be helpful for tracking progress. Appendix 5 includes tutorials on frequently used R commands in the Toolbox.
 
 # Introduction
 
@@ -262,7 +262,7 @@ There are a lot of existing data that contribute to our scientific understanding
 
 **Your repository will be created specifically for your assessment, which requires that the spatial boundaries of your assessment area and regions are finalized for your repository to be created.** Once your spatial boundaries are finalized, please prepare spatial files following [prepared shape files](http://ohi-science.org/manual/#defining-spatial-boundaries) and request your repository by emailing info@ohi-science.org.
 
-We recommend that you start using the repository _after_ you have planned all your goal models and identified good data to avoid preparing information or models that are ultimately excluded from your assessment. 
+We recommend that you start using the repository _after_ you have planned all your goal models and identified good data to avoid preparing information or models that are ultimately excluded from your assessment.
 
 Your **tailored assessment repository** contains data input layers, configuration files, and scripts. These files are organized in the same way within a *scenario folder* called `subcountry2014`, with data layers, goal model equations, and configuration files from the global 2014 assessment. Files within the scenario folder are comma-separated-value (*.csv*) files and scripts written in the programming language *R*.
 
@@ -509,7 +509,7 @@ The slope and y-intercept that were calculated in steps 1 and 2 can then be used
 
 **4. Replace modeled values into original data where gaps had occurred**
 
-Substitute these modeled values that were previously gaps in the timeseriew. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
+Substitute these modeled values that were previously gaps in the timeseries. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
 
 
 #### Spatial gapfilling
@@ -773,7 +773,7 @@ All changes within your local repository will be tracked by GitHub regardless of
 
 * **R** is a free computing and graphical software where all the modifications to your OHI repository are done. Download the latest version of R appropriate for your operating system at http://cran.r-project.org/ and follow the instructions to install it on your computer.
 
-* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. Install the latest version of RStudio at [https://www.rstudio.com/](https://www.rstudio.com/). 
+* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. Install the latest version of RStudio at [https://www.rstudio.com/](https://www.rstudio.com/).
 
 >R and RStudio update frequently. If you already have those softwares installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or Rstudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
 
@@ -810,7 +810,7 @@ When you modify or add a file, the file will appear in the 'Git' window once it 
 
 > TIP: If you aren't seeing your changes in the 'Git' window, try saving the file again.
 
-![Figure showing RStudio when sycing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=687)
+![Figure showing RStudio when synhcing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=687)
 
  _Note_: Another option to syncing your edits on a repo with the online version is to use **Command Lines**, if you are familiar with it. There are resources available online on how to do so.    
 
@@ -1403,7 +1403,7 @@ pressures_components  = list('NP'  = c('layer'='np_harvest_product_weight' , 'le
                              'HAB' = c('layer'='hab_presence'              , 'level'='region_id'))
 ```
 
-`np_harvst_product_weight` is also used in NP and CS status calculations, and thus do not require special preparations. The rest of the data layers need additional preparations, which can be done in the `prep` folder). 
+`np_harvst_product_weight` is also used in NP and CS status calculations, and thus do not require special preparations. The rest of the data layers need additional preparations, which can be done in the `prep` folder).
 
 `cs_habitat_extent` is calculated as `habitat_extent * rank`. Rank refers to relative contributions of each type of habitats to carbon storage. Here is an example calculation:
 
@@ -1961,7 +1961,7 @@ You may have redefined the spatial boundaries of the regions used in your assess
 
 ### Layers
 
-Most of the information displayed on the Layers page of the WebAppis taken from the `layers.csv`, and therefore to modify any information about specific data layers, you will need to modify the `layers.csv` file within the draft branch of your repository. However, you are able to edit the header text information at the top of the Layers page if you wish. This can be done with the file called `webapps_templates/layers.brew.md`.
+Most of the information displayed on the Layers page of the WebApps taken from the `layers.csv`, and therefore to modify any information about specific data layers, you will need to modify the `layers.csv` file within the draft branch of your repository. However, you are able to edit the header text information at the top of the Layers page if you wish. This can be done with the file called `webapps_templates/layers.brew.md`.
 
 ### Goals
 
@@ -1975,7 +1975,7 @@ The scores displayed on the Scores page of the WebApp are the calculated scores 
 
 # Appendix 1: Goal Models, Reference Points, and Pressure and Resilience
 
-Once you have determined which goals are assessed and have begun searching for data and indicators, you can start to develop goal models and set reference points. The decision tree of the data discovery process also applies here: first consider how goals can be tailored to your local context before you consider replicating what was done in the Global Assessments. It is always better to use local goal model and reference point approaches where possible. This section aims to provid you with goal-by-goal guidance on how to find data, pick indicators, set reference point, and develop the model, as well as guideline on how to think about pressure and resilience. But first, let's see some general tips before diving into the details of each goal model. 
+Once you have determined which goals are assessed and have begun searching for data and indicators, you can start to develop goal models and set reference points. The decision tree of the data discovery process also applies here: first consider how goals can be tailored to your local context before you consider replicating what was done in the Global Assessments. It is always better to use local goal model and reference point approaches where possible. This section aims to provid you with goal-by-goal guidance on how to find data, pick indicators, set reference point, and develop the model, as well as guideline on how to think about pressure and resilience. But first, let's see some general tips before diving into the details of each goal model.
 
 ## Developing multiple goal models at the same time
 
@@ -2081,7 +2081,7 @@ Assessment | Developing the Model  | Setting the Reference Point | Other Conside
 **Global 2013** | The approach was the same was Global 2012 | The reference point was the same as Global 2012. | There were no data updates available to change the method.
 **Brazil (2014)** | The model was simplified to reflect the primary driver of opportunity as the availability of fish to be captured, as measured by the condition of stocks. This model was based solely on the sustainability index calculated using the exploitation status of species. All species were considered possible targets of artisanal fishing activities. | The reference point for artisanal fishing opportunities was an established target of 1.0. This meant all stocks are categorized as either Developing or Fully Exploited. | The analysis used national stock status information. It did not include poverty because of the high variation in the country. In addition, it assumes that access to fishing is largely open because permitting and regulations are not restricted.
 **U.S. West Coast (2014)** | This study developed a model using three key variables of physical and economic access to coastal areas, and access to biological resources. The physical accesses was shore-based fishing measured by percent of coastline within a mile coastal access points. Economic access was no increase in fuel price compared to income. Biological access was the health of the fish stocks. | The target here is to maximize the amount of public access along the coast, therefore a perfect score results when each part of a region’s coastline has a coastal access point within 1 mile. The study calculated these scores using a raster map allocation. | This approach did not model demand or have species-specific information. It assumed that as long as there are no obstacles to pursuing artisanal fishing, the goal was fully achieved. These data better capture the nature of small-scale fisheries in the study area than the Global model.
-**China (2015)** | Status model is rewritten and is similar to the 2014 U.S. West Coast assessment. It is based on the three indicators: <br />  &nbsp;&nbsp;&nbsp;- capacity for exports, measured by the number of portsk <br />  &nbsp;&nbsp;&nbsp;- the need for artisanal fishing opportunities, represented by the number of artisanal fishermen <br />  &nbsp;&nbsp;&nbsp;- economic capacity, measured by the ratio of diesel price and disposable income. | The spatial reference point is the maximum value across all region and all years.
+**China (2015)** | Status model is rewritten and is similar to the 2014 U.S. West Coast assessment. It is based on the three indicators: <br />  &nbsp;&nbsp;&nbsp;- capacity for exports, measured by the number of ports <br />  &nbsp;&nbsp;&nbsp;- the need for artisanal fishing opportunities, represented by the number of artisanal fishermen <br />  &nbsp;&nbsp;&nbsp;- economic capacity, measured by the ratio of diesel price and disposable income. | The spatial reference point is the maximum value across all region and all years.
 
 </span>
 
@@ -2207,7 +2207,7 @@ Ideally you will have information on the relative potential of habitats to provi
 
 To see how to obtain data on habitat _extent_ and _condition_, read the section on **Biodiversity sub-goal: Habitats**.
 
-There can be many _habitat types_ included in Coastal Protection goal. In global assessments, coral, mangroves, saltmarshes, seagrasses, and seaice were included. Habitats were _weighted_ based on their protective ability identified by [Natural Capital Project](www.naturalcapitalproject.org). Depending on the habitats you include, you will need to find additional weights.
+There can be many _habitat types_ included in Coastal Protection goal. In global assessments, coral, mangroves, saltmarshes, seagrasses, and sea ice were included. Habitats were _weighted_ based on their protective ability identified by [Natural Capital Project](www.naturalcapitalproject.org). Depending on the habitats you include, you will need to find additional weights.
 
 In the global assessment, we did not include an assessment of the protection afforded by  man-made structures, such as jetties and seawalls. These structures cannot be preserved without maintenance and often have negative side effects (e.g. alter sedimentation rates causing erosion in new locations), thus they do not constitute long-term sustainable service and are mostly seen as a pressure. It gets tricky when structures are built to help reduce coastal erosion--they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied.
 
@@ -2230,7 +2230,7 @@ Assessment | Model Description and Reference Point | Evolution of Approach | Oth
 
 ### Carbon storage
 
-Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture **the ability of the coastal habitats to remove carbon given their carbon updtake rate and health conditions**. A score of 100 means all habitats that contribute to carbon removal are still intact or have been restored and they can function to their full carbon burial potential.
+Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture **the ability of the coastal habitats to remove carbon given their carbon uptake rate and health conditions**. A score of 100 means all habitats that contribute to carbon removal are still intact or have been restored and they can function to their full carbon burial potential.
 
 <!-- This definition needs more work... Halpern et.al didn't spell out an definition as did with other goals... -->
 
@@ -2407,7 +2407,7 @@ most are based on either catch alone, or catch-per-unit-effort.
 _If only catch data are available_, it is highly recommended to follow the
 approach in the _2013 global assessment_ (Halpern *et al.* 2015) rather than the
 2012 global assessment (Halpern *et al.* 2012). All global assessments use
-national fisheries catches reported to the Food and Agricutural Organization
+national fisheries catches reported to the Food and Agricultural Organization
 (FAO), and the 2013 global assessment used the fisheries modeling method for
 data-poor sources developed by *Martell & Froese* (2013). With this method,
 fisheries catch information would be used to calculate the population biomass
@@ -2636,7 +2636,7 @@ Assessment | Developing the Model  | Setting the Reference Point | Other Conside
 **Global 2013** | This study used a model similar to the Global 2012. |  The reference point approach was harvested tonnes per coastal inhabitant scaled to the 95th percentile observed, Thailand. Here coastal was defined as "within 25 km inland." This was done under the assumption that production depends on the presence of coastal communities. | This study differs from Global 2012 because of the reference point. |
 **Brazil (2014)** | The status was calculated using harvest data reported by the Brazilian Institute of the Environment and Renewable Natural Resources (IBAMA). For each of up to four species cultured within the state, the score was determined by the yield, the reference sustainable production per unit area, and the total potential farming area. |  Reference points were set for each species. | In this study it was possible to use both biophysical constraints and social preferences.
 **U.S. West Coast (2014)** | The status was calculated as the sustainable production density of shellfish biomass from mariculture relative to a target level of production density for each state within the region. | The reference point was a target level of production increase as proposed by NOAA | The approach was similar to the Global but the reference point was made using better information about physical and social limitations on mariculture allotments.
-**China (2015)** | Status model is similar to the 2012 global assessment. But the status model was based on tonnes of mariculture species per habitat identified as suitable area by the Chinese government.| The spatial reference point was the region with the highest value. | Using designated mariculture area for calculations provides a more realistic picture of the status of mariculture. Currently Maricutlure Sustainability Index (MSI) values were obtained from the global study. More data on water quality standards and food sources (eg. species, origin, etc) will help determine the sustainability of mariculture.
+**China (2015)** | Status model is similar to the 2012 global assessment. But the status model was based on tonnes of mariculture species per habitat identified as suitable area by the Chinese government.| The spatial reference point was the region with the highest value. | Using designated mariculture area for calculations provides a more realistic picture of the status of mariculture. Currently Mariculture Sustainability Index (MSI) values were obtained from the global study. More data on water quality standards and food sources (eg. species, origin, etc) will help determine the sustainability of mariculture.
 
 </span>
 
@@ -2646,7 +2646,7 @@ The jobs and revenue produced from marine-related industries are clearly of huge
 
 In the global study, this goal does not attempt to capture any aspects of _job identity_ (i.e. the reputation, desirability or other social or cultural perspectives associated with different jobs). We make the assumption that all marine-related jobs are equivalent, such that, for example, a fisherman could transition to a job in mariculture or ship-building without affecting the score of this goal. There are also not adequate data to assess workers' _job satisfaction_ or _ecological sustainability_ of sectors. Future, finer scale applications of the Index could incorporate these key considerations.
 
-> Oil and gas industries typically are not included in this goal. The Natural Products goal does not include non-living items such as oil, gas, and mining products, because these practices are not considered to be sustainable. They are also done at such large scales that including them would essentially make OHI an index for oil and mining--and they are not truly an ocean product. Because these products are not included in terms of quantity extracted, it did not seem appropriate to include information regarding jobs, wages or revenue. However, oil and gas industries are considered a large employer and often generate large revenue for a region. Similarly, industries such as shipping, boat building, ports and harbors do not directly depend on a healthy ocean, but the demand for some of those boats (fishing boats, sailboats, yachts) is dependent on a healthy ocean and are also important providers of jobs and revenue. Ultimately, Whether and how to include those data is a decision that should be made on a case-by-case basis by the individual OHI+ group. 
+> Oil and gas industries typically are not included in this goal. The Natural Products goal does not include non-living items such as oil, gas, and mining products, because these practices are not considered to be sustainable. They are also done at such large scales that including them would essentially make OHI an index for oil and mining--and they are not truly an ocean product. Because these products are not included in terms of quantity extracted, it did not seem appropriate to include information regarding jobs, wages or revenue. However, oil and gas industries are considered a large employer and often generate large revenue for a region. Similarly, industries such as shipping, boat building, ports and harbors do not directly depend on a healthy ocean, but the demand for some of those boats (fishing boats, sailboats, yachts) is dependent on a healthy ocean and are also important providers of jobs and revenue. Ultimately, Whether and how to include those data is a decision that should be made on a case-by-case basis by the individual OHI+ group.
 
 #### Sub-goal: Livelihoods
 
@@ -2779,7 +2779,7 @@ be reflected in the score.
 
 > In the global assessments, Natural Products data come from the [UN’s Food and Agriculture Administration] (www.fao.org/fishery/statistics/software/fishstatj/en). These data are compiled and reported by product for each country, and available by downloading the FishStatJ software.
 
-> If natural products are all produced through on-land aquaculture, you would probably have good reason to exclude the natural product goal. This would also depend on the origin of these natural products--are they from the region’s waters? You should consult with experts and any reports/papers on the topic. In addition, this goal does NOT include non-living items such as oil, gas, and mining products, because these practices are not considered to be sustainable. They are also done at such large scales that including them would essentially make OHI an index for oil and mining--and they are not truly an ocean product. 
+> If natural products are all produced through on-land aquaculture, you would probably have good reason to exclude the natural product goal. This would also depend on the origin of these natural products--are they from the region’s waters? You should consult with experts and any reports/papers on the topic. In addition, this goal does NOT include non-living items such as oil, gas, and mining products, because these practices are not considered to be sustainable. They are also done at such large scales that including them would essentially make OHI an index for oil and mining--and they are not truly an ocean product.
 
 The second task is to think about **where these products are harvested and how
 much of them are harvested** in these areas through a period of time. You should
@@ -2948,7 +2948,7 @@ Data sources should be specific to your region. International databases, like th
 
 Global assessment incorporated both marine and terrestrial protected areas. However, if only data on marine protected areas is available, you can calculate only the marine component of the goal. This is not ideal but OHI is flexible to work with the data available.
 
-> If you assessment involves multiple categories (e.g., antiquities, MPAs, beaches of special interest), whether you group them together or calculate each category separately depends on reference points. Maybe you want 10% of offshore water to be in MPAs, but only 5% of coastlines to be beaches and 3% Antiquities, for example; in this case, you would calculate them separately and then add them together. But if you want 10% of your country's coast to have any combination of these things, you would keep them together. 
+> If you assessment involves multiple categories (e.g., antiquities, MPAs, beaches of special interest), whether you group them together or calculate each category separately depends on reference points. Maybe you want 10% of offshore water to be in MPAs, but only 5% of coastlines to be beaches and 3% Antiquities, for example; in this case, you would calculate them separately and then add them together. But if you want 10% of your country's coast to have any combination of these things, you would keep them together.
 
 > In the Global Assessment framework, the **Sense of Place** sub-goals were weighted equally and combined in an average to create a single goal score. The two sub-goals are averaged currently in the framework. But these could be combined with a weighted average.
 
@@ -3044,7 +3044,7 @@ These distinctions won't always apply for smaller-scale assessments. For example
 
 #### Pressures matrix
 
-Independent from local pressure layers, you will develop a Pressures Matrix table that establishes the relationships between stressors and goals, ie. how each pressure measure affects each goal, or an individual habitat type or natural product categories within a goal. It uses a _rank from 1-3 to weight how strongly a given pressure affects a goal or sub-goal relative to all the other pressures affecting it_.
+Independent from local pressure layers, you will develop a Pressures Matrix table that establishes the relationships between stressors and goals, i.e. how each pressure measure affects each goal, or an individual habitat type or natural product categories within a goal. It uses a _rank from 1-3 to weight how strongly a given pressure affects a goal or sub-goal relative to all the other pressures affecting it_.
 
 >It is easy to confuse the weights with pressure data layers. But pressure weights should not be applied to the regions, only to the goals.
 
@@ -3085,7 +3085,7 @@ Ideally, assessments of social resilience would include national-level and as we
 
 In practical terms, resilience is hard to define and finding data can be difficult. It is often difficult to find regulations and indicators that would directly 'balance' individual stressors, but it is worth the effort to explore what information is available in the local context and how it could be included as resilience measures. You may be able to construct your own set of indicators for resilience (particularly social resilience) using proxy data. Your team may have to get creative to develop appropriate assessment measures here. It can be metrically be defined as presence-versus-absence (value of zero or one), or on a scale (value between zero and one) if the measure is an assessment or score. For instance in the global study,  resilience measures that were counted in the socio-economic resilience class of data came from the World Governance Indicators (http://govindicators.org). In a regional context, however, a more appropriate data layer might be a local governance index of some kind, preferably developed by a reputable organization using credible methods.
 
-When available, National-level data are preferable to global-level data for your assessment. These include national laws on the environment, or protection of the marine environment or rivers that lead to coastal waters. National laws include things like the Clean Water Act (CWA) and the Endangered Species Act (ESA) in the U.S., or the national implementations of the E.U. Water Framework Directive. National actions can also be broadened beyond just legislation to include administrative procedures such as those involving permits, licenses, court cases, administrative action, and compliance mechanisms. [Cultural items at the national scale, such as holidays, are also applied at this scale]
+When available, national-level data are preferable to global-level data for your assessment. These include national laws on the environment, or protection of the marine environment or rivers that lead to coastal waters. National laws include things like the Clean Water Act (CWA) and the Endangered Species Act (ESA) in the U.S., or the national implementations of the E.U. Water Framework Directive. National actions can also be broadened beyond just legislation to include administrative procedures such as those involving permits, licenses, court cases, administrative action, and compliance mechanisms. [Cultural items at the national scale, such as holidays, are also applied at this scale]
 
 State or province-level laws provide more regionally-specific information and thus work well for assessments. This would involve looking at the same types of laws and policies that exist on the national level, but specifically incorporating those that have been tailored to fit the needs of a particular sub-national area. This includes things such as California's state-level California Environmental Quality Act (CEQA), or the California Ocean Protection Act (COPA), which have laws designed specifically to protect California's environment. This would tell you more relevant information than using data from a national or international law. Local level regulations will usually provide you with the most accurate information for your assessment in order to tailor it best to the local context.
 
@@ -3296,7 +3296,7 @@ Several pressures layers are based on 1km2 resolution spatial files that we can 
 Resilience measures are often regulatory measures that indicate how provinces are performing compared with each other. If there are any environmental or social performance indicators for China, these could be used here.
 
 # Appendix 3: Instructions for preparing model descriptions
-This document explains what information are needed from the goal keepers in order to calculate the goal scores and update the WebApp. An example is provided for each step of the instructions. 
+This document explains what information are needed from the goal keepers in order to calculate the goal scores and update the WebApp. An example is provided for each step of the instructions.
 
 1.	**Goal model equation:**
 
@@ -3357,7 +3357,7 @@ Currently the model relies on a number of proxies, such as trends in access to i
 
 If you are a toolbox master responsible for indexing all the data and modifying all the goal models, it is helpful to keep a master record-keeping spreadsheet from the start. This will allow to note who to contact for each goal and whether the key items for calculations are received, as well as to track your own progress. Goal keepers might be at different stages of data gathering and model development, and might send you pieces of information at different times. When you are updating multiple goal models, it is easy to lose track where you are in the progress for each goal.
 
-If you are a goal keeper, having a record-keeping place to remind you where you are in the process and record all the important decisions may also be helpful. Here are some suggestions on what to and how to keep track of the progress. 
+If you are a goal keeper, having a record-keeping place to remind you where you are in the process and record all the important decisions may also be helpful. Here are some suggestions on what to and how to keep track of the progress.
 
 **Key items** for each goal:
 * Goal keeper and their contact information
@@ -3384,10 +3384,10 @@ Ocean Health Index R code uses several packages and best practices to faciliate
 understanding and collaboration. These approaches are presented here, along with
 examples using data included in global OHI assessments.
 
-This document describes several packages that are used extensively in OHI assessments and 
+This document describes several packages that are used extensively in OHI assessments and
 introduces you to typical coding practices commonly seen in OHI scripts and functions.
 
-Also see the accompanying R script to test examples using these packages. 
+Also see the accompanying R script to test examples using these packages.
 
 ### R Very Basics:
 * Have you already downloaded and installed [R](http://www.r-project.org/)?
@@ -3460,7 +3460,7 @@ into a single column called 'tonnes' and note the year of harvest in a new colum
 called 'year'.
 
 The example in the figure below shows how the original wide data is transformed into long
-data using the command `gather`. Here are two ways of acheiving this: 
+data using the command `gather`. Here are two ways of achieving this:
 
 1. Here, information from columns X2007 through X2011 are gathered into a single column called `year`, and the information in each column are put into a new column called `tonnes`.
 
@@ -3468,12 +3468,12 @@ data using the command `gather`. Here are two ways of acheiving this:
 data_long <- data_wide %>% gather(year, tonnes, X2007:X2011)
 ```
 
-2. Here, the `-` unselects the named columns, so they will not be gathered; all other columns are gathered into columns named `year` and `tonnes`. This approach will  yield the same result. 
+2. Here, the `-` unselects the named columns, so they will not be gathered; all other columns are gathered into columns named `year` and `tonnes`. This approach will  yield the same result.
 
 ```
 data_long <- data_wide %>% gather(year, tonnes, -Country, -Commodity, -Trade)
 ```
-  
+
 ![wide data to long data using gather() and spread()](https://docs.google.com/drawings/d/1VaZdLWK0NwAkov4sEytZLRpOUAndb3_NZOA4-n1HNIo/pub?w=948&h=499)
 
 ### `dplyr` functions
@@ -3774,7 +3774,7 @@ h_tot_mut <- harvest %>%
 ```
 ![group_by to find group-level information](https://docs.google.com/drawings/d/1enHrgXWhpHz3FsURncMI5UB8LKoXLvXFPAcU25pDOSc/pub?w=745&h=285)
 
-### Coding style 
+### Coding style
 
 > Code unto others as you would have them code unto you.
 
@@ -3881,7 +3881,7 @@ Ten goals may seem simplified. But they are useful for talking to people across 
 
 **Q: How are the goals weighted to calculate the final score?**
 
-A: By default, we weighed them equally because we don’t have solid, better information to do otherwise, even though we understand that each goal may/should have different weights depending on regional conditions and needs. We didn't put emphesis on goal weighing because ten individual goal scores are more important than one total score, and can tell more about the status of ocean health. If you are interested in seeing how weighing affects the total index score, you can try the following:
+A: By default, we weighed them equally because we don’t have solid, better information to do otherwise, even though we understand that each goal may/should have different weights depending on regional conditions and needs. We didn't put emphasis on goal weighing because ten individual goal scores are more important than one total score, and can tell more about the status of ocean health. If you are interested in seeing how weighing affects the total index score, you can try the following:
 
 - Scenario studies.  The OHI framework is flexible so that you can change the weights and see how scores change
 - Studies on people’s preferences or management needs to weigh goals differently
@@ -3895,7 +3895,7 @@ For OHI+, the most helpful comparison is temporal comparison. Management goals a
 
 **Q: We calculate trends based on 5 years of data. Wouldn’t it be more scientifically valid to have a 20 or 30 year trend?**
 
-A: Yes you can use more years of data if available. But 5 years is a good compromise between scientific validity and meaningulness for local stakeholders. On one hand, we have to do it scientifically vigorous with a solid reference. But on the other hand, a 5-yr trend is more helpful and actionable to stakeholders than a 30-yr trend.
+A: Yes you can use more years of data if available. But 5 years is a good compromise between scientific validity and meaningless for local stakeholders. On one hand, we have to do it scientifically vigorous with a solid reference. But on the other hand, a 5-yr trend is more helpful and actionable to stakeholders than a 30-yr trend.
 
 **Q: Is OHI an internationally recognized monitoring system? What other partnership does OHI have?**
 
@@ -4041,7 +4041,7 @@ A: With only one year of habitat data, it is not possible to calculate the trend
 
 **Q: Benefits gained from Wild-caught fisheries, Mariculture, Tourism & Recreation are included in specific goals. Why are these counted again in Livelihoods & Economies?**
 
-A: The quantity of fish, mariculature, and participation in T&R are considered separately in goals whereas the monetary component is captured in L&E.
+A: The quantity of fish, mariculture, and participation in T&R are considered separately in goals whereas the monetary component is captured in L&E.
 
 
 **Q: Why are revenue data from shipping, boat building, ports and harbors included as revenue? Do these activities rely on a healthy ocean?**
@@ -4100,4 +4100,3 @@ A: It is likely that the pressures matrix will not need to be changed. The weigh
 **Q: How is commercial high and low bycatch calculated?**
 
 A: Commercial high and low bycatch are categorical values that were set based on fishing gear type. This began as a list of gear types used, producing a range of potential bycatch frequencies (from local reports when possible), which can be rescaled.-->
-

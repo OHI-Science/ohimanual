@@ -1,12 +1,10 @@
 ---
 title: Introduction to Conduct Phase
-subtitle: Ocean Health Index
+subtitle: - Ocean Health Index
 author: OHI-Science Team
 date: January, 2016
 output: 
-      beamer_presentation:
-        theme: "AnnArbor"
-        colortheme:"dolphin"
+      beamer_presentation
 ---
 
 
@@ -26,7 +24,7 @@ output:
 
 ## Tailored Framework: Best Practices
 - Conceptual planning, model building, and data gathering
-- Keep in mind at all times these Best Practices (see [publication](https://peerj.com/articles/1503/)) or [Manual](http://ohi-science.org/new-site/manual/#best-practices-for-ohi-assessments)
+- Keep in mind at all times these Best Practices (see [publication](https://peerj.com/articles/1503/) or [Manual](http://ohi-science.org/new-site/manual/#best-practices-for-ohi-assessments)
 
  ![Best Practices](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=768&h=480)
 
@@ -66,12 +64,12 @@ Now you have
 
 You can request an **Assessment Repository** and start using the **Toolbox**
 
-- [Repository](http://ohi-science.org/new-site/manual/#file-system-organization) is where all the data are stored, managed, and calculations occur
- - Github-based
+- [_Repository_](http://ohi-science.org/new-site/manual/#file-system-organization) is where all the data are stored, managed, and calculations occur
+  - Github-based
  
-- [Toolbox](http://ohi-science.org/new-site/manual/#the-ocean-health-index-toolbox) is the software packages for calculations 
- - Github and R - based
- - open-source
+- [_Toolbox_](http://ohi-science.org/new-site/manual/#the-ocean-health-index-toolbox) is the software packages for calculations 
+  - Github and R - based
+  - open-source
 
 ## Step 4: Format, Store, and Register data 
 
