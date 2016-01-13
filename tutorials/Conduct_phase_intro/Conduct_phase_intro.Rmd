@@ -81,7 +81,8 @@ You can request an **Assessment Repository** and start using the **Toolbox**
 ## Step 5: Modify Goal Models and Calculate Scores
 
  Calculate: Status, Trend, Pressure, and Resilience
- Report results using template
+![goal score calculation](https://docs.google.com/drawings/d/1sCrfwO886tb8Nn3Xu-rmHzMmZtEM7aRqYKM37JAQ7rY/pub?w=960&h=540)
+
  
 ## Main Resources 
 
