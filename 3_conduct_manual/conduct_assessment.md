@@ -48,7 +48,7 @@ We recommend keeping in mind the following as you develop your approach:
     + each assessment should represent the best understanding of ocean health at a point in time. For example, if fisheries data are available from 1980-2011 and tourism data are available from 2008-2012; these can both be used to represent current ocean health
 * Document all decisions made, including:
     + all data sources (publications, website URL, date of access, etc).
-    + processes for establishing reference points,
+    + processes for establishing reference points
     + how and why models were modified, and additionally why other potential modifications were not done, as this reminds yourself of past decisions and helps explain them to others in the future)
     + that it is important for transparency, describing methods and explaining results in reports and publications, and for reproducibility (for any future comparable assessments in your study area)
 
@@ -98,6 +98,6 @@ The following list of tasks will not necessarily be accomplished in sequence: th
     + set pressure weighting/ranking based on literature, expert opinion
     + identify potential resilience measures for each of the pressures identified
     + determine what datasets may be available to measure resilience metrics
-* Modify goal models mathematically:
+* Modify goal models mathematically
     + how can goal models be represented mathematically using locally available data and indicators?
     + can reference points be refined using locally available data and indicators, government mandates, management targets, obligations from multilateral agreements?

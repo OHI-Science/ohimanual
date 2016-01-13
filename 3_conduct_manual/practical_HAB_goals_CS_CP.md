@@ -61,7 +61,7 @@ For the Coastal Protection goal, it is possible to include weights based on the 
 *Practical Guidance*
 
 Coastal Protection aims to assess the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value. This definition does not include man-made structures such as sea-walls because they are not regarded as sustainable and likely destroyed habitat.
-However, there can be many **habitat types** included in Coastal Protection goal. In global assessments, coral, mangroves, saltmarshes, seagrasses, and seaice were included. Habitats were **weighted** based on their protective ability identified by www.naturalcapitalproject.org. Depending on the habitats you include, you will need to find additional weights.
+However, there can be many **habitat types** included in Coastal Protection goal. In global assessments, coral, mangroves, saltmarshes, seagrasses, and sea ice were included. Habitats were **weighted** based on their protective ability identified by www.naturalcapitalproject.org. Depending on the habitats you include, you will need to find additional weights.
 
 The **goal status model** for Coastal Protection developed for global assessments will likely be appropriate for independent assessments. However, it could be possible to somehow incorporate the differences in vulnerability between subcountry regions. Vulnerability can be quantified as the ability to evacuate, economic ability to reconstruct in case of damage. Physical properties may be available in OHI+ assessments, allowing for more a detailed understanding of the protective ability, and likelihood of exposure for each habitat type in different portions of the coastline.
 

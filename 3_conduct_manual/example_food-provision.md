@@ -4,7 +4,7 @@
 
 Here are some questions to help countries think about how they might modify their Food Provision models. The data questions help identify modeling options and are mainly aimed at technical experts. The reference point questions are philosophical choices that should involve high-level decision makers on the team. The reference point options, however, are constrained by what data are available, so it would be ideal to have both types of experts present in the discussion.
 
-##Fisheries
+## Fisheries
 **Data and stock status models:**  
 
 Depending on what kind of data and information you have on fished species (catches, bycatch, landings, CPUE, population models, life history traits, fishing pressure), you might be able to assess the state of stocks in different ways. The best case scenario is when there are formal stock assessments that have established reference points and evaluated the stock's condition.  
@@ -52,9 +52,9 @@ Generally managers don't set 'underfishing' targets, and don't have any formal d
 
 ---
 
-##Mariculture
+## Mariculture
 
-####Potential information you could gather:
+#### Potential information you could gather:
 
 *General tips:*
 - Re-do your own sustainability ranking. This is useful specially if there are few species, and if they were not originally assessed in the MSI (Trujillo, 2008).

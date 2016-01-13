@@ -8,13 +8,13 @@ The Ocean Health Index framework presents a highly tailorable approach ready to 
 
 The Index is an assessment tool that provides a common platform for scientifically combining and comparing key elements from all dimensions of the oceans health — biological, physical, economic, and social – to measure how sustainably people are using the ocean. By allowing for a comprehensive and integrated view of marine systems as a way to understand the trade-offs and synergies among these goals, the Index represents a significant advance over conventional single-sector approaches to assessing sustainability as communicated through other kinds of index efforts. Because of this, preparing the conducting phase will require careful thought, consideration, and documentation, throughout this process.
 
-###The Process of OHI+
+### The Process of OHI+
 
 The OHI+ process consists of four distinct phases. In the first phase, you **learned** about the OHI and understood the philosophy behind it and the motivation for conducting your study. In the second phase, you actively **planned** to conduct an OHI+ Assessment. Now, in the third phase, you will **conduct** the assessment by engaging with the science of finding the data, preparing the goal models, and taking the necessary steps to learn the software and produce the results. In the final phase, you will communicate the results of your OHI+ Assessment in order to inform stakeholders who will use its findings.
 
 - >**Phase 1:** **Learn** about the OHI
 - >**Phase 2:** **Plan** an OHI+ Assessment
-- **Phase 3:** **Conduct** the OH+ Assessment
+- >**Phase 3:** **Conduct** the OHI+ Assessment
 - >**Phase 4:** **Communicate** and Inform
 
 ### What to expect when conducting an assessment

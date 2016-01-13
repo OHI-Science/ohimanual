@@ -2,27 +2,27 @@
 
 There are different ways to work with local data that better describes what the goal aims to measure. When better data are available, it is possible to incorporate it into goal models in two ways:
 
-* goal model does not change but underlying data better describe local conditions 
+* goal model does not change but underlying data better describe local conditions
 * goal model is modified to incorporate new information
 
-It's best to start by discussing the characteristics in your local system, what kind of data you have, and then how you would adapt the model because of those better data. 
+It's best to start by discussing the characteristics in your local system, what kind of data you have, and then how you would adapt the model because of those better data.
 
 ## Reference points
 
-Setting reference points is a choice. If there is not a functional relationship, it is important to discuss the costs and benefit of setting reference points differently, but there is no optimum or right way. Makes it difficult, but important to define. 
+Setting reference points is a choice. If there is not a functional relationship, it is important to discuss the costs and benefit of setting reference points differently, but there is no optimum or right way. Makes it difficult, but important to define.
 
 ## To begin your discussion
 
-Here are questions to think about regarding goal models. 
+Here are questions to think about regarding goal models.
 
 * Which coastal habitats are in your study area?
 
 
 Identify priorities.
 
-Habitat-based goals: 
+Habitat-based goals:
 
-* Coastal Protection 
+* Coastal Protection
 * Carbon Storage
 * Habitats (sub-goal of Biodiversity).
 
@@ -30,7 +30,7 @@ Habitat-based goals:
 ## Quick reference
 
 **Priorities for incorporating better data**:
- 
+
 Goal | Priority for modification | Details
 -----|---------------------------|--------
 coastal protection | high | local habitat data should be better than global data
@@ -46,10 +46,12 @@ species sub-goal | low | would require a lot of GIS to redo
 
 These are general thoughts but it is important to revisit them for the local context
 
+<!---no details on wild-caught fisheries?--->
+
 Goal | Modify goal model? | Details
 -----|---------------------|--------
-food provision | no | should remain a weighted combination of wild-caught fisheries and mariculture 
-wild-caught fisheries |  | 
+food provision | no | should remain a weighted combination of wild-caught fisheries and mariculture
+wild-caught fisheries |  |
 mariculture | yes | reference point should be modified to the local context
 artisanal fishing opportunity | yes | this model should be based on access: physical, economic, regulatory, and status of fish stocks
 natural products | no | goal model doesn't need to change but local data are important
@@ -61,7 +63,3 @@ lasting special places | yes | what defines special places in the local context?
 iconic species | no | same approach, improved data
 clean waters | no | could maintain geometric mean or use a weighted mean, but pollution categories should not be combined equally
 species sub-goal | no | use same approach: all species, weighted by their habitat area
-
-
-
-
