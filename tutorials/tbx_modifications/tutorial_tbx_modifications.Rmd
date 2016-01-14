@@ -1,7 +1,8 @@
 ---
 title: 'The Ocean Health Index: Modify a goal model<br /> using the Toolbox'
 author: "Julia Stewart Lowndes<br /> Project Scientist, Ocean Health Index<br /> lowndes@nceas.ucsb.edu"
-output: ioslides_presentation
+output: ioslides_presentation:
+
 ---
 
 ## Introduction 
