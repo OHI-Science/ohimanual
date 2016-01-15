@@ -6,6 +6,9 @@ output: ioslides_presentation
 subtitle: Ocean Health Index
 ---
 
+## Where you are in OHI+
+![OHI phases](https://docs.google.com/drawings/d/1-slOK7zdYyL3054HB5CLUCnM0rq1kCUQCB5u12jhUdw/pub?w=960&h=600)
+
 ## OHI Framework
 ![OHI Framework](https://docs.google.com/drawings/d/1XAx6M3Qh5EWEG8CIXykFr7dskVTttBdLOBPguIVZ-pk/pub?w=900&h=480)
 
@@ -113,11 +116,11 @@ Register data to be called upon during calculation
 
 ## Toolbox: Modify Goal Models & Calculate Scores
 
-![goal score calculation](https://docs.google.com/drawings/d/1t0SEZbFl8hhXrOdTRC-JKL1humnnmzdTDs5NL16anio/pub?w=860&h=540)
+![goal score calculation](https://docs.google.com/drawings/d/1t0SEZbFl8hhXrOdTRC-JKL1humnnmzdTDs5NL16anio/pub?w=860&h=600)
 
 <div class="notes">
 This is an overview of the calculation process. Goal score is Current status modified by Trend, Pressures, and Resilience. Current status is calculated as present state compared with an ideal reference point. 
-
+</div>
  
 ## Main Resources 
 
