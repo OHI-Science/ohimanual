@@ -7,7 +7,7 @@ subtitle: Ocean Health Index
 ---
 
 ## OHI Framework
-![OHI Framework](https://docs.google.com/drawings/d/1XAx6M3Qh5EWEG8CIXykFr7dskVTttBdLOBPguIVZ-pk/pub?w=624&h=480)
+![OHI Framework](https://docs.google.com/drawings/d/1XAx6M3Qh5EWEG8CIXykFr7dskVTttBdLOBPguIVZ-pk/pub?w=900&h=480)
 
 <div class="notes">
 A quick review of the OHI process. It starts from the conceptual framework where the conceptual planning and model building happen. It is then translated into the Toolbox for calculations. Both the framework and the toolbox has two components: core and tailored. The "core" is the foundation of OHI, which defines how goals are fit together and how to calculate pressures, resilience, and final scores. It stays the same for all OHI+ assessments. On the other hand, OHI+ assessments will focus on the tailered part of OHI, where local decisions and data come into play. 
