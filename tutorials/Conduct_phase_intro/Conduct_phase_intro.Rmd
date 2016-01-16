@@ -6,10 +6,10 @@ output: beamer_presentation
 subtitle: Ocean Health Index
 ---
 
-## Where you are in OHI+
+## Where you are in OHI+ {.centered}
 ![OHI phases](https://docs.google.com/drawings/d/1-slOK7zdYyL3054HB5CLUCnM0rq1kCUQCB5u12jhUdw/pub?w=960&h=600)
 
-## OHI Framework
+## OHI Framework {.centered}
 ![OHI Framework](https://docs.google.com/drawings/d/1XAx6M3Qh5EWEG8CIXykFr7dskVTttBdLOBPguIVZ-pk/pub?w=900&h=480)
 
 <div class="notes">
@@ -18,10 +18,10 @@ A quick review of the OHI process. It starts from the conceptual framework where
 </div>
 
 
-## OHI Framework - Tailored
+## OHI Framework - Tailored {.centered}
 ![OHI tailored](https://docs.google.com/drawings/d/1-H2uHSNf1Qk3O5sudhQHREy8F_OZpnobzTKHm2i-sHM/pub?w=624&h=480)
 
-## Technical Team Structure
+## Technical Team Structure {.centered}
 ![team structure](https://docs.google.com/drawings/d/1akDCmVFkQNQxDM2DARaZKFUWwZ75dC5H45heuD14Xvg/pub?w=960&h=500)
 
 <div class="notes">
@@ -30,19 +30,19 @@ A quick review of the OHI process. It starts from the conceptual framework where
 </div>
 
 
-## OHI Workflow
+## OHI Workflow {.centered}
 ![workflow](https://docs.google.com/drawings/d/1NCcfc24vlQjL4PJ4MltPmIgjgshfTkrZuUTcIqDUHeI/pub?w=960&h=500)
 
 <div class="notes">
 You will start from building a framework, that includes defining boundaries, choosing and building goal models and gather data. Then you can start using the toolbox for the analysis. We will talk about these steps one by one. 
 </div>
 
-## Framework
+## Framework 
 Conceptual planning, model building, and data gathering
 
 Keep in mind at all times these **Best Practices** (see [publication](https://peerj.com/articles/1503/) or [Manual](http://ohi-science.org/manual/#best-practices-for-ohi-assessments))
 
- ![Best Practices](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=768&h=420)
+ ![Best Practices](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=768&h=420) 
 
 <div class="notes">
 Here I'd like to remind you that all the information we talk about today will be avaiable on ohi-science.org and the Manual. 
@@ -114,7 +114,7 @@ Toolbox require [specific formats](http://ohi-science.org/manual/#formatting-dat
   
 Register data to be called upon during calculation
 
-## Toolbox: Modify Goal Models & Calculate Scores
+## Toolbox: Modify Goal Models & Calculate Scores {.centered}
 
 ![goal score calculation](https://docs.google.com/drawings/d/1t0SEZbFl8hhXrOdTRC-JKL1humnnmzdTDs5NL16anio/pub?w=860&h=600)
 
