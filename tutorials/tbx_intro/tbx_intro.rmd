@@ -1,0 +1,51 @@
+---
+title: '_Introduction to_ <br/> the OHI Toolbox'
+subtitle: 'Ocean Health Index'
+author: OHI-Science Team
+date: January, 2016
+output: ioslides_presentation
+
+---
+
+## Where you are {.centered}
+
+![toolbox](https://docs.google.com/drawings/d/1D4RMEuZX21r8PfTQHK1ZreKR6tdxe3zxDT6KQUBulbo/pub?w=624&h=480)
+
+## What is Toolbox? {.smaller}
+Open-source, cross-platform ecosystem to faciliate OHI assessment at any scale
+
+Based on **Github** and **Rstudio**
+
+![github-R](https://docs.google.com/drawings/d/1iwVUEBSlFEfSCi8Pw2sMgTl5zANkjcSCGE83kGxElaY/pub?w=700&h=600)
+
+## What is Toolbox?
+![github-R_2](https://docs.google.com/drawings/d/1mOzAr3W3wqQRrSqpaV4GR2oTcrxdTYGs-Ft_q5GEV9w/pub?w=700&h=600)
+
+See [Manual](ohi-science.org/manual/) for Instructions on installation
+
+## Github Repository - Intro
+All data, scripts, figures, and narratives are stored and shared
+
+Provide Online and Local access
+
+Request a Repo
+
+Create Github Account
+Clone repository to your local computer and link to Rstudio
+Actions: 
+Commit, Pull, Push (via Rstudio)
+
+## Rstudio 
+Coding environment - where you format data and modify goal models 
+
+commit ~ message associated with your changes at a point in time
+pull ~ sync a repo on your computer with online version
+push ~ sync the online repo with your version, only possible after committing
+
+## How to use it?
+
+Main actions: 
+Format in Rstudio & store, and register data in Github
+Modify goal models in Rstudio
+Commit, pull, push new changes in Rstudio to github
+
