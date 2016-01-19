@@ -18,7 +18,7 @@ Based on **Github** and **Rstudio**
 
 ![github-R](https://docs.google.com/drawings/d/1iwVUEBSlFEfSCi8Pw2sMgTl5zANkjcSCGE83kGxElaY/pub?w=700&h=600)
 
-## What is Toolbox?
+## What is Toolbox? {.smaller}
 ![github-R_2](https://docs.google.com/drawings/d/1mOzAr3W3wqQRrSqpaV4GR2oTcrxdTYGs-Ft_q5GEV9w/pub?w=700&h=600)
 
 See [Manual](ohi-science.org/manual/) for Instructions on installation

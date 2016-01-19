@@ -4,9 +4,9 @@ Before you begin actually conducting your assessment (explained in Phase 3), it 
 
 The lead organizer of the proposed assessment may want to begin by with a _stakeholder analysis_ to gain a better sense of who are the key players involved in ocean and coastal resource management in the study area. We recommend creating a **Working Group** with representatives from public sectors (government agencies, national and regional authorities, etc.), academic and scientific institutions, civil society, and private sector. Engaging these stakeholders will greatly enhance your abilities to collaborate and communicate across several groups. It will also give you access to a larger pool of resources and knowledge. The Working Group is in charge of:
 
-* Developing a project proposal
-* Assembling a qualified **Technical Team** to conduct the assessment itself (see [Team Sturcture](/plan/#team-structure))
-* Managing the overall assessment process
+- Developing a project proposal
+- Assembling a qualified **Technical Team** to conduct the assessment itself (see [Team Sturcture](/plan/#team-structure))
+- Managing the overall assessment process
 
 Procuring funding and creating a budget that is informed by the task timeline will also aid in smart spending and decrease the likelihood that funding will run out before the process is completed.
 
