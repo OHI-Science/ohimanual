@@ -123,7 +123,7 @@ You will then work locally on your own computer, modifying the files in the repo
 
 The example below illustrates GitHub's collaborative workflow:
 
->>![](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
+![](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
 
 All changes within your local repository will be tracked by GitHub regardless of the software you use to make the changes. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. We recommend doing as much data manipulation as possible in a programming language like R, to maximize transparency and reproducibility.
 
@@ -151,7 +151,7 @@ RStudio can sync files with GitHub directly. It will capture the changes made to
 
 Launch your project in RStudio by double-clicking the `.Rproj` file in the assessment folder on your local hard drive.
 
-> ![](https://docs.google.com/drawings/d/11F2lbB1S56ccZK5CbCxga4SEiRoE6E0-3QtZO99p37A/pub?w=384&h=288)
+![](https://docs.google.com/drawings/d/11F2lbB1S56ccZK5CbCxga4SEiRoE6E0-3QtZO99p37A/pub?w=384&h=288)
 
 When you modify or add a file, the file will appear in the 'Git' window once it has been saved. In the example below, the file `test.R` was created.
 
