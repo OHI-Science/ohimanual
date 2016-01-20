@@ -6,16 +6,16 @@ The OHI framework assesses a suite of key **social, economic, and ecological** b
 
 In the OHI framework **a healthy ocean is one that sustainably delivers a range of benefits to people now and in the future.** The Ocean Health Index is not an index of ecosystem services. In creating an inventory of all elements that are considered part of a healthy ocean under a wider definition, various categories began to evolve. The ten goals (and eight sub-goals) that are commonly included in an Index broadly capture the universal ocean benefits:
 
-- [**Food Provision**](FP_Philosophy) from sustainably harvested or cultured fish stocks
-- [**Artisanal Fishing Opportunities**](AO_Philosophy) for local communities to engage in sustainable practices
-- [**Natural Products**](NP_Philosophy) that are sustainably extracted from the ocean
-- [**Carbon Storage**](CS_Philosophy) in coastal habitats
-- [**Coastal Protection**](CP_Philosophy) from inundation and erosion
-- [**Sense of Place**](SP_Philosophy) from culturally valued iconic species, habitats, and landscapes
-- [**Livelihoods and Economies**](LE_Philosophy) from coastal and ocean-dependent communities
-- [**Tourism and Recreation**](TR_Philosophy) opportunities
-- [**Clean Waters**](CW_Philosophy) and beaches for aesthetic and health values
-- [**Biodiversity**](BIO_Philosophy) of species and habitats
+- [**Food Provision**](http://ohi-science.org/learn/#food-provision) from sustainably harvested or cultured fish stocks
+- [**Artisanal Fishing Opportunities**](http://ohi-science.org/new-site/learn/#artisanal-fishing-opportunities) for local communities to engage in sustainable practices
+- [**Natural Products**](http://ohi-science.org/learn/#natural-products) that are sustainably extracted from the ocean
+- [**Carbon Storage**](http://ohi-science.org/learn/#carbon-storage) in coastal habitats
+- [**Coastal Protection**](http://ohi-science.org/learn/#coastal-protection) from inundation and erosion
+- [**Sense of Place**](http://ohi-science.org/learn/#sense-of-place) from culturally valued iconic species, habitats, and landscapes
+- [**Livelihoods and Economies**](http://ohi-science.org/learn/#coastal-livelihoods-and-economies) from coastal and ocean-dependent communities
+- [**Tourism and Recreation**](http://ohi-science.org/learn/#tourism-and-recreation) opportunities
+- [**Clean Waters**](http://ohi-science.org/learn/#clean-waters) and beaches for aesthetic and health values
+- [**Biodiversity**](http://ohi-science.org/learn/#biodiversity) of species and habitats
 
 This framework was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framework to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow.
 
