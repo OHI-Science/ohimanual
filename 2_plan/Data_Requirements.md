@@ -36,7 +36,7 @@ Data required for resilience
 - Social integrity
     - Governance indicators (policies, enforcement, effectiveness)
 
-### Case Study from Colombia
+## Case Study from Colombia
 
 When Colombia began the process of developing their independent assessment, the Colombian Ocean Commission (CCO), the lead agency behind OHI+ in the country, early in the planning process realized that despite the country having adequate information and data for the study, it was not easily accessible.
 
