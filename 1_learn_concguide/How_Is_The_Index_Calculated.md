@@ -12,12 +12,14 @@ The other half is the **likely future state**, which is current status modified 
 
 * **Resilience**: social and ecological elements (or actions) that can and reduce pressures, and maintain or raise future benefits (e.g. treaties, laws, enforcement, habitat protection)
 
-![](./Figures/Trend_Pressure_Resilience.png) <!---Will edit this figure.--->
+![In the figure, likely future state (in yellow) is the result of the trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink)](https://docs.google.com/drawings/d/1GkLZnW8hQJf1KLX89LzViEBU4PkJ8kRqOERt_Fxtwu4/pub?w=864&h=384)
+
+<!---![](./Figures/Trend_Pressure_Resilience.png) Will edit this figure.---> 
 
 **Pressures and resilience** are important for scores, although they have a smaller contribution to the overall scores because we can only approximate their effects. Individual pressures are ranked (weighted) according to their importance to different goals based on scientific literature and expert opinion. From a management intervention perspective, resilience actions are the best way to improve a score, because they can reduce pressures, protect ocean habitats and species, improve status, and optimize benefits to people.
 
 <!-- Status, trend, likely future status, pressures, and resilience are called ‘dimensions’ within the Ocean Health Index framework. -->
 
-**In the figure below**, likely future state (in yellow) is the result of the current status modified by trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink).
+<!--  **In the figure below**, likely future state (in yellow) is the result of the current status modified by trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink).
 
-<!-- ![In the figure, likely future state (in yellow) is the result of the trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink)](https://docs.google.com/drawings/d/1GkLZnW8hQJf1KLX89LzViEBU4PkJ8kRqOERt_Fxtwu4/pub?w=864&h=384) -->
+![In the figure, likely future state (in yellow) is the result of the trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink)](https://docs.google.com/drawings/d/1GkLZnW8hQJf1KLX89LzViEBU4PkJ8kRqOERt_Fxtwu4/pub?w=864&h=384) -->

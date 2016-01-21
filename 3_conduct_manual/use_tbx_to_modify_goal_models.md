@@ -31,14 +31,14 @@ lyrs = c('cs_condition',
   # SelectLayersData is an `ohicore` function that will call the layers from layers folder you just named
 
   head(D); summary(D)
-  ```
+```
 
 It is good practice to use head() and summary() after each step to make sure the data looks the way it is supposed to. Alternatively, you can click the file name in Rstudio `Environment` to see the entire dataset you just created. Here is what the _head_ and _summary_ look like:
 
- ```
-  id_num    category val_num        layer id_name val_name category_name                        flds year
-1      1 saltmarshes     0.8 cs_condition  rgn_id    value       habitat id_num | category | val_num   NA
-2      2 saltmarshes     0.8 cs_condition  rgn_id    value       habitat id_num | category | val_num   NA
+```
+  id_num    category val_num        layer id_name val_name category_name                      
+       1 saltmarshes     0.8 cs_condition  rgn_id    value       habitat id_num | category | val_num
+       2 saltmarshes     0.8 cs_condition  rgn_id    value       habitat id_num | category | val_num
 ... ...
 
      id_num              category     val_num             layer             id_name            val_name         category_name          flds                year
