@@ -37,7 +37,7 @@ By this time, you should have your technical team assembled. Here are two exampl
 You will start from building a framework, that includes defining boundaries, choosing and building goal models and gather data. Then you can start using the Toolbox for the analysis. We will talk about these steps one by one. 
 </div>
 
-## Conceptual Framework
+## Best Practices
 Follow these **Best Practices** when planning models and reference points (see [publication](https://peerj.com/articles/1503/) or [Manual](http://ohi-science.org/manual/#best-practices-for-ohi-assessments)):
 
  ![Best Practices](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=960&h=500)
