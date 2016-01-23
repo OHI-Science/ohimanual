@@ -69,7 +69,7 @@ practices can also act as pressures for other goals, for example destructive
 fishing practices can impact habitat-based goals and genetic escapes from
 mariculture practices can affect Fisheries and Biodiversity.
 
-#### Fisheries sub-goal
+#### sub-goal: Fisheries 
 
 The Fisheries sub-goal describes the amount of wild-caught
 seafood harvested and its sustainability for human consumption. The model
@@ -224,7 +224,7 @@ Assessment | Developing the Model  | Setting the Reference Point | Other Conside
 
 </span>
 
-#### Mariculture sub-goal
+#### sub-goal: Mariculture 
 
 Mariculture measures the ability to reach the highest levels of seafood
 gained from farm-raised facilities without damaging the ocean's ability to
