@@ -56,7 +56,7 @@ Also there are theoretical questions about resilience, but it is a discussion fo
 
 Also there are theoretical questions about resilience, but it is a discussion for another day. Does resilience mean measures to keep things the way it is (eg. grants for AO fishermen to keep fishing), or ways to help people adapt and change (eg. grants for AO fishermen to start aquaculture)?  
 
-Yes, we can try to get into this stuff in the resilience section--> -->
+Yes, we can try to get into this stuff in the resilience section--> 
 
 <!--
 Julie: I've deleted the rest below and rewritten it as the intro for the goal-by-goal page on ohi-science.org: https://github.com/OHI-Science/ohi-science.github.io/blob/master/revamp_copy.md
