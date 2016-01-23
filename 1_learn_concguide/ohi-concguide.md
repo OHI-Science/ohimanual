@@ -4,48 +4,50 @@ title: The Ocean Health Index - Learn Phase
 
 # Introduction
 
-> Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources. 
+> Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources.
 
-The OHI framework assesses a suite of key **social, economic, and ecological** benefits a healthy oceans provides, called "goals". By analyzing these goals together and scoring them from 0-100, OHI assessments result in a comprehensive picture of the state of the ecosystem and can be communicated to a wide range of audiences. 
+The OHI framework assesses a suite of key **social, economic, and ecological** benefits a healthy oceans provides, called "goals". By analyzing these goals together and scoring them from 0-100, OHI assessments result in a comprehensive picture of the state of the ecosystem and can be communicated to a wide range of audiences.
 
-In the OHI framework **a healthy ocean is one that sustainably delivers a range of benefits to people now and in the future.** The Ocean Health Index is not an index of ecosystem services. In creating an inventory of all elements that are considered part of a healthy ocean under a wider definition, various categories began to evolve. The ten goals (and eight sub-goals) that are commonly included in an Index broadly capture the universal ocean benefits: 
+In the OHI framework **a healthy ocean is one that sustainably delivers a range of benefits to people now and in the future.** The Ocean Health Index is not an index of ecosystem services. In creating an inventory of all elements that are considered part of a healthy ocean under a wider definition, various categories began to evolve. The ten goals (and eight sub-goals) that are commonly included in an Index broadly capture the universal ocean benefits:
 
-- [**Food Provision**](FP_Philosophy) from sustainably harvested or cultured fish stocks
-- [**Artisanal Fishing Opportunities**](AO_Philosophy) for local communities to engage in sustainable practices
-- [**Natural Products**](NP_Philosophy) that are sustainably extracted from the ocean
-- [**Carbon Storage**](CS_Philosophy) in coastal habitats
-- [**Coastal Protection**](CP_Philosophy) from inundation and erosion
-- [**Sense of Place**](SP_Philosophy) from culturally valued iconic species, habitats, and landscapes
-- [**Livelihoods and Economies**](LE_Philosophy) from coastal and ocean-dependent communities
-- [**Tourism and Recreation**](TR_Philosophy) opportunities
-- [**Clean Waters**](CW_Philosophy) and beaches for aesthetic and health values
-- [**Biodiversity**](BIO_Philosophy) of species and habitats
+- [**Food Provision**](http://ohi-science.org/learn/#food-provision) from sustainably harvested or cultured fish stocks
+- [**Artisanal Fishing Opportunities**](http://ohi-science.org/new-site/learn/#artisanal-fishing-opportunities) for local communities to engage in sustainable practices
+- [**Natural Products**](http://ohi-science.org/learn/#natural-products) that are sustainably extracted from the ocean
+- [**Carbon Storage**](http://ohi-science.org/learn/#carbon-storage) in coastal habitats
+- [**Coastal Protection**](http://ohi-science.org/learn/#coastal-protection) from inundation and erosion
+- [**Sense of Place**](http://ohi-science.org/learn/#sense-of-place) from culturally valued iconic species, habitats, and landscapes
+- [**Livelihoods and Economies**](http://ohi-science.org/learn/#coastal-livelihoods-and-economies) from coastal and ocean-dependent communities
+- [**Tourism and Recreation**](http://ohi-science.org/learn/#tourism-and-recreation) opportunities
+- [**Clean Waters**](http://ohi-science.org/learn/#clean-waters) and beaches for aesthetic and health values
+- [**Biodiversity**](http://ohi-science.org/learn/#biodiversity) of species and habitats
 
-This frameowrk was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framwork to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow. 
+This framework was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framework to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow.
 
 ## OHI Workflow
 
-You will frist build a conceptual framework and determine which goals to access and how, which is then translated into the toolbox to calculate the scores. Both the conceptual framework and technical toolbox consist of two major parts: **core** and **tailored**. The "core" maintains the integrity of Ocean Health and determines how Index scores are calculated, while the "tailored" allows flexibility and accommodates different scales, data availabilities, and cultural priorities. 
+You will first build a conceptual framework and determine which goals to access and how, which is then translated into the toolbox to calculate the scores. Both the conceptual framework and technical toolbox consist of two major parts: **core** and **tailored**. The "core" maintains the integrity of Ocean Health and determines how Index scores are calculated, while the "tailored" allows flexibility and accommodates different scales, data availabilities, and cultural priorities.
 
-![OHI workflow](https://docs.google.com/drawings/d/1z0UaAWaMOgqco4sdLrsqHZD3kYN6bRQYJPvj4_QeJFQ/pub?w=624&h=480)
+![OHI workflow](https://docs.google.com/drawings/d/1cv0dUUwHjCFVxw7fZTpnuHZEgRO1LX6nHMCOCra-ZhQ/pub?w=960&h=500)
 
-OHI+ teams are responsible for modifying the "tailored" part of the framework and toolbox, thereby truely ensuring local adaptation. Besides incorporating local data, a large part of _tailoring_ involves choosing and modifying goal models. While the 10 goals identified in the Index represent broadly-held public benefits globally, they might not apply to your local territories. We provide detailed instructions on how to choose and change your own goals in the [Conduct phase](/manual/). 
+OHI+ teams are responsible for modifying the "tailored" part of the framework and toolbox, thereby truly ensuring local adaptation. Besides incorporating local data, a large part of _tailoring_ involves choosing and modifying goal models. While the 10 goals identified in the Index represent broadly-held public benefits globally, they might not apply to your local territories. We provide detailed instructions on how to choose and change your own goals in the [Conduct phase](/manual/).
 
 ## Outcomes of an OHI+ assessment
 
-Your completed assessment will produce OHI scores for each goal in every region of your study area, and scores within the assessment can be compared with one another. The scores will be represented in familiar flower plots. However, these scores will not be quantitatively comparable to those of other OHI assessments because they differ in the underlying inputs, goal models, and reference points.
+Your completed assessment will produce OHI scores for each goal in every region of your study area, and scores within the assessment can be compared with one another. Goal scores range between 0 and 100, and are visualized in a _Flower Plot_ for easy communication with a wide audience - each pedal represents one goal, and the size of the pedal corresponds with its score. 
 
-## What support we provide 
+However, these scores will not be quantitatively comparable to those of other OHI assessments because they differ in the underlying inputs, goal models, and reference points.
 
-Our team of scientists and managers is prepared to provide guidance for regional assessments, from initial meetings to the technical calculations to disseminating results. We have created a suite of **guides and manuals** that provide in-depth information for the Ocean Health Index+ assessment process in addition to recommendations on how to best approach the task, including
+## What support we provide
 
-* A Guide to Planning OHI+ Assessments and Informing Decision-Making 
+Our team of scientists and managers is prepared to provide guidance for regional assessments, from initial meetings to the technical calculations to disseminating results. We have created a suite of **guides and manuals** that provide in-depth information for the Ocean Health Index+ assessment process in addition to recommendations on how to best approach the task, including:
 
-* The Ocean Health Index Conceptual Guide 
+* A Guide to Planning OHI+ Assessments and Informing Decision-Making
+
+* The Ocean Health Index Conceptual Guide
 
 * The Ocean Health Index [Toolbox Manual](/manual/)
 
-In addtion, you will have access to the OHI+ online community via our [Forum](/forum/)
+In addition, you will have access to the OHI+ online community via our [Forum](/forum/)
 
 #  The Global assessment and your OHI+
 
@@ -107,15 +109,17 @@ The other half is the **likely future state**, which is current status modified 
 
 * **Resilience**: social and ecological elements (or actions) that can and reduce pressures, and maintain or raise future benefits (e.g. treaties, laws, enforcement, habitat protection)
 
-![](./Figures/Trend_Pressure_Resilience.png) <!---Will edit this figure.--->
+![In the figure, likely future state (in yellow) is the result of the trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink)](https://docs.google.com/drawings/d/1GkLZnW8hQJf1KLX89LzViEBU4PkJ8kRqOERt_Fxtwu4/pub?w=864&h=384)
+
+<!---![](./Figures/Trend_Pressure_Resilience.png) Will edit this figure.---> 
 
 **Pressures and resilience** are important for scores, although they have a smaller contribution to the overall scores because we can only approximate their effects. Individual pressures are ranked (weighted) according to their importance to different goals based on scientific literature and expert opinion. From a management intervention perspective, resilience actions are the best way to improve a score, because they can reduce pressures, protect ocean habitats and species, improve status, and optimize benefits to people.
 
 <!-- Status, trend, likely future status, pressures, and resilience are called ‘dimensions’ within the Ocean Health Index framework. -->
 
-**In the figure below**, likely future state (in yellow) is the result of the current status modified by trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink).
+<!--  **In the figure below**, likely future state (in yellow) is the result of the current status modified by trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink).
 
-<!-- ![In the figure, likely future state (in yellow) is the result of the trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink)](https://docs.google.com/drawings/d/1GkLZnW8hQJf1KLX89LzViEBU4PkJ8kRqOERt_Fxtwu4/pub?w=864&h=384) -->
+![In the figure, likely future state (in yellow) is the result of the trend, minus the negative effect of pressures (grey), plus the positive effect of resilience (salmon pink)](https://docs.google.com/drawings/d/1GkLZnW8hQJf1KLX89LzViEBU4PkJ8kRqOERt_Fxtwu4/pub?w=864&h=384) -->
 
 ## How are the goals weighted?
 
@@ -168,7 +172,7 @@ For each goal the Index measures several aspects of resilience. Ecological integ
 
 <!---A WGI score of 1 means that social integrity is the best it can be; and a score of 0 means that governance is completely ineffective, so that the country has no social Resilience.  The full composite score for all six WGI indicators is used to evaluate social resilience for all of the Ocean Health Index goals except for Livelihoods; the Livelihoods goal only uses the WGI’s Regulatory Quality data layer, because it also uses the Global Competitiveness Index, which duplicates, but improves, the remaining WGI layers for this purpose.--->
 
-Although resilience really should be judged by the effectiveness of its outcome, this is not possible at the global level. Therefore, nations are given advanced credit for signing treaties, e.g., for conserving biodiversity or eliminating trade in endangered species, and for measures of social integrity.  The assumption is that results from those beneficial actions and conditions will become visible in following years as increased scores for goal status and trend
+Although resilience really should be judged by the effectiveness of its outcome, this is not possible at the global level. Therefore, nations are given advanced credit for signing treaties, e.g., for conserving biodiversity or eliminating trade in endangered species, and for measures of social integrity.  The assumption is that results from those beneficial actions and conditions will become visible in following years as increased scores for goal status and trend.
 
 ## Interactions: Pressures and Resilience
 
@@ -192,7 +196,7 @@ The trend is, in most cases, calculated using the status score of the last five 
 
 ## Understanding Present Status
 
-The present status component of each goal is captured through a mathematical model (a formula) that captures the philosophy of the goal in a way that produces findings that are most useful to inform decision-making at the scale of your assessment. This dimension represents half (50%) of the total goal score
+The present status component of each goal is captured through a mathematical model (a formula) that captures the philosophy of the goal in a way that produces findings that are most useful to inform decision-making at the scale of your assessment. This dimension represents half (50%) of the total goal score.
 
 The current status of each goal is determined by comparing the most recent measure of the goal with a goal-specific sustainable reference point. For each goal, as well as for many individual data layers, values are rescaled to reference points, or targets, which serve as benchmarks based on SMART principles: Specific (to the management goal), Measurable, Ambition, Realistic, and Time-bound (Samhouri *et al.* 2012; Perrings *et al.* 2010; 2011).
 
