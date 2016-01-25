@@ -1,0 +1,131 @@
+---
+title: "_Introduction to_ <br> **The Conduct Phase**"
+author: "OHI-Science Team"
+date: "January, 2016"
+output: beamer_presentation
+subtitle: Ocean Health Index
+---
+
+## Where you are in the OHI+ process {.centered}
+![OHI phases](https://docs.google.com/drawings/d/1-slOK7zdYyL3054HB5CLUCnM0rq1kCUQCB5u12jhUdw/pub?w=960&h=600)
+
+
+## Conduct Phase {.centered}
+![OHI Framework](https://docs.google.com/drawings/d/1XAx6M3Qh5EWEG8CIXykFr7dskVTttBdLOBPguIVZ-pk/pub?w=900&h=480)
+
+<div class="notes">
+**A quick review of the OHI+ process.** It starts with planning the conceptual Framework: which goals and key characteristics to include. The Toolbox calculates OHI scores, and requires that the models are developed using available data. The Framework and Toolbox have two components: core and tailored. The core is the foundation of OHI, which defines how goals are fit together with pressures, resilience, as final scores. It stays the same for all OHI+ assessments. On the other hand, OHI+ assessments will focus on the tailered part of OHI, where local decisions and data come into play.  
+</div>
+
+## Conduct Phase - Tailored {.centered}
+
+![OHI tailored](https://docs.google.com/drawings/d/1-H2uHSNf1Qk3O5sudhQHREy8F_OZpnobzTKHm2i-sHM/pub?w=624&h=480)
+
+## Technical Team Structure {.centered}
+![team structure](https://docs.google.com/drawings/d/1akDCmVFkQNQxDM2DARaZKFUWwZ75dC5H45heuD14Xvg/pub?w=960&h=500)
+
+<div class="notes">
+By this time, you should have your technical team assembled. Here are two examples of OHI+ team structures. No matter which team structure you have, you will develop a workflow to get conceptual models and data to the Toolbox.
+</div>
+
+
+## OHI Workflow {.centered}
+
+![workflow](https://docs.google.com/drawings/d/1NCcfc24vlQjL4PJ4MltPmIgjgshfTkrZuUTcIqDUHeI/pub?w=960&h=500)
+
+<div class="notes">
+You will start from building a framework, that includes defining boundaries, choosing and building goal models and gather data. Then you can start using the Toolbox for the analysis. We will talk about these steps one by one. 
+</div>
+
+## Best Practices
+Follow these **Best Practices** when planning models and reference points (see [publication](https://peerj.com/articles/1503/) or [Manual](http://ohi-science.org/manual/#best-practices-for-ohi-assessments)):
+
+ ![Best Practices](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=960&h=500)
+
+
+<div class="notes">
+Here I'd like to remind you that all this information is avaiable on ohi-science.org and in the Manual. 
+</div>
+
+## Framework: Define Spatial Boundaries
+Scores are calculated for each region within an assessment area. [Jurisdictional boundaries](http://ohi-science.org/manual/#defining-spatial-boundaries) are often appropriate.  
+
+![image](https://docs.google.com/drawings/d/17qXZ8Ah6WPYhP1_RQOsIA5gHBNlP8mGAFcDIxkizM58/pub?w=960&h=420)
+
+## Framework: Select & Develop Goal 
+Select from _Ten commonly assessed goals_
+
+See **[Conceptual and Practical guidance](http://ohi-science.org/goals)** for each goal
+
+  - Understand each goal, maintain the definition but think critically how to represent it (Best Practices 1 & 3)
+  - Work on similar goals simultaneously
+  - Evaluate **reference point, pressures, resilience** while collecting data 
+  
+Prepare **data and models** for the Toolbox ([Appendix 2 & 3](http://ohi-science.org/manual/#appendix-2-instructions-for-preparing-data-files-for-the-ohi-toolbox))
+
+## Framework: Gather Information
+
+Information (data and/or indicators) are required to calculate **Goal status, Pressures, and Resilience**  
+
+[Gather **open-access** data](http://ohi-science.org/manual/#discovering-and-gathering-input-information) that will be **updated regularly**
+
+Data must be at appropriate **spatial and temporal scales**
+
+Give preference to high quality data collected by respected organizations
+
+If can't find ideal data, use **proxy data** or [**gapfill**](http://ohi-science.org/manual/#gapfilling)
+
+## Prepare to use the Toolbox
+Once you have:
+
+- gathered data
+- developed goal models with available data
+- finalized spatial boundaries with available data
+
+**Request a Toolbox Tailored Assessment Repository**
+
+- where your data will be stored, formatted, and managed
+- scores will be calculated using the Toolbox Core package
+- use of R and GitHub are required
+  
+## Toolbox: Github - R 
+
+![Github-R](https://docs.google.com/drawings/d/1iwVUEBSlFEfSCi8Pw2sMgTl5zANkjcSCGE83kGxElaY/pub?h=500)
+
+
+## Toolbox: Data Preparation 
+Format, store, and register data 
+
+Script preparation process as much as possible for transparency, explanation, and comparable future assessments 
+
+Toolbox requires [specific preparation](http://ohi-science.org/manual/#formatting-data-for-the-toolbox):
+
+  - each data layer as a separate _.csv_ file
+  - each layer has long formatting
+  - most layers rescaled to 0-1 
+  - each layer must be registered
+
+## Toolbox: Modify Goal Models & Calculate Scores {.centered}
+
+![goal score calculation](https://docs.google.com/drawings/d/1t0SEZbFl8hhXrOdTRC-JKL1humnnmzdTDs5NL16anio/pub?w=860&h=600)
+
+<div class="notes">
+This is an overview of the calculation process. Goal score is Current status modified by Trend, Pressures, and Resilience. Current status is calculated as present state compared with an ideal reference point. 
+</div>
+ 
+## Main Resources 
+
+[**ohi-science.org**](ohi-science.org): main site for all OHI+ related topics
+
+[**Manual**](http://ohi-science.org/manual/): conceptual and technical guidance for each step 
+
+[**Other OHI+ Projects**](http://ohi-science.org/projects/): materials from completed and on-going projects 
+
+[**Forum**](http://ohi-science.org/forum/): on-line community for OHI+ practitioners to connect and learn from each other
+
+[**Turorials**](http://ohi-science.org/resources/downloads/): presentations
+
+Contact our team: info@ohi-science.org
+
+
+
