@@ -19,6 +19,12 @@ In the OHI framework **a healthy ocean is one that sustainably delivers a range 
 
 This framework was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framework to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow.
 
+## 4 Phases of OHI+
+
+There are [four phases of OHI+ assessment](http://ohi-science.org/new-site/phases/): Learn, Plan, Conduct, and Inform. You are currently in the Learn Phase, where you will be focusing on understanding OHI framework and philosophy, and determining the needs and purposes of your OHI+ assessment. 
+
+![learn phase tasks](https://docs.google.com/drawings/d/1coG1ir10s2gBs0rleLjISlQUywf8Uc3v8PAyovAKK2o/pub?w=960&h=720)
+
 ## OHI Workflow
 
 You will first build a conceptual framework and determine which goals to access and how, which is then translated into the toolbox to calculate the scores. Both the conceptual framework and technical toolbox consist of two major parts: **core** and **tailored**. The "core" maintains the integrity of Ocean Health and determines how Index scores are calculated, while the "tailored" allows flexibility and accommodates different scales, data availabilities, and cultural priorities.
