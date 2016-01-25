@@ -1,8 +1,8 @@
 ---
 title: "_Introduction to_ <br> **The Conduct Phase**"
-author: "OHI-Science Team"
+author: '[OHI-Science Team](ohi-science.org)'
 date: "January, 2016"
-output: beamer_presentation
+output: ioslides_presentation
 subtitle: Ocean Health Index
 ---
 
@@ -44,7 +44,7 @@ Follow these **Best Practices** when planning models and reference points (see [
 
 
 <div class="notes">
-Here I'd like to remind you that all this information is avaiable on ohi-science.org and in the Manual. 
+Here I'd like to remind you that all this information is avaiable on ohi-science.org and in the Manual. Read the Best Practices section carefully before conducting an assessment.  
 </div>
 
 ## Framework: Define Spatial Boundaries
