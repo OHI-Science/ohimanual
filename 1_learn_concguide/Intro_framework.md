@@ -19,9 +19,9 @@ In the OHI framework **a healthy ocean is one that sustainably delivers a range 
 
 This framework was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framework to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow.
 
-## 4 Phases of OHI+
+## Four Phases of OHI+
 
-There are [four phases of OHI+ assessment](http://ohi-science.org/new-site/phases/): Learn, Plan, Conduct, and Inform. You are currently in the Learn Phase, where you will be focusing on understanding OHI framework and philosophy, and determining the needs and purposes of your OHI+ assessment. 
+There are [four phases of OHI+ assessment](http://ohi-science.org/new-site/phases/): **Learn**, **Plan**, **Conduct**, and **Inform**. You are currently in the _Learn_ Phase, where you will understand OHI framework and philosophy, and determine the needs and purposes of your OHI+ assessment. 
 
 ![learn phase tasks](https://docs.google.com/drawings/d/1coG1ir10s2gBs0rleLjISlQUywf8Uc3v8PAyovAKK2o/pub?w=960&h=720)
 
