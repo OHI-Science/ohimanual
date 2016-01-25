@@ -18,6 +18,10 @@ copy_fxn = function(dir_fn,
   }
 }
 
+#### conduct_phase_intro ----
+copy_fxn('conduct_phase_intro/conduct_phase_intro')
+
+
 #### tbx_intro ----
 copy_fxn('tbx_intro/tutorial_tbx_intro')
 copy_fxn('tbx_intro/tutorial_tbx_intro_SPANISH')
@@ -27,12 +31,10 @@ copy_fxn('tbx_modifications/tutorial_tbx_modifications')
 copy_fxn('tbx_modifications/tutorial_tbx_modifications_SPANISH')
 
 #### github_intro ----
-
 copy_fxn('github_intro/tutorial_github_intro')
 copy_fxn('github_intro/tutorial_github_intro_SPANISH')
 
 #### ohi_2012_2015
-
 copy_fxn('ohi_2012_2015/presentation_nceas')
 file.rename('~/github/ohi-science.github.io/assets/downloads/pres/presentation_nceas.pdf',
             '~/github/ohi-science.github.io/assets/downloads/pres/OHI_Overview_2012_2015.pdf')

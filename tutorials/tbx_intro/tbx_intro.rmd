@@ -1,5 +1,5 @@
 ---
-title: '_Introduction to_ <br/> the OHI Toolbox'
+title: '_Introduction to_ <br/> **the Toolbox**'
 subtitle: 'Ocean Health Index'
 author: OHI-Science Team
 date: January, 2016
@@ -12,7 +12,7 @@ output: ioslides_presentation
 ![toolbox](https://docs.google.com/drawings/d/1D4RMEuZX21r8PfTQHK1ZreKR6tdxe3zxDT6KQUBulbo/pub?w=624&h=480)
 
 ## What is Toolbox? {.smaller}
-Open-source, cross-platform ecosystem to faciliate OHI assessment at any scale
+Open-source, cross-platform system to faciliate OHI assessment at any scale
 
 Based on **Github** and **Rstudio**
 
@@ -28,11 +28,21 @@ All data, scripts, figures, and narratives are _stored in one place, and shared 
 
 ![github_actions](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
 
+<<<<<<< HEAD
+=======
+![github-local](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
+
+See more info on Github, see our [presentation](link to Github ppt)
+>>>>>>> de15ec4e1cafb848be1e174812c52ca6a0ca9e32
 
 ## Rstudio 
 Coding environment - where you format data and modify goal models 
 
+<<<<<<< HEAD
 
+=======
+![Rstudio](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=687)
+>>>>>>> de15ec4e1cafb848be1e174812c52ca6a0ca9e32
 
 ## How to use it?
 
@@ -40,4 +50,23 @@ Main actions:
 Format in Rstudio & store, and register data in Github
 Modify goal models in Rstudio
 Commit, pull, push new changes in Rstudio to github
+
+## Explore an Assessment Repository
+
+Belize's **assessment repository** is **blz**, available on GitHub at https://github.com/OHI-Science/blz.  
+  
+The **scenario folder** is **subcountry2014**. 
+
+Note the `blz.Rproj` file that allows you to sync this repository through RStudio.
+
+## Explore an Assessment Repository
+
+Within the **subcountry2014** folder are some key files we will work with:
+
+* **layers.csv**
+* **layers folder**
+* **conf/functions.r**
+* **conf/goals.csv**
+* **conf/pressures_matrix.csv**
+* **conf/resilience_matrix.csv**
 
