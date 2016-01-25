@@ -1110,7 +1110,7 @@ lyrs = c('cs_condition',
   # SelectLayersData is an `ohicore` function that will call the layers from layers folder you just named
 
   head(D); summary(D)
-  ```
+```
 
 It is good practice to use head() and summary() after each step to make sure the data looks the way it is supposed to. Alternatively, you can click the file name in Rstudio `Environment` to see the entire dataset you just created. Here is what the _head_ and _summary_ look like:
 
