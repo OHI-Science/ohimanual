@@ -24,23 +24,15 @@ Based on **Github** and **Rstudio**
 See [Manual](ohi-science.org/manual/) for Instructions on installation
 
 ## Github Repository - Intro
-All data, scripts, figures, and narratives are stored and shared
+All data, scripts, figures, and narratives are _stored in one place, and shared among collaborators_
 
-Provide Online and Local access
+![github_actions](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
 
-Request a Repo
-
-Create Github Account
-Clone repository to your local computer and link to Rstudio
-Actions: 
-Commit, Pull, Push (via Rstudio)
 
 ## Rstudio 
 Coding environment - where you format data and modify goal models 
 
-commit ~ message associated with your changes at a point in time
-pull ~ sync a repo on your computer with online version
-push ~ sync the online repo with your version, only possible after committing
+
 
 ## How to use it?
 
