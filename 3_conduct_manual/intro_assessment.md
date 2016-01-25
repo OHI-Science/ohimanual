@@ -8,13 +8,15 @@ The first four sections will be helpful for all participants. It contains inform
 
 The remaining sections focuse on technical guidance on how to use the toolbox and troubleshoot and will be most useful to the toolbox master. **Appendix 4 provides an example of a record-keeping spreadsheet** which will be helpful for tracking progress. Appendix 5 includes tutorials on frequently used R commands in the Toolbox. 
 
+_Citation: Ocean Health Index. 2016. Ocean Health Index Assessment Manual. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: http://ohi-science.org/manual_
+
 # Introduction
 
 ## Where you are in the OHI+ process
 
 The OHI+ process consists of four phases. In the first phase, you **learned** about the OHI to understand the philosophy behind the goals and the motivation for conducting a study. In the second phase, you actively **planned** to conduct your OHI+ assessment. Now you will actively **conduct** the assessment by engaging with the work of finding the data, preparing the goal models, and taking the necessary steps to learn how to use the **OHI Toolbox** and related software to produce the final results. This is where the science of data discovery and goal model development comes in. In the final phase, you will **communicate** the findings and results of your assessment with others.
 
-![four phases of OHI Assessments](https://docs.google.com/drawings/d/1Abt2c9n4TQRPb_m0K-Ba0aGsHxMFdhxY9BXcuOQcxfM/pub?w=624&h=500)
+![four phases of OHI Assessments](https://docs.google.com/drawings/d/1Abt2c9n4TQRPb_m0K-Ba0aGsHxMFdhxY9BXcuOQcxfM/pub?w=700&h=600)
 
 **The OHI framework** allows you to synthesize the information and priorities relevant to your local context and produce comparable scores. Because the methods of the framework are repeatable, transparent, quantitative, and goal-driven, the process of a carrying out an OHI+ assessment is as valuable as the final results.
 
@@ -57,7 +59,7 @@ Conducting an assessment requires both an understanding of how past assessments 
 
 <!-- Navigating through the WebApp can help frame your thinking and introduce you to the structure of inputs that will be required for the OHI Toolbox software. -->
 
-![Best practices of OHI+ assessments](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?h=650)
+![Best practices of OHI+ assessments](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=960&h=600)
 
 ### Incorporate core values and characteristics into the OHI assessment framework before gathering information
 

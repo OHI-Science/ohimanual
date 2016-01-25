@@ -13,7 +13,7 @@ Funds are needed for:
 
 **The budget should provide a detailed estimate of all the costs to complete objectives and activities**. It might be helpful to separate the budget into the first three Phases of the Index process. The budget should allow the satisfactory completion of all the activities to accomplish the objectives. Given the scientific nature of the Index, engaging qualified human resources may be the highest cost involved in developing an assessment.
 
-> Note: it is difficult for us to provide exact figures on the cost of an assessment because the costs vary widely depending on the local context and the scope of the assessment. [Past assessments](/projects/) have ranged from ~US$250,000 to US$2 million. <---! 2 million is a huge number. is that for an OHI+, or OHI global? --->
+> Note: it is difficult for us to provide exact figures on the cost of an assessment because the costs vary widely depending on the local context and the scope of the assessment. [Past assessments](/projects/) have ranged from ~US$250,000 to US$2 million. 
 
 It may take up to eighteen months to complete an assessment, therefore, creating a financing plan is recommended to determine how the expenses in the budget will be covered over time.
 

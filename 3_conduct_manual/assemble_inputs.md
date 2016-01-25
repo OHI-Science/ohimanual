@@ -69,7 +69,7 @@ You should begin by understanding and comparing the best approaches used in asse
 
 When looking for data, the following decision tree may be useful when going goal-by-goal for discovering data and developing models:
 
-![](https://docs.google.com/drawings/d/1bJ3lk0stX78YM_VVR8VDAmdVUcMv4riSZk-0L2x8ybw/pub?w=624&h=336)
+![](https://docs.google.com/drawings/d/1bJ3lk0stX78YM_VVR8VDAmdVUcMv4riSZk-0L2x8ybw/pub?w=700&h=500)
 
 ### Example: U.S. West Coast data discovery
 

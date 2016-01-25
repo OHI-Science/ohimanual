@@ -6,18 +6,18 @@ output: beamer_presentation
 subtitle: Ocean Health Index
 ---
 
-## Where you are in OHI+ {.centered}
+## Where you are in the OHI+ process {.centered}
 ![OHI phases](https://docs.google.com/drawings/d/1-slOK7zdYyL3054HB5CLUCnM0rq1kCUQCB5u12jhUdw/pub?w=960&h=600)
 
 
-## OHI+ Process {.centered}
+## Conduct Phase {.centered}
 ![OHI Framework](https://docs.google.com/drawings/d/1XAx6M3Qh5EWEG8CIXykFr7dskVTttBdLOBPguIVZ-pk/pub?w=900&h=480)
 
 <div class="notes">
-**A quick review of the OHI+ process.** It starts with planning the conceptual Framework: which goals and key characteristics to include. The Toolbox calculates OHI scores, and requires that the models are developed using available data. The Framework and Toolbox have two components: core and tailored. The core is the foundation of OHI, which defines how goals are fit together with pressures, resilience, as final scores. It stays the same for all OHI+ assessments. On the other hand, OHI+ assessments will focus on the tailered part of OHI, where local decisions and data come into play. 
+**A quick review of the OHI+ process.** It starts with planning the conceptual Framework: which goals and key characteristics to include. The Toolbox calculates OHI scores, and requires that the models are developed using available data. The Framework and Toolbox have two components: core and tailored. The core is the foundation of OHI, which defines how goals are fit together with pressures, resilience, as final scores. It stays the same for all OHI+ assessments. On the other hand, OHI+ assessments will focus on the tailered part of OHI, where local decisions and data come into play.  
 </div>
 
-## OHI Framework - Tailored {.centered}
+## Conduct Phase - Tailored {.centered}
 
 ![OHI tailored](https://docs.google.com/drawings/d/1-H2uHSNf1Qk3O5sudhQHREy8F_OZpnobzTKHm2i-sHM/pub?w=624&h=480)
 
@@ -37,7 +37,7 @@ By this time, you should have your technical team assembled. Here are two exampl
 You will start from building a framework, that includes defining boundaries, choosing and building goal models and gather data. Then you can start using the Toolbox for the analysis. We will talk about these steps one by one. 
 </div>
 
-## Conceptual Framework
+## Best Practices
 Follow these **Best Practices** when planning models and reference points (see [publication](https://peerj.com/articles/1503/) or [Manual](http://ohi-science.org/manual/#best-practices-for-ohi-assessments)):
 
  ![Best Practices](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=960&h=500)
