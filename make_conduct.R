@@ -63,6 +63,14 @@ pfx = tools::file_path_sans_ext(out_md)
 ## render pdf ----
 ohi_pdf(out_md)
 
+# ## copy pdf to resources/downloads on ohi-science.org website
+source('~/github/ohimanual/tutorials/copy_presentations.R')
+copy_fxn('~/github/ohimanual/3_conduct_manual/ohi-manual',
+  extensions = '.pdf', 
+  path_in  = '~/github/ohimanual/3_conduct_maual',
+  path_out =  '~/github/ohi-science.github.io/assets/downloads/other')
+
+
 ## render html to local ohimanual repo ----
 ohi_html_local(out_md)
 
