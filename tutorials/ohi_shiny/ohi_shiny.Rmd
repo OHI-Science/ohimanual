@@ -1,0 +1,33 @@
+---
+title: "The Ocean Health Index"
+subtitle: and Shiny 
+author: "OHI-Science Team: Ben Best, Julie Lowndes, Jamie Afflerbach"
+date: "shinydevcon, January 30, 2016"
+output: ioslides_presentation
+---
+
+## Ocean Health Index 
+![goals and flowerplot](https://docs.google.com/drawings/d/1B65-1ze4IZ-c2Jb907JdKNV2lVHdcR8tvot0lhhsNgk/pub?w=768&h=480)
+
+
+<div class="notes">
+will write talking points here; these notes won't show up on the slides but can be viewed when rendered as html by typing p!
+</div>
+
+## OHI Assessments
+
+(map of assessments to come)
+
+
+<div class="notes">
+will write talking points here; these notes won't show up on the slides but can be viewed when rendered as html by typing p!
+</div>
+
+## Shiny Details
+
+(For BB to complete, or let us know what you're thinking and we can make it.)
+
+<div class="notes">
+will write talking points here; these notes won't show up on the slides but can be viewed when rendered as html by typing p!
+</div>
+
