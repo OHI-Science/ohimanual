@@ -32,12 +32,18 @@ out_md = 'ohi-plan.md' # <- this is the output "final" file.
 cat_md(in_md, out_md)
 pfx = tools::file_path_sans_ext(out_md)
 
-## render pdf ----
-ohi_pdf(out_md)
-
 ## render html to local ohimanual repo ----
 ohi_html_local(out_md)
 
 ## render html and push to ohi-science.org website ----
 ohi_html(out_md, title_header, title_short)
 
+## render pdf ----
+ohi_pdf(out_md)
+
+## copy pdf to downloads on ohi-science.org ----
+source('make_functions.r')
+
+copy_archive(dir_fn   = '2_plan/ohi-plan',
+             path_in  = '~/github/ohimanual',
+             path_out =  '~/github/ohi-science.github.io/assets/downloads/other')
