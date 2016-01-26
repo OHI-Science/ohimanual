@@ -2,7 +2,15 @@
 title: The Ocean Health Index Plan Phase
 ---
 
-# Understand the Requirements for Conducting an OHI Assessment
+# Where you are in the OHI+ process
+
+You have _learned_ about OHI+ assessments, and now you are in the **Plan** phase. Your main tasks are to understand the financial, human resources, and technical requirements of conducting an OHI+ assessment, and plan your assessment accordingly. 
+
+![Plan Phase Tasks](https://docs.google.com/drawings/d/1B-2WqhpBKzVmwEX5KFbqsrDOSksPU5oLrlZfIdH2lY4/pub?w=960&h=720)
+
+
+
+# Requirements for Conducting an OHI+ Assessment
 
 Before you begin actually conducting your assessment (explained in Phase 3), it is crucial to have a full understanding of what are required to complete a successful assessment. Conducting an assessment is a labor intensive process that requires **collaboration, communication, funding, dedication** and, perhaps most importantly, **data**. It is imperative to ensure that you have all of these components before starting your assessment.
 
@@ -113,7 +121,7 @@ Funds are needed for:
 
 **The budget should provide a detailed estimate of all the costs to complete objectives and activities**. It might be helpful to separate the budget into the first three Phases of the Index process. The budget should allow the satisfactory completion of all the activities to accomplish the objectives. Given the scientific nature of the Index, engaging qualified human resources may be the highest cost involved in developing an assessment.
 
-> Note: it is difficult for us to provide exact figures on the cost of an assessment because the costs vary widely depending on the local context and the scope of the assessment. [Past assessments](/projects/) have ranged from ~US$250,000 to US$2 million. <---! 2 million is a huge number. is that for an OHI+, or OHI global? --->
+> Note: it is difficult for us to provide exact figures on the cost of an assessment because the costs vary widely depending on the local context and the scope of the assessment. [Past assessments](/projects/) have ranged from ~US$250,000 to US$2 million. 
 
 It may take up to eighteen months to complete an assessment, therefore, creating a financing plan is recommended to determine how the expenses in the budget will be covered over time.
 
@@ -318,8 +326,6 @@ You must first concrete objectives for the assessment process itself:
 - Establish sustainable reference points using SMART criteria (as stated in **Reference Points** in Phase 1). Your reference points should align with management targets established on a predetermined timeline.
 - Learn and use the *OHI+ Toolbox*
 - Establish communications and outreach efforts
-
-> For this step, we recommend you use the Task Timeline presented in the **Orientation**.
 
 Second, create short and long-term objectives highlighting intentions for the findings and iterative activities for future assessments. This refers to specific measurable results for your assessment’s broad goals. The assessment objectives describe how much of what will be accomplished by when. The objectives should describe the future conditions after the problem has been addressed (think of the reference points), following a logical hierarchy, and illustrating their relationships with the final goal. In defining the objectives, you should also describe the intended strategies (the how) to reach the desired objectives. These strategies can range from the broad (stakeholder analysis) to the very specific (institutionalization of the Index).
 

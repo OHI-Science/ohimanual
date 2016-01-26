@@ -23,6 +23,12 @@ In the OHI framework **a healthy ocean is one that sustainably delivers a range 
 
 This framework was first applied to the global scale in 2012, and since then, numerous independent groups have adopted the framework to assess ocean health in their own countries or regions. Although conducted at different spatial and temporal scales, all OHI assessments follow the same workflow.
 
+## Four Phases of OHI+
+
+There are [four phases of OHI+ assessment](http://ohi-science.org/new-site/phases/): **Learn**, **Plan**, **Conduct**, and **Inform**. You are currently in the _Learn_ Phase, where you will understand OHI framework and philosophy, and determine the needs and purposes of your OHI+ assessment. 
+
+![learn phase tasks](https://docs.google.com/drawings/d/1coG1ir10s2gBs0rleLjISlQUywf8Uc3v8PAyovAKK2o/pub?w=960&h=720)
+
 ## OHI Workflow
 
 You will first build a conceptual framework and determine which goals to access and how, which is then translated into the toolbox to calculate the scores. Both the conceptual framework and technical toolbox consist of two major parts: **core** and **tailored**. The "core" maintains the integrity of Ocean Health and determines how Index scores are calculated, while the "tailored" allows flexibility and accommodates different scales, data availabilities, and cultural priorities.
@@ -176,13 +182,13 @@ Although resilience really should be judged by the effectiveness of its outcome,
 
 ## Interactions: Pressures and Resilience
 
-Pressures and resilience layers interact with an indicator to increase or decrease its likely future state. From a management perspective, there are only two ways of increasing the **Likely Future State**: increase resilience measures and/or decrease pressures. Overtime, the effects of these management actions will change the current state of the goal and the trend, resulting in higher scores. This would be most visible through multiple years of engagement with an OHI assessment.
+**Pressures and resilience layers interact with an indicator to increase or decrease its likely future state.** From a management perspective, there are only two ways of increasing the **Likely Future State**: increase resilience measures and/or decrease pressures. Overtime, the effects of these management actions will change the current state of the goal and the trend, resulting in higher scores. This would be most visible through multiple years of engagement with an OHI assessment.
 
 Ecological and social resilience are assessed separately and then combined to determine the goal score. Although this is usually done through a simple average (with equal weighting for social and ecological resilience measures), it is possible to change their relative weights if expert opinion recommended otherwise. All resilience measure are associated with a pressures layer regardless of the weighting, such that any ecological or social pressure has a countervailing resilience measure. Mathematically, this is represented as *r-p*, where r=resilience and p=pressures. The Index framework uses this relationship, and the underlying data, to ultimately convey which has a greater incidence over the goal status, the pressures or the resilience.
 
-**The figure below** shows the global assessment stressors by category, and the resilience measures meant to 'balance' (or counteract) them. Note that resilience layers are only available for some categories and goals in the Global case, highlighting the importance of data availability for these layers. Also, some resilience measures are goal-specific; that is, they act on certain goals without counteracting pressures. When you have regulations to improve the practices captured in the status of specific goals (e.g., sustainable tourism, lower bycatch, etc.), you can include them as resilience measures.
+<!--**The figure below** shows the global assessment stressors by category, and the resilience measures meant to 'balance' (or counteract) them. Note that resilience layers are only available for some categories and goals in the Global case, highlighting the importance of data availability for these layers. Also, some resilience measures are goal-specific; that is, they act on certain goals without counteracting pressures. When you have regulations to improve the practices captured in the status of specific goals (e.g., sustainable tourism, lower bycatch, etc.), you can include them as resilience measures. 
 
-![Each resilience data layer should have a corresponding pressures layer, and vice versa. Note that a pressure layer becomes (1-resilience) in cases where only resilience data are available, due to data limitations.](https://docs.google.com/drawings/d/19ZBIhzTrNlumV9ZhCmsdEcvybFHp-eN5P5IFAsFmql0/pub?w=558&h=721)
+![Each resilience data layer should have a corresponding pressures layer, and vice versa. Note that a pressure layer becomes (1-resilience) in cases where only resilience data are available, due to data limitations.](https://docs.google.com/drawings/d/19ZBIhzTrNlumV9ZhCmsdEcvybFHp-eN5P5IFAsFmql0/pub?w=558&h=1000) -->
 
 Pressures and resilience are ultimately important for scores, but they have a smaller contribution (8.5.% each, 17% total) to the overall scores because we can only approximate their effects. Individual pressures are ranked for their importance to different goals based on published studies and expert opinion. Resilience actions are the best way to improve a score, because they can reduce pressures, protect ocean habitats and species, improve status, and optimize benefits to people. In Phase 4, we discuss some strategies for turning your findings into effective resilience strategies.
 

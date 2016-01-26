@@ -116,3 +116,13 @@ tagline: %s
   message(sprintf('\nohi-science.org/%s was updated\n', tolower(title_short)))
 
 }
+
+# little copy_archive to copy 
+copy_archive = function(dir_fn,
+                        path_in  = '~/github/ohimanual',
+                        path_out = '~/github/ohi-science.github.io/assets/downloads/other') { 
+  
+  fn = str_split(dir_fn, '/')[[1]][2]
+    file.copy(sprintf('%s/%s%s', path_in,  dir_fn, '.pdf'),
+              sprintf('%s/%s%s', path_out, fn,     '.pdf'))
+}

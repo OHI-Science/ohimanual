@@ -1,6 +1,7 @@
 ---
 title: 'The Ocean Health Index: Introduction to the Toolbox'
-author: "Julia Stewart Lowndes<br /> Project Scientist, Ocean Health Index<br /> lowndes@nceas.ucsb.edu"
+author: "OHI Sciencen Team <br /> [ohi-science.org](ohi-science.org)"
+date: "2015"
 output: ioslides_presentation
 ---
 

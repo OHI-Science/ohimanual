@@ -1,4 +1,12 @@
-# Understand the Requirements for Conducting an OHI Assessment
+# Where you are in the OHI+ process
+
+You have _learned_ about OHI+ assessments, and now you are in the **Plan** phase. Your main tasks are to understand the financial, human resources, and technical requirements of conducting an OHI+ assessment, and plan your assessment accordingly. 
+
+![Plan Phase Tasks](https://docs.google.com/drawings/d/1B-2WqhpBKzVmwEX5KFbqsrDOSksPU5oLrlZfIdH2lY4/pub?w=960&h=720)
+
+
+
+# Requirements for Conducting an OHI+ Assessment
 
 Before you begin actually conducting your assessment (explained in Phase 3), it is crucial to have a full understanding of what are required to complete a successful assessment. Conducting an assessment is a labor intensive process that requires **collaboration, communication, funding, dedication** and, perhaps most importantly, **data**. It is imperative to ensure that you have all of these components before starting your assessment.
 

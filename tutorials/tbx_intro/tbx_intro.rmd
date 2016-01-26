@@ -24,42 +24,30 @@ Based on **Github** and **Rstudio**
 See [Manual](ohi-science.org/manual/) for Instructions on installation
 
 ## Github Repository - Intro
-All data, scripts, figures, and narratives are stored and shared
+All data, scripts, figures, and narratives are _stored in one place, and shared among collaborators_ 
 
-Provide Online and Local access
+![github_actions](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
 
-![github-local](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
+## Example Repository - Belize
 
-See more info on Github, see our [presentation](link to Github ppt)
+Belize's **assessment repository** is **blz**, available on GitHub at https://github.com/OHI-Science/blz.  
+  
+![github example - Belize](https://docs.google.com/drawings/d/1X0Jqh_BM05EK_UqpbCUVFUdik6YN5HaEqiNWHNPQr9c/pub?w=750&h=720)
+
+## Example Repository - Belize
+
+Within the **subcountry2014** folder are some key files we will work with:
+
+- **layers.csv**: one file that records all data layers
+- **layers folder**: contains all data layers
+- **conf/functions.r**: contains all the goal model functions
+- **conf/goals.csv**: set up how goals are calculated and weighted
+- **conf/pressures_matrix.csv**:  pressures and their weights 
+- **conf/resilience_matrix.csv**: used for calculating resilience
 
 ## Rstudio 
 Coding environment - where you format data and modify goal models 
 
-![Rstudio](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=687)
+![Rstudio](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=750&h=687)
 
-## How to use it?
-
-Main actions: 
-Format in Rstudio & store, and register data in Github
-Modify goal models in Rstudio
-Commit, pull, push new changes in Rstudio to github
-
-## Explore an Assessment Repository
-
-Belize's **assessment repository** is **blz**, available on GitHub at https://github.com/OHI-Science/blz.  
-  
-The **scenario folder** is **subcountry2014**. 
-
-Note the `blz.Rproj` file that allows you to sync this repository through RStudio.
-
-## Explore an Assessment Repository
-
-Within the **subcountry2014** folder are some key files we will work with:
-
-* **layers.csv**
-* **layers folder**
-* **conf/functions.r**
-* **conf/goals.csv**
-* **conf/pressures_matrix.csv**
-* **conf/resilience_matrix.csv**
 

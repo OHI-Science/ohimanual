@@ -60,8 +60,6 @@ out_md = 'ohi-manual.md'
 cat_md(in_md, out_md)               # use own md ordered file listing , output to ohi-manual.md
 pfx = tools::file_path_sans_ext(out_md)
 
-## render pdf ----
-ohi_pdf(out_md)
 
 ## render html to local ohimanual repo ----
 ohi_html_local(out_md)
@@ -69,6 +67,13 @@ ohi_html_local(out_md)
 ## render html and push to ohi-science.org website ----
 ohi_html(out_md, title_header, title_short)
 
+## render pdf ----
+ohi_pdf(out_md)
+
+# ## copy pdf to resources/downloads on ohi-science.org website
+copy_archive(dir_fn   = '/3_conduct_manual/ohi-manual',
+             path_in  = '~/github/ohimanual',
+             path_out =  '~/github/ohi-science.github.io/assets/downloads/other')
 
 ## copy goal-by-goal files to ohi-science.github.io ----
 
@@ -81,7 +86,6 @@ file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/t
 
 ## commit and push to dev branch: ohi-science.github.io
 system('cd ~/github/ohi-science.github.io; git pull; git add -A; git commit -m "copied goal files .md"; git push')
-
 
 ## until ohi-science.org website is live::: ----
 ## render html for OHI and push to ohi-science.org MASTER BRANCH
