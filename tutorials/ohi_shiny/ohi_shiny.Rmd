@@ -33,9 +33,8 @@ JA: *Thinking that while this is up on the screen, we can talk about how we deve
 
 (For BB to complete, or let us know what you're thinking and we can make it.)
 
+<iframe src="http://ohi-science.nceas.ucsb.edu/bhi" style="border: none; width: 440px; height: 500px"></iframe>
+
 <div class="notes">
 will write talking points here; these notes won't show up on the slides but can be viewed when rendered as html by typing p!
 </div>
-
-
-<iframe src="http://ohi-science.nceas.ucsb.edu/bhi" style="border: none; width: 440px; height: 500px"></iframe>
