@@ -13,10 +13,12 @@ output:
 ## Ocean Health Index 
 
 <div class='centered'>
-  ![goals and flowerplot](https://docs.google.com/drawings/d/1B65-1ze4IZ-c2Jb907JdKNV2lVHdcR8tvot0lhhsNgk/pub?w=768&h=480)
+  ![https://docs.google.com/drawings/d/1B65-1ze4IZ-c2Jb907JdKNV2lVHdcR8tvot0lhhsNgk/pub?w=768&h=480](img/ohi-goals-flowerplot.png)
 </div>
 
 <div class="notes">
+before starting, prelaunch in new tab: http://ohi-science.nceas.ucsb.edu/ohi-global, http://ohi-science.nceas.ucsb.edu/bhi
+
 not working: add `?presentme=true` to URL to see notes in popup window, per http://rmarkdown.rstudio.com/ioslides_presentation_format.html
 
 rm bullets below b/c incremental:true steps through these notes too when advancing slides
@@ -33,7 +35,15 @@ Began as an academic exercise - UCSB/NCEAS and Conservation International, now b
 </a>
 
 <div class="notes">
-click on image to launch app in new window
+[Click on preloaded tab w/ http://ohi-science.nceas.ucsb.edu/ohi-global.]
+
+The OHI Shiny app enables interactive visualization of output scores and input layers. Each of these can be visualized spatially in this "Map" tab, or as a "Histogram" [click] or "Table" [click].
+
+We can [zoom, pan and hover] to see specific values with the interactive map. 
+
+We can also dive into the hierarchical elements of OHI. Rather than overall Index score, we could look at individual goals [click FP], or even the sub-dimensions such as current [status] or [future] trend.
+
+Or we can look at the [input layers] used to calculate the goals, such as... [carefully choose... it can crash easily!]. The dropdowns on the left are conditional based on the selections above.
 </div>
 
 ## OHI Assessments
