@@ -27,9 +27,6 @@ will write talking points here; these notes won't show up on the slides but can 
 will write talking points here; these notes won't show up on the slides but can be viewed when rendered as html by typing p!
 
 JA: *Thinking that while this is up on the screen, we can talk about how we developed a shiny app to enable users in Colombia, Ecuador, Baltic (name drop a few cool ones) to do their own assessment and effectively communicate their results directly to policy makers. Really get people excited about how Shiny is directly helping people improve the health of our oceans...something along those lines!*
-
-
-
 </div>
 
 ## Shiny Details
@@ -40,3 +37,5 @@ JA: *Thinking that while this is up on the screen, we can talk about how we deve
 will write talking points here; these notes won't show up on the slides but can be viewed when rendered as html by typing p!
 </div>
 
+
+<iframe src="http://ohi-science.nceas.ucsb.edu/bhi" style="border: none; width: 440px; height: 500px"></iframe>
