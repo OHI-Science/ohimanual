@@ -23,13 +23,14 @@ output:
 - The Ocean Health Index measures ocean health based on the best publicly available data and scientific methods at **local, regional, national and global** scales.
 - Governments at many levels are mandating policy to increase ocean health, but there wasn't a way to do this. 
 - The OHI defines 'ocean health' around benefits provided to people, so it can be more directly useful for policy.
-- It uses data from multiple ocean-related activities and services including fishing, tourism, and clean waters to name a few, and these are all scored on the same scale and compared together in this flower plot. 
-- This was developed as an academic exercise - UCSB/NCEAS and Conservation International, assessed at the global scale: all coastal nations and territories.
-
-- It provides a high level view for policy makers, while enabling deep inspection by analysts. This reductionist approach appeals to a very wide audience.
-- And Shiny has proven an excellent tool to enable this interactive view of the data.
-- The UN is in the process of adopting OHI principles, and many countries around the world are using the data and tools we provide to customize one of their own.
+- It uses data from multiple ocean-related activities and services and scores them in categories like fishing, tourism, and clean waters 
+- These cagetories, called goals, are all scored from 0-100 and represented as petals on this flower plot. 
+A single score is also calculated, distilling all information and goals into a single value. 
+This reductionist approach appeals to a very wide audience, and depending on your interest, you can dive deeper and deeper into an activity and the data behind it etc. 
+- The maps and flower plots have a lot of information, and Shiny has proven an excellent tool to enable this interactive view, allowing a high level view for policy makers, while enabling deep inspection by analysts. 
+- There has been a lot of uptake: The UN is in the process of adopting OHI principles, and many countries around the world are using the data and tools we provide to customize one of their own.
 </div>
+
 
 ## OHI Assessments
 
