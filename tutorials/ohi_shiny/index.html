@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Ocean Health Index</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" media="all" href="index_files/ioslides-13.5.1/fonts/fonts.css">
+
+  <link rel="stylesheet" media="all" href="index_files/ioslides-13.5.1/theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="index_files/ioslides-13.5.1/theme/css/phone.css">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'The Ocean Health Index',
+                        subtitle: 'and Shiny',
+                useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  '<a href="http://ohi-science.org">OHI-science.org</a>: Ben Best <span class="citation">@bbest</span>, Julie Lowndes <span class="citation">@jules32</span>, Jamie Afflerbach <span class="citation">@jafflerbach</span>' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+
+  </style>
+
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;"><strong>#shinydevcon</strong> 2016-01-30</p>
+          </hgroup>
+  </slide>
+
+<slide class=''><hgroup><h2>Ocean Health Index</h2></hgroup><article  id="ocean-health-index">
+
+<div class="centered">
+<img src='img/ohi-goals-flowerplot.png' title=''/></div>
+
+<aside class='note'><section><blockquote>
+<p>TODO: animate this first slide to show a non-shiny global map here setup: prelaunch in new tab: <a href='http://ohi-science.nceas.ucsb.edu/bhi' title=''>http://ohi-science.nceas.ucsb.edu/bhi</a>; add: <code>?presentme=true</code> to URL, click <code>p</code> for notes</p>
+</blockquote>
+
+<ul>
+<li>The Ocean Health Index measures ocean health based on the best publicly available data and scientific methods at <strong>local, regional, national and global</strong> scales.</li>
+<li>Governments at many levels are mandating policy to increase ocean health, but there wasn&#39;t a way to do this.</li>
+<li>The OHI defines &#39;ocean health&#39; around benefits provided to people, so it can be more directly useful for policy.</li>
+<li>It uses data from multiple ocean-related activities and services including fishing, tourism, and clean waters to name a few, and these are all scored on the same scale and compared together in this flower plot.</li>
+<li><p>This was developed as an academic exercise - UCSB/NCEAS and Conservation International, assessed at the global scale: all coastal nations and territories.</p></li>
+<li>It provides a high level view for policy makers, while enabling deep inspection by analysts. This reductionist approach appeals to a very wide audience.</li>
+<li>And Shiny has proven an excellent tool to enable this interactive view of the data.</li>
+<li>The UN is in the process of adopting OHI principles, and many countries around the world are using the data and tools we provide to customize one of their own.</li>
+</ul></section></aside>
+
+</article></slide><slide class=''><hgroup><h2>OHI Assessments</h2></hgroup><article  id="ohi-assessments">
+
+<div class="centered">
+<img src='img/ohi-science.org_projects.png' height=500/></div>
+
+<aside class='note'><section><ul>
+<li>now being adopted by governments around the world to inform how they measure and manage for the health of their oceans.</li>
+<li>in Colombia, Ecuador, Baltic (name drop a few cool ones)</li>
+<li>We&#39;ve developed a lot of tools enable groups to do this on their own. We make github repos of the scripts and inputs we&#39;ve used that they can modify with their data and interact with our R package.</li>
+<li>We developed a shiny app to enable users to do their own assessment and effectively inspect their work as it&#39;s developed and communicate their results to policy makers.</li>
+<li>Really get people excited about how Shiny is directly helping people improve the health of our oceans&#8230;something along those lines!*</li>
+</ul></section></aside>
+
+</article></slide><slide class=''><hgroup><h2>OHI+ Baltic</h2></hgroup><article  id="ohi-baltic">
+
+<p><a href='http://ohi-science.nceas.ucsb.edu/bhi'> <img src='img/shiny_bhi.png' height=550/> </a></p>
+
+<aside class='note'><section><ul>
+<li>The OHI Shiny app enables interactive visualization of output scores and input layers. Each of these can be visualized across these <strong>tabs</strong>: spatially &quot;Map&quot; tab, or as a [&quot;Histogram&quot;] or [&quot;Table&quot;].</li>
+<li>We can [<strong>zoom, pan and hover</strong>] to see specific values with the interactive map.</li>
+<li>We can also dive into the hierarchical elements of OHI. The <strong>dropdowns</strong> on the left are conditional based on the selections above, whether looking at &quot;Output Scores&quot;&quot; or [&quot;Input Layers&quot;] and the sub-elements therein.</li>
+<li>The app syncs with the <strong>Github</strong> repository having branches for draft vs published stages of data. Travis continuous integration checks the draft data commits for any errors and if none, continues to update the published branch and static outputs like figures and tables on the gh-pages website branch.</li>
+</ul></section></aside>
+
+</article></slide><slide class=''><hgroup><h2>Next Steps for OHI Shiny Dev</h2></hgroup><article  id="next-steps-for-ohi-shiny-dev">
+
+<ol class = 'build'>
+<li><p>Migrate custom <a href='https://github.com/OHI-Science/rCharts' title=''><code>rCharts</code></a> → <a href='http://rstudio.github.io/leaflet/' title=''><code>leaflet</code></a></p></li>
+<li><p>Add <a href='https://www.nceas.ucsb.edu/globalmarine' title=''>source layers</a>, eg 1km raster shipping (leaflet::<a href='https://github.com/rstudio/leaflet/blob/7631cfa1404d54bcb0f4dc813e775bdc1af0d584/R/layers.R#L114-L219' title=''>addRaster, tileOptions</a>)<br> <img src='img/halpern2015_cumimpacts_shipping_web-clipped.png' height=150/></p></li>
+<li><p>Embed <a href='http://bl.ocks.org/bbest/2de0e25d4840c68f2db1' title=''>interactive flower plot</a> on map rollover<br> <img src='img/shiny_ohi-global_map_with-flower-plot.png' height=160/>    <img src='img/ohi-flower-d3.png' height=160/></p></li>
+</ol>
+
+<aside class='note'><section><ul>
+<li>The original app was developed with Ramnath&#39;s <strong>rCharts</strong> package. The RStudio <strong>leaflet</strong> package has since become available and offers some appealing new features to motivate migration, including use of <strong>TopoJSON</strong> for smaller storage and faster loading.</li>
+<li>A common misunderstanding about OHI is that it&#39;s a &quot;crude&quot; assessment of ocean health from looking at the initial global study. However the spatial crudeness is based upon the underlying layers and the user chosen spatial units to which the layers get aggregated, whether at a country, state or even county level. In keeping with the hierarchical reductionist theme and to make the input layer values even more transparent, we want to make all input layers in their original spatial units visible, whether vector or raster. Many of these pressure layers, for instance, are based on 1 km global rasters. We hope to integrate raster tiling, a feature in development with the leaflet package, to show these and other original input data layers at the finest possible scale to fully communicate the strengths and weaknesses of the raw data.</li>
+<li>Finally, we&#39;ve found the flower plot to be a very effective visualization to communicate results. We&#39;ve developed a D3 implementation of this which we&#39;ll make appear in the upper right for on hover events of the map when looking at the default output scores.</li>
+</ul></section></aside>
+
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Thank You!</h2></hgroup><article  id="thank-you">
+
+<p>Huge thanks to the developers of:</p>
+
+<ul>
+<li>Shiny</li>
+<li>RStudio</li>
+<li>&quot;Hadley-verse&quot; of packages</li>
+</ul>
+
+<p>Please visit us at: <a href='http://ohi-science.org' title=''><strong>ohi-science.org</strong></a></p>
+
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Backup Slides</h2></hgroup><article  id="backup-slides">
+
+<p>&#8230;</p></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script src="index_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+<script src="index_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+<script src="index_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+<script src="index_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+<script src="index_files/ioslides-13.5.1/js/hammer.js"></script>
+<script src="index_files/ioslides-13.5.1/js/slide-controller.js"></script>
+<script src="index_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
