@@ -23,9 +23,12 @@ not working: add `?presentme=true` to URL to see notes in popup window, per http
 
 rm bullets below b/c incremental:true steps through these notes too when advancing slides
 
-The Ocean Health Index is a way to measure ocean health at local, regional, national and global scales. 
-The Index uses data from multiple ocean-related activities and services including fishing, tourism, and clean waters to name a few.
-Began as an academic exercise - UCSB/NCEAS and Conservation International, now being adopted by governments around the world to inform how they measure and manage for the health of their oceans (*this could be transition sentence to the map*).
+The Ocean Health Index a method our group developed to measure ocean health.
+This is important because governments at many levels are mandating ocean policy to increase ocean health, but there wasn't a way to do this. 
+The OHI defines 'ocean health' around benefits provided to people, so it can be more directly useful for policy.
+It uses data from multiple ocean-related activities and services including fishing, tourism, and clean waters to name a few, and these are all scored on the same scale and compared together in this flower plot. 
+This was developed as an academic exercise - UCSB/NCEAS and Conservation International, assessed at the global scale: all coastal nations and territories. 
+---JSL:  I suggest we animate this first slide to show a non-shiny global map here. 
 </div>
 
 ## OHI Global
@@ -35,6 +38,9 @@ Began as an academic exercise - UCSB/NCEAS and Conservation International, now b
 </a>
 
 <div class="notes">
+
+---JSL: I suggest we delete this slide
+
 [Click on preloaded tab w/ http://ohi-science.nceas.ucsb.edu/ohi-global.]
 
 The OHI Shiny app enables interactive visualization of output scores and input layers. Each of these can be visualized spatially in this "Map" tab, or as a "Histogram" [click] or "Table" [click].
@@ -53,7 +59,11 @@ Or we can look at the [input layers] used to calculate the goals, such as... [ca
 </div>
 
 <div class="notes">
-JA: *Thinking that while this is up on the screen, we can talk about how we developed a shiny app to enable users in Colombia, Ecuador, Baltic (name drop a few cool ones) to do their own assessment and effectively communicate their results directly to policy makers. Really get people excited about how Shiny is directly helping people improve the health of our oceans...something along those lines!*
+now being adopted by governments around the world to inform how they measure and manage for the health of their oceans. 
+in Colombia, Ecuador, Baltic (name drop a few cool ones)
+We've developed a lot of tools enable groups to do this on their own. We make github repos of the scripts and inputs we've used that they can modify with their data and interact with our R package. 
+We developed a shiny app to enable users  to do their own assessment and effectively inspect their work as it's developed and communicate their results to policy makers. 
+Really get people excited about how Shiny is directly helping people improve the health of our oceans...something along those lines!*
 </div>
 
 ## OHI Baltic
@@ -63,6 +73,7 @@ JA: *Thinking that while this is up on the screen, we can talk about how we deve
 </a>
 
 <div class="notes">
+---JSL: If we delete the global one, here's where we'd say here's how it works: 
 click on image to launch app in new window
 </div>
 
