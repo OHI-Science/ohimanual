@@ -15,3 +15,5 @@
 !tutorials/conduct_phase_intro/conduct_phase_intro.html
 !tutorials/ohi_shiny/ohi_shiny.html
 .DS_Store
+_site
+Gemfile.lock
