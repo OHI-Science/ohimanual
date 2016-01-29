@@ -59,7 +59,7 @@ output:
 <div class="notes">
 - This map shows countries using our OHI methods
 - We've developed a **workflow and provide tools and support** to enable groups to do this. We make github repos of R scripts and template inputs they can modify with their data. 
-- The maps and flower plots have a lot of information, and **Shiny has proven an excellent tool to enable an interactive view**, allowing both a high level view for policy makers, and deep inspection by analysts. 
+- The maps and flower plots have a lot of information, and **Shiny has proven an excellent tool** to enable both a high level view for policy makers, and deep inspection by analysts. 
 - We're really excited to be using Shiny and other open-source tools to help improve the health of our oceans--Ben will describe the app now in more detail.
 </div>
 
