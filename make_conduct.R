@@ -69,7 +69,7 @@ push_to_web(out_md)
 ohi_pdf(out_md)
 
 # ## copy pdf to resources/downloads on ohi-science.org website
-copy_archive(dir_fn   = '/3_conduct_manual/ohi-manual',
+copy_archive(dir_fn   = '3_conduct_manual/ohi-manual',
              path_in  = '~/github/ohimanual',
              path_out =  '~/github/ohi-science.github.io/assets/downloads/other')
 
