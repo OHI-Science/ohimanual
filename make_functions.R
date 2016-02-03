@@ -69,12 +69,14 @@ push_to_web = function(out_md) {
   fn = str_split(out_md, "\\.");
   f  = fn[[1]][1]
   
+  dir_phases = '~/github/ohi-science.github.io/_includes/themes/OHI/phases'
+  
   # copy .html file to ohi-science.github.io
-  file.copy(sprintf('%s.html', f), sprintf('~/github/ohi-science.github.io/%s', tolower(title_short)), overwrite=T, recursive=T)
+  file.copy(sprintf('%s.html', f), dir_phases, overwrite=T, recursive=T)
   
   if (f == 'ohi-manual') {
-    dir.create('~/github/ohi-science.github.io/_includes/themes/OHI/manual', showWarnings=F)
-    file.copy('fig', '~/github/ohi-science.github.io/_includes/themes/OHI/manual', overwrite=T, recursive=T)
+    dir.create(dir_phases, showWarnings=F)
+    file.copy('fig', dir_phases, overwrite=T, recursive=T)
   }
   
   # git push ohi-science.github.io
