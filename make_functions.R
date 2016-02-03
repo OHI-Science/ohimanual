@@ -100,5 +100,7 @@ copy_archive = function(dir_fn,
   
   fn = str_split(dir_fn, '/')[[1]][2]
     file.copy(sprintf('%s/%s%s', path_in,  dir_fn, '.pdf'),
-              sprintf('%s/%s%s', path_out, fn,     '.pdf'))
+              sprintf('%s/%s%s', path_out, fn,     '.pdf'),
+              overwrite=T)
+    
 }

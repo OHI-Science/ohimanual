@@ -65,7 +65,6 @@ push_to_web(out_md)
 ohi_pdf(out_md)
 
 ## copy pdf to downloads ----
-source('make_functions.r')
 
 copy_archive(dir_fn   = '1_learn_concguide/ohi-concguide',
              path_in  = '~/github/ohimanual',

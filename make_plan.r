@@ -40,7 +40,6 @@ push_to_web(out_md)
 ohi_pdf(out_md)
 
 ## copy pdf to downloads on ohi-science.org ----
-source('make_functions.R')
 
 copy_archive(dir_fn   = '2_plan/ohi-plan',
              path_in  = '~/github/ohimanual',
