@@ -56,11 +56,10 @@ out_md = 'ohi-concguide.md' # <- this is the output "final" file.
 cat_md(in_md, out_md)               # use own md ordered file listing , output to ohi-manual.md
 pfx = tools::file_path_sans_ext(out_md)
 
-## render html to local ohimanual repo ----
-ohi_html_local(out_md)
+## render and save html; push to ohi-science.org website ---- 
 
-## render html and push to ohi-science.org website ----
-ohi_html(out_md, title_header, title_short)
+ohi_html(out_md)
+push_to_web(out_md)
 
 ## render pdf ----
 ohi_pdf(out_md)

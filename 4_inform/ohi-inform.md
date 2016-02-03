@@ -2,6 +2,12 @@
 title: The Ocean Health Index Inform Phase
 ---
 
+# Where you are in the OHI+ process
+
+Congratulations! You have successfully _Conducted_ your indepenent OHI+ assessment, and you are in the last phase of OHI+, **Inform**. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers. 
+
+![Inform Phase tasks](https://docs.google.com/drawings/d/1oItp0mRGmN_93t28_VgANsE9aTCtc1mB4D96MzoWMUQ/pub?w=960&h=720)
+
 # Outreach and Communications Strategy
 
 It is important to have a clear strategy for how to communicate the results of your assessment to your various audiences. You will want to have a clear message and way to reach to your various audiences, choosing the tools that will best suit your objective or call to action for each audience. To do this, it is helpful to revisit your initial assessment plan and stakeholder analysis and identify key messages and recommendations that are relevant to each group.
@@ -14,31 +20,31 @@ In addition to highlighting key findings of specific geographies and goals, it c
 
 The following materials may be useful to you:
 
- -	Summary of findings: findings to general audience, press, managers, and various decision-makers (via email or printed materials)
+-	**Summary of findings**: findings to general audience, press, managers, and various decision-makers (via email or printed materials)
 
- -	Policy paper/report/memos: interpretation and recommendations to key decision-makers, including information and knowledge gaps, priority geographies and themes, and management interventions
+-	**Policy paper/report/memos**: interpretation and recommendations to key decision-makers, including information and knowledge gaps, priority geographies and themes, and management interventions
 
- -	Website: broader distribution of findings and materials. Contact programs at oceanhealthindex.org to discuss options for using an OHI template
+-	**Website**: broader distribution of findings and materials. Contact programs at oceanhealthindex.org to discuss options for using an OHI template
 
- -	Peer-reviewed academic manuscripts
+-	**Peer-reviewed academic manuscripts**
 
 ## Outreach Strategy
 
 Examples of how to increase your presence include:
 
-*	Stakeholder workshops and/or town hall meetings: present findings, develop a strategic plan of next steps, evaluate different management scenarios.
+-	**Stakeholder workshops and/or town hall meetings**: present findings, develop a strategic plan of next steps, evaluate different management scenarios.
 
-*	Work with network of decision-makers who were part of the planning team to organize public meetings, hearing, inter-agency meetings
+-	**Work with network of decision-makers** who were part of the planning team to organize public meetings, hearing, inter-agency meetings
 
-*	Consider perspective of the decision-maker: clarify issue and why of interest, highlight action to take and the relevant science to support the action
+-	**Consider perspective of the decision-maker**: clarify issue and why of interest, highlight action to take and the relevant science to support the action
 
-*	Maintain engagement in the decision-making process: councils, partnerships with stakeholders, periodic meetings with technical working groups and government agencies
+-	**Maintain engagement in the decision-making process**: councils, partnerships with stakeholders, periodic meetings with technical working groups and government agencies
 
-*	Provide clear recommendations and courses of actions that create the conditions to sustainable maximize ocean productivity
+-	**Provide clear recommendations and courses of actions** that create the conditions to sustainable maximize ocean productivity
 
-*	Clearly articulate geographic priorities and sectorial problems affecting local oceans
+-	**Clearly articulate geographic priorities and sectorial problems** affecting local oceans
 
-*	Be available to support ocean and coastal resource management planning and/or policy development processes
+-	**Be available to support** ocean and coastal resource management planning and/or policy development processes
 
 # Disseminate Findings
 
@@ -55,16 +61,15 @@ It is crucial to the success of these assessments to consistently re-assess your
 
 # Communicate Results with Partners and Others
 
-Once you have identified your different groups and clarified the objectives for each, brainstorm different channels you can use for your communications and sort them by which would be most appropriate for each group. Think about the different needs of each group of your stakeholders. What information does each group need from you to meet their objectives or to perform your desired action/outcome?For example, stakeholders involved in decision making and planning that you would like to help engage in informed management actions would be more receptive to a well-laid out report rather than a newsletter, article or social media post.
+Once you have identified your different groups and clarified the objectives for each, brainstorm different channels you can use for your communications and sort them by which would be most appropriate for each group. Think about the different needs of each group of your stakeholders. What information does each group need from you to meet their objectives or to perform your desired action/outcome? For example, stakeholders involved in decision making and planning that you would like to help engage in informed management actions would be more receptive to a well-laid out report rather than a newsletter, article or social media post.
 
 After selecting the proper communication tool for each group, begin planning the messages for each group. Here it might be helpful to start with the broadest group and end with the most specific. For each group, aim to answer questions such as: What are the main facts that the audience needs to know? How much background does your audience already have on this topic? When will these facts need to be communicated? What is the best channel to reach the audience?
 
 Make sure that each message is clear to each audience. For example, what are the absolutely necessary facts that a policy maker will need to know from your assessment to help them better manage your marine resources? How can you convey this information in the most direct, easily accessible way? This message will vastly differ from the one sent to the general public, whose main aim will be to increase awareness of ocean health and resource management. For examples, a past Ocean Health Index Global Assessment press release can be found at www.pacificlife.com/content/dam/paclife_corp/crp/public/about_pacific_life/foundation_community/strategic_focus/healthy_oceans/081512_Ocean_Health_Index_Media_Release.pdf and the report for policy makers from our West coast case study can be found at www.oceanhealthindex.org/Apps/OHI/Vault/Output?VaultID=7899&ts=1422972909
 
-It is important to remember that you may also want to include some of your stakeholders in this process. Partnering with some of your stakeholders might give you access to a broader demographic to help you amplify your message, and the OHI team can help too. 
+It is important to remember that you may also want to include some of your stakeholders in this process. Partnering with some of your stakeholders might give you access to a broader demographic to help you amplify your message, and the OHI team can help too.
 
 For more information on how to identify and communicate with various stakeholders, use planning and strategy tools such as the ones listed under "Communications Skills" at www.mindtools.com.
-
 
 # Implement Policies and Management Interventions that Respond to the Priorities
 
