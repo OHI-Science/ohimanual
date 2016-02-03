@@ -13,37 +13,50 @@ output:
 ## Ocean Health Index 
 
 <div class='centered'>
-  ![https://docs.google.com/drawings/d/1B65-1ze4IZ-c2Jb907JdKNV2lVHdcR8tvot0lhhsNgk/pub?w=768&h=480](img/ohi-goals-flowerplot.png)
+  ![https://docs.google.com/drawings/d/1q0WfXX8upWfa2bzE5VPZJabJb3SIo8gH0-19LwUzj7o/pub?w=768&h=480](img/ohi-goals.png)
 </div>
 
 <div class="notes">
-> TODO: animate this first slide to show a non-shiny global map here
 > setup: prelaunch in new tab: http://ohi-science.nceas.ucsb.edu/bhi; add: `?presentme=true` to URL, click `p` for notes
 
 - The Ocean Health Index measures ocean health based on the best publicly available data and scientific methods at **local, regional, national and global** scales.
-- Governments at many levels are mandating policy to increase ocean health, but there wasn't a way to do this. 
+- Governments at many levels are **mandating policy** to increase ocean health, but there wasn't a way to do this. 
 - The OHI defines 'ocean health' around benefits provided to people, so it can be more directly useful for policy.
-- It uses data from multiple ocean-related activities and services and scores them in categories like fishing, tourism, and clean waters 
-- These cagetories, called goals, are all scored from 0-100 and represented as petals on this flower plot. 
-A single score is also calculated, distilling all information and goals into a single value. 
-This reductionist approach appeals to a very wide audience, and depending on your interest, you can dive deeper and deeper into an activity and the data behind it etc. 
-- The maps and flower plots have a lot of information, and Shiny has proven an excellent tool to enable this interactive view, allowing a high level view for policy makers, while enabling deep inspection by analysts. 
-- There has been a lot of uptake: The UN is in the process of adopting OHI principles, and many countries around the world are using the data and tools we provide to customize one of their own.
+- It uses **data from multiple ocean-related activities** and services and **scores them in categories** like fishing, tourism, and clean waters 
 </div>
 
-
-## OHI Assessments
+## Ocean Health Index 
 
 <div class='centered'>
-  <img src='img/ohi-science.org_projects.png' height=500/>
+  ![https://docs.google.com/drawings/d/1EkQNn5aBRFAO5nwcaSPskmLumxAmM-tXHXHE4hZQuGY/pub?w=768&h=480](img/ohi-goals-flowerplot.png)
 </div>
 
 <div class="notes">
-- now being adopted by governments around the world to inform how they measure and manage for the health of their oceans. 
-- in Colombia, Ecuador, Baltic (name drop a few cool ones)
-- We've developed a lot of tools enable groups to do this on their own. We make github repos of the scripts and inputs we've used that they can modify with their data and interact with our R package. 
-- We developed a shiny app to enable users  to do their own assessment and effectively inspect their work as it's developed and communicate their results to policy makers. 
-- Really get people excited about how Shiny is directly helping people improve the health of our oceans...something along those lines!*
+- These **categories, called goals, are scored from 0-100** and represented as **petals** on this flower plot. 
+- A single score is also calculated, **distilling** all information and goals into a single value. 
+- This **reductionist approach** appeals to a very wide audience, and depending on your interest, you can dive deeper and deeper into an activity and the data behind it etc. 
+</div>
+
+
+## Ocean Health Index 
+
+<div class='centered'>
+  ![https://docs.google.com/drawings/d/1dN62PleW8on5GEMLQpo-cLhFlCE6KUtIct5qvlAEYfQ/pub?w=768&h=480](img/ohi-map.png)
+
+</div>
+
+
+<div class="notes">
+- Scores are also displayed on **maps**, and we do **annual assessments at the global scale**, calculating scores for each coastal nation and territory.
+- There has been a lot of **uptake**: The **UN** is in the process of adopting OHI principles, and many countries around the world are using our methods to inform their national or local ocean policy.
+</div>
+
+
+<div class="notes">
+- This map shows countries using our OHI methods
+- We've developed a **workflow and provide tools and support** to enable groups to do this. We make github repos of R scripts and template inputs they can modify with their data. 
+- The maps and flower plots have a lot of information, and **Shiny has proven an excellent tool** to enable both a high level view for policy makers, and deep inspection by analysts. 
+- We're really excited to be using Shiny and other open-source tools to help improve the health of our oceans--Ben will describe the app now in more detail.
 </div>
 
 ## OHI+ Baltic
