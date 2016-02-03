@@ -7,7 +7,7 @@ source('~/github/ohimanual/make_functions.r') # rendering functions for OHI
 
 title_header    = 'The Ocean Health Index Conduct Phase'
 subtitle_header = 'Assessment Manual'
-title_short     = 'Manual'
+# title_short     = 'Manual'
 wd = '~/github/ohimanual/3_conduct_manual'
 setwd(wd)
 
@@ -61,11 +61,9 @@ cat_md(in_md, out_md)               # use own md ordered file listing , output t
 pfx = tools::file_path_sans_ext(out_md)
 
 
-## render html to local ohimanual repo ----
-ohi_html_local(out_md)
-
-## render html and push to ohi-science.org website ----
-ohi_html(out_md, title_header, title_short)
+## render and save html; push to ohi-science.org website ---- 
+ohi_html(out_md)
+push_to_web(out_md)
 
 ## render pdf ----
 ohi_pdf(out_md)
@@ -77,67 +75,11 @@ copy_archive(dir_fn   = '/3_conduct_manual/ohi-manual',
 
 ## copy goal-by-goal files to ohi-science.github.io ----
 
-## checkout and pull dev branch: ohi-science.github.io
-system('cd ~/github/ohi-science.github.io; git checkout dev; git pull')
+## checkout and pull master branch: ohi-science.github.io
+system('cd ~/github/ohi-science.github.io; git checkout master; git pull')
 
 ## identify and copy ten current goal files
 goal_files = list.files(wd, '^practical_[A-Z][A-Z].md')
 file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/themes/OHI/goals')
-
-## commit and push to dev branch: ohi-science.github.io
-system('cd ~/github/ohi-science.github.io; git pull; git add -A; git commit -m "copied goal files .md"; git push')
-
-## until ohi-science.org website is live::: ----
-## render html for OHI and push to ohi-science.org MASTER BRANCH
-
-## checkout and pull dev branch: ohi-science.github.io
-system('cd ~/github/ohi-science.github.io; git checkout master; git pull')
-
-## render html
-render(
-  out_md,
-  html_document(
-    number_sections=T, fig_width = 3, fig_height = 2, fig_retina = 2, fig_caption = T, smart=T,
-    self_contained=F, theme=NULL,
-    highlight=NULL, mathjax='default',
-    toc=T, toc_depth=3),
-  clean=T, quiet=F,
-  output_file = paste0(pfx, '-external.html'))
-
-## prepend required header
-cat(sprintf('---
-layout: manual
-title: %s
-subtitle: %s
-tagline: %s
----
-{%s include JB/setup %s}
-', 
-            title_header,
-            subtitle_header,
-            format(Sys.time(), "%d %B %Y"), '%', '%'), 
-    file=sprintf('~/github/ohi-science.github.io/%s/index.html', tolower(title_short)))
-
-## save
-cat(
-  readLines(paste0(pfx, '-external.html')),
-  file=sprintf('~/github/ohi-science.github.io/%s/index.html', tolower(title_short)), append=T)
-if (title_short == 'Manual') {
-  dir.create(sprintf('~/github/ohi-science.github.io/%s/fig', tolower(title_short)), showWarnings=F)
-  file.copy('fig', sprintf('~/github/ohi-science.github.io/%s', tolower(title_short)), overwrite=T, recursive=T)
-}
-
-## commit and push to dev branch: ohi-science.github.io
-system(sprintf(
-  'cd ~/github/ohi-science.github.io; 
-    git checkout master; 
-    git pull; 
-    git add %s -A; 
-    git commit -m "updates pushed from ohimanual/make_%s.r"; 
-    git push', 
-  tolower(title_short), tolower(title_short)))
-
-message(sprintf('\nohi-science.org/%s was updated\n', tolower(title_short)))
-
 
 
