@@ -1,4 +1,33 @@
-## Modify goal models
+---
+title: "OHI Tutorial - How to register data and modify goal models"
+output: html_document
+---
+Q's for ourselves: should we start a new repo specifically for teaching purposes. All the folders will be there, but empty, except for the raw data folders. For example, for the data prep step, we could populate the `pre-proc folder` with some raw data, have people prepare the data in `data_prep.r` and see the new files pop up in `prep folder`. 
+
+We'll have the Rmd files of the codes of each step, and expected outcomes. People will copy the codes into appropriate R files, such as `data_prep.r`, and generate results. 
+
+
+#####################################
+
+This module will lead you through the process of modifying a goal model. We'll use OHI-China
+
+
+
+Preparation: 
+Download the OHI-CHN? repository from github. This will provide you with the data and all the R functions you will need to complete this module. 
+
+## Step 1: Prepare Data
+Data prep is done in `region2015/prep` folder. 
+Detailed instructions can also be found in the section in the Manual on [how to format data](http://ohi-science.org/manual/#formatting-data-for-the-toolbox). Assuming you have obtained and formatted the data to the desired format, you will upload them to the `pre-proc` folder for further processing. It is best practice to keep the raw data in their original form, and do any processing with R. That way, the history of how the data has been transformed is captured. 
+
+The processing is done in `data_prep.r` files. 
+
+- copy the raw data into the prep folder 
+- format them into the standard R-friendly format 
+
+## Step 2: Register Data 
+
+## Step 3: Modify goal models
 
 Before getting started on the R codes, make sure that you have finished these steps:
 
@@ -15,7 +44,6 @@ Now you are ready to modify your goal models and calculate scores. Here are a fe
 1. In `conf` sub-folder, open `functions.R`. _This is where all the status and trend calculations occur._
 1. Go to the appropriate goal section.
 
-### Model modification
 Your repository is pre-loaded with r codes for calculations from the 2014 Global assessment. Regardless of how you have changed your models, the basic sequence of events are similar for all goals. In `functions.R`, each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```) and you will make modifications for each goal within its function (ie. the { }). Below is the step-by-step instruction on how to modify CS goal model and calculate its status and trend, as an example.
 
 #### Load data
@@ -177,3 +205,5 @@ after we calculate the score, there is one more step to create a new table for t
 in addition to status, we also need to calculate trend. we use the first table we made today, rk, which contains the raw data for all habitats in all regions. we first aggregate the data by region using group_by, then add two new columns for the trend calculation and the score, using summarize.
 similar to status, trend scores need to be properly formatted to match the rest of the goal trends. we’ll create a new table called r.trend with the scores we just calculated. again, we use mutate and select, as shown here.
 now we’ve successfully calculated status and trend, the last thing we need to do is combine them into one table called scores. we combine r.status and r.trend by first binding by rows (rbind). -->
+
+
