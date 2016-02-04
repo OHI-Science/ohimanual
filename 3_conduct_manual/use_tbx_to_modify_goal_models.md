@@ -16,10 +16,10 @@ Now you are ready to modify your goal models and calculate scores. Here are a fe
 1. Go to the appropriate goal section.
 
 ### Model modification
-Your repository is pre-loaded with r codes for calculations from the 2014 Global assessment. Regardless of how you have changed your models, the basic sequence of events are similar for all goals. In `functions.R`, each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```} and you will make modifications for each goal within its function. Below is the step-by-step instruction on how to modify CS goal model and calculate its status and trend, as an example.
+Your repository is pre-loaded with r codes for calculations from the 2014 Global assessment. Regardless of how you have changed your models, the basic sequence of events are similar for all goals. In `functions.R`, each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```) and you will make modifications for each goal within its function (ie. the { }). Below is the step-by-step instruction on how to modify CS goal model and calculate its status and trend, as an example.
 
 #### Load data
-1. Identify and select the data layers we need. _(Note that the layer names are what was set up in layers.csv. Now the toolbox will look for those layers)_
+1. **Identify and select the data layers** we need. _(Note that the layer names are what was set up in layers.csv. Now the toolbox will look for those layers)_
 
 ```
 lyrs = c('cs_condition',
@@ -33,7 +33,7 @@ lyrs = c('cs_condition',
   head(D); summary(D)
 ```
 
-It is good practice to use head() and summary() after each step to make sure the data looks the way it is supposed to. Alternatively, you can click the file name in Rstudio `Environment` to see the entire dataset you just created. Here is what the _head_ and _summary_ look like:
+It is good practice to use _**head()**_ and _**summary()**_ after each step to make sure the data looks the way it is supposed to. Alternatively, you can click the file name in Rstudio `Environment` to see the entire dataset you just created. Here is what the _head_ and _summary_ look like:
 
 ```
   id_num    category val_num        layer id_name val_name category_name                      
@@ -50,7 +50,7 @@ It is good practice to use head() and summary() after each step to make sure the
  Max.   :11.000                    Max.   :2513980.0                                                                                                  Max.   :2013                                                                                                                                                        NA's   :63
 ```                                                                                                                                                       
 
-2. Combine all the data layers into one formatted data file. Select only the columns we need with _select_, change the row format to columns with _spread_, and change the column names to something easier to use with _rename_.
+2. **Combine all the data layers into one formatted data file**. Select only the columns we need with _select_, change the row format to columns with _spread_, and change the column names to something easier to use with _rename_.
 
 ```
 rk = D %>%
@@ -81,7 +81,7 @@ _Note: the %>% is a chain operator from dplyr used to simplify coding writing. T
 right now, the data are in rows, and we want to make each layer into a column (show data on R of what this means). We use spread in the tidyr package to do that. (note that we wrote tidyr:: spread, to show that the command spread comes from tidyr package). in this command, the key= variable to become column headers, which is layer. value= data, which is val_num. for more info on spread, see cheat sheet, and ?spread
 now the data is in a nice and clean format in one table, we can do the status calculation. The model is written out according to the data description file. -->
 
-3. Select only the habitats that contribute to CS _(Not all habitats included in the raw data files are used for carbon storage)_. You can select specific rows with _filter_.
+3. **Select only the habitats that contribute to CS** (Not all habitats included in the raw data files are used for carbon storage). You can select specific rows with _filter_.
 
 ```
 rk = rk %>%
@@ -89,7 +89,7 @@ rk = rk %>%
 ```
 
 #### Status Calculation
-for easy reference, you can write down the equation as a comment before calculations.
+For easy reference, write down the equation as a comment before calculations.
 
 ```
 ## status model calculations
@@ -97,7 +97,7 @@ for easy reference, you can write down the equation as a comment before calculat
  #      = sum(contribution * condition * extent_per_habitat) / total_extent_all_habitats
 ```
 
-1. Calculate status for all reported years. Most frequently used functions are _mutate_, _group_by_, and _summarize_. To learn more, see Appendix 5.
+1. **Calculate status for all reported years**. Most frequently used functions are _mutate_, _group_by_, and _summarize_. To learn more, see Appendix 5.
 
 ```
 StatusData = rk %>%
@@ -110,7 +110,7 @@ StatusData = rk %>%
            score = pmax(-1, pmin(1, xCS_calc)) * 100)     #score can't exceed 100
 ```
 
-2. Select only the status of the most recent year, and add a column for dimension "status". For final reporting, the toolbox will need four pieces of information: goal, region_id, dimension, and score, although they don't need to be listed in a certain order at this step.
+2. **Select only the status of the most recent year, and add a column for dimension "status"**. For final reporting, the toolbox will need four pieces of information: _goal, region_id, dimension, and score_, although they don't need to be listed in a certain order at this step.
 
 ```
 status <-  StatusData %>%
@@ -131,7 +131,7 @@ trend = rk %>%
             score = max(min(trend_raw, 1), -1)) %>%
   mutate(dimension = "trend")
 ```
-However, for most other goals, trends are calculated in a regression model based on the most recent 5 years of status:
+However, for most other goals, **trends are calculated in a regression model based on the most recent 5 years of status**:
 
 ```
 trend = StatusData %>%
