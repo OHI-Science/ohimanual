@@ -2,9 +2,9 @@
 title: "OHI Tutorial - How to register data and modify goal models"
 output: html_document
 ---
-Q's for ourselves: should we start a new repo specifically for teaching purposes. All the folders will be there, but empty, except for the raw data folders. For example, for the data prep step, we could populate the `pre-proc folder` with some raw data, have people prepare the data in `data_prep.r` and see the new files pop up in `prep folder`. 
+Q's for ourselves: should we start a new repo specifically for teaching purposes. All the folders will be there, but empty, except for the raw data folders and some basic R codes. For example, for the data prep step, we could populate the `pre-proc folder` with raw data for one goal, have people prepare the data in `data_prep.r` and see the new files pop up in `prep folder`. 
 
-We'll have the Rmd files of the codes of each step, and expected outcomes. People will copy the codes into appropriate R files, such as `data_prep.r`, and generate results. 
+We'll have the Rmd files of the codes of each step, and expected outcomes in this module. People will copy the codes into appropriate R files, such as `data_prep.r`, and generate results. 
 
 
 #####################################
