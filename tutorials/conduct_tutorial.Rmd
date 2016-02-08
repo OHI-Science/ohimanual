@@ -7,9 +7,27 @@ Q's for ourselves: should we start a new repo specifically for teaching purposes
 We'll have the Rmd files of the codes of each step, and expected outcomes in this module. People will copy the codes into appropriate R files, such as `data_prep.r`, and generate results. 
 
 
+--> Isreal: tourism in prep_layers folder 
+--> CS: specifiy: Spatial data prep: from Jamie's ppt. 
+
+Forking a repository and save in their own name space. can push, pull, commit. 
+
+name folder: regions2016 
+
+section 5 of manual rewrite: 
+overview
+software
+toolbox setup 
+
+clone repo, 
+
+
+
+
+
 #####################################
 
-This module will lead you through the process of modifying a goal model. We'll use OHI-China
+This module will lead you through the process of modifying a goal model. We'll use OHI-China?
 
 
 
@@ -17,8 +35,15 @@ Preparation:
 Download the OHI-CHN? repository from github. This will provide you with the data and all the R functions you will need to complete this module. 
 
 ## Step 1: Prepare Data
+
+https://cdn.rawgit.com/eco-data-science/spatial-analysis-R/master/intro_spatial_data_R.html
+
 Data prep is done in `region2015/prep` folder. 
-Detailed instructions can also be found in the section in the Manual on [how to format data](http://ohi-science.org/manual/#formatting-data-for-the-toolbox). Assuming you have obtained and formatted the data to the desired format, you will upload them to the `pre-proc` folder for further processing. It is best practice to keep the raw data in their original form, and do any processing with R. That way, the history of how the data has been transformed is captured. 
+Detailed instructions can also be found in the section in the Manual on [how to format data](http://ohi-science.org/manual/#formatting-data-for-the-toolbox). Assuming you have obtained and formatted the data to the desired format, you will upload them to the `pre-proc` folder for further processing. 
+
+MOVED TO TOP: It is best practice to keep the raw data in their original form, and do any processing with R. That way, the history of how the data has been transformed is captured. The idea is to have your methods reproducible. ALl decisions are captured and recorded. Keep as much as you can in one place, unless you have large spatial files that won't fit. 
+
+We've made a folder called `prep` and encourage you to store all your raw data and script to process those data, and save processed data in the `layers` folder. 
 
 The processing is done in `data_prep.r` files. 
 
