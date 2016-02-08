@@ -262,28 +262,190 @@ There are a lot of existing data that contribute to our scientific understanding
 
 <!---Option: JSL develop the discussion of searching not only for strict data within your country to use, but studies that have been done anywhere in the world, demonstrating relationships between different things (eg camaroneras effects on mangrove condition)--->
 
+## Formatting Data for the Toolbox
+
+### Introduction
+
+The OHI Toolbox is designed to work in the programming language **R** using input data stored in text-based **_.csv files_** (*csv* stands for 'comma-separated value'; these files can be opened as a spreadsheet using Microsoft Excel or similar programs). Each data layer (data input) has its own *.csv* file, which is combined with others within the Toolbox for the model calculations. These data layers are used for calculating goal scores, meaning that they are inputs for status, trend, pressures, and resilience. The global analysis included over 100 data layer files, and there will probably be as many in your own assessments. This section describes and provides examples of how to format the data layers for the Toolbox.
+
+OHI goal scores are calculated at the scale of the reporting unit, which is called a ‘**region**’ and then combined using an area-weighted average to produce the score for the overall area assessed, called a ‘**study area**’. The OHI Toolbox expects each data file to be in a specific format, with data available for every region within the study area, with data layers organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single *score* or *value*. In order to calculate trend, input data must be available as a time series for at least 5 recent years (and the longer the time series the better, as this can be used in setting temporal reference points).
+
+The example below shows information for a study area with 4 regions. There are two different (and separate) data layer files: tourism count (`tr_total.csv`) and natural products harvested, in metric tonnes (`np_harvest_tonnes.csv`). Each file has data for four regions (1-4) in different years, and the second has an additional 'categories' column for the different types of natural products that were harvested. In this example, the two data layers are appropriate for status calculations with the Toolbox because:
+
+1. At least five years of data are available,
+2. There are no data gaps
+3. Data are presented in 'long' or 'narrow' format (not 'wide' format -- see "**Long Formatting**"" section).
+
+### Uploading and formatting raw data files
+
+Unformatted data files can be uploaded to the `pre-proc` folder in your github repository and processed with R. Saving raw data in the same repository helps to keep track of how the data has been treated. Raw files can be uploaded as `.csv` or `.xlsx`. However, formatted data has to be saved as `.csv` in the `layers` folder.  
+
+In addition to `pre-proc`, a `prep` folder has been set up for data formatting. Inside the folder:
+- several sub-folders exist to house formatted data files for each goal/sub-goal
+- `prep.r` is where formatting occurs for each goal/sub-goal.
+- `README` is where you can record information on raw data files and processing for future reference
+
+**Example of data in the appropriate format:**
+
+![](./fig/formatting_data_example.png)
+
+### Gapfilling
+
+It is important that data prepared for the Toolbox have no missing values or 'gaps'. Data gaps can occur in two main ways: 1) **temporal gaps**: when several years in a time series in a single region have missing data, and 2) **spatial gaps**: when all years for a region have missing data (and therefore the whole region is 'missing' for that data layer).
+
+How these gaps are filled will depend on the data and regions themselves, and requires thoughtful, logical  decisions to most reasonably fill gaps. Each data layer can be gapfilled using different approaches. Some data layers will require both temporal and spatial gapfilling. The examples below highlight some example of temporal and spatial gapfilling.  
+
+All decisions of gapfilling should be documented to ensure transparency and reproducibility. The examples below are in Excel, but programming these changes in software like R is preferred because it promotes easy transparency and reproducibility.
+
+#### Temporal gapfilling
+
+Temporal gaps occur when a region is missing data for some years. The Toolbox requires data for each year for every region. It is important to make an informed decision about how to temporally gapfill data.
+
+![](./fig/temporal_gaps.png)
+
+Often, regression models are the best way to estimate data and fill temporal gaps. Here we give an example that assumes a linear relationship between the year and value variables within a region. If data do not fit a linear framework, other models may be fit to help with gapfilling. Here we give an example assuming linearity.
+
+Using a linear model can be done in most programming languages using specific functions, but here we show this step-by-step using functions in Excel for Region 1.
+
+**Temporal gapfilling example (assumes linearity: able to be represented by a straight line on a graph)):**
+
+There are four steps to temporally gapfill with a linear model, illustrated in the figures with four columns.
+
+**1. Calculate the slope for each region**
+
+The first step is to calculate the slope of the line that is fitted through the available data points. This can be done in Excel using the **SLOPE(known_y's,known_x's)** function as highlighted in the figure below. In this case, the x-axis is *years* (2005, 2006, etc...), the y-axis is *count*, and the Excel function automatically plots and fits a line through the known values (177.14 in 2005, 212.99 in 2008, and 228.81 in 2009), and subsequently calculates the slope (12.69).
+
+![](./fig/filling_temporal_gaps_slope.png)
+
+**2. Calculate the y-intercept for each region**
+
+The next step is to calculate the intercept of the line that is fitted through the available data points. This can be done in Excel similarly as for the slope calculation, using the the **INTERCEPT(known_y's,known_x's)** function that calculates the y-intercept (-25273.89) of the fitted line.
+
+![](./fig/filling_temporal_gaps_intercept.png)
+
+**3. Calculate y for all years**
+
+The slope and y-intercept that were calculated in steps 1 and 2 can then be used along with the year (independent variable) to calculate the unknown 'y-values'. To do so, simply replace the known three values into the **y = mx + b** equation (m=slope, x=year, b=intercept), to calculate the unknown 'count' for a given year (189.39 in 2006, and 202.08 in 2007).
+
+![](./fig/filling_temporal_gaps_value.png)
+
+**4. Replace modeled values into original data where gaps had occurred**
+
+Substitute these modeled values that were previously gaps in the timeseriew. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
+
+
+#### Spatial gapfilling
+
+Spatial gaps are when no data are available for a particular region. The Toolbox requires data for each region. It is important to make an informed decision about how to spatially gapfilling data.
+
+![](./fig/gapfilling_spatial.png)
+
+To fill gaps spatially, you must assume that one region is like another, and data from another region is adequate to be substituted in place of the missing data. This will depend on the type of data and the properties of the regions requiring gapfilling. For example, if a region is missing data but has similar properties to a different region that does have data, the missing data could be 'borrowed' from the region with information. Each data layer can be gapfilled using a different approach when necessary.  
+
+**Characteristics of regions requiring gapfilling that can help determine which type of spatial gapfilling to use:**
+
+1. proximity: can it be assumed that nearby regions have similar properties?
+
+2. study area: are data reported for the study area, and can those data be used for subcountry regions?
+
+3. demographic information: can it be assumed a region with a similar population size has similar data?
+
+
+**Spatial gapfilling example:**
+
+For a certain data layer, suppose the second region (*rgn_id 2*) has no data reported, as illustrated in the figure above. How to spatially gapfill *rgn_id 2* requires thinking about the properties and characteristics of the region and the data, in this case, tourist count.
+
+Here are properties that can be important for decision making:
+
+*rgn_id 2*:
+
+- is located between *rgn_id 1* and 3
+- is larger than *rgn_id 1*
+- has similar population size/demographics to *rgn_id 3*
+- has not been growing as quickly as *rgn_id 4*
+
+There is no absolute answer of how to best gapfill *rgn_id 2*. Here are a few reasonable possibilities:
+
+Assign *rgn_id 2* values from:
+
+- *rgn_id 1* because it is in close proximity to *rgn_id 2*
+- *rgn_id 3* because it is in close proximity to *rgn_id 2* and has similar population size/demographics
+- *rgn_id 1* and 3 averaged since they are in close proximity to *rgn_id 2*
+
+Suppose the decision was made to gapfill *rgn_id 2* using the mean of *rgn_id 1* and *3* since this would use a combination of both of those regions. Again, other possibilities could be equally correct. But some form of spatial gapfilling is required so a decision must be made. The image below illustrates this in Excel.
+
+![](./fig/gapfilling_spatial_example.png)
+
+The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.  
+
+### Long formatting
+
+The Toolbox expects data to be in 'long' or 'narrow' format. Below are examples of correct and incorrect formatting, and tips on how to transform data into the appropriate format.
+
+**Example of data in an incorrect format:**
+
+![](./fig/formatting_long_example.png)
+
+With 'wide' format, data layers are more difficult to combine with others and more difficult to read and to analyze.
+
+**Transforming data into 'narrow' format:**
+
+Data are easily transformed in a programming language such as R.
+
+In R, the `tidyr` package has the `gather` command, which will gather the data from a wide format into a narrow format. It also can `spread` the data back into a wide format if desired. R documentation:
+
+- http://blog.rstudio.org/2014/07/22/introducing-tidyr/
+- http://www.rstudio.com/resources/cheatsheets/
+
+<!-- Change the example to gather:  -->
+Example code using the *melt* command in the *reshape2* library. Assume the data above is in a variable called *data_wide*:
+
+![](./fig/melt_code.png)
+
+This will melt everything except any identified columns (*Region* and *DataLayer*), and put all other column headers into a new column named *Year*. Data values will then be found in a new column called *value*.
+
+The final step is optional: ordering the data will make it easier for humans to read (R and the Toolbox can read these data without this final step):
+
+**Example of data in the appropriate (long) format:**
+
+![](./fig/formatting_long_example_2.png)
+
+### Rescaling your data
+
+<!---Notes from Github issue 389. Katie, develop--->
+
+An important consideration is how to rescale your data when preparing it for use in the Toolbox. Rescaling involves turning a distribution of data into a value from zero to one. This is based on finding a highest observed or theoretical point in the distribution of the data, and from there, the relative value of the data can be calculated.
+
+<!---Insert example: Data normalization; example with you rescaling to max, or to higher than max.--->
+
+#### Example: Global Data Approach
+
+You should base your decision on whether your consider it more appropriate to decide the reference point based on the data distribution of all data points, be they observed or interpolated, or whether we think we should only consider the observed data. If the interpolation covers large areas, and these get assigned values that aren't very frequent in the observed data, then the two distributions will be very different, and what value is in the 99.99th percentile is different too.
+
+In theory, one would favor deciding the reference point based on as many observations as possible (i.e., interpolate first, then obtain the percentile). In practice, if we think that large interpolated areas are very unreliable, we might prefer to use real observations only (i.e., percentile first, then interpolate).
+
+
 # The Ocean Health Index Toolbox
 
-**The OHI Toolbox** is an ecosystem of small files and scripts that are the tools needed to calculate OHI scores. These files and scripts are stored in two Github '*repositories*': folders that are synchronized with collaborators. The first folder is your **assessment repository** that has a three-letter code, such as *esp* for Spain or *ecu* for Ecuador. You will edit this repository with your data, goal models, and updated pressures and resilience matrix tables. The second repository is called **ohicore** and it contains core functions for combining your data and goal models to calculate OHI scores. You will not edit `ohicore`, but you are able to explore it to understand the calculations.
+**The OHI Toolbox** is an ecosystem of small files and scripts that are the tools needed to calculate OHI scores. These files and scripts are stored in two Github '*repositories*': folders that are synchronized with collaborators. The first folder is your **tailored repository** that has a three-letter code, such as *esp* for Spain or *ecu* for Ecuador. You will edit this repository with your data, goal models, and updated pressures and resilience matrix tables. The second repository is called **ohicore** and it contains core functions for combining your data and goal models to calculate OHI scores. You will not edit `ohicore`, but you are able to explore it to understand the calculations.
 
 ![Toolbox = your repo + ohicore](https://docs.google.com/drawings/d/1sXHn8zi_-XZkPDOGO1RrmhVGZcOEAHEpTfDGXYmUut8/pub?w=768&h=192)
+
+## Obtaining a Tailored Repository 
 
 **Your repository will be created specifically for your assessment, which requires that the spatial boundaries of your assessment area and regions are finalized for your repository to be created.** Once your spatial boundaries are finalized, please prepare spatial files following [prepared shape files](http://ohi-science.org/manual/#defining-spatial-boundaries) and request your repository by emailing info@ohi-science.org.
 
 We recommend that you start using the repository _after_ you have planned all your goal models and identified good data to avoid preparing information or models that are ultimately excluded from your assessment. 
 
+## What's in your Tailored Repository
+
 Your **tailored assessment repository** contains data input layers, configuration files, and scripts. These files are organized in the same way within a *scenario folder* called `subcountry2014`, with data layers, goal model equations, and configuration files from the global 2014 assessment. Files within the scenario folder are comma-separated-value (*.csv*) files and scripts written in the programming language *R*.
 
 **Each OHI+ assessment repository has inputs and goal models based on the 2014 global assessment**. This means that each assessment repository isolates the information used for each region in the global assessment and stores it in a separate OHI+ assessment repository. Therefore, it can be an easy way to explore the inputs used in the global assessment for one specific place. When conducting an assessment, you will replace and modify as much of this information with local information that better represents your study area, since information reported at a national scale cannot always be attributed to its subcountry regions, as has been done in most cases in each OHI+ assessment repository. See more details in the discussion of the **layers folder**.
 
-
-The Toolbox is open-source and can be downloaded and installed for free. You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. GitHub is an online platform used by the OHI that facilitates collaboration and archives past versions of all files with the author identified. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores. Instruction on how to access your assessment repository is in the `Installing the Toolbox` section.
-
-The following sections will describe the files included in the Toolbox. You will then learn what is required for data layers for your assessment and how to change goal models.
-
 ## File system organization
 
-This section is an orientation to the files within your assessment repository. The file system organization is the same for all assessment repositories, and can be viewed at `github.com/OHI-Science` or on your computer. While reading this section it is helpful to explore a repository at the same time to become familiar with its contents and structure. The following uses the assessment repository for Ecuador (*ecu*) as an example, available at www.github.com/OHI-Science/ecu.
+This section is an orientation to the files within your _tailored_ assessment repository. The file system organization is the same for all assessment repositories, and can be viewed at `github.com/OHI-Science` or on your computer. While reading this section it is helpful to explore a repository at the same time to become familiar with its contents and structure. The following uses the assessment repository for Ecuador (*ecu*) as an example, available at www.github.com/OHI-Science/ecu.
 
 **Most of your time will be spent preparing input layers and developing goal models**. You will also register prepared layers to be used in the goal models. This all will be an iterative process, but generally speaking you will work goal-by-goal, preparing the layers first, registering them, and then developing the goal models in *R*. to calculate the scores.
 
@@ -448,219 +610,124 @@ The `spatial` folder contains two spatial files: `regions_gcs.geojson` and `regi
 
 Contents within the `temp` or `tmp` folders are not used to calculate scores but can be used for temporary organization for your assessment.
 
-## Formatting Data for the Toolbox
-
-### Introduction
-
-The OHI Toolbox is designed to work in the programming language **R** using input data stored in text-based **_.csv files_** (*csv* stands for 'comma-separated value'; these files can be opened as a spreadsheet using Microsoft Excel or similar programs). Each data layer (data input) has its own *.csv* file, which is combined with others within the Toolbox for the model calculations. These data layers are used for calculating goal scores, meaning that they are inputs for status, trend, pressures, and resilience. The global analysis included over 100 data layer files, and there will probably be as many in your own assessments. This section describes and provides examples of how to format the data layers for the Toolbox.
-
-OHI goal scores are calculated at the scale of the reporting unit, which is called a ‘**region**’ and then combined using an area-weighted average to produce the score for the overall area assessed, called a ‘**study area**’. The OHI Toolbox expects each data file to be in a specific format, with data available for every region within the study area, with data layers organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single *score* or *value*. In order to calculate trend, input data must be available as a time series for at least 5 recent years (and the longer the time series the better, as this can be used in setting temporal reference points).
-
-The example below shows information for a study area with 4 regions. There are two different (and separate) data layer files: tourism count (`tr_total.csv`) and natural products harvested, in metric tonnes (`np_harvest_tonnes.csv`). Each file has data for four regions (1-4) in different years, and the second has an additional 'categories' column for the different types of natural products that were harvested. In this example, the two data layers are appropriate for status calculations with the Toolbox because:
-
-1. At least five years of data are available,
-2. There are no data gaps
-3. Data are presented in 'long' or 'narrow' format (not 'wide' format -- see "**Long Formatting**"" section).
-
-### Uploading and formatting raw data files
-
-Unformatted data files can be uploaded to the `pre-proc` folder in your github repository and processed with R. Saving raw data in the same repository helps to keep track of how the data has been treated. Raw files can be uploaded as `.csv` or `.xlsx`. However, formatted data has to be saved as `.csv` in the `layers` folder.  
-
-In addition to `pre-proc`, a `prep` folder has been set up for data formatting. Inside the folder:
-- several sub-folders exist to house formatted data files for each goal/sub-goal
-- `prep.r` is where formatting occurs for each goal/sub-goal.
-- `README` is where you can record information on raw data files and processing for future reference
-
-**Example of data in the appropriate format:**
-
-![](./fig/formatting_data_example.png)
-
-### Gapfilling
-
-It is important that data prepared for the Toolbox have no missing values or 'gaps'. Data gaps can occur in two main ways: 1) **temporal gaps**: when several years in a time series in a single region have missing data, and 2) **spatial gaps**: when all years for a region have missing data (and therefore the whole region is 'missing' for that data layer).
-
-How these gaps are filled will depend on the data and regions themselves, and requires thoughtful, logical  decisions to most reasonably fill gaps. Each data layer can be gapfilled using different approaches. Some data layers will require both temporal and spatial gapfilling. The examples below highlight some example of temporal and spatial gapfilling.  
-
-All decisions of gapfilling should be documented to ensure transparency and reproducibility. The examples below are in Excel, but programming these changes in software like R is preferred because it promotes easy transparency and reproducibility.
-
-#### Temporal gapfilling
-
-Temporal gaps occur when a region is missing data for some years. The Toolbox requires data for each year for every region. It is important to make an informed decision about how to temporally gapfill data.
-
-![](./fig/temporal_gaps.png)
-
-Often, regression models are the best way to estimate data and fill temporal gaps. Here we give an example that assumes a linear relationship between the year and value variables within a region. If data do not fit a linear framework, other models may be fit to help with gapfilling. Here we give an example assuming linearity.
-
-Using a linear model can be done in most programming languages using specific functions, but here we show this step-by-step using functions in Excel for Region 1.
-
-**Temporal gapfilling example (assumes linearity: able to be represented by a straight line on a graph)):**
-
-There are four steps to temporally gapfill with a linear model, illustrated in the figures with four columns.
-
-**1. Calculate the slope for each region**
-
-The first step is to calculate the slope of the line that is fitted through the available data points. This can be done in Excel using the **SLOPE(known_y's,known_x's)** function as highlighted in the figure below. In this case, the x-axis is *years* (2005, 2006, etc...), the y-axis is *count*, and the Excel function automatically plots and fits a line through the known values (177.14 in 2005, 212.99 in 2008, and 228.81 in 2009), and subsequently calculates the slope (12.69).
-
-![](./fig/filling_temporal_gaps_slope.png)
-
-**2. Calculate the y-intercept for each region**
-
-The next step is to calculate the intercept of the line that is fitted through the available data points. This can be done in Excel similarly as for the slope calculation, using the the **INTERCEPT(known_y's,known_x's)** function that calculates the y-intercept (-25273.89) of the fitted line.
-
-![](./fig/filling_temporal_gaps_intercept.png)
-
-**3. Calculate y for all years**
-
-The slope and y-intercept that were calculated in steps 1 and 2 can then be used along with the year (independent variable) to calculate the unknown 'y-values'. To do so, simply replace the known three values into the **y = mx + b** equation (m=slope, x=year, b=intercept), to calculate the unknown 'count' for a given year (189.39 in 2006, and 202.08 in 2007).
-
-![](./fig/filling_temporal_gaps_value.png)
-
-**4. Replace modeled values into original data where gaps had occurred**
-
-Substitute these modeled values that were previously gaps in the timeseriew. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
-
-
-#### Spatial gapfilling
-
-Spatial gaps are when no data are available for a particular region. The Toolbox requires data for each region. It is important to make an informed decision about how to spatially gapfilling data.
-
-![](./fig/gapfilling_spatial.png)
-
-To fill gaps spatially, you must assume that one region is like another, and data from another region is adequate to be substituted in place of the missing data. This will depend on the type of data and the properties of the regions requiring gapfilling. For example, if a region is missing data but has similar properties to a different region that does have data, the missing data could be 'borrowed' from the region with information. Each data layer can be gapfilled using a different approach when necessary.  
-
-**Characteristics of regions requiring gapfilling that can help determine which type of spatial gapfilling to use:**
-
-1. proximity: can it be assumed that nearby regions have similar properties?
-
-2. study area: are data reported for the study area, and can those data be used for subcountry regions?
-
-3. demographic information: can it be assumed a region with a similar population size has similar data?
-
-
-**Spatial gapfilling example:**
-
-For a certain data layer, suppose the second region (*rgn_id 2*) has no data reported, as illustrated in the figure above. How to spatially gapfill *rgn_id 2* requires thinking about the properties and characteristics of the region and the data, in this case, tourist count.
-
-Here are properties that can be important for decision making:
-
-*rgn_id 2*:
-
-- is located between *rgn_id 1* and 3
-- is larger than *rgn_id 1*
-- has similar population size/demographics to *rgn_id 3*
-- has not been growing as quickly as *rgn_id 4*
-
-There is no absolute answer of how to best gapfill *rgn_id 2*. Here are a few reasonable possibilities:
-
-Assign *rgn_id 2* values from:
-
-- *rgn_id 1* because it is in close proximity to *rgn_id 2*
-- *rgn_id 3* because it is in close proximity to *rgn_id 2* and has similar population size/demographics
-- *rgn_id 1* and 3 averaged since they are in close proximity to *rgn_id 2*
-
-Suppose the decision was made to gapfill *rgn_id 2* using the mean of *rgn_id 1* and *3* since this would use a combination of both of those regions. Again, other possibilities could be equally correct. But some form of spatial gapfilling is required so a decision must be made. The image below illustrates this in Excel.
-
-![](./fig/gapfilling_spatial_example.png)
-
-The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.  
-
-### Long formatting
-
-The Toolbox expects data to be in 'long' or 'narrow' format. Below are examples of correct and incorrect formatting, and tips on how to transform data into the appropriate format.
-
-**Example of data in an incorrect format:**
-
-![](./fig/formatting_long_example.png)
-
-With 'wide' format, data layers are more difficult to combine with others and more difficult to read and to analyze.
-
-**Transforming data into 'narrow' format:**
-
-Data are easily transformed in a programming language such as R.
-
-In R, the `tidyr` package has the `gather` command, which will gather the data from a wide format into a narrow format. It also can `spread` the data back into a wide format if desired. R documentation:
-
-- http://blog.rstudio.org/2014/07/22/introducing-tidyr/
-- http://www.rstudio.com/resources/cheatsheets/
-
-<!-- Change the example to gather:  -->
-Example code using the *melt* command in the *reshape2* library. Assume the data above is in a variable called *data_wide*:
-
-![](./fig/melt_code.png)
-
-This will melt everything except any identified columns (*Region* and *DataLayer*), and put all other column headers into a new column named *Year*. Data values will then be found in a new column called *value*.
-
-The final step is optional: ordering the data will make it easier for humans to read (R and the Toolbox can read these data without this final step):
-
-**Example of data in the appropriate (long) format:**
-
-![](./fig/formatting_long_example_2.png)
-
-### Rescaling your data
-
-<!---Notes from Github issue 389. Katie, develop--->
-
-An important consideration is how to rescale your data when preparing it for use in the Toolbox. Rescaling involves turning a distribution of data into a value from zero to one. This is based on finding a highest observed or theoretical point in the distribution of the data, and from there, the relative value of the data can be calculated.
-
-<!---Insert example: Data normalization; example with you rescaling to max, or to higher than max.--->
-
-#### Example: Global Data Approach
-
-You should base your decision on whether your consider it more appropriate to decide the reference point based on the data distribution of all data points, be they observed or interpolated, or whether we think we should only consider the observed data. If the interpolation covers large areas, and these get assigned values that aren't very frequent in the observed data, then the two distributions will be very different, and what value is in the 99.99th percentile is different too.
-
-In theory, one would favor deciding the reference point based on as many observations as possible (i.e., interpolate first, then obtain the percentile). In practice, if we think that large interpolated areas are very unreliable, we might prefer to use real observations only (i.e., percentile first, then interpolate).
-
-<!---Develop--->
-
-# Installing the Toolbox
-
-In this section, you will learn how to successfully download, install, and use the software required to conduct an assessment. You will create a GitHub account and install R, RStudio, git, and the Github desktop  app. OHI assessments are conducted through open-source platforms that allow you to make real-time changes with collaborators, and to track progress so that errors can be corrected and new insights can be shared in the future.
-
-## Overview
-
-Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary.  
-
-This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  
-
-**Required:**
-
-1. **GitHub**
-2. **git**
-3. **R**
-4. **RStudio**
-
-> ![](./fig/overview_requirements_1.png)
-
-## GitHub
-
-**GitHub**, together with the version control system **git**, is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes.  
+## Toolbox Software
+
+The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems. Here is a quick introduction to the software and how they work together.
+
+<!-- You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary. 
+This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  --> 
+  
+  **Required:**
+  
+  1. **GitHub**
+  2. **git**
+  3. **R**
+  4. **RStudio**
+  
+  > ![](./fig/overview_requirements_1.png)
+
+### GitHub and git
+
+GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. It is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores.
+
+To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps. You first **clone** an online repository to your local machine. After making modifications, you will **commit** these changes with a description before being able to sync back to the online repository. **Synching** involves both **pulling** any updates from the online repository before **pushing** committed changes back to the server.
 
 **GitHub Vocabulary:**
-
-* **clone** ~ download to your computer from online version with synching capabilities enabled
+  
+  * **clone** ~ download to your computer from online version with synching capabilities enabled
 * **commit** ~ message associated with your changes at a point in time
 * **pull** ~ sync a repo on your computer with online version
 * **push** ~ sync the online repo with your version, only possible after committing
 * **sync** = pull + commit + push
 
-### Learning GitHub
-The following section describes how to use GitHub to access and sync your assessment repository. There are also many great resources available online with more in-depth information:
+> TIP: While you can edit files in the online GitHub repository, we do not recommend this. It is good practice to track changes through commits and syncing.
+
+The example below illustrates GitHub's collaborative workflow:
+
+![](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
+
+There are also many great resources available online with more in-depth information:
 
 * [**Git and GitHub**](http://r-pkgs.had.co.nz/git.html) by Hadley Wickham: r-pkgs.had.co.nz/git.html
 * [**Collaboration and Time Travel: Version Control with Git, GitHub and RStudio**](http://www.rstudio.com/resources/webinars/) video tutorial by Hadley Wickham: www.rstudio.com/resources/webinars
 * [**Good Resources for Learning Git and GitHub**](https://help.github.com/articles/good-resources-for-learning-git-and-github/) by GitHub: help.github.com/articles/good-resources-for-learning-git-and-github/
 
-## Accessing GitHub Repositories
-GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. All changes within your local, desktop repository will be tracked by GitHub regardless of the software you use to make the changes, and saved shared via its online interface. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. To do so, you will need to create a GitHub account online and install git, R, and RStudio on your local computer. All are freely available.
 
-### Create a GitHub account
+### R and RStudio
 
-Create a GitHub account at http://github.com. Choose a username and password. You will use this username and password when you install and set up *git* on your computer.
+**R and RStudio allow you to work locally on your own computer**, modifying the files in the repository to reflect the desired modifications your team has identified for your assessment. All changes within your local repository will be tracked by GitHub regardless of the software you use to make the changes. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. We recommend doing as much data manipulation as possible in a programming language like R, to maximize transparency and reproducibility.
 
+Through RStudio, you can perform all the steps mentioned before (_clone, commit, push, and pull_) and _sync_ with the online Github repository. 
+
+* **R** is a free computing and graphical software where all the modifications to your OHI repository are done. 
+
+* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. 
+
+### Syncing Github and RStudio
+
+RStudio can sync files with GitHub directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately); in the GitHub App these two functions are done together.
+
+Launch your project in RStudio by double-clicking the `.Rproj` file in the assessment folder on your local hard drive.
+
+![](https://docs.google.com/drawings/d/11F2lbB1S56ccZK5CbCxga4SEiRoE6E0-3QtZO99p37A/pub?w=500&h=400)
+
+When you modify or add a file, the file will appear in the 'Git' window once it has been saved. In the example below, the file `test.R` was created.
+
+<span style="font-size:0.9em">
+
+1. Clicking the '_Staged_' (checked) box and the '_Commit_' button opens a new window where you can review changes.
+2. Type a commit message that is informative to the changes you've made.
+  - Note 1: there will often be multiple files 'staged' at the same time, and so the same commit message will be associated with all of the updated files. It is best to commit changes often with informative commit messages.
+  - Note 2: clicking on a staged file will identify additions and deletions within that file for your review
+3. Click '_Commit_' to commit the changes and the commit message.
+4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, espeically if you are working with collaborators who might be working on the same files as you are.
+5. "Push" your committed changes to the online repository. Your changes are now visible online.
+</span>
+
+> TIP: If you aren't seeing your changes in the 'Git' window, try saving the file again.
+
+![Figure showing RStudio when sycing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
+
+_Note_: Another option to syncing your edits on a repo with the online version is to use **Command Lines**, if you are familiar with it. There are resources available online on how to do so.    
+
+## GitHub repository architecture
+
+GitHub stores all data files and scripts for your assessment in a repository (a folder). Different copies or complements to these folders, called *branches* can also exist, which aid with versioning and drafting. Your repository has four branches, two of which are displayed on your website (e.g., ohi-science.org/ecu):
+
+1. **draft** branch is for editing. This is the default branch and the main working area where existing scenario data files can be edited and new scenarios added.
+
+1. **published** branch is a vetted copy of the draft branch, not for direct editing. This branch is only updated by automatic calculation of scores if:
+
+    1. no errors occur during the calculation of scores in the draft branch, and
+
+    2. publishing is turned on. During the draft editing and testing phases of development, it is typically desirable to turn this off.
+
+1. **gh-pages** branch is this website. The results sections of the site (regions, layers, goals, scores per branch/scenario) are overwritten into this repository after automatic calculation of scores. The rest of the site can be manually altered.
+
+1. **app** branch is the interactive layer and map viewer application. The user interface and server-side processing use the [Shiny](http://shiny.rstudio.com/) R package and are deployed online via [ShinyApps.io](https://www.shinyapps.io/) to your website. Once deployed, the WebApp pulls updates from the data branches (draft and published) every time a new connection is initiated (i.e., browser refreshes).
+
+> TIP: When looking at files on GitHub, note that the timestamps are associated with the 'commit' time rather than the 'push' time.
+
+# Installing the Toolbox
+
+In this section, you will learn how to successfully set up your _tailored_ toolbox by following these step-by-step instructions:
+
+1. Create your online _Github_ account and set up _git_ on your local computer
+2. Install _R_ and _RStudio_ on your local computer
+3. Clone your tailored repository from Github to your local computer via RStudio
+4. Install `ohi-core` package 
+
+Let's get started!
+
+## Set up a Github Account and git
+
+<!-- GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. All changes within your local, desktop repository will be tracked by GitHub regardless of the software you use to make the changes, and saved shared via its online interface. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. To do so, you will need to create a GitHub account online and install git, R, and RStudio on your local computer. All are freely available. -->
+
+You can create a GitHub account at http://github.com. Choose a username and password. You will use this username and password when you install and set up *git* on your computer.
 
 ### Install *git* software
 
-How you install *git* will depend on whether you are working on a Windows or Mac computer. It will also depend on your operating system version. If you have problems following these instructions, it is likely because your operating system requires a previous version of *git*. Previous versions are available from http://www.wandisco.com/git/download (you will need to provide your email address).
+**git** is available for download at [https://git-scm.com/downloads](https://git-scm.com/downloads). How you install *git* will depend on whether you are working on a Windows or Mac computer. It will also depend on your operating system version. If you have problems following these instructions, it is likely because your operating system requires a previous version of *git*. Previous versions are available from http://www.wandisco.com/git/download (you will need to provide your email address).
 
 **For Windows:**
 
@@ -767,80 +834,35 @@ This folder can be identified by any computer as `~/github/`.
 
 You need to **email your username to ohi-science@nceas.ucsb.edu** for permission to upload modifications to your GitHub repository (you only need to do this once). Only team members who will be modifying files will need to do this; all other members can view online and download the repository without these permissions.  
 
-### Work locally with R and RStudio
 
-You will then work locally on your own computer, modifying the files in the repository to reflect the desired modifications your team has identified for your assessment. Multiple users can work on the same repository at the same time, so there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps. You have already successfully **cloned** an online repository to your local machine. After making modifications, you will **commit** these changes with a description before being able to sync back to the online repository. **Synching** involves both **pulling** any updates from the online repository before **pushing** committed changes back to the server.
+## Download R and RStudio
 
-> TIP: While you can edit files in the online GitHub repository, we do not recommend this. It is good practice to track changes through commits and syncing.
+You can download R, and RStudio for free from their perspective websites and install the latest versions allowed by your operating system on your computer: 
 
-The example below illustrates GitHub's collaborative workflow:
+**R**: [http://cran.r-project.org/](http://cran.r-project.org/) 
 
-![](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
+**RStudio**: [https://www.rstudio.com/](https://www.rstudio.com/)
 
-All changes within your local repository will be tracked by GitHub regardless of the software you use to make the changes. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. We recommend doing as much data manipulation as possible in a programming language like R, to maximize transparency and reproducibility.
+**R and RStudio update frequently**. If you already have those softwares installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or Rstudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
 
-* **R** is a free computing and graphical software where all the modifications to your OHI repository are done. Download the latest version of R appropriate for your operating system at http://cran.r-project.org/ and follow the instructions to install it on your computer.
-
-* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. Install the latest version of RStudio at [https://www.rstudio.com/](https://www.rstudio.com/).
-
->R and RStudio update frequently. If you already have those softwares installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or Rstudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
-
-If you are working on a _Mac_, you will need to tell RStudio to use the proper version of Git by doing the updating the preferences for 'Git executable':
+**If you are working on a _Mac_,** you will need to tell RStudio to use the proper version of Git by doing the updating the preferences for 'Git executable':
 
 **RStudio > Preferences... > Git/SVN > Git executable: /usr/local/git/bin/git**
 
 > TIP: if you are working on a Mac, the git file is hidden. To find it easily, hold *shift+command+g* and paste /usr/local/git/bin/git in the pop-up window. Select git (which should be already preselected) and select Open, then Ok.
 
-#### Cloning a repository to your local computer
+## Cloning a repository to your local computer
 
 In order to sync GitHub and RStudio, you need to clone your GitHub repository to RStudio. Here is a step-by-step guide on how to do so:
 
 ![How to clone repository to Rstudio](https://docs.google.com/drawings/d/1QHQGHlE3Ct7KQ7o216k9rRqUC__7rCOwt5EXd3tcvLo/pub?w=720&h=1920)
 
-#### Syncing your repository with RStudio
+## Install `ohicore`
 
-RStudio can sync files with GitHub directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately); in the GitHub App these two functions are done together.
+`ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R pckages and will only need to do this once. You can find the script `install_ohicore.r` in your scenario folder (eg. chn/province2015/). Source it, and now your Toolbox is all set up and ready to go!
 
-Launch your project in RStudio by double-clicking the `.Rproj` file in the assessment folder on your local hard drive.
+> Although `ohicore` is a package you would not normally interact with, it can be useful to have the folder cloned to your computer for debugging, particularly with pressures and resilience calculations for goals that have components in the matrix. To do so, you will clone the repository (https://github.com/OHI-Science/ohicore) as you would your assessment repository. 
 
-![](https://docs.google.com/drawings/d/11F2lbB1S56ccZK5CbCxga4SEiRoE6E0-3QtZO99p37A/pub?w=500&h=400)
-
-When you modify or add a file, the file will appear in the 'Git' window once it has been saved. In the example below, the file `test.R` was created.
-
-<span style="font-size:0.9em">
-
-1. Clicking the '_Staged_' (checked) box and the '_Commit_' button opens a new window where you can review changes.
-2. Type a commit message that is informative to the changes you've made.
-  - Note 1: there will often be multiple files 'staged' at the same time, and so the same commit message will be associated with all of the updated files. It is best to commit changes often with informative commit messages.
-  - Note 2: clicking on a staged file will identify additions and deletions within that file for your review
-3. Click '_Commit_' to commit the changes and the commit message.
-4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, espeically if you are working with collaborators who might be working on the same files as you are.
-5. "Push" your committed changes to the online repository. Your changes are now visible online.
-</span>
-
-> TIP: If you aren't seeing your changes in the 'Git' window, try saving the file again.
-
-![Figure showing RStudio when sycing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
-
- _Note_: Another option to syncing your edits on a repo with the online version is to use **Command Lines**, if you are familiar with it. There are resources available online on how to do so.    
-
-## GitHub repository architecture
-
-GitHub stores all data files and scripts for your assessment in a repository (a folder). Different copies or complements to these folders, called *branches* can also exist, which aid with versioning and drafting. Your repository has four branches, two of which are displayed on your website (e.g., ohi-science.org/ecu):
-
-1. **draft** branch is for editing. This is the default branch and the main working area where existing scenario data files can be edited and new scenarios added.
-
-1. **published** branch is a vetted copy of the draft branch, not for direct editing. This branch is only updated by automatic calculation of scores if:
-
-    1. no errors occur during the calculation of scores in the draft branch, and
-
-    2. publishing is turned on. During the draft editing and testing phases of development, it is typically desirable to turn this off.
-
-1. **gh-pages** branch is this website. The results sections of the site (regions, layers, goals, scores per branch/scenario) are overwritten into this repository after automatic calculation of scores. The rest of the site can be manually altered.
-
-1. **app** branch is the interactive layer and map viewer application. The user interface and server-side processing use the [Shiny](http://shiny.rstudio.com/) R package and are deployed online via [ShinyApps.io](https://www.shinyapps.io/) to your website. Once deployed, the WebApp pulls updates from the data branches (draft and published) every time a new connection is initiated (i.e., browser refreshes).
-
-> TIP: When looking at files on GitHub, note that the timestamps are associated with the 'commit' time rather than the 'push' time.
 
 # Using the Toolbox
 
@@ -1105,10 +1127,10 @@ Now you are ready to modify your goal models and calculate scores. Here are a fe
 1. Go to the appropriate goal section.
 
 ### Model modification
-Your repository is pre-loaded with r codes for calculations from the 2014 Global assessment. Regardless of how you have changed your models, the basic sequence of events are similar for all goals. In `functions.R`, each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```} and you will make modifications for each goal within its function. Below is the step-by-step instruction on how to modify CS goal model and calculate its status and trend, as an example.
+Your repository is pre-loaded with r codes for calculations from the 2014 Global assessment. Regardless of how you have changed your models, the basic sequence of events are similar for all goals. In `functions.R`, each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```) and you will make modifications for each goal within its function (ie. the { }). Below is the step-by-step instruction on how to modify CS goal model and calculate its status and trend, as an example.
 
 #### Load data
-1. Identify and select the data layers we need. _(Note that the layer names are what was set up in layers.csv. Now the toolbox will look for those layers)_
+1. **Identify and select the data layers** we need. _(Note that the layer names are what was set up in layers.csv. Now the toolbox will look for those layers)_
 
 ```
 lyrs = c('cs_condition',
@@ -1122,7 +1144,7 @@ lyrs = c('cs_condition',
   head(D); summary(D)
 ```
 
-It is good practice to use head() and summary() after each step to make sure the data looks the way it is supposed to. Alternatively, you can click the file name in Rstudio `Environment` to see the entire dataset you just created. Here is what the _head_ and _summary_ look like:
+It is good practice to use _**head()**_ and _**summary()**_ after each step to make sure the data looks the way it is supposed to. Alternatively, you can click the file name in Rstudio `Environment` to see the entire dataset you just created. Here is what the _head_ and _summary_ look like:
 
 ```
   id_num    category val_num        layer id_name val_name category_name                      
@@ -1139,7 +1161,7 @@ It is good practice to use head() and summary() after each step to make sure the
  Max.   :11.000                    Max.   :2513980.0                                                                                                  Max.   :2013                                                                                                                                                        NA's   :63
 ```                                                                                                                                                       
 
-2. Combine all the data layers into one formatted data file. Select only the columns we need with _select_, change the row format to columns with _spread_, and change the column names to something easier to use with _rename_.
+2. **Combine all the data layers into one formatted data file**. Select only the columns we need with _select_, change the row format to columns with _spread_, and change the column names to something easier to use with _rename_.
 
 ```
 rk = D %>%
@@ -1170,7 +1192,7 @@ _Note: the %>% is a chain operator from dplyr used to simplify coding writing. T
 right now, the data are in rows, and we want to make each layer into a column (show data on R of what this means). We use spread in the tidyr package to do that. (note that we wrote tidyr:: spread, to show that the command spread comes from tidyr package). in this command, the key= variable to become column headers, which is layer. value= data, which is val_num. for more info on spread, see cheat sheet, and ?spread
 now the data is in a nice and clean format in one table, we can do the status calculation. The model is written out according to the data description file. -->
 
-3. Select only the habitats that contribute to CS _(Not all habitats included in the raw data files are used for carbon storage)_. You can select specific rows with _filter_.
+3. **Select only the habitats that contribute to CS** (Not all habitats included in the raw data files are used for carbon storage). You can select specific rows with _filter_.
 
 ```
 rk = rk %>%
@@ -1178,7 +1200,7 @@ rk = rk %>%
 ```
 
 #### Status Calculation
-for easy reference, you can write down the equation as a comment before calculations.
+For easy reference, write down the equation as a comment before calculations.
 
 ```
 ## status model calculations
@@ -1186,7 +1208,7 @@ for easy reference, you can write down the equation as a comment before calculat
  #      = sum(contribution * condition * extent_per_habitat) / total_extent_all_habitats
 ```
 
-1. Calculate status for all reported years. Most frequently used functions are _mutate_, _group_by_, and _summarize_. To learn more, see Appendix 5.
+1. **Calculate status for all reported years**. Most frequently used functions are _mutate_, _group_by_, and _summarize_. To learn more, see Appendix 5.
 
 ```
 StatusData = rk %>%
@@ -1199,7 +1221,7 @@ StatusData = rk %>%
            score = pmax(-1, pmin(1, xCS_calc)) * 100)     #score can't exceed 100
 ```
 
-2. Select only the status of the most recent year, and add a column for dimension "status". For final reporting, the toolbox will need four pieces of information: goal, region_id, dimension, and score, although they don't need to be listed in a certain order at this step.
+2. **Select only the status of the most recent year, and add a column for dimension "status"**. For final reporting, the toolbox will need four pieces of information: _goal, region_id, dimension, and score_, although they don't need to be listed in a certain order at this step.
 
 ```
 status <-  StatusData %>%
@@ -1220,7 +1242,7 @@ trend = rk %>%
             score = max(min(trend_raw, 1), -1)) %>%
   mutate(dimension = "trend")
 ```
-However, for most other goals, trends are calculated in a regression model based on the most recent 5 years of status:
+However, for most other goals, **trends are calculated in a regression model based on the most recent 5 years of status**:
 
 ```
 trend = StatusData %>%
