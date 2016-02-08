@@ -18,13 +18,12 @@ in_md = c(
   'intro_assessment.md',                             # reviewed for 07/09 push
    'defining_spatial.md',                             # reviewed for 07/09 push. TODO: new figs
    'assemble_inputs.md',                              # reviewed for 07/09 push
-  'intro_to_tbx.md',                                 # reviewed for 07/09 push. TODO: see notes
-  'file_system.md',                                  # reviewed for 07/09 push
   'formatting_data.md',
-  'data_transformation.md',                         # TODO: review and update JSL
+  'intro_to_tbx.md',    
+  'file_system.md',
+  'tbx_software_intro.md',
+  'github_architecture.md', 
   'install_tbx.md', 
-  'accessing_github_repos.md',                       # TODO: review and update
-  'github_architecture.md',
   'use_tbx.md',                                      # TODO: review and update JSL
   'use_tbx_to_modify_data_layers.md',
   'use_tbx_to_modify_pressures_resilience.md',    
