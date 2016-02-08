@@ -1,6 +1,8 @@
-## Modifying and creating data layers
+## Data layer preparation 
 
-<!---OM: this is an optional new figure; drafts are commented like so in these Tbx sections. Remove this comment if you want to make it public: ![A figure showing key steps in the process of creating and preparing your data layers.](https://docs.google.com/drawings/d/1faQjNMY3Z_R2X2U53hQ9ChqhxlyEa3xRe8jz5FnXsbU/pub?w=960&h=859)--->
+It is recommended that you construct a useful workflow with your team to incorporate local information into the Toolbox. Adding data to the Toolbox will require working with GitHub and the [Toolbox file system structure](http://ohi-science.org/manual/#file-system-organization). The overall process involves preparing the layers (which can be done in the `prep` folder), saving them in the `layers` folder, and registering the layers. The layer preparation process can occur in tandem with the model modification process.
+
+![Diagram of OHI Toolbox data preparation workflow. You should start by prepping the files, loading them into the `layers` folder when they're ready for the Toolbox, and then registering them in `layers.csv`](https://docs.google.com/drawings/d/1-WB84qsupe4yeqKzeBnOSm9iIW-G7N3EYW0VqqGXORs/pub?w=1116&h=641)
 
 Data layers are *.csv* files and are located in the `[assessment]/subcountry.year/layers` folder (example: gye/subcountry2014/layers). Remember that all data layers provided in your repository are extracted from the global 2014 assessment.
 
@@ -11,7 +13,7 @@ Data layers are *.csv* files and are located in the `[assessment]/subcountry.yea
 
 Both types of default data layers are of coarse-resolution and should be replaced with local, high-resolution data when possible. The priority should be to replace as much of the `_gl2014.csv` data as possible.
 
-**There are several steps to follow when working with data layers:**
+**There are several steps to follow when creating with your own data layers:**
 
 1. Modify or create data layer with proper formatting
 2. Save the layer in the `layers` folder
@@ -20,7 +22,11 @@ Both types of default data layers are of coarse-resolution and should be replace
 
 ### Create data layers with proper formatting
 
-The OHI Toolbox expects each data layer to be in its own *.csv* file and to be in a specific format, with data available for every region within the study area, with data organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single score or value. See the **'Formatting data for the Toolbox'** section for more information.
+The OHI Toolbox expects each data layer to be in its own *.csv* file and to be in a specific format, with data available for every region within the study area, with data organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single score or value. See the [Formatting data for the Toolbox](http://ohi-science.org/manual/#formatting-data-for-the-toolbox) section for more information.
+
+It is highly recommended that layer preparation occurs in your repository's `prep` folder as much as possible, as it will also be archived by GitHub for future refrence. The folder is divided into sub-folders for each goal and sub-goal, where you will upload the raw data and manipulate the data in `data_prep.R` scripts. 
+
+Note that you can upload raw data as _.xls_ or _.xlsx_ files to Github, but they must be converted to _.csv_ for toolbox calculations. 
 
 ### Save data layers in the *layers* folder
 
@@ -49,29 +55,6 @@ However, if a new layer has been added (for example when a new goal model is dev
 
  It is important to check that you have filled you the fields correctly, for instance, if "fld_value" does not match the header of the source data layer, you will see an error message when you try to calculate scores. Other columns are generated later by the Toolbox as it confirms data formatting and content.
 
- <!-- Ning: where/how to incorporate the template? It is a bit long, and repeats some of the information above. But I think it's good to include as a concrete example for the goal keepers/toolbox person. Should we set this in an Appendix and just reference it in the text here?
+<!-- ### Check pressures and resilience matrices
 
- Template:
- 1. Filename of the data layer: cw_pathogen_trend_gl2014.csv
-
-2. Identify the target for this data layer: goal, sub-goal, pressures, or resilience: CW
-
-3. Short title of the data layer (for the 'name' column in `layers.csv`): Trends in access to improved sanitation
-
-4. One-sentence explanation of the data layer (for the 'description' column in `layers.csv`): Trends in percent of population with access to improved sanitation facilities.
-
-
-5. Long description of the data layer (that includes any data manipulation that has occurred, how to interpret it, and why; any further data manipulation required, how to interpret it, and why): Trends in percent of population with access to improved sanitation facilities. Scores range from 0 to 1, with 0 being the poorest santiation trend and 1 being the best sanitation trend. We updated percent of population with access to improved sanitation facilities data that were available from 1990-2011 from the World Health Organization and United Nations Children's Fund's Joint Monitoring Programme. Processing included the function na.locf from the zoo package in R, and rescaling the data from 0 - 1 with the highest possible score as a reference. This was chosen as was chosen as a proxy for pathogen pollution trend due to lack of better data. If time-series data were available for monitoring of point pollution sources, we could use that data instead in future assessments.
-
-
-6. The data source ( institution that collected the original data, or the institution providing the data if different from the original, the year it was accessed, the URL or publication reference): World Health Organization and United Nations Children's Fund's Joint Monitoring Programme (WHO/UNICEF's JMP). Accessed April 2015. (http://www.wssinfo.org/data-estimates/table)
-
-7. The years of data available: 1990 - 2011
-
-8. The units of data: Trend score (unitless)
-
-9. Any other observations or explanations about the data:Processing included the function na.locf from the zoo package in R (Zeileis & Grothendieck 2005)  -->
-
-### Check pressures and resilience matrices
-
-If the new or modified layer is a pressures layer, check that `pressures_matrix.csv` and `resilience_matrix.csv` have been properly modified to register the new data layers.
+If the new or modified layer is a pressures layer, check that `pressures_matrix.csv` and `resilience_matrix.csv` have been properly modified to register the new data layers. -->
