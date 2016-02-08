@@ -1,6 +1,6 @@
 ## Toolbox Software
 
-The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems. Here is a quick introduction to the software and how they work together.
+The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems: 
 
 <!-- You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary. 
 This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  --> 
@@ -13,19 +13,21 @@ This section explains the GitHub workflow and how to access and setup required s
   4. **RStudio**
   
   > ![](./fig/overview_requirements_1.png)
+  
+The Tailored Assessment Repository and `ohicore` are stored and managed with all the above software systems. Here is a quick introduction to the software and how they work together.
 
 ### GitHub and git
 
 GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. It is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores.
 
-To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps. You first **clone** an online repository to your local machine. After making modifications, you will **commit** these changes with a description before being able to sync back to the online repository. **Synching** involves both **pulling** any updates from the online repository before **pushing** committed changes back to the server.
+To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps. 
 
 **GitHub Vocabulary:**
   
-  * **clone** ~ download to your computer from online version with synching capabilities enabled
-* **commit** ~ message associated with your changes at a point in time
-* **pull** ~ sync a repo on your computer with online version
-* **push** ~ sync the online repo with your version, only possible after committing
+* **clone** ~ download an online repository to your computer to your local machine with synching capabilities enabled
+* **commit** ~ message associated with your changes at a point in time, before being able to sync back to the online repository
+* **pull** ~ pull changes from an online repository to your computer
+* **push** ~ push committed changes back to the online repository with your version, only possible after committing
 * **sync** = pull + commit + push
 
 > TIP: While you can edit files in the online GitHub repository, we do not recommend this. It is good practice to track changes through commits and syncing.
@@ -36,24 +38,24 @@ The example below illustrates GitHub's collaborative workflow:
 
 There are also many great resources available online with more in-depth information:
 
-* [**Git and GitHub**](http://r-pkgs.had.co.nz/git.html) by Hadley Wickham: r-pkgs.had.co.nz/git.html
-* [**Collaboration and Time Travel: Version Control with Git, GitHub and RStudio**](http://www.rstudio.com/resources/webinars/) video tutorial by Hadley Wickham: www.rstudio.com/resources/webinars
-* [**Good Resources for Learning Git and GitHub**](https://help.github.com/articles/good-resources-for-learning-git-and-github/) by GitHub: help.github.com/articles/good-resources-for-learning-git-and-github/
+* **Git and GitHub** by Hadley Wickham: [r-pkgs.had.co.nz/git.html](http://r-pkgs.had.co.nz/git.html)
+* **Collaboration and Time Travel: Version Control with Git, GitHub and RStudio** video tutorial by Hadley Wickham: [www.rstudio.com/resources/webinars](http://www.rstudio.com/resources/webinars/)
+* **Good Resources for Learning Git and GitHub** by GitHub: [help.github.com/articles/good-resources-for-learning-git-and-github/](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 
 ### R and RStudio
 
 **R and RStudio allow you to work locally on your own computer**, modifying the files in the repository to reflect the desired modifications your team has identified for your assessment. All changes within your local repository will be tracked by GitHub regardless of the software you use to make the changes. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. We recommend doing as much data manipulation as possible in a programming language like R, to maximize transparency and reproducibility.
 
-Through RStudio, you can perform all the steps mentioned before (_clone, commit, push, and pull_) and _sync_ with the online Github repository. 
-
 * **R** is a free computing and graphical software where all the modifications to your OHI repository are done. 
 
-* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. 
+* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is where model modifications and calculations occur. 
+
+Through RStudio, you can perform all the steps mentioned before (_clone, commit, push, and pull_) and _sync_ with the online Github repository. 
 
 ### Syncing Github and RStudio
 
-RStudio can sync files with GitHub directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately); in the GitHub App these two functions are done together.
+RStudio can sync files with Github directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately). 
 
 Launch your project in RStudio by double-clicking the `.Rproj` file in the assessment folder on your local hard drive.
 

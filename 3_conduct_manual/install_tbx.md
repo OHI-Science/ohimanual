@@ -143,7 +143,7 @@ You can download R, and RStudio for free from their perspective websites and ins
 
 ## Cloning a repository to your local computer
 
-In order to sync GitHub and RStudio, you need to clone your GitHub repository to RStudio. Here is a step-by-step guide on how to do so:
+In order to sync GitHub and RStudio, you need to clone your GitHub repository to RStudio. Here is a guide on how to do so:
 
 ![How to clone repository to Rstudio](https://docs.google.com/drawings/d/1QHQGHlE3Ct7KQ7o216k9rRqUC__7rCOwt5EXd3tcvLo/pub?w=720&h=1920)
 
