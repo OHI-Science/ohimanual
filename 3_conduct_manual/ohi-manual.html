@@ -111,17 +111,18 @@
 <li><a href="#create-the-new-pressure-layers-and-save-in-the-layers-folder"><span class="toc-section-number">6.4.1</span> Create the new pressure layers and save in the <code>layers</code> folder</a></li>
 <li><a href="#register-the-new-pressure-layers-in-layers.csv"><span class="toc-section-number">6.4.2</span> Register the new pressure layers in <code>layers.csv</code></a></li>
 <li><a href="#register-the-new-layers-in-pressure_matrix.csv"><span class="toc-section-number">6.4.3</span> Register the new layers in <code>pressure_matrix.csv</code></a></li>
-<li><a href="#modify-the-resilience-matrix-if-necessary"><span class="toc-section-number">6.4.4</span> Modify the resilience matrix (if necessary)</a></li>
 </ul></li>
-<li><a href="#modifying-resilience-matrices"><span class="toc-section-number">6.5</span> Modifying resilience matrices</a><ul>
+<li><a href="#modify-the-resilience-matrix-if-necessary"><span class="toc-section-number">6.5</span> Modify the resilience matrix (if necessary)</a><ul>
 <li><a href="#updating-resilience-matrix-with-local-habitat-information"><span class="toc-section-number">6.5.1</span> Updating resilience matrix with local habitat information</a></li>
+<li><a href="#global-resilience-layers"><span class="toc-section-number">6.5.2</span> Global resilience layers</a></li>
+<li><a href="#determining-how-to-modify-these-resilience-layers"><span class="toc-section-number">6.5.3</span> Determining how to modify these resilience layers</a></li>
 </ul></li>
-<li><a href="#removing-goals"><span class="toc-section-number">6.6</span> Removing goals</a></li>
-<li><a href="#modifying-the-pressures-matrix-for-goals-with-categories"><span class="toc-section-number">6.7</span> Modifying the pressures matrix for goals with categories</a><ul>
-<li><a href="#background"><span class="toc-section-number">6.7.1</span> Background</a></li>
-<li><a href="#example-1-pressures"><span class="toc-section-number">6.7.2</span> Example 1: Pressures</a></li>
-<li><a href="#example-2-resilience"><span class="toc-section-number">6.7.3</span> Example 2: Resilience</a></li>
+<li><a href="#modifying-the-pressures-matrix-for-goals-with-categories"><span class="toc-section-number">6.6</span> Modifying the pressures matrix for goals with categories</a><ul>
+<li><a href="#background"><span class="toc-section-number">6.6.1</span> Background</a></li>
+<li><a href="#example-1-pressures"><span class="toc-section-number">6.6.2</span> Example 1: Pressures</a></li>
+<li><a href="#example-2-resilience"><span class="toc-section-number">6.6.3</span> Example 2: Resilience</a></li>
 </ul></li>
+<li><a href="#removing-goals"><span class="toc-section-number">6.7</span> Removing goals</a></li>
 <li><a href="#calculate-overall-ohi-index-scores"><span class="toc-section-number">6.8</span> Calculate overall OHI Index Scores</a><ul>
 <li><a href="#additional-data-layers-for-pressures-and-resilience-calculations"><span class="toc-section-number">6.8.1</span> Additional data layers for pressures and resilience calculations</a></li>
 <li><a href="#final-calculation"><span class="toc-section-number">6.8.2</span> Final calculation</a></li>
@@ -1087,6 +1088,7 @@ There are several options to clone your repository to your local machine. When g
 <li>prepare and register data for a goal</li>
 <li>modify goal models with R to calcualte <em>status</em> and <em>trend</em> (in functions.R and pre_scores.R)</li>
 <li>update pressures and resilience matrix and data layers</li>
+<li>remove goal(s) if neccesary</li>
 <li>calculate the other dimensions (pressures, resilience, likely future state, goal score, and overall OHI index score) with ohicore</li>
 </ol>
 <p>Step 2-5 can occur simultaneously. Below are instructions for each step.</p>
@@ -1378,14 +1380,10 @@ now we’ve successfully calculated status and trend, the last thing we need to 
 </div>
 </div>
 </div>
-<div id="modify-the-resilience-matrix-if-necessary" class="section level3">
-<h3><span class="header-section-number">6.4.4</span> Modify the resilience matrix (if necessary)</h3>
-<p>Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers.</p>
 </div>
-</div>
-<div id="modifying-resilience-matrices" class="section level2">
-<h2><span class="header-section-number">6.5</span> Modifying resilience matrices</h2>
-<p>Previous decisions made with your team will identify if any resilience layers should be added to the resilience matrices, and if so, which goals and/or pressures the resilience affects and what weight they should have. You can then transfer this information into <code>resilience_matrix.csv</code> (located in the <code>[assessment]/subcountry2014/conf</code> folder).</p>
+<div id="modify-the-resilience-matrix-if-necessary" class="section level2">
+<h2><span class="header-section-number">6.5</span> Modify the resilience matrix (if necessary)</h2>
+<p>Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into <code>resilience_matrix.csv</code> (located in the <code>[assessment]/subcountry2014/conf</code> folder).</p>
 <p><code>resilience_matrix.csv</code> maps the different types of resilience (columns) with the goals that they affect (rows). New resilience layers may be added to <code>resilience_matrix.csv</code> based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.</p>
 <p>Each goal must have a resilience measure associated with it. In the figure below, the Toolbox would give an error because there are no resilience layers indicated for the natural products (NP) goal.</p>
 <div class="figure">
@@ -1405,8 +1403,9 @@ now we’ve successfully calculated status and trend, the last thing we need to 
 <li><em>resilience_matrix.csv</em></li>
 <li><em>resilience_weights.csv</em> (only if adding new resilience layers)</li>
 </ul>
-<div id="global-resilience-layers" class="section level4">
-<h4><span class="header-section-number">6.5.1.1</span> Global resilience layers</h4>
+</div>
+<div id="global-resilience-layers" class="section level3">
+<h3><span class="header-section-number">6.5.2</span> Global resilience layers</h3>
 <p>The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. The full list of layers included in the global resilience matrix are:</p>
 <blockquote>
 <p><code>alien_species</code>, <code>cites</code>, <code>fishing_v1</code>, <code>fishing_v1_eez</code>, <code>fishing_v2_eez</code>, <code>fishing_v3</code>, <code>fishing_v3_eez</code>, <code>habitat</code>, <code>habitat_combo</code>, <code>habitat_combo_eez</code>, <code>li_gci</code>, <code>li_sector_evenness</code>, <code>mariculture</code>, <code>msi_gov</code>, <code>species_diversity</code>, <code>species_diversity_3nm</code>, <code>tourism</code>, <code>water</code>, <code>wgi_all</code></p>
@@ -1424,8 +1423,8 @@ now we’ve successfully calculated status and trend, the last thing we need to 
 <p><code>fishing_v1</code>, <code>fishing_v1_eez</code>, <code>fishing_v2_eez</code>, <code>fishing_v3</code>, <code>fishing_v3_eez</code>, <code>habitat</code>, <code>habitat_combo</code>, <code>habitat_combo_eez</code>, <code>mariculture</code>, <code>species_diversity</code>, <code>species_diversity_3nm</code>, <code>tourism</code></p>
 </blockquote>
 </div>
-<div id="determining-how-to-modify-these-resilience-layers" class="section level4">
-<h4><span class="header-section-number">6.5.1.2</span> Determining how to modify these resilience layers</h4>
+<div id="determining-how-to-modify-these-resilience-layers" class="section level3">
+<h3><span class="header-section-number">6.5.3</span> Determining how to modify these resilience layers</h3>
 <ul>
 <li>To determine whether <code>species_diversity_3nm</code> or <code>species_diversity</code> should be used:
 <ul>
@@ -1560,55 +1559,10 @@ now we’ve successfully calculated status and trend, the last thing we need to 
 </ul>
 </div>
 </div>
-</div>
-<div id="removing-goals" class="section level2">
-<h2><span class="header-section-number">6.6</span> Removing goals</h2>
-<p>If a goal is not relevant in your region, it is possible to remove the goal completely from the calculation. There are four places where you will need to remove the reference to this goal. Failing to delete all referenced layers after the goal is deleted will result in errors. To remove goals from your assessment, you will have to do the following:</p>
-<ol style="list-style-type: decimal">
-<li>Remove the goal model from <code>functions.R</code></li>
-<li>Remove the goal’s row from <code>goals.csv</code></li>
-<li>Remove the goal’s row from <code>pressures_matrix.csv</code></li>
-<li>Remove the goal’s row from <code>resilience_matrix.csv</code></li>
-</ol>
-<div class="figure">
-<img src="fig/remove_goal.png" />
-
-</div>
-<p><strong>Example: Removing carbon storage (CS) goal</strong></p>
-<p>To completely remove the carbon storage goal from Index calculations, you will do the following.</p>
-<ol style="list-style-type: decimal">
-<li>Remove the carbon storage (CS) goal model from <code>functions.R</code>. Delete the highlighted text in the figure below that references the CS layers and calculates CS goal status, trend, and scores.</li>
-</ol>
-<div class="figure">
-<img src="fig/functions_delete.png" />
-
-</div>
-<ol start="2" style="list-style-type: decimal">
-<li>Remove the CS row from <code>goals.csv</code>. Delete the highlighted row in the figure below that contains the CS goal.</li>
-</ol>
-<div class="figure">
-<img src="fig/goals_delete.png" />
-
-</div>
-<ol start="3" style="list-style-type: decimal">
-<li>Remove all CS rows from <code>pressures_matrix.csv</code>. Delete the highlighted rows in the figure below that contain CS pressures.</li>
-</ol>
-<div class="figure">
-<img src="fig/delete_pressures.png" />
-
-</div>
-<ol start="4" style="list-style-type: decimal">
-<li>Remove all CS rows from <code>resilience_matrix.csv</code>. Delete the highlighted rows in the figure below that contain CS resilience.</li>
-</ol>
-<div class="figure">
-<img src="fig/delete_resilience.png" />
-
-</div>
-</div>
 <div id="modifying-the-pressures-matrix-for-goals-with-categories" class="section level2">
-<h2><span class="header-section-number">6.7</span> Modifying the pressures matrix for goals with categories</h2>
+<h2><span class="header-section-number">6.6</span> Modifying the pressures matrix for goals with categories</h2>
 <div id="background" class="section level3">
-<h3><span class="header-section-number">6.7.1</span> Background</h3>
+<h3><span class="header-section-number">6.6.1</span> Background</h3>
 <p>The pressures and resilience matrix tables identify which pressures and resilience measures (layers) are relevant to which goals and how they are weighted. But pressures and resilience measures can also affect the components within a goal differently. When that is the case, those components can have individual entries (rows) in the pressures and resilience matrix tables and will have pressures and resilience scores calculated individually for each component.</p>
 <p>The Toolbox calls these components of a goal ‘categories’, and knows to calculate pressures and resilience for category elements separately because they are identified in three places: in <code>pressures_matrix.csv</code>, <code>resilience_matrix.csv</code>, and <code>config.r</code>. These files are all located in the <code>conf</code> folder. To calculate the pressures and resilience scores, the Toolbox uses <code>config.r</code> to identify which categories to expect in the matrix tables, and will give a warning if they do not match. <code>config.r</code> relies upon the data layers identified in the <code>pressures_components</code> and <code>resilience_components</code> variables.</p>
 <p>In global assessments, there are several goals that have categories indicated in the matrix tables and <code>config.r</code> file:</p>
@@ -1657,7 +1611,7 @@ now we’ve successfully calculated status and trend, the last thing we need to 
 <p>It is important that the file identified in <code>config.r</code> does not contain any NA values.</p>
 </div>
 <div id="example-1-pressures" class="section level3">
-<h3><span class="header-section-number">6.7.2</span> Example 1: Pressures</h3>
+<h3><span class="header-section-number">6.6.2</span> Example 1: Pressures</h3>
 <p>Here is an example of how to modify existing category types for the natural products goal.</p>
 <p>In the China OHI+ assessment there are three natural product types (seasalt, sea chemicals, and sea medicine), which differ from those assessed in the global assessments (corals, fish_oil, ornamentals, seaweeds, sponges). After modifying and registering the appropriate data layers and updating the NP function in <code>functions.r</code>, it is time to update the natural product types in <code>pressures_matrix.csv</code>, <code>resilience_matrix.csv</code>, and <code>config.r</code>.</p>
 <ul>
@@ -1680,7 +1634,7 @@ mangrove, saltmarsh, seagrass</code></pre>
 <p>The problem here is that the categories identified in <code>config.r</code> (saltmarshes, seagrasses, mangroves) are plural, whereas the categories identified in the pressures matrix (mangrove, saltmarsh, seagrass) are singular, and the Toolbox needs exact matches. To fix this warning, you need to update the pressures matrix with the plural names.</p>
 </div>
 <div id="example-2-resilience" class="section level3">
-<h3><span class="header-section-number">6.7.3</span> Example 2: Resilience</h3>
+<h3><span class="header-section-number">6.6.3</span> Example 2: Resilience</h3>
 <p>For resilience calculations, the proper categories also need to be identified both in <code>resilience_matrix.csv</code> and <code>config.r</code>. If there is a mismatch, you will see the following message:</p>
 <pre><code>Calculating Resilience...
 Note: each goal in resilience_matrix.csv
@@ -1704,6 +1658,50 @@ In addition: Warning messages:
 2: In left_join_impl(x, y, by$x, by$y) :
   joining factors with different levels, coercing to character vector</code></pre>
 <p>This error can be fixed by updating <code>config.r</code> with a layer identifying the appropriate categories.</p>
+</div>
+</div>
+<div id="removing-goals" class="section level2">
+<h2><span class="header-section-number">6.7</span> Removing goals</h2>
+<p>If a goal is not relevant in your region, it is possible to remove the goal completely from the calculation. There are four places where you will need to remove the reference to this goal. Failing to delete all referenced layers after the goal is deleted will result in errors. To remove goals from your assessment, you will have to do the following:</p>
+<ol style="list-style-type: decimal">
+<li>Remove the goal model from <code>functions.R</code></li>
+<li>Remove the goal’s row from <code>goals.csv</code></li>
+<li>Remove the goal’s row from <code>pressures_matrix.csv</code></li>
+<li>Remove the goal’s row from <code>resilience_matrix.csv</code></li>
+</ol>
+<div class="figure">
+<img src="fig/remove_goal.png" />
+
+</div>
+<p><strong>Example: Removing carbon storage (CS) goal</strong></p>
+<p>To completely remove the carbon storage goal from Index calculations, you will do the following.</p>
+<ol style="list-style-type: decimal">
+<li>Remove the carbon storage (CS) goal model from <code>functions.R</code>. Delete the highlighted text in the figure below that references the CS layers and calculates CS goal status, trend, and scores.</li>
+</ol>
+<div class="figure">
+<img src="fig/functions_delete.png" />
+
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Remove the CS row from <code>goals.csv</code>. Delete the highlighted row in the figure below that contains the CS goal.</li>
+</ol>
+<div class="figure">
+<img src="fig/goals_delete.png" />
+
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Remove all CS rows from <code>pressures_matrix.csv</code>. Delete the highlighted rows in the figure below that contain CS pressures.</li>
+</ol>
+<div class="figure">
+<img src="fig/delete_pressures.png" />
+
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Remove all CS rows from <code>resilience_matrix.csv</code>. Delete the highlighted rows in the figure below that contain CS resilience.</li>
+</ol>
+<div class="figure">
+<img src="fig/delete_resilience.png" />
+
 </div>
 </div>
 <div id="calculate-overall-ohi-index-scores" class="section level2">

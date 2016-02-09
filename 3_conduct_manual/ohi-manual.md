@@ -876,7 +876,8 @@ We recommend that you work on one goal at a time as data becomes available and g
 2. prepare and register data for a goal
 3. modify goal models with R to calcualte _status_ and _trend_ (in functions.R and pre_scores.R)
 4. update pressures and resilience matrix and data layers
-5. calculate the other dimensions (pressures, resilience, likely future state, goal score, and overall OHI index score) with ohicore
+5. remove goal(s) if neccesary 
+6. calculate the other dimensions (pressures, resilience, likely future state, goal score, and overall OHI index score) with ohicore
 
 Step 2-5 can occur simultaneously. Below are instructions for each step. 
 
@@ -951,11 +952,11 @@ If the new or modified layer is a pressures layer, check that `pressures_matrix.
 After you have registered the data layers for a goal and created a goal model, you are ready calculate the _status_ and _trend_ of this goal. The basic sequence of events are as follows: 
 
 1. load ohicore and check data layers
-1. load and combine data layers for this goal
-1. calculate status
-1. calculate trend
-1. combine status and trend
-1. update `goals.csv` 
+2. load and combine data layers for this goal
+3. calculate status
+4. calculate trend
+5. combine status and trend
+6. update `goals.csv` 
 
 > Tip: Check that you have installed the latest versions of R and RStudio before starting. If an unexplained error occurs during calculation, it could be due to a software update, which could happen every month or so. Sometimes simply updating your software could fix the error.  
 
@@ -1180,14 +1181,9 @@ This step also requires transferring prior decisions into `pressures_matrix.csv`
 
 ![](./fig/register_new_pressures.png)
 
-### Modify the resilience matrix (if necessary)
+## Modify the resilience matrix (if necessary)
 
-Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers.
-
-
-## Modifying resilience matrices
-
-Previous decisions made with your team will identify if any resilience layers should be added to the resilience matrices, and if so, which goals and/or pressures the resilience affects and what weight they should have. You can then transfer this information into `resilience_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder).
+Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder).
 
 `resilience_matrix.csv` maps the different types of resilience (columns) with the goals that they affect (rows). New resilience layers may be added to `resilience_matrix.csv` based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.
 
@@ -1209,7 +1205,7 @@ Updates are required for the following files:
 * *resilience_matrix.csv*
 * *resilience_weights.csv* (only if adding new resilience layers)
 
-#### Global resilience layers
+### Global resilience layers
 
 The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. The full list of layers included in the global resilience matrix are:
 
@@ -1227,7 +1223,7 @@ The remaining layers apply to certain habitats, but not others. We focus on thes
 
 > `fishing_v1`, `fishing_v1_eez`, `fishing_v2_eez`, `fishing_v3`, `fishing_v3_eez`, `habitat`, `habitat_combo`,	`habitat_combo_eez`, `mariculture`, `species_diversity`, `species_diversity_3nm`,	`tourism`
 
-#### Determining how to modify these resilience layers
+### Determining how to modify these resilience layers
 
 * To determine whether `species_diversity_3nm` or `species_diversity` should be used:
     + `sand_dunes` should use `species_diversity_3nm`,
@@ -1281,37 +1277,6 @@ If the general resilience categories are relevant to the habitat, the next step 
 
 5) How to update `resilience_matrix.csv`?
 * write the complete list of layers you want to use for each habitat. Based on the above, for example, `soft bottom` in Israel matches the combination of layers called *soft bottom, with corals* in the default `resilience_matrix.csv`. But the `rocky_reef` and `sand_dunes` don't seem to match any existing combination, so you'll probably need to delete some of the rows, e.g. the *coral only*, and replace with new ad-hoc rows.
-
-## Removing goals
-
-If a goal is not relevant in your region, it is possible to remove the goal completely from the calculation. There are four places where you will need to remove the reference to this goal. Failing to delete all referenced layers after the goal is deleted will result in errors. To remove goals from your assessment, you will have to do the following:
-
-1. Remove the goal model from `functions.R`
-2. Remove the goal’s row from `goals.csv`
-3. Remove the goal’s row from `pressures_matrix.csv`
-4. Remove the goal’s row from `resilience_matrix.csv`
-
-![](./fig/remove_goal.png)
-
-**Example: Removing carbon storage (CS) goal**
-
-To completely remove the carbon storage goal from Index calculations, you will do the following.
-
-1) Remove the carbon storage (CS) goal model from `functions.R`. Delete the highlighted text in the figure below that references the CS layers and calculates CS goal status, trend, and scores.
-
-![](./fig/functions_delete.png)
-
-2) Remove the CS row from `goals.csv`. Delete the highlighted row in the figure below that contains the CS goal.
-
-![](./fig/goals_delete.png)
-
-3) Remove all CS rows from `pressures_matrix.csv`. Delete the highlighted rows in the figure below that contain CS pressures.
-
-![](./fig/delete_pressures.png)
-
-4) Remove all CS rows from `resilience_matrix.csv`. Delete the highlighted rows in the figure below that contain CS resilience.
-
-![](./fig/delete_resilience.png)
 
 ## Modifying the pressures matrix for goals with categories
 
@@ -1405,6 +1370,37 @@ In addition: Warning messages:
 ```
 
 This error can be fixed by updating `config.r` with a layer identifying the appropriate categories.
+
+## Removing goals
+
+If a goal is not relevant in your region, it is possible to remove the goal completely from the calculation. There are four places where you will need to remove the reference to this goal. Failing to delete all referenced layers after the goal is deleted will result in errors. To remove goals from your assessment, you will have to do the following:
+
+1. Remove the goal model from `functions.R`
+2. Remove the goal’s row from `goals.csv`
+3. Remove the goal’s row from `pressures_matrix.csv`
+4. Remove the goal’s row from `resilience_matrix.csv`
+
+![](./fig/remove_goal.png)
+
+**Example: Removing carbon storage (CS) goal**
+
+To completely remove the carbon storage goal from Index calculations, you will do the following.
+
+1) Remove the carbon storage (CS) goal model from `functions.R`. Delete the highlighted text in the figure below that references the CS layers and calculates CS goal status, trend, and scores.
+
+![](./fig/functions_delete.png)
+
+2) Remove the CS row from `goals.csv`. Delete the highlighted row in the figure below that contains the CS goal.
+
+![](./fig/goals_delete.png)
+
+3) Remove all CS rows from `pressures_matrix.csv`. Delete the highlighted rows in the figure below that contain CS pressures.
+
+![](./fig/delete_pressures.png)
+
+4) Remove all CS rows from `resilience_matrix.csv`. Delete the highlighted rows in the figure below that contain CS resilience.
+
+![](./fig/delete_resilience.png)
 
 ## Calculate overall OHI Index Scores
 
