@@ -50,14 +50,9 @@ This step also requires transferring prior decisions into `pressures_matrix.csv`
 
 ![](./fig/register_new_pressures.png)
 
-### Modify the resilience matrix (if necessary)
+## Modify the resilience matrix (if necessary)
 
-Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers.
-
-
-## Modifying resilience matrices
-
-Previous decisions made with your team will identify if any resilience layers should be added to the resilience matrices, and if so, which goals and/or pressures the resilience affects and what weight they should have. You can then transfer this information into `resilience_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder).
+Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder).
 
 `resilience_matrix.csv` maps the different types of resilience (columns) with the goals that they affect (rows). New resilience layers may be added to `resilience_matrix.csv` based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.
 
@@ -79,7 +74,7 @@ Updates are required for the following files:
 * *resilience_matrix.csv*
 * *resilience_weights.csv* (only if adding new resilience layers)
 
-#### Global resilience layers
+### Global resilience layers
 
 The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. The full list of layers included in the global resilience matrix are:
 
@@ -97,7 +92,7 @@ The remaining layers apply to certain habitats, but not others. We focus on thes
 
 > `fishing_v1`, `fishing_v1_eez`, `fishing_v2_eez`, `fishing_v3`, `fishing_v3_eez`, `habitat`, `habitat_combo`,	`habitat_combo_eez`, `mariculture`, `species_diversity`, `species_diversity_3nm`,	`tourism`
 
-#### Determining how to modify these resilience layers
+### Determining how to modify these resilience layers
 
 * To determine whether `species_diversity_3nm` or `species_diversity` should be used:
     + `sand_dunes` should use `species_diversity_3nm`,
