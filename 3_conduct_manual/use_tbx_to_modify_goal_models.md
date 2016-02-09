@@ -3,11 +3,11 @@
 After you have registered the data layers for a goal and created a goal model, you are ready calculate the _status_ and _trend_ of this goal. The basic sequence of events are as follows: 
 
 1. load ohicore and check data layers
-1. load and combine data layers for this goal
-1. calculate status
-1. calculate trend
-1. combine status and trend
-1. update `goals.csv` 
+2. load and combine data layers for this goal
+3. calculate status
+4. calculate trend
+5. combine status and trend
+6. update `goals.csv` 
 
 > Tip: Check that you have installed the latest versions of R and RStudio before starting. If an unexplained error occurs during calculation, it could be due to a software update, which could happen every month or so. Sometimes simply updating your software could fix the error.  
 
