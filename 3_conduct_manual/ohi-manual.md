@@ -612,7 +612,7 @@ Contents within the `temp` or `tmp` folders are not used to calculate scores but
 
 ## Toolbox Software
 
-The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems. Here is a quick introduction to the software and how they work together.
+The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems: 
 
 <!-- You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary. 
 This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  --> 
@@ -625,19 +625,21 @@ This section explains the GitHub workflow and how to access and setup required s
   4. **RStudio**
   
   > ![](./fig/overview_requirements_1.png)
+  
+The Tailored Assessment Repository and `ohicore` are stored and managed with all the above software systems. Here is a quick introduction to the software and how they work together.
 
 ### GitHub and git
 
 GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. It is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores.
 
-To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps. You first **clone** an online repository to your local machine. After making modifications, you will **commit** these changes with a description before being able to sync back to the online repository. **Synching** involves both **pulling** any updates from the online repository before **pushing** committed changes back to the server.
+To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps. 
 
 **GitHub Vocabulary:**
   
-  * **clone** ~ download to your computer from online version with synching capabilities enabled
-* **commit** ~ message associated with your changes at a point in time
-* **pull** ~ sync a repo on your computer with online version
-* **push** ~ sync the online repo with your version, only possible after committing
+* **clone** ~ download an online repository to your computer to your local machine with synching capabilities enabled
+* **commit** ~ message associated with your changes at a point in time, before being able to sync back to the online repository
+* **pull** ~ pull changes from an online repository to your computer
+* **push** ~ push committed changes back to the online repository with your version, only possible after committing
 * **sync** = pull + commit + push
 
 > TIP: While you can edit files in the online GitHub repository, we do not recommend this. It is good practice to track changes through commits and syncing.
@@ -648,24 +650,24 @@ The example below illustrates GitHub's collaborative workflow:
 
 There are also many great resources available online with more in-depth information:
 
-* [**Git and GitHub**](http://r-pkgs.had.co.nz/git.html) by Hadley Wickham: r-pkgs.had.co.nz/git.html
-* [**Collaboration and Time Travel: Version Control with Git, GitHub and RStudio**](http://www.rstudio.com/resources/webinars/) video tutorial by Hadley Wickham: www.rstudio.com/resources/webinars
-* [**Good Resources for Learning Git and GitHub**](https://help.github.com/articles/good-resources-for-learning-git-and-github/) by GitHub: help.github.com/articles/good-resources-for-learning-git-and-github/
+* **Git and GitHub** by Hadley Wickham: [r-pkgs.had.co.nz/git.html](http://r-pkgs.had.co.nz/git.html)
+* **Collaboration and Time Travel: Version Control with Git, GitHub and RStudio** video tutorial by Hadley Wickham: [www.rstudio.com/resources/webinars](http://www.rstudio.com/resources/webinars/)
+* **Good Resources for Learning Git and GitHub** by GitHub: [help.github.com/articles/good-resources-for-learning-git-and-github/](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 
 ### R and RStudio
 
 **R and RStudio allow you to work locally on your own computer**, modifying the files in the repository to reflect the desired modifications your team has identified for your assessment. All changes within your local repository will be tracked by GitHub regardless of the software you use to make the changes. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. We recommend doing as much data manipulation as possible in a programming language like R, to maximize transparency and reproducibility.
 
-Through RStudio, you can perform all the steps mentioned before (_clone, commit, push, and pull_) and _sync_ with the online Github repository. 
-
 * **R** is a free computing and graphical software where all the modifications to your OHI repository are done. 
 
-* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is also where model modifications and calculations occur. 
+* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is where model modifications and calculations occur. 
+
+Through RStudio, you can perform all the steps mentioned before (_clone, commit, push, and pull_) and _sync_ with the online Github repository. 
 
 ### Syncing Github and RStudio
 
-RStudio can sync files with GitHub directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately); in the GitHub App these two functions are done together.
+RStudio can sync files with Github directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately). 
 
 Launch your project in RStudio by double-clicking the `.Rproj` file in the assessment folder on your local hard drive.
 
@@ -853,7 +855,7 @@ You can download R, and RStudio for free from their perspective websites and ins
 
 ## Cloning a repository to your local computer
 
-In order to sync GitHub and RStudio, you need to clone your GitHub repository to RStudio. Here is a step-by-step guide on how to do so:
+In order to sync GitHub and RStudio, you need to clone your GitHub repository to RStudio. Here is a guide on how to do so:
 
 ![How to clone repository to Rstudio](https://docs.google.com/drawings/d/1QHQGHlE3Ct7KQ7o216k9rRqUC__7rCOwt5EXd3tcvLo/pub?w=720&h=1920)
 
@@ -866,20 +868,28 @@ In order to sync GitHub and RStudio, you need to clone your GitHub repository to
 
 # Using the Toolbox
 
->In this section, you will learn about the most common modifications made to repositories. You will be given examples to follow to help with your own assessment. The most common modifications are changing the pressures and resilience matrices, changing or creating data layers, and changing or removing goals models.
+>In this section, you will learn about the most common modifications made to repositories. You will be given examples to follow to help with your own assessment. The most common modifications are changing or creating data layers, changing or removing goals models, and changing the pressures and resilience matrices. All the work will be contained within your `subcountry201x` folder.
 
-As your team finalizes which data should be included in the assessment and begins developing goal models, you can incorporate this information into your repository. Input information must be properly formatted into **layers**, which are registered with the Toolbox for use. Layers for the Toolbox can be prepared with any software that handles *.csv* files, but goal models must be updated in R. It is recommended that layer preparation occurs within your repository's `prep` folder as much as possible, as it will also be archived by GitHub. Calculations can be done locally and offline by running  `subcountry2014/calculate_scores.R`.
+We recommend that you work on one goal at a time as data becomes available and goal model created. For each goal and sub-goal, there are multiple dimensions of the OHI scores: _status, trend, pressures, resilience, likely future state,_ and the _goal score_. Goal and sub-goal index scores are then combined to calculate the _overall OHI index score_. The general workflow is to:
+
+1. check that the functions within pre-loaded, template scenario folder work well by running `subcountry201x/calculate_scores.R`
+2. prepare and register data for a goal
+3. modify goal models with R to calcualte _status_ and _trend_ (in functions.R and pre_scores.R)
+4. update pressures and resilience matrix and data layers
+5. calculate the other dimensions (pressures, resilience, likely future state, goal score, and overall OHI index score) with ohicore
+
+Step 2-5 can occur simultaneously. Below are instructions for each step. 
+
+## Check pre-loaded, template data and models
+
+As a starting point, your tailored repository is populated with data and functions based on global 2014 OHI study, which you can then modify directly. To check that your repository is set up properly, you can check by running `subcountry2014/calculate_scores.R`. It will produce scores for each dimension in `subcountry2014/scores.csv`. When it's all set up, you can begin adding your own data and goal models. 
 
 
-## Layer preparation workflow
+## Data layer preparation 
 
-It is recommended that you construct a useful workflow with your team to incorporate local information into the Toolbox. Adding layers to the Toolbox will require working with GitHub and the Toolbox file system structure. The overall process involves preparing the layers (which can be done in the `prep` folder), saving them in the `layers` folder, and registering the layers. The layer preparation process can occur in tandem with the model modification process.
+It is recommended that you construct a useful workflow with your team to incorporate local information into the Toolbox. Adding data to the Toolbox will require working with GitHub and the [Toolbox file system structure](http://ohi-science.org/manual/#file-system-organization). The overall process involves preparing the layers (which can be done in the `prep` folder), saving them in the `layers` folder, and registering the layers. The layer preparation process can occur in tandem with the model modification process.
 
 ![Diagram of OHI Toolbox data preparation workflow. You should start by prepping the files, loading them into the `layers` folder when they're ready for the Toolbox, and then registering them in `layers.csv`](https://docs.google.com/drawings/d/1-WB84qsupe4yeqKzeBnOSm9iIW-G7N3EYW0VqqGXORs/pub?w=1116&h=641)
-
-## Modifying and creating data layers
-
-<!---OM: this is an optional new figure; drafts are commented like so in these Tbx sections. Remove this comment if you want to make it public: ![A figure showing key steps in the process of creating and preparing your data layers.](https://docs.google.com/drawings/d/1faQjNMY3Z_R2X2U53hQ9ChqhxlyEa3xRe8jz5FnXsbU/pub?w=960&h=859)--->
 
 Data layers are *.csv* files and are located in the `[assessment]/subcountry.year/layers` folder (example: gye/subcountry2014/layers). Remember that all data layers provided in your repository are extracted from the global 2014 assessment.
 
@@ -890,7 +900,7 @@ Data layers are *.csv* files and are located in the `[assessment]/subcountry.yea
 
 Both types of default data layers are of coarse-resolution and should be replaced with local, high-resolution data when possible. The priority should be to replace as much of the `_gl2014.csv` data as possible.
 
-**There are several steps to follow when working with data layers:**
+**There are several steps to follow when creating with your own data layers:**
 
 1. Modify or create data layer with proper formatting
 2. Save the layer in the `layers` folder
@@ -899,7 +909,11 @@ Both types of default data layers are of coarse-resolution and should be replace
 
 ### Create data layers with proper formatting
 
-The OHI Toolbox expects each data layer to be in its own *.csv* file and to be in a specific format, with data available for every region within the study area, with data organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single score or value. See the **'Formatting data for the Toolbox'** section for more information.
+The OHI Toolbox expects each data layer to be in its own *.csv* file and to be in a specific format, with data available for every region within the study area, with data organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single score or value. See the [Formatting data for the Toolbox](http://ohi-science.org/manual/#formatting-data-for-the-toolbox) section for more information.
+
+It is highly recommended that layer preparation occurs in your repository's `prep` folder as much as possible, as it will also be archived by GitHub for future refrence. The folder is divided into sub-folders for each goal and sub-goal, where you will upload the raw data and manipulate the data in `data_prep.R` scripts. 
+
+Note that you can upload raw data as _.xls_ or _.xlsx_ files to Github, but they must be converted to _.csv_ for toolbox calculations. 
 
 ### Save data layers in the *layers* folder
 
@@ -928,32 +942,9 @@ However, if a new layer has been added (for example when a new goal model is dev
 
  It is important to check that you have filled you the fields correctly, for instance, if "fld_value" does not match the header of the source data layer, you will see an error message when you try to calculate scores. Other columns are generated later by the Toolbox as it confirms data formatting and content.
 
- <!-- Ning: where/how to incorporate the template? It is a bit long, and repeats some of the information above. But I think it's good to include as a concrete example for the goal keepers/toolbox person. Should we set this in an Appendix and just reference it in the text here?
+<!-- ### Check pressures and resilience matrices
 
- Template:
- 1. Filename of the data layer: cw_pathogen_trend_gl2014.csv
-
-2. Identify the target for this data layer: goal, sub-goal, pressures, or resilience: CW
-
-3. Short title of the data layer (for the 'name' column in `layers.csv`): Trends in access to improved sanitation
-
-4. One-sentence explanation of the data layer (for the 'description' column in `layers.csv`): Trends in percent of population with access to improved sanitation facilities.
-
-
-5. Long description of the data layer (that includes any data manipulation that has occurred, how to interpret it, and why; any further data manipulation required, how to interpret it, and why): Trends in percent of population with access to improved sanitation facilities. Scores range from 0 to 1, with 0 being the poorest santiation trend and 1 being the best sanitation trend. We updated percent of population with access to improved sanitation facilities data that were available from 1990-2011 from the World Health Organization and United Nations Children's Fund's Joint Monitoring Programme. Processing included the function na.locf from the zoo package in R, and rescaling the data from 0 - 1 with the highest possible score as a reference. This was chosen as was chosen as a proxy for pathogen pollution trend due to lack of better data. If time-series data were available for monitoring of point pollution sources, we could use that data instead in future assessments.
-
-
-6. The data source ( institution that collected the original data, or the institution providing the data if different from the original, the year it was accessed, the URL or publication reference): World Health Organization and United Nations Children's Fund's Joint Monitoring Programme (WHO/UNICEF's JMP). Accessed April 2015. (http://www.wssinfo.org/data-estimates/table)
-
-7. The years of data available: 1990 - 2011
-
-8. The units of data: Trend score (unitless)
-
-9. Any other observations or explanations about the data:Processing included the function na.locf from the zoo package in R (Zeileis & Grothendieck 2005)  -->
-
-### Check pressures and resilience matrices
-
-If the new or modified layer is a pressures layer, check that `pressures_matrix.csv` and `resilience_matrix.csv` have been properly modified to register the new data layers.
+If the new or modified layer is a pressures layer, check that `pressures_matrix.csv` and `resilience_matrix.csv` have been properly modified to register the new data layers. -->
 
 ## Modifying pressures matrices
 
@@ -1111,25 +1102,27 @@ If the general resilience categories are relevant to the habitat, the next step 
 
 ## Modify goal models
 
-Before getting started on the R codes, make sure that you have finished these steps:
+After you have registered the data layers for a goal and created a goal model, you are ready calculate the _status_ and _trend_ of this goal. The basic sequence of events are as follows: 
 
- * Check that you have installed the latest versions of R, RStudio, and GitHub
- * Synchronize GitHub and Rstudio
- * Update data layers, pressure, and resilience in both layers folder and layers.csv
+1. load ohicore and check data layers
+1. load and combine data layers for this goal
+1. calculate status
+1. calculate trend
+1. combine status and trend
+1. update `goals.csv` 
 
-### Setup
-Now you are ready to modify your goal models and calculate scores. Here are a few steps to set it up. We will use CHN Carbon Storage goal as an example:
+> Tip: Check that you have installed the latest versions of R and RStudio before starting. If an unexplained error occurs during calculation, it could be due to a software update, which could happen every month or so. Sometimes simply updating your software could fix the error.  
 
-1. Open your project (eg. CHN) in RStudio, and open the folder of your specific assessment (eg. province2015).
-1. Run `install_ohicore.R`. _This only needs to be done once to load all the background functions for OHI._
-1. Run `calculate.scores.R` from line 1 all the way through `Load Scenario Layers` section. _This will load all the data layers and call the background functions for your next step_.
+### Load ohicore and check data layers
+These steps will help you set up for goal modifications:  
+
+1. Run `pre_scores.R` _This will load ohicore, check data layers, and call the R functions for your next step_.
 1. In `conf` sub-folder, open `functions.R`. _This is where all the status and trend calculations occur._
-1. Go to the appropriate goal section.
+1. Go to the appropriate goal section. 
 
-### Model modification
-Your repository is pre-loaded with r codes for calculations from the 2014 Global assessment. Regardless of how you have changed your models, the basic sequence of events are similar for all goals. In `functions.R`, each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```) and you will make modifications for each goal within its function (ie. the { }). Below is the step-by-step instruction on how to modify CS goal model and calculate its status and trend, as an example.
+`functions.R` is pre-loaded with r codes for calculations from the 2014 Global assessment as a reference. Each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```) and you will make modifications for each goal within its function (ie. the { }).
 
-#### Load data
+### Load data
 1. **Identify and select the data layers** we need. _(Note that the layer names are what was set up in layers.csv. Now the toolbox will look for those layers)_
 
 ```
@@ -1199,7 +1192,7 @@ rk = rk %>%
   filter(habitat %in% c('mangroves','saltmarshes','seagrasses'))
 ```
 
-#### Status Calculation
+### Status Calculation
 For easy reference, write down the equation as a comment before calculations.
 
 ```
@@ -1232,7 +1225,7 @@ status <-  StatusData %>%
    data.frame()
 ```
 
-#### Trend Calculation
+### Trend Calculation
 For CS, a variable `extent-trend` has been prepared to calculate the trend:
 
 ```
@@ -1258,14 +1251,14 @@ trend = StatusData %>%
    data.frame()
 ```
 
-#### Combine Status and Trend Scores
+### Combine Status and Trend Scores
 To report the results, you'll assemble status and trend scores you just calculated above into one data frame. Now the your results would contain region_id, score, dimension, and goal, which will be combined with the results of other goals and produce one results table:
 
 ```    
 scores = rbind(status, trend) %>% mutate(goal='CS')
 ```
 
-#### Update goal call in `goals.csv`
+### Update goal call in `goals.csv`
 
 `goals.csv` in the `conf` folder provides input information for `functions.R`, particularly about function calls. These are indicated by two columns: *preindex_function* (functions for all goals that do not have sub-goals, and functions for all sub-goals) and *postindex_function* (functions for goals with sub-goals).
 
