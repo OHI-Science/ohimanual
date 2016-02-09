@@ -1,24 +1,26 @@
 ## Modify goal models
 
-Before getting started on the R codes, make sure that you have finished these steps:
+After you have registered the data layers for a goal and created a goal model, you are ready calculate the _status_ and _trend_ of this goal. The basic sequence of events are as follows: 
 
- * Check that you have installed the latest versions of R, RStudio, and GitHub
- * Synchronize GitHub and Rstudio
- * Update data layers, pressure, and resilience in both layers folder and layers.csv
+1. load ohicore and check data layers
+1. load and combine data layers for this goal
+1. calculate status
+1. calculate trend
+1. combine status and trend
+1. update `goals.csv` 
 
-### Setup
-Now you are ready to modify your goal models and calculate scores. Here are a few steps to set it up. We will use CHN Carbon Storage goal as an example:
+> Tip: Check that you have installed the latest versions of R and RStudio before starting. If an unexplained error occurs during calculation, it could be due to a software update, which could happen every month or so. Sometimes simply updating your software could fix the error.  
 
-1. Open your project (eg. CHN) in RStudio, and open the folder of your specific assessment (eg. province2015).
-1. Run `install_ohicore.R`. _This only needs to be done once to load all the background functions for OHI._
-1. Run `calculate.scores.R` from line 1 all the way through `Load Scenario Layers` section. _This will load all the data layers and call the background functions for your next step_.
+### Load ohicore and check data layers
+These steps will help you set up for goal modifications:  
+
+1. Run `pre_scores.R` _This will load ohicore, check data layers, and call the R functions for your next step_.
 1. In `conf` sub-folder, open `functions.R`. _This is where all the status and trend calculations occur._
-1. Go to the appropriate goal section.
+1. Go to the appropriate goal section. 
 
-### Model modification
-Your repository is pre-loaded with r codes for calculations from the 2014 Global assessment. Regardless of how you have changed your models, the basic sequence of events are similar for all goals. In `functions.R`, each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```) and you will make modifications for each goal within its function (ie. the { }). Below is the step-by-step instruction on how to modify CS goal model and calculate its status and trend, as an example.
+`functions.R` is pre-loaded with r codes for calculations from the 2014 Global assessment as a reference. Each goal is set up as a function (eg. ``` HAB = functions(layers) {...} ```) and you will make modifications for each goal within its function (ie. the { }).
 
-#### Load data
+### Load data
 1. **Identify and select the data layers** we need. _(Note that the layer names are what was set up in layers.csv. Now the toolbox will look for those layers)_
 
 ```
@@ -88,7 +90,7 @@ rk = rk %>%
   filter(habitat %in% c('mangroves','saltmarshes','seagrasses'))
 ```
 
-#### Status Calculation
+### Status Calculation
 For easy reference, write down the equation as a comment before calculations.
 
 ```
@@ -121,7 +123,7 @@ status <-  StatusData %>%
    data.frame()
 ```
 
-#### Trend Calculation
+### Trend Calculation
 For CS, a variable `extent-trend` has been prepared to calculate the trend:
 
 ```
@@ -147,14 +149,14 @@ trend = StatusData %>%
    data.frame()
 ```
 
-#### Combine Status and Trend Scores
+### Combine Status and Trend Scores
 To report the results, you'll assemble status and trend scores you just calculated above into one data frame. Now the your results would contain region_id, score, dimension, and goal, which will be combined with the results of other goals and produce one results table:
 
 ```    
 scores = rbind(status, trend) %>% mutate(goal='CS')
 ```
 
-#### Update goal call in `goals.csv`
+### Update goal call in `goals.csv`
 
 `goals.csv` in the `conf` folder provides input information for `functions.R`, particularly about function calls. These are indicated by two columns: *preindex_function* (functions for all goals that do not have sub-goals, and functions for all sub-goals) and *postindex_function* (functions for goals with sub-goals).
 
