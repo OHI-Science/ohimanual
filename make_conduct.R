@@ -26,8 +26,8 @@ in_md = c(
   'install_tbx.md', 
   'use_tbx.md',                                      # TODO: review and update JSL
   'use_tbx_to_modify_data_layers.md',
+  'use_tbx_to_modify_goal_models.md',      # updated by NJM 9/15
   'use_tbx_to_modify_pressures_resilience.md',    
-   'use_tbx_to_modify_goal_models.md',      # updated by NJM 9/15
    'use_tbx_to_remove_goal_models.md',
    'use_tbx_to_modify_goals_categories.md',
    'use_tbx_calculate_overall_index.md',
