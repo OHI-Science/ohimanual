@@ -8,7 +8,8 @@ We recommend that you work on one goal at a time as data becomes available and g
 2. prepare and register data for a goal
 3. modify goal models with R to calcualte _status_ and _trend_ (in functions.R and pre_scores.R)
 4. update pressures and resilience matrix and data layers
-5. calculate the other dimensions (pressures, resilience, likely future state, goal score, and overall OHI index score) with ohicore
+5. remove goal(s) if neccesary 
+6. calculate the other dimensions (pressures, resilience, likely future state, goal score, and overall OHI index score) with ohicore
 
 Step 2-5 can occur simultaneously. Below are instructions for each step. 
 
