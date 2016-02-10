@@ -4,11 +4,9 @@ This section is an orientation to the files within your _tailored_ assessment re
 
 **Most of your time will be spent preparing input layers and developing goal models**. You will also register prepared layers to be used in the goal models. This all will be an iterative process, but generally speaking you will work goal-by-goal, preparing the layers first, registering them, and then developing the goal models in *R*. to calculate the scores.
 
-### Assessment repositories
+### Main folders within your tailored repository
 
-**Assessment repositories** are identified by a three-letter code; Ecuador's assessment repository is called '*ecu*'. Assessment repositories contain several things:
-
-* The **scenario folder** is the most important folder within the repository; by default it is named `subcountry2014`. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
+* The **scenario folder** is the most important folder within the repository; by default it is named `subcountry2014` to indicate that the assessment is conducted at the subcountry scale (province, state, district, etc.), based on input layers and goal models used in the 2014 global assessment. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
 * All other files in the assessment repository are accessory files. Files with names beginning with a ‘.’ are required for versioning capabilities by GitHub and do not appear when the assessment repository is viewed on your computer.
 
 ![](https://docs.google.com/drawings/d/1eHViTehnAuxSDw1fYI54C3X5YgBktGtaVt71R3OXYeE/pub?w=960&h=720)
@@ -16,41 +14,70 @@ This section is an orientation to the files within your _tailored_ assessment re
 ![Navigating the assessment repository. The figure shows Mac folder navigation above and Windows navigation below.](https://docs.google.com/drawings/d/13536h0d6hahYCBrxIItlG_q-r9FmezfN1lcpf-5BMHc/pub?w=692&h=820)
 
 
-### Scenario folders
-
-Scenario folders contain all files and scripts necessary to calculate OHI scores. There are two file types:
-
-* ** *.csv* files** contain data inputs or configuration information.
-* ** *.R* scripts** are written in the programming language R and use data inputs for processing and calculations.
-
-There is one scenario folder in your assessment repository and it is called `subcountry2014` to indicate that the assessment is conducted at the subcountry scale (province, state, district, etc.), based on input layers and goal models used in the 2014 global assessment. When conducting your assessment, you can rename your scenario folder to reflect the subcountry regions in your study area and year the assessment was completed. For example, `province2015` would indicate the assessment was conducted for coastal provinces in the year 2015.
+When conducting your assessment, you can rename your scenario folder to reflect the subcountry regions in your study area and year the assessment was completed. For example, `province2015` would indicate the assessment was conducted for coastal provinces in the year 2015.
 
 Once you complete your assessment with the `subcountry2014` (or equivalent) scenario, further assessments can be done simply by copying the `subcountry2014` folder and renaming it. This can be done for future assessments, for example `subcountry2016` or `subcountry2018`, which eventually would enable you to track changes in ocean health over time. You can also copy scenario folders to explore different policy and management scenarios, for example `subcountry2014_policy1`.
-
-### `subcountry2014` contents
 
 This figure illustrates the files contained within the assessment repository's `subcountry2014` scenario folder. Important files are either *.csv* text files or *.R* script files. Files are organized into different folders within the `subcountry2014` folder, and you will modify some of these files while leaving others as they are.
 
 ![File system organization of the Ocean Health Index Toolbox](https://docs.google.com/drawings/d/1YKN2J3HCkw3r8QMFSEHkZhu__YQqOTeWxhSqJ1pHYrI/pub?w=1481&h=1010)
 
-Files and folders are presented here in alphabetical order. See the **Using the Toolbox** section for the workflow of how you will use the files.
-
-#### *calculate_scores.R*
-
-`calculate_scores.R` is a script that runs everything required to calculate OHI scores using the prepared layers the `layers` folder that are registered in `layers.csv`. Scores will be saved in `scores.csv`.
-
-#### *conf* folder
-The `conf` folder includes important configuration files required to calculate OHI scores. There are both *.R* scripts (`config.R` and `functions.R`) and *.csv* files (`goals.csv`, `pressures_matrix.csv`, `resilience_matrix.csv`, and `resilience_weights.csv`).
+The **conf** folder within the `subcountry2015` scenario folder, the `conf` folder includes important configuration files required to calculate OHI scores. There are both *.R* scripts (`config.R` and `functions.R`) and *.csv* files (`goals.csv`, `pressures_matrix.csv`, `resilience_matrix.csv`, and `resilience_weights.csv`). They will be introduced individually in the next section. 
 
 ![The `conf` folder contains important R functions and *.csv* files.](./fig/layers_folder_location_conf.png)
 
-#### *config.R*
+As in the `conf` folder, all files in the scenario folder are either of the two file types:
 
-`config.R` is an R script that configures labeling and constants appropriately. You will only need to modify this file when working with goals that have categories (example: habitat types or economy sectors) that are affected differently by pressures and resilience measures.
+* ** *.csv* files** contain data inputs or configuration information.
+* ** *.R* scripts** are written in the programming language R and use data inputs for processing and calculations.
+
+## R scripts
+
+* install_ohicore.R
+* pre_scores.R
+* calculate_scores.R
+* data_prep.R in prep folders
+* functions.R
+* config.R 
+* report.R?? when we add the template to reports folder
+* launch_app_code.R
+
+## Data layers
+
+* prep folder
+* layers folder 
+* layers.csv
+* layers-empty_swampping-global-mean.csv
+* pressures_matrix.csv
+* resilience_matrix.csv
+* resilience_weights.csv
+* scores.csv
+
+## Other
+
+* session.txt
+* spatial
+* temp
+* reports
 
 #### *install_ohicore.R*
 
 `install_ohicore.R` is a script that will install `ohicore`, which is the second repository required for the Toolbox and is the engine behind all OHI calculations. You will need to run this script only once when you begin.
+
+### *pre_scores.R*
+This script does the pre-checks before running goal models and calculate dimension scores. It loads "ohicore", calls all goal functions and data
+layers in the "conf" folder, and check that all data layers are registered properly.
+
+It is sourced from calculate_scores.r as well, but you are encouraged to use this script when you're working on individual goal models. After you register data layers for a goal, or make any changes to the data layers, source this script before running model-specific functions in functions.R.
+
+### *calculate_scores.R*
+
+`calculate_scores.R` is a script that runs everything required to calculate OHI scores using the prepared layers the `layers` folder that are registered in `layers.csv`. Scores will be saved in `scores.csv`.
+
+#### *config.R* in "conf" folder
+
+`config.R` is an R script that configures labeling and constants appropriately. You will only need to modify this file when working with goals that have categories (example: habitat types or economy sectors) that are affected differently by pressures and resilience measures.
+
 
 #### *functions.R*
 

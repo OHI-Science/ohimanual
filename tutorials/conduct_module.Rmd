@@ -1,20 +1,27 @@
 ---
-title: "OHI Module - How to register data and modify goal models"
+title: "OHI Module - How to prepare data and modify goal models"
 output: html_document
 ---
-Q's for ourselves: should we start a new repo specifically for teaching purposes. All the folders will be there, but empty, except for the raw data folders. For example, for the data prep step, we could populate the `pre-proc folder` with some raw data, have people prepare the data in `data_prep.r` and see the new files pop up in `prep folder`. 
 
-We'll have the Rmd files of the codes of each step, and expected outcomes. People will copy the codes into appropriate R files, such as `data_prep.r`, and generate results. 
+This module will lead you through the process of modifying a goal model. It accompanies a Example-Repo repository with fake data for practice. You can [clone](http://ohi-science.org/manual/#cloning-a-repository-to-your-local-computer) the repo from [https://github.com/OHI-Science/Example-Repo](https://github.com/OHI-Science/Example-Repo). 
 
+Assuming you have gathered raw data and developed goal models, we will work on the next steps towards modifying goal models and calculating goal scores. 
 
-#####################################
+There are x steps: 
 
-This module will lead you through the process of modifying a goal model. We'll use OHI-China
+1. Check if the template data and functions (2014 Global study) is set up right
+1. Prepare data in prep folder
+1. Register data in layers.csv
+1. load ohicore and check data layers
+2. load and combine data layers for this goal
+3. calculate status
+4. calculate trend
+5. combine status and trend
+6. update `goals.csv` 
 
+## Step 1: Check template data and functions
 
-
-Preparation: 
-Download the OHI-CHN? repository from github. This will provide you with the data and all the R functions you will need to complete this module. 
+As a starting point, your tailored repository is populated with data and functions based on global 2014 OHI study, which you can then modify directly. To check that your repository is set up properly, you can check by running `subcountry2016/calculate_scores.R`. It will produce scores for each dimension in subcountry2014/scores.csv. When it’s all set up, you can begin adding your own data and goal models. 
 
 ## Step 1: Prepare Data
 Data prep is done in `region2015/prep` folder. 
@@ -26,6 +33,8 @@ The processing is done in `data_prep.r` files.
 - format them into the standard R-friendly format 
 
 ## Step 2: Register Data 
+
+Follow instructions on http://ohi-science.org/manual/#data-layer-preparation to register data layers in layers.csv
 
 ## Step 3: Modify goal models
 
