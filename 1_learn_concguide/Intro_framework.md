@@ -23,13 +23,13 @@ This framework was first applied to the global scale in 2012, and since then, nu
 
 There are [four phases of OHI+ assessment](http://ohi-science.org/new-site/phases/): **Learn**, **Plan**, **Conduct**, and **Inform**. You are currently in the _Learn_ Phase, where you will understand OHI framework and philosophy, and determine the needs and purposes of your OHI+ assessment. 
 
-![learn phase tasks](https://docs.google.com/drawings/d/1coG1ir10s2gBs0rleLjISlQUywf8Uc3v8PAyovAKK2o/pub?w=960&h=720)
+![](https://docs.google.com/drawings/d/1coG1ir10s2gBs0rleLjISlQUywf8Uc3v8PAyovAKK2o/pub?w=960&h=720)
 
 ## OHI Workflow
 
 You will first build a conceptual framework and determine which goals to access and how, which is then translated into the toolbox to calculate the scores. Both the conceptual framework and technical toolbox consist of two major parts: **core** and **tailored**. The "core" maintains the integrity of Ocean Health and determines how Index scores are calculated, while the "tailored" allows flexibility and accommodates different scales, data availabilities, and cultural priorities.
 
-![OHI workflow](https://docs.google.com/drawings/d/1cv0dUUwHjCFVxw7fZTpnuHZEgRO1LX6nHMCOCra-ZhQ/pub?w=960&h=500)
+![](https://docs.google.com/drawings/d/1cv0dUUwHjCFVxw7fZTpnuHZEgRO1LX6nHMCOCra-ZhQ/pub?w=960&h=500)
 
 OHI+ teams are responsible for modifying the "tailored" part of the framework and toolbox, thereby truly ensuring local adaptation. Besides incorporating local data, a large part of _tailoring_ involves choosing and modifying goal models. While the 10 goals identified in the Index represent broadly-held public benefits globally, they might not apply to your local territories. We provide detailed instructions on how to choose and change your own goals in the [Conduct phase](/manual/).
 
