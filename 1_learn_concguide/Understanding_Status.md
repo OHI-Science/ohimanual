@@ -6,4 +6,4 @@ The current status of each goal is determined by comparing the most recent measu
 
 # Philosophy of Each Goal
 
-In this section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. In [**Conduct Phase**](/manual/#appendix-1-developing-goal-models-and-setting-reference-points), when you'll be developing context specific goal models, we introduce a more in-depth description of each goal providing an **Ideal Approach** and **Practical Guidance**.
+In this section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. We provide a more in-depth description of each goal including an **Ideal Approach** and **Practical Guidance** on our [**goals** page](http://ohi-science.org/goals/) to help you develop context-specific goal models in the [**Conduct Phase**](/manual/#appendix-1-developing-goal-models-and-setting-reference-points).  
