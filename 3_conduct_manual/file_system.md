@@ -26,12 +26,16 @@ The **conf** folder within the `subcountry2015` scenario folder, the `conf` fold
 
 ![The `conf` folder contains important R functions and *.csv* files.](./fig/layers_folder_location_conf.png)
 
-As in the `conf` folder, all files in the scenario folder are either of the two file types:
+The **prep** folder is important in the beginning of your assessment, as it is where you will store and manipulate raw data to get them ready for calculations.
+
+Over all, all files in the scenario folder are either of the two file types:
 
 * ** *.csv* files** contain data inputs or configuration information.
 * ** *.R* scripts** are written in the programming language R and use data inputs for processing and calculations.
 
-## R scripts
+We will introduce those files below: 
+
+### R scripts
 
 * install_ohicore.R
 * pre_scores.R
@@ -42,9 +46,9 @@ As in the `conf` folder, all files in the scenario folder are either of the two 
 * report.R?? when we add the template to reports folder
 * launch_app_code.R
 
-## Data layers
+### Data layers
 
-* prep folder
+* raw data folders in prep folder
 * layers folder 
 * layers.csv
 * layers-empty_swampping-global-mean.csv
@@ -53,47 +57,49 @@ As in the `conf` folder, all files in the scenario folder are either of the two 
 * resilience_weights.csv
 * scores.csv
 
-## Other
+##* Other
 
 * session.txt
 * spatial
 * temp
 * reports
 
-#### *install_ohicore.R*
+**`install_ohicore.R`**
 
-`install_ohicore.R` is a script that will install `ohicore`, which is the second repository required for the Toolbox and is the engine behind all OHI calculations. You will need to run this script only once when you begin.
+This script installs `ohicore`, which is the second repository required for the Toolbox and is the engine behind all OHI calculations. You will need to run this script only once when you [first install the toolbox](http://ohi-science.org/manual/#install-ohicore). 
 
-### *pre_scores.R*
+**`pre_scores.R`**
 This script does the pre-checks before running goal models and calculate dimension scores. It loads "ohicore", calls all goal functions and data
-layers in the "conf" folder, and check that all data layers are registered properly.
+layers in the "conf" folder, and check that all data layers are registered properly. You are encouraged to use this script when you're working on individual goal models. After you register data layers for a goal, or make any changes to the data layers, source this script before running model-specific functions in functions.R.
 
-It is sourced from calculate_scores.r as well, but you are encouraged to use this script when you're working on individual goal models. After you register data layers for a goal, or make any changes to the data layers, source this script before running model-specific functions in functions.R.
+**`calculate_scores.R`**
 
-### *calculate_scores.R*
+It runs everything required to calculate OHI scores using the prepared layers the `layers` folder that are registered in `layers.csv`. Scores will be saved in `scores.csv`.
 
-`calculate_scores.R` is a script that runs everything required to calculate OHI scores using the prepared layers the `layers` folder that are registered in `layers.csv`. Scores will be saved in `scores.csv`.
+**`functions.R`**
 
-#### *config.R* in "conf" folder
+This script contains the equations for each goal and sub-goal model. Each goal and sub-goal equation is stored as a separate function within the script. These functions calculate the _status_ and _trend_ using prepared layers saved in the ‘layers’ folder and registered in `layers.csv`. You will need to code in R to modify or develop new models, and it is best to work on one goal at a time.
 
-`config.R` is an R script that configures labeling and constants appropriately. You will only need to modify this file when working with goals that have categories (example: habitat types or economy sectors) that are affected differently by pressures and resilience measures.
+**`config.R` in "conf" folder*
 
+It configures labeling and constants appropriately. You will only need to modify this file when working with goals that have categories (example: habitat types or economy sectors) that are affected differently by pressures and resilience measures.
 
-#### *functions.R*
+**`launch_app_code.R`**
 
-`functions.R` is an R script containing the equations for each goal and sub-goal model. Each goal and sub-goal equation is stored as a separate function within the script. These functions calculate the status and trend using prepared layers saved in the ‘layers’ folder and registered in `layers.csv`. You will need to code in R to modify or develop new models, and it is best to work on one goal at a time.
+It will launch a version of the App on your computer so that you can visualize any edits you make before synching to *github.com*.
 
-#### *goals.csv*
+**raw data layers in "prep" folder**
+
+They 
+
+*goals.csv*
 
 `goals.csv` is a table with information about goals and sub-goals. This includes the weight of each goal that is used to calculate the final Index scores when all goals are combined. Other information includes the goal description that is also presented in the WebApp. `goals.csv` also indicates the arguments passed to `functions.R`. These are indicated by two columns: *preindex_function* (functions for all goals that do not have sub-goals, and functions for all sub-goals) and *postindex_function* (functions for goals with sub-goals).
 
 > TIP: It's important to check `goals.csv`'s weightings and preindex functions when you change goal or sub-goal model equations in `functions.r`.
 
-#### *launch_app_code.R*
 
-`launch_app_code.R` will launch a version of the App on your computer so that you can visualize any edits you make before synching to *github.com*.
-
-#### *layers* folder
+*layers* folder
 
 The `layers` folder contains all layers required to calculate goal scores, and each layer is an individual *.csv* file. The names of the *.csv* files within the layers folder correspond to those listed in the *filename* column of the `layers.csv`. All *.csv* files can be read in R, or with text editors or spreadsheet editors like Microsoft Excel.
 
