@@ -5,6 +5,7 @@ If you are a toolbox master responsible for indexing all the data and modifying 
 If you are a goal keeper, having a record-keeping place to remind you where you are in the process and record all the important decisions may also be helpful. Here are some suggestions on what to and how to keep track of the progress. 
 
 **Key items** for each goal:
+
 * Goal keeper and their contact information
 * Data
 * Data layer description (see template)
@@ -14,6 +15,7 @@ If you are a goal keeper, having a record-keeping place to remind you where you 
 * Reference point
 
 To track your own progress on coding, you can also include columns such as:
+
 * Coded?
 * Questions
 * Additional notes
