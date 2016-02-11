@@ -6,7 +6,7 @@ However, many successful teams have structured themselves as follows:
 
 **1. A Multidisciplinary Working Group**
 
-The OHI+ working group for your study area should include government agencies, scientific and academic experts, civil society (resource users), and NGOs (social, environmental). By assembling a multidisciplinary working group, you ensure the tasks are evenly divided among the participants, as well as counting with a pluralistic system to include various values and perspectives. This working group is responsible for: 
+The OHI+ working group for your study area should include government agencies, scientific and academic experts, civil society (resource users), NGOs (social, environmental), and private sectors. By assembling a multidisciplinary working group, you ensure the tasks are evenly divided among the participants, as well as counting with a pluralistic system to include various values and perspectives. This working group is responsible for: 
 
 + doing the early learning about OHI and developing the Work Plan in Phase 2. 
 + provides important guidance to the technical team in terms of stakeholder engagement, goal weighing, reference points, and ensuring the study is aligning with management and policy needs. 
