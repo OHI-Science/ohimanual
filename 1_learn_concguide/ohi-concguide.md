@@ -204,7 +204,7 @@ The present status component of each goal is captured through a mathematical mod
 
 The current status of each goal is determined by comparing the most recent measure of the goal with a goal-specific sustainable reference point. For each goal, as well as for many individual data layers, values are rescaled to reference points, or targets, which serve as benchmarks based on SMART principles: Specific (to the management goal), Measurable, Ambition, Realistic, and Time-bound (Samhouri *et al.* 2012; Perrings *et al.* 2010; 2011).
 
-# Philosophy of Each Goal
+# Philosophy of OHI Goals
 
 In this section we introduce the philosophy for the status of each goal. Here, we introduce conceptually what each goal is intended to capture and what it does not. We provide a more in-depth description of each goal including an **Ideal Approach** and **Practical Guidance** on our [**goals** page](http://ohi-science.org/goals/) to help you develop context-specific goal models in the [**Conduct Phase**](/manual/#appendix-1-developing-goal-models-and-setting-reference-points).  
 
