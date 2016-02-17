@@ -84,7 +84,7 @@ push_to_web = function(out_md) {
       'cd ~/github/ohi-science.github.io; 
     git checkout master; 
     git pull; 
-    git add %s.html -A; 
+    git add .; 
     git commit -m "%s.html pushed from ohimanual/make_*.r"; 
     git push', 
     f, f))

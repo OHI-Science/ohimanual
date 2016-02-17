@@ -1,4 +1,4 @@
-# Determine the Need and Purpose of Conducting Your OHI+ Assessment
+# Determine the Need and Purpose of Your OHI+ Assessment
 
 > Remember that producing the Index is not the end in itself -- the  aim is to *achieve improved ocean health.* Defining the end-goals of the study will largely determine how goal models, data gathering, and reference points are developed to maximize the utility of the findings to inform decision-making, and is very important in ensuring a smooth and successful project with OHI+. 
 

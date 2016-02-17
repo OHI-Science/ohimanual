@@ -53,9 +53,9 @@ Our team of scientists and managers is prepared to provide guidance for regional
 
 In addition, you will have access to the OHI+ online community via our [Forum](/forum/)
 
-#  The Global assessment and your OHI+
+#  Global Assessments and Your OHI+ Assessment
 
-> By conducting a OHI+ study, you will be developing an Independent Ocean Health Index at a regional scale. Most OHI+ assessments take place at subnational scales (states, provinces, municipalities) and then are aggregated at a national scale. However, you can implement the OHI methodology at any scale from global, to transboundary regions, to subnational areas.
+> By conducting a OHI+ study, you will be developing an Independent Ocean Health Index at a spatial scale of your choice. Most OHI+ assessments take place at subnational scales (states, provinces, municipalities) and then are aggregated at a national scale. However, you can implement the OHI methodology at any scale from global, to transboundary regions, to subnational areas.
 
 ![Scores are calculated for each region and combined to produce a total score for the study area. Data or indicators are required for every region.](https://docs.google.com/drawings/d/1RsamVf-p5nSUS8_w--uU5I2717tqMPlhc3JEbW8Rvkg/pub?w=677&h=446)
 <!---edit this image--->
@@ -72,7 +72,7 @@ It is important to note that the scores from **your OHI+ assessment cannot be co
 
 <!-- > Even in the Global Assessments, the methods are improved every year by increasing the robustness of goal models, integrating new data, and recalculating the scores with the improved methods both for the current year and, retroactively, for previous years to allow for year-to-year comparisons. The scientific objectivity comes from applying the same methods and reference points to all regions equally, which also allows for valid comparison of performance across countries/territories. -->
 
-# Determine the Need and Purpose of Conducting Your OHI+ Assessment
+# Determine the Need and Purpose of Your OHI+ Assessment
 
 > Remember that producing the Index is not the end in itself -- the  aim is to *achieve improved ocean health.* Defining the end-goals of the study will largely determine how goal models, data gathering, and reference points are developed to maximize the utility of the findings to inform decision-making, and is very important in ensuring a smooth and successful project with OHI+. 
 
