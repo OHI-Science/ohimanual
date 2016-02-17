@@ -1,9 +1,10 @@
 ## make_learn.r 
 ## this script will stitch or 'knit' together all the individual .md files and push online to ohi-science.org.
+## also required if you get the pdflatex error: www.tug.org/mactex
+
 
 ## setup ----
 source('~/github/ohimanual/make_functions.r') # rendering functions for OHI
-# also required if you get the pdflatex error: www.tug.org/mactex
 
 title_header    = 'The Ocean Health Index Conduct Phase'
 subtitle_header = 'Assessment Manual'
@@ -52,25 +53,21 @@ in_md = c(
   'record_sheet.md',
   'R_tutes_all.md',   
    'frequently_asked_questions.md')                   # TODO: review and update
-out_md = 'ohi-manual.md'
+## final .md filename
+out_md = 'ohi-concguide.md' 
 
 
 ## concatenate md ----
-cat_md(in_md, out_md)               # use own md ordered file listing , output to ohi-manual.md
+cat_md(in_md, out_md)               
 pfx = tools::file_path_sans_ext(out_md)
 
-
-## render and save html; push to ohi-science.org website ---- 
+## render and save html, pdf ----
 ohi_html(out_md)
-push_to_web(out_md)
-
-## render pdf ----
 ohi_pdf(out_md)
 
-# ## copy pdf to resources/downloads on ohi-science.org website
-copy_archive(dir_fn   = '3_conduct_manual/ohi-manual',
-             path_in  = '~/github/ohimanual',
-             path_out =  '~/github/ohi-science.github.io/assets/downloads/other')
+## push to ohi-science.org website ---- 
+push_to_web(out_md)
+
 
 ## copy goal-by-goal files to ohi-science.github.io ----
 

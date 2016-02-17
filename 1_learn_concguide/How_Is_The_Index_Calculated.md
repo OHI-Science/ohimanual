@@ -1,4 +1,4 @@
-# How is the Index calculated?
+# How OHI Scores Are Calculated
 
 Total Index is the weighted average of individual goal scores. Each goal measures the delivery of specific benefits with respect to a sustainable target. A goal is given a score of 100 if its maximum sustainable benefits are gained in ways that do not compromise the ocean’s ability to deliver those benefits in the future.  Lower scores indicate that more benefits could be gained or that current methods are harming the delivery of future benefits. Each goal score has two major components: **current status** and **likely future state**.
 

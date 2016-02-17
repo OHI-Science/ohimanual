@@ -50,24 +50,18 @@ in_md = c(
   'BD_Philosophy.md')
   # summarzing ending             # add some kind of summary
 
-out_md = 'ohi-concguide.md' # <- this is the output "final" file.
+## final .md filename
+out_md = 'ohi-concguide.md' 
 
 
 ## concatenate md ----
-cat_md(in_md, out_md)               # use own md ordered file listing , output to ohi-manual.md
+cat_md(in_md, out_md)               
 pfx = tools::file_path_sans_ext(out_md)
 
-## render and save html; push to ohi-science.org website ---- 
-
+## render and save html, pdf ----
 ohi_html(out_md)
-push_to_web(out_md)
-
-## render pdf ----
 ohi_pdf(out_md)
 
-## copy pdf to downloads ----
-
-copy_archive(dir_fn   = '1_learn_concguide/ohi-concguide',
-             path_in  = '~/github/ohimanual',
-             path_out =  '~/github/ohi-science.github.io/assets/downloads/other')
+## push to ohi-science.org website ---- 
+push_to_web(out_md)
 

@@ -65,21 +65,24 @@ ohi_html = function(out_md) {
   ## commit and push to master branch: ohi-science.github.io
 push_to_web = function(out_md) {
   
-  # read filename
+  ## read filename
   fn = str_split(out_md, "\\.");
   f  = fn[[1]][1]
   
-  dir_phases = '~/github/ohi-science.github.io/_includes/themes/OHI/phases'
+  dir_phases    = '~/github/ohi-science.github.io/_includes/themes/OHI/phases'
+  dir_downloads = '~/github/ohi-science.github.io/assets/downloads/other'
   
-  # copy .html file to ohi-science.github.io
-  file.copy(sprintf('%s.html', f), dir_phases, overwrite=T, recursive=T)
+  ## copy .html and .pdf files to ohi-science.github.io
+  file.copy(sprintf('%s.html', f), dir_phases,    overwrite=T, recursive=T)
+  file.copy(sprintf('%s.pdf',  f), dir_downloads, overwrite=T, recursive=T)
   
+  ## copy figs for ohi-manual
   if (f == 'ohi-manual') {
     dir.create(dir_phases, showWarnings=F)
     file.copy('fig', dir_phases, overwrite=T, recursive=T)
   }
   
-  # git push ohi-science.github.io
+  ## git push ohi-science.github.io
   system(sprintf(
       'cd ~/github/ohi-science.github.io; 
     git checkout master; 
