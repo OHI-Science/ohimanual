@@ -76,6 +76,6 @@ system('cd ~/github/ohi-science.github.io; git checkout master; git pull')
 
 ## identify and copy ten current goal files
 goal_files = list.files(wd, '^practical_[A-Z][A-Z].md')
-file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/themes/OHI/goals')
+file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/themes/OHI/goals', overwrite = T)
 
 
