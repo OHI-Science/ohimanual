@@ -54,7 +54,7 @@ in_md = c(
   'R_tutes_all.md',   
    'frequently_asked_questions.md')                   # TODO: review and update
 ## final .md filename
-out_md = 'ohi-concguide.md' 
+out_md = 'ohi-manual.md' 
 
 
 ## concatenate md ----
