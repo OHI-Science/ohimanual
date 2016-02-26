@@ -54,7 +54,7 @@ in_md = c(
   'R_tutes_all.md',   
    'frequently_asked_questions.md')                   # TODO: review and update
 ## final .md filename
-out_md = 'ohi-concguide.md' 
+out_md = 'ohi-manual.md' 
 
 
 ## concatenate md ----
@@ -76,6 +76,6 @@ system('cd ~/github/ohi-science.github.io; git checkout master; git pull')
 
 ## identify and copy ten current goal files
 goal_files = list.files(wd, '^practical_[A-Z][A-Z].md')
-file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/themes/OHI/goals')
+file.copy(file.path(wd, goal_files), '~/github/ohi-science.github.io/_includes/themes/OHI/goals', overwrite = T)
 
 
