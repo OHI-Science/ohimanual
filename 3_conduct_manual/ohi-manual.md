@@ -2086,286 +2086,6 @@ Julie: I've deleted the rest below and rewritten it as the intro for the goal-by
 --->
 ## Understanding each goal model
 
-### Artisanal Fishing Opportunities
-
-Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, in particular in developing nations. As opposed to large, commercial fisheries that usually involves industrial, energy-intensive vessels and long trips, artisanal fisheries refer to households, cooperatives or small firms that use relatively small amounts of capital, energy and small fishing vessels (if any), make relatively short fishing trips, and use fish mainly for local consumption or trade.
-
-In addition, this goal is not about recreational fishing often done in developed countries, which is captured in _Food Provision_ (if it provides food) and Tourism and Recreation goals. Nor is it about the actual amount of fish caught or revenue generated, which are captured by _Coastal Livelihood and Economies_. Rather, **artisanal fishing opportunities measure whether people who need to fish on a small, local scale have the opportunity to do so.** In other words, it measures the potential for artisanal fishing whether or not this potential is actually met. A score of 100 means the country or region is meeting the needs of artisanal fishermen or communities by implementing institutional supports, providing access to near-shore water, and maintaining the health of targeted species.
-
-**_Ideal Approach_**
-
-Ideally, this goal would include some measure of of how easy or hard it is for fishermen to _access_ ocean resources when they _need_ them and the _sustainability_ of harvest of all nearshore stocks used by artisanal fishers. The need for artisanal fishing is most directly tied to the percent of population below the poverty line. Access, or ability to meet this need, are institutional permits or encouragements for small fisheries. Sustainability of artisanal fisheries refers to the sustainability of fishing gears. Sustainable gears are traditional hook and line, as opposed to unsustainable practices such as dynamite and gill net fishing. Sustainability can also be estimated by assessing the health of targeted species. The type of reference point you use will depend on the data available.
-
-**_Practical Guidance_**
-
-Ideal indicators mentioned above are often scarce, especially percent poverty or the sustainability of fishing gears. You will want to find proxy data for *access* in whatever way best suits your areas. This could be drawn from physical, economic, regulatory, or stock condition data as an indication of availability. A combination of all of these would be best to more accurately speak to the philosophy, but is is usually limited by data.
-
-You should include data that are distinct from the catch data used in other areas of **Food Provision**. So once you find catch data and access data, you should think about which goals to use it in. For instance, if you find tonnage of artisanally-caught fish, you should include that elsewhere. In any case, you will likely modify the default Global Assessment model using different and better-resolved data.
-
->For example, in the Baltic Sea region, **Artisanal Opportunities** is very closely connected to **Tourism and Recreation** since there are a lot of locals and tourists using the shared sea for enjoyment. You will have to decide how to apportion the data.
-
-
-The **reference point for this goal** would likely be a metric of having full access to the resource (see examples in the table above). Keep in mind that the access is for people, and therefore a marine protected area may not count towards full access.
-
-**_Examples of the Approach_**
-
-<span style="font-size:0.9em">
-
-Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
-----------|------------------------|---------------|--------------------|
-[**Global 2012**](http://ohi-science.org/assessment/global) | The status was the demand as estimated by poverty levels. The data were measured by the gross domestic product (GDP) per capita, adjusted by the purchasing power parity as a proxy for undocumented trade. The supply was estimated using an indicator that ranked how well regions regulated and supported artisanal fishing, as part of a study by Mora *et al.* (2009). | The reference point was having supply greater than demand so that unmet demand is 0. This meant that all demand for artisanal fishing was allowed or achieved. | The trend was driven by the change over time in PPPpcGDP as a proxy for demand. This assessment did not incorporate a specific measure of the health of the targeted species or of sustainability of practices.
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The approach was the same was Global 2012 | The reference point was the same as Global 2012. | There were no data updates available to change the method.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The model was simplified to reflect the primary driver of opportunity as the availability of fish to be captured, as measured by the condition of stocks. This model was based solely on the sustainability index calculated using the exploitation status of species. All species were considered possible targets of artisanal fishing activities. | An established target of 1.0. This meant all stocks are categorized as either Developing or Fully Exploited. | The analysis used national stock status information. It did not include poverty because of the high variation in the country. In addition, it assumes that access to fishing is largely open because permitting and regulations are not restricted.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | This study developed a model using three key variables of physical and economic access to coastal areas, and access to biological resources:<br />  &nbsp;&nbsp;&nbsp;- Physical accesses: shore-based fishing measured by percent of coastline within a mile coastal access points. <br />  &nbsp;&nbsp;&nbsp;-Economic access: no increase in fuel price compared to income. <br />  &nbsp;&nbsp;&nbsp;- Biological access: condition of fish stocks through NOAA Fish Stock Index.	<br />  &nbsp;&nbsp;&nbsp; | - Physical: 1 coastal access point per mile. <br />  &nbsp;&nbsp;&nbsp;- Economic: No change in gas price. <br />  &nbsp;&nbsp;&nbsp;- Perfect sustainability score on FSI.| This approach did not model demand or have species-specific information. It assumed that as long as there are no obstacles to pursuing artisanal fishing, the goal was fully achieved. These data better capture the nature of small-scale fisheries in the study area than the Global model.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The goal model is based on a sustainability index calculated using the exploitation status of species. Ten coastal fish species, for which we have data, were considered possible targets of artisanal fishing activities. | An established target of 1.0, when all stocks are categorized as either Developing or Fully Exploited. | The primary driver of artisanal opportunity is the availability of fish to capture (i.e. the condition of the stocks). Access to fishing in Israel is largely open because permits and regulations from the Ministry of Fisheries are not considered restrictive, and in most cases, neither is physical access. 
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach was the same was Global 2012 | The reference point was the same as Global 2012. | Local information was included for need and sustainability variables.
-[**China 2015**](http://ohi-science.org/assessment/China) | Status model is rewritten and is similar to the 2014 U.S. West Coast assessment. It is based on the three indicators: <br />  &nbsp;&nbsp;&nbsp;- capacity for exports, measured by the number of ports <br />  &nbsp;&nbsp;&nbsp;- the need for artisanal fishing opportunities, represented by the number of artisanal fishermen <br />  &nbsp;&nbsp;&nbsp;- economic capacity, measured by the ratio of diesel price and disposable income. | The spatial reference point is the maximum value across all region and all years.| 
-
-</span>
-
-### Biodiversity
-
-People value biodiversity in particular for its existence value. The risk of species extinction generates great emotional and moral concern for many people. As such, this goal assesses **the conservation status of species based on the best available global data through two sub-goals: Species and Habitats**. Species were assessed because they are what one typically thinks of in relation to biodiversity. Because only a small proportion of marine species worldwide have been mapped and assessed, we also assessed Habitats as part of this goal, and considered them a proxy for condition of the broad suite of species that depend on them. We calculate each of these sub- goals separately and treat them equally when calculating the overall goal score. A score of 100 means all species are all species are at very low risk of extinction, and all habitats are conserved.
-
-#### Sub-goal: Species
-This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.
-
-> Data for this goal are also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
-
-**_Ideal Approach_**
-
-Ideally, you would find data for all species present in your region including information on their _habitat ranges_ along with scientific studies that speak to the _health of their populations_.
-
-**_Practical Guidance_**
-
-You should start by trying to _find spatial information for species_ that occur in your area and determine _whether or not they have been scientifically assessed and given a conservation status_. It is best if you only use species for which there are both spatial data and an assessment. In the global assessment, we combined data from recent assessment the International Union for the Conservation of Nature [(IUCN)](http://www.iucnredlist.org/technical-documents/spatial-data) (www.iucnredlist.org/technical-documents/spatial-data) and [AquaMaps](http://aquamaps.org/) (aquamaps.org). These data sets provide a geographic snapshot of how total marine biodiversity is faring, even though it is a very small sub-sample of overall species diversity.
-
-IUCN provides global species assessments that indicate the distribution and the conservation status of species, ranging from Least Concern to Critically Endangered to Extinct. These risk categories were turned into these into weights (between 0 and 1) for calculations. AquaMaps offers additional spatial data for species not covered by the IUCN distribution maps. Both evaluations chooses a taxon (e.g. sharks) and a group of world experts assess it comprehensively. Locally identified species identified in a regional assessment may not be in the global database because they do not belong to one of the taxa that have been selected for assessment, or because the experts that did the assessment did not know that information existed. In either case, there is no connection between what IUCN or AquaMaps report and what assessments are done locally. Therefore, it might not be fair to penalize a study area for missing species. For biodiversity, it is unrealistic to expect that all species are assessed, so it seems unfair to penalize for un-assessed species. In the fisheries goal, there are penalties for species that are exploited but not assessed, because if there are landings data, it means they are somewhat measurable, and so it is reasonable to expect they should be at least monitored.
-
-<!-- It might be reasonable to penalize unassessed iconic species. It is a smaller list of species that are specifically identified as being of interest, for one reason or other. This would work for species that have some form of assessment - unless that information already exists, it might be unrealistic to try to produce the data layer required to develop a new model. -->
-
-For regional assessments, local studies of marine species status and local datasets are best here. The spatial information can be a range map with simple presence or absence information, or it can have more detailed data. You can complement the species list search with a scientific literature search to see if anyone has scored the species status in a way that you can use. One thing to keep in mind when using local data sets is that _local lists might focus on endangered species and leave species in relatively good conditions un-assessed. This could result in poorer scores._
-
-If spatial distribution information for individual species is not available, the goal model could be simplified to be based on threat-status-weighted average in your region.
-
-You should also think about the **reference point** for scores that signal poor Biodiversity status. You can use the same threshold as the Global Assessments which say that _places with extinction risk scores greater than seventy-five percent will get scores of zero_. This is an estimation based on the literature of mass extinctions (e.g., Barnosky *et al*., 2011) and could be applied across scales. You don’t need all species extinct for there to be a zero, so you will have to choose how to rescale it, and whether the risk effects are linear or nonlinear.  
-
-<span style="font-size:0.9em">
-
-**_Additional Note: Defining spatial regions and map considerations_**
-
-Once you have gathered the data, the treatment of it will matter for the model and goal score calculation. Do you know how the data were collected? Do you have information on sampling effort? If you don't know, you may not be sure whether changes in condition are due to monitoring efforts or biodiversity change, and you therefore may want to consider the uncertainty of your model.
-
-In any case, the original logic of the **Species** sub-goal of the **Biodiversity** goal is to represent the species present relative to the proportion of their range within a given region. The goal is to summarize extinction risk for an area across assessed species, and assign it appropriately so that the loss of species scores poorly. You should consider whether the impacts to local species status are linear or non-linear. Will drawing borders affect how your scores are assigned?
-
-When considering how to change the model, you should think about the outcome of the score on your decisions. For instance, will weighting a "Critically Endangered" species higher on the scale result in the inclusion or exclusion of more rare species? Will the way you aggregate spatial data to summarize extinction risk for your area take into account the influence of species with smaller ranges size, or will that information be lost in the averaging process? An inherent disadvantage for conservation may occur when rare species get rarer in the future, and will therefore have a relatively small influence on the score while common species drive the results.
-
- Range size has an impact on score results. For example, if you use the current model, none of the cone snail species listed below will have a big impact on the **Species** sub-goal score because to their small range size that covers one cell of map area. However,  the 0.8 score for *Conus roeckeli* shows that it is a rare species as assessed by the IUCN. On the other hand, the coral *Acropora palmata* is also rare and yet covers a large range.
-
-Scientific name | IUCN Category | Trend | Map Cells
----------------|-----------------------------|-------------------|----|
-*Conus salreiensis* | Critically Endangered |  Decreasing | 1
-*Conus trochulus* |  Near Threatened |  Unknown | 1
-*Conus roeckeli* | Least Concern | Unknown | 1
-*Acropora palmata* | Critically Endangered | Stable | 1158
-
-</span>
-
-
-**_Examples of the Approach_**
-
-<span style="font-size:0.9em">
-
-Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
---------|------------------------|-----------------|---------------------|
-[**Global 2012**](http://ohi-science.org/assessment/global) | The status of assessed species was calculated as the area- and threat status-weighted average of the number of threatened species within each 0.5-degree global grid cell. Species distribution and threat category data came from the IUCN Global Marine Species Assessment.  | The reference point was to have all species at a risk status of Least Concern. We scaled the lower end of the biodiversity goal to be 0 when 75% species are extinct. | There were no measures of integrity measures included. The species chosen represents a partial sample of overall species diversity.
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as Global 2012. There were data updates available for 15 out of 6,080 species. | The reference point was the same as Global 2012. | Updates were available for data used for this sub-goal.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The status of 504 assessed species was calculated as the threat status-weighted average of species occurring in the Brazilian EEZ. The sub-goal was calculated at the national level, giving equal weight to all species occurring in Brazilian waters. Threat weights were assigned based on the IUCN threat categories status of each species. | The reference point was the same was Global 2012. | This study substituted global assessment data for regional data whenever available. This study did not weight by area of occurrence as in Global 2012 because distribution maps were not available for all species.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | The model was the same as Global 2012, with regional data available for threat categories. | The same reference point was used as the Global model. | This followed the Global model, but used local data. This study did not weigh by area.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The same as Global 2012. | Where all species within the region are classified with a risk status of Least Concern. | A list of species was composed based data from the Israel Marine Mammal Research and Assistance Center (IMMRAC) and cross-referenced with the IUCN data. Distribution maps were available for some species (from a global 0.5° grid). For those species not included in the distribution maps in the Mediterranean, data from assessments in the Black Seas were used. Additional data gap filling was done. 
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is similar to Global 2012. This goal calculates the average IUCN threat category for all species in the study area, broken down by the type of habitat where they live. That average is weighted by the percentage of area occupied by each type of habitat in the Gulf region: soft bottom and hard bottom. | When all species are in the category of "least concern". | The species list was adopted from the IUCN Red List threat categories with aggregated species lists and 112 species from local sources. 
-[**China 2015**](http://ohi-science.org/assessment/China) | Status model is similar to global assessments. However, average extinction risk of all assessed species was only calculated as the weighted sum of the number of species in each threat category, since habitat area per species is not obtainable. | The reference point is to have the risk status of all iconic species at lowest risk of extinction. | This study used a combination of local endangered species list and IUCN list. 
-
-</span>
-
-#### Sub-goal: Habitats
-The Habitats sub-goal includes all habitats in the study area, and assess their health condition and coverage area.
-
->Habitat is included in the Biodiversity goal to provide a more complete picture of diversity in the system. This is because in global assessments assessed species data were limited and the diversity of habitats can be included with the assumption that healthier habitats mean healthier species. Therefore if you have comprehensive species assessments in your area you may not need to include all habitats as a sub-goal, instead only including living habitats (algae, corals) along with species in the Species sub-goal.
-
-**_Ideal Approach_**
-
-Ideally, information on the area extent (square kilometers) and condition of every habitat type would be available over a long period of time.
-
-**_Practical Guidance_**
-
-You will first find what habitats are in your study area, both in the _coastal regions_ and _offshore_. In the global assessments, data were available for mangroves, coral reefs, seagrass beds, salt marshes, sea ice, or subtidal soft-bottom habitats, but there are likely other important habitats in your region.
-
-Once you determine what habitats are in your area, you will need information about _the area extent of each habitat_ within each region of your study area. You should consider whether and how far they go offshore and inland. Spatial data are preferred: you will be able to calculate the total square kilometers of each habitat within each region. For example, in global assessments mangrove area within 1 kilometer of the coastline were included, but this distance could change in OHI+ assessments.
-
-You will need to include area and condition data specific to your study area and not rely on the global data provided. This is because the habitat data provided for your assessment are either over-representative by allocating the study area's data equally to each subcountry region, or can be misrepresentative by allocating a proportion of those data to each subcountry region (based on the offshore area of each region to the total area). Either case assumes that if a habitat was present in the country, it could be found anywhere (which is not the case with study areas that span many degrees of latitude), and the first case inflates the habitat coverage in the study area.
-
-> TIP 1: Do you have maps that show current habitat distributions and maps that show historical habitat distributions? If so, you could extract that data for each of your regions to get a current and reference area. In the U.S. West Coast assessment (2014), researchers went to the local public library to find hand-drawn maps of historical salt marsh and sand dune extents in California. You could also use summarized habitat data that exists in tables or are already compiled in another source.
-
-> TIP 2:  If local data is not available, you obtain certain habitat extent data from the global assessment, which used high resolution spatial extend data from this study:
-<span style="font-size:0.9em">_Hamilton, S. & Casey, D. (2014). Creation of a high spatiotemporal resolution global database of continuous mangrove forest cover for the 21st Century (CGMFC-21): a big-data fusion approach. [arXiv:1412.0722](http://arxiv.org/ftp/arxiv/papers/1412/1412.0722.pdf)_.</span>
-Good data to obtain from this study include shoreline, mangrove, soft bottom, and sea ice.
-
-The _condition_ of the habitats can be measured in different ways, depending on the data available. Indicators of condition could include habitat density, susceptibility to pathogens, or change in species composition or growth rates from impacts such as overgrazing. Look for studies assessing habitat integrity or condition specifically in your area.
-
->In global assessments, direct information about coral condition was not available so it was based on the percentage of "living cover" on a coral reef relative to the potential range of the reef. In other words, estimates of coral cover within transects of certain sites were repeated in time and we used that rate of change in time as an indication of health of the reefs in the whole region. The difficulty lies in 1) having enough different locations sampled that you can say something about the whole region and 2) finding studies that did repeated measures in time, in the same location, over at least 20 years. In the Global 2013 assessment, there were so few datasets that satisfied this condition that we had to pool observations from different locations. Mean predicted values for each region from 1985-1987 were set as reference points.
-
-
-If possible, you will want to gather habitat area and condition data through time so that you can calculate the **trend**. Ideally, there will be enough years of data to directly calculate the recent change in habitat condition as the trend. This isn't always the case, and proxies or estimates might need to be used. For example, due to spotty salt marsh data we created trend categories of increasing (0.5), stable (0), and decreasing (-0.5) based on available data.
-
-The **reference point** will likely be based on historic habitat area coverage and condition, with the assumption that habitat destruction has been and still is occurring and the target is to return to some point in the past. You will need historical data for this, from satellites, published papers, or even hand-drawn maps. The challenge is to find a reference point that is both *ambitious* and *realistic* (based on the S.M.A.R.T. principles: see _Conceptual Guide_), using the data available. If data allow, it will be possible to set a reference point that is more ambitious than that used in global assessments.
-
-Alternatively, the reference point could be guided by a policy target. For example, are there any climate change policies in your area, with defined targets and objectives? Are there any restoration or carbon storage projects in your area? Do any organizations offer guidance on the amount of carbon storage your management policies should be aiming for?
-
-**_Examples of the Approaches_**
-
-<span style="font-size:0.9em">
-
-Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
---------|------------------------|-----------------|---------------------|
-[**Global 2012**](http://ohi-science.org/assessment/global) | The status was assessed for all habitats for mangroves, coral reefs, seagrass beds, salt marshes, sea ice edge, and subtidal soft-bottom habitats. Status was assessed as the average of the condition estimates for each habitat present in a region. | The reference years were between  1980-1995 and the current years were between 2001-2010. The current condition was compared 1980 for salt marshes and sand dunes, and it varied by site for seagrasses. | Anomalous values occurred due to data availability issues. A significant amount of pre-processing of the habitat data was needed to fill data gaps and resolve data quality issue
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as 2012. | The reference was the same as Global 2013. | The same model as 2012 was used.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The goal model was the same as as Global 2012 for mangroves, coral reefs, seagrass beds, salt marshes, and subtidal soft-bottom habitats. | The timeframes between current and reference condition varied across habitats using a 20-year gap. | Information from a few point estimates had to be used to infer the health of many habitats.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | Salt marshes and seagrass beds were considered. Extent was used and habitat health was not used. | Temporal reference points were set for each habitat. For salt marshes, the percentage of pre-industrialized habitat coverage; for sand dunes, the habitat extent between the 1950s and 1960s. | The study required reconstructions of historic habitat extents in order to set more ambitious targets.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The goal model is the same as Global 2012 for two habitats: sand dunes and soft-bottom habitats. | Reliable, comprehensive satellite photos from 1970 enabled an evaluation of the habitat extent of the sand dunes as its reference point. For soft-bottom habitat we utilized relevant pressure as a proxy of habitat conditions. | These habitats were chosen because they represent a large portion of regional coastal and marine environments and because they have data with relatively comprehensive temporal and spatial coverage. Other important habitats such as rocky reefs and the rocky intertidal could not be included due to lack of data on current and/or past spatial extent and condition. 
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is the same as Global 2012. Two types of habitats are considered: soft bottoms and mangroves. | For soft bottoms, the reference point was when is no deterioration of habitat due to the effects of trawling in the area. The reference point for mangroves was its extent in 1991. | 
-[**China 2015**](http://ohi-science.org/assessment/China) | See Global 2012. | A temporal reference point for each habitat is set to its condition in 1980’s. | Three types of habitats were assessed: seagrasses, saltmarsh, and mangroves. Not all habitat exist in all provinces and time-series data of extent is poor for some. Time-series data on the condition of each habitat is not obtainable. However, rough estimate of relative change in coverage areas since the 1980’s was found in literature. 
-
-</span>
-
-### Coastal protection
-This goal aims to assess **the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.)**. A score of 100 would indicate that these habitats are all still intact or have been restored to their reference conditions.
-
->Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: **Carbon Storage**, **Coastal Protection**, and **Biodiversity**. Goal models to date have depended on the area (square kilometers) of each habitat type in each region, the condition of each habitat, and a weighting to distinguish how different habitats contribute to each goal.
-
-**_Ideal Approach_**
-
-Ideally you will have information on the relative potential of habitats to provide coastal protection, and extent and condition of each habitat. The reference point would likely be a historic reference before destruction of coastal habitats.
-
-**_Practical Guidance_**
-
-To see how to obtain data on habitat _extent_ and _condition_, read the section on **Biodiversity sub-goal: Habitats**.
-
-There can be many _habitat types_ included in Coastal Protection goal. In global assessments, coral, mangroves, saltmarshes, seagrasses, and sea ice were included. Habitats were _weighted_ based on their protective ability identified by [Natural Capital Project](www.naturalcapitalproject.org). Depending on the habitats you include, you will need to find additional weights.
-
-In the global assessment, we did not include an assessment of the protection afforded by  man-made structures, such as jetties and seawalls. These structures cannot be preserved without maintenance and often have negative side effects (e.g. alter sedimentation rates causing erosion in new locations), thus they do not constitute long-term sustainable service and are mostly seen as a pressure. It gets tricky when structures are built to help reduce coastal erosion--they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied.
-
-<!-- I didn't find information on how to rank on the supplemental paper or natural capital... -->
-
-The goal status model for Coastal Protection developed for global assessments will likely be appropriate for independent assessments. However, it could be possible to incorporate the _differences in vulnerability_ between subcountry regions. Vulnerability can be quantified as the ability to evacuate, economic ability to reconstruct in case of damage. Physical properties may be available in OHI+ assessments, allowing for more a detailed understanding of the protective ability, and likelihood of exposure for each habitat type in different portions of the coastline.
-
-**_Examples of the Approaches_**
-
-<span style="font-size:0.9em">
-
-Assessment | Model Description and Reference Point | Evolution of Approach | Other Considerations
------------|-----------------------|--------------------------|-------------------
-[**Global 2012**](http://ohi-science.org/assessment/global) | The habitats included mangroves, coral reefs, seagrasses, salt marshes, and sea ice. The status was calculated as a function of the amount or condition of marine habitat relative to reference states and the ranked protective ability of each habitat type. | The reference point compares the current extent and condition to their condition in the early 1980s. | This focused on the EEZ scale and assumed that all coastal areas have equal value and equal vulnerability.
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as in Global 2012. | The reference was the same as Global 2012. | This approach followed the Global 2012 approach.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The 12 nmi boundary was used for each habitat type for mangroves, seagrasses, coral reefs, and salt marshes. Only costal portions were used for mangroves. The total reported extent divided by the coastal area of each state was used for seagrasses. For coral reefs we calculated the extent per coastal waters of each state using maps of coral reef distribution. The salt marsh extents for some states were from national statistics. | The reference condition was the mean of the predicted values for 1985-1987 using regional estimations for coral reefs. The ‘current’ condition or health was the mean of the predicted values for 2008-2010.  | Same goal model as Global 2012, while using local data.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | Salt marshes, seagrasses, and sand dunes were included. | Temporal reference points were set for each habitat. For salt marshes, the percentage of pre-industrialized habitat coverage; for sand dunes, the habitat extent between the 1950s and 1960s.  | Same as Global 2012, with more ambitious reference points for target habitat coverage.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | See Global 2012. Sand dune was the habitat of interest. | Reliable, comprehensive satellite photos from 1970 enabled an evaluation of the habitat extent of the sand dunes as its reference point. | Other important habitats, such as rocky reefs and the rocky intertidal flats, could not be included due to lack of data on current and/or past spatial extent and condition.
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The status is calculated in the same manner as in the Global assessment. Mangroves in the coastal strip (1 Km offshore and inland) were considered the main source of coastal protection, and was used for calculations. | The reference condition was the existing mangrove coverage in the protective area for 1991. | Values are measured in units of area (km2).
-[**China 2015**](http://ohi-science.org/assessment/China) | The approach is the same as in global assessments. Four habitats are measured: mangroves, seagrasses, salt marshes, and coral reef. | A temporal reference point for each habitat is set to its condition in 1980’s. | These four habitats provide the most coastal protection and have available data. Not all habitat exist in all provinces and time-series data of extent is poor for some. Time-series data on the condition of each habitat is not obtainable. However, rough estimate of relative change in coverage areas since the 1980’s was found in literature.
-
-</span>
-
-### Carbon storage
-
-Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture **the ability of the coastal habitats to remove carbon given their carbon uptake rate and health conditions**. A score of 100 means all habitats that contribute to carbon removal are still intact or have been restored and they can function to their full carbon burial potential.
-
-<!-- This definition needs more work... Halpern et.al didn't spell out an definition as did with other goals... -->
-
->Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: **Carbon Storage**, **Coastal Protection**, and **Biodiversity**. Goal models to date have depended on the area (square kilometers) of each habitat type in each region, the condition of each habitat, and a weighting to distinguish how different habitats contribute to each goal.
-
-**_Ideal Approach_**
-
-Ideally, you will know which habitats contribute to carbon _sequestration and storage_, and their _capacity_ to do so. You will also have information on _habitat extent_ and _health_ conditions. The reference point for habitat-based goals will likely be temporal, meaning you will compare the current area of these habitats to some area in the past, and thus historic data are needed. Reference points could also be set by with a proportion increase (or decrease) of known conditions.
-
-**Practical Guidance**
-
-In terms of habitat types for this goal, it is recommended to search for _mangroves, saltmarshes_, and _seagrasses_ because these are viewed as carbon-sequestering habitats that are both ecologically threatened and sensitive to policy responses. It is possible that there are other carbon-sequestering habitats present in your study area. But you should remember that we recommend using habitats that can store carbon on the order of 100 years, thereby limiting the types of habitat types you will need. _For details on how to obtain data on habitat extent and condition, read section on **Biodiversity sub-goal: Habitats**_.
-
-> **Seaweeds and coral** store carbon for less than 100 years, and are not included in the carbon storage goal. While the pelagic oceanic carbon sink (phytoplankton) plays a large role in the sequestration of anthropogenic carbon, the pelagic ocean mechanisms are not amenable to local or regional management intervention. Phytoplankton and contribute to carbon fixation when they die and sink to the sea bottom at sufficient depth, because it is effectively out of circulation. However, if those phytoplankton are eaten, the carbon is cycled back into the system and not sequestered. Something that could potentially be included in the carbon storage goal is mollusc shells, if they are added to a landfill and not recycled in the sea. So if information on mariculture production and waste disposal are available, this could be an interesting addition to carbon storage at a regional scale.
-
-_Contribution_ is relative contribution of each habitat to total carbon storage, measured by the per area, empirical rates of carbon uptake and coverage area. For this you would have to search the literature and find ratios of organic nutrient uptake between habitats, and you would have to make sure these studies represent your study area. For example, were the studies done with a young mangrove forest, or an older one, which might have different growth rates?
-
->Understanding habitat carbon storage rates is an area of ongoing research. The capacity for habitats to store carbon varies, and depends on the morphology of plants in the system. In the global assessment, we assumed equal potential for carbon storage by each habitat, and thus contribution to carbon storage is measured by habitat extents directly.
-
-
-**_Examples of the Approach_**
-
-<span style="font-size:0.9em">
-
-Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
-----------|------------------------|----------------------|-------------------|
-[**Global 2012**](http://ohi-science.org/assessment/global) |  Seagrasses, tidal marshes and mangroves, were assessed. The whole extent of mangroves was included, including parts on land or in river deltas. The status was measured as a function of its current condition relative to a reference condition and a variable that weights the relative contribution of each habitat type to total carbon storage.  | Reference conditions were set as the current condition or area of coastal plant habitat coverage relative to that in ~1980. Relative contribution was measured as the amount of area each habitat covers relative to the total area covered by all three habitats given available data. | This was not a very ambitious reference point.
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as in Global 2012. Mangrove data included 1km inland in addition to 1km offshore.  | The reference point was the same as Global 2012. | There were improvements in data processing.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The goal model was the same as in Global 2012. The greatest data gaps were for sea grasses. | Different reference points were set for each habitat. For salt marshes, the reference year was 1975; mangroves, 1980; salt marshes, 1979 - 1981. Estimations were used to retroactively determine the reference condition for mangroves and salt marshes. | The same approach was used as in Global 2012, with local data used as available.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | Salt marshes and seagrass beds were considered. Extent was used and habitat health was not used. | Temporal reference points were set for each habitat. For salt marshes, the percentage of pre-industrialized habitat coverage; for sand dunes, the habitat extent between the 1950s and 1960s. | The study required reconstructions of historic habitat extents in order to set more ambitious targets.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | This goal was excluded from Israel's assessment. No data was available on the only carbon-fixing ecosystem found in the Israeli Mediterranean (ie. seagrass), and this region generally has extremely low productivity.
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The modeling approach is the same as Global 2012. But only mangrove was calculated here because of its importance for carbon storage relative to other types of habitats. |  Reference point is the existing mangrove coverage for 1991. | Values are measured in units of area (km2). |
-[**China 2015**](http://ohi-science.org/assessment/China) | The approach is the same as Global 2012. But China's model included a new variable, relative carbon sequestration rate of each habitat. | A temporal reference point for each habitat is set to its condition in 1980’s. Time-series data on condition of each habitat was not obtainable. However, rough estimate of relative change in coverage areas since the 1980’s was found in literature. | Relative carbon sequestration rate, together with habitat extent, provide a more complete picture of how habitats contribute to CS than extent alone could do.
-
-</span>
-
-### Clean Waters
-
-People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, eutrophication, algal blooms, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), floating trash, and mass kills of organisms due to pollution. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist. The Clean Water goal captures **the degree to which local waters are unpolluted by natural and human-made causes**. This goal scores highest when the contamination level is zero.
-
-**_Ideal Approach_**
-
-Ideally, data would be available and combined from different categories of marine pollution that can directly cause waters to become unsuitable for recreation, enjoyment, and other purposes. These factors typically include eutrophication (nutrients), chemicals, pathogens, oil pollution, and marine debris. Having good data from each of the desired categories, such as those pulled from a repeated effort at monitoring the conditions of the coasts, would be ideal. The Status of these components is the inverse of their intensity (i.e., high input is a bad status).
-
-**_Practical Guidance_**
-
-First think about what kind of point and non-point sources of pollution are in your area. Are there known sources of trash and marine debris? Is there a population that does not have access to sanitation? Does your wastewater get effectively treated before it is discharged into the environment? How does urban runoff contribute to your local coastal waters? Where possible, you should think about categories of inputs that are not used in the Global Assessments. These include information on toxic algal blooms, oil spills, turbidity or sediment input, and floating trash, and think about how they can fit in to the model areas.
-
-<!-- | Input | Related data |
-|-----|----------|
-| Nutrients | Modeled plumes from land-based nitrogen inputs, fertilizer usage, algal blooms, eutrophication |
-| Pathogens | Access to sanitation, population density, wastewater treatment |
-| Chemicals | Organic pesticides, inorganic pesticides, toxic chemicals, chemicals from shipping, urban runoff |
-| Trash | Floating trash, plastic inputs, uncollected waste |
-| Other | Turbidity, altered sedimentation | -->
-
-Once you identify the sources, you should try to find _in situ_ measurements of contamination. This could include monitoring data for pathogen levels, chemical contaminants, or data on the frequency and location of anoxic conditions or eutrophication. If direct measurements of water pollution are unavailable, indirect indicators, or proxy data, could be used. For example, land-based nutrients pollution is a proxy measure to nutrient input. The number of people who do not have improved access to sanitation could indicate the level of pathogen pollution.
-
-If you don't have such information, or have partial information on one of these inputs, you could combine it with population data or model the data to estimate how much of an impact it has on coastal areas. Do you have population density information over time? You could then use this later to calculate the trend.
-
->In the 2012 Global Assessment, these data layers are scores spatially for 3 nm out from shore. This is because it concentrates the effect of the inputs to coastal regions and makes them visible to the shoreline. You can change this value in your spatial analysis.
-
-
-You should use more refined data than the Global Assessment data, because they rely heavily on proxy data for water quality. However, you should follow the same approach of the _geometric mean_ to sum up the data layers that you find. This guarantees that if any one of the components scores poorly, the higher scores from other components will note hide the effect.
-
-
-> The Clean Waters goal is connected to the **Pressures** layers. You should approach the both of them at the same time where possible. (See the sections on **Pressures and Resilience** to understand more.)
-
->In the Global Assessment, marine debris from plastic pollution is one of the pressures layers. The same data are also used in the **Clean Waters** goal, but they are inverted such that a low value of debris is a high score in the goal. This is commonly done for these interchangeable data layers.
-
-For each contamination category, a reference point is set and all data in this category is scaled to 1. The type of **reference point** used will depend on the data available. You may decided that an ocean completely rid of pollution is ideal, or you may find that beach closure of less than 10 days per year due to _E.coli_ contamination is acceptable.
-
-**_Examples of the Approach_**
-
-<span style="font-size:0.9em">
-
-Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
------------|------------------------|-------------------|-------------------
-[**Global 2012**](http://ohi-science.org/assessment/global) | The status was calculated as the geometric mean of four components, eutrophication (nutrients), chemicals, pathogens and marine debris.  | Reference point is when the contamination level is zero. |  The lack of direct measurements meant that modeled and proxy data were used. The status of this goal was also used in the pressures layers.  
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The model was same as Global 2012, with a few simplifications;  revenue data were adjusted by dividing by GDP per region, reported in 2013 USD. | The reference point was the same as Global 2012. | The approach was the same as Global 2012, with simplifications.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The goal model was the same as Global 2012. Data used to model the components for eutrophication (nutrients) and chemicals was the same as in Global 2012, while pathogens and debris were localized to state level data.  | The reference point approach was the same as Global 2012.  | The study used better, or more local, data than the Global.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast)  | The model was the same as Global 2012, with regional instead of global data. | The reference point was set as the number of days when beaches were closed to bathers because pathogen counts were higher than state standards. | The study used more local data than the Global. |
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The goal model was the same as Global 2012 with local data. | The reference points for each category of pollutants are government-set standards. |
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is similar to Global 2012. The same four indicators were used. However, trend data were added as follows: Coastal human population as a proxy for trend in trash; Fertilizer consumption as a proxy for trend in nutrient pollution; Trends in access to improved sanitation as a proxy for trend in pathogen pollution; Pesticide consumption as a proxy for trend in chemical pollution. | The reference point is a zero pollution state for each of the components considered. |
-[**China 2015**](http://ohi-science.org/assessment/China) | Status model is similar to global assessments. Pollution is based on nitrogen, phosphate, chemical oxygen demand, and oil pollution. | The same reference point as Global 2012 was used that waters are free from all pollution. | The study used all local data. Data on pathogens and marine debris are poor or unavailable and thus were ignored in the model.
-
-</span>
-
 ### Food Provision
 
 One of the most fundamental services the ocean provides people is the provision
@@ -2698,95 +2418,40 @@ Assessment | Developing the Model  | Setting the Reference Point | Other Conside
 
 </span>
 
-### Livelihoods and Economies
+### Artisanal Fishing Opportunities
 
-The jobs and revenue produced from marine-related industries are clearly of huge value to many people, even for those people who do not directly participate in marine-related industries. People value community identity, tax revenue, and indirect economic and social impacts of a stable coastal economy. This goal tracks **the number and quality of jobs and the amount of revenue produced across as many marine-related industries/sectors as possible** through two sub-goals, Livelihoods and Economies. A score of 100 reflects productive coastal economies that avoid the loss of ocean-dependent livelihoods while maximizing livelihood quality.
+Artisanal fishing, often also called small-scale fishing, provides a critical source of food, nutrition, poverty alleviation and livelihood opportunities for many people around the world, in particular in developing nations. As opposed to large, commercial fisheries that usually involves industrial, energy-intensive vessels and long trips, artisanal fisheries refer to households, cooperatives or small firms that use relatively small amounts of capital, energy and small fishing vessels (if any), make relatively short fishing trips, and use fish mainly for local consumption or trade.
 
-In the global study, this goal does not attempt to capture any aspects of _job identity_ (i.e. the reputation, desirability or other social or cultural perspectives associated with different jobs). We make the assumption that all marine-related jobs are equivalent, such that, for example, a fisherman could transition to a job in mariculture or ship-building without affecting the score of this goal. There are also not adequate data to assess workers' _job satisfaction_ or _ecological sustainability_ of sectors. Future, finer scale applications of the Index could incorporate these key considerations.
-
-> Oil and gas industries typically are not included in this goal. The Natural Products goal does not include non-living items such as oil, gas, and mining products, because these practices are not considered to be sustainable. They are also done at such large scales that including them would essentially make OHI an index for oil and mining--and they are not truly an ocean product. Because these products are not included in terms of quantity extracted, it did not seem appropriate to include information regarding jobs, wages or revenue. However, oil and gas industries are considered a large employer and often generate large revenue for a region. Similarly, industries such as shipping, boat building, ports and harbors do not directly depend on a healthy ocean, but the demand for some of those boats (fishing boats, sailboats, yachts) is dependent on a healthy ocean and are also important providers of jobs and revenue. Ultimately, whether and how to include those data is a decision that should be made on a case-by-case basis by the individual OHI+ group. 
-
-#### Sub-goal: Livelihoods
-
-This sub-goal describes livelihood quantity and quality for
-people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages,
-which is a proxy for job quality.
+In addition, this goal is not about recreational fishing often done in developed countries, which is captured in _Food Provision_ (if it provides food) and Tourism and Recreation goals. Nor is it about the actual amount of fish caught or revenue generated, which are captured by _Coastal Livelihood and Economies_. Rather, **artisanal fishing opportunities measure whether people who need to fish on a small, local scale have the opportunity to do so.** In other words, it measures the potential for artisanal fishing whether or not this potential is actually met. A score of 100 means the country or region is meeting the needs of artisanal fishermen or communities by implementing institutional supports, providing access to near-shore water, and maintaining the health of targeted species.
 
 **_Ideal Approach_**
 
-Ideally, this sub-goal would speak to the quality and quantity of marine jobs in an area. It would encompass all the marine sectors that supply jobs and wages to coastal communities, incorporating information on the _sustainability_ of different sectors while also telling about the _working conditions and job satisfaction_. The jobs and revenue produced from marine-related industries directly benefit those who are employed, and also those who gain indirect value from related economic and social impacts of a stable coastal economy, such as community identity and tax revenue. You should capture the indirect as well as direct benefits from jobs, wages and revenue from coastal communities.
-
-In your assessment, there is the opportunity to study the behavior of economic trends in your area. You can examine time-series with greater detail and, for example, establish a different time-periods that reflect economic cycles in your area, or even process the data to eliminate the “noise” from fluctuations and capture more persistent trends.
-
-> You will most likely simplify the models from the global assessments. Models in the global assessments adjust for currency differences using the the Consumer Price Index and Purchasing Power Parity, which you likely will not need to do.
+Ideally, this goal would include some measure of of how easy or hard it is for fishermen to _access_ ocean resources when they _need_ them and the _sustainability_ of harvest of all nearshore stocks used by artisanal fishers. The need for artisanal fishing is most directly tied to the percent of population below the poverty line. Access, or ability to meet this need, are institutional permits or encouragements for small fisheries. Sustainability of artisanal fisheries refers to the sustainability of fishing gears. Sustainable gears are traditional hook and line, as opposed to unsustainable practices such as dynamite and gill net fishing. Sustainability can also be estimated by assessing the health of targeted species. The type of reference point you use will depend on the data available.
 
 **_Practical Guidance_**
 
-The first step of this goal is to **identify the marine-related sectors in your area**. These sectors are important because the *Livelihoods* goal includes information about **jobs** and **wages** for those sectors. There are jobs that are directly connected to the marine environment, such as shipping, fishing, longshore workers, but also some that are connected indirectly, such as suppliers and supporting industries. For example, the sectors for which data were found in global assessments included tourism, commercial fishing, marine mammal watching, aquarium fishing, water and tidal energy jobs, mariculture, transportation and shipping, ports and harbors, ship and boatbuilding.
+Ideal indicators mentioned above are often scarce, especially percent poverty or the sustainability of fishing gears. You will want to find proxy data for *access* in whatever way best suits your areas. This could be drawn from physical, economic, regulatory, or stock condition data as an indication of availability. A combination of all of these would be best to more accurately speak to the philosophy, but is is usually limited by data.
 
-After you have identified which jobs are in your area, you will want to find some **measure of their direct and indirect benefits**. Direct benefits of jobs include the number of jobs in each area, and the wages or income for such jobs. You could find such information from you local national statistical office, or economics bureaus, for example. Indirect benefits of these jobs to the local communities are calculated through the use of _economic multipliers_, with which you can attempt to estimate the revenue generated by jobs more broadly associated with marine sectors. It's encouraged to use economic multipliers from the literature.
+You should include data that are distinct from the catch data used in other areas of **Food Provision**. So once you find catch data and access data, you should think about which goals to use it in. For instance, if you find tonnage of artisanally-caught fish, you should include that elsewhere. In any case, you will likely modify the default Global Assessment model using different and better-resolved data.
 
-> One example to use economic multipliers is to multiply the number of fishermen by a multiplier to estimate larger economic effects, ranging
-from gear manufacturing companies to restaurants and movie theaters where the fishermen spend their income.
+>For example, in the Baltic Sea region, **Artisanal Opportunities** is very closely connected to **Tourism and Recreation** since there are a lot of locals and tourists using the shared sea for enjoyment. You will have to decide how to apportion the data.
 
-Next you must think about how to use the data to infer **quality and quantity of jobs**. Do you have data through time so that you can see how the number of jobs or the wages per sector have changed over time? If all of the sectors change in the same way, for instance, this might show broader economic trends that you should account for.
 
-<!-- what are good ways to find satisfaction, identity, and sustainability information of different sectors? -->
+The **reference point for this goal** would likely be a metric of having full access to the resource (see examples in the table above). Keep in mind that the access is for people, and therefore a marine protected area may not count towards full access.
 
->It is highly recommended that you set the **reference point** for _jobs_ as a *temporal comparison* (eg. the number of jobs five years before), and for for wages as a *spatial comparison* (eg. highest observed value across reporting units). Comparing the number of jobs across different places, for instance, would require at the
-very least adjusting values by the size of the workforce in each location.
-
-**_Examples of the Approaches_**
-
-<span style="font-size=0.9em">
-
-Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
----------------|-----------------------|-------------------------|---------------------------------------|
-[**Global 2012**](http://ohi-science.org/assessment/global) | This was measured as the number of direct and indirect jobs across sectors within a region plus the average purchasing power parity (PPP)-adjusted wages within each sector. Jobs were summed across sectors and wages were averages across sectors within each region. | The reference point for jobs was a temporal comparison using a moving-window value; the reference point for wages was the highest average annual wage observed across all reporting units. A score of 100 indicated that the number of marine jobs had not reduced relative to the number five years previously, and that the wages in the area were the highest anywhere. | The goal model assumed there was no-net-loss of jobs in order to account for broader economic trends. The economic multipliers were used for jobs and revenue but not wages.
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The model was similar to Global 2012, with some simplifications. | The reference point was the same as Global 2012. | The approach was the same as Global 2012 except for a few simplifications in multipliers, wage data, and jobs data. This was done because of data availability and in order to correct for national macroeconomic events across all sectors.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The method was the same as Global 2012. | The reference point was the same as Global 2012. | The approach was the same as Global 2012.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | This goal follows the same model as in Global 2012, using local data for the sectors of living resources, tourism and recreation, shipping and transport, marine related construction, and ship and boat building or repair. Data and sector-specific multipliers came from the National Ocean Economics Program (NOEP). | The reference point was the same as in Global 2012. | This study followed the Global 2012 approach but used local data. It recognized that sectors and economic activity within a region can be influenced by activities outside the region.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | See Global 2012 assessment. | No-net-loss reference point. | 
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is the same as the Global assessment. | A temporal reference poinst was used for both the number of jobs and salaries. 2009 values were used as the reference point for jobs, and values of 2010 for salaries. | Data for jobs, wages, and unemployment were gap-filled. 
-[**China 2015**](http://ohi-science.org/assessment/China) |Status model is the based on the number of direct jobs across marine sectors and the average disposable income among rural and urban inhabitants within a region. |Both jobs and wages have a spatial reference point of the maximum value among all provinces across all years. | Eleven marine sectors are assessed. The number of jobs per sector is not readily available and is extenuated from the nation-wide number of employments for each sector and the total number of marine-related jobs per province. There is not enough information on indirect jobs and is thus left out of the calculation. Due to unavailability of wage information per sector, wage is substituted by disposable income.
-
-</span>
-
-#### Sub-goal: Economies
-
-Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.
-
-**_Ideal Approach_**
-
-Ideally, revenue data would be collected for all coastal regions, and traced from sectors both directly and indirectly related to marine industries. When these data are not available it is possible to use revenue data at a larger scale and adapt them to a coastal area based on the population distribution. The reference point in this sub-goal will likely be set with a moving-window temporal approach.
-
-**_Practical Guidance_**
-
-A number of sectors were not included in the Global Assessments because sufficient data did not exist. However, it might be desirable to include sectors such as ecotourism, sailing, kayaking, surfing, and offshore wind energy production, and scientific research, among others. It may be practical to include the same sectors in the *Livelihoods* and the *Economies* subgoals.
-
-> The quantity of Wild-caught fisheries, Mariculture, and participation of Tourism & Recreation are considered separately in specific goals, whereas the monetary component is captured in L&E.
-
-In the global assessment, revenue has a moving-target temporal **reference point** by comparing the value in the current year to values in previous years. Global assessments used a five-year moving-window because it is intended to capture short-term changes in the trajectory. But then you must consider if that amount of time would represent economic trends. If there is a not economic downturn, do you want to reward an increasing number of jobs, or reward maintaining the same
-number of jobs?
-
-We highly recommend that this remains a temporal comparison so that a specific place is compared to its performance in the past and not to anywhere else.
-
->You may find resilience metrics that can be
-used throughout your assessment. There are many economic indices and some might be appropriate for your area. For example, the _Global Competitiveness Index_ was used in global assessments as a resilience for this goal because it means that marine jobs are more likely to be maintained if an area gets a good score on the Competitiveness Index.
-
-**_Examples of the Approaches_**
+**_Examples of the Approach_**
 
 <span style="font-size:0.9em">
 
 Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
----------------|------------------------------------------------|-----------------------------|-------------------|
-[**Global 2012**](http://ohi-science.org/assessment/global) | The status used the total adjusted revenue generated directly and indirectly from each sector at current and reference time points. | In the economies sub-goal, revenue had a moving target temporal comparison. A score of 100 would indicate that revenue has not decreased compared to its value five years previous. The years used for GDP data were based on the average current year and average reference year across the sector data sources. | The study accounted for a region's GDP trend. The economic multipliers were used for jobs and revenue but not wages. The study assumed that sector-specific job and revenue multipliers were static and globally consistent, but distinct for developed versus developing regions.
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The model was same as Global 2012, with a few simplifications;  revenue data were adjusted by dividing by GDP per region, reported in 2013 USD. | The reference point was the same as Global 2012. | The approach was the same as Global 2012, with simplifications.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The method was the same as Global 2012. | The reference point was the same as Global 2012. | The approach was the same as Global 2012.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | The method was the same as Global 2012, but with local sectors represented. | The reference point was calculated in the the same way as Global 2012. | The approach was the same as Global 2012.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | See Global 2012 assessment. | See Global 2012 assessment. |
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | Similar to Global 2013-2015. Value added (VA) was added as a measure of local economies, ie. earnings of each sector. | The temporal reference point was the Value Added by each sector in 2007. |  Value added was used to replace GDP, which is more appropriate as measure of national economies. 
-[**China 2015**](http://ohi-science.org/assessment/China) | Status model is the same as in global assessments| The spatial reference point is the maximum revenue across all regions over all years. | Data on revenue generated from each marine sector is not available, and thus total revenue from all sectors are used for the assessment.
+----------|------------------------|---------------|--------------------|
+[**Global 2012**](http://ohi-science.org/assessment/global) | The status was the demand as estimated by poverty levels. The data were measured by the gross domestic product (GDP) per capita, adjusted by the purchasing power parity as a proxy for undocumented trade. The supply was estimated using an indicator that ranked how well regions regulated and supported artisanal fishing, as part of a study by Mora *et al.* (2009). | The reference point was having supply greater than demand so that unmet demand is 0. This meant that all demand for artisanal fishing was allowed or achieved. | The trend was driven by the change over time in PPPpcGDP as a proxy for demand. This assessment did not incorporate a specific measure of the health of the targeted species or of sustainability of practices.
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The approach was the same was Global 2012 | The reference point was the same as Global 2012. | There were no data updates available to change the method.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The model was simplified to reflect the primary driver of opportunity as the availability of fish to be captured, as measured by the condition of stocks. This model was based solely on the sustainability index calculated using the exploitation status of species. All species were considered possible targets of artisanal fishing activities. | An established target of 1.0. This meant all stocks are categorized as either Developing or Fully Exploited. | The analysis used national stock status information. It did not include poverty because of the high variation in the country. In addition, it assumes that access to fishing is largely open because permitting and regulations are not restricted.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | This study developed a model using three key variables of physical and economic access to coastal areas, and access to biological resources:<br />  &nbsp;&nbsp;&nbsp;- Physical accesses: shore-based fishing measured by percent of coastline within a mile coastal access points. <br />  &nbsp;&nbsp;&nbsp;-Economic access: no increase in fuel price compared to income. <br />  &nbsp;&nbsp;&nbsp;- Biological access: condition of fish stocks through NOAA Fish Stock Index.	<br />  &nbsp;&nbsp;&nbsp; | - Physical: 1 coastal access point per mile. <br />  &nbsp;&nbsp;&nbsp;- Economic: No change in gas price. <br />  &nbsp;&nbsp;&nbsp;- Perfect sustainability score on FSI.| This approach did not model demand or have species-specific information. It assumed that as long as there are no obstacles to pursuing artisanal fishing, the goal was fully achieved. These data better capture the nature of small-scale fisheries in the study area than the Global model.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The goal model is based on a sustainability index calculated using the exploitation status of species. Ten coastal fish species, for which we have data, were considered possible targets of artisanal fishing activities. | An established target of 1.0, when all stocks are categorized as either Developing or Fully Exploited. | The primary driver of artisanal opportunity is the availability of fish to capture (i.e. the condition of the stocks). Access to fishing in Israel is largely open because permits and regulations from the Ministry of Fisheries are not considered restrictive, and in most cases, neither is physical access. 
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach was the same was Global 2012 | The reference point was the same as Global 2012. | Local information was included for need and sustainability variables.
+[**China 2015**](http://ohi-science.org/assessment/China) | Status model is rewritten and is similar to the 2014 U.S. West Coast assessment. It is based on the three indicators: <br />  &nbsp;&nbsp;&nbsp;- capacity for exports, measured by the number of ports <br />  &nbsp;&nbsp;&nbsp;- the need for artisanal fishing opportunities, represented by the number of artisanal fishermen <br />  &nbsp;&nbsp;&nbsp;- economic capacity, measured by the ratio of diesel price and disposable income. | The spatial reference point is the maximum value across all region and all years.| 
 
 </span>
 
@@ -2920,38 +2585,79 @@ Assessment | Developing the Model  | Setting the Reference Point | Other conside
 
 </span>
 
-### Tourism and Recreation
-Tourism and recreation in coastal areas is a major component of thriving coastal communities and a measure of how much people value ocean systems, i.e. by traveling to coastal and ocean areas. This goal is not about the revenue or livelihoods that are generated by tourism and recreation (that is captured in the livelihoods goal, section 6F above) but instead captures **the value that people have for experiencing and enjoying coastal areas**. A score of 100 means a region utilizes its full recreational potential without harming the ecosystem.
+### Carbon storage
 
-*Ideal Approach*
+Highly productive coastal wetland ecosystems store substantially larger amount of carbon than terrestrial forests and have the highest sequestration rates of any habitats on earth. They are also threatened by under-regulated coastal development but are amenable to restoration and conservation efforts. This goal intends to capture **the ability of the coastal habitats to remove carbon given their carbon uptake rate and health conditions**. A score of 100 means all habitats that contribute to carbon removal are still intact or have been restored and they can function to their full carbon burial potential.
 
-Ideally, you would find information for how the ocean in your area is used and enjoyed by local residents and tourists alike. How many international or domestic vistors? When are they visiting? How long are they staying? What activities are they enjoying? You model should capture the the full range of values and touristic and recreational activities. A measure of sustainability should also be included in the model. The type of reference point used will depend on the data available.
+<!-- This definition needs more work... Halpern et.al didn't spell out an definition as did with other goals... -->
 
-*Practical Guidance*
+>Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: **Carbon Storage**, **Coastal Protection**, and **Biodiversity**. Goal models to date have depended on the area (square kilometers) of each habitat type in each region, the condition of each habitat, and a weighting to distinguish how different habitats contribute to each goal.
 
-<!--Old text here. I'm not sure if this is useful b/c we are not trying to predict tourism: There are potentially dozens of variables that affect the number of people that engage in tourism and recreation within a region and where they go. These include local and global economies, infrastructure to support the activities, promotion of particular locations, safety and security, and even political stability. -->
+**_Ideal Approach_**
 
-First look for information that directly reflect how people enjoy the ocean, such as boat rentals, resort registries, whale watching etc. If you can't find information on visitors, look for proxy data that are indirectly related. For example, do people have access to boating areas, or to surfing spots? Are tourism-related industries (eg. hotel employment, restaurant) increasing or decreasing?
+Ideally, you will know which habitats contribute to carbon _sequestration and storage_, and their _capacity_ to do so. You will also have information on _habitat extent_ and _health_ conditions. The reference point for habitat-based goals will likely be temporal, meaning you will compare the current area of these habitats to some area in the past, and thus historic data are needed. Reference points could also be set by with a proportion increase (or decrease) of known conditions.
 
-This goal demonstrates the flexibility of the OHI+ approach and will necessarily draw from different data sources than the Global Assessment. It is encouraged to to think creatively and to look at what other OHI+ assessments have done when developing this goal model. For example, in the Brazil Assessment the density of hotel employees per state was used as a metric to determine how well touristed coastal areas were. This was better than using international travel information, as was used in the Global Assessment, because for a large country like Brazil, internal travel would not have been accounted for.
+**Practical Guidance**
 
-The best way to represent the sustainability term for this goal is to use a local indicator or a measure of tourism sustainability or competitiveness. Otherwise use the TTCI value from the Global 2013 assessment for the study area (applied evenly across all regions).
+In terms of habitat types for this goal, it is recommended to search for _mangroves, saltmarshes_, and _seagrasses_ because these are viewed as carbon-sequestering habitats that are both ecologically threatened and sensitive to policy responses. It is possible that there are other carbon-sequestering habitats present in your study area. But you should remember that we recommend using habitats that can store carbon on the order of 100 years, thereby limiting the types of habitat types you will need. _For details on how to obtain data on habitat extent and condition, read section on **Biodiversity sub-goal: Habitats**_.
 
-The **reference point** used will depend upon the types of data. Does your country have industry growth rate targets? Are there measures on sustainable levels of tourism and recreational activities based on ecological factors? Do you want to increase tourism, or instead ensure it does not decline?
+> **Seaweeds and coral** store carbon for less than 100 years, and are not included in the carbon storage goal. While the pelagic oceanic carbon sink (phytoplankton) plays a large role in the sequestration of anthropogenic carbon, the pelagic ocean mechanisms are not amenable to local or regional management intervention. Phytoplankton and contribute to carbon fixation when they die and sink to the sea bottom at sufficient depth, because it is effectively out of circulation. However, if those phytoplankton are eaten, the carbon is cycled back into the system and not sequestered. Something that could potentially be included in the carbon storage goal is mollusc shells, if they are added to a landfill and not recycled in the sea. So if information on mariculture production and waste disposal are available, this could be an interesting addition to carbon storage at a regional scale.
+
+_Contribution_ is relative contribution of each habitat to total carbon storage, measured by the per area, empirical rates of carbon uptake and coverage area. For this you would have to search the literature and find ratios of organic nutrient uptake between habitats, and you would have to make sure these studies represent your study area. For example, were the studies done with a young mangrove forest, or an older one, which might have different growth rates?
+
+>Understanding habitat carbon storage rates is an area of ongoing research. The capacity for habitats to store carbon varies, and depends on the morphology of plants in the system. In the global assessment, we assumed equal potential for carbon storage by each habitat, and thus contribution to carbon storage is measured by habitat extents directly.
+
 
 **_Examples of the Approach_**
 
 <span style="font-size:0.9em">
 
 Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
----------------|------------------------------------------------|-----------------------------|-------------------|
-[**Global 2012**](http://ohi-science.org/assessment/global) | This goal measured the number of international tourists arriving by airline to coastal regions, accounting for their average length of stay, and adjusting by population size. The data were found through international airline arrivals and the Tourism Competitiveness Index (TTCI) from the World Economic Forum. | This study used a spatial comparison reference point that compares each region to the best performing regions. To compare regions, arrivals were divided by the region’s population. | There were data limitations that were comprehensive data available on a global scale. This approach did not account for domestic tourism.
-[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The study used the direct employment in the tourism industry relative to total labor force and used the TTCI. | The reference point was the best scoring region across all years and rescaled all other regions across all years to that score. All regions above this score received a status score of 100. | A new model was developed using employment in the tourism sector as a proxy for the total number of people engaged in coastal tourism and recreation. It involved assumptions, but these data were of better quality and closer to what this goal is trying to capture than those used in Global 2012.
-[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The model developed for Global 2012 was changed to use information on hotel employees for each coastal municipality. The status was measured for each coastal state as the density of hotel jobs in coastal areas. | The reference value used was the highest status value across all states over the time series, which was Rio de Janeiro in 2011. | The goal model assumes that the majority of coastal hotels are located in proximity to the shoreline, and that the number of hotel employees is directly proportional to the volume of tourists an area receives.
-[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | There were data available for changes in participation in 19 different marine and coastal specific recreational activities over time. These observations were used to produce a predictive model that was employed to estimate participation rates in recent years. | The reference point was temporal, compared to 2000. | The approach took advantage of  time-series data. Participation rates more closely matched the intent of this goal and were a more robust proxy than international tourist arrivals data, and the reference point was spatial instead of temporal.
-[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The amount of coastal park visits and hotel occupancies were used as as a proxy for the number of people actually engaged in coastal tourism. Status of the two indicators were calculated separately and then weighted to calculate the status of this goal (ie. 1/3 for hotels and 2/3 for parks). | Hotels reference points were taken from official planning targets for year 2020.
-[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is similar to Global 2012 assessment. The number of domestic and international tourists in each region were the product of country-wide data and the fraction of tourists per region. | The reference points were the number of domestic visitors and international visitors estimated for 2019. These values are calculated by province assuming an annual growth of 6.9% proposed by Integral Tourism Marketing Plan of Ecuador -PIMTE- 2014 for inbound tourism, and a growth of 2.44% for domestic tourism. | No local data were available for other indicators such as activities, hotel employments, etc. But we were able to add domestic tourism data to supplement international tourism data. 
-[**China 2015**](http://ohi-science.org/assessment/China) |Status model is based on the ratio of visitors and coastal area. | The spatial reference point was the region with the highest ratio across all years. |The number of visitors included both domestic and international visitors. Travel and Tourism Competitive Index (TTCI) was also incorporated.
+----------|------------------------|----------------------|-------------------|
+[**Global 2012**](http://ohi-science.org/assessment/global) |  Seagrasses, tidal marshes and mangroves, were assessed. The whole extent of mangroves was included, including parts on land or in river deltas. The status was measured as a function of its current condition relative to a reference condition and a variable that weights the relative contribution of each habitat type to total carbon storage.  | Reference conditions were set as the current condition or area of coastal plant habitat coverage relative to that in ~1980. Relative contribution was measured as the amount of area each habitat covers relative to the total area covered by all three habitats given available data. | This was not a very ambitious reference point.
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as in Global 2012. Mangrove data included 1km inland in addition to 1km offshore.  | The reference point was the same as Global 2012. | There were improvements in data processing.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The goal model was the same as in Global 2012. The greatest data gaps were for sea grasses. | Different reference points were set for each habitat. For salt marshes, the reference year was 1975; mangroves, 1980; salt marshes, 1979 - 1981. Estimations were used to retroactively determine the reference condition for mangroves and salt marshes. | The same approach was used as in Global 2012, with local data used as available.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | Salt marshes and seagrass beds were considered. Extent was used and habitat health was not used. | Temporal reference points were set for each habitat. For salt marshes, the percentage of pre-industrialized habitat coverage; for sand dunes, the habitat extent between the 1950s and 1960s. | The study required reconstructions of historic habitat extents in order to set more ambitious targets.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | This goal was excluded from Israel's assessment. No data was available on the only carbon-fixing ecosystem found in the Israeli Mediterranean (ie. seagrass), and this region generally has extremely low productivity.
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The modeling approach is the same as Global 2012. But only mangrove was calculated here because of its importance for carbon storage relative to other types of habitats. |  Reference point is the existing mangrove coverage for 1991. | Values are measured in units of area (km2). |
+[**China 2015**](http://ohi-science.org/assessment/China) | The approach is the same as Global 2012. But China's model included a new variable, relative carbon sequestration rate of each habitat. | A temporal reference point for each habitat is set to its condition in 1980’s. Time-series data on condition of each habitat was not obtainable. However, rough estimate of relative change in coverage areas since the 1980’s was found in literature. | Relative carbon sequestration rate, together with habitat extent, provide a more complete picture of how habitats contribute to CS than extent alone could do.
+
+</span>
+
+### Coastal protection
+This goal aims to assess **the amount of protection provided by marine and coastal habitats against flooding and erosion to coastal areas that people value, both inhabited (homes and other structures) and uninhabited (parks, special places, etc.)**. A score of 100 would indicate that these habitats are all still intact or have been restored to their reference conditions.
+
+>Habitat-based goals should be considered together during the data gathering process because the same data underly three goals: **Carbon Storage**, **Coastal Protection**, and **Biodiversity**. Goal models to date have depended on the area (square kilometers) of each habitat type in each region, the condition of each habitat, and a weighting to distinguish how different habitats contribute to each goal.
+
+**_Ideal Approach_**
+
+Ideally you will have information on the relative potential of habitats to provide coastal protection, and extent and condition of each habitat. The reference point would likely be a historic reference before destruction of coastal habitats.
+
+**_Practical Guidance_**
+
+To see how to obtain data on habitat _extent_ and _condition_, read the section on **Biodiversity sub-goal: Habitats**.
+
+There can be many _habitat types_ included in Coastal Protection goal. In global assessments, coral, mangroves, saltmarshes, seagrasses, and sea ice were included. Habitats were _weighted_ based on their protective ability identified by [Natural Capital Project](www.naturalcapitalproject.org). Depending on the habitats you include, you will need to find additional weights.
+
+In the global assessment, we did not include an assessment of the protection afforded by  man-made structures, such as jetties and seawalls. These structures cannot be preserved without maintenance and often have negative side effects (e.g. alter sedimentation rates causing erosion in new locations), thus they do not constitute long-term sustainable service and are mostly seen as a pressure. It gets tricky when structures are built to help reduce coastal erosion--they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied.
+
+<!-- I didn't find information on how to rank on the supplemental paper or natural capital... -->
+
+The goal status model for Coastal Protection developed for global assessments will likely be appropriate for independent assessments. However, it could be possible to incorporate the _differences in vulnerability_ between subcountry regions. Vulnerability can be quantified as the ability to evacuate, economic ability to reconstruct in case of damage. Physical properties may be available in OHI+ assessments, allowing for more a detailed understanding of the protective ability, and likelihood of exposure for each habitat type in different portions of the coastline.
+
+**_Examples of the Approaches_**
+
+<span style="font-size:0.9em">
+
+Assessment | Model Description and Reference Point | Evolution of Approach | Other Considerations
+-----------|-----------------------|--------------------------|-------------------
+[**Global 2012**](http://ohi-science.org/assessment/global) | The habitats included mangroves, coral reefs, seagrasses, salt marshes, and sea ice. The status was calculated as a function of the amount or condition of marine habitat relative to reference states and the ranked protective ability of each habitat type. | The reference point compares the current extent and condition to their condition in the early 1980s. | This focused on the EEZ scale and assumed that all coastal areas have equal value and equal vulnerability.
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as in Global 2012. | The reference was the same as Global 2012. | This approach followed the Global 2012 approach.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The 12 nmi boundary was used for each habitat type for mangroves, seagrasses, coral reefs, and salt marshes. Only costal portions were used for mangroves. The total reported extent divided by the coastal area of each state was used for seagrasses. For coral reefs we calculated the extent per coastal waters of each state using maps of coral reef distribution. The salt marsh extents for some states were from national statistics. | The reference condition was the mean of the predicted values for 1985-1987 using regional estimations for coral reefs. The ‘current’ condition or health was the mean of the predicted values for 2008-2010.  | Same goal model as Global 2012, while using local data.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | Salt marshes, seagrasses, and sand dunes were included. | Temporal reference points were set for each habitat. For salt marshes, the percentage of pre-industrialized habitat coverage; for sand dunes, the habitat extent between the 1950s and 1960s.  | Same as Global 2012, with more ambitious reference points for target habitat coverage.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | See Global 2012. Sand dune was the habitat of interest. | Reliable, comprehensive satellite photos from 1970 enabled an evaluation of the habitat extent of the sand dunes as its reference point. | Other important habitats, such as rocky reefs and the rocky intertidal flats, could not be included due to lack of data on current and/or past spatial extent and condition.
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The status is calculated in the same manner as in the Global assessment. Mangroves in the coastal strip (1 Km offshore and inland) were considered the main source of coastal protection, and was used for calculations. | The reference condition was the existing mangrove coverage in the protective area for 1991. | Values are measured in units of area (km2).
+[**China 2015**](http://ohi-science.org/assessment/China) | The approach is the same as in global assessments. Four habitats are measured: mangroves, seagrasses, salt marshes, and coral reef. | A temporal reference point for each habitat is set to its condition in 1980’s. | These four habitats provide the most coastal protection and have available data. Not all habitat exist in all provinces and time-series data of extent is poor for some. Time-series data on the condition of each habitat is not obtainable. However, rough estimate of relative change in coverage areas since the 1980’s was found in literature.
 
 </span>
 
@@ -3033,6 +2739,300 @@ Assessment | Developing the Model  | Setting the Reference Point | Other Conside
 [**Israel 2014**](http://ohi-science.org/assessment/Israel) | Archeological Protected Areas, Beaches of Special Public Interest, and Marine Protected Areas were assessed using the same approach as the Global assessment. | Reference point was set to be areas suggested to be protected by the government.
 [**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | This goal focuses on capturing the current value of the percentage of protected coastal areas (1 km onshore) and marine coastal (3 nm offshore) with respect to a fixed reference value. | The same as Global 2012. | Local data comes from Ministerio del Ambiente and Fundacion Natura. All areas considered are within the SNAP.
 [**China 2015**](http://ohi-science.org/assessment/China) |Status model is similar to global assessments. | The reference point is only 5% protection, a target set by national marine protection policies to achieve by 2020. | Only coastal marine protected areas was considered, since protected coastline information is not available.
+
+</span>
+
+### Livelihoods and Economies
+
+The jobs and revenue produced from marine-related industries are clearly of huge value to many people, even for those people who do not directly participate in marine-related industries. People value community identity, tax revenue, and indirect economic and social impacts of a stable coastal economy. This goal tracks **the number and quality of jobs and the amount of revenue produced across as many marine-related industries/sectors as possible** through two sub-goals, Livelihoods and Economies. A score of 100 reflects productive coastal economies that avoid the loss of ocean-dependent livelihoods while maximizing livelihood quality.
+
+In the global study, this goal does not attempt to capture any aspects of _job identity_ (i.e. the reputation, desirability or other social or cultural perspectives associated with different jobs). We make the assumption that all marine-related jobs are equivalent, such that, for example, a fisherman could transition to a job in mariculture or ship-building without affecting the score of this goal. There are also not adequate data to assess workers' _job satisfaction_ or _ecological sustainability_ of sectors. Future, finer scale applications of the Index could incorporate these key considerations.
+
+> Oil and gas industries typically are not included in this goal. The Natural Products goal does not include non-living items such as oil, gas, and mining products, because these practices are not considered to be sustainable. They are also done at such large scales that including them would essentially make OHI an index for oil and mining--and they are not truly an ocean product. Because these products are not included in terms of quantity extracted, it did not seem appropriate to include information regarding jobs, wages or revenue. However, oil and gas industries are considered a large employer and often generate large revenue for a region. Similarly, industries such as shipping, boat building, ports and harbors do not directly depend on a healthy ocean, but the demand for some of those boats (fishing boats, sailboats, yachts) is dependent on a healthy ocean and are also important providers of jobs and revenue. Ultimately, whether and how to include those data is a decision that should be made on a case-by-case basis by the individual OHI+ group. 
+
+#### Sub-goal: Livelihoods
+
+This sub-goal describes livelihood quantity and quality for
+people living on the coast. Livelihoods includes two equally important sub-components, the number of jobs, which is a proxy for livelihood quantity, and the per capita average annual wages,
+which is a proxy for job quality.
+
+**_Ideal Approach_**
+
+Ideally, this sub-goal would speak to the quality and quantity of marine jobs in an area. It would encompass all the marine sectors that supply jobs and wages to coastal communities, incorporating information on the _sustainability_ of different sectors while also telling about the _working conditions and job satisfaction_. The jobs and revenue produced from marine-related industries directly benefit those who are employed, and also those who gain indirect value from related economic and social impacts of a stable coastal economy, such as community identity and tax revenue. You should capture the indirect as well as direct benefits from jobs, wages and revenue from coastal communities.
+
+In your assessment, there is the opportunity to study the behavior of economic trends in your area. You can examine time-series with greater detail and, for example, establish a different time-periods that reflect economic cycles in your area, or even process the data to eliminate the “noise” from fluctuations and capture more persistent trends.
+
+> You will most likely simplify the models from the global assessments. Models in the global assessments adjust for currency differences using the the Consumer Price Index and Purchasing Power Parity, which you likely will not need to do.
+
+**_Practical Guidance_**
+
+The first step of this goal is to **identify the marine-related sectors in your area**. These sectors are important because the *Livelihoods* goal includes information about **jobs** and **wages** for those sectors. There are jobs that are directly connected to the marine environment, such as shipping, fishing, longshore workers, but also some that are connected indirectly, such as suppliers and supporting industries. For example, the sectors for which data were found in global assessments included tourism, commercial fishing, marine mammal watching, aquarium fishing, water and tidal energy jobs, mariculture, transportation and shipping, ports and harbors, ship and boatbuilding.
+
+After you have identified which jobs are in your area, you will want to find some **measure of their direct and indirect benefits**. Direct benefits of jobs include the number of jobs in each area, and the wages or income for such jobs. You could find such information from you local national statistical office, or economics bureaus, for example. Indirect benefits of these jobs to the local communities are calculated through the use of _economic multipliers_, with which you can attempt to estimate the revenue generated by jobs more broadly associated with marine sectors. It's encouraged to use economic multipliers from the literature.
+
+> One example to use economic multipliers is to multiply the number of fishermen by a multiplier to estimate larger economic effects, ranging
+from gear manufacturing companies to restaurants and movie theaters where the fishermen spend their income.
+
+Next you must think about how to use the data to infer **quality and quantity of jobs**. Do you have data through time so that you can see how the number of jobs or the wages per sector have changed over time? If all of the sectors change in the same way, for instance, this might show broader economic trends that you should account for.
+
+<!-- what are good ways to find satisfaction, identity, and sustainability information of different sectors? -->
+
+>It is highly recommended that you set the **reference point** for _jobs_ as a *temporal comparison* (eg. the number of jobs five years before), and for for wages as a *spatial comparison* (eg. highest observed value across reporting units). Comparing the number of jobs across different places, for instance, would require at the
+very least adjusting values by the size of the workforce in each location.
+
+**_Examples of the Approaches_**
+
+<span style="font-size=0.9em">
+
+Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
+---------------|-----------------------|-------------------------|---------------------------------------|
+[**Global 2012**](http://ohi-science.org/assessment/global) | This was measured as the number of direct and indirect jobs across sectors within a region plus the average purchasing power parity (PPP)-adjusted wages within each sector. Jobs were summed across sectors and wages were averages across sectors within each region. | The reference point for jobs was a temporal comparison using a moving-window value; the reference point for wages was the highest average annual wage observed across all reporting units. A score of 100 indicated that the number of marine jobs had not reduced relative to the number five years previously, and that the wages in the area were the highest anywhere. | The goal model assumed there was no-net-loss of jobs in order to account for broader economic trends. The economic multipliers were used for jobs and revenue but not wages.
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The model was similar to Global 2012, with some simplifications. | The reference point was the same as Global 2012. | The approach was the same as Global 2012 except for a few simplifications in multipliers, wage data, and jobs data. This was done because of data availability and in order to correct for national macroeconomic events across all sectors.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The method was the same as Global 2012. | The reference point was the same as Global 2012. | The approach was the same as Global 2012.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | This goal follows the same model as in Global 2012, using local data for the sectors of living resources, tourism and recreation, shipping and transport, marine related construction, and ship and boat building or repair. Data and sector-specific multipliers came from the National Ocean Economics Program (NOEP). | The reference point was the same as in Global 2012. | This study followed the Global 2012 approach but used local data. It recognized that sectors and economic activity within a region can be influenced by activities outside the region.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | See Global 2012 assessment. | No-net-loss reference point. | 
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is the same as the Global assessment. | A temporal reference poinst was used for both the number of jobs and salaries. 2009 values were used as the reference point for jobs, and values of 2010 for salaries. | Data for jobs, wages, and unemployment were gap-filled. 
+[**China 2015**](http://ohi-science.org/assessment/China) |Status model is the based on the number of direct jobs across marine sectors and the average disposable income among rural and urban inhabitants within a region. |Both jobs and wages have a spatial reference point of the maximum value among all provinces across all years. | Eleven marine sectors are assessed. The number of jobs per sector is not readily available and is extenuated from the nation-wide number of employments for each sector and the total number of marine-related jobs per province. There is not enough information on indirect jobs and is thus left out of the calculation. Due to unavailability of wage information per sector, wage is substituted by disposable income.
+
+</span>
+
+#### Sub-goal: Economies
+
+Economies captures the economic value associated with marine industries using revenue from marine sectors. It is composed of a single component, revenue.
+
+**_Ideal Approach_**
+
+Ideally, revenue data would be collected for all coastal regions, and traced from sectors both directly and indirectly related to marine industries. When these data are not available it is possible to use revenue data at a larger scale and adapt them to a coastal area based on the population distribution. The reference point in this sub-goal will likely be set with a moving-window temporal approach.
+
+**_Practical Guidance_**
+
+A number of sectors were not included in the Global Assessments because sufficient data did not exist. However, it might be desirable to include sectors such as ecotourism, sailing, kayaking, surfing, and offshore wind energy production, and scientific research, among others. It may be practical to include the same sectors in the *Livelihoods* and the *Economies* subgoals.
+
+> The quantity of Wild-caught fisheries, Mariculture, and participation of Tourism & Recreation are considered separately in specific goals, whereas the monetary component is captured in L&E.
+
+In the global assessment, revenue has a moving-target temporal **reference point** by comparing the value in the current year to values in previous years. Global assessments used a five-year moving-window because it is intended to capture short-term changes in the trajectory. But then you must consider if that amount of time would represent economic trends. If there is a not economic downturn, do you want to reward an increasing number of jobs, or reward maintaining the same
+number of jobs?
+
+We highly recommend that this remains a temporal comparison so that a specific place is compared to its performance in the past and not to anywhere else.
+
+>You may find resilience metrics that can be
+used throughout your assessment. There are many economic indices and some might be appropriate for your area. For example, the _Global Competitiveness Index_ was used in global assessments as a resilience for this goal because it means that marine jobs are more likely to be maintained if an area gets a good score on the Competitiveness Index.
+
+**_Examples of the Approaches_**
+
+<span style="font-size:0.9em">
+
+Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
+---------------|------------------------------------------------|-----------------------------|-------------------|
+[**Global 2012**](http://ohi-science.org/assessment/global) | The status used the total adjusted revenue generated directly and indirectly from each sector at current and reference time points. | In the economies sub-goal, revenue had a moving target temporal comparison. A score of 100 would indicate that revenue has not decreased compared to its value five years previous. The years used for GDP data were based on the average current year and average reference year across the sector data sources. | The study accounted for a region's GDP trend. The economic multipliers were used for jobs and revenue but not wages. The study assumed that sector-specific job and revenue multipliers were static and globally consistent, but distinct for developed versus developing regions.
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The model was same as Global 2012, with a few simplifications;  revenue data were adjusted by dividing by GDP per region, reported in 2013 USD. | The reference point was the same as Global 2012. | The approach was the same as Global 2012, with simplifications.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The method was the same as Global 2012. | The reference point was the same as Global 2012. | The approach was the same as Global 2012.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | The method was the same as Global 2012, but with local sectors represented. | The reference point was calculated in the the same way as Global 2012. | The approach was the same as Global 2012.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | See Global 2012 assessment. | See Global 2012 assessment. |
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | Similar to Global 2013-2015. Value added (VA) was added as a measure of local economies, ie. earnings of each sector. | The temporal reference point was the Value Added by each sector in 2007. |  Value added was used to replace GDP, which is more appropriate as measure of national economies. 
+[**China 2015**](http://ohi-science.org/assessment/China) | Status model is the same as in global assessments| The spatial reference point is the maximum revenue across all regions over all years. | Data on revenue generated from each marine sector is not available, and thus total revenue from all sectors are used for the assessment.
+
+</span>
+
+### Tourism and Recreation
+Tourism and recreation in coastal areas is a major component of thriving coastal communities and a measure of how much people value ocean systems, i.e. by traveling to coastal and ocean areas. This goal is not about the revenue or livelihoods that are generated by tourism and recreation (that is captured in the livelihoods goal, section 6F above) but instead captures **the value that people have for experiencing and enjoying coastal areas**. A score of 100 means a region utilizes its full recreational potential without harming the ecosystem.
+
+*Ideal Approach*
+
+Ideally, you would find information for how the ocean in your area is used and enjoyed by local residents and tourists alike. How many international or domestic vistors? When are they visiting? How long are they staying? What activities are they enjoying? You model should capture the the full range of values and touristic and recreational activities. A measure of sustainability should also be included in the model. The type of reference point used will depend on the data available.
+
+*Practical Guidance*
+
+<!--Old text here. I'm not sure if this is useful b/c we are not trying to predict tourism: There are potentially dozens of variables that affect the number of people that engage in tourism and recreation within a region and where they go. These include local and global economies, infrastructure to support the activities, promotion of particular locations, safety and security, and even political stability. -->
+
+First look for information that directly reflect how people enjoy the ocean, such as boat rentals, resort registries, whale watching etc. If you can't find information on visitors, look for proxy data that are indirectly related. For example, do people have access to boating areas, or to surfing spots? Are tourism-related industries (eg. hotel employment, restaurant) increasing or decreasing?
+
+This goal demonstrates the flexibility of the OHI+ approach and will necessarily draw from different data sources than the Global Assessment. It is encouraged to to think creatively and to look at what other OHI+ assessments have done when developing this goal model. For example, in the Brazil Assessment the density of hotel employees per state was used as a metric to determine how well touristed coastal areas were. This was better than using international travel information, as was used in the Global Assessment, because for a large country like Brazil, internal travel would not have been accounted for.
+
+The best way to represent the sustainability term for this goal is to use a local indicator or a measure of tourism sustainability or competitiveness. Otherwise use the TTCI value from the Global 2013 assessment for the study area (applied evenly across all regions).
+
+The **reference point** used will depend upon the types of data. Does your country have industry growth rate targets? Are there measures on sustainable levels of tourism and recreational activities based on ecological factors? Do you want to increase tourism, or instead ensure it does not decline?
+
+**_Examples of the Approach_**
+
+<span style="font-size:0.9em">
+
+Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
+---------------|------------------------------------------------|-----------------------------|-------------------|
+[**Global 2012**](http://ohi-science.org/assessment/global) | This goal measured the number of international tourists arriving by airline to coastal regions, accounting for their average length of stay, and adjusting by population size. The data were found through international airline arrivals and the Tourism Competitiveness Index (TTCI) from the World Economic Forum. | This study used a spatial comparison reference point that compares each region to the best performing regions. To compare regions, arrivals were divided by the region’s population. | There were data limitations that were comprehensive data available on a global scale. This approach did not account for domestic tourism.
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The study used the direct employment in the tourism industry relative to total labor force and used the TTCI. | The reference point was the best scoring region across all years and rescaled all other regions across all years to that score. All regions above this score received a status score of 100. | A new model was developed using employment in the tourism sector as a proxy for the total number of people engaged in coastal tourism and recreation. It involved assumptions, but these data were of better quality and closer to what this goal is trying to capture than those used in Global 2012.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The model developed for Global 2012 was changed to use information on hotel employees for each coastal municipality. The status was measured for each coastal state as the density of hotel jobs in coastal areas. | The reference value used was the highest status value across all states over the time series, which was Rio de Janeiro in 2011. | The goal model assumes that the majority of coastal hotels are located in proximity to the shoreline, and that the number of hotel employees is directly proportional to the volume of tourists an area receives.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | There were data available for changes in participation in 19 different marine and coastal specific recreational activities over time. These observations were used to produce a predictive model that was employed to estimate participation rates in recent years. | The reference point was temporal, compared to 2000. | The approach took advantage of  time-series data. Participation rates more closely matched the intent of this goal and were a more robust proxy than international tourist arrivals data, and the reference point was spatial instead of temporal.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The amount of coastal park visits and hotel occupancies were used as as a proxy for the number of people actually engaged in coastal tourism. Status of the two indicators were calculated separately and then weighted to calculate the status of this goal (ie. 1/3 for hotels and 2/3 for parks). | Hotels reference points were taken from official planning targets for year 2020.
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is similar to Global 2012 assessment. The number of domestic and international tourists in each region were the product of country-wide data and the fraction of tourists per region. | The reference points were the number of domestic visitors and international visitors estimated for 2019. These values are calculated by province assuming an annual growth of 6.9% proposed by Integral Tourism Marketing Plan of Ecuador -PIMTE- 2014 for inbound tourism, and a growth of 2.44% for domestic tourism. | No local data were available for other indicators such as activities, hotel employments, etc. But we were able to add domestic tourism data to supplement international tourism data. 
+[**China 2015**](http://ohi-science.org/assessment/China) |Status model is based on the ratio of visitors and coastal area. | The spatial reference point was the region with the highest ratio across all years. |The number of visitors included both domestic and international visitors. Travel and Tourism Competitive Index (TTCI) was also incorporated.
+
+</span>
+
+### Clean Waters
+
+People value marine waters that are free of pollution and debris for aesthetic and health reasons. Contamination of waters comes from oil spills, chemicals, eutrophication, algal blooms, disease pathogens (e.g., fecal coliform, viruses, and parasites from sewage outflow), floating trash, and mass kills of organisms due to pollution. People are sensitive to these phenomena occurring in areas that they access for recreation or other purposes as well as for simply knowing that clean waters exist. The Clean Water goal captures **the degree to which local waters are unpolluted by natural and human-made causes**. This goal scores highest when the contamination level is zero.
+
+**_Ideal Approach_**
+
+Ideally, data would be available and combined from different categories of marine pollution that can directly cause waters to become unsuitable for recreation, enjoyment, and other purposes. These factors typically include eutrophication (nutrients), chemicals, pathogens, oil pollution, and marine debris. Having good data from each of the desired categories, such as those pulled from a repeated effort at monitoring the conditions of the coasts, would be ideal. The Status of these components is the inverse of their intensity (i.e., high input is a bad status).
+
+**_Practical Guidance_**
+
+First think about what kind of point and non-point sources of pollution are in your area. Are there known sources of trash and marine debris? Is there a population that does not have access to sanitation? Does your wastewater get effectively treated before it is discharged into the environment? How does urban runoff contribute to your local coastal waters? Where possible, you should think about categories of inputs that are not used in the Global Assessments. These include information on toxic algal blooms, oil spills, turbidity or sediment input, and floating trash, and think about how they can fit in to the model areas.
+
+<!-- | Input | Related data |
+|-----|----------|
+| Nutrients | Modeled plumes from land-based nitrogen inputs, fertilizer usage, algal blooms, eutrophication |
+| Pathogens | Access to sanitation, population density, wastewater treatment |
+| Chemicals | Organic pesticides, inorganic pesticides, toxic chemicals, chemicals from shipping, urban runoff |
+| Trash | Floating trash, plastic inputs, uncollected waste |
+| Other | Turbidity, altered sedimentation | -->
+
+Once you identify the sources, you should try to find _in situ_ measurements of contamination. This could include monitoring data for pathogen levels, chemical contaminants, or data on the frequency and location of anoxic conditions or eutrophication. If direct measurements of water pollution are unavailable, indirect indicators, or proxy data, could be used. For example, land-based nutrients pollution is a proxy measure to nutrient input. The number of people who do not have improved access to sanitation could indicate the level of pathogen pollution.
+
+If you don't have such information, or have partial information on one of these inputs, you could combine it with population data or model the data to estimate how much of an impact it has on coastal areas. Do you have population density information over time? You could then use this later to calculate the trend.
+
+>In the 2012 Global Assessment, these data layers are scores spatially for 3 nm out from shore. This is because it concentrates the effect of the inputs to coastal regions and makes them visible to the shoreline. You can change this value in your spatial analysis.
+
+
+You should use more refined data than the Global Assessment data, because they rely heavily on proxy data for water quality. However, you should follow the same approach of the _geometric mean_ to sum up the data layers that you find. This guarantees that if any one of the components scores poorly, the higher scores from other components will note hide the effect.
+
+
+> The Clean Waters goal is connected to the **Pressures** layers. You should approach the both of them at the same time where possible. (See the sections on **Pressures and Resilience** to understand more.)
+
+>In the Global Assessment, marine debris from plastic pollution is one of the pressures layers. The same data are also used in the **Clean Waters** goal, but they are inverted such that a low value of debris is a high score in the goal. This is commonly done for these interchangeable data layers.
+
+For each contamination category, a reference point is set and all data in this category is scaled to 1. The type of **reference point** used will depend on the data available. You may decided that an ocean completely rid of pollution is ideal, or you may find that beach closure of less than 10 days per year due to _E.coli_ contamination is acceptable.
+
+**_Examples of the Approach_**
+
+<span style="font-size:0.9em">
+
+Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
+-----------|------------------------|-------------------|-------------------
+[**Global 2012**](http://ohi-science.org/assessment/global) | The status was calculated as the geometric mean of four components, eutrophication (nutrients), chemicals, pathogens and marine debris.  | Reference point is when the contamination level is zero. |  The lack of direct measurements meant that modeled and proxy data were used. The status of this goal was also used in the pressures layers.  
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The model was same as Global 2012, with a few simplifications;  revenue data were adjusted by dividing by GDP per region, reported in 2013 USD. | The reference point was the same as Global 2012. | The approach was the same as Global 2012, with simplifications.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The goal model was the same as Global 2012. Data used to model the components for eutrophication (nutrients) and chemicals was the same as in Global 2012, while pathogens and debris were localized to state level data.  | The reference point approach was the same as Global 2012.  | The study used better, or more local, data than the Global.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast)  | The model was the same as Global 2012, with regional instead of global data. | The reference point was set as the number of days when beaches were closed to bathers because pathogen counts were higher than state standards. | The study used more local data than the Global. |
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The goal model was the same as Global 2012 with local data. | The reference points for each category of pollutants are government-set standards. |
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is similar to Global 2012. The same four indicators were used. However, trend data were added as follows: Coastal human population as a proxy for trend in trash; Fertilizer consumption as a proxy for trend in nutrient pollution; Trends in access to improved sanitation as a proxy for trend in pathogen pollution; Pesticide consumption as a proxy for trend in chemical pollution. | The reference point is a zero pollution state for each of the components considered. |
+[**China 2015**](http://ohi-science.org/assessment/China) | Status model is similar to global assessments. Pollution is based on nitrogen, phosphate, chemical oxygen demand, and oil pollution. | The same reference point as Global 2012 was used that waters are free from all pollution. | The study used all local data. Data on pathogens and marine debris are poor or unavailable and thus were ignored in the model.
+
+</span>
+
+### Biodiversity
+
+People value biodiversity in particular for its existence value. The risk of species extinction generates great emotional and moral concern for many people. As such, this goal assesses **the conservation status of species based on the best available global data through two sub-goals: Species and Habitats**. Species were assessed because they are what one typically thinks of in relation to biodiversity. Because only a small proportion of marine species worldwide have been mapped and assessed, we also assessed Habitats as part of this goal, and considered them a proxy for condition of the broad suite of species that depend on them. We calculate each of these sub- goals separately and treat them equally when calculating the overall goal score. A score of 100 means all species are all species are at very low risk of extinction, and all habitats are conserved.
+
+#### Sub-goal: Species
+This sub-goal assesses the health of all marine species present in a region, including endangered species and species in relatively good conditions. The presence of higher-risk species leads to a higher score.
+
+> Data for this goal are also used in Sense of Places sub-goal: Iconic Species. It will be effective for goal keepers of Biodiversity and Sense of Place to work together on data gathering.
+
+**_Ideal Approach_**
+
+Ideally, you would find data for all species present in your region including information on their _habitat ranges_ along with scientific studies that speak to the _health of their populations_.
+
+**_Practical Guidance_**
+
+You should start by trying to _find spatial information for species_ that occur in your area and determine _whether or not they have been scientifically assessed and given a conservation status_. It is best if you only use species for which there are both spatial data and an assessment. In the global assessment, we combined data from recent assessment the International Union for the Conservation of Nature [(IUCN)](http://www.iucnredlist.org/technical-documents/spatial-data) (www.iucnredlist.org/technical-documents/spatial-data) and [AquaMaps](http://aquamaps.org/) (aquamaps.org). These data sets provide a geographic snapshot of how total marine biodiversity is faring, even though it is a very small sub-sample of overall species diversity.
+
+IUCN provides global species assessments that indicate the distribution and the conservation status of species, ranging from Least Concern to Critically Endangered to Extinct. These risk categories were turned into these into weights (between 0 and 1) for calculations. AquaMaps offers additional spatial data for species not covered by the IUCN distribution maps. Both evaluations chooses a taxon (e.g. sharks) and a group of world experts assess it comprehensively. Locally identified species identified in a regional assessment may not be in the global database because they do not belong to one of the taxa that have been selected for assessment, or because the experts that did the assessment did not know that information existed. In either case, there is no connection between what IUCN or AquaMaps report and what assessments are done locally. Therefore, it might not be fair to penalize a study area for missing species. For biodiversity, it is unrealistic to expect that all species are assessed, so it seems unfair to penalize for un-assessed species. In the fisheries goal, there are penalties for species that are exploited but not assessed, because if there are landings data, it means they are somewhat measurable, and so it is reasonable to expect they should be at least monitored.
+
+<!-- It might be reasonable to penalize unassessed iconic species. It is a smaller list of species that are specifically identified as being of interest, for one reason or other. This would work for species that have some form of assessment - unless that information already exists, it might be unrealistic to try to produce the data layer required to develop a new model. -->
+
+For regional assessments, local studies of marine species status and local datasets are best here. The spatial information can be a range map with simple presence or absence information, or it can have more detailed data. You can complement the species list search with a scientific literature search to see if anyone has scored the species status in a way that you can use. One thing to keep in mind when using local data sets is that _local lists might focus on endangered species and leave species in relatively good conditions un-assessed. This could result in poorer scores._
+
+If spatial distribution information for individual species is not available, the goal model could be simplified to be based on threat-status-weighted average in your region.
+
+You should also think about the **reference point** for scores that signal poor Biodiversity status. You can use the same threshold as the Global Assessments which say that _places with extinction risk scores greater than seventy-five percent will get scores of zero_. This is an estimation based on the literature of mass extinctions (e.g., Barnosky *et al*., 2011) and could be applied across scales. You don’t need all species extinct for there to be a zero, so you will have to choose how to rescale it, and whether the risk effects are linear or nonlinear.  
+
+<span style="font-size:0.9em">
+
+**_Additional Note: Defining spatial regions and map considerations_**
+
+Once you have gathered the data, the treatment of it will matter for the model and goal score calculation. Do you know how the data were collected? Do you have information on sampling effort? If you don't know, you may not be sure whether changes in condition are due to monitoring efforts or biodiversity change, and you therefore may want to consider the uncertainty of your model.
+
+In any case, the original logic of the **Species** sub-goal of the **Biodiversity** goal is to represent the species present relative to the proportion of their range within a given region. The goal is to summarize extinction risk for an area across assessed species, and assign it appropriately so that the loss of species scores poorly. You should consider whether the impacts to local species status are linear or non-linear. Will drawing borders affect how your scores are assigned?
+
+When considering how to change the model, you should think about the outcome of the score on your decisions. For instance, will weighting a "Critically Endangered" species higher on the scale result in the inclusion or exclusion of more rare species? Will the way you aggregate spatial data to summarize extinction risk for your area take into account the influence of species with smaller ranges size, or will that information be lost in the averaging process? An inherent disadvantage for conservation may occur when rare species get rarer in the future, and will therefore have a relatively small influence on the score while common species drive the results.
+
+ Range size has an impact on score results. For example, if you use the current model, none of the cone snail species listed below will have a big impact on the **Species** sub-goal score because to their small range size that covers one cell of map area. However,  the 0.8 score for *Conus roeckeli* shows that it is a rare species as assessed by the IUCN. On the other hand, the coral *Acropora palmata* is also rare and yet covers a large range.
+
+Scientific name | IUCN Category | Trend | Map Cells
+---------------|-----------------------------|-------------------|----|
+*Conus salreiensis* | Critically Endangered |  Decreasing | 1
+*Conus trochulus* |  Near Threatened |  Unknown | 1
+*Conus roeckeli* | Least Concern | Unknown | 1
+*Acropora palmata* | Critically Endangered | Stable | 1158
+
+</span>
+
+
+**_Examples of the Approach_**
+
+<span style="font-size:0.9em">
+
+Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
+--------|------------------------|-----------------|---------------------|
+[**Global 2012**](http://ohi-science.org/assessment/global) | The status of assessed species was calculated as the area- and threat status-weighted average of the number of threatened species within each 0.5-degree global grid cell. Species distribution and threat category data came from the IUCN Global Marine Species Assessment.  | The reference point was to have all species at a risk status of Least Concern. We scaled the lower end of the biodiversity goal to be 0 when 75% species are extinct. | There were no measures of integrity measures included. The species chosen represents a partial sample of overall species diversity.
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as Global 2012. There were data updates available for 15 out of 6,080 species. | The reference point was the same as Global 2012. | Updates were available for data used for this sub-goal.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The status of 504 assessed species was calculated as the threat status-weighted average of species occurring in the Brazilian EEZ. The sub-goal was calculated at the national level, giving equal weight to all species occurring in Brazilian waters. Threat weights were assigned based on the IUCN threat categories status of each species. | The reference point was the same was Global 2012. | This study substituted global assessment data for regional data whenever available. This study did not weight by area of occurrence as in Global 2012 because distribution maps were not available for all species.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | The model was the same as Global 2012, with regional data available for threat categories. | The same reference point was used as the Global model. | This followed the Global model, but used local data. This study did not weigh by area.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The same as Global 2012. | Where all species within the region are classified with a risk status of Least Concern. | A list of species was composed based data from the Israel Marine Mammal Research and Assistance Center (IMMRAC) and cross-referenced with the IUCN data. Distribution maps were available for some species (from a global 0.5° grid). For those species not included in the distribution maps in the Mediterranean, data from assessments in the Black Seas were used. Additional data gap filling was done. 
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is similar to Global 2012. This goal calculates the average IUCN threat category for all species in the study area, broken down by the type of habitat where they live. That average is weighted by the percentage of area occupied by each type of habitat in the Gulf region: soft bottom and hard bottom. | When all species are in the category of "least concern". | The species list was adopted from the IUCN Red List threat categories with aggregated species lists and 112 species from local sources. 
+[**China 2015**](http://ohi-science.org/assessment/China) | Status model is similar to global assessments. However, average extinction risk of all assessed species was only calculated as the weighted sum of the number of species in each threat category, since habitat area per species is not obtainable. | The reference point is to have the risk status of all iconic species at lowest risk of extinction. | This study used a combination of local endangered species list and IUCN list. 
+
+</span>
+
+#### Sub-goal: Habitats
+The Habitats sub-goal includes all habitats in the study area, and assess their health condition and coverage area.
+
+>Habitat is included in the Biodiversity goal to provide a more complete picture of diversity in the system. This is because in global assessments assessed species data were limited and the diversity of habitats can be included with the assumption that healthier habitats mean healthier species. Therefore if you have comprehensive species assessments in your area you may not need to include all habitats as a sub-goal, instead only including living habitats (algae, corals) along with species in the Species sub-goal.
+
+**_Ideal Approach_**
+
+Ideally, information on the area extent (square kilometers) and condition of every habitat type would be available over a long period of time.
+
+**_Practical Guidance_**
+
+You will first find what habitats are in your study area, both in the _coastal regions_ and _offshore_. In the global assessments, data were available for mangroves, coral reefs, seagrass beds, salt marshes, sea ice, or subtidal soft-bottom habitats, but there are likely other important habitats in your region.
+
+Once you determine what habitats are in your area, you will need information about _the area extent of each habitat_ within each region of your study area. You should consider whether and how far they go offshore and inland. Spatial data are preferred: you will be able to calculate the total square kilometers of each habitat within each region. For example, in global assessments mangrove area within 1 kilometer of the coastline were included, but this distance could change in OHI+ assessments.
+
+You will need to include area and condition data specific to your study area and not rely on the global data provided. This is because the habitat data provided for your assessment are either over-representative by allocating the study area's data equally to each subcountry region, or can be misrepresentative by allocating a proportion of those data to each subcountry region (based on the offshore area of each region to the total area). Either case assumes that if a habitat was present in the country, it could be found anywhere (which is not the case with study areas that span many degrees of latitude), and the first case inflates the habitat coverage in the study area.
+
+> TIP 1: Do you have maps that show current habitat distributions and maps that show historical habitat distributions? If so, you could extract that data for each of your regions to get a current and reference area. In the U.S. West Coast assessment (2014), researchers went to the local public library to find hand-drawn maps of historical salt marsh and sand dune extents in California. You could also use summarized habitat data that exists in tables or are already compiled in another source.
+
+> TIP 2:  If local data is not available, you obtain certain habitat extent data from the global assessment, which used high resolution spatial extend data from this study:
+<span style="font-size:0.9em">_Hamilton, S. & Casey, D. (2014). Creation of a high spatiotemporal resolution global database of continuous mangrove forest cover for the 21st Century (CGMFC-21): a big-data fusion approach. [arXiv:1412.0722](http://arxiv.org/ftp/arxiv/papers/1412/1412.0722.pdf)_.</span>
+Good data to obtain from this study include shoreline, mangrove, soft bottom, and sea ice.
+
+The _condition_ of the habitats can be measured in different ways, depending on the data available. Indicators of condition could include habitat density, susceptibility to pathogens, or change in species composition or growth rates from impacts such as overgrazing. Look for studies assessing habitat integrity or condition specifically in your area.
+
+>In global assessments, direct information about coral condition was not available so it was based on the percentage of "living cover" on a coral reef relative to the potential range of the reef. In other words, estimates of coral cover within transects of certain sites were repeated in time and we used that rate of change in time as an indication of health of the reefs in the whole region. The difficulty lies in 1) having enough different locations sampled that you can say something about the whole region and 2) finding studies that did repeated measures in time, in the same location, over at least 20 years. In the Global 2013 assessment, there were so few datasets that satisfied this condition that we had to pool observations from different locations. Mean predicted values for each region from 1985-1987 were set as reference points.
+
+
+If possible, you will want to gather habitat area and condition data through time so that you can calculate the **trend**. Ideally, there will be enough years of data to directly calculate the recent change in habitat condition as the trend. This isn't always the case, and proxies or estimates might need to be used. For example, due to spotty salt marsh data we created trend categories of increasing (0.5), stable (0), and decreasing (-0.5) based on available data.
+
+The **reference point** will likely be based on historic habitat area coverage and condition, with the assumption that habitat destruction has been and still is occurring and the target is to return to some point in the past. You will need historical data for this, from satellites, published papers, or even hand-drawn maps. The challenge is to find a reference point that is both *ambitious* and *realistic* (based on the S.M.A.R.T. principles: see _Conceptual Guide_), using the data available. If data allow, it will be possible to set a reference point that is more ambitious than that used in global assessments.
+
+Alternatively, the reference point could be guided by a policy target. For example, are there any climate change policies in your area, with defined targets and objectives? Are there any restoration or carbon storage projects in your area? Do any organizations offer guidance on the amount of carbon storage your management policies should be aiming for?
+
+**_Examples of the Approaches_**
+
+<span style="font-size:0.9em">
+
+Assessment | Developing the Model  | Setting the Reference Point | Other Considerations
+--------|------------------------|-----------------|---------------------|
+[**Global 2012**](http://ohi-science.org/assessment/global) | The status was assessed for all habitats for mangroves, coral reefs, seagrass beds, salt marshes, sea ice edge, and subtidal soft-bottom habitats. Status was assessed as the average of the condition estimates for each habitat present in a region. | The reference years were between  1980-1995 and the current years were between 2001-2010. The current condition was compared 1980 for salt marshes and sand dunes, and it varied by site for seagrasses. | Anomalous values occurred due to data availability issues. A significant amount of pre-processing of the habitat data was needed to fill data gaps and resolve data quality issue
+[**Global 2013 - 2015**](http://ohi-science.org/assessment/global) | The goal model was the same as 2012. | The reference was the same as Global 2013. | The same model as 2012 was used.
+[**Brazil 2014**](http://ohi-science.org/assessment/Brazil) | The goal model was the same as as Global 2012 for mangroves, coral reefs, seagrass beds, salt marshes, and subtidal soft-bottom habitats. | The timeframes between current and reference condition varied across habitats using a 20-year gap. | Information from a few point estimates had to be used to infer the health of many habitats.
+[**U.S. West Coast 2014**](http://ohi-science.org/assessment/US-West-Coast) | Salt marshes and seagrass beds were considered. Extent was used and habitat health was not used. | Temporal reference points were set for each habitat. For salt marshes, the percentage of pre-industrialized habitat coverage; for sand dunes, the habitat extent between the 1950s and 1960s. | The study required reconstructions of historic habitat extents in order to set more ambitious targets.
+[**Israel 2014**](http://ohi-science.org/assessment/Israel) | The goal model is the same as Global 2012 for two habitats: sand dunes and soft-bottom habitats. | Reliable, comprehensive satellite photos from 1970 enabled an evaluation of the habitat extent of the sand dunes as its reference point. For soft-bottom habitat we utilized relevant pressure as a proxy of habitat conditions. | These habitats were chosen because they represent a large portion of regional coastal and marine environments and because they have data with relatively comprehensive temporal and spatial coverage. Other important habitats such as rocky reefs and the rocky intertidal could not be included due to lack of data on current and/or past spatial extent and condition. 
+[**Ecuador - Gulf of Guayaquil 2015**](http://ohi-science.org/assessment/Ecuador) | The approach is the same as Global 2012. Two types of habitats are considered: soft bottoms and mangroves. | For soft bottoms, the reference point was when is no deterioration of habitat due to the effects of trawling in the area. The reference point for mangroves was its extent in 1991. | 
+[**China 2015**](http://ohi-science.org/assessment/China) | See Global 2012. | A temporal reference point for each habitat is set to its condition in 1980’s. | Three types of habitats were assessed: seagrasses, saltmarsh, and mangroves. Not all habitat exist in all provinces and time-series data of extent is poor for some. Time-series data on the condition of each habitat is not obtainable. However, rough estimate of relative change in coverage areas since the 1980’s was found in literature. 
 
 </span>
 

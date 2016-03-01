@@ -37,16 +37,16 @@ in_md = c(
   'intro_webapp.md',                                 # reviewed for 07/09 push. TODO: interpreting a flower plot
   'update_webapp.md',                                # reviewed for 07/09 push
   'intro_goalbygoal.md',                             # added on 07/15
-  'practical_AO.md',                   # TODO: review and update
-  'practical_BD.md',                   # TODO: review and update JSL ICO/LSP #476
-  'practical_CP.md',                                # TODO: review and update
-  'practical_CS.md',                             # TODO: review and update JSL #392, #367 #52 #488
-  'practical_CW.md',                                # reviewed 11/23
-  'practical_FP.md',                                # TODO: review and update
-  'practical_LE.md',                                # TODO: review and update
+  'practical_FP.md',
+  'practical_AO.md',                
   'practical_NP.md',
-  'practical_TR.md',                                # TODO: review and update
+  'practical_CS.md',  
+  'practical_CP.md',                              
   'practical_SP.md',
+  'practical_LE.md',                              
+  'practical_TR.md',                              
+  'practical_CW.md',                            
+  'practical_BD.md',                                 # TODO: review and update JSL ICO/LSP #476
   'pressures_resilience.md',                      
   'file_prep_instructions.md',
   'model_descript_instructions.md',
