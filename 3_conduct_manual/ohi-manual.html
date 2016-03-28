@@ -1255,7 +1255,7 @@ now the data is in a nice and clean format in one table, we can do the status ca
   mutate(dimension = &quot;trend&quot;)</code></pre>
 <p>However, for most other goals, <strong>trends are calculated in a regression model based on the most recent 5 years of status</strong>:</p>
 <pre><code>trend = StatusData %&gt;%
-   filter(year &gt; (max(year)-5)) %&gt;%                  # select the most recent 5 years of data
+   filter(year &gt; (max(year)-4)) %&gt;%                  # select the most recent 5 years of data
    group_by(rgn_id) %&gt;%
    do(mdl = lm(Status ~ year, data = .)) %&gt;%         # regression model
    summarize(region_id = rgn_id,

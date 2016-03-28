@@ -137,7 +137,7 @@ However, for most other goals, **trends are calculated in a regression model bas
 
 ```
 trend = StatusData %>%
-   filter(year > (max(year)-5)) %>%                  # select the most recent 5 years of data
+   filter(year > (max(year)-4)) %>%                  # select the most recent 5 years of data
    group_by(rgn_id) %>%
    do(mdl = lm(Status ~ year, data = .)) %>%         # regression model
    summarize(region_id = rgn_id,
