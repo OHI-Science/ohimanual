@@ -65,7 +65,7 @@ Conducting an assessment requires both an understanding of how past assessments 
 
 <!-- Navigating through the WebApp can help frame your thinking and introduce you to the structure of inputs that will be required for the OHI Toolbox software. -->
 
-![Best practices of OHI+ assessments](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=960&h=600)
+![Best practices of OHI+ assessments](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=1150)
 
 ### Incorporate core values and characteristics into the OHI assessment framework before gathering information
 
