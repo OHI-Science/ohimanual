@@ -124,7 +124,7 @@ Each document should have the following information:
 8. The units of data
 9. Any other observations or explanations about the data
 
-## 3. Pressures and resilience
+## 3. Pressures and resilience data
 
 Remember that for any pressures and resilience measures included in the OHI matrices, there must be data available for each region in your study area.
 

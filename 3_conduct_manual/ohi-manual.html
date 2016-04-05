@@ -186,7 +186,7 @@
 <li><a href="#naming-data-layers"><span class="toc-section-number">10.2.2</span> Naming data layers</a></li>
 </ul></li>
 <li><a href="#b.-description-files-to-accompany-each-data-layer"><span class="toc-section-number">10.3</span> 2b. Description files to accompany each data layer</a></li>
-<li><a href="#pressures-and-resilience-1"><span class="toc-section-number">10.4</span> 3. Pressures and resilience</a><ul>
+<li><a href="#pressures-and-resilience-data"><span class="toc-section-number">10.4</span> 3. Pressures and resilience data</a><ul>
 <li><a href="#pressures"><span class="toc-section-number">10.4.1</span> Pressures</a></li>
 <li><a href="#resilience-1"><span class="toc-section-number">10.4.2</span> Resilience</a></li>
 </ul></li>
@@ -603,8 +603,8 @@ So I am guessing that is all that is really needed.--->
 <p>Once you complete your assessment with the <code>subcountry2014</code> (or equivalent) scenario, further assessments can be done simply by copying the <code>subcountry2014</code> folder and renaming it. This can be done for future assessments, for example <code>subcountry2016</code> or <code>subcountry2018</code>, which eventually would enable you to track changes in ocean health over time. You can also copy scenario folders to explore different policy and management scenarios, for example <code>subcountry2014_policy1</code>.</p>
 <p>This figure illustrates the files contained within the assessment repository’s <code>subcountry2014</code> scenario folder, and in which step of the Toolbox workflow they are associated with. Important files are either <em>.csv</em> text files or <em>.R</em> script files. Files are organized into different folders within the <code>subcountry2014</code> folder, and you will modify some of these files while leaving others as they are.</p>
 <div class="figure">
-<img src="https://docs.google.com/drawings/d/1zHe1Gp2L7xN04w3NO_uQvOrl47Ug_oogyj2E338J90U/pub?w=960&amp;h=600" alt="File system organization of the Ocean Health Index Toolbox" />
-<p class="caption">File system organization of the Ocean Health Index Toolbox</p>
+<img src="https://docs.google.com/drawings/d/1zHe1Gp2L7xN04w3NO_uQvOrl47Ug_oogyj2E338J90U/pub?w=1150" />
+
 </div>
 <p>The <strong>conf</strong> folder within the <code>subcountry2015</code> scenario folder, the <code>conf</code> folder includes important configuration files required to calculate OHI scores. Most of the maneuvering in this phase is done within this folder. There are both <em>.R</em> scripts (<code>config.R</code> and <code>functions.R</code>) and <em>.csv</em> files (<code>goals.csv</code>, <code>pressures_matrix.csv</code>, <code>resilience_matrix.csv</code>, and <code>resilience_weights.csv</code>), which will be introduced individually in the next section.</p>
 <div class="figure">
@@ -644,7 +644,7 @@ So I am guessing that is all that is really needed.--->
 <blockquote>
 <p>TIP: You can check your region identifiers (<em>rgn_id</em>) in the <code>rgn_labels.csv</code> file in the <code>layers</code> folder.</p>
 </blockquote>
-<p>*_gl2014* and *_sc2014* suffixes</p>
+<p><em>/gl2014</em> and <em>/sc2014</em> suffixes</p>
 <p>In your repository, layers are provided for your country based on input information from the 2014 global assessment. The global assessment had information for your country at the the spatial scale of the entire country, whereas your assessment has information for each subcountry region within your country. In most cases, layers from the global assessment was allocated equally to all regions in your study area (country). When this occurred, the layer was given a suffix of <code>_gl2014</code> to indicate that information is equal across all regions in the study area. While these layers may not provide much useful information to your assessment, the proper input structure is provided in these layers. Some layers contain information such as km2 of habitat that could not be equally allocated across all regions since this would provide a sum much greater than reality. In these cases, layers were down-weighted based on the proportion of offshore area or coastal population density. These layers have the suffix <code>_sc2014</code> with an indication of what was used to downweight. While this method removes any error of inflated sums and provides the Toolbox with functioning layers, the allocation of these values may not be sensical to your study (i.e. if corals are only present in some regions of your study area but they are allocated to all).</p>
 <div class="figure">
 <img src="https://docs.google.com/drawings/d/1QlpBKXfBZFPROK5Xvexkj6ABwsUMQQT52uhIKdVd7iI/pub?w=576&amp;h=288" alt="Differences in input layers with equal information for each region (suffixed with _gl2014) and weighted information for each region (suffixed with _sc2014)." />
@@ -4129,8 +4129,8 @@ as Canada, to be unduly penalized.--->
 <li>Any other observations or explanations about the data</li>
 </ol>
 </div>
-<div id="pressures-and-resilience-1" class="section level2">
-<h2><span class="header-section-number">10.4</span> 3. Pressures and resilience</h2>
+<div id="pressures-and-resilience-data" class="section level2">
+<h2><span class="header-section-number">10.4</span> 3. Pressures and resilience data</h2>
 <p>Remember that for any pressures and resilience measures included in the OHI matrices, there must be data available for each region in your study area.</p>
 <div id="pressures" class="section level3">
 <h3><span class="header-section-number">10.4.1</span> Pressures</h3>

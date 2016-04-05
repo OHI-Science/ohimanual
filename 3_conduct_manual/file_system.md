@@ -19,7 +19,7 @@ Once you complete your assessment with the `subcountry2014` (or equivalent) scen
 
 This figure illustrates the files contained within the assessment repository's `subcountry2014` scenario folder, and in which step of the Toolbox workflow they are associated with. Important files are either *.csv* text files or *.R* script files. Files are organized into different folders within the `subcountry2014` folder, and you will modify some of these files while leaving others as they are.
 
-![File system organization of the Ocean Health Index Toolbox](https://docs.google.com/drawings/d/1zHe1Gp2L7xN04w3NO_uQvOrl47Ug_oogyj2E338J90U/pub?w=960&h=600)
+![](https://docs.google.com/drawings/d/1zHe1Gp2L7xN04w3NO_uQvOrl47Ug_oogyj2E338J90U/pub?w=1150)
 
 The **conf** folder within the `subcountry2015` scenario folder, the `conf` folder includes important configuration files required to calculate OHI scores. Most of the maneuvering in this phase is done within this folder. There are both *.R* scripts (`config.R` and `functions.R`) and *.csv* files (`goals.csv`, `pressures_matrix.csv`, `resilience_matrix.csv`, and `resilience_weights.csv`), which will be introduced individually in the next section.
 
@@ -29,8 +29,8 @@ The **prep** folder is important in the beginning of your assessment, as it is w
 
 Over all, all the main files you will encounter are either of the two file types:
 
-* ** *.csv* files** contain data inputs or configuration information.
-* ** *.R* scripts** are written in the programming language R and use data inputs for processing and calculations.
+- ** _.csv_ files** contain data inputs or configuration information.
+- ** _.R_ scripts** are written in the programming language R and use data inputs for processing and calculations.
 
 We will introduce those files below roughly in the order and the frequency of use:  
 
@@ -60,7 +60,7 @@ Note that each *.csv* file within the `layers` folder has been formatted consist
 
 > TIP: You can check your region identifiers (*rgn_id*) in the `rgn_labels.csv` file in the `layers` folder.
 
-*_gl2014* and *_sc2014* suffixes
+*/gl2014* and */sc2014* suffixes
 
 In your repository, layers are provided for your country based on input information from the 2014 global assessment. The global assessment had information for your country at the the spatial scale of the entire country, whereas your assessment has information for each subcountry region within your country. In most cases, layers from the global assessment was allocated equally to all regions in your study area (country). When this occurred, the layer was given a suffix of `_gl2014` to indicate that information is equal across all regions in the study area. While these layers may not provide much useful information to your assessment, the proper input structure is provided in these layers. Some layers contain information such as km2 of habitat that could not be equally allocated across all regions since this would provide a sum much greater than reality. In these cases, layers were down-weighted based on the proportion of offshore area or coastal population density. These layers have the suffix `_sc2014` with an indication of what was used to downweight. While this method removes any error of inflated sums and provides the Toolbox with functioning layers, the allocation of these values may not be sensical to your study (i.e. if corals are only present in some regions of your study area but they are allocated to all).
 
