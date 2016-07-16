@@ -72,25 +72,13 @@ Updates are required for the following files:
 
 * *layers.csv*
 * *resilience_matrix.csv*
-* *resilience_weights.csv* (only if adding new resilience layers)
+* *resilience_categories.csv* (only if adding new resilience layers)
 
-### Global resilience layers
+### Global resilience layers and categoreis
 
 The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. The full list of layers included in the global resilience matrix are:
 
-> `alien_species`,  `cites`,  `fishing_v1`,  `fishing_v1_eez`,	`fishing_v2_eez`,	`fishing_v3`,	`fishing_v3_eez`,	`habitat`,	`habitat_combo`,	`habitat_combo_eez`,	`li_gci`,	`li_sector_evenness`,	`mariculture`,	`msi_gov`,	`species_diversity`,	`species_diversity_3nm`,	`tourism`,	`water`,	`wgi_all`
-
-Some of these layers capture general aspects of governance that apply to the protection of any habitat. These are:  
-
-> `alien_species`, `cites`, `msi_gov`, `water`, `wgi_all`
-
-Two layers only apply to the livelihoods and economies goal (LE), so they should be excluded from HAB resilience:
-
-> `li_gci`, `li_sector_evenness`
-
-The remaining layers apply to certain habitats, but not others. We focus on these to determine how to adapt the HAB resilience calculation for `ohi-israel`. They are:
-
-> `fishing_v1`, `fishing_v1_eez`, `fishing_v2_eez`, `fishing_v3`, `fishing_v3_eez`, `habitat`, `habitat_combo`,	`habitat_combo_eez`, `mariculture`, `species_diversity`, `species_diversity_3nm`,	`tourism`
+![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=960&h=720)
 
 ### Determining how to modify these resilience layers
 
