@@ -8,35 +8,34 @@ source('~/github/ohimanual/make_functions.r') # rendering functions for OHI
 
 title_header    = 'The Ocean Health Index Conduct Phase'
 subtitle_header = 'Assessment Manual'
-# title_short     = 'Manual'
 wd = '~/github/ohimanual/3_conduct_manual'
 setwd(wd)
 
 
 ## .md files to be included in this order: ---- 
 in_md = c(
-  # 'overall_guide.md',                              # incorporated into intro_assessment for website, but may format it as an intro page for pdf version
-  'intro_assessment.md',                             # reviewed for 07/09 push
-   'defining_spatial.md',                             # reviewed for 07/09 push. TODO: new figs
-   'assemble_inputs.md',                              # reviewed for 07/09 push
+  # 'overall_guide.md',                              
+  'intro_assessment.md',                             
+  'defining_spatial.md',                             # TODO: update instruction, new figs
+  'assemble_inputs.md',                              
   'formatting_data.md',
   'intro_to_tbx.md',    
   'file_system.md',
   'tbx_software_intro.md',
   'github_architecture.md', 
   'install_tbx.md', 
-  'use_tbx.md',                                      # TODO: review and update JSL
+  'use_tbx.md',                                      # TODO: review and update 
   'use_tbx_to_modify_data_layers.md',
-  'use_tbx_to_modify_goal_models.md',      # updated by NJM 9/15
+  'use_tbx_to_modify_goal_models.md',                # updated by NJM 9/15
   'use_tbx_to_modify_pressures_resilience.md',    
   'use_tbx_to_modify_goals_categories.md',
-   'use_tbx_to_remove_goal_models.md',
-   'use_tbx_calculate_overall_index.md',
-   'example_modifications_with_tbx.md',
+  'use_tbx_to_remove_goal_models.md',
+  'use_tbx_calculate_overall_index.md',
+  # 'example_modifications_with_tbx.md',             # TODO: this file doesn't exist!
   'toolbox_troubleshooting.md',                      # TODO: review and update
-  'intro_webapp.md',                                 # reviewed for 07/09 push. TODO: interpreting a flower plot
-  'update_webapp.md',                                # reviewed for 07/09 push
-  'intro_goalbygoal.md',                             # added on 07/15
+  'intro_webapp.md',                                 # TODO: interpreting a flower plot
+  'update_webapp.md',                                
+  'intro_goalbygoal.md',                             
   'practical_FP.md',
   'practical_AO.md',                
   'practical_NP.md',
@@ -52,7 +51,7 @@ in_md = c(
   'model_descript_instructions.md',
   'record_sheet.md',
   'R_tutes_all.md',   
-   'frequently_asked_questions.md')                   # TODO: review and update
+  'frequently_asked_questions.md')                   # TODO: review and update
 ## final .md filename
 out_md = 'ohi-manual.md' 
 

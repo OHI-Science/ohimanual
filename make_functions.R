@@ -7,15 +7,31 @@ library(rmarkdown)
 library(stringr)
 
 # concatenate md files together ----
-cat_md = function(
-  files_md = setdiff(list.files(getwd(), glob2rx('*.md')), out_md),
-  out_md  = '_all_.md'){
+cat_md = function(in_md = in_md,
+                  out_md  = '_all_.md', 
+                  title_header = title_header, 
+                  wd = wd, 
+                  suggestion = TRUE){
   
   if (file.exists(out_md)) unlink(out_md)
   
-  cat('---\n', 'title: ', title_header, '\n---\n\n', sep='', file=out_md, append=T)
+  ## check1: make sure files to be included exist
+  check1 <- setdiff(in_md, list.files(getwd(), glob2rx('*.md')))
+  if (length(check1) >= 1) {
+    stop(sprintf('These files are listed in the in_md variable do not exist:\n%s',
+                 paste(check1, collapse='\n')))
+  }
   
-  for (md in files_md){
+ ## check2: identify other files not included, can turn off by suggestion = FALSE
+  if(suggestion) {
+    check2 <- setdiff(list.files(getwd(), glob2rx('*.md')), in_md)
+    if (length(check2) >= 1) {
+      cat(sprintf('FYI, these files exist but are not included in the in_md variable, consider including?:\n%s',
+                      paste(check2, collapse='\n')))
+    }
+  }
+  
+  for (md in in_md){ 
     cat(paste(c(readLines(md),'',''), collapse='\n'), file=out_md, append=T)
   }
 }
