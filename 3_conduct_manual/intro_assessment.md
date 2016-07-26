@@ -10,9 +10,13 @@ This manual should be used in conjuction with our other web materials, including
 
 <font size = "2">
 
-_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment Manual. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/manual_
+_**Citation - post 2016**_: Ocean Health Index. 2016. Ocean Health Index Assessment Manual. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/manual_
+
+_If you have downloaded and used our toolbox prior to 2016, please cite:_ 
+Ocean Health Index. 2015. ohicore v2015.1: core Ocean Health Index functions, [date downloaded]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohicore/releases/edit/v2015.1
 
 _**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/3_conduct_manual.pdf 
+
 
 </font>
 
