@@ -72,17 +72,31 @@ Updates are required for the following files:
 
 * *layers.csv*
 * *resilience_matrix.csv*
-* *resilience_categories.csv* (only if adding new resilience layers)
+* *resilience_categories.csv* 
 
-### Global resilience layers and categoreis
+### Understanding resilience Categoreis
 
-The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. The full list of layers included in the global resilience matrix are:
+The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. `resilience_categories.csv` records general information on each resilience data layer. The full list of layers included in the global resilience matrix are shown in the `resilience_matrix.csv`:
 
 ![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=960&h=720)
 
-### Determining how to modify these resilience layers
+Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on layers.csv. Each layer falls under a `category` of resilience - ecological or social, and one of three `category-type`s - ecosystem, regulatory, or social. The `Subcategory` column indicates what specific pressure each layer of resilience is offsetting. The prefix of each data layer corresponds to its Subcategory. 
 
-* To determine whether `species_diversity_3nm` or `species_diversity` should be used:
+In addition, the `Weight` column respresents the quality of information or data used to quantatively represent resilience: 
+
+- 0.5 means 
+- 1 means
+
+### Understanding resilience Matrix
+
+The `resilience_matrix.csv` contains information on _whether a resilience layer has any influence on a goal, or an element of the goal_ as represented by an *x*, or its absence. For example, `po_water` layer is relevant to the _salt marsh_ element of _CP_ goal, as shown by the *x* in the cell. On the other hand, that data layer does not apply to the _mangrove_ element of the same goal, hence the absence of an *x*. 
+
+
+![](https://docs.google.com/drawings/d/1zMxIbz_a0FixyKmFpsh81ztMe24EfeXgHwPUnI-lopc/pub?w=960&h=720)
+
+<!-- ### Determining how to modify these resilience layers
+
+* To determine whether `species_diversity_3nm` or `species_diversity_eez` should be used:
     + `sand_dunes` should use `species_diversity_3nm`,
     + `soft_bottom` should use `species_diversity`,
     + is `rocky_reef` mainly coastal? if so it should use `tourism` and `species_diversity_3nm`.
@@ -90,28 +104,6 @@ The first step is to determine which resilience layers from the global assessmen
     + are there any mariculture plants in Israel? If yes, on which habitats do they occur?
 * The remaining layers are the `fishing_v...` and `habitat..` layers, which are composite indicators obtained from different combinations of the following indicators:
 
-> `Mora, Mora_s4, CBD_hab, MPA_coast, MPA_eez`,
-
-where:
-
-* `Mora` is a fisheries governance effectiveness indicator by Mora *et al* (2009)
-* `Mora_s4` is another indicator from Figure S4 of the supplementary material of the same publication that focuses on regulations of artisanal and recreational fisheries
-* `CBD_hab` is a score assigned based on answers to a questionnaire compiled by countries that committed to Rio's Convention on Biological Diversity (CBD) to establish their progress towards habitat biodiversity protection
-* `MPA_coast` is an indicator obtained as the proportion of coastal (3nm) waters that are in a marine protected area (MPA), with the maximum being 30% of coastal waters
-* `MPA_eez` is an indicator obtained as the proportion of the whole EEZ that is in a marine protected area, with the maximum being 30% of the whole EEZ.  
-
-This table shows which indicators are used by each combo layer:
-
-Layer | Mora | Mora_s4 | CBD_hab | MPA_coast | MPA_eez
-------|------|---------|---------|-----------|--------
-fishing_v1 | Mora | | CBD_hab | MPA_coast |
-fishing_v1_eez | Mora | | CBD_hab | | MPA_eez
-fishing_v2_eez | Mora | Mora_s4 | CBD_hab | | MPA_eez
-fishing_v3 | | Mora_s4 | CBD_hab |  MPA_coast |
-fishing_v3_eez | | Mora_s4 | CBD_hab | | MPA_eez
-habitat | | | CBD_hab | |
-habitat_combo | | | CBD_hab |  MPA_coast |
-habitat_combo_eez | | | CBD_hab | | MPA_eez
 
 **Questions to consider**:
 
@@ -134,3 +126,4 @@ If the general resilience categories are relevant to the habitat, the next step 
 
 5) How to update `resilience_matrix.csv`?
 * write the complete list of layers you want to use for each habitat. Based on the above, for example, `soft bottom` in Israel matches the combination of layers called *soft bottom, with corals* in the default `resilience_matrix.csv`. But the `rocky_reef` and `sand_dunes` don't seem to match any existing combination, so you'll probably need to delete some of the rows, e.g. the *coral only*, and replace with new ad-hoc rows.
+-->
