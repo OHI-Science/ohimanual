@@ -111,15 +111,15 @@
 <li><a href="#combine-status-and-trend-scores"><span class="toc-section-number">6.3.5</span> Combine Status and Trend Scores</a></li>
 <li><a href="#update-goal-call-in-goals.csv"><span class="toc-section-number">6.3.6</span> Update goal call in <code>goals.csv</code></a></li>
 </ul></li>
-<li><a href="#modifying-pressures-matrices"><span class="toc-section-number">6.4</span> Modifying pressures matrices</a><ul>
+<li><a href="#modifying-pressures-categories-and-matrix"><span class="toc-section-number">6.4</span> Modifying Pressures Categories and Matrix</a><ul>
 <li><a href="#create-the-new-pressure-layers-and-save-in-the-layers-folder"><span class="toc-section-number">6.4.1</span> Create the new pressure layers and save in the <code>layers</code> folder</a></li>
 <li><a href="#register-the-new-pressure-layers-in-layers.csv"><span class="toc-section-number">6.4.2</span> Register the new pressure layers in <code>layers.csv</code></a></li>
 <li><a href="#register-the-new-layers-in-pressure_matrix.csv"><span class="toc-section-number">6.4.3</span> Register the new layers in <code>pressure_matrix.csv</code></a></li>
 </ul></li>
-<li><a href="#modify-the-resilience-matrix-if-necessary"><span class="toc-section-number">6.5</span> Modify the resilience matrix (if necessary)</a><ul>
-<li><a href="#updating-resilience-matrix-with-local-habitat-information"><span class="toc-section-number">6.5.1</span> Updating resilience matrix with local habitat information</a></li>
-<li><a href="#global-resilience-layers-and-categoreis"><span class="toc-section-number">6.5.2</span> Global resilience layers and categoreis</a></li>
-<li><a href="#determining-how-to-modify-these-resilience-layers"><span class="toc-section-number">6.5.3</span> Determining how to modify these resilience layers</a></li>
+<li><a href="#modify-resilience-categories-and-matrix"><span class="toc-section-number">6.5</span> Modify Resilience Categories and Matrix</a><ul>
+<li><a href="#understanding-resilience-categories"><span class="toc-section-number">6.5.1</span> Understanding resilience Categories</a></li>
+<li><a href="#understanding-resilience-matrix"><span class="toc-section-number">6.5.2</span> Understanding resilience Matrix</a></li>
+<li><a href="#steps-involved-in-modifying-resilience-information"><span class="toc-section-number">6.5.3</span> Steps involved in modifying resilience information</a></li>
 </ul></li>
 <li><a href="#modifying-the-pressures-matrix-for-goals-with-categories"><span class="toc-section-number">6.6</span> Modifying the pressures matrix for goals with categories</a><ul>
 <li><a href="#background"><span class="toc-section-number">6.6.1</span> Background</a></li>
@@ -1303,8 +1303,8 @@ similar to status, trend scores need to be properly formatted to match the rest 
 now we’ve successfully calculated status and trend, the last thing we need to do is combine them into one table called scores. we combine r.status and r.trend by first binding by rows (rbind). -->
 </div>
 </div>
-<div id="modifying-pressures-matrices" class="section level2">
-<h2><span class="header-section-number">6.4</span> Modifying pressures matrices</h2>
+<div id="modifying-pressures-categories-and-matrix" class="section level2">
+<h2><span class="header-section-number">6.4</span> Modifying Pressures Categories and Matrix</h2>
 <p>Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have (see Appendix 6 for guidance on Pressure and Resilience). You can transfer this information in <code>pressures_matrix.csv</code> (located in the <code>[assessment]/subcountry2014/conf</code> folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the <code>subcountry2014/layers</code> folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.</p>
 <p>Adding a new pressure to the pressures matrix requires the following steps:</p>
 <blockquote>
@@ -1367,171 +1367,102 @@ now we’ve successfully calculated status and trend, the last thing we need to 
 </div>
 </div>
 </div>
-<div id="modify-the-resilience-matrix-if-necessary" class="section level2">
-<h2><span class="header-section-number">6.5</span> Modify the resilience matrix (if necessary)</h2>
-<p>Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into <code>resilience_matrix.csv</code> (located in the <code>[assessment]/subcountry2014/conf</code> folder).</p>
-<p><code>resilience_matrix.csv</code> maps the different types of resilience (columns) with the goals that they affect (rows). New resilience layers may be added to <code>resilience_matrix.csv</code> based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.</p>
-<p>Each goal must have a resilience measure associated with it. In the figure below, the Toolbox would give an error because there are no resilience layers indicated for the natural products (NP) goal.</p>
-<div class="figure">
-<img src="fig/resil_mtx_bad.png" alt="" />
+<div id="modify-resilience-categories-and-matrix" class="section level2">
+<h2><span class="header-section-number">6.5</span> Modify Resilience Categories and Matrix</h2>
+<p>Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into <code>resilience_matrix.csv</code>and <code>resilience_categories.csv</code> (located in the <code>[assessment]/subcountry2014/conf</code> folder).</p>
+<!-- Each goal must have a resilience measure associated with it. In the figure below, the Toolbox would give an error because there are no resilience layers indicated for the natural products (NP) goal.
 
-</div>
-<div id="updating-resilience-matrix-with-local-habitat-information" class="section level3">
-<h3><span class="header-section-number">6.5.1</span> Updating resilience matrix with local habitat information</h3>
-<p>In this example we will borrow from the experience of <code>ohi-israel</code>, where they assessed habitats in the Habitats (HAB) sub-goal that were not included in global assessments <code>ohi-global</code>. Therefore, the resilience matrix needed some revision.</p>
-<p>The habitats assessed for <code>ohi-israel</code> are:</p>
-<blockquote>
-<p><code>rocky_reef</code>, <code>sand_dunes</code>, <code>soft_bottom</code></p>
-</blockquote>
-<p>Updates are required for the following files:</p>
-<ul>
-<li><em>layers.csv</em></li>
-<li><em>resilience_matrix.csv</em></li>
-<li><em>resilience_categories.csv</em> (only if adding new resilience layers)</li>
-</ul>
-</div>
-<div id="global-resilience-layers-and-categoreis" class="section level3">
-<h3><span class="header-section-number">6.5.2</span> Global resilience layers and categoreis</h3>
-<p>The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. The full list of layers included in the global resilience matrix are:</p>
+![](./fig/resil_mtx_bad.png) -->
+<div id="understanding-resilience-categories" class="section level3">
+<h3><span class="header-section-number">6.5.1</span> Understanding resilience Categories</h3>
+<!-- The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. -->
+<p><code>resilience_categories.csv</code> records general information on each resilience data layer. The full list of layers included in the global resilience matrix are shown in the <code>resilience_matrix.csv</code>:</p>
 <div class="figure">
 <img src="https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=960&amp;h=720" alt="" />
 
 </div>
+<p>Each <em>resilience layer</em> indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on layers.csv. Each layer falls under a <code>category</code> of resilience - ecological or social, and one of three <code>category-type</code>s - ecosystem, regulatory, or social. The <code>Subcategory</code> column indicates what specific pressure each layer of resilience is targered at. The prefix of each data layer corresponds to its Subcategory (eg. po, li, g, etc).</p>
+<p>In addition, the <code>Weight</code> column respresents level of institutional governnace. Governance is a function of 1) institutional structures that address the intended objective (eg. wheter appropriate laws/regulations exist, etc), 2) a clear process for <em>implementing</em> the institution is in place, and 3) whether the institution has been <em>effective</em> at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the <code>resilience_categories.csv</code> pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer:</p>
+<ul>
+<li><em>0.5</em> means that a law or regulation exists, or a country has signed an appropriate treaty</li>
+<li><em>1</em> means that there are evidence of implementation of the laws and regulations.</li>
+</ul>
+<p>However, you can redefine how the weights are set to available information in your regions.</p>
 </div>
-<div id="determining-how-to-modify-these-resilience-layers" class="section level3">
-<h3><span class="header-section-number">6.5.3</span> Determining how to modify these resilience layers</h3>
-<ul>
-<li>To determine whether <code>species_diversity_3nm</code> or <code>species_diversity</code> should be used:
-<ul>
-<li><code>sand_dunes</code> should use <code>species_diversity_3nm</code>,</li>
-<li><code>soft_bottom</code> should use <code>species_diversity</code>,</li>
-<li>is <code>rocky_reef</code> mainly coastal? if so it should use <code>tourism</code> and <code>species_diversity_3nm</code>.</li>
-</ul></li>
-<li>If the habitats can be affected by mariculture plants (e.g. eutrophication and decreased water quality can occur if mariculture plants are close by and have poor wastewater treatment), then the <code>mariculture</code> resilience score should be added.
-<ul>
-<li>are there any mariculture plants in Israel? If yes, on which habitats do they occur?</li>
-</ul></li>
-<li>The remaining layers are the <code>fishing_v...</code> and <code>habitat..</code> layers, which are composite indicators obtained from different combinations of the following indicators:</li>
-</ul>
+<div id="understanding-resilience-matrix" class="section level3">
+<h3><span class="header-section-number">6.5.2</span> Understanding resilience Matrix</h3>
+<p><code>resilience_matrix.csv</code> maps the different types of resilience (columns) with the goals that they affect (rows). Whether a resilience layer has any influence on a goal, or an element of the goal, is represented by an <em>x</em>, or its absence. For example, <code>po_water</code> layer is relevant to the <em>salt marsh</em> element of <em>CP</em> goal, as shown by the <em>x</em> in the cell. On the other hand, that data layer does not apply to the <em>mangrove</em> element of the same goal, hence the absence of an <em>x</em>.</p>
+<div class="figure">
+<img src="https://docs.google.com/drawings/d/1zMxIbz_a0FixyKmFpsh81ztMe24EfeXgHwPUnI-lopc/pub?w=960&amp;h=720" alt="" />
+
+</div>
+<p>New resilience layers may be added to <code>resilience_matrix.csv</code> based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.</p>
+<!-- ### Updating resilience matrix with local habitat information
+
+In this example we will borrow from the experience of `ohi-israel`, where they assessed habitats in the Habitats (HAB) sub-goal that were not included in global assessments `ohi-global`. Therefore, the resilience matrix needed some revision.  
+
+The habitats assessed for `ohi-israel` are:
+
+> `rocky_reef`, `sand_dunes`, `soft_bottom` -->
+</div>
+<div id="steps-involved-in-modifying-resilience-information" class="section level3">
+<h3><span class="header-section-number">6.5.3</span> Steps involved in modifying resilience information</h3>
+<p>Adding a new resilience to the resiliences matrix requires the following steps:</p>
 <blockquote>
-<p><code>Mora, Mora_s4, CBD_hab, MPA_coast, MPA_eez</code>,</p>
-</blockquote>
-<p>where:</p>
-<ul>
-<li><code>Mora</code> is a fisheries governance effectiveness indicator by Mora <em>et al</em> (2009)</li>
-<li><code>Mora_s4</code> is another indicator from Figure S4 of the supplementary material of the same publication that focuses on regulations of artisanal and recreational fisheries</li>
-<li><code>CBD_hab</code> is a score assigned based on answers to a questionnaire compiled by countries that committed to Rio’s Convention on Biological Diversity (CBD) to establish their progress towards habitat biodiversity protection</li>
-<li><code>MPA_coast</code> is an indicator obtained as the proportion of coastal (3nm) waters that are in a marine protected area (MPA), with the maximum being 30% of coastal waters</li>
-<li><code>MPA_eez</code> is an indicator obtained as the proportion of the whole EEZ that is in a marine protected area, with the maximum being 30% of the whole EEZ.</li>
-</ul>
-<p>This table shows which indicators are used by each combo layer:</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Layer</th>
-<th align="left">Mora</th>
-<th align="left">Mora_s4</th>
-<th align="left">CBD_hab</th>
-<th align="left">MPA_coast</th>
-<th align="left">MPA_eez</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">fishing_v1</td>
-<td align="left">Mora</td>
-<td align="left"></td>
-<td align="left">CBD_hab</td>
-<td align="left">MPA_coast</td>
-</tr>
-<tr class="even">
-<td align="left">fishing_v1_eez</td>
-<td align="left">Mora</td>
-<td align="left"></td>
-<td align="left">CBD_hab</td>
-<td align="left"></td>
-<td align="left">MPA_eez</td>
-</tr>
-<tr class="odd">
-<td align="left">fishing_v2_eez</td>
-<td align="left">Mora</td>
-<td align="left">Mora_s4</td>
-<td align="left">CBD_hab</td>
-<td align="left"></td>
-<td align="left">MPA_eez</td>
-</tr>
-<tr class="even">
-<td align="left">fishing_v3</td>
-<td align="left"></td>
-<td align="left">Mora_s4</td>
-<td align="left">CBD_hab</td>
-<td align="left">MPA_coast</td>
-</tr>
-<tr class="odd">
-<td align="left">fishing_v3_eez</td>
-<td align="left"></td>
-<td align="left">Mora_s4</td>
-<td align="left">CBD_hab</td>
-<td align="left"></td>
-<td align="left">MPA_eez</td>
-</tr>
-<tr class="even">
-<td align="left">habitat</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">CBD_hab</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">habitat_combo</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">CBD_hab</td>
-<td align="left">MPA_coast</td>
-</tr>
-<tr class="even">
-<td align="left">habitat_combo_eez</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">CBD_hab</td>
-<td align="left"></td>
-<td align="left">MPA_eez</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Questions to consider</strong>:</p>
-<p>The first objective is to determine whether the general <code>fishing_v..</code> or <code>habitat_...</code> categories are relevant to each of the habitats. For example, fisheries regulations do not affect the conservation of sand dunes, so this habitat should not use any of the fisheries combos. If the general resilience categories are relevant to the habitat, the next step is to select one resilience layer within the <code>fishing_v…</code> and <code>habitat...</code> categories that most adequately captures the suite of combined resilience variables that affect the habitat. For example, the sand dune habitat is a strictly coastal habitat, so the most appropriate resilience layer would be the one that uses the MPA_coast (i.e., <code>habitat_combo</code>). The rocky reef and soft bottom, on the other hand, should definitely include fisheries and habitat regulations. So, you’ll need to choose a fisheries and a habitat combo for these two habitats. To do so, consider:</p>
 <ol style="list-style-type: decimal">
-<li>For which habitats should you use both a fishery and a habitat combo, or just use a habitat combo?</li>
+<li>Create new resilience layer(s) and save in the <code>layers</code> folder</li>
+<li>Register resilience layer(s) in <code>layers.csv</code></li>
+<li>Register resilience layer(s) in <code>resiliences_categories.csv</code></li>
 </ol>
 <ul>
-<li>fisheries regulations do not affect the conservation of sand-dunes, so this habitat should not use any of the fisheries combos. Also, this is a strictly coastal habitat, so choose the habitat layer that uses the <code>MPA_coast</code> instead of the <code>MPA_eez</code>, i.e. <code>habitat_combo</code> (and, as mentioned above, choose the coastal version of biodiversity, i.e. <code>species_diversity_3nm</code>).</li>
-<li>The rocky reef and soft bottom, on the other hand, should definitely include fisheries regulations. So you’ll need to choose a fisheries and a habitat combo for these two habitats.</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Which fisheries and habitat combos for <code>rocky_reef</code> and <code>soft_bottom</code>? The choice depends on two things:</li>
-</ol>
-<ul>
-<li>whether they are coastal habitats (within 3nm of the coast) or EEZ-wide habitats
-<ul>
-<li>if coastal, use the fisheries and habitat combos with <code>MPA_coast</code> (<code>fishing_v1</code>, <code>fishing_v3</code>, <code>habitat_combo</code>), and the <code>species_diversity_3nm</code> layer</li>
-<li>if EEZ-wide, use the fisheries and habitat combos with <code>MPA_eez</code> (<code>fishing_v1_eez</code>, <code>fishing_v2_eez</code>, <code>fishing_v3_eez</code>, <code>habitat_combo_eez</code>), and the <code>species_diversity</code> layer</li>
-</ul></li>
-<li>whether the fisheries occurring on that habitat are mainly artisanal, mainly commercial, or both
-<ul>
-<li>if only commercial fisheries, use a layer that only uses the <code>Mora</code> data <code>fishing_v1..</code>)</li>
-<li>if only artisanal/small-scale fisheries, use a layer that only uses the <code>Mora_s4</code> data (<code>fishing_v3..</code>)</li>
-<li>if both, use a layer that uses both <code>Mora</code> and <code>Mora_s4</code> data (<code>fishing_v2..</code>)</li>
-</ul></li>
+<li><ol style="list-style-type: lower-alpha">
+<li>Set the resilience category<br />
+</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>Set the weighting</li>
+</ol></li>
 </ul>
 <ol start="3" style="list-style-type: decimal">
-<li>It may also be that the existing global combo layers are not appropriate for your habitats. For example, if rocky reef is mainly coastal, and it is fished by both commercial and artisanal methods, then we need a new combo that uses <code>Mora</code>, <code>Mora_s4</code>, <code>CBD_hab</code>, and <code>MPA_coast</code> (this is the same as <code>fishing_v2_eez</code>, but we use the <code>MPA_coast</code> layer instead of the <code>MPA_eez</code>). All other combinations are already present.</li>
-<li><p>Another issue to consider is whether local data are available to improve the pressure layers (that are based on global data). For example, if there are local data on Marine Protected Areas (MPAs) and any areas with special regulations, this should be used to generate the <code>MPA_coast</code> and <code>MPA_eez</code> layers.You may know that only certain types of protected areas are closed to fisheries, and may want to only include those. Also, local datasets may be more accurate and regularly updated. **NOTE: in the global study, these are the same datasets used to calculate the status of Lasting Special Places (LSP).</p></li>
-<li>How to update <code>resilience_matrix.csv</code>?</li>
+<li>Register resilience layer(s) in <code>resiliences_matrix.csv</code></li>
 </ol>
 <ul>
-<li>write the complete list of layers you want to use for each habitat. Based on the above, for example, <code>soft bottom</code> in Israel matches the combination of layers called <em>soft bottom, with corals</em> in the default <code>resilience_matrix.csv</code>. But the <code>rocky_reef</code> and <code>sand_dunes</code> don’t seem to match any existing combination, so you’ll probably need to delete some of the rows, e.g. the <em>coral only</em>, and replace with new ad-hoc rows.</li>
+<li>Identify the goals affected</li>
 </ul>
+</blockquote>
+<!-- ### Determining how to modify these resilience layers
+
+* To determine whether `species_diversity_3nm` or `species_diversity_eez` should be used:
+    + `sand_dunes` should use `species_diversity_3nm`,
+    + `soft_bottom` should use `species_diversity`,
+    + is `rocky_reef` mainly coastal? if so it should use `tourism` and `species_diversity_3nm`.
+* If the habitats can be affected by mariculture plants (e.g. eutrophication and decreased water quality can occur if mariculture plants are close by and have poor wastewater treatment), then the `mariculture` resilience score should be added.
+    + are there any mariculture plants in Israel? If yes, on which habitats do they occur?
+* The remaining layers are the `fishing_v...` and `habitat..` layers, which are composite indicators obtained from different combinations of the following indicators:
+
+
+**Questions to consider**:
+
+The first objective is to determine whether the general `fishing_v..` or `habitat_...` categories are relevant to each of the habitats.  For example, fisheries regulations do not affect the conservation of sand dunes, so this habitat should not use any of the fisheries combos.
+If the general resilience categories are relevant to the habitat, the next step is to select one resilience layer within the `fishing_v…` and `habitat...` categories that most adequately captures the suite of combined resilience variables that affect the habitat.  For example, the sand dune habitat is a strictly coastal habitat, so the most appropriate resilience layer would be the one that uses the MPA_coast (i.e., `habitat_combo`). The rocky reef and soft bottom, on the other hand, should definitely include fisheries and habitat regulations. So, you'll need to choose a fisheries and a habitat combo for these two habitats.  To do so, consider:
+
+1) For which habitats should you use both a fishery and a habitat combo, or just use a habitat combo?
+* fisheries regulations do not affect the conservation of sand-dunes, so this habitat should not use any of the fisheries combos. Also, this is a strictly coastal habitat, so choose the habitat layer that uses the `MPA_coast` instead of the `MPA_eez`, i.e. `habitat_combo` (and, as mentioned above, choose the coastal version of biodiversity, i.e. `species_diversity_3nm`).
+* The rocky reef and soft bottom, on the other hand, should definitely include fisheries regulations. So you'll need to choose a fisheries and a habitat combo for these two habitats.
+2) Which fisheries and habitat combos for `rocky_reef` and `soft_bottom`? The choice depends on two things:
+* whether they are coastal habitats (within 3nm of the coast) or EEZ-wide habitats
+      + if coastal, use the fisheries and habitat combos with `MPA_coast` (`fishing_v1`, `fishing_v3`, `habitat_combo`), and the `species_diversity_3nm` layer
+      + if EEZ-wide, use the fisheries and habitat combos with `MPA_eez` (`fishing_v1_eez`, `fishing_v2_eez`, `fishing_v3_eez`, `habitat_combo_eez`), and the `species_diversity` layer
+* whether the fisheries occurring on that habitat are mainly artisanal, mainly commercial, or both
+    + if only commercial fisheries, use a layer that only uses the `Mora` data `fishing_v1..`)
+    + if only artisanal/small-scale fisheries, use a layer that only uses the `Mora_s4` data (`fishing_v3..`)
+    + if both, use a layer that uses both `Mora` and `Mora_s4` data (`fishing_v2..`)
+3) It may also be that the existing global combo layers are not appropriate for your habitats.  For example, if rocky reef is mainly coastal, and it is fished by both commercial and artisanal methods, then we need a new combo that uses `Mora`, `Mora_s4`, `CBD_hab`, and `MPA_coast` (this is the same as `fishing_v2_eez`, but we use the `MPA_coast` layer instead of the `MPA_eez`). All other combinations are already present.
+4) Another issue to consider is whether local data are available to improve the pressure layers (that are based on global data).  For example, if  there are local data on Marine Protected Areas (MPAs) and any areas with special regulations, this should be used to generate the `MPA_coast` and `MPA_eez` layers.You may know that only certain types of protected areas are closed to fisheries, and may want to only include those. Also, local datasets may be more accurate and regularly updated. **NOTE: in the global study, these are the same datasets used to calculate the status of Lasting Special Places (LSP).
+
+5) How to update `resilience_matrix.csv`?
+* write the complete list of layers you want to use for each habitat. Based on the above, for example, `soft bottom` in Israel matches the combination of layers called *soft bottom, with corals* in the default `resilience_matrix.csv`. But the `rocky_reef` and `sand_dunes` don't seem to match any existing combination, so you'll probably need to delete some of the rows, e.g. the *coral only*, and replace with new ad-hoc rows.
+-->
 </div>
 </div>
 <div id="modifying-the-pressures-matrix-for-goals-with-categories" class="section level2">

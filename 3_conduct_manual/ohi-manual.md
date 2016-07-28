@@ -1156,7 +1156,7 @@ in addition to status, we also need to calculate trend. we use the first table w
 similar to status, trend scores need to be properly formatted to match the rest of the goal trends. we’ll create a new table called r.trend with the scores we just calculated. again, we use mutate and select, as shown here.
 now we’ve successfully calculated status and trend, the last thing we need to do is combine them into one table called scores. we combine r.status and r.trend by first binding by rows (rbind). -->
 
-## Modifying pressures matrices
+## Modifying Pressures Categories and Matrix
 
 Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have (see Appendix 6 for guidance on Pressure and Resilience). You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `subcountry2014/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
 
@@ -1208,39 +1208,62 @@ This step also requires transferring prior decisions into `pressures_matrix.csv`
 
 ![](./fig/register_new_pressures.png)
 
-## Modify the resilience matrix (if necessary)
+## Modify Resilience Categories and Matrix 
 
-Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder).
+Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/subcountry2014/conf` folder).
 
-`resilience_matrix.csv` maps the different types of resilience (columns) with the goals that they affect (rows). New resilience layers may be added to `resilience_matrix.csv` based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.
+<!-- Each goal must have a resilience measure associated with it. In the figure below, the Toolbox would give an error because there are no resilience layers indicated for the natural products (NP) goal.
 
-Each goal must have a resilience measure associated with it. In the figure below, the Toolbox would give an error because there are no resilience layers indicated for the natural products (NP) goal.
+![](./fig/resil_mtx_bad.png) --> 
 
-![](./fig/resil_mtx_bad.png)  
+### Understanding resilience Categories
 
-### Updating resilience matrix with local habitat information
+<!-- The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. --> `resilience_categories.csv` records general information on each resilience data layer. The full list of layers included in the global resilience matrix are shown in the `resilience_matrix.csv`:
+
+![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=960&h=720)
+
+Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on layers.csv. Each layer falls under a `category` of resilience - ecological or social, and one of three `category-type`s - ecosystem, regulatory, or social. The `Subcategory` column indicates what specific pressure each layer of resilience is targered at. The prefix of each data layer corresponds to its Subcategory (eg. po, li, g, etc). 
+
+In addition, the `Weight` column respresents level of institutional governnace. Governance is a function of 1) institutional structures that address the intended objective (eg. wheter appropriate laws/regulations exist, etc), 2) a clear process for _implementing_ the institution is in place, and 3) whether the institution has been _effective_ at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the `resilience_categories.csv` pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer: 
+
+- _0.5_ means that a law or regulation exists, or a country has signed an appropriate treaty
+- _1_ means that there are evidence of implementation of the laws and regulations. 
+
+However, you can redefine how the weights are set to available information in your regions. 
+
+### Understanding resilience Matrix
+
+`resilience_matrix.csv` maps the different types of resilience (columns) with the goals that they affect (rows). Whether a resilience layer has any influence on a goal, or an element of the goal, is represented by an *x*, or its absence. For example, `po_water` layer is relevant to the _salt marsh_ element of _CP_ goal, as shown by the *x* in the cell. On the other hand, that data layer does not apply to the _mangrove_ element of the same goal, hence the absence of an *x*. 
+
+![](https://docs.google.com/drawings/d/1zMxIbz_a0FixyKmFpsh81ztMe24EfeXgHwPUnI-lopc/pub?w=960&h=720)
+
+New resilience layers may be added to `resilience_matrix.csv` based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.
+
+
+<!-- ### Updating resilience matrix with local habitat information
 
 In this example we will borrow from the experience of `ohi-israel`, where they assessed habitats in the Habitats (HAB) sub-goal that were not included in global assessments `ohi-global`. Therefore, the resilience matrix needed some revision.  
 
 The habitats assessed for `ohi-israel` are:
 
-> `rocky_reef`, `sand_dunes`, `soft_bottom`
+> `rocky_reef`, `sand_dunes`, `soft_bottom` -->
 
-Updates are required for the following files:
+### Steps involved in modifying resilience information
 
-* *layers.csv*
-* *resilience_matrix.csv*
-* *resilience_categories.csv* (only if adding new resilience layers)
+Adding a new resilience to the resiliences matrix requires the following steps:
 
-### Global resilience layers and categoreis
+> 1. Create new resilience layer(s) and save in the `layers` folder
+> 2. Register resilience layer(s) in `layers.csv`
+> 3. Register resilience layer(s) in `resiliences_categories.csv`
+  + a. Set the resilience category  
+  + b. Set the weighting
+> 3. Register resilience layer(s) in `resiliences_matrix.csv` 
+  +  Identify the goals affected
 
-The first step is to determine which resilience layers from the global assessment are relevant to your assessment, and whether others need to be added. The full list of layers included in the global resilience matrix are:
 
-![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=960&h=720)
+<!-- ### Determining how to modify these resilience layers
 
-### Determining how to modify these resilience layers
-
-* To determine whether `species_diversity_3nm` or `species_diversity` should be used:
+* To determine whether `species_diversity_3nm` or `species_diversity_eez` should be used:
     + `sand_dunes` should use `species_diversity_3nm`,
     + `soft_bottom` should use `species_diversity`,
     + is `rocky_reef` mainly coastal? if so it should use `tourism` and `species_diversity_3nm`.
@@ -1248,28 +1271,6 @@ The first step is to determine which resilience layers from the global assessmen
     + are there any mariculture plants in Israel? If yes, on which habitats do they occur?
 * The remaining layers are the `fishing_v...` and `habitat..` layers, which are composite indicators obtained from different combinations of the following indicators:
 
-> `Mora, Mora_s4, CBD_hab, MPA_coast, MPA_eez`,
-
-where:
-
-* `Mora` is a fisheries governance effectiveness indicator by Mora *et al* (2009)
-* `Mora_s4` is another indicator from Figure S4 of the supplementary material of the same publication that focuses on regulations of artisanal and recreational fisheries
-* `CBD_hab` is a score assigned based on answers to a questionnaire compiled by countries that committed to Rio's Convention on Biological Diversity (CBD) to establish their progress towards habitat biodiversity protection
-* `MPA_coast` is an indicator obtained as the proportion of coastal (3nm) waters that are in a marine protected area (MPA), with the maximum being 30% of coastal waters
-* `MPA_eez` is an indicator obtained as the proportion of the whole EEZ that is in a marine protected area, with the maximum being 30% of the whole EEZ.  
-
-This table shows which indicators are used by each combo layer:
-
-Layer | Mora | Mora_s4 | CBD_hab | MPA_coast | MPA_eez
-------|------|---------|---------|-----------|--------
-fishing_v1 | Mora | | CBD_hab | MPA_coast |
-fishing_v1_eez | Mora | | CBD_hab | | MPA_eez
-fishing_v2_eez | Mora | Mora_s4 | CBD_hab | | MPA_eez
-fishing_v3 | | Mora_s4 | CBD_hab |  MPA_coast |
-fishing_v3_eez | | Mora_s4 | CBD_hab | | MPA_eez
-habitat | | | CBD_hab | |
-habitat_combo | | | CBD_hab |  MPA_coast |
-habitat_combo_eez | | | CBD_hab | | MPA_eez
 
 **Questions to consider**:
 
@@ -1292,6 +1293,7 @@ If the general resilience categories are relevant to the habitat, the next step 
 
 5) How to update `resilience_matrix.csv`?
 * write the complete list of layers you want to use for each habitat. Based on the above, for example, `soft bottom` in Israel matches the combination of layers called *soft bottom, with corals* in the default `resilience_matrix.csv`. But the `rocky_reef` and `sand_dunes` don't seem to match any existing combination, so you'll probably need to delete some of the rows, e.g. the *coral only*, and replace with new ad-hoc rows.
+-->
 
 ## Modifying the pressures matrix for goals with categories
 
