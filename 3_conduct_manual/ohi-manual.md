@@ -1,4 +1,8 @@
 ---
+title: The Ocean Health Index Conduct Phase
+---
+
+---
 output: html_document
 ---
 
@@ -1168,6 +1172,7 @@ Adding a new pressure to the pressures matrix requires the following steps:
   + a. Set the pressure category  
   + b. Identify the goals affected and set the weighting
   + c. Modify the resilience matrix (if necessary)
+> 4. Modify Config.R for goals that have elements
 
 The following is an example of adding two new pressures layers.
 
@@ -1206,6 +1211,13 @@ This step requires transferring previous decisions made by your team into `press
 
 This step also requires transferring prior decisions into `pressures_matrix.csv`. Mark which goals are affected by this new pressure, and then set the weighting. Pressures weighting by goal should be based on scientific literature and expert opinion (3 = highly influential pressure, 2 = moderately influential pressure, 1 = not very influential pressure). Remember that the rankings in the pressures matrix are separate from the actual data within the pressures data layers. The rankings ensure that within a particular goal (e.g. within a row of the pressures matrix), the stressors that more strongly influence the goal’s delivery have a larger contribution to that goal’s overall pressure score. Therefore, the rankings are assigned independently of the actual pressure scores, and only determine their importance within the calculations.
 
+#### Modify Config.R
+
+![Pressure Matrix](https://cloud.githubusercontent.com/assets/5685517/15717970/233025f8-27de-11e6-9ac6-a96d4e16483d.png)
+
+![config.R](https://cloud.githubusercontent.com/assets/5685517/15717944/045e03d4-27de-11e6-9968-f4bf83cb1168.png)
+
+
 ![](./fig/register_new_pressures.png)
 
 ## Modify Resilience Categories and Matrix 
@@ -1215,6 +1227,19 @@ Resilience is included in OHI as the sum of the ecological factors and social in
 <!-- Each goal must have a resilience measure associated with it. In the figure below, the Toolbox would give an error because there are no resilience layers indicated for the natural products (NP) goal.
 
 ![](./fig/resil_mtx_bad.png) --> 
+
+### Steps involved in modifying resilience information
+
+Adding a new resilience to the resiliences matrix requires the following steps:
+
+> 1. Create new resilience layer(s) and save in the `layers` folder
+> 2. Register resilience layer(s) in `layers.csv`
+> 3. Register resilience layer(s) in `resiliences_categories.csv`
+  + a. Set the resilience category  
+  + b. Set the weighting
+> 3. Register resilience layer(s) in `resiliences_matrix.csv` 
+  +  Identify the goals affected
+> 4. Modify Config.R for goals that have elements
 
 ### Understanding resilience Categories
 
@@ -1248,18 +1273,14 @@ The habitats assessed for `ohi-israel` are:
 
 > `rocky_reef`, `sand_dunes`, `soft_bottom` -->
 
-### Steps involved in modifying resilience information
+### How to modify Config.R
 
-Adding a new resilience to the resiliences matrix requires the following steps:
+![](https://docs.google.com/drawings/d/183rvzM21mq018TiHEEzqMmoUEeime1W700ebW3iAEbw/pub?w=960&h=540)
 
-> 1. Create new resilience layer(s) and save in the `layers` folder
-> 2. Register resilience layer(s) in `layers.csv`
-> 3. Register resilience layer(s) in `resiliences_categories.csv`
-  + a. Set the resilience category  
-  + b. Set the weighting
-> 3. Register resilience layer(s) in `resiliences_matrix.csv` 
-  +  Identify the goals affected
 
+![Resilience Matrix](https://cloud.githubusercontent.com/assets/5685517/15717997/3d7ff8e8-27de-11e6-99d0-520ff3d9323b.png)
+
+![config.R](https://cloud.githubusercontent.com/assets/5685517/15717944/045e03d4-27de-11e6-9968-f4bf83cb1168.png)
 
 <!-- ### Determining how to modify these resilience layers
 
