@@ -2,11 +2,17 @@
 title: The Ocean Health Index Inform Phase
 ---
 
-# Where you are in the OHI+ process
-
 Congratulations! You have successfully _Conducted_ your indepenent OHI+ assessment, and you are in the last phase of OHI+, **Inform**. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers. 
 
 ![Inform Phase tasks](https://docs.google.com/drawings/d/1oItp0mRGmN_93t28_VgANsE9aTCtc1mB4D96MzoWMUQ/pub?w=960&h=720)
+
+<font size = "2">
+
+_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment - Inform Phase. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/inform_
+
+_**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-inform.pdf 
+
+</font>
 
 # Outreach and Communications Strategy
 

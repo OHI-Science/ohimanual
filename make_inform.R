@@ -23,7 +23,7 @@ in_md = c(
   # summarzing ending             #TODO: add some kind of summary
 
 ## final .md filename
-out_md = 'ohi-concguide.md' 
+out_md = 'ohi-inform.md' 
 
 
 ## concatenate md ----
