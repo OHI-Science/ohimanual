@@ -41,9 +41,10 @@ We will introduce those files below roughly in the order and the frequency of us
 * `layers.csv`
 * `goals.csv`
 * `layers-empty_swampping-global-mean.csv`
+* `pressures_categories.csv`
 * `pressures_matrix.csv`
+* `resilience_categories.csv`
 * `resilience_matrix.csv`
-* `resilience_weights.csv`
 * `scores.csv`
 
 **raw data layers in "prep" folder**
@@ -111,22 +112,25 @@ The `layers.csv` file is the registry and directory that manages all data requir
 
 > TIP: It's important to check `goals.csv`'s weightings and preindex functions when you change goal or sub-goal model equations in `functions.r`.
 
+
+**pressures_categories.csv**
+This is a table to record the _name_ of each pressures data layer, its _category_, and _sub-category_. Each data layer name  is the same name that's saved in the `layers` folder and is registered in `layers.csv`. Each layer falls under one of two categories: ecological or social pressures, and one of several sub-categories to further represent the origin of the pressure (eg. climate change, fishing, etc), which is also indicated by a prefix of each data layer name (for example: `po_` for the pollution sub-category). For more information, see section on [how to modify pressures layers](http://ohi-science.org/manual/#modifying-pressures-categories-and-matrix).
+
 **pressures_matrix.csv**
 
-It is a table that indicates which individual pressures (stressors) affect which goal, sub-goals, or components, and weights them from 1-3 (a weight of 0 is shown as a blank). These weights are relative to each row of the matrix (goal, sub-goal, or component). These weights are used in global assessments based on scientific literature and expert opinion, and you can modify the weightings if necessary for your assessment. The pressures matrix is the same as Table S25 in the Supplementary Information for Halpern *et al.* 2012.
+It is a table that indicates which individual pressures (stressors) affect which goal, sub-goals, or components, and weights them from 1-3 (a weight of 0 is shown as a blank), a higher number indicating more negative impacts on that goal or component of the goal. These weights are relative to each row of the matrix (goal, sub-goal, or component). These weights are used in global assessments based on scientific literature and expert opinion, and you can modify the weightings if necessary for your assessment. The pressures matrix is the same as Table S25 in the Supplementary Information for Halpern *et al.* 2012.
 
-Each pressure (column) of the pressures matrix is the layer name of the pressures layer file that is saved in the `layers` folder and is registered in `layers.csv`. Pressures layers have values for every region in the study area and the filenames have prefixes to indicate the pressure category (for example: `po_` for the pollution category). Pressures values are scaled such that all values range from 0-1.
+Each pressure (column) of the pressures matrix is the layer name of the pressures layer file that is saved in the `layers` folder and is registered in `layers.csv`, matching what's recorded in the pressures_categories.csv. For more information, see section on [how to modify pressures layers](http://ohi-science.org/manual/#modifying-pressures-categories-and-matrix).
 
+**resilience_categories.csv**
+Similar to _pressures_categories.csv_, this file contains information on each resilience data layer, including its name, category, and sub-category. Each resilience layer's name is the same as the data layer to be saved in the `layers` folder and is registered in `layers.csv`. In addition, it also includes information on _category type_ - ecosystem, regulatory, or social, indicating the origin of the resilience layer.
+
+Each resilience layer is also assigned a weight of 0-1, representing the level of resilience against pressures.  Different from the values used in pressures matrix, the resilience weights depend on the level of information available. For more information, see section on [how to modify resilience layers](http://ohi-science.org/manual/#modify-resilience-categories-and-matrix).
 
 **resilience_matrix.csv**
 
-It is a table that indicates which individual resilience measures affect which goal, sub-goals, or components. Like the pressures matrix, the resilience matrix also has weights, but these weights depend on the level of information available. These weights are stored in a separate file in the `conf` folder: `resilience_weights.csv`. The resilience matrix is the same as Table S26 in the Supplementary Information for Halpern *et al.* 2012.
+It is a table that indicates which individual resilience measures affect which goal, sub-goals, or components. These weights are stored in a separate file in the `conf` folder: `resilience_weights.csv`. The resilience matrix is the same as Table S26 in the Supplementary Information for Halpern *et al.* 2012. For more information, see section on [how to modify resilience layers](http://ohi-science.org/manual/#modify-resilience-categories-and-matrix).
 
-Each resilience measure (column) of the resilience matrix is the layer name of the resilience layer file that is saved in the `layers` folder and is registered in `layers.csv`. Resilience layers have values for every region in the study area. Resilience values are scaled such that all values range from 0-1.
-
-**resilience_weights.csv**
-
-`resilience_weights.csv` is a table that indicates the weight of each resilience layer based on the level of information available.
 
 **scores.csv**
 
