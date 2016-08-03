@@ -1,8 +1,14 @@
-# Where you are in the OHI+ process
+You have _Learned_ about OHI+ assessments, and now you are in the **Plan** phase. This section will help you understand the financial requirements, human resources, and data requirements of conducting an OHI+ assessment, as well as how to engage stakeholders and assessmble a technical team, in order to _Conduct_ an OHI assessment in the next phase. 
 
-You have _learned_ about OHI+ assessments, and now you are in the **Plan** phase. Your main tasks are to understand the financial, human resources, and technical requirements of conducting an OHI+ assessment, and plan your assessment accordingly. 
+![](https://docs.google.com/drawings/d/1B-2WqhpBKzVmwEX5KFbqsrDOSksPU5oLrlZfIdH2lY4/pub?w=960&h=720)
 
-![Plan Phase Tasks](https://docs.google.com/drawings/d/1B-2WqhpBKzVmwEX5KFbqsrDOSksPU5oLrlZfIdH2lY4/pub?w=960&h=720)
+<font size = "2">
+
+_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment - Plan Phases. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/plan_
+
+_**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-plan.pdf 
+
+</font>
 
 
 
