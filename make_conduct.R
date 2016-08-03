@@ -31,7 +31,6 @@ in_md = c(
   'use_tbx_to_modify_goals_categories.md',
   'use_tbx_to_remove_goal_models.md',
   'use_tbx_calculate_overall_index.md',
-  # 'example_modifications_with_tbx.md',             # TODO: this file doesn't exist!
   'toolbox_troubleshooting.md',                      # TODO: review and update
   'intro_webapp.md',                                 # TODO: interpreting a flower plot
   'update_webapp.md',                                
