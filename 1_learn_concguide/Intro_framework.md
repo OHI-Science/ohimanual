@@ -1,6 +1,22 @@
-# Introduction
 
-> Welcome to the Ocean Health Index (OHI)! OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources.
+**Welcome to the Ocean Health Index (OHI)!** OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources.
+
+You are currenlty at the first of four phases of conducting an OHI assessment - the **Learn** Phase. Here you will get an overview of the OHI framework, its workflow, what to expect from an OHI assessment, and how the scores are calculated, in order to prepare yourself for the next planning phase of an assessment. You will also be introduced to the philosophy behind each OHI goal. 
+
+For a more in-depth look at OHI and its process, check out our other web materials, including [Presentations](http://ohi-science.org/new-site/resources/downloads/), and [Publications](http://ohi-science.org/resources/publications/). If you want to know more about how to define and measure each goal, visit the [Goals](http://ohi-science.org/goals/) page. 
+
+Let's get started!
+
+<font size = "2">
+
+_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment - Learn Phase. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/learn_
+
+_**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-concguide.pdf
+
+</font>
+
+
+# Introduction
 
 The OHI framework assesses a suite of key **social, economic, and ecological** benefits a healthy oceans provides, called "goals". By analyzing these goals together and scoring them from 0-100, OHI assessments result in a comprehensive picture of the state of the ecosystem and can be communicated to a wide range of audiences.
 
