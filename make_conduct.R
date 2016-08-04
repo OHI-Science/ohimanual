@@ -30,6 +30,7 @@ in_md = c(
   'use_tbx_to_modify_pressures_resilience.md',    
   'use_tbx_to_modify_goals_categories.md',
   'use_tbx_to_remove_goal_models.md',
+  'use_tbx_to_remove_sub_goals.md',
   'use_tbx_calculate_overall_index.md',
   'toolbox_troubleshooting.md',                      # TODO: review and update
   'intro_webapp.md',                                 # TODO: interpreting a flower plot
@@ -61,7 +62,7 @@ pfx = tools::file_path_sans_ext(out_md)
 
 ## render and save html, pdf ----
 ohi_html(out_md)
-ohi_pdf(out_md)
+#ohi_pdf(out_md)
 
 ## push to ohi-science.org website ---- 
 push_to_web(out_md)
