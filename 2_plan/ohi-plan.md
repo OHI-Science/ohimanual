@@ -2,7 +2,7 @@
 title: The Ocean Health Index Plan Phase
 ---
 
-You have _Learned_ about OHI+ assessments, and now you are in the **Plan** phase. This section will help you understand the financial requirements, human resources, and data requirements of conducting an OHI+ assessment, as well as how to engage stakeholders and assessmble a technical team, in order to _Conduct_ an OHI assessment in the next phase. 
+You have successfully _Learned_ about OHI, and you can start **Plan**ning your own assessment. This section will help you understand the financial requirements, human resources, and data requirements of conducting an assessment, as well as how to engage stakeholders and assessmble a technical team, in order to _Conduct_ an OHI assessment in the next phase. 
 
 ![](https://docs.google.com/drawings/d/1B-2WqhpBKzVmwEX5KFbqsrDOSksPU5oLrlZfIdH2lY4/pub?w=960&h=720)
 
