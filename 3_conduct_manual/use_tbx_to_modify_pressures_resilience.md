@@ -57,22 +57,17 @@ _**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `p
 
 This step also requires transferring prior decisions into `pressures_matrix.csv`. Mark which goals are affected by this new pressure, and then set the weighting. Pressures weighting by goal should be based on scientific literature and expert opinion (3 = highly influential pressure, 2 = moderately influential pressure, 1 = not very influential pressure). Remember that the rankings in the pressures matrix are separate from the actual data within the pressures data layers. The rankings ensure that within a particular goal (e.g. within a row of the pressures matrix), the stressors that more strongly influence the goal’s delivery have a larger contribution to that goal’s overall pressure score. Therefore, the rankings are assigned independently of the actual pressure scores, and only determine their importance within the calculations.
 
-#### Modify Config.R for goals that have components
+#### Modify Config.R for goals with multiple elements
 
-If in _pressures_matrix.csv_, the columns `element` (and `element_name`) are filled, you need to update `Config.R` in `conf` folder.  
+If a goal has multiple elements (eg. CS has multiple habitats), as reflected in _pressures_matrix.csv_ where the columns `element` (and `element_name`) are filled, you need to update `Config.R` in `conf` folder, as shown below:
 
-![config.R](https://cloud.githubusercontent.com/assets/5685517/15717944/045e03d4-27de-11e6-9968-f4bf83cb1168.png)
+![](https://docs.google.com/drawings/d/14qz5DZUQAuiRaJDYfyTp2c1g1RGDKCRwN0uSPYX4hHE/pub?w=800&h=540)
 
+The highlighted files are data layers necessary to calculate pressures for each of the goals with components. They contain weights, or relative contribution from each element to the total pressures of the goal. These weights are calculated separately in the data prep folder for each goal, and saved and registered as you would for any data layer. How to calculate these data layers can be found in the _description_ column of `layers.csv`.  
 
 ## Modify Resilience Categories and Matrix
 
 Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/subcountry2014/conf` folder).
-
-<!-- Each goal must have a resilience measure associated with it. In the figure below, the Toolbox would give an error because there are no resilience layers indicated for the natural products (NP) goal.
-
-![](./fig/resil_mtx_bad.png) -->
-
-### Steps involved in modifying resilience information
 
 Adding a new resilience to the resiliences matrix requires the following steps:
 
@@ -121,14 +116,13 @@ The habitats assessed for `ohi-israel` are:
 
 > `rocky_reef`, `sand_dunes`, `soft_bottom` -->
 
-### How to modify Config.R
+### How to modify Config.R for goals with multiple elements
 
-![](https://docs.google.com/drawings/d/183rvzM21mq018TiHEEzqMmoUEeime1W700ebW3iAEbw/pub?w=800&h=540)
+If a goal has multiple elements, as shown in _pressures_matrix.csv_, you need to update `Config.R` in `conf` folder, as shown below:
 
+![](https://docs.google.com/drawings/d/1eMvpSPif_Su759-cyHg8gsnWeHCvN2QlEZ5ywLVIEmY/pub?w=800&h=720)
 
-![Resilience Matrix](https://cloud.githubusercontent.com/assets/5685517/15717997/3d7ff8e8-27de-11e6-99d0-520ff3d9323b.png)
-
-![config.R](https://cloud.githubusercontent.com/assets/5685517/15717944/045e03d4-27de-11e6-9968-f4bf83cb1168.png)
+Similar to what was discussed in the Pressures section, the highlighted files are data layers necessary to calculate resilience for each of the goals with components. These weights are prepared separately in the data prep folder for each goal, and saved and registered as you would for any data layer. How to calculate these data layers can be found in the _description_ column of `layers.csv`.  
 
 <!-- ### Determining how to modify these resilience layers
 
