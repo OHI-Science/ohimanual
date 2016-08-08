@@ -51,7 +51,7 @@ OHI+ teams are responsible for modifying the "tailored" part of the framework an
 
 ## Outcomes of an OHI+ assessment
 
-Your completed assessment will produce OHI scores for each goal in every region of your study area, and scores within the assessment can be compared with one another. Goal scores range between 0 and 100, and are visualized in a _Flower Plot_ for easy communication with a wide audience - each pedal represents one goal, and the size of the pedal corresponds with its score.
+Your completed assessment will produce OHI scores for each goal in every region of your study area, and scores within the assessment can be compared with one another. Goal scores range between 0 and 100, and are visualized in a _Flower Plot_ for easy communication with a wide audience - _each pedal represents one goal or subgoal, and the size of the pedal corresponds with its score._ (Note: the colors of the pedals match those of goal icons and do not correlate with scores.)
 
 However, these scores will not be quantitatively comparable to those of other OHI assessments because they differ in the underlying inputs, goal models, and reference points.
 
