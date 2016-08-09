@@ -1,0 +1,35 @@
+---
+title: "materials for data prep"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This document will help you get started on preparing and examing your data before calculating the OHI scores... We'll start with introduction to the R packages we use most frequently for data wrangling, resources for spatial analysis, and how to use Rmd files to present the data preparation process and record your code, decision making process, and results in  one place. 
+
+### Rmarkdown (Rmd)
+
+This document is written in Rmd (Rmarkdown), a language similar to markdown and allows you to document your code, workflow, and results at once. It can also render interactive graphs and tables for easy communication! Here is a quick guide to [how to use rmd](https://rawgit.com/eco-data-science/rmarkdown_R/master/1_rmarkdown.html). We highly recommend that you use Rmd for all your data prep efforts for easy documentation and transparency.
+
+### Basic R commands
+
+If you are learning R or need a refresher on basic commands: 
+  - [hands-on basic R tutorial for R beginners](http://tryr.codeschool.com/levels/1/challenges/1)
+  - [basic R cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/06/r-cheat-sheet.pdf)
+  
+Software carpentry workshop [developed by our team member Julie Lowndes](http://jules32.github.io/2016-07-12-Oxford/) that will give you a jump start to our Rstudio/github workflow. 
+
+### Spatial file analysis 
+
+Sometimes the data you need (eg. coverage of a carbon sequestering habitat) is contained in a spatial file. R is equipped to process, extract, and manipulate spatial data, similar to ArcGIS. Here are tutorials that cover most of the commands you will need: 
+
+### cheatsheets
+  
+Packages we rely on the most for data wrangling: 
+  - data wrangling: dplyr and tidyr tutorials 
+    - [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+    - [dplyr and tidry tutorial](http://jules32.github.io/2016-07-12-Oxford/dplyr_tidyr/)
+    
+

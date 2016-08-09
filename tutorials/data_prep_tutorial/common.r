@@ -1,6 +1,6 @@
 ## common.r
 
-## For common libraries, directories, functions etc.
+## This script contains common libraries, directories, and functions that you'll use for all prep scripts. OHI-Baltic is used as an example here (baltic2015).
 ## Call using source('~/github/bhi/baltic2015/prep/common.r')
  
 ## Libraries
@@ -11,13 +11,13 @@ library(ggplot2)
 library(RMySQL)
 library(stringr)
 library(tools)
+library(stringr)
+library(rprojroot)
 
 ## Directories
 dir_baltic = '~/github/bhi/baltic2015'
 dir_layers = file.path(dir_baltic, 'layers')
 dir_prep   = file.path(dir_baltic, 'prep')
-
-
 
 ## create_readme function will provide a link to the github_document .md file
 ## created in the *_prep.rmd files

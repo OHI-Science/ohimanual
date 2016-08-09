@@ -1,30 +1,7 @@
 ---
-title: "example_prep.rmd"
+title: "example_prep_non-spatial.rmd"
 output: html_document
 ---
-
-## Introduction of OHI data prep
-
-This document will help you get started on preparing and examing your data before calculating the OHI scores... We'll start with introduction to the R packages we use most frequently for data wrangling, resources for spatial analysis, and how to use Rmd files to present the data preparation process in a human readable manner. 
-
-## R resources
-
-how to use .rmd; packages that we use often, including data wrangling and spatial analysis
-
-### Basic R commands
-
-If you are learning R or need a refresher on basic commands: 
-  - [hands-on basic R tutorial for R beginners](http://tryr.codeschool.com/levels/1/challenges/1)
-  - [basic R cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/06/r-cheat-sheet.pdf)
-  
-Packages we rely on the most for data wrangling: 
-  - data wrangling: dplyr and tidyr tutorials 
-    - [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
-    
-Sometimes the data you need (eg. coverage of a carbon sequestering habitat) is contained in a spatial file. R is equipped to process, extract, and manipulate spatial data, similar to ArcGIS. Here are tutorials that cover most of the commands you will need: 
-
-- [dplyr and tidry tutorial](http://jules32.github.io/2016-07-12-Oxford/dplyr_tidyr/)
-- [how to use rmd](https://rawgit.com/eco-data-science/rmarkdown_R/master/1_rmarkdown.html)
 
 - Process (use two BHI examples: one non-spatial and one spatial) 
   - load data
@@ -34,24 +11,103 @@ Sometimes the data you need (eg. coverage of a carbon sequestering habitat) is c
   - explore status and trend calcluations (then move to functions.r)
   - save in layers folder and register data layers in layers.csv
 
+## Intro: 
+This section you can introduce the goal, what types of information or data are needed, data sources, the goal model, and how to approach trend calculation. We'll use Artisanal Fishing Opportunities (modified from [OHI-Baltic](https://github.com/OHI-Science/bhi/blob/a306fd0b596fd32a42eae755590dc60f48be7acc/baltic2015/prep/ICO/ico_prep.rmd)) as an example: 
 
+### Background
+
+_What this goal is trying to measure, what it means in your local context, etc_
+
+This goal has three sub-components: stock, access, and need. For BHI we focus first on the stock sub-component and will use this as a proxy for the entire goal initially
+
+
+### Goal model
+
+_Record what the goal model and reference point, how to approach trend calculations, etc._ 
+
+This goal has three sub-components: stock, access, and need. For BHI we focus first on the stock sub-component and will use this as a proxy for the entire goal initially
+
+#### Status
+
+Xao = Mean Stock Indicator Value / Reference pt
+Stock indicators = two HELCOM core indicators assessed for good environemental status (each scored between 0 and 1 by BHI)
+Reference pt = maximum possible good environmental status (value=1)
+
+#### Trend
+
+CPUE time series are available for all stations used for the HELCOM coastal fish populations core indicators. These data were provided by Jens Olsson (FISH PRO II project). To calculate GES status, full time series were used. Therefore, only one status time point and cannot calculate trend of status over time. Instead, follow approach from Bergström et al 2016, but only focus on the final time period for the slope (2004-2013).
+
+Bergstrom et al. 2016. Long term changes in the status of coastal fish in the Baltic Sea. Estuarin, Coast and Shelf Science. 169:74-84
+
+Method: 
+
+1. Select final time period of trend assessment (2004-2013)
+2. Use time series from both indicators, Key Species and Functional groups. For functional groups,include both cyprinid and piscivore time series.
+3. For each time series: square-root transform data, z-score, fit linear regression, extract slope
+4. Within each time series group (key species, cyprinid, piscivore), take the mean slope for each group within each basin
+5. Within each basin take a mean functional group indicator slope (mean of cyprinid mean and piscivore mean)
+6. For each basin take overall mean slope - mean of key species and functional group
+7. Apply trend value for basin to all BHI regions (except in Gulf of Finland, do not apply Finnish site value to Estonia and Russian regions.)
+
+
+### Data sources
+
+_Where the data comes from, where it's stored, potential concerns with the data, why you included or excluded certain data, etc:_
+
+HELCOM Core Indicator Abundance of coastal fish key functional groups (link...)
+
+HELCOM Core Indicator Abundance of key coastal fish species (link...)
+
+Good Environmental Status (GES) is assessed as either GES or sub-GES based on data times series using either a baseline or a trend approach, see explanation. There is only a single assessment for each region.
+
+status qualifying comments: for one dataset if a monitoring station receives a "sub-GES" assessment, it is given a qualifier as "low" or "high".
+
+Environmental status assessments provided by Jens Olsson (SLU) on June 18, 2016. See HELCOM FISH-PRO II (link...)
+
+Data are housed in the folder 'AO/raw_data'
+
+_Other comments you could also record here:_
+
+Pros and cons of using these data: 
+- Pros: ... 
+- Cons: ... 
+
+Reasons for exlcuding certain datasets... 
+
+
+### Data prep process
+
+#### setup 
+
+This section will set up directories, functions, call commonly used libraries, etc, to prepare for the next steps of data prep. 
 
 ```{r setup, include=FALSE}
+
 knitr::opts_chunk$set(echo = TRUE)
+
+## source common libraries, directories, functions, etc
+source('~/github/bhi/baltic2015/prep/common.r')
+dir_ao    = file.path(dir_prep, 'AO')
+
+## add a README.md to the prep directory with the rawgit.com url for viewing on GitHub
+create_readme(dir_secchi, 'secchi_prep.rmd')
+
+## rprojroot
+root <- rprojroot::is_rstudio_project
+
+## make_path() function to 
+make_path <- function(...) rprojroot::find_root_file(..., criterion = is_rstudio_project)
+
+dir_layers = make_path('baltic2015/layers') # replaces file.path(dir_baltic, 'layers') ???? what about dir_layers in common.r????
+
 ```
 
+#### Read in data 
+
+```{r read in data, echo = FALSE}
 
 
-```{r cars}
-summary(cars)
-```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
