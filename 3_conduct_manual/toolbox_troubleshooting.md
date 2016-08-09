@@ -109,7 +109,7 @@ You do not want it to load `ohicore` or to save anything in your workspace. You 
 
   TIP: You can use the *layers* function in `calculate_scores.R` to error-check whether you have registered your files in `layers.csv` correctly or not. If you haven't, you will get an error message regarding 'missing files'. ![f you see a 'missing files' warning when running `calculate_scores.R`, it means you need to check that you filled out the information in `layers.csv` correctly.](https://docs.google.com/drawings/d/1c0xQtANDy-rd6y5MOkW7eBNZbN47vvaaMZjYiDDU_0M/pub?w=758&h=665)
 
-### Duplicate Rows when CheckLayers in `calculate_score.R`
+### `CheckLayers()` error due to 'Rows Duplicated...'
 
   After registering and uploading data layers, you would run `CheckLayers` in `calculate_score.R` to make sure there is no errors with the data files. For example, this error appeared after uploading SPP species data
 
@@ -125,6 +125,23 @@ You do not want it to load `ohicore` or to save anything in your workspace. You 
   270     10 Stenella longirostris          2         DD  0.17 spp_species
 
   ````
+
+### `Layers()` error due to 'row.names: duplicate 'row.names' are not allowed'
+
+The following error means that within `layers.csv`, there are duplicate rows with the same layernames. 
+
+The warning message identifies several layer names to investigate... 
+```
+Error in `row.names<-.data.frame`(`*tmp*`, value = c(2L, 1L, 7L, 14L,  : 
+  duplicate 'row.names' are not allowed
+In addition: Warning message:
+non-unique values when setting 'row.names': ‘cw_con_dioxin_status’, ‘cw_con_dioxin_trend’, ‘cw_con_ices6_status’, ‘cw_con_ices6_trend’, ‘cw_con_pfos_status’, ‘cw_con_pfos_trend’, ‘cw_nu_status’, ‘cw_nu_trend’, ‘fis_bbmsy’, ‘fis_ffmsy’, ‘fis_landings’, ‘ico_status’, ‘le_gdp_region’ 
+```
+...and when inspecting `layers.csv`, there are indeed duplicate entries for the same layernames. 
+
+![](https://docs.google.com/drawings/d/1nrEmGn3jBVK1yo6Z9qVwQdEGbX2D_ahhQJF58HvQj_U/pub?w=1481&h=722)
+
+To fix these errors, ensure there are only single entries for each layer name; delete any duplicated rows. 
 
 ### Calculating Pressures...
 
