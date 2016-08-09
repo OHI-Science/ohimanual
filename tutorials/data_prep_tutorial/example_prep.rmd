@@ -1,0 +1,57 @@
+---
+title: "example_prep.rmd"
+output: html_document
+---
+
+## Introduction of OHI data prep
+
+This document will help you get started on preparing and examing your data before calculating the OHI scores... We'll start with introduction to the R packages we use most frequently for data wrangling, resources for spatial analysis, and how to use Rmd files to present the data preparation process in a human readable manner. 
+
+## R resources
+
+how to use .rmd; packages that we use often, including data wrangling and spatial analysis
+
+### Basic R commands
+
+If you are learning R or need a refresher on basic commands: 
+  - [hands-on basic R tutorial for R beginners](http://tryr.codeschool.com/levels/1/challenges/1)
+  - [basic R cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/06/r-cheat-sheet.pdf)
+  
+Packages we rely on the most for data wrangling: 
+  - data wrangling: dplyr and tidyr tutorials 
+    - [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+    
+Sometimes the data you need (eg. coverage of a carbon sequestering habitat) is contained in a spatial file. R is equipped to process, extract, and manipulate spatial data, similar to ArcGIS. Here are tutorials that cover most of the commands you will need: 
+
+- [dplyr and tidry tutorial](http://jules32.github.io/2016-07-12-Oxford/dplyr_tidyr/)
+- [how to use rmd](https://rawgit.com/eco-data-science/rmarkdown_R/master/1_rmarkdown.html)
+
+- Process (use two BHI examples: one non-spatial and one spatial) 
+  - load data
+  - change to long format and save as .csv 
+  - explore raw data and see whether it makes sense
+  - plot and describe 
+  - explore status and trend calcluations (then move to functions.r)
+  - save in layers folder and register data layers in layers.csv
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
