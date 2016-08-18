@@ -7,6 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Whenever you start, you can request a prep/starter repository that you can use to explore your data and make sure they fit with the boundaries you want. Now you can finalize your boundaries according to these criteria: XYZ (steal from best practices above). Then, we can provide the full repo templated to your spatial boundaries.
+
+
 This document will help you get started on preparing and examing your data before calculating the OHI scores... We'll start with introduction to the R packages we use most frequently for data wrangling, resources for spatial analysis, and how to use Rmd files to present the data preparation process and record your code, decision making process, and results in  one place. 
 
 ### Rmarkdown (Rmd)

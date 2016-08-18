@@ -3,18 +3,22 @@ title: "example_prep_non_spatial.rmd"
 output: html_document
 ---
 
+
+_Why prep in R and/or Rmarkdown? If you havne't used Github/Rstudio combination for work before, this process might seem daunting at first. But this is a hihgly effective system for teams to work collaboratively, record decisions, and share results easily within or outside your team. You might have relied on emails for communciation and passing versions of datasets back and forth only to be lost and confused in the process... 
+
+If someone wants to see where your data comes from, how you have processed the data, and what's the rationale for including or excluding certain data, they can come to this file and at a glance know your data preparation process. Also, it will be helpful to yourself a few months, or years from now to see what you had done. If there are personale changes in your team during the project, it would be easy for the transition if your data prepation has been kept in one place and documented clearly. You can do this with comments in R. However, we would recommend Rmarkdown language, so that you can render your comments, r scripts, and plots_
+
 _Data prep often takes the biggest chunk of your time during an assessment, more than the final calculation of the OHI scores itself! The first repository you will receive aims to help you wade through this mundane yet important first step of the assessment. Treat this prep document as your notebook, calculator, and presentation of your work. 
 
 Motivation: transparency, recording, sharing, defending your work; for your future self, team members, and anyone who's interested in how you have prepared your data. 
 
-OHI is open science and we always promote transparency in every step of the assessment. Recording decision makings, such as why you have included or excluded certain data, in your assessment is one of the best practices we highly recommond to anyone who is interested in OHI, or open science in general. Instead of one individual member writing down information in her own notebook or computer, Github allows shared team memory and collaboration. Any team member can review and track data preparation process. Your future self can see what you have done a year ago. 
+OHI is open science and we always promote transparency in every step of the assessment. Recording decision makings, such as why you have included or excluded certain data, in your assessment is one of the best practices we highly recomend to anyone who is interested in OHI, or open science in general. Instead of one individual member writing down information in her own notebook or computer, Github allows shared team memory and collaboration. Any team member can review and track data preparation process. Your future self can see what you have done a year ago. 
 
 The purpose of this script is to explore raw data and see whether it makes sense to use them in your final calculations. If it does, you can format it further and save them as data layers. 
 
 Rmarkdown produces a report with R code and figures/tables embedded in it. It can be rendered as HTML to communicate with other people. However, if you prefer to not deal with a new language, you can also write r scripts, with comments tucked into it. See ( ) for example in r.
 
 In this example data preparation document, we'll walk through the general steps we recommend you include in your document, including:
-
 
 - Process (use two BHI examples: one non-spatial and one spatial) 
   - general introduction of goal, goal model, and data 
@@ -42,7 +46,7 @@ modified for illustration ... ...
 
 _Here you can give a general introduction of what this goal/subgoal is trying to measure, what it means in your local context, and what parameters make sense to be included or explored here, etc._ 
 
-_OHI-Baltic added three subgoals to CW. The example here is Nutrient subgoal of Clean Water goal._
+_One component of CW goal: nutrients data, as represented by secchi depth measured in summer time._
 
 Summer time water clarity, measured by secchi depth, is used as a proxy indicator for nutrients in the water. More info can be found [here](http://www.helcom.fi/baltic-sea-trends/indicators/water-clarity). 
 
@@ -153,9 +157,81 @@ dim(data2)
 # colnames(data1)
 # str(data1)
 
+# initial filtering
+
+ices <- data1 %>% data.frame()%>%
+  dplyr::select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
+         lat= Latitude, lon = Longitude, 
+         cruise= Cruise, station = Station, date= Date) %>%
+  mutate(date = as.Date(date, format= "%Y-%m-%d"))%>%
+  mutate(supplier = 'ices')
+
+head(ices)
+
+## which ices data have BHI_ID of NA
+ices.na <- ices %>%
+           filter(is.na(bhi_id))
+
+nrow(ices.na) # counted total of 1684  
+
+## potential further exploration of those locations: 
+# ices.na.loc = ices.na %>% dplyr::select(lat,lon) %>% distinct() ## unique locations; using dplyr::select here because select is also a function in a different r package. specifying it's from the dplyr package (dply::) avoids confusion and downstream error. 
+# 
+# nrow(ices.na.loc) # 86  
+
+# # remove data with no BHI_ID 
+# 
+# ices <- ices %>% 
+#   filter(!is.na(bhi_id))
 
 
 
+smhi <- data2 %>% data.frame()%>%
+  rename(secchi = value) %>%
+  dplyr::select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
+        lat= Latitude, lon= Longitude, 
+         cruise = Provtagningstillfaelle.id, 
+         station = Stationsnamn, date= Date, coast_code=HELCOM_COASTAL_CODE) %>%
+  mutate(supplier = 'smhi', cruise = as.character(cruise))
+head(smhi)
+
+
+## Look for duplicate data
+
+## is any data duplicated in ices itself
+ices.duplicated = duplicated(ices)
+sum(ices.duplicated==TRUE) #181855  ## MANY duplicates 
+
+# is it because multiple cruises go out on the same day and same location?
+ices.duplicated = duplicated(dplyr::select(ices,-station)) # remove station column
+sum(ices.duplicated==TRUE) #181977 ## more duplicated
+# so this is not the reason
+
+# remove lat, lon
+ices.duplicated.latlon = duplicated(dplyr::select(ices,-lat, -lon)) %>% sum()
+sum(ices.duplicated.latlon)
+
+
+## is any data duplicated in smhi itself
+smhi.duplicated = duplicated(dplyr::select(smhi, -station))
+sum(smhi.duplicated==TRUE) #85691 ## MANY duplicates  ## removing station does not affect it
+new_smhi = unique(dplyr::select(smhi, -station)); nrow(new_smhi) #take only unique records # 17099
+
+## use setdiff() to indentify data smhi not in ices
+new_smhi = setdiff(dplyr::select(new_smhi,-supplier,-cruise), dplyr::select(new_ices,-supplier,-cruise)) %>%
+            mutate(supplier = "smhi")
+nrow(new_smhi) #  16627
+## it appears 461 records are duplicates (if remove cruise and station)
+## if date, lat, lon, secchi all match, I think they are duplicates
+
+## Now create a new allData, bind only the new_smhi object to ices
+allData = bind_rows(new_ices,new_smhi)
+nrow(allData) # 50193
+allData %>% dplyr::select(year, month, date, cruise, lat, lon,secchi) %>% distinct() %>%nrow(.)  #50193
+
+## what if remove cruise
+allData %>% dplyr::select(year, month, date, lat, lon,secchi) %>% distinct() %>%nrow(.)
+# 50193
 
 
 ```
