@@ -1,39 +1,62 @@
 ---
-title: "example_prep_non-spatial.rmd"
+title: "example_prep_non_spatial.rmd"
 output: html_document
 ---
 
+_Data prep often takes the biggest chunk of your time during an assessment, more than the final calculation of the OHI scores itself! The first repository you will receive aims to help you wade through this mundane yet important first step of the assessment. Treat this prep document as your notebook, calculator, and presentation of your work. 
+
+Motivation: transparency, recording, sharing, defending your work; for your future self, team members, and anyone who's interested in how you have prepared your data. 
+
+OHI is open science and we always promote transparency in every step of the assessment. Recording decision makings, such as why you have included or excluded certain data, in your assessment is one of the best practices we highly recommond to anyone who is interested in OHI, or open science in general. Instead of one individual member writing down information in her own notebook or computer, Github allows shared team memory and collaboration. Any team member can review and track data preparation process. Your future self can see what you have done a year ago. 
+
+The purpose of this script is to explore raw data and see whether it makes sense to use them in your final calculations. If it does, you can format it further and save them as data layers. 
+
+Rmarkdown produces a report with R code and figures/tables embedded in it. It can be rendered as HTML to communicate with other people. However, if you prefer to not deal with a new language, you can also write r scripts, with comments tucked into it. See ( ) for example in r.
+
+In this example data preparation document, we'll walk through the general steps we recommend you include in your document, including:
+
+
 - Process (use two BHI examples: one non-spatial and one spatial) 
+  - general introduction of goal, goal model, and data 
   - load data
   - change to long format and save as .csv 
   - explore raw data and see whether it makes sense
   - plot and describe 
   - explore status and trend calcluations (then move to functions.r)
   - save in layers folder and register data layers in layers.csv
+  
+  
+_In the Baltic example, there are two sources of data for secchi depth measurements. At this moment, we don't know which set is more suitable, or whether or how to combine the two sources. You'll see the process of exploring the two data sets and record the observations and subsequent decisions made on how to deal with the two data sets... including commonly used R commands to manipulate and plot data..._
 
-## Intro: 
-This section you can introduce the goal, what types of information or data are needed, data sources, the goal model, and how to approach trend calculation. We'll use Artisanal Fishing Opportunities (modified from [OHI-Baltic](https://github.com/OHI-Science/bhi/blob/a306fd0b596fd32a42eae755590dc60f48be7acc/baltic2015/prep/ICO/ico_prep.rmd)) as an example: 
-
-### Background
-
-_What this goal is trying to measure, what it means in your local context, etc_
-
-This goal has three sub-components: stock, access, and need. For BHI we focus first on the stock sub-component and will use this as a proxy for the entire goal initially
+NOTE TO SELF: 
+- status and trend calculations here? note as optional? 
 
 
-### Goal model
+# Intro: 
 
-_Record what the goal model and reference point, how to approach trend calculations, etc._ 
+This section you can introduce the goal, what types of information or data are needed, data sources, the goal model, and how to approach trend calculation. We'll use Clean Water goal (modified from [OHI-Baltic](https://github.com/OHI-Science/bhi/blob/draft/baltic2015/prep/CW/secchi/secchi_prep.Rmd)) as an example: 
 
-This goal has three sub-components: stock, access, and need. For BHI we focus first on the stock sub-component and will use this as a proxy for the entire goal initially
+modified for illustration ... ... 
 
-#### Status
+# Background
+
+_Here you can give a general introduction of what this goal/subgoal is trying to measure, what it means in your local context, and what parameters make sense to be included or explored here, etc._ 
+
+_OHI-Baltic added three subgoals to CW. The example here is Nutrient subgoal of Clean Water goal._
+
+Summer time water clarity, measured by secchi depth, is used as a proxy indicator for nutrients in the water. More info can be found [here](http://www.helcom.fi/baltic-sea-trends/indicators/water-clarity). 
+
+# Goal model
+
+_Record what the goal model and reference point should be, how to approach trend calculations, etc._ 
+
+## Status
 
 Xao = Mean Stock Indicator Value / Reference pt
 Stock indicators = two HELCOM core indicators assessed for good environemental status (each scored between 0 and 1 by BHI)
 Reference pt = maximum possible good environmental status (value=1)
 
-#### Trend
+## Trend
 
 CPUE time series are available for all stations used for the HELCOM coastal fish populations core indicators. These data were provided by Jens Olsson (FISH PRO II project). To calculate GES status, full time series were used. Therefore, only one status time point and cannot calculate trend of status over time. Instead, follow approach from Bergström et al 2016, but only focus on the final time period for the slope (2004-2013).
 
@@ -50,34 +73,36 @@ Method:
 7. Apply trend value for basin to all BHI regions (except in Gulf of Finland, do not apply Finnish site value to Estonia and Russian regions.)
 
 
-### Data sources
+## Data sources
 
 _Where the data comes from, where it's stored, potential concerns with the data, why you included or excluded certain data, etc:_
 
-HELCOM Core Indicator Abundance of coastal fish key functional groups (link...)
 
-HELCOM Core Indicator Abundance of key coastal fish species (link...)
+ICES
+Data extracted from database and sent by Hjalte Parner on Feb 10 2016.
 
-Good Environmental Status (GES) is assessed as either GES or sub-GES based on data times series using either a baseline or a trend approach, see explanation. There is only a single assessment for each region.
+Note from Parner: "extraction from our database classified into HELCOM Assessment Units – HELCOM sub basins with coastal WFD water bodies or water types"
 
-status qualifying comments: for one dataset if a monitoring station receives a "sub-GES" assessment, it is given a qualifier as "low" or "high".
+SMHI
+Downloaded from SMHI [Shark database](http://www.smhi.se/klimatdata/oceanografi/havsmiljodata/marina-miljoovervakningsdata) on Feb 23 2016 by Lena Viktorsson.
 
-Environmental status assessments provided by Jens Olsson (SLU) on June 18, 2016. See HELCOM FISH-PRO II (link...)
-
-Data are housed in the folder 'AO/raw_data'
+Download notes: datatyp: Physical and Chemical; Parameter: secchi depth
+Lena did not exclude any data when she downloaded it.
 
 _Other comments you could also record here:_
 
 Pros and cons of using these data: 
-- Pros: ... 
-- Cons: ... 
+- Pros: most recent published data and thus reflect the most current conditions of ... 
+- Cons: these datasets don't have full spatial coverage, or don't have continuous temporal coverage...
 
-Reasons for exlcuding certain datasets... 
+Reasons for exlcuding certain datasets: 
+
+Direct measurements of nutrient levels (eg. phosphate, nitrate, etc) were excluded from this subgoal because not every region measure these chemicals regularly; _OR_ we didn't have time-series data on nutrients to be able to 
 
 
-### Data prep process
+# Data prep process
 
-#### setup 
+## setup 
 
 This section will set up directories, functions, call commonly used libraries, etc, to prepare for the next steps of data prep. 
 
@@ -85,26 +110,51 @@ This section will set up directories, functions, call commonly used libraries, e
 
 knitr::opts_chunk$set(echo = TRUE)
 
-## source common libraries, directories, functions, etc
-source('~/github/bhi/baltic2015/prep/common.r')
+## load common libraries, directories, functions, etc
+
+## Libraries
+library(readr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(RMySQL)
+library(stringr)
+library(tools)
+library(stringr)
+library(rprojroot)
+
+## Directories
+dir_baltic = '~/github/ohimanual/tutorials'  # '~/github/bhi/baltic2015' 
+dir_layers = file.path(dir_baltic, 'layers')
+dir_prep   = file.path(dir_baltic, 'data_prep_tutorial') # file.path(dir_baltic, 'prep')
 dir_ao    = file.path(dir_prep, 'AO')
-
-## add a README.md to the prep directory with the rawgit.com url for viewing on GitHub
-create_readme(dir_secchi, 'secchi_prep.rmd')
-
-## rprojroot
-root <- rprojroot::is_rstudio_project
-
-## make_path() function to 
-make_path <- function(...) rprojroot::find_root_file(..., criterion = is_rstudio_project)
-
-dir_layers = make_path('baltic2015/layers') # replaces file.path(dir_baltic, 'layers') ???? what about dir_layers in common.r????
 
 ```
 
-#### Read in data 
+#### Read in data and initial exploration
 
 ```{r read in data, echo = FALSE}
+
+# read in first data set
+data1 = read_csv(file.path(dir_prep, 'example_data', 'ices_secchi.csv'))
+
+# quick review of dataset 
+head(data1)
+dim(data1)
+
+# read in second data set
+data2 = read_csv(file.path(dir_prep, 'example_data', 'smhi_secchi.csv'))
+
+# quick review of data
+head(data2)
+dim(data2)
+
+## NOTE: examples of other functions you could also use for data review
+# colnames(data1)
+# str(data1)
+
+
+
 
 
 
