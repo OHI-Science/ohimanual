@@ -1,9 +1,13 @@
-# Requesting your repositories (two step)
+# Requesting your repositories 
+
+Using the OHI Toolbox and Github Repostories for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment and even before you have defined your regions, we can immediately provide you with a prepatory Github repository (_Prep Repo_) to help you through the data exploration and region-defining stage. Once you have defined your regions, we will provide you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the Global OHI assessment. 
+
+## Step 1: The Prep Repo
 
 CNC is an example of Step 1
 Describe what’s in there
 Motivation: learn github, scripting data exploration, finalize regions (how many and spatial boundaries using ArcGIS)
-What could we add to its README?
+What could we add to its README? 
 
  Add short description something that says: Whenever you start, you can request a prep repo that you can use to explore your data and make sure they fit with the boundaries you want. Now you can finalize your boundaries according to these criteria: XYZ (steal from best practices above). Then, we can provide the full repo templated to your spatial boundaries.
 
@@ -18,4 +22,7 @@ What's in the Prep Repo:
 - Prep folder: includes a folder for each goal or subgoal, one folder for pressures, and one for resilience. 
 - 
 
-When you finalize your spatial boundareis and provide 
+## The Full Repo
+When you finalize your spatial boundareis and provide shape files... we'll provide you with a full repository with the regions defined and pre-populated data layers extracted from the most recent global assessment according to your regional boundaries. 
+
+
