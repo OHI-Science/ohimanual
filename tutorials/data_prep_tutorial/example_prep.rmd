@@ -4,11 +4,11 @@ output: html_document
 ---
 
 
-_Why prep in R and/or Rmarkdown? If you havne't used Github/Rstudio combination for work before, this process might seem daunting at first. But this is a hihgly effective system for teams to work collaboratively, record decisions, and share results easily within or outside your team. You might have relied on emails for communciation and passing versions of datasets back and forth only to be lost and confused in the process... 
+Data prep often takes the biggest chunk of your time during an assessment, more than the final calculation of the OHI scores itself! The first repository you will receive aims to help you wade through this mundane yet important first step of the assessment. Treat this prep document as your notebook, calculator, and presentation of your work. We have always tried to take full advantage of the open science tools, such as Rmarkdown and Github, which we found to be the best combination for record keeping and communication. 
+
+Why prep in R and/or Rmarkdown? If you havne't used Github/Rstudio combination for work before, this process might seem daunting at first. But this is a hihgly effective system for teams to work collaboratively, record decisions, and share results easily within or outside your team. You might have relied on emails for communciation and passing versions of datasets back and forth only to be lost and confused in the process... 
 
 If someone wants to see where your data comes from, how you have processed the data, and what's the rationale for including or excluding certain data, they can come to this file and at a glance know your data preparation process. Also, it will be helpful to yourself a few months, or years from now to see what you had done. If there are personale changes in your team during the project, it would be easy for the transition if your data prepation has been kept in one place and documented clearly. You can do this with comments in R. However, we would recommend Rmarkdown language, so that you can render your comments, r scripts, and plots_
-
-_Data prep often takes the biggest chunk of your time during an assessment, more than the final calculation of the OHI scores itself! The first repository you will receive aims to help you wade through this mundane yet important first step of the assessment. Treat this prep document as your notebook, calculator, and presentation of your work. 
 
 Motivation: transparency, recording, sharing, defending your work; for your future self, team members, and anyone who's interested in how you have prepared your data. 
 
@@ -68,7 +68,7 @@ Bergstrom et al. 2016. Long term changes in the status of coastal fish in the Ba
 
 Method: 
 
-1. Select final time period of trend assessment (2004-2013)
+1.select final time period of trend assessment (2004-2013)
 2. Use time series from both indicators, Key Species and Functional groups. For functional groups,include both cyprinid and piscivore time series.
 3. For each time series: square-root transform data, z-score, fit linear regression, extract slope
 4. Within each time series group (key species, cyprinid, piscivore), take the mean slope for each group within each basin
@@ -121,11 +121,9 @@ library(readr)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
-library(RMySQL)
 library(stringr)
 library(tools)
 library(stringr)
-library(rprojroot)
 
 ## Directories
 dir_baltic = '~/github/ohimanual/tutorials'  # '~/github/bhi/baltic2015' 
@@ -137,103 +135,204 @@ dir_ao    = file.path(dir_prep, 'AO')
 
 #### Read in data and initial exploration
 
+ICES and SMHI data have non-overlapping observations and were combined to one data set for our use. Some observations were not assigned to any regions (ie. no region IDs attached) and were omitted. 
+
+Both data sets contains profile data (eg temperature, but secchi is only measured once). We need only unique secchi records. Duplicates were thus taken out. 
+
 ```{r read in data, echo = FALSE}
 
-# read in first data set
+#### Read in raw data files 
+
+## read in ices set
 data1 = read_csv(file.path(dir_prep, 'example_data', 'ices_secchi.csv'))
 
-# quick review of dataset 
+## quick review of dataset 
 head(data1)
-dim(data1)
+str(data1)
 
-# read in second data set
+## read in smhi set
 data2 = read_csv(file.path(dir_prep, 'example_data', 'smhi_secchi.csv'))
 
-# quick review of data
 head(data2)
-dim(data2)
+str(data2)
 
-## NOTE: examples of other functions you could also use for data review
-# colnames(data1)
-# str(data1)
+##### NOTE: examples of other functions you could also use for data review
+## colnames(data1)
+## dim(data1) 
 
-# initial filtering
+#### Initial filtering
 
 ices <- data1 %>% data.frame()%>%
-  dplyr::select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
-         lat= Latitude, lon = Longitude, 
-         cruise= Cruise, station = Station, date= Date) %>%
+  select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
+         lat= Latitude, lon = Longitude, date= Date) %>%
   mutate(date = as.Date(date, format= "%Y-%m-%d"))%>%
   mutate(supplier = 'ices')
 
 head(ices)
+str(ices)
+
+#### NOTE: " " identifies the package where the function "select" comes from. It's used here becauseselect is also a function from a different package that's loaded  
 
 ## which ices data have BHI_ID of NA
 ices.na <- ices %>%
-           filter(is.na(bhi_id))
+           filter(is.na(bhi_id)) 
 
 nrow(ices.na) # counted total of 1684  
 
-## potential further exploration of those locations: 
-# ices.na.loc = ices.na %>% dplyr::select(lat,lon) %>% distinct() ## unique locations; using dplyr::select here because select is also a function in a different r package. specifying it's from the dplyr package (dply::) avoids confusion and downstream error. 
-# 
-# nrow(ices.na.loc) # 86  
+## you could do further explorations on why these observations don't have an ID attached. but for simplicity and illustration, 
+## we will ignore bhi_id = NA 
+ices <- ices %>% 
+  filter(!is.na(bhi_id))
 
-# # remove data with no BHI_ID 
-# 
-# ices <- ices %>% 
-#   filter(!is.na(bhi_id))
-
-
+###### NOTE: there are other options for data explorations too that are omitted here. For more details, check out section 3.1 of:
+###### https://github.com/OHI-Science/bhi/blob/draft/baltic2015/prep/CW/secchi/secchi_prep.Rmd
 
 smhi <- data2 %>% data.frame()%>%
   rename(secchi = value) %>%
-  dplyr::select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
-        lat= Latitude, lon= Longitude, 
-         cruise = Provtagningstillfaelle.id, 
-         station = Stationsnamn, date= Date, coast_code=HELCOM_COASTAL_CODE) %>%
-  mutate(supplier = 'smhi', cruise = as.character(cruise))
+  select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
+        lat= Latitude, lon= Longitude, date= Date) %>%
+  mutate(supplier = 'smhi') %>% 
+  filter(!is.na(bhi_id))
 head(smhi)
 
-
-## Look for duplicate data
+#### Remove duplicated data within each data set
 
 ## is any data duplicated in ices itself
 ices.duplicated = duplicated(ices)
-sum(ices.duplicated==TRUE) #181855  ## MANY duplicates 
+sum(ices.duplicated==TRUE) #180963  ## MANY duplicates 
 
-# is it because multiple cruises go out on the same day and same location?
-ices.duplicated = duplicated(dplyr::select(ices,-station)) # remove station column
-sum(ices.duplicated==TRUE) #181977 ## more duplicated
-# so this is not the reason
+## keep only unique records
+new_ices = unique(ices); nrow(new_ices)  #take only unique records # 33018
 
-# remove lat, lon
-ices.duplicated.latlon = duplicated(dplyr::select(ices,-lat, -lon)) %>% sum()
-sum(ices.duplicated.latlon)
+## is any data duplicated in smhi itself; keeping only unique records
+smhi.duplicated = duplicated(select(smhi, -station))
+sum(smhi.duplicated==TRUE) #56966 ## MANY duplicates  ## removing station does not affect it
+new_smhi = unique(smhi); nrow(new_smhi) #take only unique records # 17090
 
-
-## is any data duplicated in smhi itself
-smhi.duplicated = duplicated(dplyr::select(smhi, -station))
-sum(smhi.duplicated==TRUE) #85691 ## MANY duplicates  ## removing station does not affect it
-new_smhi = unique(dplyr::select(smhi, -station)); nrow(new_smhi) #take only unique records # 17099
+#### Combine two data sets
 
 ## use setdiff() to indentify data smhi not in ices
-new_smhi = setdiff(dplyr::select(new_smhi,-supplier,-cruise), dplyr::select(new_ices,-supplier,-cruise)) %>%
+new_smhi = setdiff(select(new_smhi,-supplier), select(new_ices,-supplier)) %>%
             mutate(supplier = "smhi")
-nrow(new_smhi) #  16627
+nrow(new_smhi) #10357
 ## it appears 461 records are duplicates (if remove cruise and station)
 ## if date, lat, lon, secchi all match, I think they are duplicates
 
 ## Now create a new allData, bind only the new_smhi object to ices
-allData = bind_rows(new_ices,new_smhi)
-nrow(allData) # 50193
-allData %>% dplyr::select(year, month, date, cruise, lat, lon,secchi) %>% distinct() %>%nrow(.)  #50193
+allData = bind_rows(new_ices, new_smhi)
+nrow(allData) #43253
 
-## what if remove cruise
-allData %>% dplyr::select(year, month, date, lat, lon,secchi) %>% distinct() %>%nrow(.)
-# 50193
-
+## double check that there are no duplicates after combining two data sets
+allData %>% select(year, month, date, lat, lon,secchi) %>% distinct() %>% nrow(.) #43253
 
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+####select only summer obervations 
+
+Only summer months post year 2000 were relevant to our use. Therefore we filtered for data in: 
+
+- Months 6-9 (June, July, August, September)  
+- Years 2010-2015
+
+The plots showed that some regions don't have good data coverages. Some basins are missing data for most recent years, such as regions 22 and 25. It appeared that water quality data makes more sense at the basin level, and will be aggregated  to the basin level in the next section. (This is an uncommon case in the Baltic's case, but it's left here for demonstration. )
+
+``` {rselect summer data}
+
+summer = allData %>% filter(month %in%c(6:9)) %>%
+        filter(year %in% c(2000:2015))
+head(summer)
+
+## plot: by month
+
+ggplot(summer) + geom_point(aes(month, secchi, colour=supplier))+
+  facet_wrap(~bhi_id, scales ="free_y")
+
+## plot: by year
+
+ggplot(summer) + geom_point(aes(year,secchi, colour=supplier))+
+  facet_wrap(~bhi_id)
+
+```
+
+#### combine data to basin level
+
+```{r combine data to basin level}
+
+# read in data to match basin and region  
+
+basin_lookup = read.csv(file.path(dir_prep, 'example_data', 'bhi_basin_country_lookup.csv'), sep=";") %>%
+  select(bhi_id = BHI_ID, basin_name=Subbasin)
+
+
+# add basin name to regions (bhi_id)
+
+summer = summer %>% full_join(., basin_lookup, by="bhi_id")
+
+#Plot by month and by year
+
+ggplot(summer) + geom_point(aes(month,secchi, colour=supplier))+
+  facet_wrap(~basin_name)
+
+ggplot(summer) + geom_point(aes(year,secchi, colour=supplier))+
+  facet_wrap(~basin_name)
+
+```
+
+#### Calculate mean monthly secchi depth by basin
+
+``` {r mean monthly secchi depth}
+
+## calculate monthly means for each month
+mean_months = summer %>% select(year, month,basin_name, secchi) %>%
+              group_by(year, month, basin_name) %>%
+              summarise(mean_secchi = round(mean(secchi, na.rm=TRUE), 1)) %>%
+              ungroup()
+head(mean_months)
+
+## plot monthly means 
+ggplot(mean_months) + geom_point(aes(year,mean_secchi, colour=factor(month))) +
+  geom_line(aes(year, mean_secchi, colour=factor(month))) +
+  facet_wrap(~basin_name)+
+  scale_y_continuous(limits = c(0,10))
+
+## calculate summer means by basin
+## basin summer means = mean of basin monthly mean values
+
+mean_months_summer = mean_months %>% select(year, basin_name, mean_secchi) %>%
+                      group_by(year, basin_name)%>%
+                      summarise(mean_secchi = round(mean(mean_secchi, na.rm=TRUE), 1)) %>%
+                      ungroup()  #in mean calculation all some months to have NA, ignore for that years calculation
+
+## plot summer means by basin
+ggplot(mean_months_summer) + geom_point(aes(year,mean_secchi))+
+  geom_line(aes(year,mean_secchi))+
+  facet_wrap(~basin_name)+
+  scale_y_continuous(limits = c(0,10))
+
+```
+
+#### Deaggregate data to region level  
+
+Data needs to be deaggregated to the regional level again for status and trend calculations. 
+
+
+```{r deaggregate to region level}
+
+mean_summer_rgn = mean_months_summer %>% full_join(basin_lookup, by='basin_name') %>% 
+ select(rgn_id = bhi_id, year, mean_secchi)
+
+## save data layer in layer folder
+write_csv(mean_summer_rgn, file.path(dir_layers, 'CW_secchi_bhi2015_NJ.csv')) # 'Goal_layer_name_AssessmentCode_YourInitial.csv'
+
+```
+
+#### _Next steps_
+
+Now you have prepared the data layer(s), you can register it in `layers.csv`. _You'll notice that in the original Baltic prep document status and trend were also explored there, instead of functions.r. You could choose to do the same, especially if you want to explore different equations or approaches to trend calculations._
+
+
+
+
+
+
+
