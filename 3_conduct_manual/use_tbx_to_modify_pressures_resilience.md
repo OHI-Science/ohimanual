@@ -108,14 +108,6 @@ However, you can redefine how the weights are set to available information in yo
 New resilience layers may be added to `resilience_matrix.csv` based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.
 
 
-<!-- ### Updating resilience matrix with local habitat information
-
-In this example we will borrow from the experience of `ohi-israel`, where they assessed habitats in the Habitats (HAB) sub-goal that were not included in global assessments `ohi-global`. Therefore, the resilience matrix needed some revision.  
-
-The habitats assessed for `ohi-israel` are:
-
-> `rocky_reef`, `sand_dunes`, `soft_bottom` -->
-
 ### How to modify Config.R for goals with multiple elements
 
 If a goal has multiple elements, as shown in _pressures_matrix.csv_, you need to update `Config.R` in `conf` folder, as shown below:
