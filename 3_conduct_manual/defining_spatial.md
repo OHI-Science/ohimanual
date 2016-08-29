@@ -12,9 +12,13 @@ The [OHI Starter Repository](link_to_Starter_Repo_description) will help you org
 
 Spatial boundaries must be drawn with geographic information system (GIS) mapping software such as ArcGIS, QGIS, or GRASS. You will need someone with GIS skills to create a shapefile that will be used by the Toolbox to display your information. The shapefile will also be used to extract information for each of your defined regions when data are reported in raster format for a different area. For more information see https://en.wikipedia.org/wiki/Geographic_information_system and  http://en.wikipedia.org/wiki/Shapefile.
 
-**Regions must be unique (non-overlapping), and boundaries must be drawn offshore**, extending to the exclusive economic zone (EEZ) edge in most cases. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.
+**Regions must be unique (non-overlapping), and boundaries must be drawn offshore**. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.
 
-Illustrated below is a general instruction on how to do so. Exactly where to draw the offshore boundaries is up to you. You could extend the land boundaries in a straight line as shown in the example, or you could draw the boundaries perpendicular to the shoreline, etc. In any case, make sure it makes sense in your local context and [doesn’t conflict with your jurisdictional boundaries](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales).
+Offshore, or marine water boundaries, are the greatest extent that the scores could represent, and generally extended to the Exclusive Economic Zone (EEZ).
+
+> Data for different goals often cover different spatial extents offshore. For example, Fisheries might use data from the entire EEZ, while Carbon Storage might only covers 3nm from shore. We don't show scores at different spatial extents on a map by goal, but instead show all to the greatest spatial extent. Because there are goals like Fisheries that usually use data for the full EEZ, the regions we need to populate a full repository have usually been the EEZ. These regional spatial boundaries do not affect data prep and analyses, where you could use any spatial extent that makes sense for each goal. 
+
+Illustrated below is the general instruction on how to do so. Exactly where to draw the offshore boundaries is up to you. You could extend the land boundaries in a straight line as shown in the example, or you could draw the boundaries perpendicular to the shoreline, etc. In any case, make sure it makes sense in your local context and [doesn’t conflict with your jurisdictional boundaries](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales).
 
 ![](https://docs.google.com/drawings/d/17G4bcyoFg8kaEGys_6aA7dQEPVteHPQBk9YQl4iA6Dw/pub?w=960&h=720)
 
