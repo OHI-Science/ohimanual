@@ -4,76 +4,67 @@ output: html_document
 ---
 
 
-Data prep often takes the biggest chunk of your time during an assessment, more than the final calculation of the OHI scores itself! The first repository you will receive aims to help you wade through this mundane yet important first step of the assessment. Treat this prep document as your notebook, calculator, and presentation of your work. We have always tried to take full advantage of the open science tools, such as Rmarkdown and Github, which we found to be the best combination for record keeping and communication. 
+Data prep often takes the biggest chunk of time in an OHI assessment, more than the final calculation of the OHI scores itself! The Prep Folder aims to help you wade through this mundane yet important first step of the assessment. Treat this prep document as your notebook, calculator, and presentation of your work. You can explore raw data, see whether it fits within the bounds of your spatial boundaries and whether it makes sense to include it in your final calculations. If it does, you can format it further and save it as data layers. The process of data exploration is recorded and can be easily shared with anyone. 
 
-Why prep in R and/or Rmarkdown? If you havne't used Github/Rstudio combination for work before, this process might seem daunting at first. But this is a hihgly effective system for teams to work collaboratively, record decisions, and share results easily within or outside your team. You might have relied on emails for communciation and passing versions of datasets back and forth only to be lost and confused in the process... 
+**Why prep here?** If someone wants to see where your data comes from, how you have processed the data, and what's the rationale for including or excluding certain data, they can find the answers here. It increases the credibility and reproducibility of your assessment. Prepping in this system will be helpful to yourself. In a few months, or years, you can visit this page and remember what you had done. It also makes your technical team more stable. If there are personale changes, your team memory is preserved. It's easy for any new memeber to pick up where it was left when your data prepation has been documented clearly and kept in one place. 
 
-If someone wants to see where your data comes from, how you have processed the data, and what's the rationale for including or excluding certain data, they can come to this file and at a glance know your data preparation process. Also, it will be helpful to yourself a few months, or years from now to see what you had done. If there are personale changes in your team during the project, it would be easy for the transition if your data prepation has been kept in one place and documented clearly. You can do this with comments in R. However, we would recommend Rmarkdown language, so that you can render your comments, r scripts, and plots_
+**Why Github/Rstudio?** To take full advantage of open-science tools, we have found Github and Rstudio to be the best combination for coding and record keeping. If you haven't used this system before, it might seem daunting at first. But this is a highly effective system for teams to work collaboratively, record decisions, and share results easily within or outside your team. Say goodbye to endless email chains and no more passing excel sheets back and forth. 
 
-Motivation: transparency, recording, sharing, defending your work; for your future self, team members, and anyone who's interested in how you have prepared your data. 
+**Why Rmarkdown?** Rmarkdown produces a report with your comments, R code, and figures/tables embedded in it. It can be rendered as a beautiful HTML webpage to easily communicate with other people. We highly recommend it to anyone who is interested in open science, especially OHI+ users. However, if you prefer to use an r script with comments tucked into it, see `example_prep_non_spatial.r` for the same example.
 
-OHI is open science and we always promote transparency in every step of the assessment. Recording decision makings, such as why you have included or excluded certain data, in your assessment is one of the best practices we highly recomend to anyone who is interested in OHI, or open science in general. Instead of one individual member writing down information in her own notebook or computer, Github allows shared team memory and collaboration. Any team member can review and track data preparation process. Your future self can see what you have done a year ago. 
+**What's in this example?** In this document, we'll walk through the general steps we recommend you include in your own prep document, including:
 
-The purpose of this script is to explore raw data and see whether it makes sense to use them in your final calculations. If it does, you can format it further and save them as data layers. 
-
-Rmarkdown produces a report with R code and figures/tables embedded in it. It can be rendered as HTML to communicate with other people. However, if you prefer to not deal with a new language, you can also write r scripts, with comments tucked into it. See ( ) for example in r.
-
-In this example data preparation document, we'll walk through the general steps we recommend you include in your document, including:
-
-- Process (use two BHI examples: one non-spatial and one spatial) 
-  - general introduction of goal, goal model, and data 
-  - load data
-  - change to long format and save as .csv 
-  - explore raw data and see whether it makes sense
-  - plot and describe 
-  - explore status and trend calcluations (then move to functions.r)
-  - save in layers folder and register data layers in layers.csv
+  - introducing the goal/subgoal, goal model, and data 
+  - setting up directories and loading libraries
+  - loading and formatting data
+  - plotting 
+  - saving as .csv in layers folder
   
-  
-_In the Baltic example, there are two sources of data for secchi depth measurements. At this moment, we don't know which set is more suitable, or whether or how to combine the two sources. You'll see the process of exploring the two data sets and record the observations and subsequent decisions made on how to deal with the two data sets... including commonly used R commands to manipulate and plot data..._
-
-NOTE TO SELF: 
-- status and trend calculations here? note as optional? 
+_This example was modified from the prep document for Nutrients subgoal for [OHI-Baltic Clean Water goal](https://github.com/OHI-Science/bhi/blob/draft/baltic2015/prep/CW/secchi/secchi_prep.Rmd). There are two sources of data for secchi depth measurements. At this moment, we don't know which set is more suitable, and whether or how to combine the two sources. You'll see the process of exploring the two data sets and record the observations and subsequent decisions made on how to deal with the two data sets. The r scirpts included commonly used R commands to manipulate and plot data._ 
 
 
-# Intro: 
+# Introduction
 
-This section you can introduce the goal, what types of information or data are needed, data sources, the goal model, and how to approach trend calculation. We'll use Clean Water goal (modified from [OHI-Baltic](https://github.com/OHI-Science/bhi/blob/draft/baltic2015/prep/CW/secchi/secchi_prep.Rmd)) as an example: 
+_In this section you'll introduce the goal/subgoal, what types of information or data are needed, data sources, the goal model, and how to approach trend calculation, etc._
 
-modified for illustration ... ... 
+_For example, you can start with a general introduction of what this goal/subgoal is trying to measure, what it means in your local context, and what parameters make sense to be included or explored here._
 
-# Background
+This subgoal aims to represent the nutrients level in the water in each region. We uses summer time water clarity, measured by secchi depth, as a proxy indicator, assuming a linear relationship between water clarity and nutrient levels. More info can be found [here](http://www.helcom.fi/baltic-sea-trends/indicators/water-clarity). 
 
-_Here you can give a general introduction of what this goal/subgoal is trying to measure, what it means in your local context, and what parameters make sense to be included or explored here, etc._ 
-
-_One component of CW goal: nutrients data, as represented by secchi depth measured in summer time._
-
-Summer time water clarity, measured by secchi depth, is used as a proxy indicator for nutrients in the water. More info can be found [here](http://www.helcom.fi/baltic-sea-trends/indicators/water-clarity). 
-
-# Goal model
+## Goal model
 
 _Record what the goal model and reference point should be, how to approach trend calculations, etc._ 
 
-## Status
+### Status
 
 Xao = Mean Stock Indicator Value / Reference pt
+
 Stock indicators = two HELCOM core indicators assessed for good environemental status (each scored between 0 and 1 by BHI)
+
 Reference pt = maximum possible good environmental status (value=1)
 
-## Trend
+### Trend
 
-CPUE time series are available for all stations used for the HELCOM coastal fish populations core indicators. These data were provided by Jens Olsson (FISH PRO II project). To calculate GES status, full time series were used. Therefore, only one status time point and cannot calculate trend of status over time. Instead, follow approach from Bergström et al 2016, but only focus on the final time period for the slope (2004-2013).
+_Typically we calculate trend as a linear trend of the last five years of status. In this assessment, however, this approach is not feasible. And an alternative approach is used and documented here._
 
-Bergstrom et al. 2016. Long term changes in the status of coastal fish in the Baltic Sea. Estuarin, Coast and Shelf Science. 169:74-84
+CPUE time series are available for all stations used for the HELCOM coastal fish populations core indicators. These data were provided by Jens Olsson (FISH PRO II project). To calculate GES status, full time series were used. Therefore, only one status time point and cannot calculate trend of status over time. Instead, we'll follow approach from Bergström et al 2016, but only focus on the final time period for the slope (2004-2013).
+
+Bergstrom et al. 2016. Long term changes in the status of coastal fish in the Baltic Sea. _Estuarin, Coast and Shelf Science_. 169:74-84
 
 Method: 
 
-1.select final time period of trend assessment (2004-2013)
-2. Use time series from both indicators, Key Species and Functional groups. For functional groups,include both cyprinid and piscivore time series.
+1. Select final time period of trend assessment (2004-2013)
+
+2. Use time series from both indicators, Key Species and Functional groups. For functional groups,include both cyprinid and piscivore time series
+
 3. For each time series: square-root transform data, z-score, fit linear regression, extract slope
+
 4. Within each time series group (key species, cyprinid, piscivore), take the mean slope for each group within each basin
+
 5. Within each basin take a mean functional group indicator slope (mean of cyprinid mean and piscivore mean)
+
 6. For each basin take overall mean slope - mean of key species and functional group
+
 7. Apply trend value for basin to all BHI regions (except in Gulf of Finland, do not apply Finnish site value to Estonia and Russian regions.)
 
 
@@ -82,31 +73,29 @@ Method:
 _Where the data comes from, where it's stored, potential concerns with the data, why you included or excluded certain data, etc:_
 
 
-ICES
-Data extracted from database and sent by Hjalte Parner on Feb 10 2016.
+**ICE**: Data extracted from database and sent by Hjalte Parner on Feb 10 2016.
 
-Note from Parner: "extraction from our database classified into HELCOM Assessment Units – HELCOM sub basins with coastal WFD water bodies or water types"
+_Note from Parner: "extraction from our database classified into HELCOM Assessment Units – HELCOM sub basins with coastal WFD water bodies or water types"_
 
-SMHI
-Downloaded from SMHI [Shark database](http://www.smhi.se/klimatdata/oceanografi/havsmiljodata/marina-miljoovervakningsdata) on Feb 23 2016 by Lena Viktorsson.
+**SMHI**: Downloaded from SMHI [Shark database](http://www.smhi.se/klimatdata/oceanografi/havsmiljodata/marina-miljoovervakningsdata) on Feb 23 2016 by Lena Viktorsson.
 
-Download notes: datatyp: Physical and Chemical; Parameter: secchi depth
-Lena did not exclude any data when she downloaded it.
+_Download notes: datatyp: Physical and Chemical; Parameter: secchi depth._
 
 _Other comments you could also record here:_
 
-Pros and cons of using these data: 
-- Pros: most recent published data and thus reflect the most current conditions of ... 
-- Cons: these datasets don't have full spatial coverage, or don't have continuous temporal coverage...
+Pros and cons of using these data:
+
+- Pros: these are the most recent published data and thus reflect the most current conditions of water quality... 
+- Cons: these datasets don't have full spatial coverage, or don't have even temporal coverage, and thus for some regions we need to do gap filling...
 
 Reasons for exlcuding certain datasets: 
 
-Direct measurements of nutrient levels (eg. phosphate, nitrate, etc) were excluded from this subgoal because not every region measure these chemicals regularly; _OR_ we didn't have time-series data on nutrients to be able to 
+Direct measurements of nutrient levels (eg. phosphate, nitrate, etc) were excluded from this subgoal because not every region measure these chemicals regularly, or we didn't have time-series data on nutrients to be able to calculate trend... 
 
 
 # Data prep process
 
-## setup 
+## Setup 
 
 This section will set up directories, functions, call commonly used libraries, etc, to prepare for the next steps of data prep. 
 
@@ -127,13 +116,13 @@ library(stringr)
 
 ## Directories
 dir_baltic = '~/github/ohimanual/tutorials'  # '~/github/bhi/baltic2015' 
-dir_layers = file.path(dir_baltic, 'layers')
+dir_layers = file.path(dir_baltic, 'layers') 
 dir_prep   = file.path(dir_baltic, 'data_prep_tutorial') # file.path(dir_baltic, 'prep')
 dir_ao    = file.path(dir_prep, 'AO')
 
 ```
 
-#### Read in data and initial exploration
+## Read in data and initial exploration
 
 ICES and SMHI data have non-overlapping observations and were combined to one data set for our use. Some observations were not assigned to any regions (ie. no region IDs attached) and were omitted. 
 
@@ -205,7 +194,7 @@ sum(ices.duplicated==TRUE) #180963  ## MANY duplicates
 new_ices = unique(ices); nrow(new_ices)  #take only unique records # 33018
 
 ## is any data duplicated in smhi itself; keeping only unique records
-smhi.duplicated = duplicated(select(smhi, -station))
+smhi.duplicated = duplicated(select(smhi))
 sum(smhi.duplicated==TRUE) #56966 ## MANY duplicates  ## removing station does not affect it
 new_smhi = unique(smhi); nrow(new_smhi) #take only unique records # 17090
 
@@ -227,7 +216,7 @@ allData %>% select(year, month, date, lat, lon,secchi) %>% distinct() %>% nrow(.
 
 ```
 
-####select only summer obervations 
+## Select only summer obervations 
 
 Only summer months post year 2000 were relevant to our use. Therefore we filtered for data in: 
 
@@ -236,7 +225,7 @@ Only summer months post year 2000 were relevant to our use. Therefore we filtere
 
 The plots showed that some regions don't have good data coverages. Some basins are missing data for most recent years, such as regions 22 and 25. It appeared that water quality data makes more sense at the basin level, and will be aggregated  to the basin level in the next section. (This is an uncommon case in the Baltic's case, but it's left here for demonstration. )
 
-``` {rselect summer data}
+``` {r select summer data}
 
 summer = allData %>% filter(month %in%c(6:9)) %>%
         filter(year %in% c(2000:2015))
@@ -254,7 +243,7 @@ ggplot(summer) + geom_point(aes(year,secchi, colour=supplier))+
 
 ```
 
-#### combine data to basin level
+## Combine data to basin level
 
 ```{r combine data to basin level}
 
@@ -278,7 +267,7 @@ ggplot(summer) + geom_point(aes(year,secchi, colour=supplier))+
 
 ```
 
-#### Calculate mean monthly secchi depth by basin
+## Calculate mean monthly secchi depth by basin
 
 ``` {r mean monthly secchi depth}
 
@@ -311,7 +300,7 @@ ggplot(mean_months_summer) + geom_point(aes(year,mean_secchi))+
 
 ```
 
-#### Deaggregate data to region level  
+## Deaggregate data to region level  
 
 Data needs to be deaggregated to the regional level again for status and trend calculations. 
 
@@ -321,15 +310,20 @@ Data needs to be deaggregated to the regional level again for status and trend c
 mean_summer_rgn = mean_months_summer %>% full_join(basin_lookup, by='basin_name') %>% 
  select(rgn_id = bhi_id, year, mean_secchi)
 
-## save data layer in layer folder
-write_csv(mean_summer_rgn, file.path(dir_layers, 'CW_secchi_bhi2015_NJ.csv')) # 'Goal_layer_name_AssessmentCode_YourInitial.csv'
+## save data layer in layer folder (this section is commented out since dir_layers is not assigned correctly to your assessment folder...)
+# write_csv(mean_summer_rgn, file.path(dir_layers, 'CW_secchi_bhi2015_NJ.csv')) # save as: 'Goal_LayerName_AssessmentName_YourInitial.csv'
 
 ```
 
-#### _Next steps_
+## _Next steps_
 
-Now you have prepared the data layer(s), you can register it in `layers.csv`. _You'll notice that in the original Baltic prep document status and trend were also explored there, instead of functions.r. You could choose to do the same, especially if you want to explore different equations or approaches to trend calculations._
+Now you have prepared the data layer(s), you can [register it in `layers.csv`](http://ohi-science.org/manual/#register-data-layers-in-layers.csv). 
 
+_You'll notice that in the original Baltic prep document status and trend were also explored there, instead of functions.r. You could choose to do the same, especially if you want to explore different equations or approaches to trend calculations. We don't always recommend it since this system creates duplicated effortsyou have two places (prep folder and fucntions.r) to update when you make changes to your goal models._
+
+**To render this file and use it to communicate with other human beings**:  
+
+Click on _Knit HTML_ at the top of this window to create an .html file. Pull/Commit/Push as usual for this file. Open the .html file in Github.com. Copy and paste the link to https://rawfit.com. It will produce a link to the rendered webpage!  
 
 
 
