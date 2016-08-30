@@ -1,41 +1,39 @@
 ## Modify goal models
 
-After you have registered the data layers for a goal and created a goal model, you are ready to calculate the _status_ and _trend_ of this goal. Each goal function is unique. However, they all follow these basic sequence of events:
+After you have registered the data layers for a goal and created a goal model, you are ready to calculate the _status_ and _trend_ of this goal in `functions.r`. 
 
-1. load ohicore and check data layers
-2. load data
-3. calculate status
-4. calculate trend
-5. combine status and trend
-6. update `goals.csv`
+Within `functions.r`, each goal is unique and set up as a function (ie.`AO = function(inputs){equations}`): 
+
+- sub-goals (eg. HAB) and goals without sub-goals (eg. CS) have functions that read in data _layers_ (eg. `HAB = functions(layers)`) and return scores for that goal or sub-goal
+- supra-goals, or goals with sub-goals (eg. FP) have functions that read in sub-goal _scores_ (eg. `BD = function(scores)`) and calculate scores for the supra-goals
+
+> `functions.R` is pre-loaded with r codes from OHI-Global 2015 assessment as a reference. You can run through the reference script line-by-line to learn how it has been done. For your own assessment, you may choose to delete the entire function and rewrite it completely, or you can borrow most, if not all, of the existing script. Either way, make sure you first identify the parameters to call, either _layers_ or _scores_.
+
+To modify the goal models, open `conf/functions.R` and go to the appropriate goal section. You will do the following sequence of events:
+
+1. load ohicore and check data layers (`configure_toolbox.r`)
+2. load data (`functions.r`)
+3. calculate status scores (`functions.r`)
+4. calculate trend scores (`functions.r`)
+5. combine status and trend scores (`functions.r`)
+6. confirm how the function is called (`goals.csv`)
 
 > Tip: Check that you have installed the latest versions of R and RStudio before starting. If an unexplained error occurs during calculation, it could be due to a software update, which happens every month or two. Sometimes simply updating your software could fix the error.  
 
 **1. Load ohicore and check data layers**
 
-These steps will help you set up for goal modifications:  
+Run (or source) `configure_toolbox.r` to load ohicore and check data layers.
 
-1. Run `configure_toolbox.r` to load ohicore and check data layers.
-1. In `conf` sub-folder, open `functions.R`, where status and trend calculations occur.
-1. Go to the appropriate goal section.
-
-> `functions.R` is pre-loaded with r codes from OHI-Global 2015 assessment as a reference. You can run through the reference script line-by-line to learn how it has been done. For your own assessment, you may choose to delete the entire function and rewrite it completely, or you can borrow most, if not all, of the existing script. Either way, make sure you first identify the parameters to call, either _layers_ or _scores_.
-
-Each goal is set up as a function (ie.` Goal = functions(...) {...} `),
-
-- For sub-goals (eg. HAB) and goals without subgoals (eg. CS), their functions read in data _layers_ (eg. `HAB = functions(layers)`) and return scores for that goal or sub-goal
-- Supra-goals, or goals with sub-goals (eg. FP), then read in sub-goal _scores_ (eg. `BD = function(scores)`) and calculate scores for the supra-goals
-
-After setting up the function call, steps 2 to 5 occur within each `funtion{...}`. The example below is modified from the _AO_ function in OHI-Global 2015.  
 
 **2. Load data**
+
+The example below is modified from the _AO_ function in OHI-Global 2015.  
 
 1. Select data layers. _(Note that the layer names are what was set up in `layers.csv`. Now the toolbox will look for those layers)_
 
 ```
+## select data layers using ohicore::SelectLayersData
 layers_data = SelectLayersData(layers, targets='AO')
-
-year_min = max(min(layers_data$year, na.rm = TRUE), status_year - 10)
 ```          
 
 2. Rename columns & combine layers into one data frame.
@@ -74,6 +72,9 @@ r.status <- ry %>%
 Trend is typically calculated as the linear trend of the _most recent five years_ of status.
 
 ```
+## minimum year here for illustration; it is based on data available
+year_min = 2011 
+
  r.trend <- ry %>%
    filter(year >= year_min) %>%
    filter(!is.na(statusData)) %>%
@@ -116,7 +117,7 @@ scores = r.status %>%
 
 `goals.csv` in the `conf` folder provides input information for `functions.r`, particularly about function calls. These are indicated by two columns: *preindex_function* (functions for all goals that do not have sub-goals, and functions for all sub-goals) and *postindex_function* (functions for goals with sub-goals).
 
-In the `preindex_fuction`, you could specify variables such as _status_year_ and _trend_year_, which you can call in your goal function. Note that it is not necessary to specify those variables. If you do not use them in your function as in the CS example, you could delete those variables in `preindex_fuction`.
+In the `preindex_fuction`, you could specify variables such as _status_year_ and _trend_year_, which you can call in your goal function. Note that it is not necessary to specify those variables. If you do not use them in your function as in the CS example, you could delete those variables in `preindex_function`.
 
 > Changing goal weights will be done here by editing the value in the *weight* column. Weights do not need to be 0-1 or add up to 10; weights will be scaled as a proportion of the number of goals assessed. The ten goals are weighted equally by default.
 
