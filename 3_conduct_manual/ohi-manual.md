@@ -1003,42 +1003,40 @@ If the new or modified layer is a pressures layer, check that `pressures_matrix.
 
 ## Modify goal models
 
-After you have registered the data layers for a goal and created a goal model, you are ready to calculate the _status_ and _trend_ of this goal. Each goal function is unique. However, they all follow these basic sequence of events:
+After you have registered the data layers for a goal and created a goal model, you are ready to calculate the _status_ and _trend_ of this goal in `functions.r`. 
 
-1. load ohicore and check data layers
-2. load data
-3. calculate status
-4. calculate trend
-5. combine status and trend
-6. update `goals.csv`
+Within `functions.r`, each goal is unique and set up as a function (ie.`AO = function(inputs){equations}`): 
+
+- sub-goals (eg. HAB) and goals without sub-goals (eg. CS) have functions that read in data _layers_ (eg. `HAB = functions(layers)`) and return scores for that goal or sub-goal
+- supra-goals, or goals with sub-goals (eg. FP) have functions that read in sub-goal _scores_ (eg. `BD = function(scores)`) and calculate scores for the supra-goals
+
+> `functions.R` is pre-loaded with r codes from OHI-Global 2015 assessment as a reference. You can run through the reference script line-by-line to learn how it has been done. For your own assessment, you may choose to delete the entire function and rewrite it completely, or you can borrow most, if not all, of the existing script. Either way, make sure you first identify the parameters to call, either _layers_ or _scores_.
+
+To modify the goal models, open `conf/functions.R` and go to the appropriate goal section. You will do the following sequence of events:
+
+1. load ohicore and check data layers (`configure_toolbox.r`)
+2. load data (`functions.r`)
+3. calculate status scores (`functions.r`)
+4. calculate trend scores (`functions.r`)
+5. combine status and trend scores (`functions.r`)
+6. confirm how the function is called (`goals.csv`)
 
 > Tip: Check that you have installed the latest versions of R and RStudio before starting. If an unexplained error occurs during calculation, it could be due to a software update, which happens every month or two. Sometimes simply updating your software could fix the error.  
 
 **1. Load ohicore and check data layers**
 
-These steps will help you set up for goal modifications:  
+Run (or source) `configure_toolbox.r` to load ohicore and check data layers.
 
-1. Run `configure_toolbox.r` to load ohicore and check data layers.
-1. In `conf` sub-folder, open `functions.R`, where status and trend calculations occur.
-1. Go to the appropriate goal section.
-
-> `functions.R` is pre-loaded with r codes from OHI-Global 2015 assessment as a reference. You can run through the reference script line-by-line to learn how it has been done. For your own assessment, you may choose to delete the entire function and rewrite it completely, or you can borrow most, if not all, of the existing script. Either way, make sure you first identify the parameters to call, either _layers_ or _scores_.
-
-Each goal is set up as a function (ie.` Goal = functions(...) {...} `),
-
-- For sub-goals (eg. HAB) and goals without subgoals (eg. CS), their functions read in data _layers_ (eg. `HAB = functions(layers)`) and return scores for that goal or sub-goal
-- Supra-goals, or goals with sub-goals (eg. FP), then read in sub-goal _scores_ (eg. `BD = function(scores)`) and calculate scores for the supra-goals
-
-After setting up the function call, steps 2 to 5 occur within each `funtion{...}`. The example below is modified from the _AO_ function in OHI-Global 2015.  
 
 **2. Load data**
+
+The example below is modified from the _AO_ function in OHI-Global 2015.  
 
 1. Select data layers. _(Note that the layer names are what was set up in `layers.csv`. Now the toolbox will look for those layers)_
 
 ```
+## select data layers using ohicore::SelectLayersData
 layers_data = SelectLayersData(layers, targets='AO')
-
-year_min = max(min(layers_data$year, na.rm = TRUE), status_year - 10)
 ```          
 
 2. Rename columns & combine layers into one data frame.
@@ -1077,6 +1075,9 @@ r.status <- ry %>%
 Trend is typically calculated as the linear trend of the _most recent five years_ of status.
 
 ```
+## minimum year here for illustration; it is based on data available
+year_min = 2011 
+
  r.trend <- ry %>%
    filter(year >= year_min) %>%
    filter(!is.na(statusData)) %>%
@@ -1119,7 +1120,7 @@ scores = r.status %>%
 
 `goals.csv` in the `conf` folder provides input information for `functions.r`, particularly about function calls. These are indicated by two columns: *preindex_function* (functions for all goals that do not have sub-goals, and functions for all sub-goals) and *postindex_function* (functions for goals with sub-goals).
 
-In the `preindex_fuction`, you could specify variables such as _status_year_ and _trend_year_, which you can call in your goal function. Note that it is not necessary to specify those variables. If you do not use them in your function as in the CS example, you could delete those variables in `preindex_fuction`.
+In the `preindex_fuction`, you could specify variables such as _status_year_ and _trend_year_, which you can call in your goal function. Note that it is not necessary to specify those variables. If you do not use them in your function as in the CS example, you could delete those variables in `preindex_function`.
 
 > Changing goal weights will be done here by editing the value in the *weight* column. Weights do not need to be 0-1 or add up to 10; weights will be scaled as a proportion of the number of goals assessed. The ten goals are weighted equally by default.
 
@@ -1131,7 +1132,7 @@ In the `preindex_fuction`, you could specify variables such as _status_year_ and
 
 ## Modifying Pressures Categories and Matrix
 
-Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have (see Appendix 6 for guidance on Pressure and Resilience). You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `subcountry2014/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
+Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `subcountry2014/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
 
 Adding a new pressure to the pressures matrix requires the following steps:
 
@@ -1140,7 +1141,7 @@ Adding a new pressure to the pressures matrix requires the following steps:
 > 3. Register in `pressures_categories.csv`
 > 4. Register in `pressures_matrix.csv`
   + a. Identify the goals affected and set the weighting
-> 5. Modify Config.R for goals that have elements
+> 5. Modify config.R for goals that have elements
 
 ### Create the new pressure layers and save in the `layers` folder
 
@@ -1171,15 +1172,15 @@ Each pressure category is calculated separately before being combined with the o
 
 ![](https://docs.google.com/drawings/d/1qVCPgPZ2KImrO0mPIarhV0WlcOKW96E33VLI-6i3eCw/pub?w=800&h=720)
 
-### Register in `pressure_matrix.csv`  
+### Register in `pressures_matrix.csv`  
 
 `pressures_matrix.csv` identifies the different types of ocean pressures with the goals that they affect. Adding a new pressures layer to `pressures_matrix.csv` requires adding a new column with the pressure layer name.
 
-The columns `element` (and `element_name`) record habitat types for habitat-specefic goals (eg. CS and CP) and industrial sectors for economy-based goals (eg. ECO).
+The columns `element` (and `element_name`) record habitat types for habitat-specific goals (eg. CS and CP) and industrial sectors for economy-based goals (eg. ECO).
 
 The rest of the column headers of the pressures matrix are the layer names of the pressures layer file that are saved in the `layers` folder and registered in `layers.csv`, matching what's recorded in the _pressures_categories.csv_.
 
-_**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `pressures_marix.csv` and `pressures_categories.csv`. Otherwise ohicore will search for all the layers registered in those files and calculations will halt if it encounters pressure layers that do not exist._
+_**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `pressures_matrix.csv` and `pressures_categories.csv`. Otherwise `ohicore` will search for all the layers registered in those files and calculations will halt if it encounters pressure layers that do not exist._
 
 ![](https://docs.google.com/drawings/d/1PiueTs_r2IvC10zsStJq-tD3YcsC98eRKr1e2OOVKUw/pub?w=800&h=720)
 
@@ -1188,9 +1189,9 @@ _**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `p
 
 This step also requires transferring prior decisions into `pressures_matrix.csv`. Mark which goals are affected by this new pressure, and then set the weighting. Pressures weighting by goal should be based on scientific literature and expert opinion (3 = highly influential pressure, 2 = moderately influential pressure, 1 = not very influential pressure). Remember that the rankings in the pressures matrix are separate from the actual data within the pressures data layers. The rankings ensure that within a particular goal (e.g. within a row of the pressures matrix), the stressors that more strongly influence the goal’s delivery have a larger contribution to that goal’s overall pressure score. Therefore, the rankings are assigned independently of the actual pressure scores, and only determine their importance within the calculations.
 
-#### Modify Config.R for goals with multiple elements
+#### Modify config.R for goals with multiple elements
 
-If a goal has multiple elements (eg. CS has multiple habitats), as reflected in _pressures_matrix.csv_ where the columns `element` (and `element_name`) are filled, you need to update `Config.R` in `conf` folder, as shown below:
+If a goal has multiple elements (eg. CS has multiple habitats), as reflected in _pressures_matrix.csv_ where the columns `element` (and `element_name`) are filled, you need to update `config.R` in `conf` folder, as shown below:
 
 ![](https://docs.google.com/drawings/d/14qz5DZUQAuiRaJDYfyTp2c1g1RGDKCRwN0uSPYX4hHE/pub?w=800&h=540)
 
@@ -1200,7 +1201,7 @@ The highlighted files are data layers necessary to calculate pressures for each 
 
 Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/subcountry2014/conf` folder).
 
-Adding a new resilience to the resiliences matrix requires the following steps:
+Adding a new resilience to the resilience matrix requires the following steps:
 
 > 1. Create new resilience layer(s) and save in the `layers` folder
 > 2. Register resilience layer(s) in `layers.csv`
@@ -1221,9 +1222,9 @@ This process is similar to what you have done for the pressures data layers. Pre
 
 ![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=800&h=720)
 
-Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category-type`s - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `Subcategory` column indicates what specific pressure each layer of resilience is targered at. The prefix of each data layer corresponds to its Subcategory (eg. po, li, g, etc).
+Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category-type` - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `subcategory` column indicates what specific pressure each layer of resilience is targeted at. The prefix of each data layer corresponds to its subcategory (eg. po, li, g, etc).
 
-In addition, the `Weight` column respresents level of institutional governnace. Governance is a function of 1) institutional structures that address the intended objective (eg. wheter appropriate laws/regulations exist, etc), 2) a clear process for _implementing_ the institution is in place, and 3) whether the institution has been _effective_ at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the `resilience_categories.csv` pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer:
+In addition, the `weight` column represents level of institutional governance. Governance is a function of 1) institutional structures that address the intended objective (eg. whether appropriate laws/regulations exist, etc), 2) a clear process for _implementing_ the institution is in place, and 3) whether the institution has been _effective_ at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the `resilience_categories.csv` pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer:
 
 - _0.5_ means that a law or regulation exists, or a country has signed an appropriate treaty
 - _1_ means that there are evidence of implementation of the laws and regulations.
