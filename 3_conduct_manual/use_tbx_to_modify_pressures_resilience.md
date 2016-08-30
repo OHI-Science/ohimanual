@@ -1,6 +1,6 @@
 ## Modifying Pressures Categories and Matrix
 
-Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have (see Appendix 6 for guidance on Pressure and Resilience). You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `subcountry2014/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
+Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `subcountry2014/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
 
 Adding a new pressure to the pressures matrix requires the following steps:
 
@@ -9,7 +9,7 @@ Adding a new pressure to the pressures matrix requires the following steps:
 > 3. Register in `pressures_categories.csv`
 > 4. Register in `pressures_matrix.csv`
   + a. Identify the goals affected and set the weighting
-> 5. Modify Config.R for goals that have elements
+> 5. Modify config.R for goals that have elements
 
 ### Create the new pressure layers and save in the `layers` folder
 
@@ -40,15 +40,15 @@ Each pressure category is calculated separately before being combined with the o
 
 ![](https://docs.google.com/drawings/d/1qVCPgPZ2KImrO0mPIarhV0WlcOKW96E33VLI-6i3eCw/pub?w=800&h=720)
 
-### Register in `pressure_matrix.csv`  
+### Register in `pressures_matrix.csv`  
 
 `pressures_matrix.csv` identifies the different types of ocean pressures with the goals that they affect. Adding a new pressures layer to `pressures_matrix.csv` requires adding a new column with the pressure layer name.
 
-The columns `element` (and `element_name`) record habitat types for habitat-specefic goals (eg. CS and CP) and industrial sectors for economy-based goals (eg. ECO).
+The columns `element` (and `element_name`) record habitat types for habitat-specific goals (eg. CS and CP) and industrial sectors for economy-based goals (eg. ECO).
 
 The rest of the column headers of the pressures matrix are the layer names of the pressures layer file that are saved in the `layers` folder and registered in `layers.csv`, matching what's recorded in the _pressures_categories.csv_.
 
-_**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `pressures_marix.csv` and `pressures_categories.csv`. Otherwise ohicore will search for all the layers registered in those files and calculations will halt if it encounters pressure layers that do not exist._
+_**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `pressures_matrix.csv` and `pressures_categories.csv`. Otherwise `ohicore` will search for all the layers registered in those files and calculations will halt if it encounters pressure layers that do not exist._
 
 ![](https://docs.google.com/drawings/d/1PiueTs_r2IvC10zsStJq-tD3YcsC98eRKr1e2OOVKUw/pub?w=800&h=720)
 
@@ -57,9 +57,9 @@ _**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `p
 
 This step also requires transferring prior decisions into `pressures_matrix.csv`. Mark which goals are affected by this new pressure, and then set the weighting. Pressures weighting by goal should be based on scientific literature and expert opinion (3 = highly influential pressure, 2 = moderately influential pressure, 1 = not very influential pressure). Remember that the rankings in the pressures matrix are separate from the actual data within the pressures data layers. The rankings ensure that within a particular goal (e.g. within a row of the pressures matrix), the stressors that more strongly influence the goal’s delivery have a larger contribution to that goal’s overall pressure score. Therefore, the rankings are assigned independently of the actual pressure scores, and only determine their importance within the calculations.
 
-#### Modify Config.R for goals with multiple elements
+#### Modify config.R for goals with multiple elements
 
-If a goal has multiple elements (eg. CS has multiple habitats), as reflected in _pressures_matrix.csv_ where the columns `element` (and `element_name`) are filled, you need to update `Config.R` in `conf` folder, as shown below:
+If a goal has multiple elements (eg. CS has multiple habitats), as reflected in _pressures_matrix.csv_ where the columns `element` (and `element_name`) are filled, you need to update `config.R` in `conf` folder, as shown below:
 
 ![](https://docs.google.com/drawings/d/14qz5DZUQAuiRaJDYfyTp2c1g1RGDKCRwN0uSPYX4hHE/pub?w=800&h=540)
 
@@ -69,7 +69,7 @@ The highlighted files are data layers necessary to calculate pressures for each 
 
 Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/subcountry2014/conf` folder).
 
-Adding a new resilience to the resiliences matrix requires the following steps:
+Adding a new resilience to the resilience matrix requires the following steps:
 
 > 1. Create new resilience layer(s) and save in the `layers` folder
 > 2. Register resilience layer(s) in `layers.csv`
@@ -90,9 +90,9 @@ This process is similar to what you have done for the pressures data layers. Pre
 
 ![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=800&h=720)
 
-Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category-type`s - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `Subcategory` column indicates what specific pressure each layer of resilience is targered at. The prefix of each data layer corresponds to its Subcategory (eg. po, li, g, etc).
+Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category-type` - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `subcategory` column indicates what specific pressure each layer of resilience is targeted at. The prefix of each data layer corresponds to its subcategory (eg. po, li, g, etc).
 
-In addition, the `Weight` column respresents level of institutional governnace. Governance is a function of 1) institutional structures that address the intended objective (eg. wheter appropriate laws/regulations exist, etc), 2) a clear process for _implementing_ the institution is in place, and 3) whether the institution has been _effective_ at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the `resilience_categories.csv` pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer:
+In addition, the `weight` column represents level of institutional governance. Governance is a function of 1) institutional structures that address the intended objective (eg. whether appropriate laws/regulations exist, etc), 2) a clear process for _implementing_ the institution is in place, and 3) whether the institution has been _effective_ at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the `resilience_categories.csv` pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer:
 
 - _0.5_ means that a law or regulation exists, or a country has signed an appropriate treaty
 - _1_ means that there are evidence of implementation of the laws and regulations.
