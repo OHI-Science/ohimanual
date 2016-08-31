@@ -133,17 +133,17 @@ The [OHI Starter Repository](link_to_Starter_Repo_description) will help you org
 
 > Note that the OHI does not take a stance on disputed territories. The boundaries are defined by the original map data providers.
 
-<!-- Add/link to a section on how to take data limitations into considertaion -->
+<!-- Add/link to a section on how to take data limitations into consideration -->
 
 ## Drawing spatial boundaries
 
-Spatial boundaries must be drawn with geographic information system (GIS) mapping software such as ArcGIS, QGIS, or GRASS. You will need someone with GIS skills to create a shapefile that will be used by the Toolbox to display your information. The shapefile will also be used to extract information for each of your defined regions when data are reported in raster format for a different area. For more information see https://en.wikipedia.org/wiki/Geographic_information_system and  http://en.wikipedia.org/wiki/Shapefile.
+Spatial boundaries must be drawn with geographic information system (GIS) mapping software such as ArcGIS, QGIS, or GRASS. You will need someone with GIS skills to create a shapefile that will be used by the Toolbox to display your information. The shapefile will also be used to extract information for each of your defined regions when data are reported in raster format for a different area. For more information see Wikipedia for [Geographic information systems](https://en.wikipedia.org/wiki/Geographic_information_system) and [Shapefiles](http://en.wikipedia.org/wiki/Shapefile).
 
 **Regions must be unique (non-overlapping), and boundaries must be drawn offshore**. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.
 
 Offshore, or marine water boundaries, are the greatest extent that the scores could represent, and generally extended to the Exclusive Economic Zone (EEZ).
 
-> Data for different goals often cover different spatial extents offshore. For example, Fisheries might use data from the entire EEZ, while Carbon Storage might only covers 3nm from shore. We don't show scores at different spatial extents on a map by goal, but instead show all to the greatest spatial extent. Because there are goals like Fisheries that usually use data for the full EEZ, the regions we need to populate a full repository have usually been the EEZ. These regional spatial boundaries do not affect data prep and analyses, where you could use any spatial extent that makes sense for each goal. 
+> Data for different goals often cover different spatial extents offshore. For example, Fisheries might use data from the entire EEZ, while Carbon Storage might only covers 3nm from shore. We don't show scores at different spatial extents on a map by goal, but instead show all to the greatest spatial extent. Because there are goals like Fisheries that usually use data for the full EEZ, the regions we need to populate a full repository have usually been the EEZ. These regional spatial boundaries do not affect data prep and analyses, where you could use any spatial extent that makes sense for each goal.
 
 Illustrated below is the general instruction on how to do so. Exactly where to draw the offshore boundaries is up to you. You could extend the land boundaries in a straight line as shown in the example, or you could draw the boundaries perpendicular to the shoreline, etc. In any case, make sure it makes sense in your local context and [doesn’t conflict with your jurisdictional boundaries](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales).
 
@@ -574,10 +574,14 @@ The `layers.csv` file is the registry and directory that manages all data requir
 
 **goals.csv**
 
-`goals.csv` is a table with information about goals and sub-goals. This includes the weight of each goal that is used to calculate the final Index scores when all goals are combined. Other information includes the goal description that is also presented in the WebApp. `goals.csv` also indicates the arguments passed to `functions.R`. These are indicated by two columns: *preindex_function* (functions for all goals that do not have sub-goals, and functions for all sub-goals) and *postindex_function* (functions for goals with sub-goals).
+`goals.csv` is a table with information about goals and sub-goals, including:
 
-> TIP: It's important to check `goals.csv`'s weightings and preindex functions when you change goal or sub-goal model equations in `functions.r`.
-
+- _order_color_ & _order_hierarchy_: the order to display in flower plots
+- _order_calculate_: the oder in which the goals and sub-goals are calculated for the overall index scores
+- _goal_ & _parent_: indicates the relationship between sub-goals and supra-goals (ie. goals with sub-goals)
+- _weight_: how each goal is weighted to calculate the final Index scores
+- _preindex_function_: indicate what parameters are called to calculate scores for goals and sub-goals in `functions.r`
+- _postindex_function_: indicate what parameters are called to calculate scores for supra-goals in `functions.r`
 
 **pressures_categories.csv**
 
@@ -1406,11 +1410,11 @@ To completely remove the carbon storage goal from Index calculations, you will d
 
 ![](./fig/delete_resilience.png)
 
-## Remove Subgoals from a Goal
+## Remove Sub-goals from a Supra-goal
 
-If you decide that a goal that has subgoals (eg. BD, LE, FP) should be assessed as an individual goal due to data limitation or other reasons, you can remove the subgoals. We will use BD as an example to illustrate how.
+Sometimes a _supra-goal_ (ie. BD, LE, and FP), or a goal that has _sub-goals_, can be assessed as an individual goal by removing the sub-goals. For example, if the biodiversity in your area can be represented well with only species and not habitats, it is possible to only assess species (ie. only the SPP subgoal and not the HAB subgoal). But this would then make the BD goal only have one subgoal (SPP). It is better to remove that subgoal and make it clear that BD is the biodiversity goal for species.
 
-BD is a supra-goal because it has sub-goals. Here we are deleting a subgoal and make a supra-goal into a goal. 
+Here we will use BD as an example to illustrate how you can delete the subgoals and make a supra-goal into a goal.
 
 `ohicore` pulls information from several files and scripts to combine scores from subgoals to calculate overall goal scores. The process of removing subgoals thus involves removing subgoal information from all these files:
 
@@ -1423,9 +1427,13 @@ _**NOTE**: These steps do not need to occur in this sequence._
 
 ### Remove subgoals from `goals.csv`
 
-`goals.csv` is a table with information about the relationship between goals and sub-goals. This includes the weight of each goal that is used to calculate the final Index scores when all goals are combined. These are indicated by two columns: preindex_function (functions for all goals that do not have sub-goals, and functions for all sub-goals) and postindex_function (functions for goals with sub-goals).
+`goals.csv` is a table with information about the relationship between goals and sub-goals. Description of what each column means can be read in the [data layers](http://ohi-science.org/manual/#data-layers) section, under _goals.csv_.
 
-As illustrated in the graph below, removing the subgoals involves simplifying how BD and its subgoals are registered in the columns shown here:
+As illustrated in the graph below, removing the subgoals involves simplifying how BD and its subgoals are registered in the columns:
+
+- change the _order_ and _order_hierarhy_ to 10
+- remove BD from the _postindex_function_ column & add to the _preindex_function_ column
+- change the function call from `BD(scores)` to `BD(layers)`
 
 ![](https://docs.google.com/drawings/d/1TUDfU2mG-QlXa3Huq_r8EwcgDPEa1RCaVQfpWnY49Uo/pub?w=830&h=720)
 
@@ -1434,21 +1442,21 @@ As illustrated in the graph below, removing the subgoals involves simplifying ho
 
 `functions.r`contains the R codes to calculate status and trend for each goal and sub-goal, contained within individual functions. Calculations are done using prepared layers saved in the _layers_ folder and registered in _layers.csv_. As shown below, HAB and SPP each has its own function, calling data layers from _layers_. The BD function combines HAB and SPP scores, calling _scores_.
 
-ADD: subgoal functions read in data layers and calculated sub-goal scores; supra-goal reads in those sub-goal _scores_ to calculate scores for that supra-goal.  
-
 To remove the subgoals, you can delete functions for HAB and SPP completely, and write a function for BD as you would for any goal, calling _layers_.
+
+> Remember that subgoal functions read in data _layers_ and calculated sub-goal scores; supra-goal reads in those sub-goal _scores_ to calculate scores for that supra-goal.  
 
 ![](https://docs.google.com/drawings/d/1uTqbXyac72bE7yr2FZI9QEVGo1fSNgO4DXk1PIFk950/pub?w=960&h=720)
 
 ### Remove subgoals from `pressures_matrix.csv`
 
-This table indicates which individual pressures (stressors) affect which goal, sub-goals, or components, and weights them from 1-3 based on the degree of impacts. To remove subgoals from this matrix, you can simply delete the rows for each subgoal (HAB and SPP), and add a new row for BD, and treat BD as you would an individual goal with no subgoals.
+This table indicates which individual pressures (stressors) affect which goal, sub-goals, or elements, and weights them from 1-3 based on the degree of impacts. To remove subgoals from this matrix, you can simply delete the rows for each subgoal (HAB and SPP), and add a new row for BD, and treat BD as you would an individual goal with no subgoals.
 
 ![](https://docs.google.com/drawings/d/1sgZyyiQyPIWUn3_BojsBuQC_sbM4t_BW8YNGNqSd31w/pub?w=800&h=720)
 
 ### Remove subgoals from `resilience_matrix.csv`
 
-This table records information on which individual resilience measures affect which goal, sub-goals, or components. Similar to what you would do with 'pressures_matrix.csv', you can delete the rows for HAB adn SPP, and add a new row for BD.
+This table records information on which individual resilience measures affect which goal, sub-goals, or elements. Similar to what you would do with 'pressures_matrix.csv', you can delete the rows for HAB adn SPP, and add a new row for BD.
 
 ![](https://docs.google.com/drawings/d/1JUGogjH08_2KlOebKYxCR-JZFYGp5-6VwLYylblpWdw/pub?w=800&h=720)
 
