@@ -108,10 +108,14 @@ The `layers.csv` file is the registry and directory that manages all data requir
 
 **goals.csv**
 
-`goals.csv` is a table with information about goals and sub-goals. This includes the weight of each goal that is used to calculate the final Index scores when all goals are combined. Other information includes the goal description that is also presented in the WebApp. `goals.csv` also indicates the arguments passed to `functions.R`. These are indicated by two columns: *preindex_function* (functions for all goals that do not have sub-goals, and functions for all sub-goals) and *postindex_function* (functions for goals with sub-goals).
+`goals.csv` is a table with information about goals and sub-goals, including:
 
-> TIP: It's important to check `goals.csv`'s weightings and preindex functions when you change goal or sub-goal model equations in `functions.r`.
-
+- _order_color_ & _order_hierarchy_: the order to display in flower plots
+- _order_calculate_: the oder in which the goals and sub-goals are calculated for the overall index scores
+- _goal_ & _parent_: indicates the relationship between sub-goals and supra-goals (ie. goals with sub-goals)
+- _weight_: how each goal is weighted to calculate the final Index scores
+- _preindex_function_: indicate what parameters are called to calculate scores for goals and sub-goals in `functions.r`
+- _postindex_function_: indicate what parameters are called to calculate scores for supra-goals in `functions.r`
 
 **pressures_categories.csv**
 
