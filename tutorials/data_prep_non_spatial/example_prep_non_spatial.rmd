@@ -1,6 +1,6 @@
 ---
 title: "example_prep_non_spatial.rmd"
-output: html_document
+output: github_document
 ---
 
 
@@ -106,19 +106,19 @@ knitr::opts_chunk$set(echo = TRUE)
 ## load common libraries, directories, functions, etc
 
 ## Libraries
-library(readr)
+library(readr)  # install.packages('readr') 
 library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(stringr)
 library(tools)
-library(stringr)
 
 ## Directories
-dir_baltic = '~/github/ohimanual/tutorials'  # '~/github/bhi/baltic2015' 
-dir_layers = file.path(dir_baltic, 'layers') 
-dir_prep   = file.path(dir_baltic, 'data_prep_tutorial') # file.path(dir_baltic, 'prep')
-dir_ao    = file.path(dir_prep, 'AO')
+dir_scenario = 'github/ohimanual/tutorials' # '~/github/bhi/baltic2015' # this is your scenario 
+dir_tutorials = file.path(dir_scenario, 'prep/tutorials') 
+
+dir_prep   = file.path(dir_tutorials, 'data_prep_non_spatial')
+dir_goal   # when you have your full repo
 
 ```
 
@@ -151,16 +151,16 @@ str(data2)
 
 #### Initial filtering
 
-ices <- data1 %>% data.frame()%>%
+ices <- data1 %>% data.frame() %>%
   select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
          lat= Latitude, lon = Longitude, date= Date) %>%
-  mutate(date = as.Date(date, format= "%Y-%m-%d"))%>%
+  mutate(date = as.Date(date, format= "%Y-%m-%d")) %>%
   mutate(supplier = 'ices')
 
 head(ices)
 str(ices)
 
-#### NOTE: " " identifies the package where the function "select" comes from. It's used here becauseselect is also a function from a different package that's loaded  
+#### NOTE: " " identifies the package where the function "select" comes from. It's used here because select is also a function from a different package that's loaded  
 
 ## which ices data have BHI_ID of NA
 ices.na <- ices %>%
@@ -178,8 +178,13 @@ ices <- ices %>%
 
 smhi <- data2 %>% data.frame()%>%
   rename(secchi = value) %>%
-  select(bhi_id= BHI_ID, secchi, year= Year, month= Month, 
-        lat= Latitude, lon= Longitude, date= Date) %>%
+  select(bhi_id = BHI_ID, 
+         secchi, 
+         year = Year, 
+         month = Month, 
+         lat = Latitude, 
+         lon= Longitude, 
+         date= Date) %>%
   mutate(supplier = 'smhi') %>% 
   filter(!is.na(bhi_id))
 head(smhi)
@@ -293,22 +298,33 @@ mean_months_summer = mean_months %>% select(year, basin_name, mean_secchi) %>%
                       ungroup()  #in mean calculation all some months to have NA, ignore for that years calculation
 
 ## plot summer means by basin
-ggplot(mean_months_summer) + geom_point(aes(year,mean_secchi))+
+ggplot(mean_months_summer) + 
+  geom_point(aes(year,mean_secchi)) +
   geom_line(aes(year,mean_secchi))+
   facet_wrap(~basin_name)+
   scale_y_continuous(limits = c(0,10))
 
 ```
 
-## Deaggregate data to region level  
+## Disaggregate data to region level  
 
 Data needs to be deaggregated to the regional level again for status and trend calculations. 
 
 
 ```{r deaggregate to region level}
 
-mean_summer_rgn = mean_months_summer %>% full_join(basin_lookup, by='basin_name') %>% 
+mean_summer_rgn = mean_months_summer %>% 
+  full_join(basin_lookup, by='basin_name') %>% 
  select(rgn_id = bhi_id, year, mean_secchi)
+
+```
+
+ADD NEW CHUCNK: 
+
+```
+# setup 
+
+dir_layers = file.path(dir_baltic, 'layers') 
 
 ## save data layer in layer folder (this section is commented out since dir_layers is not assigned correctly to your assessment folder...)
 # write_csv(mean_summer_rgn, file.path(dir_layers, 'CW_secchi_bhi2015_NJ.csv')) # save as: 'Goal_LayerName_AssessmentName_YourInitial.csv'
@@ -323,9 +339,7 @@ _You'll notice that in the original Baltic prep document status and trend were a
 
 **To render this file and use it to communicate with other human beings**:  
 
-Click on _Knit HTML_ at the top of this window to create an .html file. Pull/Commit/Push as usual for this file. Open the .html file in Github.com. Copy and paste the link to https://rawfit.com. It will produce a link to the rendered webpage!  
-
-
+Click on _Knit_ at the top of this window to create an .md file, which can be displayed online as a webpage. Pull/Commit/Push as usual for this file. Click on the .md file in your repo on Github.com to view the rendered file. 
 
 
 
