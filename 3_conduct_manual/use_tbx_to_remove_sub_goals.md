@@ -15,13 +15,9 @@ _**NOTE**: These steps do not need to occur in this sequence._
 
 ### Remove subgoals from `goals.csv`
 
-`goals.csv` is a table with information about the relationship between goals and sub-goals. This includes the weight of each goal that is used to calculate the final Index scores when all goals are combined. These are indicated by two columns:
+`goals.csv` is a table with information about the relationship between goals and sub-goals. Description of what each column means can be read in the [data layers](http://ohi-science.org/manual/#data-layers) section, under _goals.csv_.
 
--  _preindex_function_ for all sub-goals and goals without any sub-goals
-- _postindex_function_ for supra-goals with sub-goals.
-
-
-As illustrated in the graph below, removing the subgoals involves simplifying how BD and its subgoals are registered in the columns shown here:
+As illustrated in the graph below, removing the subgoals involves simplifying how BD and its subgoals are registered in the columns:
 
 - change the _order_ and _order_hierarhy_ to 10
 - remove BD from the _postindex_function_ column & add to the _preindex_function_ column
