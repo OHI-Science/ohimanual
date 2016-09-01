@@ -24,7 +24,9 @@ _Finalize spatial boundaries_
 
 An OHI assessment is conducted within _clearly defined boundaries_. Our team populates data layers in your Full Repository based on your final spatial boundaries (ie. disaggregating data from global to your local level). It will save us a significant amount of time and efforts to make each Full Repo only once.
 
-Even though [jurisdictional boundaries are optimal](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales), where exactly to draw the boundaries often is limited by data. For example, you may wish to assess ocean health for each of the ten states along the coast. However, some measurements are taken on the national level and it is difficult to disaggregate data to the state level, or some measurements might only make sense at the watershed level across a few states. Exploring the available data can help you make the final decision on spatial boundaries. In your Starter Repo, example data prep scripts in .Rmd and .r with data are included as a quick guide.
+Even though [jurisdictional boundaries are optimal](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales), where exactly to draw the boundaries often is limited by data. Raw data sources often do not readily suit your desired geopolitical boundaries. See [Defining Spatial Boundaries]((http://ohi-science.org/manual/#defining-spatial-boundaries) for more detail. Exploring the available data can help you make the final decision on spatial boundaries.
+
+In your Starter Repo, example data prep scripts in .Rmd and .r with data are included as a quick guide.
 
  _**What’s in the Starter Repo?**_
 

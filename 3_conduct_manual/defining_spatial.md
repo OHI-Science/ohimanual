@@ -4,9 +4,19 @@ OHI scores are calculated for each assessment _region_, and the region boundarie
 
 The [OHI Starter Repository](link_to_Starter_Repo_description) will help you organize preliminary data and make sure data availability matches your desired region assignments. Once you've defined your regions and drawn spatial boundaries, we can create a [Full Repository](link_to_Full_Repo_description) for your assessment.  
 
-> Note that the OHI does not take a stance on disputed territories. The boundaries are defined by the original map data providers.
+## Balancing geopolitical boundaries and data limitation
 
-<!-- Add/link to a section on how to take data limitations into consideration -->
+Spatial boundaries are typically set based on:
+
+- _Management boundaries_: where policy decisions are made (countries, provinces, etc)
+- _Biogeographic boundaries_: geographic (bay, seas, gulf, etc)
+- _Data_: information availability (at what spatial scale are data collected)
+
+OHI utilizes from dozens to more than 100 data layers collected by as many agencies. Some data are collected at the regional level (eg. by state, city, etc) and already suitable for your desired geopolitical boundaries. Often they are not. For example, you may wish to assess ocean health for each of the ten states along the coast. However, some measurements are taken on the national level and it is difficult to disaggregate data to the state level, or some measurements might only make sense at the watershed level across a few states.
+
+Data disaggregation and gap-filling are possible methods of dealing with missing data, but will dilute the quality of your assessment. If many data layers don't fit your desired boundaries, you should consider changing your boundaries. Exploring the data sources in the [Starter Repo](link_to_Starter_Repo_description) can help you balance jurisdictional boundaries and information availability, and finalize spatial boundaries that make the most sense for the purpose of your assessment.
+
+> Note that the OHI does not take a stance on disputed territories. The boundaries are defined by the original map data providers.
 
 ## Drawing spatial boundaries
 
@@ -29,7 +39,7 @@ Illustrated below is the general instruction on how to do so. Exactly where to d
 
 ## Request a Full Repository with offshore boundaries
 
-**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries** (and the name of your scenario, which is to the unit of your assessment and the year, for example, province2016). This will help us disaggregate global data to your local regions and populate usable data layers. Please send us a .zip file of all files produced. Files with the following extensions are required (but you can send all files):
+**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries** (and the name of your scenario, which is to the unit of your assessment and the year, for example, province2016). This will help us disaggregate global data to your local regions and populate usable data layers. Please send a .zip file of all files produced to _info@ohi-science.org_. Files with the following extensions are required (but you can send all files):
 
 - `.dbf`
 - `.shp`
