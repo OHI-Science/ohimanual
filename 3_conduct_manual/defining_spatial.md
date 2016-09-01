@@ -29,7 +29,7 @@ Illustrated below is the general instruction on how to do so. Exactly where to d
 
 ## Request a Full Repository with offshore boundaries
 
-**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries.** This will help us disaggregate global data to your local regions and populate usable data layers. Please send us a .zip file of all files produced. Files with the following extensions are required (but you can send all files):
+**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries** (and the name of your scenario, which is to the unit of your assessment and the year, for example, province2016). This will help us disaggregate global data to your local regions and populate usable data layers. Please send us a .zip file of all files produced. Files with the following extensions are required (but you can send all files):
 
 - `.dbf`
 - `.shp`
