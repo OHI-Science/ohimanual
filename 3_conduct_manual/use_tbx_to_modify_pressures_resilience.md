@@ -1,15 +1,14 @@
-## Modifying Pressures Categories and Matrix
+## Modify Pressures Matrix
 
-Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `subcountry2014/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
+Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/[region_year]/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `[region_year]/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
 
 Adding a new pressure to the pressures matrix requires the following steps:
 
-> 1. Create new pressure layer(s) and save in the `layers` folder
-> 2. Register pressure layer(s) in `layers.csv`
-> 3. Register in `pressures_categories.csv`
-> 4. Register in `pressures_matrix.csv`
-  + a. Identify the goals affected and set the weighting
-> 5. Modify config.R for goals that have elements
+1. Create new pressure layer(s) and save in the `layers` folder
+2. Register pressure layer(s) in `layers.csv`
+3. Register in `pressures_categories.csv`
+4. Register in `pressures_matrix.csv`, identify the goals affected and set the weights
+5. Modify config.R for goals that have elements
 
 ### Create the new pressure layers and save in the `layers` folder
 
@@ -65,20 +64,20 @@ If a goal has multiple elements (eg. CS has multiple habitats), as reflected in 
 
 The highlighted files are data layers necessary to calculate pressures for each of the goals with components. They contain weights, or relative contribution from each element to the total pressures of the goal. These weights are calculated separately in the data prep folder for each goal, and saved and registered as you would for any data layer. How to calculate these data layers can be found in the _description_ column of `layers.csv`.  
 
-## Modify Resilience Categories and Matrix
+## Modify Resilience Matrix
 
-Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/subcountry2014/conf` folder).
+Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/2014/conf` folder).
 
 Adding a new resilience to the resilience matrix requires the following steps:
 
-> 1. Create new resilience layer(s) and save in the `layers` folder
-> 2. Register resilience layer(s) in `layers.csv`
-> 3. Register resilience layer(s) in `resiliences_categories.csv`
-  + a. Set the resilience category  
-  + b. Set the weighting
-> 3. Register resilience layer(s) in `resiliences_matrix.csv`
+1. Create new resilience layer(s) and save in the `layers` folder
+2. Register resilience layer(s) in `layers.csv`
+3. Register resilience layer(s) in `resiliences_categories.csv`
+  +  Set the resilience category  
+  +  Set the weights
+4. Register resilience layer(s) in `resiliences_matrix.csv`
   +  Identify the goals affected
-> 4. Modify Config.R for goals that have elements
+5. Modify Config.R for goals that have elements
 
 ### Create new resilience layers, save in `layers` folder and register in `layers.csv`
 
