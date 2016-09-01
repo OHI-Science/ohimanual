@@ -1,6 +1,6 @@
 ## File system organization
 
-This section is an orientation to the files within your _tailored_ assessment repository. The file system organization is the same for all assessment repositories, and can be viewed at `github.com/OHI-Science` or on your computer. While reading this section it is helpful to explore a repository at the same time to become familiar with its contents and structure. The following uses the assessment repository for Ecuador (*ecu*) as an example, available at www.github.com/OHI-Science/ecu.
+This section is an orientation to the files within your _tailored_ assessment repository. The file system organization is the same for all assessment repositories, and can be viewed at `github.com/OHI-Science` or on your computer. While reading this section it is helpful to explore a repository at the same time to become familiar with its contents and structure. The following uses the assessment repository for Ecuador (*ecu*) as an example, available at _www.github.com/OHI-Science/ecu_.
 
 **Most of your time will be spent preparing input layers and developing goal models**. You will also register prepared layers to be used in the goal models. This all will be an iterative process, but generally speaking you will work goal-by-goal, preparing the layers first, registering them, and then developing the goal models in *R*. to calculate the scores.
 
@@ -148,7 +148,7 @@ It is a table that indicates which individual resilience measures affect which g
 ### R scripts
 
 * `install_ohicore.R`
-* `pre_scores.R`
+* `configure_toolbox.R`
 * `calculate_scores.R`
 * `data_prep.R` in prep folders
 * `functions.R`
@@ -159,10 +159,9 @@ It is a table that indicates which individual resilience measures affect which g
 
 This script installs `ohicore`, which is the second repository required for the Toolbox and is the engine behind all OHI calculations. You will need to run this script only once when you [first install the toolbox](http://ohi-science.org/manual/#install-ohicore).
 
-**pre_scores.R**
+**configure_toolbox.R**
 
-This script does the pre-checks before running goal models and calculate dimension scores. It loads "ohicore", calls all goal functions and data
-layers in the "conf" folder, and check that all data layers are registered properly. You are encouraged to use this script when you're working on individual goal models. After you register data layers for a goal, or make any changes to the data layers, source this script before running model-specific functions in functions.R.
+This script does the pre-checks before running goal models and calculate dimension scores. It loads "ohicore", calls all goal functions and data layers in the "conf" folder, and check that all data layers are registered properly. You are encouraged to use this script when you're working on individual goal models. After you register data layers for a goal, or make any changes to the data layers, source this script before running model-specific functions in functions.R.
 
 **calculate_scores.R**
 
