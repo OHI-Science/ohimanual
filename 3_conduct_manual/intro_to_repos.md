@@ -1,12 +1,14 @@
 # Requesting your repository
 
-Using the OHI Toolbox and Github Repositories for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment, and even before you have defined your regions, we can immediately provide you with a Starter Github repository (_Starter Repo_) to get you familiar with the Github/Rstudio workflow, and to help you through the data exploration and region-defining stage. Once you have defined your regions, we will provide you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the most recent Global OHI assessment.
+ Using the OHI Toolbox and Github Repositories for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment, and even before you have defined your regions, we can immediately provide you with a Starter Github repository (_Starter Repo_) to get you familiar with the Github/Rstudio workflow, and to help you through the data exploration and region-defining stage. Once you have defined your regions, we will provide you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the most recent Global OHI assessment.
+
 
 ## The Starter Repo
 
 _**Why a Starter Repo?**_
 
-The purpose of this repository is to help you learn how to use Github for data exploration and to make sure they fit within the spatial boundaries you are considering. We encourage you to code this exploration in `R`.
+The purpose of this repository is to help you learn how to use Github/Rstudio for data exploration, and to make sure they fit within the spatial boundaries you are considering. We encourage you to code this exploration in `R`.
+
 
 _Learn Github/Rstudio and collaborate with your team_
 
@@ -49,30 +51,35 @@ We recommend documentation in Rmarkdown, but you can also do it in R. -->
 
 _**How to request one?**_
 
-To request a repo, provide the name of your assessment area, and a shortened name for the repository (our convention is a **3-letter code**). For example, the Gulf of Guayaquil assessment had `gye` as their code, and China had `chn`.
+You can create a GitHub account at http://github.com. Choose a username and password. To request a repo, email info@ohi-science.org with:
 
-(**@JULIE: and... set up github account and send us your account info?**)
-@ningningj: yes this sounds great! Could you have them request to info@ohi-science.org (so there's a record).
+- your Github username
+- the name of your assessment area (eg. the Gulf of Guayaquil)
+- a shortened name for the repository (our convention is a **3-letter code**). For example, the Gulf of Guayaquil assessment had `gye` as their code.
+
 
 ## The Full Repo
 
-Skip the Why Full Repo?
-@ningningj: I think you could have a short one, that says this is a way you don't need to start your assessment from scratch; you can explore a working repository and build from there. You can prioritize what to focus on rather than having to start from the beginning (or something like that)
+_**Why Full Repo?**_
+
+The Full Repo is a repository pre-populated with _r scripts_ and _data layers_ disaggregated from the most recent global OHI assessment, structured in the same way as the global OHI assessments. This way you don't need to start your assessment from scratch. You can explore a working repository and build from there. For example, instead of writing scripts for goal models from the beginning, you can modify existing scripts to suit your own needs. Data layers disaggregated from the global assessments are available to use, however, we do recommend that you replace as many global data with higher-resolution local data as possible. 
 
 _**What's in it?**_
 
-_MOVE FILE_SYSTEM_ORGANIZATION here..._
+The Full Repo contains all the files you need to complete your OHI+ assessment, calculate scores, and produce a templated report:  
 
-_But is it too long before people can get to the "How to request one section"?_
+- _Data layers_ are organized into one folder, with a registry that lists attributes about them and what they are for
+- _goal models_ are organized in one file (functions.r) in configure ('conf') folder
+- _pressures_ and _resilience_ matrices that indicate which pressures/resilience apply to which goal
+- Scripts that link `ohicore`, a fundamental OHI repository built by our science team to calculate index scores and produce flower plots, with your tailored repository to calculate scores
 
-@ningningj --> How about it's more informal, so you don't need to list everything and so it won't get too long. But in a few paragraphs (at most) you could say 'data layers are organized into one folder, with a registry that lists attributes about them and what they're for. The configure ('conf') folder has the goal models organized in one file (functions.r), as well as the pressures and resilience matrices that indicate which pressures/resilience apply to which goal...
-This repo will use ohicore to calculate scores...
+You can see a full description of each file and script and how they are organized in the [File System](http://ohi-science.org/manual/#file-system-organization) section.
 
 **_How to request one?_**
 
-To request a Full Repository, you will need to provide
+To request a Full Repository, you will need to email info@ohi-science.org with:
 
-- [shape files of your finalized spatial boundaries](http://ohi-science.org/manual/#request-a-full-repository-with-offshore-boundaries),
+- [shape files of your finalized spatial boundaries](http://ohi-science.org/manual/#request-a-full-repository-with-offshore-boundaries)
 -  the name of your scenario, which is to the unit of your assessment and the year (eg. province2016, region2015)
 
 We can then provide you with a full repository with the regions defined and pre-populated data layers extracted from the most recent global assessment according to your regional boundaries.
