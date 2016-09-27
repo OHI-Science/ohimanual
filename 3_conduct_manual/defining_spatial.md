@@ -1,45 +1,43 @@
 # Defining spatial boundaries
 
-OHI scores are calculated for each assessment _region_, and the region boundaries will be used to aggregate or disaggregate input information reported at different spatial scales. There is no limit to the number of regions in  your assessment. However, the number is constrained by data availability and the utility of having scores calculated for a particular region. Ideally boundaries are drawn per management jurisdiction, and be informed by the scale at which information is available.
+OHI scores are calculated for each _assessment region_, and the region boundaries will be used to aggregate or disaggregate input information reported at different spatial scales. There is no limit to the number of regions in  your assessment. However, the number of regions is usually constrained by two things: data availability for those regions, and the utility of having scores calculated for those regions. Ideally, boundaries are drawn per management jurisdiction, and are informed by the scale at which information is available.
 
-The [OHI Starter Repository](link_to_Starter_Repo_description) will help you organize preliminary data and make sure data availability matches your desired region assignments. Once you've defined your regions and drawn spatial boundaries, we can create a [Full Repository](link_to_Full_Repo_description) for your assessment.  
+The **Starter Repository** will help you organize preliminary data and make sure data availability matches your desired region assignments. Once you've defined your regions and drawn spatial boundaries, the OHI team can create a **Full Repository** for your assessment.  
 
 ## Balancing geopolitical boundaries and data limitation
 
-Spatial boundaries are typically set based on:
+The spatial boundaries of OHI regions are typically set based on:
 
-- _Management boundaries_: where policy decisions are made (countries, provinces, etc)
-- _Biogeographic boundaries_: geographic (bay, seas, gulf, etc)
-- _Data_: information availability (at what spatial scale are data collected)
+- _Management boundaries_: geopolitical boundaries, where policy decisions are made (countries, provinces, etc)
+- _Biogeographic boundaries_: based on natural geography (bay, seas, gulf, etc)
+- _Data_: information availability (spatial scale where are data collected)
 
-OHI utilizes from dozens to more than 100 data layers collected by as many agencies. Some data are collected at the regional level (eg. by state, city, etc) and already suitable for your desired geopolitical boundaries. Often they are not. For example, you may wish to assess ocean health for each of the ten states along the coast. However, some measurements are taken on the national level and it is difficult to disaggregate data to the state level, or some measurements might only make sense at the watershed level across a few states.
+OHI utilizes data from dozens to >100 data layers collected by many agencies. Some data are collected within boundaries suitable for your desired geopolitical boundaries. Often they are not. For example, you may wish to assess ocean health for each of the ten states along the coast. However, some measurements are taken on the national level and it is difficult to disaggregate data to the state level, or some measurements might only make sense at the watershed level across a few states.
 
-Data disaggregation and gap-filling are possible methods of dealing with missing data, but will dilute the quality of your assessment. If many data layers don't fit your desired boundaries, you should consider changing your boundaries. Exploring the data sources in the [Starter Repo](link_to_Starter_Repo_description) can help you balance jurisdictional boundaries and information availability, and finalize spatial boundaries that make the most sense for the purpose of your assessment.
+Data disaggregation and gap-filling are possible methods of dealing with missing data, but can dilute the information quality within your assessment. If many data layers don't fit your desired boundaries, you may consider changing your boundaries. Exploring the data sources in the **Starter Repo** can help you balance jurisdictional boundaries and information availability, and finalize spatial boundaries that make the most sense for the purpose of your assessment.
 
 > Note that the OHI does not take a stance on disputed territories. The boundaries are defined by the original map data providers.
 
 ## Drawing spatial boundaries
 
+**Regions must be unique (non-overlapping), and boundaries must be drawn offshore**. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.  
+
 Spatial boundaries must be drawn with geographic information system (GIS) mapping software such as ArcGIS, QGIS, or GRASS. You will need someone with GIS skills to create a shapefile that will be used by the Toolbox to display your information. The shapefile will also be used to extract information for each of your defined regions when data are reported in raster format for a different area. For more information see Wikipedia for [Geographic information systems](https://en.wikipedia.org/wiki/Geographic_information_system) and [Shapefiles](http://en.wikipedia.org/wiki/Shapefile).
 
-**Regions must be unique (non-overlapping), and boundaries must be drawn offshore**. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.
-
-Offshore, or marine water boundaries, are the greatest extent that the scores could represent, and generally extended to the Exclusive Economic Zone (EEZ).
-
-> Data for different goals often cover different spatial extents offshore. For example, Fisheries might use data from the entire EEZ, while Carbon Storage might only covers 3nm from shore. We don't show scores at different spatial extents on a map by goal, but instead show all to the greatest spatial extent. Because there are goals like Fisheries that usually use data for the full EEZ, the regions we need to populate a full repository have usually been the EEZ. These regional spatial boundaries do not affect data prep and analyses, where you could use any spatial extent that makes sense for each goal.
-
-Illustrated below is the general instruction on how to do so. Exactly where to draw the offshore boundaries is up to you. You could extend the land boundaries in a straight line as shown in the example, or you could draw the boundaries perpendicular to the shoreline, etc. In any case, make sure it makes sense in your local context and [doesn’t conflict with your jurisdictional boundaries](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales).
+Illustrated below are the conceptual steps required for creating a spatial file with your offshore boundaries. You will ultimately decide where to draw the offshore boundaries. The example below shows a simple example of extending the land boundaries in a straight line; you should consult with a GIS specialist to make sure any extensions make sense with the coastline and natural features, and also make sure they does not conflict with important [jurisdictional boundaries](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales).
 
 ![](https://docs.google.com/drawings/d/17G4bcyoFg8kaEGys_6aA7dQEPVteHPQBk9YQl4iA6Dw/pub?w=960&h=720)
 
-**One possible method is to create boundaries with Thiessen Polygons**, and we provide a Python script that can be used, but it requires ArcGIS. The Python script and further details can be found at http://ohi-science.org/pages/create_regions.html.
+> Data for different goals often cover different spatial extents offshore. For example, Fisheries might use data from the entire EEZ, while Carbon Storage might only cover 3nm from shore. When mapped, OHI scores do not show different spatial extents, but instead show all to the greatest spatial extent. Exclusive Economic Zone (EEZ) boundaries are most often the greatest extent offshore that OHI scores will represent. These regional spatial boundaries do not affect data preparation and analyses, where you could use any spatial extent appropriate for each goal.  
+
+**One possible method is to create boundaries with Thiessen Polygons**, and we provide a Python script that can be used, but it requires ArcGIS. The Python script and further details can be found [here](http://ohi-science.org/pages/create_regions.html).
 
 <!-- It can also be done in [R](http://gis.stackexchange.com/questions/136542/r-function-for-thiessen-polygons).  -->
 
 
 ## Request a Full Repository with offshore boundaries
 
-**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries** (and the name of your scenario, which is to the unit of your assessment and the year, for example, province2016). This will help us disaggregate global data to your local regions and populate usable data layers. Please send a .zip file of all files produced to _info@ohi-science.org_. Files with the following extensions are required (but you can send all files):
+**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries** (and the name of your scenario, which is to the unit of your assessment and the year, for example, `province2016`). This will help us disaggregate global data to your local regions and populate usable data layers. Please send a .zip file of all files produced to _info@ohi-science.org_. Files with the following extensions are required (but you can send all files):
 
 - `.dbf`
 - `.shp`

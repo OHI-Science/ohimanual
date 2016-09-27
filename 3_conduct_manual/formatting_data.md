@@ -67,7 +67,7 @@ The slope and y-intercept that were calculated in steps 1 and 2 can then be used
 
 **4. Replace modeled values into original data where gaps had occurred**
 
-Substitute these modeled values that were previously gaps in the timeseriew. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
+Substitute these modeled values that were previously gaps in the timeseries. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
 
 
 #### Spatial gapfilling
@@ -82,7 +82,7 @@ To fill gaps spatially, you must assume that one region is like another, and dat
 
 1. proximity: can it be assumed that nearby regions have similar properties?
 
-2. study area: are data reported for the study area, and can those data be used for subcountry regions?
+2. study area: are data reported for the study area, and can those data be used for your regions?
 
 3. demographic information: can it be assumed a region with a similar population size has similar data?
 

@@ -15,7 +15,8 @@ setwd(wd)
 ## .md files to be included in this order: ---- 
 in_md = c(
   # 'overall_guide.md',                              
-  'intro_assessment.md',                             
+  'intro_assessment.md',        
+  ## TODO @ningningj: add 'intro_to_repos.md' with manual restructure
   'defining_spatial.md',                             # TODO: update instruction, new figs
   'assemble_inputs.md',                              
   'formatting_data.md',

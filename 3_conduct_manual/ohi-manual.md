@@ -6,11 +6,11 @@ title: The Ocean Health Index Conduct Phase
 output: html_document
 ---
 
-**Welcome to the _Conduct Phase_ of your OHI+ assessment!** This manual contains all the essential information on how to complete your own independent OHI assessment. It should be used by _goal keepers_ (ie. experts tasked with gathering data and developing goal models), and the _toolbox master_ (ie. technical expert(s) responsible for calculating the scores using the Toolbox).  
+**Welcome to the _Conduct Phase_ of your OHI+ assessment!** This manual contains all the essential information on how to complete your own independent OHI assessment. It should be used by _goal keepers_ (i.e. experts tasked with gathering data and developing goal models), and the _toolbox master_ (i.e. technical expert(s) responsible for calculating the scores using the Toolbox).  
 
 **The first four sections will provide conceptual and technical guidance for all participants**. It contains information on OHI philosophy, what to expect when conducting an OHI+ assessment, best practices, and an introduction to the toolbox. More details on Goal Model Development and Pressure and Resilience, How to report data layers and model descriptions, and Frequently Asked Questions are included in the Appendixes. **The remaining sections of the manual provide step-by-step instructions on how to use the toolbox and troubleshoot**, and will be most helpful to the toolbox master. 
 
-This manual should be used in conjuction with our other web materials, including [Four Phases of OHI+](http://ohi-science.org/new-site/phases/), [Presentations](http://ohi-science.org/new-site/resources/downloads/), and our community [Forum](http://ohi-science.org/new-site/forum/). 
+This manual should be used in conjunction with our other web materials, including [Four Phases of OHI+](http://ohi-science.org/new-site/phases/), [Presentations](http://ohi-science.org/new-site/resources/downloads/), and our community [Forum](http://ohi-science.org/new-site/forum/). 
 
 <font size = "2">
 
@@ -127,36 +127,44 @@ Your completed assessment will produce OHI scores for each goal for every region
 
 # Defining spatial boundaries
 
-OHI scores are calculated for each assessment _region_, and the region boundaries will be used to aggregate or disaggregate input information reported at different spatial scales. There is no limit to the number of regions in  your assessment. However, the number is constrained by data availability and the utility of having scores calculated for a particular region. Ideally boundaries are drawn per management jurisdiction, and be informed by the scale at which information is available.
+OHI scores are calculated for each _assessment region_, and the region boundaries will be used to aggregate or disaggregate input information reported at different spatial scales. There is no limit to the number of regions in  your assessment. However, the number of regions is usually constrained by two things: data availability for those regions, and the utility of having scores calculated for those regions. Ideally, boundaries are drawn per management jurisdiction, and are informed by the scale at which information is available.
 
-The [OHI Starter Repository](link_to_Starter_Repo_description) will help you organize preliminary data and make sure data availability matches your desired region assignments. Once you've defined your regions and drawn spatial boundaries, we can create a [Full Repository](link_to_Full_Repo_description) for your assessment.  
+The **Starter Repository** will help you organize preliminary data and make sure data availability matches your desired region assignments. Once you've defined your regions and drawn spatial boundaries, the OHI team can create a **Full Repository** for your assessment.  
+
+## Balancing geopolitical boundaries and data limitation
+
+The spatial boundaries of OHI regions are typically set based on:
+
+- _Management boundaries_: geopolitical boundaries, where policy decisions are made (countries, provinces, etc)
+- _Biogeographic boundaries_: based on natural geography (bay, seas, gulf, etc)
+- _Data_: information availability (spatial scale where are data collected)
+
+OHI utilizes data from dozens to >100 data layers collected by many agencies. Some data are collected within boundaries suitable for your desired geopolitical boundaries. Often they are not. For example, you may wish to assess ocean health for each of the ten states along the coast. However, some measurements are taken on the national level and it is difficult to disaggregate data to the state level, or some measurements might only make sense at the watershed level across a few states.
+
+Data disaggregation and gap-filling are possible methods of dealing with missing data, but can dilute the information quality within your assessment. If many data layers don't fit your desired boundaries, you may consider changing your boundaries. Exploring the data sources in the **Starter Repo** can help you balance jurisdictional boundaries and information availability, and finalize spatial boundaries that make the most sense for the purpose of your assessment.
 
 > Note that the OHI does not take a stance on disputed territories. The boundaries are defined by the original map data providers.
 
-<!-- Add/link to a section on how to take data limitations into consideration -->
-
 ## Drawing spatial boundaries
+
+**Regions must be unique (non-overlapping), and boundaries must be drawn offshore**. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.  
 
 Spatial boundaries must be drawn with geographic information system (GIS) mapping software such as ArcGIS, QGIS, or GRASS. You will need someone with GIS skills to create a shapefile that will be used by the Toolbox to display your information. The shapefile will also be used to extract information for each of your defined regions when data are reported in raster format for a different area. For more information see Wikipedia for [Geographic information systems](https://en.wikipedia.org/wiki/Geographic_information_system) and [Shapefiles](http://en.wikipedia.org/wiki/Shapefile).
 
-**Regions must be unique (non-overlapping), and boundaries must be drawn offshore**. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.
-
-Offshore, or marine water boundaries, are the greatest extent that the scores could represent, and generally extended to the Exclusive Economic Zone (EEZ).
-
-> Data for different goals often cover different spatial extents offshore. For example, Fisheries might use data from the entire EEZ, while Carbon Storage might only covers 3nm from shore. We don't show scores at different spatial extents on a map by goal, but instead show all to the greatest spatial extent. Because there are goals like Fisheries that usually use data for the full EEZ, the regions we need to populate a full repository have usually been the EEZ. These regional spatial boundaries do not affect data prep and analyses, where you could use any spatial extent that makes sense for each goal.
-
-Illustrated below is the general instruction on how to do so. Exactly where to draw the offshore boundaries is up to you. You could extend the land boundaries in a straight line as shown in the example, or you could draw the boundaries perpendicular to the shoreline, etc. In any case, make sure it makes sense in your local context and [doesn’t conflict with your jurisdictional boundaries](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales).
+Illustrated below are the conceptual steps required for creating a spatial file with your offshore boundaries. You will ultimately decide where to draw the offshore boundaries. The example below shows a simple example of extending the land boundaries in a straight line; you should consult with a GIS specialist to make sure any extensions make sense with the coastline and natural features, and also make sure they does not conflict with important [jurisdictional boundaries](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales).
 
 ![](https://docs.google.com/drawings/d/17G4bcyoFg8kaEGys_6aA7dQEPVteHPQBk9YQl4iA6Dw/pub?w=960&h=720)
 
-**One possible method is to create boundaries with Thiessen Polygons**, and we provide a Python script that can be used, but it requires ArcGIS. The Python script and further details can be found at http://ohi-science.org/pages/create_regions.html.
+> Data for different goals often cover different spatial extents offshore. For example, Fisheries might use data from the entire EEZ, while Carbon Storage might only cover 3nm from shore. When mapped, OHI scores do not show different spatial extents, but instead show all to the greatest spatial extent. Exclusive Economic Zone (EEZ) boundaries are most often the greatest extent offshore that OHI scores will represent. These regional spatial boundaries do not affect data preparation and analyses, where you could use any spatial extent appropriate for each goal.  
+
+**One possible method is to create boundaries with Thiessen Polygons**, and we provide a Python script that can be used, but it requires ArcGIS. The Python script and further details can be found [here](http://ohi-science.org/pages/create_regions.html).
 
 <!-- It can also be done in [R](http://gis.stackexchange.com/questions/136542/r-function-for-thiessen-polygons).  -->
 
 
 ## Request a Full Repository with offshore boundaries
 
-**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries.** This will help us disaggregate global data to your local regions and populate usable data layers. Please send us a .zip file of all files produced. Files with the following extensions are required (but you can send all files):
+**In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries** (and the name of your scenario, which is to the unit of your assessment and the year, for example, `province2016`). This will help us disaggregate global data to your local regions and populate usable data layers. Please send a .zip file of all files produced to _info@ohi-science.org_. Files with the following extensions are required (but you can send all files):
 
 - `.dbf`
 - `.shp`
@@ -352,7 +360,7 @@ The slope and y-intercept that were calculated in steps 1 and 2 can then be used
 
 **4. Replace modeled values into original data where gaps had occurred**
 
-Substitute these modeled values that were previously gaps in the timeseriew. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
+Substitute these modeled values that were previously gaps in the timeseries. *The data layer is now ready for the Toolbox, gapfilled and in the appropriate format.*
 
 
 #### Spatial gapfilling
@@ -367,7 +375,7 @@ To fill gaps spatially, you must assume that one region is like another, and dat
 
 1. proximity: can it be assumed that nearby regions have similar properties?
 
-2. study area: are data reported for the study area, and can those data be used for subcountry regions?
+2. study area: are data reported for the study area, and can those data be used for your regions?
 
 3. demographic information: can it be assumed a region with a similar population size has similar data?
 
@@ -466,13 +474,13 @@ Your **tailored assessment repository** contains data input layers, configuratio
 
 ## File system organization
 
-This section is an orientation to the files within your _tailored_ assessment repository. The file system organization is the same for all assessment repositories, and can be viewed at `github.com/OHI-Science` or on your computer. While reading this section it is helpful to explore a repository at the same time to become familiar with its contents and structure. The following uses the assessment repository for Ecuador (*ecu*) as an example, available at www.github.com/OHI-Science/ecu.
+This section is an orientation to the files within your _tailored_ assessment repository. The file system organization is the same for all assessment repositories, and can be viewed at `github.com/OHI-Science` or on your computer. While reading this section it is helpful to explore a repository at the same time to become familiar with its contents and structure. The following uses the assessment repository for Ecuador (*ecu*) as an example, available at _www.github.com/OHI-Science/ecu_.
 
 **Most of your time will be spent preparing input layers and developing goal models**. You will also register prepared layers to be used in the goal models. This all will be an iterative process, but generally speaking you will work goal-by-goal, preparing the layers first, registering them, and then developing the goal models in *R*. to calculate the scores.
 
 ### Main folders within your tailored repository
 
-The **scenario folder** is the most important folder within the repository; by default it is named `subcountry2014` to indicate that the assessment is conducted at the subcountry scale (province, state, district, etc.), based on input layers and goal models used in the 2014 global assessment. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
+The **scenario folder** is the most important folder within the repository; by default it is named `subcountry2014` to indicate that the assessment is conducted at the region scale (province, state, district, etc.), based on input layers and goal models used in the 2014 global assessment. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
 <!-- * All other files in the assessment repository are accessory files. Files with names beginning with a ‘.’ are required for versioning capabilities by GitHub and do not appear when the assessment repository is viewed on your computer. -->
 
 ![](https://docs.google.com/drawings/d/1eHViTehnAuxSDw1fYI54C3X5YgBktGtaVt71R3OXYeE/pub?w=600&h=500)
@@ -577,15 +585,15 @@ The `layers.csv` file is the registry and directory that manages all data requir
 `goals.csv` is a table with information about goals and sub-goals, including:
 
 - _order_color_ & _order_hierarchy_: the order to display in flower plots
-- _order_calculate_: the oder in which the goals and sub-goals are calculated for the overall index scores
-- _goal_ & _parent_: indicates the relationship between sub-goals and supra-goals (ie. goals with sub-goals)
+- _order_calculate_: the order in which the goals and sub-goals are calculated for the overall index scores
+- _goal_ & _parent_: indicates the relationship between sub-goals and supra-goals (i.e. goals with sub-goals)
 - _weight_: how each goal is weighted to calculate the final Index scores
 - _preindex_function_: indicate what parameters are called to calculate scores for goals and sub-goals in `functions.r`
 - _postindex_function_: indicate what parameters are called to calculate scores for supra-goals in `functions.r`
 
 **pressures_categories.csv**
 
-This is a table to record the _name_ of each pressures data layer, its _category_, and _sub-category_. Each data layer name  is the same name that's saved in the `layers` folder and is registered in `layers.csv`. Each layer falls under one of two categories -  ecological or social pressures, and one of several sub-categories to further represent the origin of the pressure (eg. climate change, fishing, etc), which is also indicated by a prefix of each data layer name (for example: `po_` for the pollution sub-category). For more information, see [how to modify pressures layers](http://ohi-science.org/manual/#modifying-pressures-categories-and-matrix).
+This is a table to record the _name_ of each pressures data layer, its _category_, and _sub-category_. Each data layer name  is the same name that's saved in the `layers` folder and is registered in `layers.csv`. Each layer falls under one of two categories -  ecological or social pressures, and one of several sub-categories to further represent the origin of the pressure (e.g. climate change, fishing, etc), which is also indicated by a prefix of each data layer name (for example: `po_` for the pollution sub-category). For more information, see [how to modify pressures layers](http://ohi-science.org/manual/#modifying-pressures-categories-and-matrix).
 
 **pressures_matrix.csv**
 
@@ -614,7 +622,7 @@ It is a table that indicates which individual resilience measures affect which g
 ### R scripts
 
 * `install_ohicore.R`
-* `pre_scores.R`
+* `configure_toolbox.R`
 * `calculate_scores.R`
 * `data_prep.R` in prep folders
 * `functions.R`
@@ -625,10 +633,9 @@ It is a table that indicates which individual resilience measures affect which g
 
 This script installs `ohicore`, which is the second repository required for the Toolbox and is the engine behind all OHI calculations. You will need to run this script only once when you [first install the toolbox](http://ohi-science.org/manual/#install-ohicore).
 
-**pre_scores.R**
+**configure_toolbox.R**
 
-This script does the pre-checks before running goal models and calculate dimension scores. It loads "ohicore", calls all goal functions and data
-layers in the "conf" folder, and check that all data layers are registered properly. You are encouraged to use this script when you're working on individual goal models. After you register data layers for a goal, or make any changes to the data layers, source this script before running model-specific functions in functions.R.
+This script does the pre-checks before running goal models and calculate dimension scores. It loads "ohicore", calls all goal functions and data layers in the "conf" folder, and check that all data layers are registered properly. You are encouraged to use this script when you're working on individual goal models. After you register data layers for a goal, or make any changes to the data layers, source this script before running model-specific functions in functions.R.
 
 **calculate_scores.R**
 
@@ -644,7 +651,7 @@ It configures labeling and constants appropriately. You will only need to modify
 
 **launch_app_code.R**
 
-It will launch a version of the App on your computer so that you can visualize any edits you make before synching to *github.com*.
+It will launch a version of the App on your computer so that you can visualize any edits you make before syncing to *github.com*.
 
 ### Other
 
@@ -694,7 +701,7 @@ To allow multiple users to work on the same repository at the same time, there a
 
 **GitHub Vocabulary:**
   
-* **clone** ~ download an online repository to your computer to your local machine with synching capabilities enabled
+* **clone** ~ download an online repository to your computer to your local machine with syncing capabilities enabled
 * **commit** ~ message associated with your changes at a point in time, before being able to sync back to the online repository
 * **pull** ~ pull changes from an online repository to your computer
 * **push** ~ push committed changes back to the online repository with your version, only possible after committing
@@ -740,7 +747,7 @@ When you modify or add a file, the file will appear in the 'Git' window once it 
   - Note 1: there will often be multiple files 'staged' at the same time, and so the same commit message will be associated with all of the updated files. It is best to commit changes often with informative commit messages.
   - Note 2: clicking on a staged file will identify additions and deletions within that file for your review
 3. Click '_Commit_' to commit the changes and the commit message.
-4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, espeically if you are working with collaborators who might be working on the same files as you are.
+4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, especially if you are working with collaborators who might be working on the same files as you are.
 5. "Push" your committed changes to the online repository. Your changes are now visible online.
 </span>
 
@@ -775,7 +782,7 @@ In this section, you will learn how to successfully set up your _tailored_ toolb
 1. Create your online _Github_ account and set up _git_ on your local computer
 2. Install _R_ and _RStudio_ on your local computer
 3. Clone your tailored repository from Github to your local computer via RStudio
-4. Install `ohi-core` package 
+4. Install `ohicore` package 
 
 Let's get started!
 
@@ -903,7 +910,7 @@ You can download R, and RStudio for free from their perspective websites and ins
 
 **RStudio**: [https://www.rstudio.com/](https://www.rstudio.com/)
 
-**R and RStudio update frequently**. If you already have those softwares installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or Rstudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
+**R and RStudio update frequently**. If you already have those software installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or RStudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
 
 **If you are working on a _Mac_,** you will need to tell RStudio to use the proper version of Git by doing the updating the preferences for 'Git executable':
 
@@ -919,7 +926,7 @@ In order to sync GitHub and RStudio, you need to clone your GitHub repository to
 
 ## Install `ohicore`
 
-`ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R pckages and will only need to do this once. You can find the script `install_ohicore.r` in your scenario folder (eg. chn/province2015/). Source it, and now your Toolbox is all set up and ready to go!
+`ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R packages and will only need to do this once. You can find the script `install_ohicore.r` in your scenario folder (eg. chn/province2015/). Source it, and now your Toolbox is all set up and ready to go!
 
 > Although `ohicore` is a package you would not normally interact with, it can be useful to have the folder cloned to your computer for debugging, particularly with pressures and resilience calculations for goals that have components in the matrix. To do so, you will clone the repository (https://github.com/OHI-Science/ohicore) as you would your assessment repository. 
 
@@ -932,9 +939,9 @@ We recommend that you work on one goal at a time as data becomes available and g
 
 1. check that the functions within pre-loaded, template scenario folder work well by running `subcountry201x/calculate_scores.R`
 2. prepare and register data for a goal
-3. modify goal models with R to calcualte _status_ and _trend_ (in functions.R and pre_scores.R)
+3. modify goal models with R to calculate _status_ and _trend_ (in functions.R and pre_scores.R)
 4. update pressures and resilience matrix and data layers
-5. remove goal(s) if neccesary 
+5. remove goal(s) if necessary 
 6. calculate the other dimensions (pressures, resilience, likely future state, goal score, and overall OHI index score) with ohicore
 
 Step 2-5 can occur simultaneously. Below are instructions for each step. 
@@ -970,7 +977,7 @@ Both types of default data layers are of coarse-resolution and should be replace
 
 The OHI Toolbox expects each data layer to be in its own *.csv* file and to be in a specific format, with data available for every region within the study area, with data organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single score or value. See the [Formatting data for the Toolbox](http://ohi-science.org/manual/#formatting-data-for-the-toolbox) section for more information.
 
-It is highly recommended that layer preparation occurs in your repository's `prep` folder as much as possible, as it will also be archived by GitHub for future refrence. The folder is divided into sub-folders for each goal and sub-goal, where you will upload the raw data and manipulate the data in `data_prep.R` scripts. 
+It is highly recommended that layer preparation occurs in your repository's `prep` folder as much as possible, as it will also be archived by GitHub for future reference. The folder is divided into sub-folders for each goal and sub-goal, where you will upload the raw data and manipulate the data in `data_prep.R` scripts. 
 
 Note that you can upload raw data as _.xls_ or _.xlsx_ files to Github, but they must be converted to _.csv_ for toolbox calculations. 
 
@@ -1134,18 +1141,17 @@ In the `preindex_fuction`, you could specify variables such as _status_year_ and
 
 ![A screenshot of `goals.csv`, used to modify goal model](https://docs.google.com/drawings/d/1o2wtJ9KCPDyGPH9Y4unmALG6BlxX9lmJ_PakDDiQrLo/pub?w=700&h=524)
 
-## Modifying Pressures Categories and Matrix
+## Modify Pressures Matrix
 
-Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/subcountry2014/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `subcountry2014/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
+Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/[region_year]/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `[region_year]/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
 
 Adding a new pressure to the pressures matrix requires the following steps:
 
-> 1. Create new pressure layer(s) and save in the `layers` folder
-> 2. Register pressure layer(s) in `layers.csv`
-> 3. Register in `pressures_categories.csv`
-> 4. Register in `pressures_matrix.csv`
-  + a. Identify the goals affected and set the weighting
-> 5. Modify config.R for goals that have elements
+1. Create new pressure layer(s) and save in the `layers` folder
+2. Register pressure layer(s) in `layers.csv`
+3. Register in `pressures_categories.csv`
+4. Register in `pressures_matrix.csv`, identify the goals affected and set the weights
+5. Modify config.R for goals that have elements
 
 ### Create the new pressure layers and save in the `layers` folder
 
@@ -1170,7 +1176,7 @@ Add two new rows in `layers.csv`, and register the new pressure layers by fillin
 
 ### Register in `pressures_categories.csv`
 
-This is a table to record the _name_ of each pressures data layer, its _category_, and _sub-category_. Each data layer name  is the same name that's saved in the `layers` folder and is registered in `layers.csv`. Each layer falls under one of two categories -  ecological or social pressures, and one of several sub-categories to further represent the origin of the pressure (eg. climate change, fishing, etc), which is also indicated by a prefix of each data layer name.
+This is a table to record the _name_ of each pressures data layer, its _category_, and _subcategory_. Each data layer name  is the same name that is saved in the `layers` folder and is registered in `layers.csv`. Each layer falls under one of two categories -  ecological or social pressures, and one of several subcategories to further represent the origin of the pressure (e.g. climate change, fishing, etc), which is also indicated by a prefix of each data layer name.
 
 Each pressure category is calculated separately before being combined with the others, so it is important to register the new pressure with the appropriate category prefix decided by your regional assessment team.  
 
@@ -1201,20 +1207,20 @@ If a goal has multiple elements (eg. CS has multiple habitats), as reflected in 
 
 The highlighted files are data layers necessary to calculate pressures for each of the goals with components. They contain weights, or relative contribution from each element to the total pressures of the goal. These weights are calculated separately in the data prep folder for each goal, and saved and registered as you would for any data layer. How to calculate these data layers can be found in the _description_ column of `layers.csv`.  
 
-## Modify Resilience Categories and Matrix
+## Modify Resilience Matrix
 
-Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/subcountry2014/conf` folder).
+Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/[region_year]/conf` folder).
 
 Adding a new resilience to the resilience matrix requires the following steps:
 
-> 1. Create new resilience layer(s) and save in the `layers` folder
-> 2. Register resilience layer(s) in `layers.csv`
-> 3. Register resilience layer(s) in `resiliences_categories.csv`
-  + a. Set the resilience category  
-  + b. Set the weighting
-> 3. Register resilience layer(s) in `resiliences_matrix.csv`
+1. Create new resilience layer(s) and save in the `layers` folder
+2. Register resilience layer(s) in `layers.csv`
+3. Register resilience layer(s) in `resiliences_categories.csv`
+  +  Set the resilience category  
+  +  Set the weights
+4. Register resilience layer(s) in `resiliences_matrix.csv`
   +  Identify the goals affected
-> 4. Modify Config.R for goals that have elements
+5. Modify `config.R` for goals that have elements
 
 ### Create new resilience layers, save in `layers` folder and register in `layers.csv`
 
@@ -1226,7 +1232,7 @@ This process is similar to what you have done for the pressures data layers. Pre
 
 ![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=800&h=720)
 
-Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category-type` - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `subcategory` column indicates what specific pressure each layer of resilience is targeted at. The prefix of each data layer corresponds to its subcategory (eg. po, li, g, etc).
+Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category_type` - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `subcategory` column indicates what specific pressure each layer of resilience is targeted at. The prefix of each data layer corresponds to its subcategory (eg. po, li, g, etc).
 
 In addition, the `weight` column represents level of institutional governance. Governance is a function of 1) institutional structures that address the intended objective (eg. whether appropriate laws/regulations exist, etc), 2) a clear process for _implementing_ the institution is in place, and 3) whether the institution has been _effective_ at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the `resilience_categories.csv` pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer:
 
@@ -1244,9 +1250,9 @@ However, you can redefine how the weights are set to available information in yo
 New resilience layers may be added to `resilience_matrix.csv` based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.
 
 
-### How to modify Config.R for goals with multiple elements
+### How to modify config.r for goals with multiple elements
 
-If a goal has multiple elements, as shown in _pressures_matrix.csv_, you need to update `Config.R` in `conf` folder, as shown below:
+If a goal has multiple elements, as shown in _pressures_matrix.csv_, you need to update `config.r` in `conf` folder, as shown below:
 
 ![](https://docs.google.com/drawings/d/1eMvpSPif_Su759-cyHg8gsnWeHCvN2QlEZ5ywLVIEmY/pub?w=800&h=720)
 
@@ -1431,7 +1437,7 @@ _**NOTE**: These steps do not need to occur in this sequence._
 
 As illustrated in the graph below, removing the subgoals involves simplifying how BD and its subgoals are registered in the columns:
 
-- change the _order_ and _order_hierarhy_ to 10
+- change the _order_ and _order_hierarchy_ to 10
 - remove BD from the _postindex_function_ column & add to the _preindex_function_ column
 - change the function call from `BD(scores)` to `BD(layers)`
 
@@ -1456,7 +1462,7 @@ This table indicates which individual pressures (stressors) affect which goal, s
 
 ### Remove subgoals from `resilience_matrix.csv`
 
-This table records information on which individual resilience measures affect which goal, sub-goals, or elements. Similar to what you would do with 'pressures_matrix.csv', you can delete the rows for HAB adn SPP, and add a new row for BD.
+This table records information on which individual resilience measures affect which goal, sub-goals, or elements. Similar to what you would do with 'pressures_matrix.csv', you can delete the rows for HAB and SPP, and add a new row for BD.
 
 ![](https://docs.google.com/drawings/d/1JUGogjH08_2KlOebKYxCR-JZFYGp5-6VwLYylblpWdw/pub?w=800&h=720)
 
