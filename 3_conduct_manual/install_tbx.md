@@ -1,11 +1,11 @@
-# Installing the Toolbox
+# Setting up Github and RStudio
 
 In this section, you will learn how to successfully set up your _tailored_ toolbox by following these step-by-step instructions:
 
 1. Create your online _Github_ account and set up _git_ on your local computer
 2. Install _R_ and _RStudio_ on your local computer
 3. Clone your tailored repository from Github to your local computer via RStudio
-4. Install `ohi-core` package 
+4. Install `ohi-core` package
 
 Let's get started!
 
@@ -127,9 +127,9 @@ You need to **email your username to ohi-science@nceas.ucsb.edu** for permission
 
 ## Download R and RStudio
 
-You can download R, and RStudio for free from their perspective websites and install the latest versions allowed by your operating system on your computer: 
+You can download R, and RStudio for free from their perspective websites and install the latest versions allowed by your operating system on your computer:
 
-**R**: [http://cran.r-project.org/](http://cran.r-project.org/) 
+**R**: [http://cran.r-project.org/](http://cran.r-project.org/)
 
 **RStudio**: [https://www.rstudio.com/](https://www.rstudio.com/)
 
@@ -151,5 +151,4 @@ In order to sync GitHub and RStudio, you need to clone your GitHub repository to
 
 `ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R pckages and will only need to do this once. You can find the script `install_ohicore.r` in your scenario folder (eg. chn/province2015/). Source it, and now your Toolbox is all set up and ready to go!
 
-> Although `ohicore` is a package you would not normally interact with, it can be useful to have the folder cloned to your computer for debugging, particularly with pressures and resilience calculations for goals that have components in the matrix. To do so, you will clone the repository (https://github.com/OHI-Science/ohicore) as you would your assessment repository. 
-
+> Although `ohicore` is a package you would not normally interact with, it can be useful to have the folder cloned to your computer for debugging, particularly with pressures and resilience calculations for goals that have components in the matrix. To do so, you will clone the repository (https://github.com/OHI-Science/ohicore) as you would your assessment repository.
