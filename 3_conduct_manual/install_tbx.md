@@ -7,6 +7,7 @@ In this section, you will learn how to successfully set up your _tailored_ toolb
 3. Clone your tailored repository from Github to your local computer via RStudio
 4. Install `ohi-core` package
 
+
 Let's get started!
 
 ## Set up a Github Account and git
@@ -133,7 +134,7 @@ You can download R, and RStudio for free from their perspective websites and ins
 
 **RStudio**: [https://www.rstudio.com/](https://www.rstudio.com/)
 
-**R and RStudio update frequently**. If you already have those softwares installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or Rstudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
+**R and RStudio update frequently**. If you already have those software installed, check on the websites for the most recent version. In general, it's good practice to check periodically for updates. When you run into unexplained errors while modifying contents in RStudio, check first if your versions of R or RStudio are out-of-date. For R, you can see what you already have on your computer by typing "sessionInfo( )" into your R console.
 
 **If you are working on a _Mac_,** you will need to tell RStudio to use the proper version of Git by doing the updating the preferences for 'Git executable':
 
@@ -149,6 +150,6 @@ In order to sync GitHub and RStudio, you need to clone your GitHub repository to
 
 ## Install `ohicore`
 
-`ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R pckages and will only need to do this once. You can find the script `install_ohicore.r` in your scenario folder (eg. chn/province2015/). Source it, and now your Toolbox is all set up and ready to go!
+`ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R packages and will only need to do this once. You can find the script `install_ohicore.r` in your scenario folder (eg. chn/province2015/). Source it, and now your Toolbox is all set up and ready to go!
 
 > Although `ohicore` is a package you would not normally interact with, it can be useful to have the folder cloned to your computer for debugging, particularly with pressures and resilience calculations for goals that have components in the matrix. To do so, you will clone the repository (https://github.com/OHI-Science/ohicore) as you would your assessment repository.

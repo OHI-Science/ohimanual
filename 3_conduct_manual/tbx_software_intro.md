@@ -24,7 +24,7 @@ To allow multiple users to work on the same repository at the same time, there a
 
 **GitHub Vocabulary:**
   
-* **clone** ~ download an online repository to your computer to your local machine with synching capabilities enabled
+* **clone** ~ download an online repository to your computer to your local machine with syncing capabilities enabled
 * **commit** ~ message associated with your changes at a point in time, before being able to sync back to the online repository
 * **pull** ~ pull changes from an online repository to your computer
 * **push** ~ push committed changes back to the online repository with your version, only possible after committing
@@ -70,7 +70,7 @@ When you modify or add a file, the file will appear in the 'Git' window once it 
   - Note 1: there will often be multiple files 'staged' at the same time, and so the same commit message will be associated with all of the updated files. It is best to commit changes often with informative commit messages.
   - Note 2: clicking on a staged file will identify additions and deletions within that file for your review
 3. Click '_Commit_' to commit the changes and the commit message.
-4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, espeically if you are working with collaborators who might be working on the same files as you are.
+4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, especially if you are working with collaborators who might be working on the same files as you are.
 5. "Push" your committed changes to the online repository. Your changes are now visible online.
 </span>
 

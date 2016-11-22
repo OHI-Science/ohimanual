@@ -19,7 +19,7 @@ _**NOTE**: These steps do not need to occur in this sequence._
 
 As illustrated in the graph below, removing the subgoals involves simplifying how BD and its subgoals are registered in the columns:
 
-- change the _order_ and _order_hierarhy_ to 10
+- change the _order_ and _order_hierarchy_ to 10
 - remove BD from the _postindex_function_ column & add to the _preindex_function_ column
 - change the function call from `BD(scores)` to `BD(layers)`
 
@@ -44,6 +44,6 @@ This table indicates which individual pressures (stressors) affect which goal, s
 
 ### Remove subgoals from `resilience_matrix.csv`
 
-This table records information on which individual resilience measures affect which goal, sub-goals, or elements. Similar to what you would do with 'pressures_matrix.csv', you can delete the rows for HAB adn SPP, and add a new row for BD.
+This table records information on which individual resilience measures affect which goal, sub-goals, or elements. Similar to what you would do with 'pressures_matrix.csv', you can delete the rows for HAB and SPP, and add a new row for BD.
 
 ![](https://docs.google.com/drawings/d/1JUGogjH08_2KlOebKYxCR-JZFYGp5-6VwLYylblpWdw/pub?w=800&h=720)

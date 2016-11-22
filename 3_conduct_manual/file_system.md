@@ -6,7 +6,7 @@ This section is an orientation to the files within your _tailored_ assessment re
 
 ### Main folders within your tailored repository
 
-The **scenario folder** is the most important folder within the repository; by default it is named `subcountry2014` to indicate that the assessment is conducted at the subcountry scale (province, state, district, etc.), based on input layers and goal models used in the 2014 global assessment. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
+The **scenario folder** is the most important folder within the repository; by default it is named `subcountry2014` to indicate that the assessment is conducted at the region scale (province, state, district, etc.), based on input layers and goal models used in the 2014 global assessment. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
 <!-- * All other files in the assessment repository are accessory files. Files with names beginning with a ‘.’ are required for versioning capabilities by GitHub and do not appear when the assessment repository is viewed on your computer. -->
 
 ![](https://docs.google.com/drawings/d/1eHViTehnAuxSDw1fYI54C3X5YgBktGtaVt71R3OXYeE/pub?w=600&h=500)
@@ -111,15 +111,15 @@ The `layers.csv` file is the registry and directory that manages all data requir
 `goals.csv` is a table with information about goals and sub-goals, including:
 
 - _order_color_ & _order_hierarchy_: the order to display in flower plots
-- _order_calculate_: the oder in which the goals and sub-goals are calculated for the overall index scores
-- _goal_ & _parent_: indicates the relationship between sub-goals and supra-goals (ie. goals with sub-goals)
+- _order_calculate_: the order in which the goals and sub-goals are calculated for the overall index scores
+- _goal_ & _parent_: indicates the relationship between sub-goals and supra-goals (i.e. goals with sub-goals)
 - _weight_: how each goal is weighted to calculate the final Index scores
 - _preindex_function_: indicate what parameters are called to calculate scores for goals and sub-goals in `functions.r`
 - _postindex_function_: indicate what parameters are called to calculate scores for supra-goals in `functions.r`
 
 **pressures_categories.csv**
 
-This is a table to record the _name_ of each pressures data layer, its _category_, and _sub-category_. Each data layer name  is the same name that's saved in the `layers` folder and is registered in `layers.csv`. Each layer falls under one of two categories -  ecological or social pressures, and one of several sub-categories to further represent the origin of the pressure (eg. climate change, fishing, etc), which is also indicated by a prefix of each data layer name (for example: `po_` for the pollution sub-category). For more information, see [how to modify pressures layers](http://ohi-science.org/manual/#modifying-pressures-categories-and-matrix).
+This is a table to record the _name_ of each pressures data layer, its _category_, and _sub-category_. Each data layer name  is the same name that's saved in the `layers` folder and is registered in `layers.csv`. Each layer falls under one of two categories -  ecological or social pressures, and one of several sub-categories to further represent the origin of the pressure (e.g. climate change, fishing, etc), which is also indicated by a prefix of each data layer name (for example: `po_` for the pollution sub-category). For more information, see [how to modify pressures layers](http://ohi-science.org/manual/#modifying-pressures-categories-and-matrix).
 
 **pressures_matrix.csv**
 
@@ -177,7 +177,7 @@ It configures labeling and constants appropriately. You will only need to modify
 
 **launch_app_code.R**
 
-It will launch a version of the App on your computer so that you can visualize any edits you make before synching to *github.com*.
+It will launch a version of the App on your computer so that you can visualize any edits you make before syncing to *github.com*.
 
 ### Other
 
