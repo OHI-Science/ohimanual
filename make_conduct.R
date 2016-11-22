@@ -33,8 +33,8 @@ in_md = c(
   'use_tbx_to_remove_sub_goals.md',
   'use_tbx_calculate_overall_index.md',
   'toolbox_troubleshooting.md',                      # TODO: review and update
-  'intro_webapp.md',                                 # TODO: interpreting a flower plot
-  'update_webapp.md',                                
+  #'intro_webapp.md',                                 # TODO: interpreting a flower plot
+  #'update_webapp.md',                                
   'intro_goalbygoal.md',                             
   'practical_FP.md',
   'practical_AO.md',                
