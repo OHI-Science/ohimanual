@@ -1,7 +1,8 @@
 # Requesting your repository
 
- Using the OHI Toolbox and Github Repositories for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment, and even before you have defined your regions, we can immediately provide you with a Starter Github repository (_Starter Repo_) to get you familiar with the Github/Rstudio workflow, and to help you through the data exploration and region-defining stage. Once you have defined your regions, we will provide you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the most recent Global OHI assessment.
+ Using the OHI Toolbox and Github Repositories for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment, and even before you have defined your regions, we can immediately provide you with a Starter Github repository (_Starter Repo_) to get you familiar with the Github/Rstudio workflow, and to help you through the data exploration and region-defining stage.
 
+Once you have defined your regions, we will provide you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the most recent Global OHI assessment. Your Starter Repo folders and files will be incorporated into the Full Repo.
 
 ## The Starter Repo
 
@@ -9,8 +10,7 @@ _**Why a Starter Repo?**_
 
 The purpose of this repository is to help you learn how to use Github/Rstudio for data exploration, and to make sure they fit within the spatial boundaries you are considering. We encourage you to code this exploration in `R`.
 
-
-_Learn Github/Rstudio and collaborate with your team_
+_Learn Github/RStudio and collaborate with your team_
 
 OHI promotes open science where detailed information about how the assessment is conducted is documented and shared. Providing public access to your input data, computational code, as well as rationales of each step of the assessment is becoming the standard for scientific inquiry, so every effort should be made to achieve those aims. Github/Rstudio is a powerful combination that organizes and processes information for this purpose and greatly increases the efficiency of conducting repeated and reproducible assessments, and is the backbone of the OHI Toolbox.
 
@@ -20,15 +20,22 @@ _Prepare and Organize Data_
 
 **Data preparation (formatting, exploring, plotting data) takes the largest amount of time in all OHI assessments.** An OHI assessment deploys from dozens to more than a hundred data layers coming from as many public data sources. Very rarely raw data can be used as is, and requires a significant amount of cleaning and formatting before they become usable OHI data layers. During that exploration process, you'll likely need input from colleagues or outside experts and go through rounds of revisions. Forget about dozens of excel sheets and long email chains, Github's version control system will help you save each version automatically and document conversations and decisions alongside your R code.
 
-Scripted data exploration is useful whether you decide to use the data in your assessment or not. If you use the data, you have already begun preparing it for the Toolbox. And if you don't use the data, it can be very important to be able to communicate why.
+**Scripted data exploration (eg. in R)** is useful whether you decide to use the data in your assessment or not. If you use the data, you have already begun preparing it for the Toolbox. And if you don't use the data, it can be very important to be able to communicate why.
+
+To promote transparent communication and aid in reproducibility, you should also record information on data sources and briefly explanation of how they are processed in the script. For example, you could include:
+
+- data source
+- data url or website
+- date accessed, contact information
+- processing plan
+
+> Example data prep scripts in .Rmd and .r with data are included as a quick guide.
 
 _Finalize spatial boundaries_
 
 An OHI assessment is conducted within _clearly defined boundaries_. Our team populates data layers in your Full Repository based on your final spatial boundaries (ie. disaggregating data from global to your local level). It will save us a significant amount of time and efforts to make each Full Repo only once.
 
 Even though [jurisdictional boundaries are optimal](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales), where exactly to draw the boundaries often is limited by data. Raw data sources often do not readily suit your desired geopolitical boundaries. See [Defining Spatial Boundaries]((http://ohi-science.org/manual/#defining-spatial-boundaries) for more detail. Exploring the available data can help you make the final decision on spatial boundaries.
-
-In your Starter Repo, example data prep scripts in .Rmd and .r with data are included as a quick guide.
 
  _**What’s in the Starter Repo?**_
 
@@ -62,7 +69,7 @@ You can create a GitHub account at http://github.com. Choose a username and pass
 
 _**Why Full Repo?**_
 
-The Full Repo is a repository pre-populated with _r scripts_ and _data layers_ disaggregated from the most recent global OHI assessment, structured in the same way as the global OHI assessments. This way you don't need to start your assessment from scratch. You can explore a working repository and build from there. For example, instead of writing scripts for goal models from the beginning, you can modify existing scripts to suit your own needs. Data layers disaggregated from the global assessments are available to use, however, we do recommend that you replace as many global data with higher-resolution local data as possible. 
+The Full Repo is a repository pre-populated with _r scripts_ and _data layers_ disaggregated from the most recent global OHI assessment, structured in the same way as the global OHI assessments. This way you don't need to start your assessment from scratch. You can explore a working repository and build from there. For example, instead of writing scripts for goal models from the beginning, you can modify existing scripts to suit your own needs. Data layers disaggregated from the global assessments are available to use, however, we do recommend that you replace as many global data with higher-resolution local data as possible.
 
 _**What's in it?**_
 
