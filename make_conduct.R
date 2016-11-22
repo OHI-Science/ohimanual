@@ -23,7 +23,6 @@ in_md = c(
   'intro_to_tbx.md',    
   'file_system.md',
   'tbx_software_intro.md',
-  'github_architecture.md', 
   'install_tbx.md', 
   'use_tbx.md',                                      # TODO: review and update 
   'use_tbx_to_modify_data_layers.md',
