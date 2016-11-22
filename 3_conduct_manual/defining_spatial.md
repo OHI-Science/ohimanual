@@ -36,6 +36,7 @@ Illustrated below is the general instruction on how to do so. Exactly where to d
 
 <!-- It can also be done in [R](http://gis.stackexchange.com/questions/136542/r-function-for-thiessen-polygons).  -->
 
+> To create a repository for your assessment, we just need the off-shore marine water boundaries. But you may also make **inland buffers** for your analyses. For example, do you want coastal population to include activities within 1km of the coast? Or 10km? 
 
 ## Request a Full Repository with offshore boundaries
 
