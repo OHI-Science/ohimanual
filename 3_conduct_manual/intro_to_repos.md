@@ -1,10 +1,6 @@
-# Requesting your repository
+# Requesting your repositories
 
-<<<<<<< HEAD
  Using the OHI Toolbox and Github Repositories for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment, and even before you have defined your regions, we can immediately provide you with a Starter Github repository (_Starter Repo_) to get you familiar with the Github/Rstudio workflow, and to help you through the data exploration and region-defining stage.
-=======
-You can start using you tailored repository to organize data and plan even before you have finalized your regions' spatial boundaries. When you begin an OHI+ assessment, we can immediately provide you with a Starter Github repository (**_Starter Repo_**) to get you familiar with the Github/RStudio workflow, and to help you through the data exploration and region-defining stage. Once you have finalized the spatial boundaries for your regions, we will provide you with a Full Repository (**_Full Repo_**) with pre-populated data layers extracted from the most recent Global OHI assessment.
->>>>>>> b17a1de8ac603b6782e44a36e0f0a7cf828904e5
 
 Once you have defined your regions, we will provide you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the most recent Global OHI assessment. Your Starter Repo folders and files will be incorporated into the Full Repo.
 
@@ -14,10 +10,6 @@ _**Why a Starter Repo?**_
 
 The purpose of this repository is to help you learn the Github/RStudio workflow, and to organize and explore available data to help finalize the spatial boundaries you are considering. We encourage you to code this exploration in `R`.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b17a1de8ac603b6782e44a36e0f0a7cf828904e5
 _Learn Github/RStudio and collaborate with your team_
 
 OHI promotes open science where detailed information about how the assessment is conducted is documented and shared. Providing public access to your input data, computational code, as well as rationales of each step of the assessment is becoming the standard for scientific inquiry, so every effort should be made to achieve those aims. Github/RStudio is a powerful combination that organizes and processes information for this purpose and greatly increases the efficiency of conducting repeated and reproducible assessments, and is the backbone of the OHI Toolbox.
@@ -30,20 +22,15 @@ _Prepare and Organize Data_
 
 **Scripted data exploration (eg. in R)** is useful whether you decide to use the data in your assessment or not. If you use the data, you have already begun preparing it for the Toolbox. And if you don't use the data, it can be very important to be able to communicate why.
 
-To promote transparent communication and aid in reproducibility, you should also record information on data sources and briefly explanation of how they are processed in the script. For example, you could include:
-
-- data source
-- data url or website
-- date accessed, contact information
-- processing plan
-
-> Example data prep scripts in .Rmd and .r with data are included as a quick guide.
+_Example data prep scripts in .Rmd and .r with data are included as a quick guide._
 
 _Finalize spatial boundaries_
 
 An OHI assessment is conducted within _clearly defined boundaries_. The OHI team populates data layers in your Full Repository based on your final spatial boundaries (i.e.. data from global to your local level).
 
 Even though [jurisdictional boundaries are optimal](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales), where exactly to draw the boundaries often is limited by data. Raw data sources often do not readily suit your desired geopolitical boundaries. See [Defining Spatial Boundaries]((http://ohi-science.org/manual/#defining-spatial-boundaries) for more detail. Exploring the available data can help you make the final decision on spatial boundaries.
+
+> You could also start **exploring goal models**, which will reduce the amount of work you will do when you receive the Full Repo for scores calculation.
 
  _**What’s in the Starter Repo?**_
 
@@ -53,16 +40,9 @@ The Starter Repo simply contains a `prep` folder, which includes:
 - one folder for _pressures_, where you could create a sub-folder for each layer to be prepared
 - one folder for _resilience_, where you could create a sub-folder for each layer to be prepared
 - a README file
-<!--- - _Example Data Prep Tutorials_ with data and scripts --->
+- _Example Data Prep Tutorials_ with data and scripts
 
 Within each folder, it's up to you how to populate and organize the contents. We recommend that within each folder you save the raw data files, and create a data prep script (eg. `CW_data_prep.R` or `CW_data_prep.Rmd` for Clean Water) to explore data and document decision making.
-
- <!-- _**What do you do with it?**_
-
-Bring in raw data, explore, document decision making, plot. See tutorial on data_prep (link).  
-
-We recommend documentation in Rmarkdown, but you can also do it in R. -->
-
 
 _**How to request a Starter Repo**_
 
@@ -87,6 +67,8 @@ The Full Repo contains all the files you need to complete your OHI+ assessment, 
 - _goal models_ are organized in one file (`functions.r`) in configure (`conf`) folder
 - _pressures_ and _resilience_ matrices that indicate which pressures/resilience apply to which goal
 - Scripts that use `ohicore`, an `R` package built by the OHI team to calculate OHI scores, create visuals and other core operations of the Ocean Health Index.
+
+> Your Full Repository will be pre-populated with data layers and models used in the latest year's global assessment as templates. You will replace the data and models as needed. 
 
 You can see a full description of each file and script and how they are organized in the [File System](http://ohi-science.org/manual/#file-system-organization) section.
 
