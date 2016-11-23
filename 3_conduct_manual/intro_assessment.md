@@ -113,9 +113,18 @@ Detailed information about how the assessment is conducted will enhance its cred
 
 ## The OHI Toolbox
 
-The **OHI Toolbox** is the main software used for organizing and processing information, documenting decisions made, calculating scores, and visualizing results. It was created to facilitate score calculations as well as the organization of information and transparency of the approach. The Toolbox is built with **open-source, freely available software**, and can be modified to meet your needs. You will access the software from online and will conduct your assessment in a collaborative, transparent, and reproducible manner.
+The **OHI Toolbox** is made to organize and process data, document decision making, calculate scores, and share results within or outside your team. It was created to facilitate score calculations as well as the organization of information and transparency of the approach. The Toolbox is built with **open-source, freely available software**, _Github and Rstudio_.
 
-The Toolbox software should be used when your team has gathered the information necessary for the goal models you have developed. The steps of carefully preparing and gathering data layers, indicators, and developing goal models can be done independently of the actual software use; however, if done within the Toolbox structure these steps will be traceable and collaborative. But of course the assessment can be done without all members of your team becoming familiar with the technical aspects of the Toolbox.
+**This is a highly effective combination for your team to access the assessment from online and work in a collaborative, transparent, and reproducible manner.** _**RStudio**_ is the coding environment where all the data processing, calculations, and writing are done. _**Github**_ is a online version-control system where each change you made in RStudio is recorded and easily traceable. Multiple people can therefore collaborate on the same project and view the changes done by one another. Github also provides a platform for decision-making conversations, similar to email threads but better kept and organized. Read (APPENDIX 1: Softwares) for more details on their features, how they work together, and how to set them up your own computer.
+
+**Treat the toolbox as your notebook, calculator, and presentation of your work.** No more endless email chains or passing excel sheets back and forth. If someone wants to see where your data comes from, how you have processed the data, and what's the rationale for including or excluding certain data, and how the scores are calculated, they can find the answers here. It increases the credibility and reproducibility of your assessment.
+
+**Working in this system will be helpful to your future self.** In a few months, or years, you can visit this page and remember what you had done. It also makes your technical team more stable.
+
+**The toolbox will also preserve team memory.** If there are personale changes, it is easy for any new memeber to pick up where it was left when your data prepation has been documented clearly and kept in one place.
+
+Your Toolbox is organized into **two sequential repositories** where you will store all your work. They will be tailor-made for your OHI+ assessment upon request.
+
 
 <!-- Accompanying the OHI Toolbox is the **OHI+ WebApp**, which is a visualization tool that displays input information and calculated scores in several ways, including interactive maps and flower plots. Most coastal countries have a WebApp that was created to facilitate planning and communication during assessments. The WebApp visually presents inputs, goal models and calculated scores for each defined region through interactive maps, histograms, and tables. All inputs presented in a country's WebApps were extracted for each country from global assessments, and scores were calculated using goal models from global assessments.
 
