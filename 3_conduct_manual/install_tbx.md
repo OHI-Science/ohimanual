@@ -1,4 +1,4 @@
-# Setting up Github and RStudio
+## Setting up Github and RStudio
 
 In this section, you will learn how to successfully set up your _tailored_ toolbox by following these step-by-step instructions:
 
@@ -6,7 +6,6 @@ In this section, you will learn how to successfully set up your _tailored_ toolb
 2. Install _R_ and _RStudio_ on your local computer
 3. Clone your tailored repository from Github to your local computer via RStudio
 4. Install `ohi-core` package
-
 
 Let's get started!
 
