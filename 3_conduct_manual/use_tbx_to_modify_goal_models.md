@@ -1,13 +1,13 @@
-## Modify goal models
+# Modifying goal models
 
-After you have registered the data layers for a goal and created a goal model, you are ready to calculate the _status_ and _trend_ of this goal in `functions.r`. 
+After you have registered the data layers for a goal and created a goal model, you are ready to calculate the _status_ and _trend_ of this goal in `functions.r`.
 
-Within `functions.r`, each goal is unique and set up as a function (ie.`AO = function(inputs){equations}`): 
+Within `functions.r`, each goal is unique and set up as a function (ie.`AO = function(inputs){equations}`):
 
 - sub-goals (eg. HAB) and goals without sub-goals (eg. CS) have functions that read in data _layers_ (eg. `HAB = functions(layers)`) and return scores for that goal or sub-goal
 - supra-goals, or goals with sub-goals (eg. FP) have functions that read in sub-goal _scores_ (eg. `BD = function(scores)`) and calculate scores for the supra-goals
 
-> `functions.R` is pre-loaded with r codes from OHI-Global 2015 assessment as a reference. You can run through the reference script line-by-line to learn how it has been done. For your own assessment, you may choose to delete the entire function and rewrite it completely, or you can borrow most, if not all, of the existing script. Either way, make sure you first identify the parameters to call, either _layers_ or _scores_.
+> `functions.R` is pre-loaded with r codes from the most recent OHI-Global assessment as a reference. You can run through the reference script line-by-line to learn how it has been done. For your own assessment, you may choose to delete the entire function and rewrite it completely, or you can borrow most, if not all, of the existing script. Either way, make sure you first identify the parameters to call, either _layers_ or _scores_.
 
 To modify the goal models, open `conf/functions.R` and go to the appropriate goal section. You will do the following sequence of events:
 
@@ -73,7 +73,7 @@ Trend is typically calculated as the linear trend of the _most recent five years
 
 ```
 ## minimum year here for illustration; it is based on data available
-year_min = 2011 
+year_min = 2011
 
  r.trend <- ry %>%
    filter(year >= year_min) %>%
