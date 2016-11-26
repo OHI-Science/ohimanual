@@ -1,8 +1,8 @@
-# Appendix 1: Goal Models, Reference Points, and Pressure and Resilience
+## Developing Goal Models, Reference Points, and Pressures and Resilience
 
-Once you have determined which goals are assessed and have begun searching for data and indicators, you can start to develop goal models and set reference points. The decision tree of the data discovery process also applies here: first consider how goals can be tailored to your local context before you consider replicating what was done in the Global Assessments. It is always better to use local goal model and reference point approaches where possible. This section aims to provid you with goal-by-goal guidance on how to find data, pick indicators, set reference point, and develop the model, as well as guideline on how to think about pressure and resilience. But first, let's see some general tips before diving into the details of each goal model. 
+Once you have determined which goals are assessed and have begun searching for data and indicators, you can start to develop goal models and set reference points. The decision tree of the data discovery process also applies here: first consider how goals can be tailored to your local context before you consider replicating what was done in the Global Assessments. It is always better to use local goal model and reference point approaches where possible. This section aims to provid you with goal-by-goal guidance on how to find data, pick indicators, set reference point, and develop the model, as well as guideline on how to think about pressure and resilience. But first, let's see some general tips before diving into the details of each goal model.
 
-## Developing multiple goal models at the same time
+### Developing multiple goal models at the same time
 
 Goals can be assessed independent of one another. As each goal model is developed and data gathered, it can be assessed without affecting other goals.
 
@@ -10,7 +10,7 @@ Goals can be assessed independent of one another. As each goal model is develope
 
  If you wish to further coordinate these activities on a higher level, you could have the same team member coordinate activities for the development of certain goals. That is a consideration when assembling your team and planning your workflow. For more details, please see the goal-specific sections.
 
-## Keeping Reference Points in Mind
+### Keeping Reference Points in Mind
 
 Setting a reference point is required for every goal model you develop. It is an "ideal" condition, or target, where the goal is considered to be achieved to its full potential. Achieving or exceeding the reference point will result in a score of 100. The choice of a reference point will thus affect how the final scores are calculated, and must be balanced between knowledge of the system, expert judgment, and limitations of the data. You may set an universal reference point for all regions in your study area, or you may set a unique reference point for each region.
 
@@ -32,7 +32,7 @@ You will learn more, and think more critically about reference points, as you de
 
 where C<sub>r</sub> is the reference condition of each habitat. See goal-specific sections for more examples.
 
-## Identifying pressures and resilience
+### Identifying pressures and resilience
 
 While you are developing goal models, you should note the links between your goals and pressures and resilience: both the pressures and resilience that affect them and whether the goal acts as pressure or resilience on other goals. It is recommended to begin gathering data of pressure and resilience from the start of the assessment. The team members who are developing specific goals should think about the pressures that act upon those goals as they are data-gathering, and they should think about the data sources that could provide pressures information. However, it may be most useful when one team member gathers all of the data for pressures, since the same pressures often affect multiple goals. See **Pressure and Resilience** section of this chapter for more information.
 
@@ -56,9 +56,9 @@ Also there are theoretical questions about resilience, but it is a discussion fo
 
 Also there are theoretical questions about resilience, but it is a discussion for another day. Does resilience mean measures to keep things the way it is (eg. grants for AO fishermen to keep fishing), or ways to help people adapt and change (eg. grants for AO fishermen to start aquaculture)?  
 
-Yes, we can try to get into this stuff in the resilience section--> 
+Yes, we can try to get into this stuff in the resilience section-->
 
 <!--
 Julie: I've deleted the rest below and rewritten it as the intro for the goal-by-goal page on ohi-science.org: https://github.com/OHI-Science/ohi-science.github.io/blob/master/revamp_copy.md
 --->
-## Understanding each goal model
+<!-- ## Understanding each goal model -->
