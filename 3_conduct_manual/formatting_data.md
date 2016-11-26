@@ -1,8 +1,16 @@
 ## Formatting Data for the Toolbox
 
+>The OHI Toolbox expects each data layer to be
+- in its own *.csv* file,
+- with data available for every region within the study area,
+- with data organized in 'long' format (as few columns as possible), and
+- with a unique region identifier (*rgn_id*) associated with a single score or value.
+
 As you discover and gather potential data sources, they can be prepared and explored in the Starter Repo. Data preparation is done in **R** using input data stored in **_.csv files_** (or 'comma-separated value'). These files can be opened as a spreadsheet using Microsoft Excel or similar programs. Each data layer (data input) has its own *.csv* file, which is combined with others within the Toolbox for the model calculations. These data layers are used for calculating goal scores, meaning that they are inputs for status, trend, pressures, and resilience. The global analysis included over 100 data layer files, and there will probably be as many in your own assessments. This section describes and provides examples of how to format the data layers for the Toolbox.
 
-**OHI goal scores are calculated at the scale of the reporting unit**, which is called a ‘**region**’ and then combined using an area-weighted average to produce the score for the overall area assessed, called a ‘**study area**’. The OHI Toolbox expects each data file to be in a specific format, with data available for every region within the study area, with data layers organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single *score* or *value*. In order to calculate trend, input data must be available as a time series for at least 5 recent years (and the longer the time series the better, as this can be used in setting temporal reference points).
+> It is highly recommended that layer preparation occurs in your repository's `prep` folder as much as possible, as it will also be archived by GitHub for future reference. The folder is divided into sub-folders for each goal and sub-goal, where you will upload the raw data and manipulate the data in `data_prep.R` scripts.
+
+**OHI goal scores are calculated at the scale of the reporting unit**, which is called a ‘**region**’ and then combined using an area-weighted average to produce the score for the overall area assessed, called a ‘**study area**’. In order to calculate trend, input data should be available as a time series for at least 5 recent years (and the longer the time series the better, as this can be used in setting temporal reference points).
 
 The example below shows information for a study area with 4 regions. There are two different (and separate) data layer files: tourism count (`tr_total.csv`) and natural products harvested, in metric tonnes (`np_harvest_tonnes.csv`). Each file has data for four regions (1-4) in different years, and the second has an additional 'categories' column for the different types of natural products that were harvested. In this example, the two data layers are appropriate for status calculations with the Toolbox because:
 
@@ -12,9 +20,12 @@ The example below shows information for a study area with 4 regions. There are t
 
 ### Uploading and formatting raw data files
 
-Unformatted data files can be uploaded to the `pre-proc` folder in your github repository and processed with R. Saving raw data in the same repository helps to keep track of how the data has been treated. Raw files can be uploaded as `.csv` or `.xlsx`. However, formatted data has to be saved as `.csv` in the `layers` folder.  
+Unformatted data files can be uploaded to the `pre-proc` folder in your github repository and processed with R. Saving raw data in the same repository helps to keep track of how the data has been treated.
+
+Raw files can be uploaded as `.csv` or `.xlsx`. However, formatted data has to be saved as `.csv` in the `layers` folder.  
 
 In addition to `pre-proc`, a `prep` folder has been set up for data formatting. Inside the folder:
+
 - several sub-folders exist to house formatted data files for each goal/sub-goal
 - `prep.r` is where formatting occurs for each goal/sub-goal.
 - `README` is where you can record information on raw data files and processing for future reference
