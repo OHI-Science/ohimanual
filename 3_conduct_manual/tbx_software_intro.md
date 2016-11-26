@@ -16,7 +16,7 @@ This section explains the GitHub workflow and how to access and setup required s
 
 Your Repositories and `ohicore` are stored and managed with all the above software systems. Here is a quick introduction to the software and how they work together.
 
-## Introduction to software
+## Introduction
 
 ### GitHub and git
 
