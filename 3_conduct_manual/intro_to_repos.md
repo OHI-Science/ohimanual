@@ -6,7 +6,7 @@ Once you have defined your regions, we will provide you with a Full repository (
 
 ## The Starter Repo
 
-_**Why a Starter Repo?**_
+### Why a Starter Repo?
 
 The purpose of this repository is to help you learn the Github/RStudio workflow, and to organize and explore available data to help finalize the spatial boundaries you are considering. We encourage you to code this exploration in `R`.
 
@@ -20,7 +20,7 @@ _Prepare and Organize Data_
 
 **Data preparation (formatting, exploring, plotting data) takes the largest amount of time in all OHI assessments.** An OHI assessment deploys from dozens to more than a hundred data layers coming from as many public data sources. Very rarely can raw data be used in the format you receive them; they requires a significant amount of cleaning and formatting before they become usable OHI data layers. During that exploration process, you'll likely need input from colleagues or outside experts and go through rounds of revisions. Instead of trying to track changes between dozens of data files and long email chains yourself, use Github's version control system that saves each version automatically. You can document conversations and decisions alongside your R code.
 
-**Scripted data exploration (eg. in R)** is useful whether you decide to use the data in your assessment or not. If you use the data, you have already begun preparing it for the Toolbox. And if you don't use the data, it can be very important to be able to communicate why.
+> **Scripted data exploration (eg. in R) is useful whether you decide to use the data in your assessment or not**. If you use the data, you have already begun preparing it for the Toolbox. And if you don't use the data, it can be very important to be able to communicate why.
 
 _Example data prep scripts in .Rmd and .r with data are included as a quick guide._
 
@@ -32,7 +32,7 @@ Even though [jurisdictional boundaries are optimal](http://ohi-science.org/manua
 
 > You could also start **exploring goal models**, which will reduce the amount of work you will do when you receive the Full Repo for scores calculation.
 
- _**What’s in the Starter Repo?**_
+ ### What’s in the Starter Repo?
 
 The Starter Repo simply contains a `prep` folder, which includes:
 
@@ -44,39 +44,39 @@ The Starter Repo simply contains a `prep` folder, which includes:
 
 Within each folder, it's up to you how to populate and organize the contents. We recommend that within each folder you save the raw data files, and create a data prep script (eg. `CW_data_prep.R` or `CW_data_prep.Rmd` for Clean Water) to explore data and document decision making.
 
-_**How to request a Starter Repo**_
+### How to request a Starter Repo?
 
 You can create a GitHub account at http://github.com with a username and password. To request a repo, email info@ohi-science.org with:
 
-1. your Github username
-2. the name of your assessment area (eg. the Gulf of Guayaquil)
-3. a shortened name for the repository (our convention is a **3-letter code**). For example, the Gulf of Guayaquil assessment had `gye` as their code.
+- your Github username
+- the name of your assessment area (eg. the Gulf of Guayaquil)
+- a shortened name for the repository (our convention is a **3-letter code**). For example, the Gulf of Guayaquil assessment had `gye` as their code.
 
 
 ## The Full Repo
 
-_**Why Full Repo?**_
+### Why a Full Repo?
 
-The Full Repo is a repository pre-populated with _r scripts_ and _data layers_ disaggregated from the most recent global OHI assessment, structured in the same way as the global OHI assessments. This way you don't need to start your assessment from scratch. You can explore a working repository and build from there. For example, instead of writing scripts for goal models from the beginning, you can modify existing scripts to suit your own needs. Data layers disaggregated from the global assessments are available to use, however, we do recommend that you replace as many global data with higher-resolution local data as possible.
+After you have explored your data and finalized spatial boundaries, the Full Repo offers the rest of the scripts and files you need to complete your OHI+ assessment.
 
-_**What's in the Full Repo?**_
+**The Full Repo is a repository pre-populated with _r scripts_ and _data layers_ disaggregated from the most recent global OHI assessment, structured in the same way as the global OHI assessments.** This way you don't need to start your assessment from scratch. You can explore a working repository and build from there. For example, instead of writing scripts for goal models from the beginning, you can modify existing scripts to suit your own needs. Data layers disaggregated from the global assessments are available to use, however, we do recommend that you replace as many global data with higher-resolution local data as possible.
 
-The Full Repo contains all the files you need to complete your OHI+ assessment, calculate scores, and produce figures and reports:  
+### What's in the Full Repo?
+
+**The Full Repo contains all the files you need to calculate scores, and produce figures and reports:**  
 
 - _data layers_ are organized into one folder (`layers`), with a registry that lists attributes about them and what they are for (`layers.csv`)  <!--- to add: `layers_meta.csv` --->
 - _goal models_ are organized in one file (`functions.r`) in configure (`conf`) folder
 - _pressures_ and _resilience_ matrices that indicate which pressures/resilience apply to which goal
 - Scripts that use `ohicore`, an `R` package built by the OHI team to calculate OHI scores, create visuals and other core operations of the Ocean Health Index.
 
-> Your Full Repository will be pre-populated with data layers and models used in the latest year's global assessment as templates. You will replace the data and models as needed. 
-
 You can see a full description of each file and script and how they are organized in the [File System](http://ohi-science.org/manual/#file-system-organization) section.
 
-**_How to request a Full Repo_**
+### How to request a Full Repo?
 
 To request a Full Repository, you will need to email info@ohi-science.org with:
 
-1. [shape files of your finalized spatial boundaries](http://ohi-science.org/manual/#request-a-full-repository-with-offshore-boundaries)
-2.  the name of your scenario, which is to the unit of your assessment and the year (e.g. province2016, region2015)
+- [shape files of your finalized spatial boundaries](http://ohi-science.org/manual/#request-a-full-repository-with-offshore-boundaries)
+- the name of your scenario, which is to the unit of your assessment and the year (e.g. province2016, region2015)
 
 We can then provide you with a Full Repo with the regions defined and pre-populated data layers extracted from the most recent global assessment according to your regional boundaries.
