@@ -1,19 +1,19 @@
 # Starter Repository
 
-In the Starter Repo, you will have one main _ Prep_ folder, where you will organize and explore available data, finalize spatial boundaries, while learning the Github/Rstudio workflow. All files are written in _R_ (or _Rmarkdown_) language.
+In the Starter Repo, you will have one main **_prep_** folder, where you will organize and explore available data and finalize spatial boundaries while learning the Github/RStudio workflow. To be transparent and repeatable, all files should be written in _R_ (or _R Markdown_).
 
 ## Discovering and gathering input information
 
-To promote transparent communication and aid in reproducibility, it is always a good practice to record information on data sources and a brief explanation of how they are processed in the script. For example, you could include:
+To promote transparent communication and aid in reproducibility, it is always a good practice to record information about data sources (i.e. 'metadata') and explanation of how they are processed in the script. For example, it is important to include:
 
 - data source
 - data url or website
 - date accessed, contact information
 - processing plan
 
-A hallmark of the OHI is that **it uses freely-available existing information (data and indicators) to create the models that capture the philosophies of individual goals.** The quality of the inputs are important because calculated Index scores area only as good ad the inputs on which they are based. Assembling the appropriate input information, which means both discovering and gathering data and indicators, is an important part of any OHI assessment.
+A hallmark of the OHI is that **it uses freely-available existing information (data and indicators) to create the models that capture the philosophies of individual goals.** The quality of the inputs are important because calculated OHI scores area only as good as the inputs on which they are based, and it is important to identify what was included (and excluded). Assembling the appropriate input information, which means discovering, gathering, and processing data and indicators, is critical to any OHI assessment.
 
-Once your team has tailored the OHI framework appropriately for your study area and identified the information that ideally would be included, the data discovery and gathering process can begin. There are many decisions to make when deciding which data are available and appropriate to include in your assessment. Finding appropriate data requires problem-solving abilities and creativity, particularly when ideal data are unavailable. You will need input information to calculate status models as well as pressures and resilience.  
+Reading [Best practices for assessing ocean health in multiple contexts using tailorable frameworks](https://peerj.com/articles/1503/) can help you plan what information to look for. Then, after your team has tailored the OHI framework for your study area and identified the information that ideally would be included, the data discovery and gathering process can begin. There are many decisions to make when deciding which data are available and appropriate to include in your assessment. Finding appropriate data requires problem-solving abilities and creativity, particularly when ideal data are unavailable. You will need input information to calculate status models as well as pressures and resilience.  
 
 ### Thinking creatively
 
