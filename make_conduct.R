@@ -30,7 +30,7 @@ in_md = c(
   'use_tbx_to_remove_goal_models.md',
   'use_tbx_to_remove_sub_goals.md',
   'use_tbx_calculate_overall_index.md',
-  'toolbox_troubleshooting.md',                      # TODO: review and update
+  'toolbox_troubleshooting.md',                     
   'tbx_software_intro.md',
   'install_tbx.md',
   'practical_FP.md',
@@ -42,13 +42,13 @@ in_md = c(
   'practical_LE.md',                              
   'practical_TR.md',                              
   'practical_CW.md',                            
-  'practical_BD.md',                                 # TODO: review and update JSL ICO/LSP #476
+  'practical_BD.md',                                 
   # 'pressures_resilience.md',                      
   'file_prep_instructions.md',
   'model_descript_instructions.md',
   'record_sheet.md',
   'R_tutes_all.md',   
-  'frequently_asked_questions.md')                   # TODO: review and update
+  'frequently_asked_questions.md')                  
  
 ## final .md filename
 out_md = 'ohi-manual.md' 
