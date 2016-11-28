@@ -119,7 +119,7 @@ The **OHI Toolbox** is made to organize and process data, document decision maki
 
 > Read [APPENDIX 1: Toolbox Software](http://ohi-science.org/manual/#introduction-to-software) for more details on their features, how they work together, and **how to set them up your own computer**.
 
-**Treat the toolbox as your notebook, calculator, and presentation of your work.** No more endless email chains or passing excel sheets back and forth. If someone wants to see where your data comes from, how you have processed the data, and what's the rationale for including or excluding certain data, and how the scores are calculated, they can find the answers here. It increases the credibility and reproducibility of your assessment.
+**Treat the toolbox as your notebook, calculator, and presentation of your work.** No more endless email chains or passing excel sheets back and forth! If someone wants to see where your data comes from, how you have processed the data, what's the rationale for including or excluding certain data, and how the scores are calculated, they can find the answers here. It increases the credibility and reproducibility of your assessment.
 
 **Working in this system will be helpful to your future self.** In a few months, or years, you can visit this page and remember what you had done. It also makes your technical team more stable.
 

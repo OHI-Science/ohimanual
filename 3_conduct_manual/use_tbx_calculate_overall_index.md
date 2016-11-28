@@ -4,7 +4,7 @@ Congratulations if you've finished all goal model modifications as they are the 
 
 ### Additional data layers for pressures and resilience calculations
 
-So far you would have prepared the pressure and resilience matrices, as well as the appropriate data layers, a few more data layers are needed to complete the calculation. They are identified in `sub-country/conf/config.R` as follows:
+So far you would have prepared the pressure and resilience matrices, as well as the appropriate data layers, a few more data layers are needed to complete the calculation. They are identified in `assessmentYEAR/conf/config.R` as follows:
 
 ```
 # components describe the layer and level with which to aggregate resilience and pressures matrices for goals with categories

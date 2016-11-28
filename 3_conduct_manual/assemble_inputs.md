@@ -4,7 +4,7 @@ In the Starter Repo, you will have one main _ Prep_ folder, where you will organ
 
 ## Discovering and gathering input information
 
-To promote transparent communication and aid in reproducibility, it is always a good practice to record information on data sources and briefly explanation of how they are processed in the script. For example, you could include:
+To promote transparent communication and aid in reproducibility, it is always a good practice to record information on data sources and a brief explanation of how they are processed in the script. For example, you could include:
 
 - data source
 - data url or website

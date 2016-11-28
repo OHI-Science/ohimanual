@@ -19,7 +19,7 @@ Data layers are *.csv* files and are located in the `[assessmentYEAR/layers` fol
 
 1. Save the layer in the `layers` folder
 2. Register the layer in `layers.csv`
-3. Check (and update when appropriate) `pressures_matrix.csv` and `resilience_matrix.csv` (located in: `[assessment]/subcountry2014/conf`)
+3. Check (and update when appropriate) `pressures_matrix.csv` and `resilience_matrix.csv` (located in: `assessmentYEAR/conf`)
 
 ## Save data layers in the *layers* folder
 

@@ -32,7 +32,7 @@ Even though [jurisdictional boundaries are optimal](http://ohi-science.org/manua
 
 > You could also start **exploring goal models**, which will reduce the amount of work you will do when you receive the Full Repo for scores calculation.
 
- ### What’s in the Starter Repo?
+### What’s in the Starter Repo?
 
 The Starter Repo simply contains a `prep` folder, which includes:
 

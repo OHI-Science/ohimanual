@@ -17,9 +17,9 @@ in_md = c(
   # 'overall_guide.md',                              
   'intro_assessment.md',        
   'intro_to_repos.md',
-  'defining_spatial.md',                            
   'assemble_inputs.md',                              
   'formatting_data.md',
+  'defining_spatial.md',                            
   'intro_goalbygoal.md',                             
   'file_system.md',
   'use_tbx.md',                                      # TODO: review and update 

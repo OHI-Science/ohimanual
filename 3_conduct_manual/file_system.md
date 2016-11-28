@@ -8,7 +8,7 @@ This section is an orientation to the files within your _Full Repository_. The f
 
 ### Main folders within your Full Repo
 
-The **scenario folder** is the most important folder within the repository; by default it is named `subcountry` to indicate that the assessment is conducted at the region scale (province, state, district, etc.), based on input layers and goal models used in the most recent global assessment. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
+The **scenario folder** is the most important folder within the repository; by default it is named `assessmentYEAR` (eg. _cnc2016_ for New Caledonia 2016) to indicate that the assessment is conducted at the region scale (province, state, district, etc.), based on input layers and goal models used in the most recent global assessment. It contains all of the inputs needed to calculate OHI scores, and you will modify these inputs when conducting your assessment. The scenario folder is explained in detail in this section.
 <!-- * All other files in the assessment repository are accessory files. Files with names beginning with a ‘.’ are required for versioning capabilities by GitHub and do not appear when the assessment repository is viewed on your computer. -->
 
 ![](https://docs.google.com/drawings/d/1eHViTehnAuxSDw1fYI54C3X5YgBktGtaVt71R3OXYeE/pub?w=600&h=500)
@@ -81,7 +81,7 @@ The `layers.csv` file is the registry and directory that manages all data requir
 * **description** is further description of the input layer, including the source of the original data. This is also displayed on the WebApp under the drop-down menu when the variable type is ‘input layer’.
 * **fld_value** the values' units in the input layer. The information in this column must match the column header in the input layer.
 * **units** the values' units in the input layer. This differs from *fld_value* above as the *units* column is displayed on the WebApp and can have more descriptive naming.
-* **filename** is the input layer itself. This file has input information for each region within the study area, and is located in the `subcountryYEAR/layers` folder.
+* **filename** is the input layer itself. This file has input information for each region within the study area, and is located in the `assessmentYEAR/layers` folder.
 
 <span style="font-size:0.8em">
 
@@ -142,7 +142,7 @@ It is a table that indicates which individual resilience measures affect which g
 
 **scores.csv**
 
-`scores.csv` is a text file containing the calculated scores for each dimension (future, pressures, resilience, score, status, trend) for each region in the study area. Regions have the numeric identifiers set in `subcountryYEAR/layers/rgn_labels.csv` and the study area has the numeric identifier of 0. Scores are calculated with registered layers in `layers.csv`: when you begin an assessment this will be information for your country from the global YEAR assessment and goal models from the global YEAR assessment. Scores from `scores.csv` are viewed through the WebApp using the ‘Output Score’ pulldown menu on the 'App' page.
+`scores.csv` is a text file containing the calculated scores for each dimension (future, pressures, resilience, score, status, trend) for each region in the study area. Regions have the numeric identifiers set in `assessmentYEAR/layers/rgn_labels.csv` and the study area has the numeric identifier of 0. Scores are calculated with registered layers in `layers.csv`: when you begin an assessment this will be information for your country from the global YEAR assessment and goal models from the global YEAR assessment. Scores from `scores.csv` are viewed through the WebApp using the ‘Output Score’ pulldown menu on the 'App' page.
 
 **layers-empty_swapping-global-mean.csv**
 `layers-empty_swapping-global-mean.csv` contains a list of layers where information for your country was not available for the global assessment. For the Toolbox to be able to run, these layers were filled with averages from all other countries included in the global assessment. This file is not used anywhere by the Toolbox but is a registry of layers that should prioritized to be replaced with your own local layers if you require these layers for the models you develop.
