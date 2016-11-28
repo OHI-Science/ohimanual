@@ -26,12 +26,12 @@ in_md = c(
   'use_tbx_to_modify_data_layers.md',
   'use_tbx_to_modify_goal_models.md',                # updated by NJM 9/15
   'use_tbx_to_modify_pressures_resilience.md',    
-  'use_tbx_to_modify_goals_categories.md',
+  # 'use_tbx_to_modify_goals_categories.md',
   'use_tbx_to_remove_goal_models.md',
   'use_tbx_to_remove_sub_goals.md',
   'use_tbx_calculate_overall_index.md',
-  'tbx_software_intro.md',
   'toolbox_troubleshooting.md',                      # TODO: review and update
+  'tbx_software_intro.md',
   'install_tbx.md',
   'practical_FP.md',
   'practical_AO.md',                

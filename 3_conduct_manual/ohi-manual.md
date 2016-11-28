@@ -1043,7 +1043,7 @@ In the `preindex_fuction`, you could specify variables such as _status_year_ and
 
 ![A screenshot of `goals.csv`, used to modify goal model](https://docs.google.com/drawings/d/1o2wtJ9KCPDyGPH9Y4unmALG6BlxX9lmJ_PakDDiQrLo/pub?w=700&h=524)
 
-## Modify Pressures Matrix
+# Modifying Pressures Matrix
 
 Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/[region_year]/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `[region_year]/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
 
@@ -1109,7 +1109,7 @@ If a goal has multiple elements (eg. CS has multiple habitats), as reflected in 
 
 The highlighted files are data layers necessary to calculate pressures for each of the goals with components. They contain weights, or relative contribution from each element to the total pressures of the goal. These weights are calculated separately in the data prep folder for each goal, and saved and registered as you would for any data layer. How to calculate these data layers can be found in the _description_ column of `layers.csv`.  
 
-## Modify Resilience Matrix
+# Modifying Resilience Matrix
 
 Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/[region_year]/conf` folder).
 
@@ -1194,99 +1194,7 @@ If the general resilience categories are relevant to the habitat, the next step 
 * write the complete list of layers you want to use for each habitat. Based on the above, for example, `soft bottom` in Israel matches the combination of layers called *soft bottom, with corals* in the default `resilience_matrix.csv`. But the `rocky_reef` and `sand_dunes` don't seem to match any existing combination, so you'll probably need to delete some of the rows, e.g. the *coral only*, and replace with new ad-hoc rows.
 -->
 
-## Modifying the pressures matrix for goals with categories
-
-### Background
-
-The pressures and resilience matrix tables identify which pressures and resilience measures (layers) are relevant to which goals and how they are weighted. But pressures and resilience measures can also affect the components within a goal differently. When that is the case, those components can have individual entries (rows) in the pressures and resilience matrix tables and will have pressures and resilience scores calculated individually for each component.
-
-The Toolbox calls these components of a goal 'categories', and knows to calculate pressures and resilience for category elements separately because they are identified in three places: in `pressures_matrix.csv`, `resilience_matrix.csv`, and `config.r`. These files are all located in the `conf` folder. To calculate the pressures and resilience scores, the Toolbox uses `config.r` to identify which categories to expect in the matrix tables, and will give a warning if they do not match. `config.r` relies upon the data layers identified in the `pressures_components` and `resilience_components` variables.
-
-In global assessments, there are several goals that have categories indicated in the matrix tables and `config.r` file:
-
-Goal | Category         | layer indicated in `config.r`
------|------------------|---------------
-NP   | product types    | np_harvest_product_weight
-CS   | habitat types    | cs_habitat_extent
-CP   | habitat types    | cp_habitat_extent_rank
-HAB  | habitat types    | hab_presence
-LIV  | industry sectors | le_sector_weight
-ECO  | industry sectors | le_sector_weight
-
-
-If you have modified any of the category types in the matrix tables of the above goals, or added new category types to any goals, you will likely need to update the layer indicated in `config.r`. It is also possible to identify individual categories in other goals than those listed above. For example, in the mariculture sub-goal, you could specify the pressures on nearshore mariculture separately from offshore mariculture.
-
-It is important that the file identified in `config.r` does not contain any NA values.  
-
-### Example 1: Pressures
-Here is an example of how to modify existing category types for the natural products goal.
-
-In the China OHI+ assessment there are three natural product types (seasalt, sea chemicals, and sea medicine), which differ from those assessed in the global assessments (corals, fish_oil, ornamentals, seaweeds, sponges). After modifying and registering the appropriate data layers and updating the NP function in `functions.r`, it is time to update the natural product types in `pressures_matrix.csv`, `resilience_matrix.csv`, and `config.r`.
-
-* to update `pressures_matrix.csv` and `resilience_matrix.csv`, make sure that each product type has a separate row, with the appropriate pressures identified and weights attributed.
-* to update `config.r`, check that the data layer identified in the `pressures_components` and `resilience_components` has the same category types.
-
-When you run `calculate_scores.r`, the following warning will alert you that there is a mis-match between category types identified in the matrix and `config.r`:
-
-```
-Calculating Pressures...
-The following components for NP are not in the
-aggregation layer np_harvest_product_weight categories
-(corals, fish_oil, ornamentals, seaweeds, sponges):
-seasalt, sea_chemicals, sea_medicine
-```
-
-This message indicates that the `np_harvest_product_weight` layer identifies five categories (corals, fish_oil, ornamentals, seaweeds,
-sponges) but the `pressures_matrix.csv` indicates three (seasalt, sea_chemicals, sea_medicine).
-
-To ensure that pressures are calculated correctly for the categories in your assessment, you will need to change the layer identified in `config.r`.
-
-Note that more subtle examples of these mismatch between the categories identified in `pressures_matrix.csv` and `config.r` can also occur. For example, after updating the carbon storage layers and goal model in the China OHI+ assessment, the following warning message appeared when running `calculate_scores.r`:
-
-```
-Calculating Pressures...
-The following components for CS are not in the aggregation layer
-cs_extent categories (saltmarshes, seagrasses, mangroves):
-mangrove, saltmarsh, seagrass
-```
-
-The problem here is that the categories identified in `config.r` (saltmarshes, seagrasses, mangroves) are plural, whereas the categories identified in the pressures matrix (mangrove, saltmarsh, seagrass) are singular, and the Toolbox needs exact matches. To fix this warning, you need to update the pressures matrix with the plural names.
-
-
-### Example 2: Resilience
-
-For resilience calculations, the proper categories also need to be identified both in `resilience_matrix.csv` and `config.r`. If there is a mismatch, you will see the following message:
-
-```
-Calculating Resilience...
-Note: each goal in resilience_matrix.csv
-must have at least one resilience field
-Based on the following components for NP:
-corals
-fish_oil
-ornamentals
-seaweeds
-shells
-sponges
-```
-
-With resilience, if we update only the `resilience_matrix.csv` but not `config.r`, we get the following error message instead of the warning message we saw for pressures above.
-
-```
-Based on the following components for NP:
-  seasalt
-  sea_chemicals
-  sea_medicine
-Error in subset.default(SelectLayersData(layers, layers = lyrs),
-id_num ==  : object 'id_num' not found
-In addition: Warning messages:
-1: Grouping rowwise data frame strips rowwise nature
-2: In left_join_impl(x, y, by$x, by$y) :
-  joining factors with different levels, coercing to character vector
-```
-
-This error can be fixed by updating `config.r` with a layer identifying the appropriate categories.
-
+# Removing goals and sub-goals
 ## Removing goals
 
 If a goal is not relevant in your region, it is possible to remove the goal completely from the calculation. There are four places where you will need to remove the reference to this goal. Failing to delete all referenced layers after the goal is deleted will result in errors. To remove goals from your assessment, you will have to do the following:
@@ -1318,7 +1226,7 @@ To completely remove the carbon storage goal from Index calculations, you will d
 
 ![](./fig/delete_resilience.png)
 
-## Remove Sub-goals from a Supra-goal
+## Removing Sub-goals from a Supra-goal
 
 Sometimes a _supra-goal_ (ie. BD, LE, and FP), or a goal that has _sub-goals_, can be assessed as an individual goal by removing the sub-goals. For example, if the biodiversity in your area can be represented well with only species and not habitats, it is possible to only assess species (ie. only the SPP subgoal and not the HAB subgoal). But this would then make the BD goal only have one subgoal (SPP). It is better to remove that subgoal and make it clear that BD is the biodiversity goal for species.
 
@@ -1368,7 +1276,7 @@ This table records information on which individual resilience measures affect wh
 
 ![](https://docs.google.com/drawings/d/1JUGogjH08_2KlOebKYxCR-JZFYGp5-6VwLYylblpWdw/pub?w=800&h=720)
 
-## Calculate overall OHI Index Scores
+# Calculate overall OHI Index Scores
 
 Congratulations if you've finished all goal model modifications as they are the most time-consuming part of the Index calculation process! In the goal model modification step, you've calculated goal status and trend, there are only a couple of more steps to do to calculate the overall index score, including calculating pressures and resilience.
 
@@ -1390,7 +1298,7 @@ pressures_components  = list('NP'  = c('layer'='np_harvest_product_weight' , 'le
                              'HAB' = c('layer'='hab_presence'              , 'level'='region_id'))
 ```
 
-`np_harvst_product_weight` is also used in NP and CS status calculations, and thus do not require special preparations. The rest of the data layers need additional preparations, which can be done in the `prep` folder). 
+`np_harvst_product_weight` is also used in NP and CS status calculations, and thus do not require special preparations. The rest of the data layers need additional preparations, which can be done in the `prep` folder).
 
 `cs_habitat_extent` is calculated as `habitat_extent * rank`. Rank refers to relative contributions of each type of habitats to carbon storage. Here is an example calculation:
 
@@ -1467,90 +1375,6 @@ write.csv(scores, 'scores.csv', na='', row.names=F)
 After the calculation is done, you should be able to see the compiled score sheet for all goals in all regions in `sub-country/scores.csv`.
 
 It is very likely that during the CalculateAll process you'll encounter problems and see error messages. In most cases, the error messages can specify what the error is and in which step it occurs, which should be helpful for trouble shooting. Some commonly occurring errors and how to fix them can be found in the Troubleshooting section of the manual.
-
-# Appendix 1: Toolbox Software
-
-The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems:
-
-<!-- You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary.
-This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  -->
-
-  **Required:**
-
-  1. **GitHub**
-  2. **git**
-  3. **R**
-  4. **RStudio**
-
-  > ![](./fig/overview_requirements_1.png)
-
-Your Repositories and `ohicore` are stored and managed with all the above software systems. Here is a quick introduction to the software and how they work together.
-
-## Introduction
-
-### GitHub and git
-
-GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. It is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores.
-
-To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps.
-
-**GitHub Vocabulary:**
-
-* **clone** ~ download an online repository to your computer to your local machine with syncing capabilities enabled
-* **commit** ~ message associated with your changes at a point in time, before being able to sync back to the online repository
-* **pull** ~ pull changes from an online repository to your computer
-* **push** ~ push committed changes back to the online repository with your version, only possible after committing
-* **sync** = pull + commit + push
-
-> TIP: While you can edit files in the online GitHub repository, we do not recommend this. It is good practice to track changes through commits and syncing.
-
-The example below illustrates GitHub's collaborative workflow:
-
-![](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
-
-There are also many great resources available online with more in-depth information:
-
-* **Git and GitHub** by Hadley Wickham: [r-pkgs.had.co.nz/git.html](http://r-pkgs.had.co.nz/git.html)
-* **Collaboration and Time Travel: Version Control with Git, GitHub and RStudio** video tutorial by Hadley Wickham: [www.rstudio.com/resources/webinars](http://www.rstudio.com/resources/webinars/)
-* **Good Resources for Learning Git and GitHub** by GitHub: [help.github.com/articles/good-resources-for-learning-git-and-github/](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
-
-
-### R and RStudio
-
-**R and RStudio allow you to work locally on your own computer**, modifying the files in the repository to reflect the desired modifications your team has identified for your assessment. All changes within your local repository will be tracked by GitHub regardless of the software you use to make the changes. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. We recommend doing as much data manipulation as possible in a programming language like R, to maximize transparency and reproducibility.
-
-* **R** is a free computing and graphical software where all the modifications to your OHI repository are done.
-
-* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is where model modifications and calculations occur.
-
-Through RStudio, you can perform all the steps mentioned before (_clone, commit, push, and pull_) and _sync_ with the online Github repository.
-
-### Syncing Github and RStudio
-
-RStudio can sync files with Github directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately).
-
-Launch your project in RStudio by double-clicking the `.Rproj` file in the assessment folder on your local hard drive.
-
-![](https://docs.google.com/drawings/d/11F2lbB1S56ccZK5CbCxga4SEiRoE6E0-3QtZO99p37A/pub?w=500&h=400)
-
-When you modify or add a file, the file will appear in the 'Git' window once it has been saved. In the example below, the file `test.R` was created.
-
-<span style="font-size:0.9em">
-
-1. Clicking the '_Staged_' (checked) box and the '_Commit_' button opens a new window where you can review changes.
-2. Type a commit message that is informative to the changes you've made.
-  - Note 1: there will often be multiple files 'staged' at the same time, and so the same commit message will be associated with all of the updated files. It is best to commit changes often with informative commit messages.
-  - Note 2: clicking on a staged file will identify additions and deletions within that file for your review
-3. Click '_Commit_' to commit the changes and the commit message.
-4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, especially if you are working with collaborators who might be working on the same files as you are.
-5. "Push" your committed changes to the online repository. Your changes are now visible online.
-</span>
-
-> TIP: If you aren't seeing your changes in the 'Git' window, try saving the file again.
-
-![Figure showing RStudio when sycing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
-
-_Note_: Another option to syncing your edits on a repo with the online version is to use **Command Lines**, if you are familiar with it. There are resources available online on how to do so.    
 
 # Toolbox Troubleshooting
 
@@ -1764,6 +1588,90 @@ Note: each goal in resilience_matrix.csv must have at least one resilience field
 means that the list of resilience layers listed in `resilience_matrix.csv` does not match the list in `resilience_weights.csv`.
 
 `CalculateResilienceScore.r L112` is where this error was generated (called from `CalculateResilienceAll.r`.
+
+# Appendix 1: Toolbox Software
+
+The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems:
+
+<!-- You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary.
+This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  -->
+
+  **Required:**
+
+  1. **GitHub**
+  2. **git**
+  3. **R**
+  4. **RStudio**
+
+  > ![](./fig/overview_requirements_1.png)
+
+Your Repositories and `ohicore` are stored and managed with all the above software systems. Here is a quick introduction to the software and how they work together.
+
+## Introduction
+
+### GitHub and git
+
+GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. It is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores.
+
+To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps.
+
+**GitHub Vocabulary:**
+
+* **clone** ~ download an online repository to your computer to your local machine with syncing capabilities enabled
+* **commit** ~ message associated with your changes at a point in time, before being able to sync back to the online repository
+* **pull** ~ pull changes from an online repository to your computer
+* **push** ~ push committed changes back to the online repository with your version, only possible after committing
+* **sync** = pull + commit + push
+
+> TIP: While you can edit files in the online GitHub repository, we do not recommend this. It is good practice to track changes through commits and syncing.
+
+The example below illustrates GitHub's collaborative workflow:
+
+![](https://docs.google.com/drawings/d/1_LegC8-1eH7Ed_0iIXcUhPCKPdKSw7vQIfuQGOXQHnA/pub?w=768&h=480)
+
+There are also many great resources available online with more in-depth information:
+
+* **Git and GitHub** by Hadley Wickham: [r-pkgs.had.co.nz/git.html](http://r-pkgs.had.co.nz/git.html)
+* **Collaboration and Time Travel: Version Control with Git, GitHub and RStudio** video tutorial by Hadley Wickham: [www.rstudio.com/resources/webinars](http://www.rstudio.com/resources/webinars/)
+* **Good Resources for Learning Git and GitHub** by GitHub: [help.github.com/articles/good-resources-for-learning-git-and-github/](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+
+
+### R and RStudio
+
+**R and RStudio allow you to work locally on your own computer**, modifying the files in the repository to reflect the desired modifications your team has identified for your assessment. All changes within your local repository will be tracked by GitHub regardless of the software you use to make the changes. This means that you can delete or paste files in the Mac Finder or Windows Explorer and edit *.csv* files in Excel or a text editor, and still sync these changes with the online repository. We recommend doing as much data manipulation as possible in a programming language like R, to maximize transparency and reproducibility.
+
+* **R** is a free computing and graphical software where all the modifications to your OHI repository are done.
+
+* **RStudio** is a user-friendly R interface that can be used to synchronize any modifications you make to files in your assessment’s repository. It is where model modifications and calculations occur.
+
+Through RStudio, you can perform all the steps mentioned before (_clone, commit, push, and pull_) and _sync_ with the online Github repository.
+
+### Syncing Github and RStudio
+
+RStudio can sync files with Github directly. It will capture the changes made to any files within the repository, no matter which software was used to modify them. In RStudio, you sync by first pulling and then pushing (separately).
+
+Launch your project in RStudio by double-clicking the `.Rproj` file in the assessment folder on your local hard drive.
+
+![](https://docs.google.com/drawings/d/11F2lbB1S56ccZK5CbCxga4SEiRoE6E0-3QtZO99p37A/pub?w=500&h=400)
+
+When you modify or add a file, the file will appear in the 'Git' window once it has been saved. In the example below, the file `test.R` was created.
+
+<span style="font-size:0.9em">
+
+1. Clicking the '_Staged_' (checked) box and the '_Commit_' button opens a new window where you can review changes.
+2. Type a commit message that is informative to the changes you've made.
+  - Note 1: there will often be multiple files 'staged' at the same time, and so the same commit message will be associated with all of the updated files. It is best to commit changes often with informative commit messages.
+  - Note 2: clicking on a staged file will identify additions and deletions within that file for your review
+3. Click '_Commit_' to commit the changes and the commit message.
+4. "Pull" any changes that have been made to the online repository. This is important to ensure there are no conflicts with updating the online repository, especially if you are working with collaborators who might be working on the same files as you are.
+5. "Push" your committed changes to the online repository. Your changes are now visible online.
+</span>
+
+> TIP: If you aren't seeing your changes in the 'Git' window, try saving the file again.
+
+![Figure showing RStudio when sycing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
+
+_Note_: Another option to syncing your edits on a repo with the online version is to use **Command Lines**, if you are familiar with it. There are resources available online on how to do so.    
 
 ## Setting up Github and RStudio
 
