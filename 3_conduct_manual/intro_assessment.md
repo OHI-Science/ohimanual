@@ -68,7 +68,9 @@ Additionally, several OHI+ assessments have been completed. As information becom
 
 ## Best practices for OHI assessments  
 
-Conducting an assessment requires both an understanding of how past assessments have been completed and the innovation to capture important characteristics of your study area using the information available. You can start by understanding the structure of completed assessments at global and smaller scales and the models that were created. Understanding the approaches in different contexts will help you think about what should be done similarly and differently in your local context. Information, publications, and websites for completed OHI+ assessments are listed at [ohi-science.org/projects](http://ohi-science.org/projects), and example approaches for each goal are listed at [ohi-science.org/goals](http://ohi-science.org/goals).
+Conducting an assessment requires both an understanding of how past assessments have been completed and the innovation to capture important characteristics of your study area using the information available. You can start by understanding the structure of completed assessments at global and smaller scales and the models that were created. Understanding the approaches in different contexts will help you think about what should be done similarly and differently in your local context. Information, publications, and websites for completed OHI+ assessments are listed at [ohi-science.org/projects](http://ohi-science.org/projects), and example approaches for each goal are listed at [ohi-science.org/goals](http://ohi-science.org/goals).  
+
+The following **Best Practices** are from our publication [Best practices for assessing ocean health in multiple contexts using tailorable frameworks](https://peerj.com/articles/1503/) which is important to read before beginning your assessment.
 
 ![Best practices of OHI+ assessments](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=1150)
 
