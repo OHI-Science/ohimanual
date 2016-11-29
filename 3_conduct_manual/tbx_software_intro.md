@@ -1,20 +1,13 @@
 # Appendix 1: Toolbox Software
 
-The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems:
+The OHI Toolbox is open-source and can be downloaded and installed for free. It is essentially a workflow building off the following software: [**R**](https://cran.r-project.org/),  [**RStudio**](https://www.rstudio.com/), [**git**](https://git-scm.com/), and  [**GitHub**](https://www.github.com/)  
 
 <!-- You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary.
 This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  -->
 
-  **Required:**
+  > ![](https://docs.google.com/drawings/d/e/2PACX-1vScAMWoLxDIm55eFKUk_1Ao6KdrRx8eKCiQJwSBOJ-kkRvGj6mt0hmuGM229poKeUraV8CYf7C62BDj/pub?w=624&h=432)
 
-  1. **GitHub**
-  2. **git**
-  3. **R**
-  4. **RStudio**
-
-  > ![](./fig/overview_requirements_1.png)
-
-Your Repositories and `ohicore` are stored and managed with all the above software systems. Here is a quick introduction to the software and how they work together.
+The OHI workflow depends on the above software. Here is a quick introduction to the software and how they work together.
 
 ## Introduction
 
@@ -22,7 +15,7 @@ Your Repositories and `ohicore` are stored and managed with all the above softwa
 
 GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. It is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores.
 
-To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps.
+To allow multiple users to work on the same repository at the same time, there are steps involved to 'commit' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps.
 
 **GitHub Vocabulary:**
 
@@ -78,6 +71,6 @@ When you modify or add a file, the file will appear in the 'Git' window once it 
 
 > TIP: If you aren't seeing your changes in the 'Git' window, try saving the file again.
 
-![Figure showing RStudio when sycing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
+![Figure showing RStudio when syncing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
 
 _Note_: Another option to syncing your edits on a repo with the online version is to use **Command Lines**, if you are familiar with it. There are resources available online on how to do so.    
