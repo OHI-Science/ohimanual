@@ -5,7 +5,7 @@ In this section, you will learn how to successfully set up your _tailored_ toolb
 1. Create your online _Github_ account and set up _git_ on your local computer
 2. Install _R_ and _RStudio_ on your local computer
 3. Clone your tailored repository from Github to your local computer via RStudio
-4. Install `ohi-core` package
+4. Install `ohicore` package
 
 Let's get started!
 
