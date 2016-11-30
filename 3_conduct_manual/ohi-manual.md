@@ -6,20 +6,17 @@ title: The Ocean Health Index Conduct Phase
 output: html_document
 ---
 
-**Welcome to the _Conduct Phase_ of your OHI+ assessment!** This manual contains all the essential information on how to complete your own independent OHI assessment. It should be used by _goal keepers_ (i.e. experts tasked with gathering data and developing goal models), and the _toolbox master_ (i.e. technical expert(s) responsible for calculating the scores using the Toolbox).  
+**Welcome to the _Conduct Phase_ of your OHI+ assessment!** This manual contains essential information on how to complete your own OHI+ assessment. It should be used by the technical team that will gather and organize data, prepare data, and develop goal models to then calculate OHI scores. Transparency, collaboration, and communication are important throughout the entire process, and the OHI Toolbox workflow facilitates these important principles.
 
-**The first four sections will provide conceptual and technical guidance for all participants**. It contains information on OHI philosophy, what to expect when conducting an OHI+ assessment, best practices, and an introduction to the toolbox. More details on Goal Model Development and Pressure and Resilience, How to report data layers and model descriptions, and Frequently Asked Questions are included in the Appendixes. **The remaining sections of the manual provide step-by-step instructions on how to use the toolbox and troubleshoot**, and will be most helpful to the toolbox master.
+**The first sections will provide conceptual and technical guidance for all participants**. It contains information on OHI philosophy, what to expect when conducting an OHI+ assessment, best practices, and an introduction to the OHI Toolbox. Transparency and repeatability is critical during the data gathering, organization, and preparation stage, not only to successfully complete and communicate the current assessment, but to enable repeated assessments through time. More details on Goal Model Development and Pressure and Resilience, How to report data layers and model descriptions, and Frequently Asked Questions are included in the Appendixes. **The remaining sections of the manual provide step-by-step instructions on how to use the toolbox and troubleshoot**, and will be most helpful to the toolbox master.
 
-This manual should be used in conjuction with our other web materials, including [Four Phases of OHI+](http://ohi-science.org/new-site/phases/), [Presentations](http://ohi-science.org/new-site/resources/downloads/), and our community [Forum](http://ohi-science.org/new-site/forum/).
+This manual should be used in conjuction with our other web materials, including [Four Phases of OHI+](http://ohi-science.org/phases/), [Presentations](http://ohi-science.org/resources/downloads/), and our community [Forum](http://ohi-science.org/forum/).
 
 <font size = "2">
 
-_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment Manual. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/manual_
-
-_**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-manual.pdf
+_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment Manual. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/manual_. **[Download PDF version](https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-manual.pdf)**  
 
 _NOTE: If you are conducting an OHI+ assessment and/or have downloaded the OHI repository prior to 2016, please cite:_
-
 Ocean Health Index. 2015. Ocean Health Index Toolbox Manual [date]. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. Available at: https://github.com/OHI-Science/ohi-science.github.io/raw/master/assets/downloads/other/ohi-manual-2015.pdf
 
 </font>
@@ -28,15 +25,15 @@ Ocean Health Index. 2015. Ocean Health Index Toolbox Manual [date]. National Cen
 
 ## Where you are in the OHI+ process
 
-The OHI+ process consists of four phases. In the first phase, you **learned** about the OHI to understand the philosophy behind the goals and the motivation for conducting a study. In the second phase, you actively **planned** to conduct your OHI+ assessment. Now you will actively **conduct** the assessment by engaging with the work of finding the data, preparing the goal models, and taking the necessary steps to learn how to use the **OHI Toolbox** and related software to produce the final results. This is where the science of data discovery and goal model development comes in. In the final phase, you will **communicate** the findings and results of your assessment with others.
+The OHI+ process consists of four phases. In the first phase, you **learned** about the OHI to understand the philosophy behind the goals and the motivation for conducting an assessment. In the second phase, you actively **planned** to conduct your OHI+ assessment. Now you will actively **conduct** the assessment by engaging with the work of finding the data, preparing the goal models, and taking the necessary steps to learn how to use the **OHI Toolbox** and related software to produce final scores. This is where the science of data discovery and goal model development comes in, with important emphasis on transparency, collaboration, and communication. In the final phase, you will **communicate** the findings and results of your assessment with others.
 
 ![](https://docs.google.com/drawings/d/1Abt2c9n4TQRPb_m0K-Ba0aGsHxMFdhxY9BXcuOQcxfM/pub?w=700&h=600)
 
 **The OHI framework** allows you to synthesize the information and priorities relevant to your local context and produce comparable scores. Because the methods of the framework are repeatable, transparent, quantitative, and goal-driven, the process of a carrying out an OHI+ assessment is as valuable as the final results.
 
-The first completed assessment for a study area is valuable because it establishes a baseline and highlights the state of information quality and availability in an area. Any subsequent assessments carried out through time are also valuable because they can be used to track and monitor changes in ocean health. Your assessment will require careful thought and consideration along the way, and we encourage documentation and scripting to be done within the OHI Toolbox to facilitate collaboration and transparency, as well as the reproducibility for future assessments.
+The first completed assessment for a study area is valuable because it establishes a baseline and highlights the state of information quality and availability in an area. Any subsequent assessments carried out through time are also valuable because they can be used to track and monitor changes in ocean health. Your assessment will require careful thought and consideration along the way, and the OHI Toolbox and workflow facilitates collaboration and transparency. Transparency throughout the OHI workflow will help track the decisions made during assessment calculations and will enable repeatability for future assessments.
 
-Each OHI+ assessment should have a clear purpose. One of the typical reasons for conducting an independent assessment is to inform policy and management decisions. Assessments can be more relevant to management when they are conducted at the spatial scales at which policy decisions are made, such as states, provinces, or counties. The **regions** and the overall **study area** are definitions that will be used throughout the assessment. The study area is the entire spatial boundary of your assessment, while the regions are the smaller subdivisions within the study area. In the OHI framework, goal scores are calculated for regions separately and then combined to produce an overall OHI score for each study area. The number of regions varies with each assessment's study area; completed assessments have had between one and 221 regions.
+Each OHI+ assessment should have a clear purpose. One of the typical reasons for conducting an independent assessment is to inform policy and management decisions. Assessments can be more relevant to management when they are conducted at the spatial scales at which policy decisions are made, such as states, provinces, or counties. **Regions** and **study area** are terms that will be used throughout the assessment. The study area is the entire spatial boundary of your assessment, while the regions are the smaller subdivisions within the study area. In the OHI framework, goal scores are calculated for regions separately and then combined to produce an overall OHI score for each study area. The number of regions varies with each assessment's study area; completed assessments have had between one and 220 regions.
 
 <!---add calculation fig--->
 
@@ -45,9 +42,9 @@ Each OHI+ assessment should have a clear purpose. One of the typical reasons for
 
 When conducting an OHI+ assessment, it is important to include information that best represents your study area, and to make science-driven decisions and clearly document what was done and why. Your team should as creative and insightful as you can be while working within the bounds of informational and technical limitations.
 
-There are **key processes and considerations** that will be a part of every assessment. Every assessment should ideally build from the lessons learned of previously completed assessments and identify what local characteristics need to be included in a study. This is done partly by comparing the local situation to situations in previous assessments; it is also done by comparing the default information provided in the WebApp to what is known about local realities. After you have outlined and identified local characteristics and priorities, you should prepare to develop models, set reference points, gather information, and use the Toolbox software to analyze data and calculate scores. You will also visualize the outputs in the WebApp's maps and flower plots that can be shared with other partners and collaborators. Above all, you should be prepared to **know that this process takes time and is iterative, meaning that you often return to previous steps**.
+There are **key processes and considerations** that will be a part of every assessment. Every assessment should ideally build from the lessons learned of previously completed assessments and identify what local characteristics need to be included in a study. This is done partly by comparing local characteristics to characteristics in previous assessments, including Global and OHI+ assessments. After you have outlined and identified local characteristics and priorities, you will gather information, prepare data, begin to develop models and set reference points, and then calculate scores. This will be done with the OHI Toolbox and workflow that will help you collaboratively organize and complete your assessment transparently, in part through your own OHI+ website that can be shared with other partners and collaborators. Above all, you should be prepared to **know that this process takes time and is iterative, meaning that you often return to previous steps**.
 
-**How long does an assessment take?** Past assessments have taken between two and three years, with the time varying depending the size and composition of the team, the challenges encountered in discovering and gathering information, and how many models are redeveloped. The amount of data processing and goal model development needed before you will be able to use the Toolbox also affects the amount of time it takes to conduct the assessment. The skill sets of the team members and the amount of technical resources available are also hugely important factors. You should think about which team members are needed at what stage of the process, including an R programmer and a spatial analyst. It will take time for the technical team to become familiar with the OHI Toolbox and GitHub.
+**How long does an assessment take?** Past assessments have taken between two and three years, with the time varying depending the size and composition of the team, the challenges encountered in discovering and gathering information, and how many models are redeveloped. The amount of data processing and goal model development needed before you will be able to use the Toolbox also affects the amount of time it takes to conduct the assessment. The skill sets of the team members and the amount of technical resources available are also hugely important factors. You should think about which team members are needed throughout the process, including R programmers and spatial analysts. It will take time for the technical team to become familiar with the OHI Toolbox and GitHub.
 
 
 <!-- The OHI framework was developed through collaboration and iteration. Your assessment can leverage the collective knowledge and insight used in the methods of the global assessment by Halpern *et al*. in *Nature* (2012) as well as the subsequent assessments conducted annually (in 2013, 2014, and ongoing). Each annual global assessment has improved upon some of the goal models based on better data availability or a better understanding of the systems involved. Several smaller-scale assessments have been completed that are highly informative as well, and particularly for regional scale assessments. The following studies have been published with supplemental online materials, and are available at http://ohi-science.org: -->
@@ -69,15 +66,15 @@ Additionally, several OHI+ assessments have been completed. As information becom
 
 ## Outcomes of conducting an assessment
 
-**Your completed assessment will produce OHI scores for each goal for every region in your study area, and scores within the assessment can be compared with each other.** These scores will not be quantitatively comparable to those of other OHI assessments because they differ in the underlying inputs, goal models, and reference points. The only *quantitative* comparisons can be made within an assessment's study area, whether between regions or through time. However, *qualitative* comparisons between different OHI assessments can be  made because the scores are an indication of how far a region is to achieving its own targets. For instance, if two study areas have scores of seventy and sixty-five, it should be interpreted that the first study area is closer to its management targets than the second is, but since these management targets are different (in addition to the underlying data and models), they cannot be quantitatively compared.
+**Your completed assessment will produce OHI scores for each goal for every region in your study area, and scores within the assessment can be compared with each other.** These scores will not be quantitatively comparable to those of other OHI assessments because they differ in the underlying inputs, goal models, and reference points. The only *quantitative* comparisons can be made within an assessment's study area, whether between regions or through time (following repeated assessments). However, *qualitative* comparisons between different OHI assessments can be  made because the scores are an indication of how far a region is to achieving its own targets. For instance, if two study areas have scores of seventy and sixty-five, it should be interpreted that the first study area is closer to its management targets than the second is, but since these management targets are different (in addition to the underlying data and models), they cannot be quantitatively compared.
 
->While the OHI scores are valuable information, **the process of conducting an OHI assessment can be as valuable as the final results.** This is because during an OHI assessment you will bring together meaningful ocean health information from many disciplines. In doing so, you will have a census of existing information and will also identify knowledge and data gaps. Further, conducting an OHI+ assessment can engage many different groups, including research institutions, government agencies, policy groups, non-governmental organizations, and both the civil and private sectors.
+>While final OHI scores are valuable information, **the process of conducting an OHI assessment can be as valuable as the final results.** This is because during an OHI assessment you will bring together meaningful ocean health information from many disciplines. In doing so, you will have a census of existing information and will also identify knowledge and data gaps. Further, conducting an OHI+ assessment can engage many different groups, including research institutions, government agencies, policy groups, non-governmental organizations, and both the civil and private sectors.
 
 ## Best practices for OHI assessments  
 
-Conducting an assessment requires both an understanding of how past assessments have been completed and the innovation to capture important characteristics of your study area using the information available. You can start by understanding the structure of completed assessments at global and smaller scales and the models that were created. Understanding the approaches in different contexts will help you think about what should be done similarly and differently in your local context. Information, publications, and websites for completed OHI+ assessments are listed on the projects page of ohi-science.org, and example approaches for each goal are listed in Appendix 1 of the manual.
+Conducting an assessment requires both an understanding of how past assessments have been completed and the innovation to capture important characteristics of your study area using the information available. You can start by understanding the structure of completed assessments at global and smaller scales and the models that were created. Understanding the approaches in different contexts will help you think about what should be done similarly and differently in your local context. Information, publications, and websites for completed OHI+ assessments are listed at [ohi-science.org/projects](http://ohi-science.org/projects), and example approaches for each goal are listed at [ohi-science.org/goals](http://ohi-science.org/goals).  
 
-<!-- Navigating through the WebApp can help frame your thinking and introduce you to the structure of inputs that will be required for the OHI Toolbox software. -->
+The following **Best Practices** are from our publication [Best practices for assessing ocean health in multiple contexts using tailorable frameworks](https://peerj.com/articles/1503/) which is important to read before beginning your assessment.
 
 ![Best practices of OHI+ assessments](https://docs.google.com/drawings/d/1dUFAOVa2JfbKHyaq98yDYdtcDuEPyr10uNB_auz_Pdc/pub?w=1150)
 
@@ -117,17 +114,19 @@ Detailed information about how the assessment is conducted will enhance its cred
 
 ## The OHI Toolbox
 
-The **OHI Toolbox** is made to organize and process data, document decision making, calculate scores, and share results within or outside your team. It was created to facilitate score calculations as well as the organization of information and transparency of the approach. The Toolbox is built with **open-source, freely available software**, _Github and Rstudio_.
+The **OHI Toolbox** is made to organize and process data, document decision making, calculate scores, and share results within or outside your team. It was created to facilitate score calculations as well as the organization of information and transparency of the entire workflow. The Toolbox is built with **open-source, freely available software**, particularly **_Github_** and **_RStudio_**.
 
-**This is a highly effective combination for your team to access the assessment from online and work in a collaborative, transparent, and reproducible manner.** _**RStudio**_ is the coding environment where all the data processing, calculations, and writing are done. _**Github**_ is a online version-control system where each change you made in RStudio is recorded and easily traceable. Multiple people can therefore collaborate on the same project and view the changes done by one another. Github also provides a platform for decision-making conversations, similar to email threads but better kept and organized.
+**Github and RStudio are a highly effective combination for your team to conduct your OHI+ assessment in a collaborative, transparent, and reproducible manner.** _**RStudio**_ is the coding environment for the programming language `R` and is where all the data processing, calculations, and writing are done. _**Github**_ is a online version-control system where each change you save in RStudio is recorded through time and easily traceable. Multiple people can therefore collaborate on the same project and view the changes done by one another. Github also provides a platform for decision-making conversations, similar to email threads but better kept and organized.
 
-> Read [APPENDIX 1: Toolbox Software](http://ohi-science.org/manual/#introduction-to-software) for more details on their features, how they work together, and **how to set them up your own computer**.
+![](https://docs.google.com/drawings/d/e/2PACX-1vS3NwdBnllYqloEXgMSNjR-_1N49vS6QrP0Qsmh8gFLmdXVdxr94GuHWjvUENArv2et6GDOck2cGptX/pub?w=960&h=600)
 
-**Treat the toolbox as your notebook, calculator, and presentation of your work.** No more endless email chains or passing excel sheets back and forth! If someone wants to see where your data comes from, how you have processed the data, what's the rationale for including or excluding certain data, and how the scores are calculated, they can find the answers here. It increases the credibility and reproducibility of your assessment.
+> Read [APPENDIX 1: Toolbox Software](http://ohi-science.org/manual/#appendix-1-toolbox-software) for more details on their features, how they work together, and **how to set them up your own computer**.
 
-**Working in this system will be helpful to your future self.** In a few months, or years, you can visit this page and remember what you had done. It also makes your technical team more stable.
+**Treat the toolbox as your notebook, calculator, and presentation of your work.** No more endless email chains or passing spreadsheets back and forth! If someone wants to see where your data comes from, how you have processed the data, the rationale for including or excluding certain data, and how the scores are calculated, they can find the answers from your work. It increases the credibility and reproducibility of your assessment.
 
-**The toolbox will also preserve team memory.** If there are personale changes, it is easy for any new memeber to pick up where it was left when your data prepation has been documented clearly and kept in one place.
+ It also makes your technical team more stable.
+
+**The Toolbox will also preserve team memory.** If there are personnel changes, it is easy for any new member to pick up where it was left when your data preparation has been documented clearly and kept in one place. It will also help your "future self": months or years later you can revisit your work and understand what you have done.
 
 Your Toolbox is organized into **two sequential repositories** where you will store all your work. They will be tailor-made for your OHI+ assessment upon request.
 
@@ -137,53 +136,57 @@ The WebApp is a widely useful communication tool. Not all team collaborators may
 
 # Requesting your repositories
 
- Using the OHI Toolbox and Github Repositories for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment, and even before you have defined your regions, we can immediately provide you with a Starter Github repository (_Starter Repo_) to get you familiar with the Github/Rstudio workflow, and to help you through the data exploration and region-defining stage.
+ Using the OHI Toolbox for your assessment is divided into two steps. When you decide to conduct an OHI+ assessment, and even before you have defined your regions, we can immediately provide you with a Starter Github repository (_Starter Repo_) to get you familiar with the Github/RStudio workflow, and to help you through the data exploration and region-defining stage.
 
-Once you have defined your regions, we will provide you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the most recent Global OHI assessment. Your Starter Repo folders and files will be incorporated into the Full Repo.
+Once you have finalized your regions and provide us with appropriate files (see next section), we will upgrade you with a Full repository (_Full Repo_) with pre-populated data layers extracted from the most recent [Global OHI assessment](http://ohi-science.org/ohi-global).
 
 ## The Starter Repo
 
 ### Why a Starter Repo?
 
-The purpose of this repository is to help you learn the Github/RStudio workflow, and to organize and explore available data to help finalize the spatial boundaries you are considering. We encourage you to code this exploration in `R`.
+The purpose of this repository is to help you learn the Github/RStudio workflow, and to organize and explore available data to help finalize the spatial boundaries you are considering. We highly encourage you to code this exploration in `R`.
 
-_Learn Github/RStudio and collaborate with your team_
+**_Learn Github/RStudio and collaborate with your team_**
 
 OHI promotes open science where detailed information about how the assessment is conducted is documented and shared. Providing public access to your input data, computational code, as well as rationales of each step of the assessment is becoming the standard for scientific inquiry, so every effort should be made to achieve those aims. Github/RStudio is a powerful combination that organizes and processes information for this purpose and greatly increases the efficiency of conducting repeated and reproducible assessments, and is the backbone of the OHI Toolbox.
 
 The Starter Repo will get you familiar with this system, and help you develop an efficient workflow to script data exploration and document your decision-making process at once. Furthermore, the scripting language can be directly rendered as webpages, PDFs, presentations, or Word documents for internal and public communication!
 
-_Prepare and Organize Data_
+**_Prepare and Organize Data_**
 
-**Data preparation (formatting, exploring, plotting data) takes the largest amount of time in all OHI assessments.** An OHI assessment deploys from dozens to more than a hundred data layers coming from as many public data sources. Very rarely can raw data be used in the format you receive them; they requires a significant amount of cleaning and formatting before they become usable OHI data layers. During that exploration process, you'll likely need input from colleagues or outside experts and go through rounds of revisions. Instead of trying to track changes between dozens of data files and long email chains yourself, use Github's version control system that saves each version automatically. You can document conversations and decisions alongside your R code.
+**Data preparation (formatting, exploring, plotting data) takes the largest amount of time in all OHI assessments.** An OHI assessment deploys from dozens to more than a hundred data layers coming from as many public data sources. Very rarely can raw data be used in the format you receive them; they require a significant amount of cleaning and formatting before they become usable OHI data layers. During that exploration process, you'll likely need input from colleagues or outside experts and go through rounds of revisions. Instead of trying to track changes between dozens of data files and long email chains yourself, use Github's version control system that saves each version automatically. You can document conversations and decisions alongside your R code.
 
-> **Scripted data exploration (eg. in R) is useful whether you decide to use the data in your assessment or not**. If you use the data, you have already begun preparing it for the Toolbox. And if you don't use the data, it can be very important to be able to communicate why.
+> Scripted data exploration (e.g. done in `R`) is useful whether you decide to use the data in your assessment or not. If you use the data, you have already begun preparing it for the Toolbox. And if you don't use the data, it can be very important to be able to communicate why.
 
-_Example data prep scripts in .Rmd and .r with data are included as a quick guide._
+<!---
+@ningningj TODO:
+**_Example data prep scripts in .Rmd and .r with data are included as a quick guide._**
+--->
 
-_Finalize spatial boundaries_
+**_Finalize spatial boundaries_**
 
-An OHI assessment is conducted within _clearly defined boundaries_. The OHI team populates data layers in your Full Repository based on your final spatial boundaries (i.e.. data from global to your local level).
-
-Even though [jurisdictional boundaries are optimal](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales), where exactly to draw the boundaries often is limited by data. Raw data sources often do not readily suit your desired geopolitical boundaries. See [Defining Spatial Boundaries]((http://ohi-science.org/manual/#defining-spatial-boundaries) for more detail. Exploring the available data can help you make the final decision on spatial boundaries.
+**OHI scores are calculated for regions with _clearly defined boundaries_**, and you will use your Starter Repo to finalize them. Spatial boundaries are often set based on jurisdictions (i.e. within which boundaries would OHI scores be of interest) and data availability (i.e. within which boundaries are data reported) [See above section for more details](http://ohi-science.org/manual/#strategically-define-spatial-boundaries-balance-information-availability-and-decision-making-scales). The [Defining Spatial Boundaries section](http://ohi-science.org/manual/#defining-spatial-boundaries) provides instructions of what you need to consider and the files you need to provide to the OHI Team. Once you provide final files, the OHI Team will be able to create your Full Repo.
 
 > You could also start **exploring goal models**, which will reduce the amount of work you will do when you receive the Full Repo for scores calculation.
 
 ### What’s in the Starter Repo?
 
-The Starter Repo simply contains a `prep` folder, which includes:
+The Starter Repo simply contains a `prep` folder, which includes folders to organize, document, and explore data for:
 
-- a folder for _each goal or subgoal_
-- one folder for _pressures_, where you could create a sub-folder for each layer to be prepared
-- one folder for _resilience_, where you could create a sub-folder for each layer to be prepared
-- a README file
+- _each goal or subgoal_
+- _pressures_
+- _resilience_  
+
+<!---
+JSL: until we have these done don't list:
 - _Example Data Prep Tutorials_ with data and scripts
+--->
 
-Within each folder, it's up to you how to populate and organize the contents. We recommend that within each folder you save the raw data files, and create a data prep script (eg. `CW_data_prep.R` or `CW_data_prep.Rmd` for Clean Water) to explore data and document decision making.
+Within each folder, it's up to you how to populate and organize the contents. We recommend that within each folder you save the raw data files if possible, and create a data preparation script (eg. `CW_data_prep.R` or `CW_data_prep.Rmd` for Clean Water) to explore data and document decision making.
 
 ### How to request a Starter Repo?
 
-You can create a GitHub account at http://github.com with a username and password. To request a repo, email info@ohi-science.org with:
+You can create a GitHub account at http://github.com with a username and password. To request a repo, email info @ohi-science.org with three things:
 
 - your Github username
 - the name of your assessment area (eg. the Gulf of Guayaquil)
@@ -196,44 +199,44 @@ You can create a GitHub account at http://github.com with a username and passwor
 
 After you have explored your data and finalized spatial boundaries, the Full Repo offers the rest of the scripts and files you need to complete your OHI+ assessment.
 
-**The Full Repo is a repository pre-populated with _r scripts_ and _data layers_ disaggregated from the most recent global OHI assessment, structured in the same way as the global OHI assessments.** This way you don't need to start your assessment from scratch. You can explore a working repository and build from there. For example, instead of writing scripts for goal models from the beginning, you can modify existing scripts to suit your own needs. Data layers disaggregated from the global assessments are available to use, however, we do recommend that you replace as many global data with higher-resolution local data as possible.
+**The Full Repo is a repository pre-populated with _R scripts_ and _data layers_ disaggregated from the most recent global OHI assessment, structured in the same way as the global OHI assessments.** This way you don't need to start your assessment from scratch; you can explore a working repository and build from there. For example, instead of writing scripts for goal models from the beginning, you can modify existing scripts to suit your own needs. Data layers disaggregated from the global assessments are available to use, however, we do recommend that you replace as many global data with higher-resolution local data as possible.
 
 ### What's in the Full Repo?
 
 **The Full Repo contains all the files you need to calculate scores, and produce figures and reports:**  
 
 - _data layers_ are organized into one folder (`layers`), with a registry that lists attributes about them and what they are for (`layers.csv`)  <!--- to add: `layers_meta.csv` --->
-- _goal models_ are organized in one file (`functions.r`) in configure (`conf`) folder
-- _pressures_ and _resilience_ matrices that indicate which pressures/resilience apply to which goal
-- Scripts that use `ohicore`, an `R` package built by the OHI team to calculate OHI scores, create visuals and other core operations of the Ocean Health Index.
+- _goal models_ are organized in one file (`functions.r`) in the configure (`conf`) folder
+- _pressures_ and _resilience_ matrices that indicate which pressures/resilience apply to which goal, also in the configure (`conf`) folder
+- scripts that use `ohicore`, an `R` package built by the OHI Team to calculate OHI scores, create visuals and other core operations.
 
 You can see a full description of each file and script and how they are organized in the [File System](http://ohi-science.org/manual/#file-system-organization) section.
 
 ### How to request a Full Repo?
 
-To request a Full Repository, you will need to email info@ohi-science.org with:
+To request a Full Repository, you will need to email info @ohi-science.org with:
 
 - [shape files of your finalized spatial boundaries](http://ohi-science.org/manual/#request-a-full-repository-with-offshore-boundaries)
-- the name of your scenario, which is to the unit of your assessment and the year (e.g. province2016, region2015)
+- the name of your scenario, which is often the definition of your assessment region and the year (e.g. province2016, region2015)
 
 We can then provide you with a Full Repo with the regions defined and pre-populated data layers extracted from the most recent global assessment according to your regional boundaries.
 
 # Starter Repository
 
-In the Starter Repo, you will have one main _ Prep_ folder, where you will organize and explore available data, finalize spatial boundaries, while learning the Github/Rstudio workflow. All files are written in _R_ (or _Rmarkdown_) language.
+In the Starter Repo, you will have one main **_prep_** folder, where you will organize and explore available data and finalize spatial boundaries while learning the Github/RStudio workflow. To be transparent and repeatable, all files should be written in _R_ (or _R Markdown_).
 
 ## Discovering and gathering input information
 
-To promote transparent communication and aid in reproducibility, it is always a good practice to record information on data sources and a brief explanation of how they are processed in the script. For example, you could include:
+To promote transparent communication and aid in reproducibility, it is always a good practice to record information about data sources (i.e. 'metadata') and explanation of how they are processed in the script. For example, it is important to include:
 
 - data source
 - data url or website
 - date accessed, contact information
 - processing plan
 
-A hallmark of the OHI is that **it uses freely-available existing information (data and indicators) to create the models that capture the philosophies of individual goals.** The quality of the inputs are important because calculated Index scores area only as good ad the inputs on which they are based. Assembling the appropriate input information, which means both discovering and gathering data and indicators, is an important part of any OHI assessment.
+A hallmark of the OHI is that **it uses freely-available existing information (data and indicators) to create the models that capture the philosophies of individual goals.** The quality of the inputs are important because calculated OHI scores area only as good as the inputs on which they are based, and it is important to identify what was included (and excluded). Assembling the appropriate input information, which means discovering, gathering, and processing data and indicators, is critical to any OHI assessment.
 
-Once your team has tailored the OHI framework appropriately for your study area and identified the information that ideally would be included, the data discovery and gathering process can begin. There are many decisions to make when deciding which data are available and appropriate to include in your assessment. Finding appropriate data requires problem-solving abilities and creativity, particularly when ideal data are unavailable. You will need input information to calculate status models as well as pressures and resilience.  
+Reading [Best practices for assessing ocean health in multiple contexts using tailorable frameworks](https://peerj.com/articles/1503/) can help you plan what information to look for. Then, after your team has tailored the OHI framework for your study area and identified the information that ideally would be included, the data discovery and gathering process can begin. There are many decisions to make when deciding which data are available and appropriate to include in your assessment. Finding appropriate data requires problem-solving abilities and creativity, particularly when ideal data are unavailable. You will need input information to calculate status models as well as pressures and resilience.  
 
 ### Thinking creatively
 
@@ -830,7 +833,7 @@ The `spatial` folder contains two spatial files: `regions_gcs.geojson` and `regi
 
 Contents within the `temp` or `tmp` folders are not used to calculate scores but can be used for temporary organization for your assessment.
 
-# Getting started with the Full Repo
+## Getting started
 
 >In the following sections, you will learn about the most common modifications made to repositories, including changing or creating data layers, changing or removing goals models, changing the pressures and resilience matrices, and removing goals or sub-goals. You will be given examples to follow to help with your own assessment. **All the work will be contained within your `assessmentYEAR` folder (eg. baltic2016).**
 
@@ -846,7 +849,7 @@ We recommend that you work on one goal at a time as data becomes available and g
 
 Step 3-6 can occur simultaneously.
 
-## Install `ohicore`
+### Install `ohicore`
 
 `ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R packages and will only need to do this once.
 
@@ -856,11 +859,13 @@ _This only needs to be done once at the beginning of your assessment, and you do
 
 > Although `ohicore` is a package you would not normally interact with, it can be useful to have the folder cloned to your computer for debugging, particularly with pressures and resilience calculations for goals that have components in the matrix. To do so, you will [clone](http://ohi-science.org/manual/#cloning-a-repository-to-your-local-computer) the repository (https://github.com/OHI-Science/ohicore) as you would your assessment repository.
 
-## Check pre-loaded, template data and models
+### Check pre-loaded, template data and models
 
 As a starting point, your Full Repo is populated with data and functions from the most recent global OHI study, which you can then modify directly. To check that your repository is set up properly and the pre-loaded scripts and data are functional, you can run `assessmentYEAR/configure_toolbox.R`. It will produce scores for each dimension in `assessmentYEAR/scores.csv`. When it's all set up, you can begin adding your own data and goal models.
 
-*`configure_toolbox.R` should be run each time you change or add a new data layer to make sure it is properly formatted and registered.*
+>`configure_toolbox.R` should be run each time you change or add a new data layer to make sure it is properly formatted and registered.*
+
+**Now you have set up your Full Repo, the following "How To" sections will show you how to finish OHI score calculations, including how to save data layers, modify goal models, pressures and resilience, etc.**
 
 # Saving and Registering Data Layers
 
@@ -1047,11 +1052,11 @@ In the `preindex_fuction`, you could specify variables such as _status_year_ and
 
 **Pressures** and **Resilience** are two of the four dimensions used to evaluate each goal or sub-goal, along with **Status** and **Trend**.
 
-It is important to identify the pressures that affect the ocean and coastal systems in your study area, and to search for additional pressures not included the global assessments. Once you have identified pressures within your study area, you should identify what resilience measures could counteract or nullify those pressures. Alternatively, you can start with a list of known resiliences, such as the relevant environmental laws in your country, and them map them onto pressure layers.
+It is important to identify the pressures that affect the ocean and coastal systems in your study area, and to search for additional pressures not included in global assessments. Once you have identified pressures within your study area, you should identify what resilience measures could counteract those pressures. Alternatively, you can start with a list of known resiliences, such as the relevant environmental laws in your country, and them map them onto pressure layers.
 
-> TIP: The same considerations and requirements about data presented in the "**Gathering Appropriate Data**" section also apply to pressures and resilience. Every measure you include for pressures and resilience requires data for each region in your assessment.
+> TIP: The same considerations and requirements about data presented in the "**Gathering Appropriate Data**" section and in the [Best practices for assessing ocean health in multiple contexts using tailorable frameworks](https://peerj.com/articles/1503/) publication also apply to pressures and resilience. Every measure you include for pressures and resilience requires data for each region in your assessment.
 
-Ideally, every stressor with an identified strong impact should have a corresponding resilience measure. The rationale is that as resiliences in the study area increase (for instance, by improving environmental regulations), they would balance out and eventually neutralize the pressures. This would lead to an increase in the overall goal or sub-goal score. By including regulatory responses in your assessment, you ensure that the actions taken in your country are relevant to ocean health.
+Ideally, every pressure with an identified strong impact should have a corresponding resilience measure. The rationale is that as resiliences in the study area increase (for instance, by improving environmental regulations), they would balance out and eventually neutralize the pressures. In time, this would lead to an increase in a goal's status, and therefore the overall goal or sub-goal score. By including regulatory responses in your assessment, you ensure that the actions taken in your country are relevant to ocean health.
 
 In practice, however, the pressures and resilience measures you include in your assessment will be highly determined by data availability. It is best to _first consider what pressures are acting in your study area and then determine if data are available to measure them_. You should also decide if the pressures data included in the global assessment are relevant for your assessment and determine if local data better capture pressures for all the regions in your study area. When considering resilience measures, look for regulations or indicators that could be encompassed in one of the pressures categories.
 
@@ -1059,11 +1064,11 @@ In practice, however, the pressures and resilience measures you include in your 
 
 ### How to identify and quantify pressures
 
-The Toolbox calculates pressures in five **ecological pressure categories** (e.g., pollution, habitat destruction, fishing pressure, species pollution, and climate change) and one **social pressure category** (eg. Weakness of Governance Indicator). Under each category, you could have multiple pressure data layers. For example, the "pollution" category could include pathogen, nutrients, and chemicals pollution.
+The Toolbox calculates pressures in five **ecological pressure categories** (e.g., pollution, habitat destruction, fishing pressure, species pollution, and climate change) and one **social pressure category** (e.g. strength of governance). Under each category, there can be multiple pressure data layers. For example, the "pollution" category could include pathogen, nutrients, and chemical pollution.
 
- >The reason behind the ecological categories is to avoid hidden weighting (e.g., overrepresentation of pressures for which there is more data). For example, in the global assessment there were many pollution datasets available, but few distinct habitat destruction datasets. If we simply averaged the scores of each individual stressor, pollution scores would have a greater influence on the results (stronger weight) due to the relative higher availability of measurements of various pollutants. Instead, aggregating by pressure categories ensures that different stressor types influence the score based on ranks. Nonetheless, the scores are combined in a cumulative way within each category to account for the fact that multiple stressors within a category have a cumulative impact that is greater than if only one of the stressors were present. The resulting scores for the five ecological categories are averaged to produce a single ecological pressures score. This score is then averaged with the social pressures score to produce the final overall pressure score.
+ >The reason behind the ecological categories is to avoid hidden weighting (e.g., overrepresentation of pressures for which there are more data). For example, in the global assessment there were many pollution datasets available, but few distinct habitat destruction datasets. If we simply averaged the scores of each individual stressor, pollution scores would have a greater influence on the results (stronger weight) due to the relative higher availability of measurements of various pollutants. Instead, aggregating by pressure categories ensures that different stressor types influence the score explicitly. Nonetheless, the scores are combined in a cumulative way within each category to account for the fact that multiple stressors within a category have a cumulative impact that is greater than if only one of the stressors were present. The resulting scores for the five ecological categories are averaged to produce a single ecological pressures score. This score is then averaged with the social pressures score to produce the final overall pressure score.
 
-There are two types of pressures data you need to provide for the toolbox: _local data layers for each pressure_ and _a pressure matrix_ .
+There are two types of pressures data you need to provide for the toolbox:  _data layers for each pressure_ and the _pressure matrix_.
 
 #### Pressures data layers
 
@@ -1074,14 +1079,14 @@ The following steps outline the process of how to identify pressures in your ass
 1. Begin by exploring pressures important to your study area. What are big stressors acting along your coastlines?
 2. Are data available to measure these stressors? If not, are other indirect measures or proxies available to represent these stressors?
 3. Evaluate the pressures included in the global assessment. For example, if there is no mariculture in your study area, you could remove pressures data layers that only affect this goal (i.e. genetic escapes).
-4. Are all of them relevant? Are there local data that can be substituted in the place of global data?
+4. Also while examining the pressures included in the global assessment, are all of them relevant? Are there local data that can be substituted in the place of global data?
 5. Determine the pressure category for any additional stressors in your study area, and add it to the pressures matrix.
-6. When all stressors are included in the pressures matrix, determine which goals it affects. Then, determine the weight rankings of all stressors for each goal. Use literature and expert judgement to determine this.
-7. Prepare each pressure data layer as described in this manual only after steps 1-6 are completed. In addition to the proper formatting for the Toolbox, _pressures data must be rescaled (normalized) on a unitless scale from 0 - 1, where 0 is no stressor at all and 1 is the highest possible value for the stressor, or the value at which the goal achievement is completely impaired. You will have to determine how to rescale the data, whether it is based on the highest value in the data range or other methods._
+6. When all stressors are included in the pressures matrix, determine which goals they affect. Then, for each goal, determine the weight rankings of all stressors. Use literature and expert judgement to determine this.
+7. Prepare each pressure data layer as described in the **Formatting Data for the Toolbox** section only after steps 1-6 are completed. In addition to the proper formatting for the Toolbox, _pressures data must be rescaled (normalized) on a unitless scale from 0 - 1, where 0 is no stressor at all and 1 is the highest possible value for the stressor. You will have to determine how to rescale the data, whether it is based on the highest value in the data range or other methods._
 
 ##### Including pressures from global assessments
 
-If you are not able to find local data for stressors, you may use the data from the global assessments for your country. For most of the stressors, this means that there will not be differences between the regions within your study area. However, several stressors included in the global assessment are based on spatial data at high resolution from previous work by Halpern *et al.* (2008) in *Science:* [A global map of human impact on marine ecosystems](http://www.sciencemag.org/content/319/5865/948.abstract). These data are available at a resolution of 1 km^2 for the entire global ocean, and can be extracted for the regions in your study area. The stressors available at 1km^2 resolution are indicated below with ** \*\* **.
+If you are not able to find local data for stressors, you may use the data from the global assessments. For most of the stressors, this means that there will not be differences between the regions within your study area. However, several stressors included in the global assessment are based on spatial data at high resolution from previous work by Halpern *et al.* (2008) in *Science:* [A global map of human impact on marine ecosystems](http://www.sciencemag.org/content/319/5865/948.abstract). These data are available at a resolution of 1 km^2 for the entire global ocean, and can be extracted for the regions in your study area. The stressors available at 1km^2 resolution are indicated below with ** \*\* **.
 
 <span style="font-size:0.8em">
 
@@ -1113,19 +1118,19 @@ If you are not able to find local data for stressors, you may use the data from 
 
 </span>
 
-Note that chemical and nutrient pollution have both land-based (within 3 nautical miles) and ocean-based (within the entire 200 nautical mile EEZ) elements. This is because how pollution affects different goals will depend on the spatial scale of the goal's activity. Some goals occur far from shore, and nutrient and chemical pollution should be included for all offshore waters: FIS, MAR, ECO, and SPP. However, some goals are really only relevant nearshore, so nutrient and chemical pollution should only be included close to the shoreline (3nm in the global study): AO, CS, CP, TR, ICO, LSP, HAB.
+Note that chemical and nutrient pollution have both land-based (within 3 nautical miles) and ocean-based (within the entire 200 nautical mile EEZ) elements. This is because how pollution affects different goals will depend on the spatial scale of the goal's activity. Some goals occur far from shore, and nutrient and chemical pollution should be included for all offshore waters; for example FIS, MAR, ECO, and SPP. However, some goals are really only relevant nearshore, so nutrient and chemical pollution should only be included close to the shoreline (3nm in the global study): AO, CS, CP, TR, ICO, LSP, HAB.
 
-These distinctions won't always apply for smaller-scale assessments. For example, in the US West Coast study (Halpern *et al.* 2014), we did not distinguish between offshore and 3nm and therefore only used the `po_nutrients` data layer.
+These distinctions won't always apply for smaller-scale assessments. For example, the US West Coast study (Halpern *et al.* 2014) did not distinguish between offshore and 3nm and therefore only used the `po_nutrients` data layer.
 
->Some pressure data are the same or closely-related to data for goals. For example, the **Wild-Caught Fisheries** goal model requires catch data, which may be the same data source for information on commercial high- and low-bycatch data, which are used as pressures layers that affect **Livelhoods and Economies** and **Biodiversity**. In global assessments, the **Clean Waters** goal is very much linked to pressures layers because the input layers for its status are used as pressure layers. Trash pollution is a pressure that affects **Tourism and Reacreation**, **Lasting Special Places**, **Livelihoods and Economies,** and **Species**. It is important to remember these linkages as you go through the data discovery process.
+>Some pressure data are the same or closely-related to data for goals, often due to data limitations. For example, the Wild-Caught Fisheries goal model requires catch data, which may be the same data source for information on commercial high- and low-bycatch data, which are used as pressures layers that affect Livelihoods and Economies and Biodiversity. In global assessments, the Clean Waters goal is very much linked to pressures layers because the input layers for its status are used as pressure layers. Trash pollution is a pressure that affects Tourism and Recreation, Lasting Special Places, Livelihoods and Economies, and Species. It is important to remember these links as you go through the data discovery process.
 
->You should also start searching for pressures data independent from data for goals. An example would be how climate change impacts will appear in various places in your assessment. Climate change pressures layers can include UV radiation, sea surface temperature (SST), sea-level rise (SLR), and ocean acidification, and these impacts might affect such goals as **Natural Products**, **Carbon Storage**, **Coastal Protection**, **Sense of Place**, **Livelihoods and Economies**, and **Biodiversity**. These linkages will become more clear as you go through the OHI+ assessment process.
+>You should also start searching for pressures data independent from data for goals. An example would be how climate change impacts will appear in various places in your assessment. Climate change pressures layers can include UV radiation, sea surface temperature, sea-level rise, and ocean acidification, and these impacts might affect such goals as Natural Products, Carbon Storage, Coastal Protection, Sense of Place, Livelihoods and Economies, and Biodiversity. These links will become more clear as you go through the OHI+ assessment process.
 
 #### Pressures matrix
 
-Independent from local pressure layers, you will develop a Pressures Matrix table that establishes the relationships between stressors and goals, i.e. how each pressure measure affects each goal, or an individual habitat type or natural product categories within a goal. It uses a _rank from 1-3 to weight how strongly a given pressure affects a goal or sub-goal relative to all the other pressures affecting it_.
+Independent from the pressures data layers, you will modify the Pressures Matrix table that establishes the relationships between stressors and goals, i.e. how each pressure measure affects each goal, or distinct components of a goal (e.g. an individual habitat type or natural product). It uses a _rank from 1-3 to weight how strongly a given pressure affects a goal or sub-goal relative to all the other pressures affecting it_.
 
->It is easy to confuse the weights with pressure data layers. But pressure weights should not be applied to the regions, only to the goals.
+>It is easy to confuse the weights with pressure data layers. But pressure weights assigned in the pressures matrix are based on how strongly those pressures affect each goal; the weights are not different across regions (region-specific data are stored in the data layers). Read on for further explanation.
 
 The rank weights used in the pressures matrix were determined by Halpern *et al*. 2012 (*Nature*) based on scientific literature and expert opinion (see Supplemental Table S28 of *Halpern et al. 2012*). For example, commercial high and low bycatch are categorical values that were set based on fishing gear type. This began as a list of gear types used, producing a range of potential bycatch frequencies (from local reports when possible), which can be rescaled. In the pressures matrix ranks are categorized as follows:
 
@@ -1135,11 +1140,11 @@ The rank weights used in the pressures matrix were determined by Halpern *et al*
 
 ![Scores from 1-3 are given to rank the importance of each pressure. Only values of 2 or 3 require that a resilience layer be activated when calculating the goal scores.](./fig/ohiman_goals-pressures-2D.png)
 
-Stressors that have no impact are left blank in the matrix rather than being assigned a rank of zero, which would affect the average score. Pressures are ranked rather than being represented as a binary (yes/no) measure because the range of consequence of different pressures on each goal can be quite large, and to classify all those pressures as a simple 'yes' would give too much influence to the weakest stressors. For example, food provision is most heavily impacted by unsustainable, high-bycatch fishing, but pollution does have some impact on fish populations. Without a weighting system, these stressors would be treated equally in their impact on the food provision goal.
+Stressors that have no impact are left blank in the matrix rather than being assigned a rank of zero, which would affect the average score. Pressures are ranked rather than being represented as a binary (yes/no) measure because the range of consequence of different pressures on each goal can be quite large, and to classify all those pressures as a simple 'yes' would give too much influence to the weakest stressors. For example, food provision could be most heavily impacted by unsustainable, high-bycatch fishing, but pollution does have some impact on fish populations. Without a weighting system, these stressors would be treated equally in their impact on the food provision goal. In the figure above, a climate change pressure is the strongest variable acting on the Fisheries sub-goal.
 
 > How are Pressures calculated in the Toolbox?
 
->Pressures are represented by three-dimensional matrix. The data of each stressor in each region and the rank weights are two dimensions of the 3-D matrix. The Toolbox will:
+>Conceptually, pressures in OHI can be represented by three-dimensional matrix by combining the pressures matrix with each associated data layer. The Toolbox will:
 1. For each stressor, multiply the local data for each region (between 0 and 1) by the weight (NA, 1, 2, or 3) assigned to that pressure for a specific goal and subgoal
 2. Within each category, combine all stressor data from step 1 to get a category score
 3. Average scores of all categories to get an overall pressures score for that goal or sub-goal
@@ -1148,7 +1153,7 @@ Stressors that have no impact are left blank in the matrix rather than being ass
 
 ### How to modify Pressures Matrix and Categories in the Toolbox
 
-Your team will identify if any pressures layers should be added to the pressures matrices, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/[region_year]/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `[region_year]/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
+Your team will identify if any pressures layers should be added to the pressures matrix, and if so, which goals the pressure affects and what weight they should have. You can transfer this information in `pressures_matrix.csv` (located in the `[assessment]/[region_year]/conf` folder). It is important to note that the matrix identifies the pressures relevant to each goal, and which weight will be applied in the calculation. Each pressure is a data layer, located in the `[assessment]/[region_year]/layers` folder. This means that pressure layers need information for each region in the study area, and some layers will need to be updated with local data. In modifying pressures, you will need to consider whether data layers can be updated or added, and whether data layers map onto goals appropriately in the local context.
 
 Adding a new pressure to the pressures matrix requires the following steps:
 
@@ -1156,7 +1161,7 @@ Adding a new pressure to the pressures matrix requires the following steps:
 2. Register pressure layer(s) in `layers.csv`
 3. Register in `pressures_categories.csv`
 4. Register in `pressures_matrix.csv`, identify the goals affected and set the weights
-5. Modify config.R for goals that have elements
+5. Modify `config.R` for goals that have elements
 
 #### Create the new pressure layers and save in the `layers` folder
 
@@ -1169,13 +1174,13 @@ If you create a new data layer, give it a short but descriptive name that also i
 * *cc_* = climate change
 * *ss_* = social pressure  
 
-So for example, `po_trash` is a pollution layer with trash on beaches, and `sp_alien` is species pollution due to alien (invasive) species.
+So for example, *po_trash* is a pollution layer with trash on beaches, and *sp_alien* is species pollution due to alien (invasive) species.
 
 These new layers will have scores from 0 to 1, with values for each region in your study area, and will be saved in the `layers` folder.
 
 #### Register the new pressure layers in `layers.csv`
 
-Add two new rows in `layers.csv`, and register the new pressure layers by filling out the first eight columns for *po_desal_in*, and *po_desal_out*.
+Let's say you were adding two new pressures layers to the pressures matrix. You would then add two new rows in `layers.csv`, and register the new pressure layers by filling out the first eight columns for *po_desal_in*, and *po_desal_out*.
 
 ![](./fig/register_pressure.png)
 
@@ -1193,20 +1198,19 @@ Each pressure category is calculated separately before being combined with the o
 
 The columns `element` (and `element_name`) record habitat types for habitat-specific goals (eg. CS and CP) and industrial sectors for economy-based goals (eg. ECO).
 
-The rest of the column headers of the pressures matrix are the layer names of the pressures layer file that are saved in the `layers` folder and registered in `layers.csv`, matching what's recorded in the _pressures_categories.csv_.
+The rest of the column headers of the pressures matrix are the layer names of the pressures layer file that are saved in the `layers` folder and registered in `layers.csv`, matching what is recorded in the *pressures_categories.csv*.
 
-_**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `pressures_matrix.csv` and `pressures_categories.csv`. Otherwise `ohicore` will search for all the layers registered in those files and calculations will halt if it encounters pressure layers that do not exist._
-
-![](https://docs.google.com/drawings/d/1PiueTs_r2IvC10zsStJq-tD3YcsC98eRKr1e2OOVKUw/pub?w=800&h=720)
+**NOTE**: Make sure to remove unused pressures layers from the `layers.csv`, `pressures_matrix.csv` and `pressures_categories.csv`. Otherwise `ohicore` will search for all the layers registered in those files and calculations will halt if it encounters pressure layers that do not exist.
 
 
 #### Identify the goals affected and set the weighting
 
 This step also requires transferring prior decisions into `pressures_matrix.csv`. Mark which goals are affected by this new pressure, and then set the weighting. Pressures weighting by goal should be based on scientific literature and expert opinion (3 = highly influential pressure, 2 = moderately influential pressure, 1 = not very influential pressure). Remember that the rankings in the pressures matrix are separate from the actual data within the pressures data layers. The rankings ensure that within a particular goal (e.g. within a row of the pressures matrix), the stressors that more strongly influence the goal’s delivery have a larger contribution to that goal’s overall pressure score. Therefore, the rankings are assigned independently of the actual pressure scores, and only determine their importance within the calculations.
+![](https://docs.google.com/drawings/d/1PiueTs_r2IvC10zsStJq-tD3YcsC98eRKr1e2OOVKUw/pub?w=800&h=720)
 
-#### Modify config.R for goals with multiple elements
+#### Modify `config.R` for goals with multiple elements
 
-If a goal has multiple elements (eg. CS has multiple habitats), as reflected in _pressures_matrix.csv_ where the columns `element` (and `element_name`) are filled, you need to update `config.R` in `conf` folder, as shown below:
+If a goal has multiple elements (eg. CS has multiple habitats), as reflected in *pressures_matrix.csv* where the columns `element` (and `element_name`) are filled, you need to update `config.R` in `conf` folder, as shown below:
 
 ![](https://docs.google.com/drawings/d/14qz5DZUQAuiRaJDYfyTp2c1g1RGDKCRwN0uSPYX4hHE/pub?w=800&h=540)
 
@@ -1218,7 +1222,7 @@ The highlighted files are data layers necessary to calculate pressures for each 
 
 Resilience is included in OHI as the sum of the ecological factors and social initiatives (policies, laws, etc.) that can positively affect goal scores by reducing or eliminating pressures. The addition of new pressure layers may therefore warrant the addition of new resilience layers that were not previously relevant. Similarly, the removal of pressure layers may warrant the removal of now irrelevant resilience layers. You can then transfer this information into `resilience_matrix.csv`and `resilience_categories.csv` (located in the `[assessment]/[region_year]/conf` folder).
 
-Ideally, each pressure should have a corresponding resilience measure, which is meant to 'balance' the pressures that negatively effects on ocean health. The Ocean Health Index considers resilience in two categories: **ecological resilience** to address ecological pressures, and **social resilience** to estimate how a region may be able to respond to or prevent environmental challenges. Additionally, **goal-specific regulations** are intended to address ecological pressures, and are measured as laws, regulations, and other institutional measures related to a specific goal. Ideally, for any resilience measure, you would have three tiers of information:
+Ideally, each pressure included in the pressures matrix should have a corresponding resilience measure, which is meant to 'balance' the pressures that negatively effects on ocean health. The OHi considers resilience in two categories: **ecological resilience** to address ecological pressures, and **social resilience** to estimate how a region may be able to respond to or prevent environmental challenges. Additionally, **goal-specific regulations** are intended to address ecological pressures, and are measured as laws, regulations, and other institutional measures related to a specific goal. Ideally, for any resilience measure, you would have three tiers of information:
 
 * **Existence of regulations**: Are regulations in place to appropriately address the ecological pressure?
 * **Implementation and enforcement**: Have these regulations been appropriately implemented and are there enforcement mechanisms in place?
@@ -1228,13 +1232,13 @@ Ideally, information would exist for these three tiers, and you would be able to
 
 #### Ideal Approach
 
-Ideally, assessments of social resilience would include national-level and as well as local rules and other relevant institutional mechanisms that are meant to safeguard ocean health. The global focus has been on international treaties and indices, so your region should have more localized information. There would also be information as to their effectiveness and enforcement. of more. Information on social norms and community (and other local-scale) institutions (such as tenure or use rights) that influence resource use and management would be useful too.
+Ideally, assessments of social resilience would include national-level and as well as local rules and other relevant institutional mechanisms that are meant to safeguard ocean health. In Global assessments, the focus has been on international treaties and indices, so your region may likely have more localized information and you can update the resilience matrix and resilience layers. There would also be information as to their effectiveness and enforcement. Information on social norms and community (and other local-scale) institutions (such as tenure or use rights) that influence resource use and management would be useful too.
 
 #### Practical Considerations
 
-In practical terms, resilience is hard to define and finding data can be difficult. It is often difficult to find regulations and indicators that would directly 'balance' individual stressors, but it is worth the effort to explore what information is available in the local context and how it could be included as resilience measures. You may be able to construct your own set of indicators for resilience (particularly social resilience) using proxy data. Your team may have to get creative to develop appropriate assessment measures here. It can be metrically be defined as presence-versus-absence (value of zero or one), or on a scale (value between zero and one) if the measure is an assessment or score. For instance in the global study,  resilience measures that were counted in the socio-economic resilience class of data came from the World Governance Indicators (http://govindicators.org). In a regional context, however, a more appropriate data layer might be a local governance index of some kind, preferably developed by a reputable organization using credible methods.
+In practical terms, resilience is hard to define and finding data can be difficult. It is often difficult to find regulations and indicators that would directly 'balance' individual stressors, but it is worth the effort to explore what information is available in the local context and how it could be included as resilience measures. You may be able to construct your own set of indicators for resilience (particularly social resilience) using proxy data. Your team may have to get creative to develop appropriate assessment measures here. It can be metrically be defined as presence-versus-absence (value of zero or one), or on a scale (value between zero and one) if the measure is an assessment or score. For instance in global assessments,  resilience measures that were counted in the socio-economic resilience class of data came from the World Governance Indicators (http://govindicators.org). In a regional context, however, a more appropriate data layer might be a local governance index of some kind, preferably developed by a reputable organization using credible methods.
 
-When available, national-level data are preferable to global-level data for your assessment. These include national laws on the environment, or protection of the marine environment or rivers that lead to coastal waters. National laws include things like the Clean Water Act (CWA) and the Endangered Species Act (ESA) in the U.S., or the national implementations of the E.U. Water Framework Directive. National actions can also be broadened beyond just legislation to include administrative procedures such as those involving permits, licenses, court cases, administrative action, and compliance mechanisms. [Cultural items at the national scale, such as holidays, are also applied at this scale]
+When available, national-level data are preferable to global-level data for your assessment. These include national laws on the environment, or protection of the marine environment or rivers that lead to coastal waters. National laws include things like the Clean Water Act (CWA) and the Endangered Species Act (ESA) in the U.S., or the national implementations of the E.U. Water Framework Directive. National actions can also be broadened beyond just legislation to include administrative procedures such as those involving permits, licenses, court cases, administrative action, and compliance mechanisms.
 
 State or province-level laws provide more regionally-specific information and thus work well for assessments. This would involve looking at the same types of laws and policies that exist on the national level, but specifically incorporating those that have been tailored to fit the needs of a particular sub-national area. This includes things such as California's state-level California Environmental Quality Act (CEQA), or the California Ocean Protection Act (COPA), which have laws designed specifically to protect California's environment. This would tell you more relevant information than using data from a national or international law. Local level regulations will usually provide you with the most accurate information for your assessment in order to tailor it best to the local context.
 
@@ -1242,7 +1246,7 @@ State or province-level laws provide more regionally-specific information and th
 
 There are several ways to turn the qualitative information of regulations and social actions into quantitative metrics for analysis. A  robust way is to give credit for different aspects of the resilience measures. In addition to a score for having the law, policy, or action, in place, it is possible to gauge the effectiveness of that activity.
 
-The simplest way is to give credit for having a resilience measure in place. This means assigning a binary score of zero or one for "presence" versus "absence" of the resilience measure. For international conventions, this can be done by assigning a value of 1 for having signed a convention. A more rigorous score can be given for countries that have further *ratified* a convention in addition to signing it; this is one way to further differentiate scores. This can be done by seeing if a country has signed and ratified CITES, for example.
+The simplest way is to give credit for having a resilience measure in place. This means assigning a binary score of zero or one for "presence" versus "absence" of the resilience measure. For international conventions, this can be done by assigning a value of 1 for having signed a convention. A more rigorous score can be given for countries that have further *ratified* a convention in addition to signing it; this is one way to further differentiate scores. This can be done by seeing if a country has signed and ratified CITES.
 
 > For example, if you were trying to find out if there are regulations in place that guide fishing pressure, you could look see if regulations exist for trawl-fishing limitations, or see if there are regulations for fish size, length, or if there are any seasonal restrictions. Another option would be to see if formal stock assessments exist for commercially-fished species.
 
@@ -1258,7 +1262,7 @@ A subsequent, and final, step to creating a robust resilience assessment is to d
 
 Environmental laws and policies offer tangible information on resilience. The most common type of environmental regulations come from administrative law, such as pollution regulation of various kinds. Land-use law is also important to the integration of social and ecosystem issues, so finding zoning laws relevant for coastal areas could be useful, and so could finding whether or not a region requires environmental impact statements before allowing construction for either coastal land or for marine planning. Other kinds of law some countries include court cases settling disputes or requiring reparation of pollution damages, for example.
 
-Resilience also goes beyond just the law, however. Insurance policies present another option, for instance.. Coastal areas are increasingly requiring climate-related insurance in some countries, and so the existence of such markets in a vulnerable area would be an example of a climate change resilience measure. Social initiatives also present another way to tackle resilience. There might be a beach clean-up day, a percentage of the refuse material that is recycled by the population, or some other social factor that reduces trash inputs into the ocean. A local law banning plastic bags is another way that local jurisdictions control plastic trash.
+Resilience also goes beyond just the law, however. Insurance policies present another option, for instance. Coastal areas are increasingly requiring climate-related insurance in some countries, and so the existence of such markets in a vulnerable area would be an example of a climate change resilience measure. Social initiatives also present another way to tackle resilience. There might be a beach clean-up day, a percentage of the refuse material that is recycled by the population, or some other social factor that reduces trash inputs into the ocean. A local law banning plastic bags is another way that local jurisdictions control plastic trash.
 
 
 #### Incorporating local resilience measures in your assessment
@@ -1267,7 +1271,7 @@ Resilience also goes beyond just the law, however. Insurance policies present an
 2. Are there locally-developed indices that capture social or ecological resilience? Is there information about how each region in your study area are implementing or enforcing the laws?
 3. Evaluate the resilience measures are included in the global assessment. Are all of them relevant? Are there local data that can be substituted in the place of global data? Are there resilience measures that should be excluded entirely?
 4. Assign the resilience measure to the appropriate goal. Since resilience measures are in response to pressures that have a weight rank of 2 or 3 effect on a certain goal, determining which goals ecological and social resilience measures effect follows the same pattern as the pressures matrix. For goal-specific resilience measures, assign the resilience measure to the appropriate goal.
-5. Prepare each resilience data layer only after steps 1-6 are completed. In addition to the proper formatting for the Toolbox, resilience data must be rescaled (normalized) on a unitless scale from 0 - 1. You will have to determine how to rescale the data, whether it is based on the highest value in the data range or other methods.
+5. Prepare each resilience data layer as described in the **Formatting Data for the Toolbox** section only after steps 1-4 are completed. In addition to the proper formatting for the Toolbox, resilience data must be rescaled (normalized) on a unitless scale from 0 - 1. You will have to determine how to rescale the data, whether it is based on the highest value in the data range or other methods.
 
 #### Including resilience measures from global assessments
 
@@ -1301,7 +1305,7 @@ Remember that local measures are far more appropriate than those included in glo
 
 ### How to modify Resilience Matrix and Categories in the Toolbox
 
-Adding a new resilience to the resilience matrix requires the following steps:
+Adding a new resilience layer to the resilience matrix requires the following steps:
 
 1. Create new resilience layer(s) and save in the `layers` folder
 2. Register resilience layer(s) in `layers.csv`
@@ -1322,14 +1326,16 @@ This process is similar to what you have done for the pressures data layers. Pre
 
 ![](https://docs.google.com/drawings/d/1FrIvhMdWO6M2Ri3CO2gdEY9vfSpfKfzJnNkE-T8rce4/pub?w=800&h=720)
 
-Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category_type` - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `subcategory` column indicates what specific pressure each layer of resilience is targeted at. The prefix of each data layer corresponds to its subcategory (eg. po, li, g, etc).
+Each _resilience layer_ indicated in the table is a data layer just like all the other data layers you have formatted, saved in the layers folder, and registered on _layers.csv_. Each layer falls under a `category` of resilience - ecological or social, and one of three `category_type` - ecosystem, regulatory, or social, representing the origin of each resilience layer. The `subcategory` column indicates what specific pressure each layer of resilience is targeted at. The prefix of each data layer corresponds to its subcategory (eg. po, li, g, etc).  
+
 
 In addition, the `weight` column represents level of institutional governance. Governance is a function of 1) institutional structures that address the intended objective (eg. whether appropriate laws/regulations exist, etc), 2) a clear process for _implementing_ the institution is in place, and 3) whether the institution has been _effective_ at meeting stated objectives. At global scales it is very difficult to assess these three elements; we usually only had information on whether institutions exist. However, in some cases we had detailed information on institutions that enabled us to assess whether they would contribute to effective management, and thus, increased ocean health. In those latter cases, we gave more weight to those measures. In the `resilience_categories.csv` pre-loaded from OHI-Global 2016 to your repository, there are two weights assigned to each layer:
 
 - _0.5_ means that a law or regulation exists, or a country has signed an appropriate treaty
 - _1_ means that there are evidence of implementation of the laws and regulations.
 
-However, you can redefine how the weights are set to available information in your regions.
+However, you can redefine how the weights are set to available information in your regions.  
+
 
 #### Register in Resilience Matrix
 
@@ -1340,15 +1346,19 @@ However, you can redefine how the weights are set to available information in yo
 New resilience layers may be added to `resilience_matrix.csv` based on finer-scale local information either in response to a new pressures layer, or as a new independent measure. Any added layer must be associated with a pressures layer that has a weight of 2 or 3 in the OHI framework so that resilience measures can mitigate pressures in each region.
 
 
-#### How to modify config.r for goals with multiple elements
+#### How to modify `config.r` for goals with multiple elements
 
 If a goal has multiple elements, as shown in _pressures_matrix.csv_, you need to update `config.r` in `conf` folder, as shown below:
 
 ![](https://docs.google.com/drawings/d/1eMvpSPif_Su759-cyHg8gsnWeHCvN2QlEZ5ywLVIEmY/pub?w=800&h=720)
 
-Similar to what was discussed in the Pressures section, the highlighted files are data layers necessary to calculate resilience for each of the goals with components. These weights are prepared separately in the data prep folder for each goal, and saved and registered as you would for any data layer. How to calculate these data layers can be found in the _description_ column of `layers.csv`.  
 
-<!-- ### Determining how to modify these resilience layers
+
+<!--
+
+JSL: I think this is outdated now: Similar to what was discussed in the Pressures section, the highlighted files are data layers necessary to calculate resilience for each of the goals with components. These weights are prepared separately in the data prep folder for each goal, and saved and registered as you would for any data layer. How to calculate these data layers can be found in the _description_ column of `layers.csv`.  
+
+### Determining how to modify these resilience layers
 
 * To determine whether `species_diversity_3nm` or `species_diversity_eez` should be used:
     + `sand_dunes` should use `species_diversity_3nm`,
@@ -1779,21 +1789,14 @@ means that the list of resilience layers listed in `resilience_matrix.csv` does 
 
 # Appendix 1: Toolbox Software
 
-The Toolbox is open-source and can be downloaded and installed for free. It is comprised of several software systems:
+The OHI Toolbox is open-source and can be downloaded and installed for free. It is essentially a workflow building off the following software: [**R**](https://cran.r-project.org/),  [**RStudio**](https://www.rstudio.com/), [**git**](https://git-scm.com/), and  [**GitHub**](https://www.github.com/)  
 
 <!-- You are able to navigate through these files both at `www.github.com/OHI-Science` and on your own computer once you have cloned the repository to your computer. Your assessment repository is located at *github.com/OHI-Science* and we recommend saving it to your computer so that you can sync changes back online to save versions and facilitate collaboration. Conducting an OHI assessment using GitHub enables collaboration and transparency, and will provide access to the latest developments in the Toolbox software, allowing the OHI team to provide support remotely if necessary.
 This section explains the GitHub workflow and how to access and setup required software. You can use GitHub to upload any modifications you make so that you can work collaboratively with your team.  -->
 
-  **Required:**
+  > ![](https://docs.google.com/drawings/d/e/2PACX-1vScAMWoLxDIm55eFKUk_1Ao6KdrRx8eKCiQJwSBOJ-kkRvGj6mt0hmuGM229poKeUraV8CYf7C62BDj/pub?w=624&h=432)
 
-  1. **GitHub**
-  2. **git**
-  3. **R**
-  4. **RStudio**
-
-  > ![](./fig/overview_requirements_1.png)
-
-Your Repositories and `ohicore` are stored and managed with all the above software systems. Here is a quick introduction to the software and how they work together.
+The OHI workflow depends on the above software. Here is a quick introduction to the software and how they work together.
 
 ## Introduction
 
@@ -1801,7 +1804,7 @@ Your Repositories and `ohicore` are stored and managed with all the above softwa
 
 GitHub has an online interface and a desktop application for the version-control software called ** git**, where your project repository and any changes done to it are kept and recorded. It is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It can be accessed remotely by all members of your team and enables team members to synchronize their work together. Because all versions are saved, you can return to previous work and also compare different points in history to track how changes you make affect the output scores.
 
-To allow multiple users to work on the same repository at the same time, there are steps involved to 'check in' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps.
+To allow multiple users to work on the same repository at the same time, there are steps involved to 'commit' your modifications so they can merge with the work of others without problems. GitHub has specific words for each of these steps.
 
 **GitHub Vocabulary:**
 
@@ -1857,7 +1860,7 @@ When you modify or add a file, the file will appear in the 'Git' window once it 
 
 > TIP: If you aren't seeing your changes in the 'Git' window, try saving the file again.
 
-![Figure showing RStudio when sycing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
+![Figure showing RStudio when syncing. After first staging your changes, click the 'commit' button to open a new window where you can enter a 'commit message' and then pull and push new changes. ](https://docs.google.com/drawings/d/1M9-87q0RZ_lPD8QEL3DIpoPgyh-w2rKPoF-5IFWFJfo/pub?w=1027&h=500)
 
 _Note_: Another option to syncing your edits on a repo with the online version is to use **Command Lines**, if you are familiar with it. There are resources available online on how to do so.    
 
@@ -1868,7 +1871,7 @@ In this section, you will learn how to successfully set up your _tailored_ toolb
 1. Create your online _Github_ account and set up _git_ on your local computer
 2. Install _R_ and _RStudio_ on your local computer
 3. Clone your tailored repository from Github to your local computer via RStudio
-4. Install `ohi-core` package
+4. Install `ohicore` package
 
 Let's get started!
 
