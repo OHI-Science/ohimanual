@@ -12,6 +12,8 @@ As you discover and gather potential data sources, they can be prepared and expl
 
 **OHI goal scores are calculated at the scale of the reporting unit**, which is called a ‘**region**’ and then combined using an area-weighted average to produce the score for the overall area assessed, called a ‘**study area**’. In order to calculate trend, input data should be available as a time series for at least 5 recent years (and the longer the time series the better, as this can be used in setting temporal reference points).
 
+>Finalized data layers have at least two columns: the `rgn_id` column and a column with data that is best identified by its units (eg. _km2_ or _score_). There often may be a `year` column or a `category` column (for natural product categories or habitat types).
+
 The example below shows information for a study area with 4 regions. There are two different (and separate) data layer files: tourism count (`tr_total.csv`) and natural products harvested, in metric tonnes (`np_harvest_tonnes.csv`). Each file has data for four regions (1-4) in different years, and the second has an additional 'categories' column for the different types of natural products that were harvested. In this example, the two data layers are appropriate for status calculations with the Toolbox because:
 
 1. At least five years of data are available,
@@ -161,3 +163,42 @@ An important consideration is how to rescale your data when preparing it for use
 You should base your decision on whether your consider it more appropriate to decide the reference point based on the data distribution of all data points, be they observed or interpolated, or whether we think we should only consider the observed data. If the interpolation covers large areas, and these get assigned values that aren't very frequent in the observed data, then the two distributions will be very different, and what value is in the 99.99th percentile is different too.
 
 In theory, one would favor deciding the reference point based on as many observations as possible (i.e., interpolate first, then obtain the percentile). In practice, if we think that large interpolated areas are very unreliable, we might prefer to use real observations only (i.e., percentile first, then interpolate).
+
+### Naming data layers
+
+Please name each data layer with the following format so it is easy to keep all data organized:
+
+`prefix_layername_regionYEAR_suffix.extension`
+
+>There cannot be any white spaces in any part of the filename: instead, use underscores ('_').
+
+The **prefix** will be the letters identifying each goal (two letters) or sub-goal (three letters):
+
+|Goal           | Code | Subgoal   | Code |
+|---------------|------|------------|-----|
+|Food Provision                | FP   | Fisheries | FIS |
+|                              |      | Mariculture | MAR|
+|Artisanal Fishing Opportunity | AO   |             ||
+|Natural Products              | NP   |             ||
+|Coastal Protection            | CP   |             ||
+|Carbon Storage                | CS   |             ||
+|Livelihoods and Economies     | LE   | Livelihoods | LIV|
+|                              |      | Economies   | ECO|
+|Tourism and Recreation        | TR   |             ||
+|Sense of Place                | SP   | Iconic Species | ICO|
+|                              |      | Lasting Special Places | LSP|
+|Clean Waters                  | CW   |      ||
+|Biodiversity  | BD | Habitats | HAB  |
+|                              | | Species | SPP|
+
+The **layername** should be made of words or abbreviations to identify what the layer is (eg. unemployment)
+
+The **regionYEAR** should identify the assessment scenario: **chn2015**. This will help separate updated data layers from global data layers ('glYEAR').
+
+The **suffix** of the filename should identify who prepared the data so any questions can easily to sent to the correct person (eg. JL).
+
+The **extension** identifies the filetype and is separated by a period (.). _You must save your files as comma separated values (*.csv*)_ since this is the format used by the OHI Toolbox.  
+
+Here is an example of a properly named data layer for the  tourism and recreation goal, where the data are the percent of unemployment prepared by Julia Lowndes.
+
+`tr_unemployment_chn2015_JL.csv`
