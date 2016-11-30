@@ -37,10 +37,10 @@ However, **if a new layer has been added (for example when a new goal model is d
 
  + **targets:** Add the goal/dimension that the new data layer relates to. Goals are indicated with two-letter codes and sub-goals are indicated with three-letter codes, with pressures, resilience, and spatial layers indicated separately.
  + **layer:** Add an identifying name for the new data layer, which will be referenced in R scripts like `functions.R` and *.csv* files like `pressures_matrix.csv` and `resilience_matrix.csv`.
- + **name:** Add a longer title for the data layer--this will be displayed on your WebApp.
- + **description:** Add a longer description of the new data layer--this will be displayed on your WebApp.
+ + **name:** Add a longer title for the data layer.
+ + **description:** Add a longer description of the new data layer.
  + **fld_value:** Add the appropriate units for the new data layer. It is _the same as the column name in the data file_, which will be referenced in R scripts in subsequent calculations. (example: area_km2)
- + **units:** Add a description about the *units* chosen in the *fld_value* column above. Think about what units you would like to be displayed on the WebApp when filling out "units." (example: km^2)
+ + **units:** Add a description about the *units* chosen in the *fld_value* column above. Think about what units you would like to be displayed online when filling out "units." (example: km^2)
  + **filename:** Add a filename for the new data layer that matches the name of the *.csv* file that was created previously in the `layers` folder.
  + **fld_id_num:** Area designation that applies to the newly created data layer, such as: *rgn_id* and *fao_id*.
 
