@@ -30,4 +30,4 @@ As a starting point, your Full Repo is populated with data and functions from th
 
 >`configure_toolbox.R` should be run each time you change or add a new data layer to make sure it is properly formatted and registered.*
 
-**Now you have set up your Full Repo, the following "How To" sections will show you how to finish OHI score calculations, including how to save data layers, modify goal models, pressures and resilience, etc.**
+**Now you have set up your Full Repo, the following "How To" sections will show you how to finish OHI score calculations in the Full Repo, including how to save data layers, modify goal models, pressures and resilience, etc.**
