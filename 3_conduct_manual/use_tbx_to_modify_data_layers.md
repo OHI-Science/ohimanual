@@ -8,7 +8,7 @@ When you received your _Full Repo_, you would have already explored data, or sta
 
 ## Overview
 
-Data layers are *.csv* files and are located in the `[assessmentYEAR/layers` folder (eg. bhi2015/layers), which is pre-loaded with data from the most recent global OHI assessment:
+Data layers are *.csv* files and are located in the `[regionYEAR/layers` folder (eg. bhi2015/layers), which is pre-loaded with data from the most recent global OHI assessment:
 
 * Layers with the suffix `_glYEAR.csv` (*gl* for *global*) have been exactly copied from the global assessment and applied equally to each region, and therefore the values will be the same across all subcountry regions.
 * Layers with the suffix `_scYEAR.csv` (*sc* for *subcountry*) have been spatially-extracted from global data or adjusted with spatially-extracted data so that each  region in your assessment has a unique value. For example, gross domestic product (GDP) used in the global assessment was reported at the national (most often country) level. Instead of being applied equally across all subcountry regions (which would incorrectly increase the nation's GDP several times), national GDP was down-weighted by the proportion of coastal population in each region compared with the total coastal population.
@@ -19,17 +19,19 @@ Data layers are *.csv* files and are located in the `[assessmentYEAR/layers` fol
 
 1. Save the layer in the `layers` folder
 2. Register the layer in `layers.csv`
-3. Check (and update when appropriate) `pressures_matrix.csv` and `resilience_matrix.csv` (located in: `assessmentYEAR/conf`)
+3. Check (and update when appropriate) `pressures_matrix.csv` and `resilience_matrix.csv` (located in: `regionYEAR/conf`)
 
 ## Save data layers in the *layers* folder
 
-When you modify existing or create new data layers, we recommend saving this as a new *.csv* file with a suffix identifying your assessment (eg. `_assessmentYEAR.csv`). Modifying the layer name provides an easy way to track which data layers have been updated regionally, and which rely on global data. Then, the original layers (`_glYEAR.csv` and `_scYEAR.csv`) can be deleted.  
+When you modify existing or create new data layers, we recommend saving this as a new *.csv* file with a suffix identifying your assessment (eg. `_regionYEAR.csv`). Modifying the layer name provides an easy way to track which data layers have been updated regionally, and which rely on global data. Then, the original layers (`_glYEAR.csv` and `_scYEAR.csv`) can be deleted.  
 
 > Filenames should not have any spaces: use an underscore ('_') instead. This will reduce problems when R reads the files.
 
+
+
 ## Register data layers in `layers.csv`  
 
-When there are new filenames associated with each layer, they will need to be registered in `assessmentYEAR/layers.csv`. If a layer simply has a new filename, only the *filename* column needs to be updated:
+When there are new filenames associated with each layer, they will need to be registered in `regionYEAR/layers.csv`. If a layer simply has a new filename, only the *filename* column needs to be updated:
 
 ![Register new layers in `layers.csv`. Be sure to note if there is a change in the filename.](https://docs.google.com/drawings/d/1adaERJXxzBxCxqBtmvp8uf5g68mHFfakR-Edbh2wwWo/pub?w=1677&h=687)  
 
