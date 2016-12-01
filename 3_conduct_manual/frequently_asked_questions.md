@@ -1,4 +1,4 @@
-# Appendix 3: Frequently Asked Questions (FAQs)
+# Appendix 4: Frequently Asked Questions (FAQs)
 
 This document provides answers to some frequently asked questions about conducting regional assessments using the Ocean Health Index. A few questions are related to general concepts in the Ocean Health Index, but mostly those topics are covered at http://www.oceanhealthindex.org/About/FAQ/. Here, the FAQ are primarily technical questions regarding regional assessments and using the OHI Toolbox. This document will be updated continually as we have more questions. Questions are arranged by theme, and have the format Q: (question) and A: (answer).
 
