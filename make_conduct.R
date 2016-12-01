@@ -24,7 +24,7 @@ in_md = c(
   'file_system.md',
   'use_tbx.md',                                      # TODO: review and update 
   'use_tbx_to_modify_data_layers.md',
-  'use_tbx_to_modify_goal_models.md',                # updated by NJM 9/15
+  'use_tbx_to_modify_goal_models.md',                
   'use_tbx_to_modify_pressures_resilience.md',    
   'use_tbx_to_remove_goal_models.md',
   'use_tbx_to_remove_sub_goals.md',

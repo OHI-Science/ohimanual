@@ -892,7 +892,7 @@ Step 3-6 can occur simultaneously.
 
 ### Install `ohicore`
 
-`ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores. You will install `ohicore` as you would other R packages and will only need to do this once.
+`ohicore` is a R package containing all the essential functions you will use to calculate the final OHI scores, and you can call the functions contained in `ohicore` from your Full Repo.
 
 To install, find the script `install_ohicore.r` in your scenario folder (ie. your _regionYEAR_ folder). Run the entire script, and now your Toolbox is all set up and ready to go!
 
