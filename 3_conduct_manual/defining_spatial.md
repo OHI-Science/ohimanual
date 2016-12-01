@@ -1,10 +1,10 @@
-# Defining spatial boundaries
+## Defining spatial boundaries
 
-OHI scores are calculated for each _assessment region_, and the region boundaries will be used to aggregate or disaggregate input information reported at different spatial scales. There is no limit to the number of regions in  your assessment. However, the number of regions is usually constrained by two things: data availability for those regions, and the utility of having scores calculated for those regions. Ideally, boundaries are drawn per management jurisdiction, and are informed by the scale at which information is available.
+**Spatial boundaries of your assessment regions dictate how your data will be aggregated or disaggregated, and are required for getting a Full Repository.** OHI scores are calculated for each _assessment region_, and the region boundaries will be used to aggregate or disaggregate input information reported at different spatial scales. There is no limit to the number of regions in  your assessment. However, the number of regions is usually constrained by two things: data availability for those regions, and the utility of having scores calculated for those regions. Ideally, boundaries are drawn per management jurisdiction, and are informed by the scale at which information is available.
 
-The **Starter Repository** will help you organize preliminary data and make sure data availability matches your desired region assignments. Once you've defined your regions and drawn spatial boundaries, the OHI team can create a **Full Repository** for your assessment.  
+The _Starter Repository_ will help you organize preliminary data and make sure data availability matches your desired region assignments. Once you've defined your regions and drawn spatial boundaries, the OHI team can create a **Full Repository** for your assessment.  
 
-## Balancing geopolitical boundaries and data limitation
+### Balancing geopolitical boundaries and data limitation
 
 The spatial boundaries of OHI regions are typically set based on:
 
@@ -18,7 +18,7 @@ Data disaggregation and gap-filling are possible methods of dealing with missing
 
 > Note that the OHI does not take a stance on disputed territories. The boundaries are defined by the original map data providers.
 
-## Drawing spatial boundaries
+### Drawing spatial boundaries
 
 **Regions must be unique (non-overlapping), and boundaries must be drawn offshore**. Offshore boundaries should be made with spatial methods in order to extend boundaries from those designated on land.  
 
@@ -34,8 +34,9 @@ Illustrated below are the conceptual steps required for creating a spatial file 
 
 <!-- It can also be done in [R](http://gis.stackexchange.com/questions/136542/r-function-for-thiessen-polygons).  -->
 
+> To create a repository for your assessment, we just need the off-shore marine water boundaries. But you may also make **inland buffers** for your analyses. For example, do you want coastal population to include activities within 1km of the coast? Or 10km?
 
-## Request a Full Repository with offshore boundaries
+### Request a Full Repository with offshore boundaries
 
 **In order to create a Full Repository for your assessment, we will need the shapefile for your offshore boundaries** (and the name of your scenario, which is to the unit of your assessment and the year, for example, `province2016`). This will help us disaggregate global data to your local regions and populate usable data layers. Please send a .zip file of all files produced to _info@ohi-science.org_. Files with the following extensions are required (but you can send all files):
 

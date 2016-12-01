@@ -1,16 +1,27 @@
-# Discovering and gathering input information
+# Starter Repository
 
-A hallmark of the OHI is that it uses freely-available existing information (data and indicators) to create the models that capture the philosophies of individual goals. The quality of the inputs are important because calculated Index scores area only as good ad the inputs on which they are based. Assembling the appropriate input information, which means both discovering and gathering data and indicators, is an important part of any OHI assessment.
+In the Starter Repo, you will have one main **_prep_** folder, where you will organize and explore available data and finalize spatial boundaries while learning the Github/RStudio workflow. To be transparent and repeatable, all files should be written in _R_ (or _R Markdown_).
 
-Once your team has tailored the OHI framework appropriately for your study area and identified the information that ideally would be included, the data discovery and gathering process can begin. There are many decisions to make when deciding which data are available and appropriate to include in your assessment. Finding appropriate data requires problem-solving abilities and creativity, particularly when ideal data are unavailable. You will need input information to calculate status models as well as pressures and resilience.  
+## Discovering and gathering input information
 
-## Thinking creatively
+To promote transparent communication and aid in reproducibility, it is always a good practice to record information about data sources (i.e. 'metadata') and explanation of how they are processed in the script. For example, it is important to include:
+
+- data source
+- data url or website
+- date accessed, contact information
+- processing plan
+
+A hallmark of the OHI is that **it uses freely-available existing information (data and indicators) to create the models that capture the philosophies of individual goals.** The quality of the inputs are important because calculated OHI scores area only as good as the inputs on which they are based, and it is important to identify what was included (and excluded). Assembling the appropriate input information, which means discovering, gathering, and processing data and indicators, is critical to any OHI assessment.
+
+Reading [Best practices for assessing ocean health in multiple contexts using tailorable frameworks](https://peerj.com/articles/1503/) can help you plan what information to look for. Then, after your team has tailored the OHI framework for your study area and identified the information that ideally would be included, the data discovery and gathering process can begin. There are many decisions to make when deciding which data are available and appropriate to include in your assessment. Finding appropriate data requires problem-solving abilities and creativity, particularly when ideal data are unavailable. You will need input information to calculate status models as well as pressures and resilience.  
+
+### Thinking creatively
 
 Humans interact with and depend upon the oceans in complex ways, some of which are easy to measure and others of which are harder to define. More familiar measurements include providing seafood, or disposing of waste. A less familiar measurement is how marine-related jobs affect coastal communities, or how different people receive or perceive benefits simply from living near the ocean. Thinking creatively and exploring the information available can make your assessment more representative of reality.
 
 Data used in OHI assessments spans a wide array of disciplines beyond oceanography and marine ecology. It is important to think creatively and beyond the interests of a specific institution or one particular field of study. Therefore, it is necessary to look beyond the most known or obvious data sources to find data relevant for the goals in the study area. Discussions with colleagues, literature searches, emails to experts, and search engines are good ways to understand what kinds of data are collected and to hunt for appropriate data. Investigate what kinds of information are available from government and public records, scientific literature, academic studies, surveys and reports, etc.
 
-## Data sources
+### Data sources
 
 Existing data and indicators can be gathered from many sources across environmental, social, and economic disciplines. This includes government reports and project websites, peer-reviewed literature, masters and PhD theses, university websites, and information from non-profit organizations, among others.
 
@@ -18,11 +29,11 @@ All data must be rescaled to specific reference points (targets) before being co
 
 Because data and indicators will come from different sources, they will also have different formatting. To include these data and indicators in your assessment, you will need to process these files into the format required by the Toolbox, which is explained in the section **Formatting Data for the Toolbox**. When data have been prepared and formatted for the Toolbox, they are called  **layers.** Because creating layers can be quite time-intensive, data should only be prepared for the Toolbox after final decisions have been made to include the data or indicator in your assessment, and after the appropriate goal model and reference points have been finalized.  
 
-## Gathering responsibilities
+### Gathering responsibilities
 
 Gathering appropriate data requires identifying and accessing existing data. It is important that team members responsible for data discovery make thoughtful decisions about whether data are appropriate for the assessment. Data discovery and acquisition are typically an iterative process, as there are both practical and philosophical reasons for including or excluding data.  
 
-## Requirements for data and indicators
+### Requirements for data and indicators
 
 There are six requirements to remember when investigating (or ‘scoping’) potential data and indicators that are presented in this section. It is important that data satisfy as many of these requirements as possible. To meet these requirements, you may have use appropriate methods to fill gaps in the data set. Data sources may need to be excluded from the analyses if requirements are not met and gap-filling solutions are not possible. If data cannot be included, you may elect to use layers from the global assessment or identify other data or modeling approaches.
 
@@ -61,7 +72,7 @@ Data must be available for ideally the five most-recent years to calculate the r
 
 ### The process of information discovery
 
-The most important thing to remember when gathering data and indicators is that they must contribute to measuring ocean health. Not all information that enhances our knowledge of marine processes directly convey information about ocean health and may not be appropriate within the OHI framework. Because of this, compiled indicators can sometimes be more suitable than raw data measuring single marine attributes.
+**The most important thing to remember when gathering data and indicators is that they must contribute to measuring ocean health.** Not all information that enhances our knowledge of marine processes directly convey information about ocean health and may not be appropriate within the OHI framework. Because of this, compiled indicators can sometimes be more suitable than raw data measuring single marine attributes.
 
 Whether you are working goal-by-goal, or layer by layer, it is important to consider where you can find synergies in data discovery. For example, while you are looking for information for the fisheries goal, you may also find data layers for fishing pressures, such as metrics on bycatch or trawling intensity. This will save you time and allow you to start thinking about how to rank pressures and resilience weights on your goals as well. Conceptually, it will help your team build a picture of how your goals are interlocking in a way that is reflective of the actual linkages that exist in the connected systems you are studying. Some key examples are listed below, and are further explained in the following sections.
 
@@ -71,7 +82,7 @@ When looking for data, the following decision tree may be useful when going goal
 
 ![](https://docs.google.com/drawings/d/1bJ3lk0stX78YM_VVR8VDAmdVUcMv4riSZk-0L2x8ybw/pub?w=700&h=500)
 
-### Example: U.S. West Coast data discovery
+#### Example: U.S. West Coast data discovery
 
 Below are examples of some decisions made when exploring available data for the U.S. West Coast assessment. Determining whether certain data could be included began with a solid understanding of the layers and models included in the global assessment. Since the U.S. West Coast is a data-rich region, finer-resolution local data could be used in place of many of the global data layers. The U.S. West Coast assessment had five regions: Washington, Oregon, Northern California, Central California, and Southern California.
 

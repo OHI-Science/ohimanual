@@ -1,10 +1,18 @@
 ## Formatting Data for the Toolbox
 
-### Introduction
+>The OHI Toolbox expects each data layer to be
+- in its own *.csv* file,
+- with data available for every region within the study area,
+- with data organized in 'long' format (as few columns as possible), and
+- with a unique region identifier (*rgn_id*) associated with a single score or value.
 
-The OHI Toolbox is designed to work in the programming language **R** using input data stored in text-based **_.csv files_** (*csv* stands for 'comma-separated value'; these files can be opened as a spreadsheet using Microsoft Excel or similar programs). Each data layer (data input) has its own *.csv* file, which is combined with others within the Toolbox for the model calculations. These data layers are used for calculating goal scores, meaning that they are inputs for status, trend, pressures, and resilience. The global analysis included over 100 data layer files, and there will probably be as many in your own assessments. This section describes and provides examples of how to format the data layers for the Toolbox.
+As you discover and gather potential data sources, they can be prepared and explored in the Starter Repo. Data preparation is done in **R** using input data stored in **_.csv files_** (or 'comma-separated value'). These files can be opened as a spreadsheet using Microsoft Excel or similar programs. Each data layer (data input) has its own *.csv* file, which is combined with others within the Toolbox for the model calculations. These data layers are used for calculating goal scores, meaning that they are inputs for status, trend, pressures, and resilience. The global analysis included over 100 data layer files, and there will probably be as many in your own assessments. This section describes and provides examples of how to format the data layers for the Toolbox.
 
-OHI goal scores are calculated at the scale of the reporting unit, which is called a ‘**region**’ and then combined using an area-weighted average to produce the score for the overall area assessed, called a ‘**study area**’. The OHI Toolbox expects each data file to be in a specific format, with data available for every region within the study area, with data layers organized in 'long' format (as few columns as possible), and with a unique region identifier (*rgn_id*) associated with a single *score* or *value*. In order to calculate trend, input data must be available as a time series for at least 5 recent years (and the longer the time series the better, as this can be used in setting temporal reference points).
+> It is highly recommended that layer preparation occurs in your repository's `prep` folder as much as possible, as it will also be archived by GitHub for future reference. The folder is divided into sub-folders for each goal and sub-goal, where you will upload the raw data and manipulate the data in `data_prep.R` scripts.
+
+**OHI goal scores are calculated at the scale of the reporting unit**, which is called a ‘**region**’ and then combined using an area-weighted average to produce the score for the overall area assessed, called a ‘**study area**’. In order to calculate trend, input data should be available as a time series for at least 5 recent years (and the longer the time series the better, as this can be used in setting temporal reference points).
+
+>Finalized data layers have at least two columns: the `rgn_id` column and a column with data that is best identified by its units (eg. _km2_ or _score_). There often may be a `year` column or a `category` column (for natural product categories or habitat types).
 
 The example below shows information for a study area with 4 regions. There are two different (and separate) data layer files: tourism count (`tr_total.csv`) and natural products harvested, in metric tonnes (`np_harvest_tonnes.csv`). Each file has data for four regions (1-4) in different years, and the second has an additional 'categories' column for the different types of natural products that were harvested. In this example, the two data layers are appropriate for status calculations with the Toolbox because:
 
@@ -14,9 +22,12 @@ The example below shows information for a study area with 4 regions. There are t
 
 ### Uploading and formatting raw data files
 
-Unformatted data files can be uploaded to the `pre-proc` folder in your github repository and processed with R. Saving raw data in the same repository helps to keep track of how the data has been treated. Raw files can be uploaded as `.csv` or `.xlsx`. However, formatted data has to be saved as `.csv` in the `layers` folder.  
+Unformatted data files can be uploaded to the `pre-proc` folder in your github repository and processed with R. Saving raw data in the same repository helps to keep track of how the data has been treated.
+
+Raw files can be uploaded as `.csv` or `.xlsx`. However, formatted data has to be saved as `.csv` in the `layers` folder.  
 
 In addition to `pre-proc`, a `prep` folder has been set up for data formatting. Inside the folder:
+
 - several sub-folders exist to house formatted data files for each goal/sub-goal
 - `prep.r` is where formatting occurs for each goal/sub-goal.
 - `README` is where you can record information on raw data files and processing for future reference
@@ -133,13 +144,6 @@ In R, the `tidyr` package has the `gather` command, which will gather the data f
 - http://blog.rstudio.org/2014/07/22/introducing-tidyr/
 - http://www.rstudio.com/resources/cheatsheets/
 
-<!-- Change the example to gather:  -->
-Example code using the *melt* command in the *reshape2* library. Assume the data above is in a variable called *data_wide*:
-
-![](./fig/melt_code.png)
-
-This will melt everything except any identified columns (*Region* and *DataLayer*), and put all other column headers into a new column named *Year*. Data values will then be found in a new column called *value*.
-
 The final step is optional: ordering the data will make it easier for humans to read (R and the Toolbox can read these data without this final step):
 
 **Example of data in the appropriate (long) format:**
@@ -160,3 +164,41 @@ You should base your decision on whether your consider it more appropriate to de
 
 In theory, one would favor deciding the reference point based on as many observations as possible (i.e., interpolate first, then obtain the percentile). In practice, if we think that large interpolated areas are very unreliable, we might prefer to use real observations only (i.e., percentile first, then interpolate).
 
+### Naming data layers
+
+Please name each data layer with the following format so it is easy to keep all data organized:
+
+`prefix_layername_regionYEAR_suffix.extension`
+
+>There cannot be any white spaces in any part of the filename: instead, use underscores ('_').
+
+The **prefix** will be the letters identifying each goal (two letters) or sub-goal (three letters):
+
+|Goal           | Code | Subgoal   | Code |
+|---------------|------|------------|-----|
+|Food Provision                | FP   | Fisheries | FIS |
+|                              |      | Mariculture | MAR|
+|Artisanal Fishing Opportunity | AO   |             ||
+|Natural Products              | NP   |             ||
+|Coastal Protection            | CP   |             ||
+|Carbon Storage                | CS   |             ||
+|Livelihoods and Economies     | LE   | Livelihoods | LIV|
+|                              |      | Economies   | ECO|
+|Tourism and Recreation        | TR   |             ||
+|Sense of Place                | SP   | Iconic Species | ICO|
+|                              |      | Lasting Special Places | LSP|
+|Clean Waters                  | CW   |      ||
+|Biodiversity  | BD | Habitats | HAB  |
+|                              | | Species | SPP|
+
+The **layername** should be made of words or abbreviations to identify what the layer is (eg. unemployment)
+
+The **regionYEAR** should identify the assessment scenario: **chn2015**. This will help separate updated data layers from global data layers ('glYEAR').
+
+The **suffix** of the filename should identify who prepared the data so any questions can easily to sent to the correct person (eg. JL).
+
+The **extension** identifies the filetype and is separated by a period (.). _You must save your files as comma separated values (*.csv*)_ since this is the format used by the OHI Toolbox.  
+
+Here is an example of a properly named data layer for the  tourism and recreation goal, where the data are the percent of unemployment prepared by Julia Lowndes.
+
+`tr_unemployment_chn2015_JL.csv`

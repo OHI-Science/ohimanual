@@ -1,10 +1,10 @@
-## Calculate overall OHI Index Scores
+# Calculate overall OHI Index Scores
 
 Congratulations if you've finished all goal model modifications as they are the most time-consuming part of the Index calculation process! In the goal model modification step, you've calculated goal status and trend, there are only a couple of more steps to do to calculate the overall index score, including calculating pressures and resilience.
 
 ### Additional data layers for pressures and resilience calculations
 
-So far you would have prepared the pressure and resilience matrices, as well as the appropriate data layers, a few more data layers are needed to complete the calculation. They are identified in `sub-country/conf/config.R` as follows:
+So far you would have prepared the pressure and resilience matrices, as well as the appropriate data layers, a few more data layers are needed to complete the calculation. They are identified in `assessmentYEAR/conf/config.R` as follows:
 
 ```
 # components describe the layer and level with which to aggregate resilience and pressures matrices for goals with categories
@@ -20,7 +20,7 @@ pressures_components  = list('NP'  = c('layer'='np_harvest_product_weight' , 'le
                              'HAB' = c('layer'='hab_presence'              , 'level'='region_id'))
 ```
 
-`np_harvst_product_weight` is also used in NP and CS status calculations, and thus do not require special preparations. The rest of the data layers need additional preparations, which can be done in the `prep` folder). 
+`np_harvst_product_weight` is also used in NP and CS status calculations, and thus do not require special preparations. The rest of the data layers need additional preparations, which can be done in the `prep` folder).
 
 `cs_habitat_extent` is calculated as `habitat_extent * rank`. Rank refers to relative contributions of each type of habitats to carbon storage. Here is an example calculation:
 

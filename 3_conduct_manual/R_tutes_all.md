@@ -1,15 +1,15 @@
-# Appendix 5: R Tutorials for OHI
+# Appendix 3: R Tutorials for OHI
 
 Ocean Health Index R code uses several packages and best practices to faciliate
 understanding and collaboration. These approaches are presented here, along with
 examples using data included in global OHI assessments.
 
-This document describes several packages that are used extensively in OHI assessments and 
+This document describes several packages that are used extensively in OHI assessments and
 introduces you to typical coding practices commonly seen in OHI scripts and functions.
 
-Also see the accompanying R script to test examples using these packages. 
+Also see the accompanying R script to test examples using these packages.
 
-### R Very Basics:
+### R Very Basics
 * Have you already downloaded and installed [R](http://www.r-project.org/)?
 * Have you already downloaded and installed [RStudio](http://www.rstudio.com/)?
 * Have you walked through the excellent interactive tutorials
@@ -80,7 +80,7 @@ into a single column called 'tonnes' and note the year of harvest in a new colum
 called 'year'.
 
 The example in the figure below shows how the original wide data is transformed into long
-data using the command `gather`. Here are two ways of acheiving this: 
+data using the command `gather`. Here are two ways of acheiving this:
 
 1. Here, information from columns X2007 through X2011 are gathered into a single column called `year`, and the information in each column are put into a new column called `tonnes`.
 
@@ -88,12 +88,12 @@ data using the command `gather`. Here are two ways of acheiving this:
 data_long <- data_wide %>% gather(year, tonnes, X2007:X2011)
 ```
 
-2. Here, the `-` unselects the named columns, so they will not be gathered; all other columns are gathered into columns named `year` and `tonnes`. This approach will  yield the same result. 
+2. Here, the `-` unselects the named columns, so they will not be gathered; all other columns are gathered into columns named `year` and `tonnes`. This approach will  yield the same result.
 
 ```
 data_long <- data_wide %>% gather(year, tonnes, -Country, -Commodity, -Trade)
 ```
-  
+
 ![wide data to long data using gather() and spread()](https://docs.google.com/drawings/d/1VaZdLWK0NwAkov4sEytZLRpOUAndb3_NZOA4-n1HNIo/pub?w=948&h=499)
 
 ### `dplyr` functions
@@ -394,7 +394,7 @@ h_tot_mut <- harvest %>%
 ```
 ![group_by to find group-level information](https://docs.google.com/drawings/d/1enHrgXWhpHz3FsURncMI5UB8LKoXLvXFPAcU25pDOSc/pub?w=745&h=285)
 
-### Coding style 
+### Coding style
 
 > Code unto others as you would have them code unto you.
 
@@ -462,4 +462,3 @@ What makes a good function:
 
 #### Directories and files
     * Store files in a folder called 'github' in your home directory; access it with `~/github` so that users with different operating systems can work smoothly with your files
-

@@ -16,43 +16,39 @@ setwd(wd)
 in_md = c(
   # 'overall_guide.md',                              
   'intro_assessment.md',        
-  ## TODO @ningningj: add 'intro_to_repos.md' with manual restructure
-  'defining_spatial.md',                             # TODO: update instruction, new figs
+  'intro_to_repos.md',
   'assemble_inputs.md',                              
   'formatting_data.md',
-  'intro_to_tbx.md',    
+  'defining_spatial.md',                            
+  'intro_goalbygoal.md',                             
   'file_system.md',
-  'tbx_software_intro.md',
-  'github_architecture.md', 
-  'install_tbx.md', 
   'use_tbx.md',                                      # TODO: review and update 
   'use_tbx_to_modify_data_layers.md',
-  'use_tbx_to_modify_goal_models.md',                # updated by NJM 9/15
+  'use_tbx_to_modify_goal_models.md',                
   'use_tbx_to_modify_pressures_resilience.md',    
-  'use_tbx_to_modify_goals_categories.md',
   'use_tbx_to_remove_goal_models.md',
   'use_tbx_to_remove_sub_goals.md',
   'use_tbx_calculate_overall_index.md',
-  'toolbox_troubleshooting.md',                      # TODO: review and update
-  'intro_webapp.md',                                 # TODO: interpreting a flower plot
-  'update_webapp.md',                                
-  'intro_goalbygoal.md',                             
+  'toolbox_troubleshooting.md',                     
+  'tbx_software_intro.md',
+  'install_tbx.md',
   'practical_FP.md',
-  'practical_AO.md',                
+  'practical_AO.md',
   'practical_NP.md',
-  'practical_CS.md',  
-  'practical_CP.md',                              
+  'practical_CS.md',
+  'practical_CP.md',
   'practical_SP.md',
-  'practical_LE.md',                              
-  'practical_TR.md',                              
-  'practical_CW.md',                            
-  'practical_BD.md',                                 # TODO: review and update JSL ICO/LSP #476
-  'pressures_resilience.md',                      
-  'file_prep_instructions.md',
-  'model_descript_instructions.md',
-  'record_sheet.md',
+  'practical_LE.md',
+  'practical_TR.md',
+  'practical_CW.md',
+  'practical_BD.md',
+  # 'pressures_resilience.md',                      
+  # 'file_prep_instructions.md',
+  # 'model_descript_instructions.md',
+  # 'record_sheet.md',
   'R_tutes_all.md',   
-  'frequently_asked_questions.md')                   # TODO: review and update
+  'frequently_asked_questions.md')                  
+ 
 ## final .md filename
 out_md = 'ohi-manual.md' 
 

@@ -1,4 +1,4 @@
-## Remove Sub-goals from a Supra-goal
+## Removing Sub-goals from a Supra-goal
 
 Sometimes a _supra-goal_ (ie. BD, LE, and FP), or a goal that has _sub-goals_, can be assessed as an individual goal by removing the sub-goals. For example, if the biodiversity in your area can be represented well with only species and not habitats, it is possible to only assess species (ie. only the SPP subgoal and not the HAB subgoal). But this would then make the BD goal only have one subgoal (SPP). It is better to remove that subgoal and make it clear that BD is the biodiversity goal for species.
 

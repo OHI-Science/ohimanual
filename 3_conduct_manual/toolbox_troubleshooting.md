@@ -14,44 +14,9 @@ fatal: could not read Username for 'https://github.com': Device not configured
 
 ![Error screen window: 'error: unable to read askpass response'.](https://docs.google.com/drawings/d/1_yPk-eiJz-9P1VO0Z50bGQSTERM2aKcq6U_un3MlUO4/pub?w=819&h=107)
 
-Here's how we fixed it: we updated `git.exe` to the latest version, 2.2.1, edited the search path to point to the new version, made sure the *git* credential.helper was configured to be able to access the OS X keychain, and pushed a test commit from terminal to store the username and password in the keychain, where it can be accessed from other apps like RStudio. Easy peasy!
+To fix it, open the shell: Tools > Shell.
 
-1. To check your current version of `git.exe`, type this at the terminal command line:
-    * `$ git --version` should return something like:
-    * `git version 2.2.1` (check online to see if this is the latest version)
-2. To update, go to http://git-scm.com/download/mac, download the latest *git* for OS X, install it.  
-3. In terminal, type  `git --version` and verify that it reports the new version.  If it shows the new version, great!  Skip to Step 5.
-    * Don't be sad if it doesn't!  If you still see the old version, the installer put the new version into a different directory, which has a lower priority in the search path, so now to update the search path.  The default Apple *git* seems to install the `git.exe` into `/usr/bin/` directory, this particular updater seems to install into `/usr/local/git/bin/` directory.  The search path needs to be updated to look for `git.exe` in the new directory first.
-4. To change the search path, open up the paths file in `nano` editor using `sudo`:
-    * `$ sudo nano /etc/paths`
-    * At the top line of the paths file, add the directory for the updated *git*: `’/usr/local/git/bin’`(without the quotes) so it looks like the top line here:
-![Terminal window showing where to set *git* filepaths.](https://docs.google.com/drawings/d/11KDJp52kCa-_n4jP97nGZqXc-cKNEvtV-R6M9_neMBg/pub?w=564&h=335)
-    * Then hit `control-X` to exit, then `Y` in response to the save prompt.
-5. Make sure your `git config` is up to date, including `credential.helper`:
-    * `$ git config --global -l` should return something like:
-    * `user.name="Casey O'Hara"`
-    * `user.email=ohara@nceas.ucsb.edu`
-        * see https://github.com/OHI-Science/ohiprep/wiki/Setup#git_identity for help on updating user.name and user.email
-    * `credential.helper=osxkeychain`
-        * (if you need to configure the credential helper: https://help.github.com/articles/caching-your-github-password-in-git/)
-6. Now while you are in Terminal, it is important to sync with a repository to establish your security credentials. You must clone a repository and push a 'test' commit, and then once you are prompted for your username and password your information will get stored in the keychain. Here are the steps:
-    * Change your working directory to your local github directory: `$ cd github`
-       * (Tip: you can check if you're in the right folder by entering `pwd`, short for "print working directory"; or you could look at the line of code preceding the "$".)
-    * Clone into a repository with a URL *for which you have permissions*. As an example, the following steps use a repository called 'ZAF' but you should use your own URL with a three-letter country code in place of 'ZAF':
-       * `$ git clone  https://github.com/omalik/zaf.git`
-    * Change your working directory to the folder you just created (here, 'ZAF'): `$ cd zaf`
-    * Push a test commit to repository 'ZAF':
-       * `$ touch test.md`
-       * `$ git add test.md`
-       * `$ git commit -m "testing"`
-       * `$ git status`
-       * `$ git push`
-       * Check your status again: `$ git status`
-         * (TIP: You can check your status with `$ git status` and you can use 'ls' to see if your new changes have registered in this repository.)
-7. Now that *git* is updated and your username and password are set, make sure RStudio knows the location of the new `git.exe`.  In RStudio, select **Tools > Global Options…**, select the `Git/SVN`, and browse to the new `Git executable` (it should appear as `/usr/local/git/bin/git` if you updated your *git* version as above).
-![Checking the options in RStudio for the git executable path.](https://docs.google.com/drawings/d/1Y3NrM8mvhRqsMrF2wkTjA0b_Rgfl_2nwU2J6C4p-VUw/pub?w=581&h=542)
-
-Next time you push a commit from RStudio, it should remember the username and password from your test commit in Step 6, and you should be good to go.
+`git push -u origin master`
 
 
 ### Git not detected on system path
@@ -128,20 +93,20 @@ You do not want it to load `ohicore` or to save anything in your workspace. You 
 
 ### `Layers()` error due to 'row.names: duplicate 'row.names' are not allowed'
 
-The following error means that within `layers.csv`, there are duplicate rows with the same layernames. 
+The following error means that within `layers.csv`, there are duplicate rows with the same layernames.
 
-The warning message identifies several layer names to investigate... 
+The warning message identifies several layer names to investigate...
 ```
-Error in `row.names<-.data.frame`(`*tmp*`, value = c(2L, 1L, 7L, 14L,  : 
+Error in `row.names<-.data.frame`(`*tmp*`, value = c(2L, 1L, 7L, 14L,  :
   duplicate 'row.names' are not allowed
 In addition: Warning message:
-non-unique values when setting 'row.names': ‘cw_con_dioxin_status’, ‘cw_con_dioxin_trend’, ‘cw_con_ices6_status’, ‘cw_con_ices6_trend’, ‘cw_con_pfos_status’, ‘cw_con_pfos_trend’, ‘cw_nu_status’, ‘cw_nu_trend’, ‘fis_bbmsy’, ‘fis_ffmsy’, ‘fis_landings’, ‘ico_status’, ‘le_gdp_region’ 
+non-unique values when setting 'row.names': ‘cw_con_dioxin_status’, ‘cw_con_dioxin_trend’, ‘cw_con_ices6_status’, ‘cw_con_ices6_trend’, ‘cw_con_pfos_status’, ‘cw_con_pfos_trend’, ‘cw_nu_status’, ‘cw_nu_trend’, ‘fis_bbmsy’, ‘fis_ffmsy’, ‘fis_landings’, ‘ico_status’, ‘le_gdp_region’
 ```
-...and when inspecting `layers.csv`, there are indeed duplicate entries for the same layernames. 
+...and when inspecting `layers.csv`, there are indeed duplicate entries for the same layernames.
 
 ![](https://docs.google.com/drawings/d/1nrEmGn3jBVK1yo6Z9qVwQdEGbX2D_ahhQJF58HvQj_U/pub?w=1481&h=722)
 
-To fix these errors, ensure there are only single entries for each layer name; delete any duplicated rows. 
+To fix these errors, ensure there are only single entries for each layer name; delete any duplicated rows.
 
 ### Calculating Pressures...
 
