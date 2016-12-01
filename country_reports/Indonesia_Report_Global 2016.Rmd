@@ -1,5 +1,7 @@
 ---
 output:
+  pdf_document:
+    toc: yes
   html_document:
     code_folding: show
     highlight: haddock
@@ -8,8 +10,6 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  pdf_document:
-    toc: yes
 ---
 
 ```{r data set up, include=FALSE}
@@ -63,7 +63,7 @@ saveFile <- 'global2016' #location where files that are created are to be saved
 dir_global <- '~/github/ohi-global/global2016/Reporting'
 dir_country <- '~/github/ohimanual/country_reports'
 
-country_name <- 'Colombia'
+country_name <- 'Indonesia'
 
 ## General files to load
  # rgn_names <- read.csv(sprintf('../../eez%s/layers/rgn_global.csv', scenario)) %>%
@@ -93,11 +93,9 @@ flower_plots=TRUE
 This document provides a brief summary of the results for `r country_name` from the 2016 Ocean Health Index (OHI) Global Assessment. 
 
 ## Global results
-As in previous years, this assessment updated datasets and methods to integrate new knowledge and information. The Index Global score for 2016, the Exclusive Economic Zone (EEZ) area weighted average of region (countries and territories) scores was 71. This value did not vary statistically significantly from 2012 to 2016.
+As in previous years, this assessment updated datasets and methods to integrate new knowledge and information. The Index Global score for 2016, the Exclusive Economic Zone (EEZ) area weighted average of region (countries and territories) scores, is 71. This value did not vary statistically significantly from 2012 to 2016.
 
-## Global Flower Plot
-
-![Global Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_GLOBAL_2016.png)
+![OHI 2016 Global Assessment Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_GLOBAL_2016.png)
 
 Several goals had significant changes:
 
@@ -105,6 +103,7 @@ Several goals had significant changes:
 - Lasting special places scores increased by an average of 0.5 points per year
 - Artisanal opportunities scores increased by just over 0.15 points per year
 - Species condition scores improved by a small, but statistically significant, 0.03 points per year
+
 ### Declining scores
 - Natural products declined by over 2.5 points per year on average
 - Coastal protection declined by 0.12 points per year on average
@@ -128,8 +127,8 @@ Resilience: We restructured the resilience data within the OHI, so the data and 
 <font size = "1"> For detailed explanation of methods visit: http://www.oceanhealthindex.org/methodology
 </font>
 
-## `r country_name` Results
-The 2016 Index score for `r country_name` is of `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`. Ranking 178 among all countries. 
+## `r country_name`'s Results
+The 2016 Index score for `r country_name` is of `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`. Ranking 144 out of 221 countries and territories assessed. 
 
 ```{r ranking countries, include = FALSE}
 
@@ -137,7 +136,7 @@ The 2016 Index score for `r country_name` is of `r read_csv(file.path(dir_global
 
 ```
 
-## Table showing 2012-2016 scores
+### 2012-2016 Scores for `r country_name` Using 2016 Methods
 
 ```{r scores all years, echo=FALSE}
 
@@ -206,15 +205,18 @@ kable(country_score)
 
 
 ### Improving scores
-
+- Clean waters and mariculture score increased by 1 point each
+- Wild caught fisheries, food provision, and tourism and recreation improved by 3 points each
 
 ### Declining scores
+- Natural products decreased by 6 points 
+- Iconic species and sense of place declined by 1 points each
+- Lasting special places declined by 2 points
 
-## `r country_name` Flower plot
+![OHI 2016 Global Assessment: `r country_name`'s Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_Indonesia_2016.png)
 
-![`r country_name` Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_Colombia_2016.png)
+### Explanation of `r country_name`'s scores
+The overall score for `r country_name` is `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`, which is unchanged from 2015. Mariculture's score of 23 is the lowest in the country, meaning a there is small productivity of farmed fish per coastal inhabitant (as reported to the FAO). Tourism and recreation, with a score of 27 remains a very low scoring goal for the country, which implies that a small percentage of the coastal population is engaged in this economic activity and that the benefits of tourism are unevenly distributed.
 
-## Explanation of the scores
-
-<font size = "1"> For a detailed summary of Country results visit: http://www.oceanhealthindex.org/region-scores/scores/Colombia
+<font size = "1"> For a detailed summary of Country results visit: http://www.oceanhealthindex.org/region-scores/scores/indonesia
 </font>
