@@ -16,16 +16,16 @@ setwd(wd)
 ## .md files to be included in this order: ----
 in_md = c(
   'Understand_Requirements_for_Assessment.md',
-  'Stakeholder_engagement',
-  'Identify_convener',
+  'Stakeholder_engagement.md',
+  'Identify_convener.md',
   'Stakeholder_needs_analysis.md',
-  'Team_Structure'
-  'Collaborative_target_setting'
-  'Workshop'
+  'Team_Structure.md',
+  'Collaborative_target_setting.md',
+  'Workshop.md',
   'Strategy.md',
   'Strategy_Components.md',
   'Funding.md',
-  'Communicating_with_Stakeholders'
+  'Communicating_with_Stakeholders.md',
   'Adaptive_Management.md')
   # summarizing ending             # add some kind of summary
 
