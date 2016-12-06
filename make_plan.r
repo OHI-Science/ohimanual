@@ -39,7 +39,7 @@ pfx = tools::file_path_sans_ext(out_md)
 
 ## render and save html, pdf ----
 ohi_html(out_md)
-ohi_pdf(out_md)
+# ohi_pdf(out_md)
 
 ## push to ohi-science.org website ----
 push_to_web(out_md)
