@@ -1,0 +1,222 @@
+---
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    code_folding: show
+    highlight: haddock
+    number_sections: no
+    theme: cerulean
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r data set up, include=FALSE}
+
+#load libraries
+library(dplyr)
+library(tidyr)
+library(readr)
+library(stringr)
+library(ggplot2)
+library(hwriter)
+library(RColorBrewer)
+library(knitr)
+library(googleVis)
+library(ohicore)
+library(sp)
+library(rgdal)
+library(DT)
+
+goals <- c('Index', 'AO', 'SPP', 'BD', 'HAB', 'CP', 'CS', 'CW', 'ECO', 'LE', 'LIV', 'FIS', 'FP', 'MAR', 'ICO', 'SP', 'LSP', 'NP', 'TR')
+
+goal_names <- data.frame(goal=goals, long_goal=c("Index", 
+                                                  "Artisanal opportunities",
+                                                  "Species condition (subgoal)",
+                                                  "Biodiversity",
+                                                  "Habitat (subgoal)",
+                                                  "Coastal protection",
+                                                  "Carbon storage",
+                                                  "Clean water",
+                                                  "Economies",
+                                                  "Livelihoods & economies",
+                                                  "Livelihoods",
+                                                  "Fisheries (subgoal)",
+                                                  "Food provisioning",
+                                                  "Mariculture (subgoal)",
+                                                  "Iconic species (subgoal)",
+                                                  "Sense of place",
+                                                  "Lasting special places (subgoal)",
+                                                  "Natural products",
+                                                  "Tourism & recreation"))
+
+## General settings to control
+scenario <- "2016" #identify scenario of focus (this can be changed to obtain data for other years)
+# radicalFile = '2016-11-08' #date extension on the radical data files that are used for all tables/figures
+benchmark = 2015  # year that is used for old vs. new OHI analyses
+oldCommit = '1d4dcb1abb82dc1d20817acca33c7e7d2ef1b52f' # '4da6b4a1d69d694264ea68456359a939b0c03f9c' = commit for 2014 analysis
+colorScheme <- 'new'  # color scheme to use on flower plots ("new" = color reflects size score and is not the original rainbow)
+saveFile <- 'global2016' #location where files that are created are to be saved
+
+## set directory 
+dir_global <- '~/github/ohi-global/global2016/Reporting'
+dir_country <- '~/github/ohimanual/country_reports'
+
+country_name <- 'Madagascar'
+
+## General files to load
+ # rgn_names <- read.csv(sprintf('../../eez%s/layers/rgn_global.csv', scenario)) %>%
+ # dplyr::select(region_id = rgn_id, country = label) %>%
+ # dplyr::mutate(country = as.character(country))
+ # 
+ # rgn_names$country[rgn_names$region_id == 212] <- "Gilbert Islands (Kiribati)"
+ # rgn_names$country[rgn_names$region_id == 148] <- "Line Islands (Kiribati)"
+ # rgn_names$country[rgn_names$region_id == 157] <- "Phoenix Islands (Kiribati)"
+
+
+# if the ohi-global data is updated these should be changed to TRUE
+# (note: these files are then read in for all subsequent tables/figures)
+radical1 <- FALSE
+radical2 <- FALSE
+
+### code to run (change these if data is updated, otherwise takes a while to run):
+map_create=TRUE
+goal_hists=TRUE
+flower_plots=TRUE
+
+
+```
+
+# 2016 Ocean Health Index Global Assessment: `r country_name` Profile
+
+This document provides a brief summary of the results for `r country_name` from the 2016 Ocean Health Index (OHI) Global Assessment. 
+
+## Global results
+As in previous years, this assessment updated datasets and methods to integrate new knowledge and information. The Index Global score for 2016, the Exclusive Economic Zone (EEZ) area weighted average of region (countries and territories) scores, is 71. This value did not vary statistically significantly from 2012 to 2016.
+
+![OHI 2016 Global Assessment Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_GLOBAL_2016.png)
+
+Several goals had significant changes:
+
+### Improving scores
+- Lasting special places scores increased by an average of 0.5 points per year
+- Artisanal opportunities scores increased by just over 0.15 points per year
+- Species condition scores improved by a small, but statistically significant, 0.03 points per year
+
+### Declining scores
+- Natural products declined by over 2.5 points per year on average
+- Coastal protection declined by 0.12 points per year on average
+- Clean waters declined by 0.15 points per year on average
+- Species condition was ranked the goal with the highest score of 92, while mariculture was ranked the goal with the lowest score of 32.
+
+<font size = "1">
+For a detailed summary of global results visit: http://www.oceanhealthindex.org/region-scores
+</font>
+
+## Methods and dataset updates
+For 2016, all goals and subgoals were updated, except for livelihoods and economies and coastal protection (due to data availability limitations).
+
+Additional years of data were available for the following goals/subgoals: artisanal opportunities, species condition, habitat and coastal protection (sea ice), mariculture, clean waters (land-based pollution), iconic species, lasting special places, natural products, tourism and recreation.
+
+Improved data were available for the following goals/subgoals: fisheries, species condition (bird data are now included), clean waters (trash trends are calculated using actual trash data, rather than proxy population data), iconic species (trend is now directly estimated from data).
+
+**Pressures:** Of the pressures data sets, 16 of the 20 pressure data layers were updated. Additional years of data for 7 pressures layers were added, and there were major improvements to source data for fisheries related pressures and sea level rise. Data from the Social Progress Index (http://www.socialprogressimperative.org/global-index/) was included as a “social” component of the pressure scores.
+Resilience: We restructured the resilience data within the OHI, so the data and calculations are more transparent and easier to understand and update. Data from the Social Progress Index (http://www.socialprogressimperative.org/global-index/) was added as a “social” component of resilience scores. Only two resilience data layers were updated: species condition and marine protected areas.
+
+<font size = "1"> For detailed explanation of methods visit: http://www.oceanhealthindex.org/methodology
+</font>
+
+## `r country_name`'s Results
+The 2016 Index score for `r country_name` is of `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`. Ranking 162 out of 221 countries and territories assessed. 
+
+```{r ranking countries, include = FALSE}
+
+# d = read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% 
+
+```
+
+### 2012-2016 Scores for `r country_name` Using 2016 Methods
+
+```{r scores all years, echo=FALSE}
+
+data_all_years <- data.frame()
+
+for(scenarioYear in 2012:2016){ #scenarioYear=2012
+
+data <- read.csv(sprintf('~/github/ohi-global/global2016/Reporting/data/scores_eez%s.csv', scenarioYear), stringsAsFactors=FALSE) %>% 
+  mutate(year = scenarioYear)
+
+data_all_years <- rbind(data_all_years, data)
+
+}
+
+## isolate for individual country
+
+country_score <- data_all_years %>% 
+  filter(country == country_name) %>% 
+  select(-country, -region_id) %>% 
+  t(.) %>% 
+  data.frame() 
+
+colnames(country_score) <- c('2012', '2013', '2014', '2015', '2016')
+
+country_score <- country_score[-20,]
+
+country_score <- setNames(cbind(rownames(country_score), country_score, row.names = NULL), 
+         c('goal', '2012', '2013', '2014', '2015', '2016'))
+
+country_score <- country_score %>%
+  mutate(goal = str_replace_all(goal, "FP", "Food Provision"),
+         goal = str_replace_all(goal, "FIS", "Wild Caught Fisheries"),
+         goal = str_replace_all(goal, "MAR", "Mariculture"),
+         goal = str_replace_all(goal, "AO", "Artisanal Fishing Opportunity"),
+         goal = str_replace_all(goal, "NP", "Natural Products"),
+         goal = str_replace_all(goal, "CS", "Carbon Storage"),
+         goal = str_replace_all(goal, "CP", "Coastal Protection"),
+         goal = str_replace_all(goal, "LE", "Livelihoods and Economies"),
+         goal = str_replace_all(goal, "LIV", "Coastal Livelihoods"),
+         goal = str_replace_all(goal, "ECO", "Coastal Economies"),
+         goal = str_replace_all(goal, "TR", "Tourism and Recreation"),
+         goal = str_replace_all(goal, "LSP", "Lasting Special Places"),
+         goal = str_replace_all(goal, "ICO", "Iconic Species"),
+         goal = str_replace_all(goal, "CW", "Clean Waters"),
+         goal = str_replace_all(goal, "BD", "Biodiversity"),
+         goal = str_replace_all(goal, "SPP", "Species"),
+           goal = str_replace_all(goal, "SP", "Sense of Place"),
+         goal = str_replace_all(goal, "HAB", "Habitats"))
+
+kable(country_score)
+```
+
+
+
+<!-- ```{r plot scores} -->
+
+<!-- country_score_plot_data <- country_score %>%  -->
+<!--   gather(year, score, 2:6) -->
+
+<!-- plot <- ggplot(country_score_plot_data) + -->
+<!--   geom_point(aes(x = year, score, color = goal)) + -->
+<!--   ggtitle('Goal scores 2012 - 2016') -->
+
+<!-- print(plot) -->
+<!-- ``` -->
+
+
+### Improving scores
+- Wild Caught Fisheries score increased by 6 points and Food Provision improved 5 points
+- Tourism and recreation increased by 6 points
+
+
+### Declining scores
+- Sense of Place decreased by 1 point 
+- Natural products decreased by 10 points
+
+![OHI 2016 Global Assessment: `r country_name`'s Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_Madagascar_2016.png)
+
+### Explanation of `r country_name`'s scores
+The overall score for `r country_name` is `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`, which is unchanged from 2015. There were increases for some goals and  decreases for others, which counteract one another contributing to the balance and unchanged total score. The score of 1 for Mariculture reflects very low production of farmed seafood per coastal inhabitant.
+
+<font size = "1"> For a detailed summary of Country results visit: http://www.oceanhealthindex.org/region-scores/scores/madagascar
+</font>
