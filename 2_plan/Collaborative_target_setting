@@ -24,6 +24,42 @@ Ideally, the SNA process will yield preliminary information about potential refe
 
 In Phase 3 we discuss the process of Discovering and gathering input information from existing sources. However, it is important that you consider the ideal approach for measuring each goal early in the process. Establishing an indicator framework can help you determine what relevant information is needed to adequately inform decision-making. In the OHI framework, each goal uses several indicators to estimate the goal’s status, as well as the associated pressures and resilience. Much like reference points, these indicators should follow SMART criteria. By separating the indicator framework from the existing data discovery, you are able to identify the “ideal” information required for each goal, which you can then cross-check with existing information. Doing this will allow you to identify data and information sources you need but do not have, so you are able to establish protocols for gathering that information. Therefore, in the short-term you are able to work with the readily available information while preparing yourself for using the ideal information in future assessments. In Phase 3, we will introduce you to your OHI virtual repository which you can use then to store and analyze your data.
 
+The availability of local data is perhaps the single most important requirement for conducting an OHI+ assessment. **Time-series data are needed for the four components of each goal: Status, Trend, Pressures, and Resilience**.
+
+These are the types of data that have been used in previous assessments:
+
+**Data required for status and trend:**
+
+  - Fisheries and mariculture harvest
+  - Natural products harvest
+  - Need and ability for small-scale fishing
+  - Coastal habitats coverage area and condition
+  - Employment, wages, and revenue of coastal industries
+  - Species list, extinction risks, and protection of special places
+  - Tourism and recreation information
+  - Water pollutants
+
+**Data required for pressures:**
+
+  - Ecological pressures
+      - Pollution
+      - Habitat destruction
+      - Species threats
+      - Fishing impacts
+      - Climate change
+      - Social pressures
+  - Social pressures
+    - Governance indicators
+
+**Data required for resilience:**
+
+- Ecological resilience
+    - Regulatory framework
+    - Ecological integrity
+    - Social resilience
+- Social integrity
+    - Governance indicators (policies, enforcement, effectiveness)
+
 > **Case study: Colombia’s Ocean Indicator Framework**
 
 > Colombia was one of the first countries to begin an OHI+ assessment: they have been working for 2.5 years. Their work has already yielded positive policy and management changes.
