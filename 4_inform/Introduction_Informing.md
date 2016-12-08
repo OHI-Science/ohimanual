@@ -1,4 +1,4 @@
-## Introduction to Informing Decision-Making
+# Introduction to Informing Decision-Making
 
 Informing decision making with the findings of your OHI assessment is perhaps the most sensitive phase of the process because of political and social implications, as well as potential consequences for particular stakeholder groups. Prior to the publication of the findings, the convener should host a workshop to present the findings of the assessment to the stakeholders who have participated in the process, so they understand the methods employed, the reference points used, sources of data and information, etc. This is an opportunity for them to ask questions to experts, clarify facts, and provide initial feedback to the technical team. Likewise, the experts can use this as an opportunity to present their preliminary recommendations based on the findings.
 
