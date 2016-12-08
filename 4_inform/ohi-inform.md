@@ -2,7 +2,19 @@
 title: The Ocean Health Index Inform Phase
 ---
 
-## Introduction to Informing Decision-Making
+Congratulations! You have successfully _Conducted_ your indepenent OHI+ assessment, and you are in the last phase of OHI+, **Inform**. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers. 
+
+![Inform Phase tasks](https://docs.google.com/drawings/d/1oItp0mRGmN_93t28_VgANsE9aTCtc1mB4D96MzoWMUQ/pub?w=960&h=720)
+
+<font size = "2">
+
+_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment - Inform Phase. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/inform_
+
+_**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-inform.pdf 
+
+</font>
+
+# Introduction to Informing Decision-Making
 
 Informing decision making with the findings of your OHI assessment is perhaps the most sensitive phase of the process because of political and social implications, as well as potential consequences for particular stakeholder groups. Prior to the publication of the findings, the convener should host a workshop to present the findings of the assessment to the stakeholders who have participated in the process, so they understand the methods employed, the reference points used, sources of data and information, etc. This is an opportunity for them to ask questions to experts, clarify facts, and provide initial feedback to the technical team. Likewise, the experts can use this as an opportunity to present their preliminary recommendations based on the findings.
 
@@ -24,7 +36,7 @@ Following this initial consultation period, the convener and the technical team 
 
 Should stakeholders decide to go beyond simply obtaining a report with recommendations, the OHI process should continue into a consensus building exercise aimed at reaching and implementing agreements over the short-to-medium term.
 
-## Test management options (scenarios)
+# Test management options (scenarios)
 
 One of the key features of OHI+ assessments is the capacity to conduct management scenarios to test the magnitudes and types of changes in the scores as a result of common or proposed management interventions. This allows stakeholders and decision-makers alike to identify the potential consequences of a decision. Because the OHI goals are strongly connected, testing management scenarios allows stakeholders to better understand the interactions between the goals, for instance, by highlighting how a decision in one sector can affect other sectors. This testing is also a good mechanism to identify spatially where should a specific management intervention take place, as it allows for the identification of proportional changes in scores due to the management intervention across the geographies assessed. In doing so, decision-makers can identify the most cost-effective management interventions to improve goal scores in specific geographies, increasing the impact of limited conservation financial resources.
 
@@ -37,7 +49,7 @@ For example, you may test what would happen to the scores if:
 
 Ideally, these management scenarios are not arbitrary, but instead reflect actual needs identified during the assessment process or are actual proposed actions being considered. In doing so, this information makes it possible for stakeholders to discuss the merits of each action and proceed towards reaching multi-stakeholder management agreements.
 
-## Reach agreements between stakeholders, and implement agreements
+# Reach agreements between stakeholders, and implement agreements
 
 Based on the findings of management scenario testing, stakeholders and decision-makers can now focus on achieving a shared vision. At this stage individual stakeholders are empowered to make contributions towards reaching agreements by: focusing on interests and not positions, establishing objective criteria, and proposing options for mutual gain. A skilled convener can prove very useful in this stage of the process, as this is where stakeholders will explore options for improving the current status of ocean health.
 
@@ -62,18 +74,6 @@ Once the scope has been determined, the stakeholders must reach agreements of wh
 Each agreement reached should be described in detail, considering potential implications for specific groups that may be negatively affected by the decision, costs incurred, specific roles and responsibilities of stakeholders involved, and timeline for the implementation. Objective criteria for monitoring progress towards the agreements should be established, taking into consideration any resources necessary.
 
 In many cases stakeholder agreements must be approved by regulatory agencies or elected officials, in which case, all proposed recommendations should be organized in a document highlighting the benefits and costs of each agreement. It is recommended stakeholders meet periodically to review progress made towards joint agreements, which also promotes greater trust and collaboration among individuals and organizations
-
-Congratulations! You have successfully _Conducted_ your indepenent OHI+ assessment, and you are in the last phase of OHI+, **Inform**. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers. 
-
-![Inform Phase tasks](https://docs.google.com/drawings/d/1oItp0mRGmN_93t28_VgANsE9aTCtc1mB4D96MzoWMUQ/pub?w=960&h=720)
-
-<font size = "2">
-
-_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment - Inform Phase. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/inform_
-
-_**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-inform.pdf 
-
-</font>
 
 # Outreach and Communications Strategy
 
@@ -150,7 +150,7 @@ You should consider involving stakeholders to develop and implement an **action 
 
 <!---JSL Dec 22, 2015: I've cut all the scenario development stuff because it would need to happen in the conduct phase, but we don't have instruction yet --->
 
-## Reassess: establish new relevant targets and gather new information
+# Reassess: establish new relevant targets and gather new information
 
 The first OHI+ assessment conducted in a given geography effectively establishes a baseline of knowledge upon which it is now possible to make future comparisons. In assessing ocean health periodically, decision-makers and stakeholders are able to determine the progress that has been made towards the targets, evaluate the effectiveness of specific management interventions, understand the effects of exogenous variables such as climate change on local ocean health, and assess the progress towards agreements made between stakeholders. There is no rule about how often you should reassess. However, considering the need to balance variances in the temporal scales at which change takes place in ecological and social dimensions, we recommend OHI+ assessments are conducted at least every 2 or 3 years. Reassessing also gives you the opportunity to refine methods and use newly available information and knowledge, continuously helping you to design an approach that best reflects ocean health at the scale of the assessment. Lastly, this exercise should serve as an opportunity to discuss the validity of the reference points established in the first assessment to ensure they remain pertinent to the management vision previously established. 
 
