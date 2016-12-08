@@ -15,11 +15,14 @@ setwd(wd)
 
 ## .md files to be included in this order: ---- 
 in_md = c(
+  'Introduction_Informing.md',
+  'Test_scenarios.md',
+  'Reach_agreements.md',
   'Outreach_and_Communications.md',
   'Disseminating_Findings.md',
   'Communicate_Results_with_Partners.md',
   'Develop_Strategies.md',
-  'Monitor_and_Re-evaluate_to_Determine_Policy_Effectiveness_and_Set_New_Priorities.md')
+  'Reassess.md')
   # summarzing ending             #TODO: add some kind of summary
 
 ## final .md filename

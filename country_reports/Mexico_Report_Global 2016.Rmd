@@ -205,11 +205,10 @@ kable(country_score)
 
 
 ### Improving scores
-- Clean waters and tourism and recreation scores increased by 1 point each
-- Natural products increased by 2 points
+- Clean waters, natural products, and tourism and recreation scores increased by 1 point each
 
 ### Declining scores
-- Species, Mariculture, Sense of Place decreased by 1 point each
+- Species and mariculture decreased by 1 point each
 - Wild caught fisheries declined by 4 points
 - Food provision, iconic species decreased by 2 points each
 
