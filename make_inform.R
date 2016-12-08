@@ -14,8 +14,7 @@ setwd(wd)
 
 
 ## .md files to be included in this order: ---- 
-in_md = c(
-  'Introduction_Informing.md',
+in_md = c('Introduction_Informing.md',
   'Test_scenarios.md',
   'Reach_agreements.md',
   'Outreach_and_Communications.md',
