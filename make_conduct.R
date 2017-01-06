@@ -1,4 +1,4 @@
-## make_learn.r 
+## make_conduct.r 
 ## this script will stitch or 'knit' together all the individual .md files and push online to ohi-science.org.
 ## also required if you get the pdflatex error: www.tug.org/mactex
 
