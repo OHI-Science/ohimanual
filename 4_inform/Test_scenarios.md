@@ -1,4 +1,4 @@
-## Test management options (scenarios)
+# Test management options (scenarios)
 
 One of the key features of OHI+ assessments is the capacity to conduct management scenarios to test the magnitudes and types of changes in the scores as a result of common or proposed management interventions. This allows stakeholders and decision-makers alike to identify the potential consequences of a decision. Because the OHI goals are strongly connected, testing management scenarios allows stakeholders to better understand the interactions between the goals, for instance, by highlighting how a decision in one sector can affect other sectors. This testing is also a good mechanism to identify spatially where should a specific management intervention take place, as it allows for the identification of proportional changes in scores due to the management intervention across the geographies assessed. In doing so, decision-makers can identify the most cost-effective management interventions to improve goal scores in specific geographies, increasing the impact of limited conservation financial resources.
 

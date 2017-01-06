@@ -1,6 +1,18 @@
-## Introduction to Informing Decision-Making
+Congratulations! You have successfully _Conducted_ your indepenent OHI+ assessment, and you are in the last phase of OHI+, **Inform**. In this phase, you will focus on communciating the results of your assessmnent to a wide range of audience, from academics to policy makers. 
 
-Informing decision making with the findings of your OHI assessment is perhaps the most sensitive phase of the process because of political and social implications, as well as potential consequences for particular stakeholder groups. Prior to the publication of the findings, the convener should host a workshop to present the findings of the assessment to the stakeholders who have participated in the process, so they understand the methods employed, the reference points used, sources of data and information, etc. This is an opportunity for them to ask questions to experts, clarify facts, and provide initial feedback to the technical team. Likewise, the experts can use this as an opportunity to present their preliminary recommendations based on the findings.
+![Inform Phase tasks](https://docs.google.com/drawings/d/1oItp0mRGmN_93t28_VgANsE9aTCtc1mB4D96MzoWMUQ/pub?w=960&h=720)
+
+<font size = "2">
+
+_**Citation**_: Ocean Health Index. 2016. Ocean Health Index Assessment - Inform Phase. National Center for Ecological Analysis and Synthesis, University of California, Santa Barbara. _Available at: ohi-science.org/inform_
+
+_**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io/raw/dev/assets/downloads/other/ohi-inform.pdf 
+
+</font>
+
+# Introduction to Informing Decision-Making
+
+Informing decision making with the findings of your OHI assessment is perhaps the most sensitive phase of the process because of political and social implications, as well as potential consequences for particular stakeholder groups. Prior to the publication of the findings, the convener should host a workshop to present the findings of the assessment to the stakeholders who have participated in the process, so they understand the methods employed, the reference points used, sources of data and information, etc. This is an opportunity for them to ask questions to experts, clarify facts, and provide initial feedback to the technical team. Likewise, the experts can use this as an opportunity to present their preliminary recommendations based on the findings. 
 
 Following this initial consultation period, the convener and the technical team should prepare a detailed report of the OHI+ assessment detailing the following (but not limited to):
 

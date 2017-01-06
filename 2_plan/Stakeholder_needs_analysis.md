@@ -1,5 +1,15 @@
 ## Stakeholder Needs Analysis (SNA)
 
+>"The Index offers a tool to engage stakeholders and decision-makers in difficult but necessary discussions, while also helping agencies fulfill their mandates" (Halpern *et al.* 2014)
+
+For your assessment, appropriate conditions and resources will include scientific capacity, government actions (policies, barriers to action, regulatory frameworks and transparency), and civil engagement, all of which create an environment conducive to effectively conducting the assessment.
+
+Although the Index assessments can be produced without the input of non-scientific groups (policy, civil society, etc.), **multi-stakeholder collaborative planning and decision-making are more likely to yield integrated management efforts** focusing on coordinating multi-sector activities, assessing cumulative impacts and trade-offs, and maximizing sustainable productivity. Therefore, the steps we present here propose establishing a strong multi-disciplinary management and leadership framework, and focus on developing a strong strategic plan that can guide the entire process.
+
+Achieving healthy oceans (i.e., reaching the targets established) will require using information produced from the assessment to adopt management actions and enact policies that gradually improve ocean conditions across multiple ocean goals.
+
+Successful assessments require leadership to help set targets and get buy-ins from various interested parties. The assessment should be an element of a larger strategy to improve ocean health and in no case should it be the sole strategy for improving ocean health.
+
 Once the convener has been identified and it has agreed to take on the role, we recommend the convener conducts or commissions a stakeholder needs analysis to determine whether or not to proceed with the OHI+ assessment. This analysis will also help understand the stakeholders involved; that is, the organizations or groups operating at various management levels (national, sub-national, regional, international, private and public), which have an interest in the management of ocean and coastal resources, and can influence or be influenced by decisions in the way these resources are managed. The SNA also builds trust among stakeholders and helps in the design process for developing and OHI+ since it can also be used to gather information and data. The OHI+ process generally includes four main stakeholder groups: civil society groups (resource users, community groups, NGOs), government agencies (national and local), research and academic institutions, and private sector operators. Given the broad range of these stakeholders, the analysis can help highlight the interests and concerns of various parties, helping to build trust among groups that may have low trust among each other.
 
 The SNA process systematically lists and analyzes information to determine which groups have an interest in OHI+, which groups are typically included or excluded, whether each group is relevant to include, whether the groups support or oppose the initiative, and the concerns from various groups. This process seeks to understand players, their issues and management needs, their core interest in ocean and coastal resources, the potential benefits the OHI process can yield to them. Further, the SNA will also help the conveners understand the linkages between the OHI+ process and management actions, governance capacity, policy changes, resource allocation, etc.
@@ -19,6 +29,43 @@ Because OHI+ assessments are participatory multi-stakeholder processes, it is im
 Initial stakeholder identification consists of listing groups known to influence ocean resource management or be impacted by the OHI+ process. This process provides a basis from which to expand the amount of known stakeholders to the convener as well as begin to analyze those listed. It is important not to rely solely on information or knowledge held by the convener, as this might inadvertently exclude groups that can provide important information or contribute with resources and capacity.
 
 At the outset, list all actors with a potential interest in the project without limiting the list based on whether you know the group will have a stake in the project or not. Later, during analysis and stakeholder engagement, you will have the chance to confirm whether groups have a relevant stake or not. Stakeholders can be identified based on the following categories: civil society and local NGOs, government entities, academic and scientific institutions, the private sector, donors, international NGOs, local leaders or influencers, and others.
+
+Participant stakeholders could include, but are not limited to, the following:
+
+**Scientific/Academic institutions:**
+
+- University research centers
+- Independent or government scientific institutions and consulting firms
+- Government statistics departments
+
+**Government:**
+
+- Ministry/Department/Agencies:
+  - Environment
+  - Production
+  - Planning
+  - Fisheries/aquaculture
+  - Tourism
+  - Finance
+  - Health
+  - Technical secretariats
+  - Maritime institutions
+  - Ocean commission
+  - Water quality
+  - Environmental protection
+
+**Non-Governmental Organizations, Civil Society, Private Sector, Resource Users:**
+
+- Coastal community leaders/associations
+- Indigenous communities
+- Commercial and artisanal fishing associations
+- Mariculture producers
+- Resource extractors (traders, etc.)
+- Coastal developers
+- Tourism associations
+- Environmental conservation and social non-governmental organizations (NGOs)
+- Ocean dependent industries (mariculture, ports, energy)
+- Chamber of commerce
 
 The “stakeholder mapping tool” (see figure below) may be useful in identifying stakeholder influence. Using this tool, the convener can do a quick initial assessment of the interests and influence of other stakeholders with regard to the goals that the convener is trying to achieve. Based on this analysis, he or she can identify potential coalition partners who share interests, as well as potential blocking coalitions that might need to be addressed, and other stakeholders who might be mobilized in support or opposition.
 

@@ -14,6 +14,67 @@ _**Download PDF version**_: https://github.com/OHI-Science/ohi-science.github.io
 
 </font>
 
+# Introduction to Informing Decision-Making
+
+Informing decision making with the findings of your OHI assessment is perhaps the most sensitive phase of the process because of political and social implications, as well as potential consequences for particular stakeholder groups. Prior to the publication of the findings, the convener should host a workshop to present the findings of the assessment to the stakeholders who have participated in the process, so they understand the methods employed, the reference points used, sources of data and information, etc. This is an opportunity for them to ask questions to experts, clarify facts, and provide initial feedback to the technical team. Likewise, the experts can use this as an opportunity to present their preliminary recommendations based on the findings. 
+
+Following this initial consultation period, the convener and the technical team should prepare a detailed report of the OHI+ assessment detailing the following (but not limited to):
+
+- Purpose of the assessment: policy and management needs
+- Description of the entire process, including the role of various stakeholders
+- Description of the study area and rationale for selection of spatial boundaries
+- Description of the methods:
+ - Goal model choice, including rationale and alternatives with ideal data sources
+ - Reference point, including rationale and alternatives with ideal data sources
+ - Data layers for status, pressures, and resilience
+- Description of the methodology and tools used
+- Description of the scores and explanation of the variables leading to the scores
+- Results of management scenarios tests (if conducted — see sections below)
+- Spatial and thematic recommendations based on identified priorities
+- Identified data gaps and recommendations for collecting the necessary information for future assessments
+- Management intervention recommendations
+
+Should stakeholders decide to go beyond simply obtaining a report with recommendations, the OHI process should continue into a consensus building exercise aimed at reaching and implementing agreements over the short-to-medium term.
+
+# Test management options (scenarios)
+
+One of the key features of OHI+ assessments is the capacity to conduct management scenarios to test the magnitudes and types of changes in the scores as a result of common or proposed management interventions. This allows stakeholders and decision-makers alike to identify the potential consequences of a decision. Because the OHI goals are strongly connected, testing management scenarios allows stakeholders to better understand the interactions between the goals, for instance, by highlighting how a decision in one sector can affect other sectors. This testing is also a good mechanism to identify spatially where should a specific management intervention take place, as it allows for the identification of proportional changes in scores due to the management intervention across the geographies assessed. In doing so, decision-makers can identify the most cost-effective management interventions to improve goal scores in specific geographies, increasing the impact of limited conservation financial resources.
+
+For example, you may test what would happen to the scores if:
+
+- Bycatch is reduced
+- Protected areas are increased
+- Pollution is decreased
+- Habitat restoration is conducted
+
+Ideally, these management scenarios are not arbitrary, but instead reflect actual needs identified during the assessment process or are actual proposed actions being considered. In doing so, this information makes it possible for stakeholders to discuss the merits of each action and proceed towards reaching multi-stakeholder management agreements.
+
+# Reach agreements between stakeholders, and implement agreements
+
+Based on the findings of management scenario testing, stakeholders and decision-makers can now focus on achieving a shared vision. At this stage individual stakeholders are empowered to make contributions towards reaching agreements by: focusing on interests and not positions, establishing objective criteria, and proposing options for mutual gain. A skilled convener can prove very useful in this stage of the process, as this is where stakeholders will explore options for improving the current status of ocean health.
+
+Some potential options for reaching agreements at this stage are:
+
+- focus solely on identifying broadly supported priority management actions and monitoring progress; or
+- focus on monitoring progress only; let potential implementers determine priority actions independent of integrated stakeholder dialogue
+
+Once the scope has been determined, the stakeholders must reach agreements of what will be accomplished. “A consensus agreement is one that all participants can accept or ‘live with’” (CBI). It is ideal that there is strong support for the agreement from all stakeholders. But it is not necessary that all stakeholders strongly support all elements of the agreement to reach a consensus based decision. Some possible agreements may include (but not limited to):
+
+- Fisheries catch limits, gear bans, close seasons, quota systems\
+- Adopting mariculture best practices
+- Increasing access to resources for artisanal fisher peoples
+- Regulations on the harvesting and trader of some natural products
+- Coastal habitat protection and restoration
+- Policies for increasing wages of ocean dependent workers, incentive ocean economies
+- Sustainable tourism practices, tourism taxes
+- Increasing area and management of protected areas and key species
+- Increasing waste management facilities, water treatment, reduce runoff
+- Protection of key habitats and management plans for sensitive endangered species
+
+Each agreement reached should be described in detail, considering potential implications for specific groups that may be negatively affected by the decision, costs incurred, specific roles and responsibilities of stakeholders involved, and timeline for the implementation. Objective criteria for monitoring progress towards the agreements should be established, taking into consideration any resources necessary.
+
+In many cases stakeholder agreements must be approved by regulatory agencies or elected officials, in which case, all proposed recommendations should be organized in a document highlighting the benefits and costs of each agreement. It is recommended stakeholders meet periodically to review progress made towards joint agreements, which also promotes greater trust and collaboration among individuals and organizations
+
 # Outreach and Communications Strategy
 
 It is important to have a clear strategy for how to communicate the results of your assessment to your various audiences. You will want to have a clear message and way to reach to your various audiences, choosing the tools that will best suit your objective or call to action for each audience. To do this, it is helpful to revisit your initial assessment plan and stakeholder analysis and identify key messages and recommendations that are relevant to each group.
@@ -89,9 +150,12 @@ You should consider involving stakeholders to develop and implement an **action 
 
 <!---JSL Dec 22, 2015: I've cut all the scenario development stuff because it would need to happen in the conduct phase, but we don't have instruction yet --->
 
-# Monitor and Re-evaluate to Determine Policy Effectiveness and Set New Priorities
+# Reassess: establish new relevant targets and gather new information
 
-If the OHI framework was adopted as a management tool, recalculating scores regularly could reveal whether management actions had the intended effect on both overall ocean health and particular goals. This objective demonstrates the power (and necessity) of having a quantitative, repeatable, transparent and comprehensive method for the assessment. 
+The first OHI+ assessment conducted in a given geography effectively establishes a baseline of knowledge upon which it is now possible to make future comparisons. In assessing ocean health periodically, decision-makers and stakeholders are able to determine the progress that has been made towards the targets, evaluate the effectiveness of specific management interventions, understand the effects of exogenous variables such as climate change on local ocean health, and assess the progress towards agreements made between stakeholders. There is no rule about how often you should reassess. However, considering the need to balance variances in the temporal scales at which change takes place in ecological and social dimensions, we recommend OHI+ assessments are conducted at least every 2 or 3 years. Reassessing also gives you the opportunity to refine methods and use newly available information and knowledge, continuously helping you to design an approach that best reflects ocean health at the scale of the assessment. Lastly, this exercise should serve as an opportunity to discuss the validity of the reference points established in the first assessment to ensure they remain pertinent to the management vision previously established. 
 
 Other more complex, emergent tradeoffs become visible only when OHI assessments are done over time to track how goal scores change. Because of the complexity of ecosystem responses, full attribution of a change in one goal causing a change in another goal is difficult, but such patterns can provide insight on where to direct further exploration of such possible tradeoffs. The ability to calculate past status scores, and then correlate changes with past management actions, illustrates one way it can be used to assess management effectiveness. 
+
+
+OHI+ assessment updates can be easily done using the OHI Toolbox and require the same degree of time and resources as the initial assessment (although this may vary depending on local conditions). 
 

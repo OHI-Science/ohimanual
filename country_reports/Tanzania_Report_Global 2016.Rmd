@@ -63,7 +63,7 @@ saveFile <- 'global2016' #location where files that are created are to be saved
 dir_global <- '~/github/ohi-global/global2016/Reporting'
 dir_country <- '~/github/ohimanual/country_reports'
 
-country_name <- 'Mexico'
+country_name <- 'Tanzania'
 
 ## General files to load
  # rgn_names <- read.csv(sprintf('../../eez%s/layers/rgn_global.csv', scenario)) %>%
@@ -128,7 +128,7 @@ Resilience: We restructured the resilience data within the OHI, so the data and 
 </font>
 
 ## `r country_name`'s Results
-The 2016 Index score for `r country_name` is of `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`. Ranking 111 out of 221 countries and territories assessed. 
+The 2016 Index score for `r country_name` is of `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`. Ranking 98 out of 221 countries and territories assessed. 
 
 ```{r ranking countries, include = FALSE}
 
@@ -205,17 +205,17 @@ kable(country_score)
 
 
 ### Improving scores
-- Clean waters, natural products, and tourism and recreation scores increased by 1 point each
+- Wild Caught Fisheries score increased by 3 points and Food Provision improved 2 points
 
 ### Declining scores
-- Species and mariculture decreased by 1 point each
-- Wild caught fisheries declined by 4 points
-- Food provision, iconic species decreased by 2 points each
+- Sense of Place decreased by 1 point 
+- Tourism and recreation declined by 2 points
+- Natural products decreased by 3 points
 
-![OHI 2016 Global Assessment: `r country_name`'s Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_Mexico_2016.png)
+![OHI 2016 Global Assessment: `r country_name`'s Flower Plot](https://raw.githubusercontent.com/OHI-Science/ohi-global/draft/global2016/Reporting/figures/FlowerPlots/flower_Tanzania_2016.png)
 
 ### Explanation of `r country_name`'s scores
-The overall score for `r country_name` is `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`, which is unchanged from 2015. Mariculture remains the lowest scoring goal in the country indicating low farmed fish productivity per coastal inhabitant. The natural products goal is also very low, indicating an unsustainable overharvest of some goods and/or an underharvest of other goods.
+The overall score for `r country_name` is `r read_csv(file.path(dir_global, '/data/scores_eez2016.csv')) %>% filter(country == country_name) %>% select(Index)`, which is unchanged from 2015. There were sligh increases for some goals and slight decreases for others, which contributes to the balance and unchanged score. The score of 0 for Mariculture reflects no production of farmed seafood per coastal inhabitant.
 
-<font size = "1"> For a detailed summary of Country results visit: http://www.oceanhealthindex.org/region-scores/scores/mexico
+<font size = "1"> For a detailed summary of Country results visit: http://www.oceanhealthindex.org/region-scores/scores/tanzania
 </font>
