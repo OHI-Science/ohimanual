@@ -210,3 +210,19 @@ Note: each goal in resilience_matrix.csv must have at least one resilience field
 means that the list of resilience layers listed in `resilience_matrix.csv` does not match the list in `resilience_weights.csv`.
 
 `CalculateResilienceScore.r L112` is where this error was generated (called from `CalculateResilienceAll.r`.
+
+### Working with Rmarkdown files
+
+#### `...duplicate label...` 
+
+Error message when knitting an Rmd file with multiple code chunks. For example: 
+  
+```r
+processing file: eco_prep.rmd
+Error in parse_block(g[-1], g[1], params.src) : 
+  duplicate label 'extract eco most recent year status'
+Calls: <Anonymous> ... process_file -> split_file -> lapply -> FUN -> parse_block
+Execution halted
+```
+
+This means that there are duplicate chunk titles 'extract eco most recent year status'. To fix this, you just need to rename one (or more) of the chunks! 
