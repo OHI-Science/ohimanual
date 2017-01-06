@@ -5,9 +5,9 @@ title: The Ocean Health Index - Learn Phase
 
 **Welcome to the Ocean Health Index (OHI)!** OHI is the first assessment framework that combines and compares all dimensions of the ocean - ecological, social, economic, and physical - to measure how sustainably people are using ocean and coastal resources.
 
-You are currenlty at the first of four phases of conducting an OHI assessment - the **Learn** Phase. Here you will get an overview of the OHI framework, its workflow, what to expect from an OHI assessment, and how the scores are calculated, in order to prepare yourself for the next planning phase of an assessment. You will also be introduced to the philosophy behind each OHI goal. 
+You are currenlty at the first of four phases of conducting an OHI assessment - the **Learn** Phase. Here you will get an overview of the OHI framework, its workflow, what to expect from an OHI assessment, and how the scores are calculated, in order to prepare yourself for the next planning phase of an assessment. You will also be introduced to the philosophy behind each OHI goal.
 
-For a more in-depth look at OHI and its process, check out our other web materials, including [Presentations](http://ohi-science.org/new-site/resources/downloads/), and [Publications](http://ohi-science.org/resources/publications/). If you want to know more about how to define and measure each goal, visit the [Goals](http://ohi-science.org/goals/) page. 
+For a more in-depth look at OHI and its process, check out our other web materials, including [Presentations](http://ohi-science.org/new-site/resources/downloads/), and [Publications](http://ohi-science.org/resources/publications/). If you want to know more about how to define and measure each goal, visit the [Goals](http://ohi-science.org/goals/) page.
 
 Let's get started!
 
@@ -41,7 +41,7 @@ This framework was first applied to the global scale in 2012, and since then, nu
 
 ## Four Phases of OHI+
 
-There are [four phases of OHI+ assessment](http://ohi-science.org/new-site/phases/): **Learn**, **Plan**, **Conduct**, and **Inform**. You are currently in the _Learn_ Phase, where you will understand OHI framework and philosophy, and determine the needs and purposes of your OHI+ assessment. 
+There are [four phases of OHI+ assessment](http://ohi-science.org/new-site/phases/): **Learn**, **Plan**, **Conduct**, and **Inform**. You are currently in the _Learn_ Phase, where you will understand OHI framework and philosophy, and determine the needs and purposes of your OHI+ assessment.
 
 ![](https://docs.google.com/drawings/d/1coG1ir10s2gBs0rleLjISlQUywf8Uc3v8PAyovAKK2o/pub?w=960&h=720)
 
@@ -55,9 +55,11 @@ OHI+ teams are responsible for modifying the "tailored" part of the framework an
 
 ## Outcomes of an OHI+ assessment
 
-Your completed assessment will produce OHI scores for each goal in every region of your study area, and scores within the assessment can be compared with one another. Goal scores range between 0 and 100, and are visualized in a _Flower Plot_ for easy communication with a wide audience - each pedal represents one goal, and the size of the pedal corresponds with its score. 
+Your completed assessment will produce OHI scores for each goal in every region of your study area, and scores within the assessment can be compared with one another. Goal scores range between 0 and 100, and are visualized in a _Flower Plot_ for easy communication with a wide audience - _each pedal represents one goal or subgoal, and the size of the pedal corresponds with its score._ (Note: the colors of the pedals match those of goal icons and do not correlate with scores.)
 
 However, these scores will not be quantitatively comparable to those of other OHI assessments because they differ in the underlying inputs, goal models, and reference points.
+
+![](https://docs.google.com/drawings/d/1sOgTRlm7rbyu47O7mnEAMGlir0TbuNBR8QC-fdQXzx8/pub?w=936&h=306)
 
 ## What support we provide
 

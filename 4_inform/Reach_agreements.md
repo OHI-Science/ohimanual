@@ -1,4 +1,4 @@
-## Reach agreements between stakeholders, and implement agreements
+# Reach agreements between stakeholders, and implement agreements
 
 Based on the findings of management scenario testing, stakeholders and decision-makers can now focus on achieving a shared vision. At this stage individual stakeholders are empowered to make contributions towards reaching agreements by: focusing on interests and not positions, establishing objective criteria, and proposing options for mutual gain. A skilled convener can prove very useful in this stage of the process, as this is where stakeholders will explore options for improving the current status of ocean health.
 

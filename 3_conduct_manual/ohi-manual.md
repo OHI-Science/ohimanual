@@ -1828,6 +1828,22 @@ means that the list of resilience layers listed in `resilience_matrix.csv` does 
 
 `CalculateResilienceScore.r L112` is where this error was generated (called from `CalculateResilienceAll.r`.
 
+### Working with Rmarkdown files
+
+#### `...duplicate label...` 
+
+Error message when knitting an Rmd file with multiple code chunks. For example: 
+  
+```r
+processing file: eco_prep.rmd
+Error in parse_block(g[-1], g[1], params.src) : 
+  duplicate label 'extract eco most recent year status'
+Calls: <Anonymous> ... process_file -> split_file -> lapply -> FUN -> parse_block
+Execution halted
+```
+
+This means that there are duplicate chunk titles 'extract eco most recent year status'. To fix this, you just need to rename one (or more) of the chunks! 
+
 # Appendix 1: Toolbox Software
 
 The OHI Toolbox is open-source and can be downloaded and installed for free. It is essentially a workflow building off the following software: [**R**](https://cran.r-project.org/),  [**RStudio**](https://www.rstudio.com/), [**git**](https://git-scm.com/), and  [**GitHub**](https://www.github.com/)  
