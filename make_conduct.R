@@ -32,6 +32,7 @@ in_md = c(
   'toolbox_troubleshooting.md',                     
   'tbx_software_intro.md',
   'install_tbx.md',
+  'appendix2_intro',
   'practical_FP.md',
   'practical_AO.md',
   'practical_NP.md',
