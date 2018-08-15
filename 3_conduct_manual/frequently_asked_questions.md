@@ -14,11 +14,9 @@ However, because scores for each goal are scaled to a reference point, qualitati
 
 A: The OHI is not an index of ecosystem services. The Index prefers to describe benefits from a healthy ocean and emphasize their relevance, but the ideas are closely related. The ten goals roughly fall into areas of ecosystem services such as food provisioning (**Food Provision**), regulatory services (**Carbon Storage**), cultural services (**Tourism and Recreation**,**Special Places**), supporting services (**Clean Waters**, **Biodiversity**), and other values (**Livelhoods and Economies**).
 
-*(Source: OHI Baltic workshop)*
-
 **Q: Where is climate change measured in the Index?**
 
-A: Four different aspects of climate change -- increases in sea surface temperature (SST), sea level rise (SLR), ultraviolet radiation (UV), and ocean acidification (OA) -- are included as pressures to many goals in the Index, including Natural Products, Carbon Storage, Coastal Protection, Sense of Place, Livelihoods & Economies and Biodiversity.  Mitigation of climate change through carbon storage is one of the ten goals.
+A: Four different aspects of climate change -- increases in sea surface temperature (SST), sea level rise (SLR), ultraviolet radiation (UV), and ocean acidification (OA) -- are included as pressures to many goals in the Index, including Natural Products, Carbon Storage, Coastal Protection, Sense of Place, Livelihoods & Economies and Biodiversity.  
 
 
 **Q: Why are food provision and artisanal fishing opportunities goals separated?**
@@ -35,10 +33,10 @@ Ten goals may seem simplified. But they are useful for talking to people across 
 
 **Q: How are the goals weighted to calculate the final score?**
 
-A: By default, we weighed them equally because we don’t have solid, better information to do otherwise, even though we understand that each goal may/should have different weights depending on regional conditions and needs. We didn't put emphasis on goal weighing because ten individual goal scores are more important than one total score, and can tell more about the status of ocean health. If you are interested in seeing how weighing affects the total index score, you can try the following:
+A: By default, goals are weighted equally because there is not better information to do otherwise, even though we understand that each goal may/should have different weights depending on regional conditions and needs. We didn’t put emphasis on goal weighing because ten individual goal scores are more important than one total score, and can tell more about the status of ocean health. If you are interested in seeing how weighing affects the total index score, you can try the following:
 
-- Scenario studies.  The OHI framework is flexible so that you can change the weights and see how scores change
-- Studies on people’s preferences or management needs to weigh goals differently
+- Scenario studies. The OHI framework is flexible so that you can change the weights and see how scores change.  
+- Studies on people’s preferences or management needs to weigh goals differently. See [Daigle et al. 2017](http://ohi-science.org/publications/).
 
 **Q: How should we compare regional scores, spatially or temporally?**
 
@@ -53,20 +51,16 @@ A: Yes you can use more years of data if available. But 5 years is a good compro
 
 **Q: Is OHI an internationally recognized monitoring system? What other partnership does OHI have?**
 
-A: OHI is gaining recognition from world governance organizations, NGOs, and local governments. There is only limited amount of funds for conservation. If we work together, we can reach maximum return on investment. We partner with UCSB, who is on the scientific frontier. They innovate science and technology, develop toolbox, fill data gap, and provide technical support for local OHI assessments. Conservation International focuses on external partnerships. CI is always looking at multilateral agreements. Some of our active partnerships include:
+A: OHI is a partnership between the National Center for Ecological Analysis and Synthesis (NCEAS) at UC Santa Barbara and Conservation International, and is gaining recognition from world governance organizations, NGOs, and local governments. There are nearly twenty assessments being led by partners and independent groups around the world: explore the [OHI+ assessments](http://ohi-science.org/projects/ohi-assessments/).
 
-- The United Nations. Many countries follow UN leads.
-- World Bank and The Nature Conservancy, who has good research on economics, and is interested in incorporating OHI in their monitoring systems that are already in place.
-- World Wildlife Fund, who is interested in using OHI in all of their 14 global sites.
-- Clinton Climate Initiative.
 
-**How to draw spatial boundary: ecosystem or jurisdictional boundary?**
+**Should spatial boundaries be based on ecosystem or jurisdictional boundaries?**
 
-A. We recommend jurisdictional boundary. It comes down to who will care, and who will take responsibility for the results and act on the results.
+A. The boundaries of your assessment should be driven by the boundaries where information is reported and policy decisions are made. Jurisdictional boundaries may be optimal because it is often at these scales where management and policy decisions are made, cultural priorities and management targets are identified, and information is collected in standardized and therefore comparable ways.
 
-**There seems to be overlapping between goals, for example, habitats data re used for CS, CP, and HAB. Is that double counting?**
+**Is there overlap or double-counting for habitat-based goals?**
 
-A. No. There is no complete overlap of data. Different habitat data are used for different goals. For example, habitats good for CS aren’t necessarily appropriate for CP.
+A. There is no complete overlap of data. Different habitat data are used for different goals. For example, not all habitats relevant for CP (for example, coral reefs) aren’t necessarily appropriate for CS.
 
 OHI is also human benefits-driven, not ecologically-driven. It happens that CS, CP, and HAB are affected by similar factors, but they provide non-overlapping benefits. It is the design of OHI to show the connectivity among goals. If certain habitats are good for multiple goals, there is strong incentive to focus energy and resources to protect those habitats.
 
@@ -75,12 +69,12 @@ OHI is also human benefits-driven, not ecologically-driven. It happens that CS, 
 
 **Q: How much does it cost to produce a regional assessment?**
 
-A: Regional assessments can be completed at (varying costs depending on the local context).Funds are needed for a management and scientific team, workshops and meetings (including travel), communications, policy engagement, and operating costs. Therefore, securing funding is an important component to satisfactorily complete the assessment. We encourage the development of a local proposal or strategic action plan that details a timeline of activities and the resources needed to accomplish them.
+A: Regional assessments can be completed at (varying costs depending on the local context). Funds are needed for a management and scientific team, workshops and meetings (including travel), communications, policy engagement, and operating costs. Therefore, securing funding is an important component to satisfactorily complete the assessment. We encourage the development of a local proposal or strategic action plan that details a timeline of activities and the resources needed to accomplish them.
 
 
 **Q: How many people are required in a team?**
 
-A: rather than a specific number of individuals, what is required are specific skill sets. For example, if the scientific analysts were capable of effectively conducting the R analysis, then a dedicated R analyst would not be required. In current assessments, teams range between 2 and 8 people.
+A: rather than a specific number of individuals, what is required are specific skill sets, and best if they are overlapping. It is important that scientific analysts are able to effectively communicate with those coding in R, and better yet if scientists are able to contribute to the code. In current assessments, teams range between 2 and 8 people.
 
 
 **Q: How long does it take to calculate OHI at a regional scale?**
@@ -90,23 +84,17 @@ A: The duration of an OHI assessment depends on a number of factors, such as the
 
 **Q: How much time will modifications by an R analyst take?**
 
-A: This will depend on if you are changing any models, and potentially data layers--but a lot of changing data layers just requires registering them properly in `layers.csv` (and maybe `pressures_matrix.csv` and resilience_matrix.csv if they are pressures or resilience files) and having the `functions.R` file call those layers. That is more 'bookkeeping' than actual R programming.
-
+A: There are a lot of iterative steps in OHI: planning goal models to best represent the study area, identifying available data, re-thinking goal models based on available data, preparing the data and models, rethinking reference points, etc. See this blog post: [How to build a successful OHI technical team](http://ohi-science.org/news/how-to-build-successful-technical-team)
 
 **Q: How much time will modifications by a GIS analyst take?**
 
-A: this will depend on how many layers you are processing: you are clipping spatial data? That will take some time because there are quite a few files, but maybe not too long since it is pretty small scale and once there is a clipping mask created I think you apply it to other files.
-
-
-**Q: Which goals require a GIS analyst?**
-
-A: All goals using spatial data could potentially require a GIS analyst. These goals are commonly: habitat-based goals and sub-goals: (Coastal Protection, Carbon Storage, Habitats—a sub-goal of Biodiversity), Food Provision, Sense of Place, Species—a sub-goal  of Biodiversity, Clean Waters
+A: The main work by a GIS analyst will be to develop the boundaries for the regions in your assessment. Afterwards, you are able to use these boundaries to "clip" or process spatial data for your assessment. Most spatial data processing for OHI can be done in R (we use these packages mainly: sf, rgdal, raster, and sp). See this blog post: [Cropping rasters down to size](http://ohi-science.org/news/cropping-rasters-down-to-size).
 
 ## Structure
 
 **Q: Can we remove or add goals to the OHI?**
 
-A: A lot of deliberation went into defining the ten goals, and they seem to do a pretty good job of covering many if not most ocean uses, so additional goals may not be necessary. But it could be that they eclipse or replace an existing goal.
+A: Yes, although it is important to consider the philosophy behind the goals you will be adding or removing. If a goal has value to your area, it is important to include, even if there is not data available to perfectly represent it.
 
 
 **Q: What is sector evenness?**
@@ -115,30 +103,16 @@ A: Sector evenness (also called a diversity index) is an economic concept that i
 
 ## Appropriate data layers
 
-<!-- **Q: Shipping and port activity are hardly affected by the health of the ecosystem. Why are these included in the Index?**
 
-A: Shipping and port activity are included as pressures only -->
+**Q: Can seaweeds be included in the Carbon Storage goal?**
 
-
-**Q: Can oil spills be included in OHI?**
-
-A: Yes, oil spills could be included as a pressure and in the Clean Waters goal.
-
-
-**Q: Is seasonal (non-permanent) sea ice included in OHI habitats?**
-
-A: No, sea ice only includes permanent sea ice.
-
-
-<!-- **Q: Can seaweeds be included in the Carbon Storage goal?**
-
-A: Because they store carbon for less than 100 years, seaweeds and corals are not included in the carbon storage goal. While the pelagic oceanic carbon sink (phytoplankton) plays a large role in the sequestration of anthropogenic carbon, the pelagic ocean mechanisms are not amenable to local or regional management intervention. Phytoplankton and contribute to carbon fixation when they die and sink to the sea bottom at sufficient depth, because it is effectively out of circulation. However, if those phytoplankton are eaten, the carbon is cycled back into the system and not sequestered. Something that could potentially be included in the carbon storage goal is mollusc shells, if they are added to a landfill and not recycled in the sea. So if information on mariculture production and waste disposal are available, this could be an interesting addition to carbon storage at a regional scale.
-
+A: Because they store carbon for less than 100 years, thus far we have not included seaweeds in the carbon storage goal. While the pelagic oceanic carbon sink (phytoplankton) plays a large role in the sequestration of anthropogenic carbon, the pelagic ocean mechanisms are not amenable to local or regional management intervention. Phytoplankton and contribute to carbon fixation when they die and sink to the sea bottom at sufficient depth, because it is effectively out of circulation. However, if those phytoplankton are eaten, the carbon is cycled back into the system and not sequestered. Something that could potentially be included in the carbon storage goal is mollusc shells, if they are added to a landfill and not recycled in the sea. So if information on mariculture production and waste disposal are available, this could be an interesting addition to carbon storage at a regional scale. If harvested from pens for human consumption, seaweeds can be included in the Mariculture goal.
 
 **Q: Is coastal engineering included in Coastal Protection? What if it reduces erosion?**
 
-A: We did not include an assessment of the protection afforded by  man-made structures, such as jetties and seawalls, because these structures cannot be preserved without maintenance, may have other negative side effects (e.g. alter sedimentation rates causing erosion in new locations), thus they do not constitute long-term sustainable services.
-Coastal engineering (jetties, harbours, marina and breakwater) is not natural, and is mostly seen as a pressure. It will also be evident in the status of due to decreased natural habitat. It gets tricky when structures are built to help reduce coastal erosion--they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied. -->
+A: Thus far we have not included an assessment of the protection afforded by  man-made structures, such as jetties and seawalls, because these structures cannot be preserved without maintenance, may have other negative side effects (e.g. alter sedimentation rates causing erosion in new locations), thus they do not constitute long-term sustainable services.
+
+Coastal engineering (jetties, harbours, marina and breakwater) is not natural, and is mostly seen as a pressure. It will also be evident in the status of due to decreased natural habitat. It gets tricky when structures are built to help reduce coastal erosion--they are still manmade and therefore not a natural benefit that the ocean provides. But if available data allow, it might be possible to include tradeoff effects: maybe in areas where natural habitats are degraded and man-made structures have been built to reduce erosion, we could reduce the pressure that would otherwise be applied.
 
 
 **Q: How is seawater used for cooling on-shore power plants incorporated into OHI?**
@@ -148,14 +122,12 @@ A: The use of cooling water for on-shore power plants would be a pressure on the
 
 **Q: How is freshwater production through desalination incorporated into OHI?**
 
-A: Desal would be incorporated into OHI in several places. The benefit is that there is freshwater produced, which could be incorporated into the Natural Products goal (or potentially into its own goal). Data required would be the volume of freshwater created based on the volume of seawater involved and spatial extent. Setting the reference point would not be based on how much can be produced, but some other targets perhaps set by government (percentage of the population served).
-Similar to the mariculture sub-goal and tourism goals, any negative effects caused by desal that affect other goals (example: species) do not influence the ability to obtain desalination targets now and in the future. Therefore, the sustainability coefficient only measures the ability to sustain that goal, but not the impacts on other goals: instead, they are taken into account as pressures when calculating the other goals. Desal should be included as a pressure similar to cooling on-shore power plants since the discharge brine is dense, doesn't plume very well and there are chemicals involved.
+A: Desal could be incorporated into OHI in several places. The benefit is that there is freshwater produced, which could be incorporated into the Natural Products goal (or potentially into its own goal). Data required would be the volume of freshwater created based on the volume of seawater involved and spatial extent. Setting the reference point would not be based on how much can be produced, but some other targets perhaps set by government (percentage of the population served).
+Similar to the mariculture sub-goal and tourism goals, any negative effects caused by desal that affect other goals (example: species) do not influence the ability to obtain desalination targets now and in the future. Therefore, the sustainability coefficient only measures the ability to sustain that goal, but not the impacts on other goals: instead, they are taken into account as pressures when calculating the other goals. Desal should be included as a pressure similar to cooling on-shore power plants since the discharge brine is dense, doesn't plume very well and there are chemicals involved. OHI+ Israel incorporated desalination into their goal models; learn about their assessment [here](http://ohi-science.org/assessment/Israel).
 
 **Q: Where do energy activities fit in to OHI?**
 
 It depends. Energy could be part of a **Natural Products** goal, for instance, such as wave energy -- but then the question is, what is the reference point? It is partially accounted for in **Livelihoods & Economies** through sectoral jobs data. The infrastructure is also something to consider. It could also be a pressure or resilience factor if there is a measurable footprint of the activity. You may want to consider for resilience, do you have governance measures that promote more sustainable practices in the energy industry?
-
-<!--- Anna: How does the Index consider anoxic waters? --->
 
 <!---From Baltic Discussion 2015--->
 

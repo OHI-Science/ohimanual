@@ -62,7 +62,7 @@ ohi_html = function(out_md) {
 }
 
 
-  ## commit and push to master branch: ohi-science.github.io
+## commit and push to master branch: ohi-science.github.io
 push_to_web = function(out_md) {
   
   ## read filename
